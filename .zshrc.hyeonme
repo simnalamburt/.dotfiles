@@ -74,14 +74,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 PATH=$PATH:$HOME/.rvm/bin
 # xterm
 TERM=xterm-256color
-# irc
-echo ""
-echo " * irc()"
-irc() {
-  if [ -z $TMUX ]; then
-    tmux attach-session -t bkground
-  else
-    tmux switch-client -t bkground
-  fi
-}
 #--------------------------------------------------
