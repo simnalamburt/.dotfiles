@@ -84,7 +84,4 @@ irc() {
     tmux switch-client -t bkground
   fi
 }
-# irssi
-alias irssi='TERM=screen-256color irssi'
-alias weechat='TERM=screen-256color weechat-curses'
 #--------------------------------------------------
