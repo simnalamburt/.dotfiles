@@ -22,3 +22,4 @@ ln -s ~/.rcm/.gitconfig-1.7.x ~/.gitconfig
 * simnalamburt@hyeonme
 * server@sodrak
 * upnl@sodrak
+* simnalamburt@uriel
