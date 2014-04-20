@@ -4,3 +4,5 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitglobalignore
+[color]
+	ui = auto
