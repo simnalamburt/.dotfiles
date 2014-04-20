@@ -8,12 +8,15 @@ git clone --recursive https://github.com/simnalamburt/rcm.git ~/.rcm
 # Take anything you need ...
 ln -s ~/.rcm/.ssh ~/
 ln -s ~/.rcm/.vimrc ~/
-ln -s ~/.rcm/custom.zsh $ZSH/custom/
 ln -s ~/.rcm/.gitglobalignore ~/
 
 ln -s ~/.rcm/.gitconfig ~/
- # or
+# .. or ..
 ln -s ~/.rcm/.gitconfig-1.7.x ~/.gitconfig
+
+ln -s ~/.rcm/custom.zsh $ZSH/custom/
+# optional
+ln -s ~/.rcm/nocontext.zsh $ZSH/custom/
 ...
 ```
 
