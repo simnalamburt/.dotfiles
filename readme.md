@@ -14,9 +14,10 @@ ln -s ~/.rcm/.gitconfig ~
 # .. or ..
 ln -s ~/.rcm/.gitconfig-1.7.x ~/.gitconfig
 
-ln -s ~/.rcm/custom.zsh $ZSH/custom
+ln -s ~/.rcm/.zshrc ~
+ln -s ~/.rcm/custom.zsh ~/.oh-my-zsh/custom
 # optional
-ln -s ~/.rcm/nocontext.zsh $ZSH/custom
+ln -s ~/.rcm/nocontext.zsh ~/.oh-my-zsh/custom
 ...
 ```
 
