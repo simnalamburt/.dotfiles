@@ -8,6 +8,8 @@ git clone --recursive https://github.com/simnalamburt/rcm.git ~/.rcm
 # Take anything you need ...
 ln -s ~/.rcm/.ssh ~
 ln -s ~/.rcm/.vimrc ~
+ln -s ~/.rcm/.gitglobalignore ~
+
 ln -s ~/.rcm/.gitconfig ~
  # or
 ln -s ~/.rcm/.gitconfig-1.7.x ~/.gitconfig

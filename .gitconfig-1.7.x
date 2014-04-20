@@ -3,4 +3,4 @@
 	email = simnalamburt@gmail.com
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitglobalignore
