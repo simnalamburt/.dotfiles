@@ -7,10 +7,6 @@ Path() {
 
 Path "$HOME/.rvm/bin"
 Path "$HOME/.local/bin"
-if [[ $(uname -s) == "CYGWIN_NT"* ]]; then
-  Path "/cygdrive/c/Windows"
-  Path "/cygdrive/c/Windows/system32"
-fi
 export PATH
 
 # Set $TERM variable
