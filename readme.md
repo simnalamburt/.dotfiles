@@ -9,7 +9,8 @@ git clone --recursive https://github.com/simnalamburt/rcm.git ~/.rcm
 ln -s ~/.rcm/.ssh ~
 ln -s ~/.rcm/.vimrc ~
 ln -s ~/.rcm/.gitconfig ~
-ln -s ~/.rcm/.*rc ~
+ # or
+ln -s ~/.rcm/.gitconfig-1.7.x ~/.gitconfig
 ...
 ```
 
@@ -20,3 +21,4 @@ ln -s ~/.rcm/.*rc ~
 * simnalamburt@lioncage
 * simnalamburt@hyeonme
 * server@sodrak
+* upnl@sodrak
