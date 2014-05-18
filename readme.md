@@ -30,3 +30,4 @@ ln -s ~/.rcm/nocontext.zsh ~/.oh-my-zsh/custom
 * server@sodrak
 * upnl@sodrak
 * simnalamburt@uriel
+* toor@mimosa.snucse.org
