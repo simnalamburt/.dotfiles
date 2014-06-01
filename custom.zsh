@@ -1,13 +1,17 @@
 # Edit $PATH variable
 Path() {
-  if [[ :$PATH: != *:"$1":* ]] ; then
-    export PATH=$PATH:$1
+  if [ -d "$1" ]; then
+    if [[ :"$PATH": != *:"$1":* ]]; then
+      export PATH="$PATH:$1"
+    fi
   fi
 }
 
 PathStrongly() {
-  if [[ :$PATH: != *:"$1":* ]] ; then
-    export PATH=$1:$PATH
+  if [ -d "$1" ]; then
+    if [[ :"$PATH": != *:"$1":* ]]; then
+      export PATH="$1:$PATH"
+    fi
   fi
 }
 
