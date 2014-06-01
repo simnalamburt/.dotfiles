@@ -15,6 +15,7 @@ PathStrongly() {
   fi
 }
 
+PathStrongly "/usr/local/opt/ruby/bin"
 PathStrongly "$HOME/.rvm/bin"
 Path         "$HOME/.local/bin"
 
