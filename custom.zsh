@@ -13,8 +13,9 @@ path_weak() {
   fi
 }
 
-path "$HOME/.rvm/bin"
+path "/usr/local/bin"
 path "$HOME/.local/bin"
+path "$HOME/.rvm/bin"
 
 # Set $TERM variable
 export TERM=xterm-256color
