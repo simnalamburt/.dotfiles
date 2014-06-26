@@ -1,5 +1,11 @@
 # Edit $PATH variable
-Path() {
+path() {
+  if [ -d "$1" ]; then
+    export PATH="$1:$PATH"
+  fi
+}
+
+path_weak() {
   if [ -d "$1" ]; then
     if [[ :"$PATH": != *:"$1":* ]]; then
       export PATH="$PATH:$1"
@@ -7,16 +13,8 @@ Path() {
   fi
 }
 
-PathStrongly() {
-  if [ -d "$1" ]; then
-    if [[ :"$PATH": != *:"$1":* ]]; then
-      export PATH="$1:$PATH"
-    fi
-  fi
-}
-
-PathStrongly "$HOME/.rvm/bin"
-PathStrongly "$HOME/.local/bin"
+path "$HOME/.rvm/bin"
+path "$HOME/.local/bin"
 
 # Set $TERM variable
 export TERM=xterm-256color
