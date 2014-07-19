@@ -22,6 +22,14 @@ set autoindent
 set smartindent
 filet plugin indent on
 
+" Hilight trailing whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " Tab configuration
 " (Visual Mode) Tab -> '>', '<'
 set tabstop=2
