@@ -30,6 +30,10 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Easy navigation
+map <up> gk
+map <down> gj
+
 " Tab configuration
 " (Visual Mode) Tab -> '>', '<'
 set tabstop=2
