@@ -17,5 +17,8 @@ path "/usr/local/bin"
 path "$HOME/.local/bin"
 path "$HOME/.rvm/bin"
 
+# Set a rvm env variable
+export rvmsudo_secure_path=0
+
 # Set $TERM variable
 export TERM=xterm-256color
