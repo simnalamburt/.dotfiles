@@ -32,3 +32,4 @@ ln -s ~/.rcm/nocontext.zsh ~/.oh-my-zsh/custom
 * upnl@sodrak
 * simnalamburt@uriel
 * toor@mimosa.snucse.org
+* simnalamburt@byline.is
