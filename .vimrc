@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " Base Configuration
 set nocompatible
 set backspace=indent,eol,start
