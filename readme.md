@@ -21,12 +21,12 @@ ln -s ~/.rcm/nocontext.zsh ~/.oh-my-zsh/custom
 
 ### 사용되고 있는곳
 
-* Hyeon@HyeonLaptop (Cygwin)
-* HyeonKim@hyeonmac
-* simnalamburt@lioncage
-* simnalamburt@hyeonme
-* server@sodrak
-* upnl@sodrak
-* simnalamburt@uriel
+* Hyeon@*HyeonLaptop* (Cygwin)
+* HyeonKim@*hyeonmac*
+* simnalamburt@hyeon.me
+* server@upnl.org
+* upnl@upnl.org
+* git@upnl.org
+* simnalamburt@uriel.upnl.org
 * toor@mimosa.snucse.org
 * simnalamburt@byline.is
