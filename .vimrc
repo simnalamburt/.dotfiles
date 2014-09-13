@@ -32,6 +32,10 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Highlight for 80 column layout concerns
+highlight ColorColumn ctermbg=black guibg=black
+set colorcolumn=+1,+2,+3
+
 " Easy navigation
 map <up> gk
 map <down> gj
