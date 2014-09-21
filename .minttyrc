@@ -35,3 +35,5 @@ SwitchShortcuts=no
 AltFnShortcuts=no
 Scrollbar=none
 FontIsBold=no
+ClicksTargetApp=no
+ClickTargetMod=off
