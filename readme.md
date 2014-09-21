@@ -3,23 +3,25 @@ Run Commands Manager
 
 ### 사용법
 ```bash
-git clone --recursive https://github.com/simnalamburt/rcm.git ~/.rcm
-git clone --recursive git@github.com:simnalamburt/rcm.git ~/.rcm
+cd ~
 
-ln -s ~/.rcm/.ssh ~
-ln -s ~/.rcm/.vim ~
-ln -s ~/.rcm/.vimrc ~
-ln -s ~/.rcm/.gemrc ~
+git clone --recursive https://github.com/simnalamburt/rcm.git .rcm
+git clone --recursive     git@github.com:simnalamburt/rcm.git .rcm
 
-ln -s ~/.rcm/.gitconfig ~
-ln -s ~/.rcm/.gitglobalignore ~
+ln -s .rcm/.ssh .
+ln -s .rcm/.vim .
+ln -s .rcm/.vimrc .
+ln -s .rcm/.gemrc .
 
-ln -s ~/.rcm/.zshrc ~
-ln -s ~/.rcm/custom.zsh ~/.oh-my-zsh/custom
-ln -s ~/.rcm/nocontext.zsh ~/.oh-my-zsh/custom
+ln -s .rcm/.gitconfig .
+ln -s .rcm/.gitglobalignore .
 
-ln -s ~/.rcm/.minttyrc ~
-ln -s ~/.rcm/.inputrc ~
+ln -s .rcm/.zshrc .
+ln -s .rcm/custom.zsh .oh-my-zsh/custom
+ln -s .rcm/nocontext.zsh .oh-my-zsh/custom
+
+ln -s .rcm/.minttyrc .
+ln -s .rcm/.inputrc .
 ```
 
 ### 사용되고 있는곳
