@@ -6,7 +6,7 @@ path() {
 }
 
 path "/usr/local/bin"
-path "$HOME/.local/bin"
+path "$HOME/.tmux-do/bin"
 path "$HOME/.rvm/bin"
 
 # Set a rvm env variable
