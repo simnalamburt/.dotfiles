@@ -17,6 +17,9 @@ ln -s ~/.rcm/.gitglobalignore ~
 ln -s ~/.rcm/.zshrc ~
 ln -s ~/.rcm/custom.zsh ~/.oh-my-zsh/custom
 ln -s ~/.rcm/nocontext.zsh ~/.oh-my-zsh/custom
+
+ln -s ~/.rcm/.minttyrc ~
+ln -s ~/.rcm/.inputrc ~
 ```
 
 ### 사용되고 있는곳
