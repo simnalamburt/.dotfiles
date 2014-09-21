@@ -12,7 +12,6 @@ ln -s ~/.rcm/.gitglobalignore ~
 ln -s ~/.rcm/.gemrc ~
 
 ln -s ~/.rcm/.gitconfig ~
-ln -s ~/.rcm/.gitconfig-1.7.x ~/.gitconfig
 
 ln -s ~/.rcm/.zshrc ~
 ln -s ~/.rcm/custom.zsh ~/.oh-my-zsh/custom
