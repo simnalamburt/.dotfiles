@@ -20,6 +20,7 @@ ln -s .rcm/.zshrc .
 ln -s .rcm/custom.zsh .oh-my-zsh/custom
 ln -s .rcm/nocontext.zsh .oh-my-zsh/custom
 
+ln -s .rcm/.babunrc .
 ln -s .rcm/.minttyrc .
 ln -s .rcm/.inputrc .
 ```
