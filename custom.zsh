@@ -1,4 +1,4 @@
-path() { [[ -d "$1" ]] && export PATH="$1:$PATH" }
+path() { [[ -d "$1" ]] && PATH="$1:$PATH" }
 src()  { [[ -s "$1" ]] && source "$1" }
 
 
@@ -8,10 +8,10 @@ path "$HOME/.tmux-do/bin"         # tmux-do
 # RVM
 path "$HOME/.rvm/bin"
 src  "$HOME/.rvm/scripts/rvm"
-export rvmsudo_secure_path=0
+rvmsudo_secure_path=0
 
-# Set a $TERM variable
-export TERM=xterm-256color
+# Colorful Terminal
+TERM=xterm-256color
 
 # OCaml
 alias ml='ledit ocaml'
