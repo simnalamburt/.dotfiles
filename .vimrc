@@ -8,7 +8,6 @@ set enc=utf-8
 " My Configuration
 colorscheme elflord
 syntax on
-set number
 set ruler
 set history=256
 
@@ -25,7 +24,7 @@ set smartindent
 filet plugin indent on
 
 " Highlight trailing whitespaces
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
@@ -33,9 +32,16 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Decoration for 80 column layout concerns
-highlight ColorColumn ctermbg=black guibg=black
 set textwidth=80
 set colorcolumn=+1,+2,+3
+highlight ColorColumn ctermbg=black
+
+" Decoration for line number column
+set number
+set cursorline
+highlight LineNr ctermbg=black
+highlight CursorLine cterm=none
+highlight CursorLineNr ctermfg=white ctermbg=black
 
 " Easy navigation
 map <up> gk
