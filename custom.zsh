@@ -13,5 +13,6 @@ export rvmsudo_secure_path=0
 # Colorful Terminal
 export TERM=xterm-256color
 
-# OCaml
+# Aliases
 alias ml='ledit ocaml'
+alias py=python3
