@@ -4,3 +4,9 @@
 [submodule ".vim/bundle/Vundle.vim"]
 	path = .vim/bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim.git
+[submodule ".vim/bundle/vim-ls"]
+	path = .vim/bundle/vim-ls
+	url = git://github.com/gkz/vim-ls.git
+[submodule ".vim/bundle/vim-slim"]
+	path = .vim/bundle/vim-slim
+	url = git://github.com/slim-template/vim-slim.git
