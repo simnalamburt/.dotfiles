@@ -1,5 +1,16 @@
-" Base Configuration
+" Vundle.vim
 set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+
+call vundle#end()
+filetype plugin indent on
+
+
+" Base Configuration
 set backspace=indent,eol,start
 set enc=utf-8
 
@@ -19,7 +30,6 @@ set startofline
 set cindent
 set autoindent
 set smartindent
-filet plugin indent on
 
 " Highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=red
