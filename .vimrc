@@ -7,6 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'gkz/vim-ls'
 Plugin 'slim-template/vim-slim'
+Plugin 'sophacles/vim-processing'
 
 call vundle#end()
 filetype plugin indent on

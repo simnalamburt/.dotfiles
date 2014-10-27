@@ -1,12 +1,15 @@
 [submodule ".tmux/tmux-powerline"]
 	path = .tmux/tmux-powerline
-	url = https://github.com/simnalamburt/tmux-powerline.git
+	url = git://github.com/simnalamburt/tmux-powerline.git
 [submodule ".vim/bundle/Vundle.vim"]
 	path = .vim/bundle/Vundle.vim
-	url = https://github.com/gmarik/Vundle.vim.git
+	url = git://github.com/gmarik/Vundle.vim.git
 [submodule ".vim/bundle/vim-ls"]
 	path = .vim/bundle/vim-ls
 	url = git://github.com/gkz/vim-ls.git
 [submodule ".vim/bundle/vim-slim"]
 	path = .vim/bundle/vim-slim
 	url = git://github.com/slim-template/vim-slim.git
+[submodule ".vim/bundle/vim-processing"]
+	path = .vim/bundle/vim-processing
+	url = git://github.com/sophacles/vim-processing.git
