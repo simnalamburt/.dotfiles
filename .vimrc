@@ -1,17 +1,37 @@
-" Vundle.vim
+"
+" Vundle
+"
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
+" markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled=1
+
+" livescript
 Plugin 'gkz/vim-ls'
+
+" slim
 Plugin 'slim-template/vim-slim'
+
+" processing
 Plugin 'sophacles/vim-processing'
+
+" rust
+Plugin 'wting/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
 
+
+
+"
+" vimrc
+"
 
 " Base Configuration
 set backspace=indent,eol,start
