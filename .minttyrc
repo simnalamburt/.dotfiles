@@ -41,5 +41,5 @@ ScrollMod=off
 PgUpDnScroll=no
 CopyOnSelect=no
 CtrlShiftShortcuts=no
-BellSound=yes
+BellSound=no
 ConfirmExit=no
