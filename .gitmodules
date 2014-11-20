@@ -1,10 +1,10 @@
 [submodule ".tmux/tmux-powerline"]
-	path = .tmux/tmux-powerline
-	url = git://github.com/simnalamburt/tmux-powerline.git
+  path = .tmux/tmux-powerline
+  url = git://github.com/simnalamburt/tmux-powerline.git
 
 [submodule ".vim/bundle/Vundle.vim"]
-	path = .vim/bundle/Vundle.vim
-	url = git://github.com/gmarik/Vundle.vim.git
+  path = .vim/bundle/Vundle.vim
+  url = git://github.com/gmarik/Vundle.vim.git
 [submodule ".vim/bundle/tabular"]
   path = .vim/bundle/tabular
   url = git://github.com/godlygeek/tabular
@@ -12,14 +12,14 @@
   path = .vim/bundle/vim-markdown
   url = git://github.com/plasticboy/vim-markdown
 [submodule ".vim/bundle/vim-ls"]
-	path = .vim/bundle/vim-ls
-	url = git://github.com/gkz/vim-ls.git
+  path = .vim/bundle/vim-ls
+  url = git://github.com/gkz/vim-ls.git
 [submodule ".vim/bundle/vim-slim"]
-	path = .vim/bundle/vim-slim
-	url = git://github.com/slim-template/vim-slim.git
+  path = .vim/bundle/vim-slim
+  url = git://github.com/slim-template/vim-slim.git
 [submodule ".vim/bundle/vim-processing"]
-	path = .vim/bundle/vim-processing
-	url = git://github.com/sophacles/vim-processing.git
+  path = .vim/bundle/vim-processing
+  url = git://github.com/sophacles/vim-processing.git
 [submodule ".vim/bundle/rust.vim"]
   path = .vim/bundle/rust.vim
   url = git://github.com/wting/rust.vim
