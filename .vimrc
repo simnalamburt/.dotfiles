@@ -7,24 +7,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
-" The NERD tree
 Plugin 'scrooloose/nerdtree'
-
-" markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_disabled=1
-
-" livescript
 Plugin 'gkz/vim-ls'
-
-" slim
 Plugin 'slim-template/vim-slim'
-
-" processing
 Plugin 'sophacles/vim-processing'
-
-" rust
 Plugin 'wting/rust.vim'
 
 call vundle#end()
@@ -45,17 +33,31 @@ colorscheme elflord
 syntax on
 set ruler
 set history=256
-
 set wildmenu
 set showcmd
+set startofline
 set noswapfile
 set nobackup
-set startofline
+set nofoldenable
 
 " Indention
 set cindent
 set autoindent
 set smartindent
+
+" Tab
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+" Search
+set incsearch
+set hlsearch
+set nowrapscan
+
+" Pair matching
+set matchpairs+=<:>
+set showmatch
 
 " Highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=red
@@ -81,19 +83,6 @@ highlight CursorLineNr ctermfg=white ctermbg=black
 map <up> gk
 map <down> gj
 
-" Tab configuration
-" (Visual Mode) Tab -> '>', '<'
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+" Easy indentation
 vmap <Tab> >gv
 vmap <S-Tab> <gv
-
-" Search
-set incsearch
-set hlsearch
-set nowrapscan
-
-" Pair matching
-set matchpairs+=<:>
-set showmatch
