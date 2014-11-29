@@ -91,6 +91,7 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " Search
+set incsearch
 set hlsearch
 set nowrapscan
 
