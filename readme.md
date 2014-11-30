@@ -6,7 +6,7 @@ cd ~
 
 git clone --recursive git@github.com:simnalamburt/rcm.git .rcm
 
-ln -s .rcm/.ssh .
+ln -s ~/.rcm/.ssh/config .ssh
 ln -s .rcm/.vim .
 ln -s .rcm/.vimrc .
 ln -s .rcm/.gemrc .
