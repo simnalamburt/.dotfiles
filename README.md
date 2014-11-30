@@ -1,26 +1,26 @@
-Dotfiles
+dotfiles
 =====
 
 ```bash
 cd ~
 
-git clone --recursive git@github.com:simnalamburt/rcm.git .rcm
+git clone --recursive git@github.com:simnalamburt/dotfiles .dotfiles
 
-ln -s ~/.rcm/.ssh/config .ssh
-ln -s .rcm/.vim .
-ln -s .rcm/.vimrc .
-ln -s .rcm/.gemrc .
+ln -sf ~/.dotfiles/.ssh/config .ssh
+ln -sf .dotfiles/.vim .
+ln -sf .dotfiles/.vimrc .
+ln -sf .dotfiles/.gemrc .
 
-ln -s .rcm/.gitconfig .
-ln -s .rcm/.gitglobalignore .
+ln -sf .dotfiles/.gitconfig .
+ln -sf .dotfiles/.gitglobalignore .
 
-ln -s .rcm/.zshrc .
-ln -s ~/.rcm/custom.zsh .oh-my-zsh/custom
-ln -s ~/.rcm/nocontext.zsh .oh-my-zsh/custom
+ln -sf .dotfiles/.zshrc .
+ln -sf ~/.dotfiles/custom.zsh .oh-my-zsh/custom
+ln -sf ~/.dotfiles/nocontext.zsh .oh-my-zsh/custom
 
-ln -s .rcm/.babunrc .
-ln -s .rcm/.minttyrc .
-ln -s .rcm/.inputrc .
+ln -sf .dotfiles/.babunrc .
+ln -sf .dotfiles/.minttyrc .
+ln -sf .dotfiles/.inputrc .
 ```
 
 * Hyeon@*HyeonLaptop*
