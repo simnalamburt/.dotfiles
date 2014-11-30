@@ -1,12 +1,10 @@
-Run Commands Manager
+Dotfiles
 =====
 
-### 사용법
 ```bash
 cd ~
 
-git clone --recursive https://github.com/simnalamburt/rcm.git .rcm
-git clone --recursive     git@github.com:simnalamburt/rcm.git .rcm
+git clone --recursive git@github.com:simnalamburt/rcm.git .rcm
 
 ln -s .rcm/.ssh .
 ln -s .rcm/.vim .
@@ -25,9 +23,7 @@ ln -s .rcm/.minttyrc .
 ln -s .rcm/.inputrc .
 ```
 
-### 사용되고 있는곳
-
-* Hyeon@*HyeonLaptop* (Cygwin)
+* Hyeon@*HyeonLaptop*
 * HyeonKim@*hyeonmac*
 * simnalamburt@hyeon.me
 * server@upnl.org
@@ -35,4 +31,3 @@ ln -s .rcm/.inputrc .
 * git@upnl.org
 * simnalamburt@uriel.upnl.org
 * toor@mimosa.snucse.org
-* simnalamburt@byline.is
