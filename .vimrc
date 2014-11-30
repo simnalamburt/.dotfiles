@@ -104,7 +104,7 @@ nnoremap <leader>g :GundoToggle<CR>
 let g:airline_powerline_fonts = 1
 
 " vim-indent-guides
-nnoremap <leader>i <Plug>IndentGuidesToggle
+nmap <leader>i <Plug>IndentGuidesToggle
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
