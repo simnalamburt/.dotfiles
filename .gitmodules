@@ -17,6 +17,9 @@
 [submodule ".vim/bundle/vim-indent-guides"]
   path = .vim/bundle/vim-indent-guides
   url = git://github.com/nathanaelkane/vim-indent-guides
+[submodule ".vim/bundle/vim-better-whitespace"]
+  path = .vim/bundle/vim-better-whitespace
+  url = git://github.com/ntpeters/vim-better-whitespace
 [submodule ".vim/bundle/tabular"]
   path = .vim/bundle/tabular
   url = git://github.com/godlygeek/tabular

@@ -3,7 +3,7 @@
 "
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
@@ -11,7 +11,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
 Plugin 'bling/vim-airline'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
+
 Plugin 'plasticboy/vim-markdown'
 Plugin 'pangloss/vim-javascript'
 Plugin 'gkz/vim-ls'
@@ -76,14 +78,6 @@ noremap <down> gj
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" Highlight trailing whitespaces
-highlight ExtraWhitespace ctermbg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
 " Decoration for 80 column layout concerns
 set textwidth=80
 set colorcolumn=+1,+2,+3
@@ -119,6 +113,9 @@ autocmd VimEnter,Colorscheme *
 \   highlight IndentGuidesOdd  ctermbg=black    |
 \   highlight IndentGuidesEven ctermbg=black    |
 \ endif
+
+" vim-better-whitespace
+let g:strip_whitespace_on_save = 1
 
 " vim-javascript
 let g:javascript_conceal_function   = "ƒ"
