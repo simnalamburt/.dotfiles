@@ -33,13 +33,19 @@ filetype plugin indent on
 " Basic configs
 set enc=utf-8
 set backspace=indent,eol,start
+set history=1024
+set laststatus=2
+set pastetoggle=<F8>
+set scrolloff=3
+set undolevels=1024
+set lazyredraw
 set ruler
-set history=256
-set wildmenu
 set startofline
-set noswapfile
+set splitbelow
 set nobackup
 set nofoldenable
+set noswapfile
+set nowrap
 syntax on
 colorscheme elflord
 
@@ -54,6 +60,8 @@ set shiftwidth=2
 set expandtab
 
 " Searching
+set ignorecase
+set smartcase
 set incsearch
 set hlsearch
 set nowrapscan
@@ -61,6 +69,18 @@ set nowrapscan
 " Pair matching
 set matchpairs+=<:>
 set showmatch
+highlight MatchParen ctermfg=black ctermbg=lightgreen
+
+" Wildmenu settings
+set wildmenu
+set wildmode=full
+highlight StatusLine ctermbg=darkgray ctermfg=234
+highlight WildMenu   ctermfg=white    ctermbg=234
+
+" listchars for whitespaces
+set list
+set listchars=tab:›\ ,extends:»,precedes:«
+highlight NonText ctermfg=darkblue
 
 " Concealing
 set concealcursor=nc
