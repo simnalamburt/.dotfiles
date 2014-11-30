@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'sjl/gundo.vim'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -19,18 +20,6 @@ Plugin 'wting/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
-
-" vim-airline
-let g:airline_powerline_fonts = 1
-
-" vim-javascript
-let g:javascript_conceal_function   = "ƒ"
-let g:javascript_conceal_null       = "ø"
-let g:javascript_conceal_this       = "@"
-let g:javascript_conceal_return     = "⇚"
-let g:javascript_conceal_undefined  = "¿"
-let g:javascript_conceal_NaN        = "ℕ"
-let g:javascript_conceal_prototype  = "¶"
 
 
 
@@ -75,13 +64,16 @@ set concealcursor=nc
 set conceallevel=2
 highlight Conceal ctermfg=darkblue ctermbg=NONE
 
+" Key mapping
+let mapleader = ","
+
 " Easy navigation
-map <up> gk
-map <down> gj
+noremap <up> gk
+noremap <down> gj
 
 " Easy indentation
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " Highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=red
@@ -102,3 +94,19 @@ set cursorline
 highlight LineNr ctermbg=black
 highlight CursorLine cterm=none
 highlight CursorLineNr ctermfg=white ctermbg=black
+
+" gundo.vim
+let g:gundo_right = 1
+nnoremap <leader>g :GundoToggle<CR>
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+
+" vim-javascript
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "⇚"
+let g:javascript_conceal_undefined  = "¿"
+let g:javascript_conceal_NaN        = "ℕ"
+let g:javascript_conceal_prototype  = "¶"
