@@ -17,6 +17,9 @@
 [submodule ".vim/bundle/vim-markdown"]
   path = .vim/bundle/vim-markdown
   url = git://github.com/plasticboy/vim-markdown
+[submodule ".vim/bundle/vim-javascript"]
+  path = .vim/bundle/vim-javascript
+  url = git://github.com/pangloss/vim-javascript
 [submodule ".vim/bundle/vim-ls"]
   path = .vim/bundle/vim-ls
   url = git://github.com/gkz/vim-ls
