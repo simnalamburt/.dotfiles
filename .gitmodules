@@ -14,6 +14,9 @@
 [submodule ".vim/bundle/vim-airline"]
   path = .vim/bundle/vim-airline
   url = git://github.com/bling/vim-airline
+[submodule ".vim/bundle/vim-indent-guides"]
+  path = .vim/bundle/vim-indent-guides
+  url = git://github.com/nathanaelkane/vim-indent-guides
 [submodule ".vim/bundle/tabular"]
   path = .vim/bundle/tabular
   url = git://github.com/godlygeek/tabular

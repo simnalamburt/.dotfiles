@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sjl/gundo.vim'
 Plugin 'bling/vim-airline'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'pangloss/vim-javascript'
@@ -101,6 +102,23 @@ nnoremap <leader>g :GundoToggle<CR>
 
 " vim-airline
 let g:airline_powerline_fonts = 1
+
+" vim-indent-guides
+nnoremap <leader>i <Plug>IndentGuidesToggle
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_start_level = 2
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:indent_guides_default_mapping = 0
+autocmd VimEnter,Colorscheme *
+\ if &softtabstop < 4                           |
+\   highlight IndentGuidesOdd  ctermbg=NONE     |
+\   highlight IndentGuidesEven ctermbg=black    |
+\ else                                          |
+\   let g:indent_guides_guide_size = 1          |
+\   highlight IndentGuidesOdd  ctermbg=black    |
+\   highlight IndentGuidesEven ctermbg=black    |
+\ endif
 
 " vim-javascript
 let g:javascript_conceal_function   = "ƒ"
