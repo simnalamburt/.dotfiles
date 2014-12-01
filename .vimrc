@@ -32,11 +32,11 @@ filetype plugin indent on
 "
 set enc=utf-8
 set backspace=indent,eol,start
-set history=1024
+set diffopt+=iwhite
 set laststatus=2
 set pastetoggle=<F8>
 set scrolloff=3
-set undolevels=1024
+set switchbuf+=usetab,split
 set ruler
 set startofline
 set splitbelow
@@ -47,6 +47,10 @@ set noswapfile
 set nowrap
 syntax on
 colorscheme elflord
+
+" History
+set history=1024
+set undolevels=1024
 
 " Indention
 set cindent
@@ -106,6 +110,18 @@ nnoremap <silent> <esc>k :resize +3<CR>
 nnoremap <silent> <esc>j :resize -3<CR>
 nnoremap <silent> <esc>l :vertical resize +5<CR>
 
+" Tab navigations
+nnoremap <esc>t   :tabnew<CR>
+nnoremap <esc>1   1gt
+nnoremap <esc>2   2gt
+nnoremap <esc>3   3gt
+nnoremap <esc>4   4gt
+nnoremap <esc>5   5gt
+nnoremap <esc>6   6gt
+nnoremap <esc>7   7gt
+nnoremap <esc>8   8gt
+nnoremap <esc>9   9gt
+
 " Decoration for 80 column layout concerns
 set textwidth=80
 set colorcolumn=+1,+2,+3
@@ -124,6 +140,7 @@ nnoremap <leader>g :GundoToggle<CR>
 
 " vim-airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " vim-indent-guides
 nmap <leader>i <Plug>IndentGuidesToggle
