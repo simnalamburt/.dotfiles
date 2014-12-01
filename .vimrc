@@ -80,7 +80,8 @@ highlight WildMenu   ctermfg=white    ctermbg=234
 " listchars for whitespaces
 set list
 set listchars=tab:›\ ,extends:»,precedes:«
-highlight NonText ctermfg=darkblue
+highlight NonText    ctermfg=darkblue
+highlight SpecialKey ctermfg=darkblue
 
 " Concealing
 set concealcursor=nc
