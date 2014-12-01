@@ -29,8 +29,6 @@ filetype plugin indent on
 "
 " vimrc
 "
-
-" Basic configs
 set enc=utf-8
 set backspace=indent,eol,start
 set history=1024
@@ -38,12 +36,12 @@ set laststatus=2
 set pastetoggle=<F8>
 set scrolloff=3
 set undolevels=1024
-set lazyredraw
 set ruler
 set startofline
 set splitbelow
 set nobackup
 set nofoldenable
+set noshowmode
 set noswapfile
 set nowrap
 syntax on
