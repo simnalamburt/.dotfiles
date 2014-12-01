@@ -99,6 +99,14 @@ noremap <down> gj
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+" Easy splitting & resizing
+nnoremap <silent> <esc>- :split<CR>
+nnoremap <silent> <esc>\ :vertical split<CR>
+nnoremap <silent> <esc>h :vertical resize -5<CR>
+nnoremap <silent> <esc>k :resize +3<CR>
+nnoremap <silent> <esc>j :resize -3<CR>
+nnoremap <silent> <esc>l :vertical resize +5<CR>
+
 " Decoration for 80 column layout concerns
 set textwidth=80
 set colorcolumn=+1,+2,+3
