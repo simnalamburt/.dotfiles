@@ -43,7 +43,7 @@
   url = git://github.com/sophacles/vim-processing
 [submodule ".vim/bundle/rust.vim"]
   path = .vim/bundle/rust.vim
-  url = git://github.com/wting/rust.vim
+  url = git://github.com/simnalamburt/rust.vim
 [submodule ".vim/bundle/nginx-vim-syntax"]
   path = .vim/bundle/nginx-vim-syntax
   url = git://github.com/evanmiller/nginx-vim-syntax

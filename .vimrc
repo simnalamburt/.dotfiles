@@ -20,7 +20,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'gkz/vim-ls'
 Plugin 'slim-template/vim-slim'
 Plugin 'sophacles/vim-processing'
-Plugin 'wting/rust.vim'
+Plugin 'simnalamburt/rust.vim'
 Plugin 'evanmiller/nginx-vim-syntax'
 
 call vundle#end()
