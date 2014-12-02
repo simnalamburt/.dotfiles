@@ -3,9 +3,11 @@ dotfiles
 
 ```bash
 cd ~
+git clone --depth=1 git@github.com:simnalamburt/dotfiles .dotfiles
+cd .dotfiles
+git submodule update --init --depth=1 --recursive
 
-git clone --recursive git@github.com:simnalamburt/dotfiles .dotfiles
-
+cd ~
 ln -sf .dotfiles/.vim .
 ln -sf .dotfiles/.vimrc .
 ln -sf .dotfiles/.zshrc .
