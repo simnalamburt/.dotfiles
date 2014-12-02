@@ -33,4 +33,3 @@ ln -sf .dotfiles/.inputrc .
 * upnl@upnl.org
 * git@upnl.org
 * simnalamburt@uriel.upnl.org
-* toor@mimosa.snucse.org
