@@ -4,6 +4,7 @@ dotfiles
 ```bash
 cd ~
 git clone --depth=1 git@github.com:simnalamburt/dotfiles .dotfiles
+git clone --depth=1 git://github.com/simnalamburt/dotfiles .dotfiles
 cd .dotfiles
 git submodule update --init --depth=1 --recursive
 
