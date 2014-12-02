@@ -21,6 +21,7 @@ Plugin 'gkz/vim-ls'
 Plugin 'slim-template/vim-slim'
 Plugin 'sophacles/vim-processing'
 Plugin 'wting/rust.vim'
+Plugin 'evanmiller/nginx-vim-syntax'
 
 call vundle#end()
 filetype plugin indent on
