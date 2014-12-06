@@ -21,10 +21,10 @@ export rvmsudo_secure_path=0
 alias ml='ledit ocaml'
 alias py=python3
 
-path() { [[ -d "$1" ]] && export PATH="$1:$PATH" }
+path() { if [[ -d "$1" ]]; then; export PATH="$1:$PATH"; fi }
 path "/usr/local/bin"             # OS X
 path "$HOME/.tmux-do/bin"         # tmux-do
 path "$HOME/.rvm/bin"             # rvm
 
-src()  { [[ -s "$1" ]] && source "$1" }
+src()  { if [[ -s "$1" ]]; then; source "$1"; fi }
 src  "$HOME/.rvm/scripts/rvm"
