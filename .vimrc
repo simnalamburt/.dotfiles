@@ -95,6 +95,9 @@ highlight Conceal ctermfg=darkblue ctermbg=NONE
 " Key mapping
 let mapleader = ","
 
+" Easy file save
+nnoremap <silent> S :update<CR>
+
 " Easy navigation
 noremap <up> gk
 noremap <down> gj
