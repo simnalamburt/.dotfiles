@@ -107,12 +107,12 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 " Easy splitting & resizing
-nnoremap <silent> <esc>- :split<CR>
-nnoremap <silent> <esc>\ :vertical split<CR>
-nnoremap <silent> <esc>H :vertical resize -5<CR>
-nnoremap <silent> <esc>H :resize -3<CR>
-nnoremap <silent> <esc>J :resize +3<CR>
-nnoremap <silent> <esc>L :vertical resize +5<CR>
+nnoremap <silent> <C-_> :split<CR>
+nnoremap <silent> <C-\> :vertical split<CR>
+nnoremap <silent> <C-h> :vertical resize -5<CR>
+nnoremap <silent> <C-j> :resize -3<CR>
+nnoremap <silent> <C-k> :resize +3<CR>
+nnoremap <silent> <C-l> :vertical resize +5<CR>
 
 " Tab navigations
 nnoremap <esc>t   :tabnew<CR>
