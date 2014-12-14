@@ -13,7 +13,7 @@
   url = git://github.com/scrooloose/nerdtree
 [submodule ".vim/bundle/gundo.vim"]
   path = .vim/bundle/gundo.vim
-  url = git://github.com/sjl/gundo.vim
+  url = git://github.com/simnalamburt/gundo.vim
 [submodule ".vim/bundle/vim-airline"]
   path = .vim/bundle/vim-airline
   url = git://github.com/bling/vim-airline
