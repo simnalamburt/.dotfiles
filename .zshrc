@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 #
 export TERM=xterm-256color
 export DEFAULT_USER="$USER"
+export RUST_BACKTRACE=1
 
 cmd() { if eval "hash $2" 2>/dev/null; then; alias $1=$2; fi }
 cmd ml 'ledit ocaml'
