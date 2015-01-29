@@ -41,9 +41,9 @@
 [submodule ".vim/bundle/vim-processing"]
   path = .vim/bundle/vim-processing
   url = git://github.com/sophacles/vim-processing
-[submodule ".vim/bundle/vim-rust"]
-  path = .vim/bundle/vim-rust
-  url = git://github.com/simnalamburt/vim-rust
+[submodule ".vim/bundle/rust.vim"]
+  path = .vim/bundle/rust.vim
+  url = git://github.com/rust-lang/rust.vim
 [submodule ".vim/bundle/nginx-vim-syntax"]
   path = .vim/bundle/nginx-vim-syntax
   url = git://github.com/evanmiller/nginx-vim-syntax
