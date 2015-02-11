@@ -47,3 +47,6 @@
 [submodule ".vim/bundle/nginx-vim-syntax"]
   path = .vim/bundle/nginx-vim-syntax
   url = git://github.com/evanmiller/nginx-vim-syntax
+[submodule ".vim/bundle/vim-glsl"]
+  path = .vim/bundle/vim-glsl
+  url = git://github.com/tikhomirov/vim-glsl
