@@ -11,6 +11,8 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'godlygeek/tabular'
 
+Plug 'junegunn/vim-github-dashboard'
+
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'gkz/vim-ls'
