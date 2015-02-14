@@ -27,3 +27,6 @@ path "/usr/local/bin"
 path "$HOME/.tmux-do/bin"
 
 unset -f cmd path
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

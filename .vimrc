@@ -3,19 +3,12 @@
 "
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'simnalamburt/vim-mundo'
+" Beauty
+Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'godlygeek/tabular'
-Plug 'mhinz/vim-startify'
-Plug 'jistr/vim-nerdtree-tabs'
 
-
-Plug 'junegunn/vim-github-dashboard'
-
+" Syntax
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'gkz/vim-ls'
@@ -25,8 +18,22 @@ Plug 'rust-lang/rust.vim'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'tikhomirov/vim-glsl'
 
-call plug#end()
+" General
+Plug 'tpope/vim-sensible'
+Plug 'mhinz/vim-startify'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'simnalamburt/vim-mundo'
+Plug 'junegunn/vim-github-dashboard'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
+" Completion
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+
+call plug#end()
 
 
 "
@@ -98,8 +105,14 @@ highlight Conceal ctermfg=darkblue ctermbg=NONE
 " Key mapping
 let mapleader = ","
 
+" Easy command-line mode
+nnoremap ; :
+
 " Easy file save
 nnoremap <silent> S :update<CR>
+
+" Easy escaping
+inoremap jk <Esc>
 
 " Easy navigation
 noremap <up> gk
