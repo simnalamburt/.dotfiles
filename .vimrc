@@ -1,31 +1,26 @@
 "
 " Vundle
 "
-set nocompatible
-filetype off
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'simnalamburt/vim-mundo'
-Plugin 'bling/vim-airline'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'godlygeek/tabular'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'simnalamburt/vim-mundo'
+Plug 'bling/vim-airline'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'godlygeek/tabular'
 
-Plugin 'plasticboy/vim-markdown'
-Plugin 'pangloss/vim-javascript'
-Plugin 'gkz/vim-ls'
-Plugin 'slim-template/vim-slim'
-Plugin 'sophacles/vim-processing'
-Plugin 'rust-lang/rust.vim'
-Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'tikhomirov/vim-glsl'
+Plug 'plasticboy/vim-markdown'
+Plug 'pangloss/vim-javascript'
+Plug 'gkz/vim-ls'
+Plug 'slim-template/vim-slim'
+Plug 'sophacles/vim-processing'
+Plug 'rust-lang/rust.vim'
+Plug 'evanmiller/nginx-vim-syntax'
+Plug 'tikhomirov/vim-glsl'
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 
 
@@ -43,11 +38,13 @@ set ruler
 set startofline
 set splitbelow
 set nobackup
+set nocompatible
 set nofoldenable
 set noshowmode
 set noswapfile
 set nowrap
 syntax on
+filetype plugin indent on
 colorscheme elflord
 
 " History

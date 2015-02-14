@@ -11,7 +11,6 @@ git submodule update --init --depth=1 --recursive
 cd ~
 ln -sf .dotfiles/.vim .
 ln -sf .dotfiles/.vimrc .
-ln -sf .dotfiles/.vimrc .nvimrc
 ln -sf .dotfiles/.zshrc .
 ln -sf .dotfiles/.gemrc .
 ln -sf .dotfiles/.gitconfig .
