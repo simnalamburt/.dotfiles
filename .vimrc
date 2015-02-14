@@ -1,15 +1,18 @@
 "
-" Vundle
+" vim-plug
 "
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 Plug 'simnalamburt/vim-mundo'
 Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'godlygeek/tabular'
+Plug 'mhinz/vim-startify'
+Plug 'jistr/vim-nerdtree-tabs'
+
 
 Plug 'junegunn/vim-github-dashboard'
 
@@ -145,6 +148,7 @@ nnoremap <leader>g :GundoToggle<CR>
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " vim-indent-guides
 nmap <leader>i <Plug>IndentGuidesToggle
