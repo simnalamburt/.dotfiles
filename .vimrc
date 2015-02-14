@@ -169,3 +169,6 @@ autocmd VimEnter,Colorscheme *
 
 " vim-better-whitespace
 let g:strip_whitespace_on_save = 1
+
+" vim-github-dashboard
+let g:github_dashboard = { 'username': 'simnalamburt' }
