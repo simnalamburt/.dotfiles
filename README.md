@@ -14,7 +14,7 @@ ln -sf .dotfiles/.vimrc .
 ln -sf .dotfiles/.zshrc .
 ln -sf .dotfiles/.gemrc .
 ln -sf .dotfiles/.gitconfig .
-ln -sf .dotfiles/.gitglobalignore .
+ln -sf .dotfiles/.gitexclude .
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
 ln -sf .dotfiles/.tmux .

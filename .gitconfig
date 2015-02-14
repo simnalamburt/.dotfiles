@@ -3,7 +3,7 @@
 	email = simnalamburt@gmail.com
 [core]
 	editor = vim
-	excludesfile = ~/.gitglobalignore
+	excludesfile = ~/.gitexclude
 [color]
 	ui = auto
 [push]
