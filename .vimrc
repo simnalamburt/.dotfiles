@@ -35,7 +35,7 @@ Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
 
 " Completion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 
 call plug#end()
 
