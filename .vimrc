@@ -30,6 +30,10 @@ Plug 'godlygeek/tabular'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
+" Blink
+Plug 'rhysd/clever-f.vim'
+Plug 'Lokaltog/vim-easymotion'
+
 " Completion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 
@@ -185,3 +189,11 @@ let g:strip_whitespace_on_save = 1
 
 " vim-github-dashboard
 let g:github_dashboard = { 'username': 'simnalamburt' }
+
+" clever-f.vim
+let g:clever_f_across_no_line = 1
+let g:clever_f_smart_case = 1
+
+" vim-easymotion
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
