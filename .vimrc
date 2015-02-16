@@ -113,6 +113,9 @@ let mapleader = ","
 " Easy command-line mode
 nnoremap ; :
 
+" Easy newline insert
+nnoremap <CR> o<Esc>
+
 " Easy file save
 nnoremap <silent> S :update<CR>
 
