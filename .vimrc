@@ -36,6 +36,7 @@ Plug 'Lokaltog/vim-easymotion'
 
 " Completion
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plug 'phildawes/racer', { 'do': 'cargo build --release && git clone --depth=1 https://github.com/rust-lang/rust.git ~/.vim/plugged/rust' }
 
 call plug#end()
 
@@ -197,3 +198,11 @@ let g:clever_f_smart_case = 1
 " vim-easymotion
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+
+" racer
+set hidden
+let g:racer_cmd = $HOME."/.vim/plugged/racer/target/release/racer"
+let $RUST_SRC_PATH=$HOME."/.vim/plugged/rust/src/"
+inoremap <C-@> <C-x><C-o>
+inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
+inoremap <expr> <C-k> pumvisible() ? '<C-p>' : '<C-k>'
