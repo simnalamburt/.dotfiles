@@ -77,6 +77,20 @@ lldb    | 설명
 `help`  | 도움
 `run`   | 실행
 
+### Configure power button action
+
+```
+# /etc/systemd/login.conf
+HandlePowerKey=ignore
+HandleSuspendKey=ignore
+HandleHibernateKey=ignore
+HandleLidSwitch=ignore
+```
+
+```sh
+sudo restart systemd-logind
+```
+
 ### tmux
 [tmux 입문 가이드](http://nodeqa.com/nodejs_ref/99)
 ```
