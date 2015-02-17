@@ -91,6 +91,10 @@ HandleLidSwitch=ignore
 sudo restart systemd-logind
 ```
 
+### Customize message of the day
+
+Go `/etc/update-motd.d/`
+
 ### tmux
 [tmux 입문 가이드](http://nodeqa.com/nodejs_ref/99)
 ```
