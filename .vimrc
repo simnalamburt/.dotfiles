@@ -206,6 +206,5 @@ omap / <Plug>(easymotion-tn)
 set hidden
 let g:racer_cmd = $HOME."/.vim/plugged/racer/target/release/racer"
 let $RUST_SRC_PATH=$HOME."/.vim/plugged/rust/src/"
-inoremap <C-@> <C-x><C-o>
 inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
 inoremap <expr> <C-k> pumvisible() ? '<C-p>' : '<C-k>'
