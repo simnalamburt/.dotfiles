@@ -32,8 +32,9 @@ Arch Linux
 
     ```
     # /etc/ssh/sshd_config
-    PasswordAuthentication no
     PermitRootLogin no
+    PasswordAuthentication no
+    PrintLastLog no
     ```
 
 1.  [Disable lid sleep](http://unix.stackexchange.com/a/52645)
