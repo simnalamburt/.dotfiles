@@ -57,3 +57,4 @@ Arch Linux
 * bash-completion
 * openssh
 * vim, git, zsh
+* tmux
