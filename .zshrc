@@ -18,11 +18,11 @@ export RUST_BACKTRACE=1
 cmd() { if eval "hash $2" 2>/dev/null; then; alias $1=$2; fi }
 cmd ml 'ledit ocaml'
 
-path() { if [[ -d "$1" ]]; then; export PATH="$1:$PATH"; fi }
+path() { if [ -d "$1" ]; then; export PATH="$1:$PATH"; fi }
 path "/usr/local/bin"
 path "$HOME/.tmux-do/bin"
 
 unset -f cmd path
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
