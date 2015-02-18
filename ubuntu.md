@@ -77,48 +77,27 @@ lldb    | 설명
 `help`  | 도움
 `run`   | 실행
 
-### Configure power button action
+[tmux][]                    | 설명
+----------------------------|--------
+$ tmux new                  | 세션 생성
+$ tmux ls                   | 세션 목록
+$ tmux attach [-t <이름>]   | 세션에 attatch
+^a d                        | 세션에서 detach
+^a $                        | 세션 이름변경
+^a c                        | 윈도우 생성
+^a n                        | 다음 윈도우로 이동
+^a p                        | 이전 윈도우로 이동
+^a .                        | 윈도우 순서 변경
+^a ,                        | 윈도우 이름 변경
+^a \                        | 화면 종베기
+^a -                        | 화면 횡베기
+^a o                        | 다음 평면으로 이동
+^a (h, j, k, l)             | 평면 크기조절
+^a (H, J, K, L)             | 평면 크기 미세조절
+^a <Space>                  | 평면 위치이동
+^a :                        | 명령어창
 
-```
-# /etc/systemd/login.conf
-HandlePowerKey=ignore
-HandleSuspendKey=ignore
-HandleHibernateKey=ignore
-HandleLidSwitch=ignore
-```
-
-```sh
-sudo restart systemd-logind
-```
-
-### Customize message of the day
-
-Go `/etc/update-motd.d/`
-
-### tmux
-[tmux 입문 가이드](http://nodeqa.com/nodejs_ref/99)
-```
-세션 생성                     $ tmux new
-세션 목록                     $ tmux ls
-세션에 attatch                $ tmux attach [-t <이름>]
-세션에서 detach                 ^b d
-세션 이름변경                   ^b $
-
-윈도우 생성                     ^b c
-다음 윈도우로 이동              ^b n
-이전 윈도우로 이동              ^b p
-윈도우 순서 변경                ^b .
-윈도우 이름 변경                ^b ,
-
-화면 종베기                     ^b \
-화면 횡베기                     ^b -
-다음 평면으로 이동              ^b o
-평면 크기조절                   ^b (h, j, k, l)
-평면 크기 미세조절              ^b (H, J, K, L)
-평면 위치이동                   ^b <Space>
-
-명령어창                        ^b :
-```
+[tmux]: http://nodeqa.com/nodejs_ref/99
 
 ### vim
 
@@ -170,30 +149,46 @@ d         | 잘라내기
 \<        | 인덴트 제거
 J         | 선택된 라인 전부 한줄로 붙이기
 
-##### Etc
+##### Per-line insertion
 
-Per-line insertion
+1.  `^v`
+2.  Select
+3.  `I` or `A`
+4.  Insert
+5.  `^[^[`
 
-1.  Ctrl + v
-2.  수정할곳 선택
-3.  I or A
-4.  편집
-5.  ESC
+--------
 
------
+### Configure power button action
+
+```
+# /etc/systemd/login.conf
+HandlePowerKey=ignore
+HandleSuspendKey=ignore
+HandleHibernateKey=ignore
+HandleLidSwitch=ignore
+```
+
+```sh
+sudo restart systemd-logind
+```
+
+### Customize message of the day
+
+Go `/etc/update-motd.d/`
+
+### [Internet configuration](http://neoguru.tistory.com/56)
 
 ### IP 주소 옮기면 제일 처음 할일
-1. goDaddy.com DNS 에디터에서 IP주소 바꾸기
 
-### 우분투 인터넷 설정하기
-1. http://neoguru.tistory.com/56
+goDaddy.com DNS 에디터에서 IP주소 바꾸기
 
 --------
 
 ### apt
 
 * vim-nox
-* git, zsh (oh-my-zsh)
+* git, zsh *(oh-my-zsh)*
 * tmux
 * weechat
 * nginx
