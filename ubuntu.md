@@ -122,82 +122,63 @@ Go `/etc/update-motd.d/`
 
 ### vim
 
-##### 일반모드
+Normal          | 설명
+----------------|--------
+ESC             | 다른 모드에서 일반 모드로 가기
+^v              |
+:w              | 저장하기
+:q              | 나오기
+:cq             | 저장하지 않고 나오기
+:wq             | 저장과 동시에 나오기
+:x              |
+ZZ              |
+:sh             | 새 shell 만들기
+u               | Undo
+Ctrl + r        | Redo
+yy              | 한줄 복사
+dd              | 한줄 잘라내기
+P               | 앞에 붙여넣기
+p               | 뒤에 붙여넣기
+"_dd            | 한줄 지우기
+:N              | N번째 라인으로 가기
+:%s/old/new     | 치환 (문서의 맨 처음부터)
+:%s/old/new/g   |
+:%s/old/new/gc  |   (with prompt)
+:,$s/old/new    | 치환 (현재 위치부터)
+:nohlsearch     | 검색결과 하이라이트 끄기
+:set paste      | 클립보드 모드 켜기
+:set nopaste    |               끄기
+:help           | 도움말
+:help <keyword> |
+f<char>         | 현재 라인에서 <char>로 순간이동
+t<char>         |
+:cd             | Change Directory
 
-```
-다른 모드에서 일반 모드로 가기          ESC
-                                        ^v
+Insert / Replace | 설명
+-----------------|--------
+i                | Insert 모드로 들어가기
+R                | Replace 모드로 들어가기
 
-저장하기                               :w
-나오기                                 :q
-저장하지 않고 나오기                   :cq
-저장과 동시에 나오기                   :wq
-                                       :x
-                                        ZZ
+Visual    | 설명
+----------|--------
+v         | 비주얼      모드로 들어가기
+V         | 비주얼 라인 모드로 들어가기
+Ctrl + v  | 비주얼 블록 모드로 들어가기
+y         | 복사
+d         | 잘라내기
+\>        | 인덴트 추가
+\<        | 인덴트 제거
+J         | 선택된 라인 전부 한줄로 붙이기
 
-새 shell 만들기                        :sh
+##### Etc
 
-Undo                                    u
-Redo                                    Ctrl + r
+Per-line insertion
 
-한줄 복사                               yy
-한줄 잘라내기                           dd
-앞에 붙여넣기                           P
-뒤에 붙여넣기                           p
-
-한줄 지우기                             "_dd
-
-N번째 라인으로 가기                    :N
-
-치환 (문서의 맨 처음부터)              :%s/old/new
-                                       :%s/old/new/g
-  (with prompt)                        :%s/old/new/gc
-
-치환 (현재 위치부터)                   :,$s/old/new
-
-검색결과 하이라이트 끄기               :nohlsearch
-클립보드 모드 켜기                     :set paste
-              끄기                     :set nopaste
-
-도움말                                 :help
-                                       :help <keyword>
-
-현재 라인에서 <char>로 순간이동         f<char>
-                                        t<char>
-```
-
-##### 편집 모드
-
-```
-Insert 모드로 들어가기                  i
-Replace 모드로 들어가기                 R
-```
-
-##### 비주얼 모드
-
-```
-비주얼      모드로 들어가기             v
-비주얼 라인 모드로 들어가기             V
-비주얼 블록 모드로 들어가기             Ctrl + v
-
-복사                                    y
-잘라내기                                d
-인덴트 추가                             >
-인덴트 제거                             <
-
-선택된 라인 전부 한줄로 붙이기          J
-```
-
-##### 고급
-
-```
-Per-line insertion                   1. Ctrl + v
-                                     2. 수정할곳 선택
-                                     3. I or A
-                                     4. 편집
-                                     5. ESC
-```
-
+1.  Ctrl + v
+2.  수정할곳 선택
+3.  I or A
+4.  편집
+5.  ESC
 
 -----
 
