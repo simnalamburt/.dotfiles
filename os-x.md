@@ -59,7 +59,7 @@ FFmpeg                                          | 설명
 
     * git
     * vim
-    * wget
+    * wget, htop
     * gtar, xz, p7zip
     * nmap, binutils
     * ruby
