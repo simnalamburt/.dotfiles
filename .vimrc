@@ -195,12 +195,5 @@ let g:clever_f_smart_case = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
-" racer
-set hidden
-let g:racer_cmd = $HOME."/.vim/plugged/racer/target/release/racer"
-let $RUST_SRC_PATH=$HOME."/.vim/plugged/rust/src/"
-inoremap <expr> <C-j> pumvisible() ? '<C-n>' : '<C-j>'
-inoremap <expr> <C-k> pumvisible() ? '<C-p>' : '<C-k>'
-
 " nerdtree
 nnoremap <leader>n :NERDTreeToggle<CR>
