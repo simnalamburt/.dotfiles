@@ -34,10 +34,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
 
-" Completion
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
-Plug 'phildawes/racer', { 'do': 'cargo build --release && git clone --depth=1 https://github.com/rust-lang/rust.git ~/.vim/plugged/rust' }
-
 call plug#end()
 
 
