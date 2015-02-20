@@ -119,9 +119,6 @@ nnoremap <CR> o<Esc>
 " Easy file save
 nnoremap <silent> S :update<CR>
 
-" Easy escaping
-inoremap jk <Esc>
-
 " Easy navigation
 noremap <up> gk
 noremap <down> gj
