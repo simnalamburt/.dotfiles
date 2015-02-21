@@ -1,5 +1,84 @@
 "
-" vim-plug
+" General configs
+"
+set enc=utf-8
+set backspace=indent,eol,start
+set diffopt+=iwhite,vertical
+set laststatus=2
+set pastetoggle=<F8>
+set scrolloff=3
+set switchbuf+=usetab,split
+set ruler
+set startofline
+set splitbelow
+set nobackup
+set nocompatible
+set nofoldenable
+set noshowmode
+set noswapfile
+set nowrap
+
+" History
+set history=1024
+set undolevels=1024
+
+" Indention
+set cindent
+set autoindent
+set smartindent
+
+" Tab
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+" Searching
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set nowrapscan
+
+
+"
+" Key mappings
+"
+let mapleader = ","
+
+" Easy command-line mode
+nnoremap ; :
+" Easy newline insert
+nnoremap <CR> o<Esc>
+" Easy file save
+nnoremap <silent> S :update<CR>
+" Easy navigation
+noremap <up> gk
+noremap <down> gj
+" Easy indentation
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+" Easy splitting & resizing
+nnoremap <silent> <C-_> :split<CR>
+nnoremap <silent> <C-\> :vertical split<CR>
+nnoremap <silent> <C-h> :vertical resize -5<CR>
+nnoremap <silent> <C-j> :resize -3<CR>
+nnoremap <silent> <C-k> :resize +3<CR>
+nnoremap <silent> <C-l> :vertical resize +5<CR>
+" Tab navigations
+nnoremap <esc>t   :tabnew<CR>
+nnoremap <esc>1   1gt
+nnoremap <esc>2   2gt
+nnoremap <esc>3   3gt
+nnoremap <esc>4   4gt
+nnoremap <esc>5   5gt
+nnoremap <esc>6   6gt
+nnoremap <esc>7   7gt
+nnoremap <esc>8   8gt
+nnoremap <esc>9   9gt
+
+
+"
+" Plugins
 "
 call plug#begin('~/.vim/plugged')
 
@@ -37,129 +116,6 @@ Plug 'Lokaltog/vim-easymotion'
 
 call plug#end()
 
-
-"
-" vimrc
-"
-set enc=utf-8
-set backspace=indent,eol,start
-set diffopt+=iwhite,vertical
-set laststatus=2
-set pastetoggle=<F8>
-set scrolloff=3
-set switchbuf+=usetab,split
-set ruler
-set startofline
-set splitbelow
-set nobackup
-set nocompatible
-set nofoldenable
-set noshowmode
-set noswapfile
-set nowrap
-syntax on
-filetype plugin indent on
-colorscheme elflord
-
-" History
-set history=1024
-set undolevels=1024
-
-" Indention
-set cindent
-set autoindent
-set smartindent
-
-" Tab
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-
-" Searching
-set ignorecase
-set smartcase
-set incsearch
-set hlsearch
-set nowrapscan
-
-" Pair matching
-set matchpairs+=<:>
-set showmatch
-highlight MatchParen ctermfg=black ctermbg=lightgreen
-
-" Wildmenu settings
-set wildmenu
-set wildmode=full
-highlight StatusLine ctermbg=darkgray ctermfg=234
-highlight WildMenu   ctermfg=white    ctermbg=234
-
-" listchars for whitespaces
-set list
-set listchars=tab:›\ ,extends:»,precedes:«
-highlight NonText    ctermfg=darkblue
-highlight SpecialKey ctermfg=darkblue
-
-" Concealing
-set concealcursor=nc
-set conceallevel=2
-highlight Conceal ctermfg=darkblue ctermbg=NONE
-
-" Key mapping
-let mapleader = ","
-
-" Easy command-line mode
-nnoremap ; :
-
-" Easy newline insert
-nnoremap <CR> o<Esc>
-
-" Easy file save
-nnoremap <silent> S :update<CR>
-
-" Easy navigation
-noremap <up> gk
-noremap <down> gj
-
-" Easy indentation
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-
-" Easy splitting & resizing
-nnoremap <silent> <C-_> :split<CR>
-nnoremap <silent> <C-\> :vertical split<CR>
-nnoremap <silent> <C-h> :vertical resize -5<CR>
-nnoremap <silent> <C-j> :resize -3<CR>
-nnoremap <silent> <C-k> :resize +3<CR>
-nnoremap <silent> <C-l> :vertical resize +5<CR>
-
-" Tab navigations
-nnoremap <esc>t   :tabnew<CR>
-nnoremap <esc>1   1gt
-nnoremap <esc>2   2gt
-nnoremap <esc>3   3gt
-nnoremap <esc>4   4gt
-nnoremap <esc>5   5gt
-nnoremap <esc>6   6gt
-nnoremap <esc>7   7gt
-nnoremap <esc>8   8gt
-nnoremap <esc>9   9gt
-
-" Decoration for 80 column layout concerns
-set textwidth=80
-set colorcolumn=+1,+2,+3
-highlight ColorColumn ctermbg=black
-
-" Decoration for line number column
-set number
-set cursorline
-highlight LineNr ctermbg=black
-highlight CursorLine cterm=none
-highlight CursorLineNr ctermfg=white ctermbg=black
-
-" gundo.vim
-let g:gundo_right = 1
-nnoremap <leader>g :GundoToggle<CR>
-
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -185,6 +141,13 @@ autocmd VimEnter,Colorscheme *
 " vim-better-whitespace
 let g:strip_whitespace_on_save = 1
 
+" nerdtree
+nnoremap <leader>n :NERDTreeToggle<CR>
+
+" gundo.vim
+let g:gundo_right = 1
+nnoremap <leader>g :GundoToggle<CR>
+
 " vim-github-dashboard
 let g:github_dashboard = { 'username': 'simnalamburt' }
 
@@ -196,5 +159,67 @@ let g:clever_f_smart_case = 1
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
-" nerdtree
-nnoremap <leader>n :NERDTreeToggle<CR>
+
+"
+" Beutiful vim
+"
+filetype plugin indent on
+colorscheme elflord
+
+function Beauty()
+  syntax on
+
+  " Line number column
+  set number
+  set cursorline
+  highlight LineNr ctermbg=black
+  highlight CursorLine cterm=none
+  highlight CursorLineNr ctermfg=white ctermbg=black
+
+  " Split bar
+  highlight VertSplit ctermfg=234 ctermbg=234
+
+  " Listchars for whitespaces
+  set list
+  set listchars=tab:›\ ,extends:»,precedes:«
+  highlight NonText    ctermfg=darkblue
+  highlight SpecialKey ctermfg=darkblue
+
+  " 80th column layout concerns
+  set textwidth=80
+  set colorcolumn=+1,+2,+3
+  highlight ColorColumn ctermbg=black
+
+  " Pair matching
+  set matchpairs+=<:>
+  set showmatch
+  highlight MatchParen ctermfg=white ctermbg=016
+
+  " Wildmenu settings
+  set wildmenu
+  set wildmode=full
+  highlight StatusLine ctermbg=darkgray ctermfg=234
+  highlight WildMenu   ctermfg=white    ctermbg=234
+
+  " Better diff
+  set fillchars+=vert:\ ,fold:―,diff:·
+  highlight DiffAdd    ctermfg=040  ctermbg=none
+  highlight DiffDelete ctermfg=052  ctermbg=none
+  highlight DiffChange ctermfg=none ctermbg=none
+  highlight DiffText   ctermfg=027  ctermbg=none
+  highlight Folded     ctermfg=016  ctermbg=none
+endfunction
+call Beauty()
+
+" Use different colorscheme in vimdiff
+autocmd FilterWritePre *
+\ if &diff                                      |
+\   syntax off                                  |
+\   set foldcolumn=0                            |
+\ endif
+autocmd BufWinLeave *
+\ if &diff                                      |
+\   call Beauty()                               |
+\   call airline#load_theme()                   |
+\   call airline#update_statusline()            |
+\ endif
