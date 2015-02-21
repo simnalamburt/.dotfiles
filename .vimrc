@@ -27,6 +27,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'simnalamburt/vim-mundo'
 Plug 'junegunn/vim-github-dashboard'
 Plug 'godlygeek/tabular'
+Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
@@ -42,7 +43,7 @@ call plug#end()
 "
 set enc=utf-8
 set backspace=indent,eol,start
-set diffopt+=iwhite
+set diffopt+=iwhite,vertical
 set laststatus=2
 set pastetoggle=<F8>
 set scrolloff=3
