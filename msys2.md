@@ -1,4 +1,4 @@
-Windows
+MSYS2
 ========
 
 [Mintty][]                  | 설명
@@ -29,9 +29,6 @@ cat /dev/clipboard          | CLI 붙여넣기
     0008   02 00 00 00 1D 00 3D 00   ......:.
     0010   00 00 00 00               ....
     ```
-
-MSYS2
---------
 
 1.  [Install msys2](http://msys2.github.io).
 
@@ -76,61 +73,3 @@ MSYS2
 * wget, tar, zip
 * ca-certificates
 * python2
-
-Cygwin
---------
-
-1.  Install [**Babun**](http://babun.github.io)
-
-1.  git
-
-    ```bash
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-    ```
-
-1.  **Hotfix** for babun; Fix `babun-core`
-
-    ```bash
-    cd /usr/local/etc/babun/source/babun-core/tools
-    grhh
-
-    echo '' > git.sh
-    gca -m "Hotfix 1: don't change push.default config"
-
-    chmod +x welcome.sh
-    gca -m "Hotfix 2: chmod +x welcome.sh"
-    ```
-
-1.  **Hotfix** for cygwin; Change the primary group of the users from `None` into `Users`
-
-    ```bash
-    cat /etc/group | egrep '^Users:' | cut -f3 -d':'
-    vim /etc/passwd
-    # 4번째 필드 (primary group) 수정
-
-    chgrp Users -R ~
-    chmod g-w -R ~
-    ```
-
-    Reference: http://stackoverflow.com/a/13755101
-
-1.  Configuration
-
-    ```bash
-    cd ~
-
-    # upgrade git (http://stackoverflow.com/a/25547715)
-    pact remove git && pact install git
-
-    # remove unused files
-    rm .bash* .profile /etc/vimrc
-
-    # workspace
-    ln -s '/cygdrive/c/Users/Hyeon/Google 드라이브' ~/drive
-    mkdir ~/workspace
-    ```
-
-1.  Import [**dotfiles**](https://github.com/simnalamburt/dotfiles)
-
-1.  Import `id_rsa` to `~/.ssh` and `chmod 400` it
