@@ -15,9 +15,7 @@ ln -sf .dotfiles/.gitexclude .
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
 ln -sf .dotfiles/.weechat .
-ln -sf .dotfiles/.babunrc .
 ln -sf .dotfiles/.minttyrc .
-ln -sf .dotfiles/.inputrc .
 
 # tmux
 ln -sf .dotfiles/.tmux .
