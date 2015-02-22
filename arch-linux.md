@@ -1,13 +1,14 @@
 Arch Linux
 ========
 
-[pacman][]           | 설명
----------------------|--------
-`# pacman -S <name>` | 패키지 설치
-`# pacman -R <name>` | 패키지 제거
-`# pacman -Sy`       |
-`# pacman -Syy`      |
-`# pacman -Syu`      | 시스템 패키지 업데이트
+[pacman][]            | 설명
+----------------------|--------
+`# pacman -S <name>`  | 패키지 설치
+`# pacman -R <name>`  | 패키지 제거
+`# pacman -Ss <name>` | 패키지 찾기
+`# pacman -Sy`        |
+`# pacman -Syy`       |
+`# pacman -Syu`       | 시스템 패키지 업데이트
 
 [pacman]: https://wiki.archlinux.org/index.php/Pacman
 
