@@ -16,9 +16,6 @@ cat /dev/clipboard          | CLI 붙여넣기
 
 [Mintty]: http://mintty.googlecode.com/svn-history/r1065/trunk/docs/mintty.1.html#20
 
-Installation
---------
-
 1.  Install [**Powerlined Consolas**](https://github.com/nicolalamacchia/powerline-consolas)
 
 1.  Change the `Caps Lock` key into a `Ctrl` Key
@@ -32,6 +29,56 @@ Installation
     0008   02 00 00 00 1D 00 3D 00   ......:.
     0010   00 00 00 00               ....
     ```
+
+MSYS2
+--------
+
+1.  [Install msys2](http://msys2.github.io).
+
+    If `pacman` fails, download it from [SourceForge][] [(reference)][pacman-fail].
+
+1.  Use `zsh` as default shell [(reference)][chsh].
+
+    ```sh
+    vim /msys2_shell.bat
+    # Replace /usr/bin/bash into /usr/bin/zsh
+    ```
+    ```sh
+    vim /etc/profile
+    # Add "SHELL=`which zsh`" line below "PS1='(%n@%m)[%h] %~ %% '" line.
+    ```
+
+1.  Enable symlink [(reference)][symlink]
+
+    ```sh
+    vim /msys2_shell.bat
+    # Find 'symlink'
+    ```
+
+1.  Clone [dotfiles](https://github.com/simnalamburt/dotfiles).
+
+1.  Install vim plugins [(reference)][ca-cert].
+
+    ```sh
+    pacman -S ca-certificates python2
+    vim +PlugInstall
+    ```
+
+[SourceForge]: http://sourceforge.net/projects/msys2/files/REPOS/MSYS2/x86_64
+[pacman-fail]: http://qiita.com/k-takata/items/fcb2f1f9ca564fd78597
+[chsh]: http://qiita.com/magichan/items/7702d7865deaaca2ad44
+[ca-cert]: http://qiita.com/7shi/items/894fdd849658880bf6c9
+[symlink]: http://sourceforge.net/p/msys2/mailman/message/33004178/
+
+### pacman
+
+* git, vim, zsh
+* wget, tar, zip
+* ca-certificates
+* python2
+
+Cygwin
+--------
 
 1.  Install [**Babun**](http://babun.github.io)
 

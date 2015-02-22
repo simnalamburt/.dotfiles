@@ -7,7 +7,7 @@ Arch Linux
 `# pacman -R <name>` | 패키지 제거
 `# pacman -Sy`       |
 `# pacman -Syy`      |
-`# pacman -Syu`      |
+`# pacman -Syu`      | 시스템 패키지 업데이트
 
 [pacman]: https://wiki.archlinux.org/index.php/Pacman
 
