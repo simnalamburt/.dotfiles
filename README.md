@@ -1,6 +1,8 @@
 dotfiles
 =====
 
+Requires `git` and `zsh`
+
 ```bash
 cd ~
 git clone --depth=1 git@github.com:simnalamburt/dotfiles.git .dotfiles
@@ -23,17 +25,15 @@ ln -sf .dotfiles/.tmux.conf .
 cd .dotfiles && git submodule update --init --depth=1 --recursive
 ```
 
-### Prerequisites
-
-1.  git
-2.  zsh
+* [Cheatsheat of various commands](cheatsheat.md)
+* [Making various development environments](installation.md)
+* [Don't forget what you've installed](packages.md)
 
 --------
 
-* Hyeon@*HyeonLaptop*
-* HyeonKim@*hyeonmac*
-* simnalamburt@hyeon.me
-* server@upnl.org
-* upnl@upnl.org
-* git@upnl.org
-* simnalamburt@uriel.upnl.org
+* **OS X**
+* **MSYS2**
+* **Arch Linux**
+* hyeon.me
+* upnl.org (server, upnl, root)
+* uriel.upnl.org
