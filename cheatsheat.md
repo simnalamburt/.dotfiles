@@ -1,8 +1,5 @@
-Ubuntu
-========
-
-리눅스 | 설명
--------|-----
+General               | 설명
+----------------------|-----
 `$ ag <query>`        | 파일들 사이에서 문자열 찾기
 `$ find -name <name>` | 파일 이름으로 찾기
 `$ sudo su`           | root로 로그인
@@ -16,6 +13,24 @@ Ubuntu
 `Ctrl` + `t` | 디렉토리 fuzzy 탐색
 
 [fzf]: https://github.com/junegunn/fzf
+
+apt-get                                       | 설명
+----------------------------------------------|--------
+`$ dpkg -l`                                   | 모든 데비안 패키지 보기
+`$ dpkg --get-selections | grep -v deinstall` | 설치된 패키지들 보기
+`# apt-get dist-upgrade`  | 패키지 업그레이드
+`# apt-get --reinstall install <이름>`  | 패키지 재설치
+
+[pacman][]            | 설명
+----------------------|--------
+`# pacman -S <name>`  | 패키지 설치
+`# pacman -R <name>`  | 패키지 제거
+`# pacman -Ss <name>` | 패키지 찾기
+`# pacman -Sy`        |
+`# pacman -Syy`       |
+`# pacman -Syu`       | 시스템 패키지 업데이트
+
+[pacman]: https://wiki.archlinux.org/index.php/Pacman
 
 서버 관리                   | 설명
 ----------------------------|--------
@@ -37,13 +52,6 @@ Ubuntu
 `$ kill <pid>`      | 프로세스 죽이기
 `$ kill -0 <pid>`   | 프로세스 죽이기 (Successfully Exited)
 `$ kill -9 <pid>`   | 프로세스 죽이기 (Killed)
-
-apt-get                                       | 설명
-----------------------------------------------|--------
-`$ dpkg -l`                                   | 모든 데비안 패키지 보기
-`$ dpkg --get-selections | grep -v deinstall` | 설치된 패키지들 보기
-`# apt-get dist-upgrade`  | 패키지 업그레이드
-`# apt-get --reinstall install <이름>`  | 패키지 재설치
 
 유저관리                        | 설명
 --------------------------------|--------
@@ -98,6 +106,38 @@ $ tmux attach [-t <이름>]   | 세션에 attatch
 ^a :                        | 명령어창
 
 [tmux]: http://nodeqa.com/nodejs_ref/99
+
+FFmpeg                                          | 설명
+------------------------------------------------|-------------
+`$ ffmpeg -i <input> -vn -acodec copy <output>` | 오디오 추출
+`$ ffmpeg -i <input> -vcodec copy -an <output>` | 비디오 추출
+
+클립보드          | 설명
+------------------|-------------
+`$ pbcopy < file` | 파일의 내용을 복사
+`$ pbpaste`       | 붙여넣기
+
+iTerm2              | 설명
+--------------------|---------------------------------
+`⌘` + `alt` + drag  | block selection
+`⌘` + `t`           | new tab
+`⌘` + `T`           | show tab bar
+`⌘` + `1`, `2`, ... | Go to tab 1, 2, ...
+`⌘` + `-`, `\ `     | new pane (horizontal, virtical)
+`⌘` + `[`, `]`      | Go next pane
+
+[Mintty][]                  | 설명
+----------------------------|------------------
+`Ctrl`  + `Insert`          | GUI 복사
+`Shirt` + `Insert`          | GUI 붙여넣기
+`Alt` + `F2`                | 새 Mintty
+`Alt` + `Enter`             | 전체화면
+`Win` + `←`                 | 왼쪽 반
+`Win` + `→`                 | 오른쪽 반
+`Ctrl` + `Tab`              | Mintty 전환 (앞)
+`Ctrl` + `Shift` + `Tab`    | Mintty 전환 (뒤)
+
+[Mintty]: http://mintty.googlecode.com/svn-history/r1065/trunk/docs/mintty.1.html#20
 
 ### vim
 
@@ -179,29 +219,11 @@ Go `/etc/update-motd.d/`
 
 ### [Internet configuration](http://neoguru.tistory.com/56)
 
-### IP 주소 옮기면 제일 처음 할일
+### 공유기 껐다켜지면 할일
 
-goDaddy.com DNS 에디터에서 IP주소 바꾸기
+1.  공인 IP가 바뀌었을경우, 도메인들 바뀐 주소로 연결
+2.  내부 IP가 포트포워드 설정
 
---------
+### Mibbit
 
-### apt
-
-* vim-nox
-* git, zsh *(oh-my-zsh)*
-* tmux
-* weechat
-* nginx
-* htop, fail2ban
-* python, python-dev, python-pip
-  * pysha3
-* postfix
-  * `v=spf1 a mx ptr ptr:175.197.17.221 -all`
-
-### PPA
-
-1.  mongodb
-1.  [nodejs](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
-1.  [ruby2.1, ruby2.1-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
-
-### [gitlab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
+https://widget.mibbit.com/?server=irc.uriirc.org:+16667&channel=%23hyeon
