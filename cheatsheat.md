@@ -55,6 +55,7 @@ apt-get                                       | 설명
 
 유저관리                        | 설명
 --------------------------------|--------
+`# adduser <username>`          | 새 유저 만들기
 `# adduser <username> sudo`     | 특정 사용자 sudoer로 설정
 `# usermod -aG sudo <username>` | 특정 사용자 sudoer로 설정
 `# vipw`                        | /etc/passwd  편집
