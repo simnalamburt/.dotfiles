@@ -53,17 +53,19 @@ apt-get                                       | 설명
 `$ kill -0 <pid>`   | 프로세스 죽이기 (Successfully Exited)
 `$ kill -9 <pid>`   | 프로세스 죽이기 (Killed)
 
-유저관리                        | 설명
---------------------------------|--------
-`# adduser <username>`          | 새 유저 만들기
-`# adduser <username> sudo`     | 특정 사용자 sudoer로 설정
-`# usermod -aG sudo <username>` | 특정 사용자 sudoer로 설정
-`# vipw`                        | /etc/passwd  편집
-`# vipw -s`                     | /etc/shadow  편집
-`# pwck`                        | passwd, shadow 검증
-`# vigr`                        | /etc/group   편집
-`# vigr -s`                     | /etc/gshadow 편집
-`# grpck`                       | group, gshadow 검증
+유저관리                                | 설명
+----------------------------------------|--------
+`# adduser <username>`                  | 새 유저 만들기
+`# adduser <username> sudo`             | 특정 사용자 sudoer로 설정
+`# usermod -l <login-name> <old-name>`  | 유저 이름 바꾸기
+`# usermod -m -d <path> <username>`     | 유저 홈디렉토리 바꾸기
+`# usermod -aG sudo <username>`         | 특정 사용자 sudoer로 설정
+`# vipw`                                | /etc/passwd  편집
+`# vipw -s`                             | /etc/shadow  편집
+`# pwck`                                | passwd, shadow 검증
+`# vigr`                                | /etc/group   편집
+`# vigr -s`                             | /etc/gshadow 편집
+`# grpck`                               | group, gshadow 검증
 
 네트워크                  | 설명
 --------------------------|--------
