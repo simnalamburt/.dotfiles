@@ -51,9 +51,6 @@ nnoremap ; :
 nnoremap <CR> o<Esc>
 " Easy file save
 nnoremap <silent> S :update<CR>
-" Easy navigation
-noremap <up> gk
-noremap <down> gj
 " Easy indentation
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
