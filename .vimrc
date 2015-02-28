@@ -96,6 +96,7 @@ Plug 'sophacles/vim-processing'
 Plug 'rust-lang/rust.vim'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'tikhomirov/vim-glsl'
+Plug 'stephpy/vim-yaml'
 
 " General
 Plug 'tpope/vim-sensible'
