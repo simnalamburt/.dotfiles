@@ -20,9 +20,8 @@ if [ -f ~/.fzf.zsh ]; then
 fi
 
 if [ $(hostname) = "hyeonmac.local" ]; then
-  export PATH="/usr/local/bin:$PATH"    # brew
   alias ml='ledit ocaml'                # ocaml
-  eval `/usr/libexec/path_helper -s`    # mactex
+  eval `/usr/libexec/path_helper -s`    # brew, mactex
 fi
 
 if [ $(hostname) = "rilakkuma" ]; then
