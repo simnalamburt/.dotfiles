@@ -18,6 +18,7 @@ OS X
 1.  [Cask](http://caskroom.io)
     * xquartz
     * horndis
+    * mactex
 1.  etc
     * [rust][]
 
