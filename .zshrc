@@ -15,21 +15,20 @@ export TERM=xterm-256color
 export DEFAULT_USER="$USER"
 export RUST_BACKTRACE=1
 
-# fzf
-if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
-
-# etc
-cmd() { if eval "hash $2" 2>/dev/null; then; alias $1=$2; fi }
-path() { if [ -d "$1" ]; then; export PATH="$1:$PATH"; fi }
+if [ -f ~/.fzf.zsh ]; then
+  source ~/.fzf.zsh
+fi
 
 if [ $(hostname) = "hyeonmac.local" ]; then
-  path "/usr/local/bin"               # brew
-  cmd ml 'ledit ocaml'                # ocaml
-  eval `/usr/libexec/path_helper -s`  # mactex
+  export PATH="/usr/local/bin:$PATH"    # brew
+  alias ml='ledit ocaml'                # ocaml
+  eval `/usr/libexec/path_helper -s`    # mactex
+fi
+
+if [ $(hostname) = "rilakkuma" ]; then
+  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 fi
 
 if [ $(hostname) = "hyeonme" ]; then
-  path "$HOME/.tmux-do/bin"
+  export PATH="$PATH:$HOME/.tmux-do/bin"
 fi
-
-unset -f cmd path
