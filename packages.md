@@ -57,7 +57,7 @@ MSYS2
     * git, vim, zsh
     * wget, tar, zip
     * ca-certificates
-    * python2
+    * ruby, python2
 1.  etc
     * [rust][]
 
