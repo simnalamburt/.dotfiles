@@ -26,6 +26,7 @@ AllowBlinking=no
 Font=Consolas
 FontHeight=12
 BoldAsFont=yes
+BoldAsColour=no
 Term=xterm-256color
 RightClickAction=menu
 ClicksPlaceCursor=no
