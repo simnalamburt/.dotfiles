@@ -10,11 +10,10 @@ OS X
     * wget, htop
     * gtar, xz, p7zip
     * nmap, binutils
-    * ruby
-    * iojs, npm
-    * python, python3
-    * go, mruby, nim, crystal, luajit, r
-    * ocaml, ledit
+    * ruby, iojs, python, python4
+    * go, haskell(ghc, cabal-install), ocaml, ledit
+    * mruby, nim, crystal, luajit, r
+    * pandoc
 1.  [Cask](http://caskroom.io)
     * xquartz
     * horndis
