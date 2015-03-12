@@ -18,6 +18,11 @@ OS X
     * xquartz
     * horndis
     * mactex
+1.  pip3
+    * Pygments
+1.  폰트
+    * [UnBatang](http://fonts2u.com/un-batang.font), [UnDotum](http://fonts2u.com/un-dotum.font)
+    * [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
 1.  etc
     * [rust][]
 

@@ -9,8 +9,7 @@ OS X
     * Finder 초기 디렉토리 경로 변경
     * Caps Lock → Command Key
 1.  iTerm2 설정
-    * [Solarized](https://github.com/altercation/solarized)
-    * [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
+    * [Solarized](https://github.com/altercation/solarized/blob/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors)
     * [Access for assistive device](http://www.tekrevue.com/how-to-enable-access-for-assistive-devices-in-os-x-mavericks/)
     * Left Command Key          → Ctrl
     * Option Key                → +Esc
