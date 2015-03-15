@@ -14,7 +14,7 @@ OS X
     * go, haskell(ghc, cabal-install), ocaml, ledit
     * mruby, nim, crystal, luajit, r
     * pandoc
-    * w3m
+    * w3m, peco
 1.  [Cask](http://caskroom.io)
     * xquartz
     * horndis
