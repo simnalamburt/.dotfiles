@@ -21,14 +21,15 @@ apt-get                                       | 설명
 `# apt-get dist-upgrade`  | 패키지 업그레이드
 `# apt-get --reinstall install <이름>`  | 패키지 재설치
 
-[pacman][]            | 설명
-----------------------|--------
-`# pacman -S <name>`  | 패키지 설치
-`# pacman -R <name>`  | 패키지 제거
-`# pacman -Ss <name>` | 패키지 찾기
-`# pacman -Sy`        |
-`# pacman -Syy`       |
-`# pacman -Syu`       | 시스템 패키지 업데이트
+[pacman][]                                 | 설명
+-------------------------------------------|--------
+`# pacman -S <name>`                       | 패키지 설치
+`# pacman -R <name>`                       | 패키지 제거
+`# pacman -Ss <name>`                      | 패키지 찾기
+`# pacman -Sy`                             | Sync the database with the latest repository
+`# pacman -Sy && pacman -S pacman-mirrors` | Update pacman mirrors
+`# pacman -Syy`                            |
+`# pacman -Syu`                            | 시스템 패키지 업데이트
 
 [pacman]: https://wiki.archlinux.org/index.php/Pacman
 

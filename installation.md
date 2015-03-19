@@ -76,6 +76,7 @@ MSYS2
 
     ```sh
     vim /msys2_shell.bat
+    vim /mingw64_shell.bat
     # Replace /usr/bin/bash into /usr/bin/zsh
     ```
     ```sh
@@ -87,6 +88,7 @@ MSYS2
 
     ```sh
     vim /msys2_shell.bat
+    vim /mingw64_shell.bat
     # Find 'symlink'
     ```
 
