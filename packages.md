@@ -65,6 +65,7 @@ MSYS2
     * wget, tar, zip
     * ca-certificates
     * ruby, python2
+    * mingw-w64-x86_64-gcc, make
 1.  etc
     * [rust][]
 
