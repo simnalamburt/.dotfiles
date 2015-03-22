@@ -53,8 +53,10 @@ Arch Linux
     * dialog, wpa_supplicant *(for wiki-menu)*
     * bash-completion
     * openssh
-    * git, vim, zsh
+    * git, vim-python3, zsh
     * tmux
+    * the_silver_searcher
+    * python-pip
 
 MSYS2
 --------
