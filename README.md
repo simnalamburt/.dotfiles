@@ -11,11 +11,14 @@ git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh
 ln -sf .dotfiles/.vim .
 ln -sf .dotfiles/.vimrc .
 ln -sf .dotfiles/.zshrc .
-ln -sf .dotfiles/.gemrc .
 ln -sf .dotfiles/.gitconfig .
 ln -sf .dotfiles/.gitexclude .
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
+ln -sf .dotfiles/.hushlogin
+ln -sf .dotfiles/.bash_profile
+
+ln -sf .dotfiles/.gemrc .
 ln -sf .dotfiles/.weechat .
 ln -sf .dotfiles/.minttyrc .
 
