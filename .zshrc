@@ -15,8 +15,6 @@ export TERM=xterm-256color
 export DEFAULT_USER="$USER"
 export RUST_BACKTRACE=1
 
-alias objdump='objdump -M intel-mnemonics'
-
 if [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
 fi
