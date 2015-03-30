@@ -43,7 +43,7 @@ set nowrapscan
 "
 " Key mappings
 "
-let mapleader = ","
+let g:mapleader = ","
 
 " Easy command-line mode
 nnoremap ; :
@@ -72,6 +72,11 @@ nnoremap <esc>6   6gt
 nnoremap <esc>7   7gt
 nnoremap <esc>8   8gt
 nnoremap <esc>9   9gt
+
+" define a group `vimrc` and initialize.
+augroup vimrc
+  autocmd!
+augroup END
 
 
 "
@@ -126,7 +131,7 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:indent_guides_default_mapping = 0
-autocmd VimEnter,Colorscheme *
+autocmd vimrc VimEnter,Colorscheme *
 \ if &softtabstop < 4                           |
 \   highlight IndentGuidesOdd  ctermbg=NONE     |
 \   highlight IndentGuidesEven ctermbg=black    |
@@ -164,7 +169,7 @@ omap / <Plug>(easymotion-tn)
 filetype plugin indent on
 colorscheme elflord
 
-function Beauty()
+function! s:beauty()
   syntax on
 
   " Line number column
@@ -207,17 +212,17 @@ function Beauty()
   highlight DiffText   ctermfg=027  ctermbg=none
   highlight Folded     ctermfg=016  ctermbg=none
 endfunction
-call Beauty()
+call s:beauty()
 
 " Use different colorscheme in vimdiff
-autocmd FilterWritePre *
+autocmd vimrc FilterWritePre *
 \ if &diff                                      |
 \   syntax off                                  |
 \   set foldcolumn=0                            |
 \ endif
-autocmd BufWinLeave *
+autocmd vimrc BufWinLeave *
 \ if &diff                                      |
-\   call Beauty()                               |
+\   call s:beauty()                             |
 \   call airline#load_theme()                   |
 \   call airline#update_statusline()            |
 \ endif
