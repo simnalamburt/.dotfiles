@@ -40,3 +40,7 @@ cd .dotfiles && git submodule update --init --depth=1 --recursive
 * hyeon.me
 * upnl.org (server, upnl, root)
 * uriel.upnl.org
+
+--------
+
+BSD 2-Clause
