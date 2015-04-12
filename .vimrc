@@ -62,16 +62,16 @@ nnoremap <silent> <C-j> :resize -3<CR>
 nnoremap <silent> <C-k> :resize +3<CR>
 nnoremap <silent> <C-l> :vertical resize +5<CR>
 " Tab navigations
-nnoremap <esc>t   :tabnew<CR>
-nnoremap <esc>1   1gt
-nnoremap <esc>2   2gt
-nnoremap <esc>3   3gt
-nnoremap <esc>4   4gt
-nnoremap <esc>5   5gt
-nnoremap <esc>6   6gt
-nnoremap <esc>7   7gt
-nnoremap <esc>8   8gt
-nnoremap <esc>9   9gt
+nnoremap <esc>t :tabnew<CR>
+nnoremap <esc>1 1gt
+nnoremap <esc>2 2gt
+nnoremap <esc>3 3gt
+nnoremap <esc>4 4gt
+nnoremap <esc>5 5gt
+nnoremap <esc>6 6gt
+nnoremap <esc>7 7gt
+nnoremap <esc>8 8gt
+nnoremap <esc>9 9gt
 
 " define a group `vimrc` and initialize.
 augroup vimrc
