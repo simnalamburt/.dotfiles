@@ -10,9 +10,8 @@ OS X
     * wget, htop
     * gtar, xz, p7zip
     * nmap, binutils
-    * ruby, iojs, python, python4
-    * go, haskell(ghc, cabal-install), ocaml, ledit
-    * mruby, nim, crystal, luajit, r
+    * ruby, iojs, python, python3
+    * haskell(ghc, cabal-install), ocaml, ledit
     * pandoc
     * w3m, peco
 1.  [Cask](http://caskroom.io)
