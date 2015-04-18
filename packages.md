@@ -1,7 +1,7 @@
 OS X
 --------
 1.  Applications
-    * Firefox, Google Chrome
+    * Firefox
     * Google Drive
     * iTerm2, xCode
     * 카톡, 라인, Evernote, InsomniaX, GarageBand, OBS
@@ -16,6 +16,7 @@ OS X
     * pandoc
     * w3m, peco
 1.  [Cask](http://caskroom.io)
+    * chromium
     * xquartz
     * horndis
     * mactex
