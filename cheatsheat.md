@@ -203,8 +203,12 @@ J         | 선택된 라인 전부 한줄로 붙이기
 
 --------
 
-### Configure power button action
+### Check if reboot is required
+```sh
+if [ -f /var/run/reboot-required ]; then echo 'Restart required'; fi
+```
 
+### Configure power button action
 ```
 # /etc/systemd/login.conf
 HandlePowerKey=ignore
@@ -212,21 +216,14 @@ HandleSuspendKey=ignore
 HandleHibernateKey=ignore
 HandleLidSwitch=ignore
 ```
-
 ```sh
 sudo restart systemd-logind
 ```
 
 ### Customize message of the day
-
 Go `/etc/update-motd.d/`
 
 ### [Internet configuration](http://neoguru.tistory.com/56)
-
-### 공유기 껐다켜지면 할일
-
-1.  공인 IP가 바뀌었을경우, 도메인들 바뀐 주소로 연결
-2.  내부 IP가 포트포워드 설정
 
 ### Mibbit
 
