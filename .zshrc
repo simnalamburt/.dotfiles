@@ -28,6 +28,6 @@ if [ $(hostname) = "rilakkuma" ]; then
   export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 fi
 
-if [ $(hostname) = "hyeonme" ]; then
-  export PATH="$PATH:$HOME/.tmux-do/bin"
+if hash tmux 2>/dev/null; then
+  alias irc='tmux attach'
 fi
