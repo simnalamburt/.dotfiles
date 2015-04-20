@@ -109,6 +109,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'simnalamburt/vim-mundo'
 Plug 'junegunn/vim-github-dashboard'
 Plug 'godlygeek/tabular'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
