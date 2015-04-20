@@ -185,7 +185,6 @@ function! s:beauty()
 
   " Listchars for whitespaces
   set list
-  set listchars=tab:›\ ,extends:»,precedes:«
   highlight NonText    ctermfg=darkblue
   highlight SpecialKey ctermfg=darkblue
 
@@ -215,12 +214,22 @@ function! s:beauty()
 endfunction
 call s:beauty()
 
+" Don't user listchars for tab when tabstop is small
+autocmd vimrc VimEnter,Colorscheme *
+\ if &tabstop < 4                               |
+\   set listchars=tab:\ \ ,extends:»,precedes:« |
+\ else                                          |
+\   set listchars=tab:›\ ,extends:»,precedes:«  |
+\ endif
+
 " Use different colorscheme in vimdiff
 autocmd vimrc FilterWritePre *
 \ if &diff                                      |
 \   syntax off                                  |
 \   set foldcolumn=0                            |
 \ endif
+
+" Restore colorscheme on BufWinLeave
 autocmd vimrc BufWinLeave *
 \ if &diff                                      |
 \   call s:beauty()                             |
