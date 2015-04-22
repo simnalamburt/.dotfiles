@@ -6,7 +6,7 @@ OS X
     * iTerm2, xCode
     * 카톡, 라인, Evernote, InsomniaX, GarageBand, OBS
 1.  [Homebrew](http://brew.sh)
-    * git, vim
+    * git, vim, mosh
     * wget, htop
     * gtar, xz, p7zip
     * nmap, binutils
@@ -30,7 +30,7 @@ OS X
 Ubuntu Server
 --------
 1.  apt-get
-    * git, vim-nox, zsh
+    * git, vim-nox, zsh, mosh
     * tmux
     * weechat
     * nginx
@@ -53,7 +53,7 @@ Arch Linux
     * dialog, wpa_supplicant *(for wiki-menu)*
     * bash-completion
     * openssh
-    * git, vim-python3, zsh
+    * git, vim-python3, zsh, mosh
     * tmux
     * the_silver_searcher
     * python-pip
