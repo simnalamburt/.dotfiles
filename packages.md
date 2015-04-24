@@ -14,8 +14,8 @@ OS X
     * haskell(ghc, cabal-install), ocaml, ledit
     * pandoc
     * w3m, peco
+    * ffmpeg (--with-libvpx)
 1.  [Cask](http://caskroom.io)
-    * chromium
     * xquartz
     * horndis
     * mactex
