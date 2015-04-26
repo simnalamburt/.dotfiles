@@ -39,6 +39,7 @@ Ubuntu Server
       * pysha3
     * postfix
       * `v=spf1 a mx ptr ptr:175.197.17.221 -all`
+    * debian-goodies
 1.  PPA
     * mongodb
     * [nodejs](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
