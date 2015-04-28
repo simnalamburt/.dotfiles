@@ -68,6 +68,7 @@ rsync                   | 설명
 `# adduser <username> sudo`             | 특정 사용자 sudoer로 설정
 `# usermod -l <login-name> <old-name>`  | 유저 이름 바꾸기
 `# usermod -m -d <path> <username>`     | 유저 홈디렉토리 바꾸기
+`# usermod -g <group> <user>`           | 유저 primary group 바꾸기
 `# usermod -aG sudo <username>`         | 특정 사용자 sudoer로 설정
 `# vipw`                                | /etc/passwd  편집
 `# vipw -s`                             | /etc/shadow  편집
