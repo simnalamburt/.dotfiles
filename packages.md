@@ -4,7 +4,7 @@ OS X
     * Firefox
     * Google Drive
     * iTerm2, xCode
-    * 카톡, 라인, Evernote, InsomniaX, GarageBand, OBS
+    * 카톡, 라인, InsomniaX, GarageBand, OBS
 1.  [Homebrew](http://brew.sh)
     * git, vim, mosh
     * wget, htop
@@ -19,6 +19,7 @@ OS X
     * xquartz
     * horndis
     * mactex
+    * dropbox
 1.  pip3
     * Pygments
 1.  폰트
