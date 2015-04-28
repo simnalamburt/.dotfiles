@@ -39,6 +39,7 @@ apt-get                                       | 설명
 `# ntpdate ntp.ubuntu.com`  | 서버 시간 동기화
 `# reboot`                  | 서버 재시작
 `# shutdown -P now`         | 서버 끄기
+`# netstat -taupen`         | 어느 프로세스가 어느 소켓을 열고있는지 알아냄
 `$ dpigs -S -H`             | 어느 패키지그룹의 용량이 큰지 보기
 `$ dpigs -n 10`             | 용량 큰 패키지 10개 나열
 
