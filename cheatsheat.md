@@ -33,6 +33,11 @@ apt-get                                       | 설명
 
 [pacman]: https://wiki.archlinux.org/index.php/Pacman
 
+rsync                   | 설명
+------------------------|------
+`rsync <src> <dest>`    | 이어받기가 지원되는 파일 다운로드
+`rsync -P <src> <dest>` | 프로그레스 보기
+
 서버 관리                   | 설명
 ----------------------------|--------
 `# hostname <이름>`         | [서버 이름 바꾸기](http://askubuntu.com/a/87687)
