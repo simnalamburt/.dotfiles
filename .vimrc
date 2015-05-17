@@ -90,14 +90,12 @@ Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 
 " Syntax
+Plug 'rust-lang/rust.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
-Plug 'gkz/vim-ls'
-Plug 'slim-template/vim-slim'
-Plug 'sophacles/vim-processing'
-Plug 'rust-lang/rust.vim'
-Plug 'evanmiller/nginx-vim-syntax'
 Plug 'tikhomirov/vim-glsl'
+Plug 'evanmiller/nginx-vim-syntax'
 Plug 'stephpy/vim-yaml'
 
 " General
@@ -119,6 +117,10 @@ Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
 
 call plug#end()
+
+" vim-cpp-enhanced-highlight
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1
 
 " vim-airline
 let g:airline_powerline_fonts = 1
