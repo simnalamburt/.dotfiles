@@ -52,7 +52,7 @@ Arch Linux
 --------
 1.  pacman
     * sudo, grub, os-prober
-    * dialog, wpa_supplicant *(for wiki-menu)*
+    * dialog, wpa_supplicant *(for wifi-menu)*
     * bash-completion
     * openssh
     * git, vim-python3, zsh, mosh
