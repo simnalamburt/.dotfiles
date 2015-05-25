@@ -56,6 +56,7 @@ Arch Linux
     * bash-completion
     * openssh
     * git, vim-python3, zsh, mosh
+    * wget
     * tmux
     * the_silver_searcher
     * python-pip
