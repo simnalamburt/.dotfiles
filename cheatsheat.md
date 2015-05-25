@@ -31,6 +31,7 @@ apt-get                                       | 설명
 `# pacman -S <name>`                       | 패키지 설치
 `# pacman -R <name>`                       | 패키지 제거
 `# pacman -Ss <name>`                      | 패키지 찾기
+`# pacman -Qe`                             | List all explicitly installed packages
 `# pacman -Sy`                             | Sync the database with the latest repository
 `# pacman -Sy && pacman -S pacman-mirrors` | Update pacman mirrors
 `# pacman -Syy`                            |
