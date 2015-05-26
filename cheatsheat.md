@@ -210,6 +210,7 @@ p               | 뒤에 붙여넣기
 f<char>         | 현재 라인에서 <char>로 순간이동
 t<char>         |
 :cd             | Change Directory
+.               | Repeat last command
 
 Insert / Replace | 설명
 -----------------|--------
