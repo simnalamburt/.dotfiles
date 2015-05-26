@@ -31,3 +31,6 @@ fi
 if hash tmux 2>/dev/null; then
   alias irc='tmux attach'
 fi
+
+alias mv='mv -i'
+alias cp='cp -i'
