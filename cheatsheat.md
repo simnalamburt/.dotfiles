@@ -99,6 +99,20 @@ rsync                   | 설명
 `$ tar -zcvf <이름> <A> <B> <C> ...`  | 한번에 `tar.gz` 만들기
 `$ tar -Jcvf <이름> <A> <B> <C> ...`  | 한번에 `tar.xz` 만들기
 
+gdb          | 설명
+-------------|---
+`run`, `r`   | 실행
+`b <N>`      | N번 라인에 브레이크포인트
+`i stacks`   | 스택트레이스 보기
+`i locals`   | 현재 스택의 지역변수들
+`i args`     | 현재 스택의 함수 인자들
+`p <expr>`   | 해당 익스프레션 값 보기
+`cont`       | 실행 재개
+
+valgrind                                          | 설명
+--------------------------------------------------|-----
+`valgrind --tool=memcheck --leak-check=yes ./bin` | 메모리릭, double-free 검사
+
 lldb    | 설명
 --------|--------
 `help`  | 도움

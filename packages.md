@@ -55,7 +55,7 @@ Arch Linux
     * dialog, wpa_supplicant *(for wifi-menu)*
     * bash-completion
     * openssh
-    * gcc, gdb
+    * gcc, gdb, valgrind
     * git, vim-python3, zsh, mosh
     * wget
     * tmux
