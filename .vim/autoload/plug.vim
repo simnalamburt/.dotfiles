@@ -14,6 +14,9 @@
 "   Plug 'junegunn/seoul256.vim'
 "   Plug 'junegunn/vim-easy-align'
 "
+"   " Group dependencies, vim-snippets depends on ultisnips
+"   Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"
 "   " On-demand loading
 "   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "   Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
@@ -356,7 +359,9 @@ function! plug#load(...)
   for name in a:000
     call s:lod([name], ['ftdetect', 'after/ftdetect', 'plugin', 'after/plugin'])
   endfor
-  doautocmd BufRead
+  if exists('#BufRead')
+    doautocmd BufRead
+  endif
   return 1
 endfunction
 
@@ -386,14 +391,21 @@ function! s:lod(names, types)
     for dir in a:types
       call s:source(rtp, dir.'/**/*.vim')
     endfor
+    if exists('#User#'.name)
+      execute 'doautocmd User' name
+    endif
   endfor
 endfunction
 
 function! s:lod_ft(pat, names)
   call s:lod(a:names, ['plugin', 'after/plugin'])
   execute 'autocmd! PlugLOD FileType' a:pat
-  doautocmd filetypeplugin FileType
-  doautocmd filetypeindent FileType
+  if exists('#filetypeplugin#FileType')
+    doautocmd filetypeplugin FileType
+  endif
+  if exists('#filetypeindent#FileType')
+    doautocmd filetypeindent FileType
+  endif
 endfunction
 
 function! s:lod_cmd(cmd, bang, l1, l2, args, names)
@@ -428,7 +440,7 @@ function! s:add(repo, ...)
       call add(g:plugs_order, name)
     endif
     let g:plugs[name] = spec
-    let s:loaded[name] = 0
+    let s:loaded[name] = get(s:loaded, name, 0)
   catch
     return s:err(v:exception)
   endtry
@@ -1925,7 +1937,7 @@ function! s:preview_commit()
   execute 'pedit' sha
   wincmd P
   setlocal filetype=git buftype=nofile nobuflisted
-  execute 'silent read !cd' s:shellesc(g:plugs[name].dir) '&& git show' sha
+  execute 'silent read !cd' s:shellesc(g:plugs[name].dir) '&& git show --pretty=medium' sha
   normal! gg"_dd
   wincmd p
 endfunction
