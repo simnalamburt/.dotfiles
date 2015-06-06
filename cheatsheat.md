@@ -114,6 +114,11 @@ gdb            | 설명
 `i disp`       | 현재 걸려있는 disp들 나열
 `d d <N>`      | N번째 display를 삭제
 
+트레이스 | 설명
+---------|------
+`strace` |
+`ltrace` |
+
 valgrind                                          | 설명
 --------------------------------------------------|-----
 `valgrind --tool=memcheck --leak-check=yes ./bin` | 메모리릭, double-free 검사
