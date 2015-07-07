@@ -111,6 +111,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug '~/.racer/racer', { 'for': 'rust' }
 
 " Blink
 Plug 'rhysd/clever-f.vim'
@@ -156,6 +157,12 @@ nnoremap <leader>g :GundoToggle<CR>
 
 " vim-github-dashboard
 let g:github_dashboard = { 'username': 'simnalamburt' }
+
+" racer
+set hidden
+let g:racer_cmd = "~/.racer/racer/target/release/racer"
+let $RUST_SRC_PATH=$HOME."/.racer/rust/src"
+inoremap <C-o> <C-x><C-o>
 
 " clever-f.vim
 let g:clever_f_across_no_line = 1
