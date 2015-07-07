@@ -90,8 +90,8 @@ Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 
 " Syntax
-Plug 'rust-lang/rust.vim'
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
 Plug 'tikhomirov/vim-glsl'
