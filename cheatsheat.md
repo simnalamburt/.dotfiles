@@ -155,6 +155,11 @@ FFmpeg                                          | 설명
 `$ ffmpeg -i <input> -vn -acodec copy <output>` | 오디오 추출
 `$ ffmpeg -i <input> -vcodec copy -an <output>` | 비디오 추출
 
+postfix | 설명
+--------|-----
+`postqueue -p` | 현재 메일 큐 보기
+`sudo postsuper -d DA4EE2E15D1` | 메일 `DA4EE2E15D1`를 큐에서 제거
+
 클립보드          | 설명
 ------------------|-------------
 `$ pbcopy < file` | 파일의 내용을 복사
@@ -268,3 +273,11 @@ Go `/etc/update-motd.d/`
 ### Mibbit
 
 https://widget.mibbit.com/?server=irc.uriirc.org:+16667&channel=%23hyeon
+
+### 메일서버 세팅하기
+1.  MX 레코드 설정
+2.  SPF 레코드 설정
+    ```
+    "v=spf1 ip4:175.197.33.12 -all"
+    ```
+3.  [KISA 화이트리스트](https://www.kisarbl.or.kr)에 등록
