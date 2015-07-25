@@ -36,6 +36,7 @@ Ubuntu Server
     * weechat
     * nginx
     * htop, fail2ban
+    * silversearcher-ag, mosh
     * python, python-dev, python-pip
       * pysha3
     * postfix
