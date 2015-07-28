@@ -66,11 +66,12 @@ Arch Linux
 MSYS2
 --------
 1.  pacman
+    * ca-certificates
     * git, vim, zsh
     * wget, tar, zip
-    * ca-certificates
     * ruby, python2
     * mingw-w64-x86_64-gcc, make
+    * base-devel, gcc, gmp-devel, libcrypt-devel, ncurses-devel (required by fzf)
 1.  etc
     * [rust][]
 
