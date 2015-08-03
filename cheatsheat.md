@@ -71,6 +71,7 @@ rsync                   | 설명
 유저관리                                | 설명
 ----------------------------------------|--------
 `# adduser <username>`                  | 새 유저 만들기
+`# deluser <username>`                  | 유저 삭제하기
 `# adduser <username> sudo`             | 특정 사용자 sudoer로 설정
 `# usermod -l <login-name> <old-name>`  | 유저 이름 바꾸기
 `# usermod -m -d <path> <username>`     | 유저 홈디렉토리 바꾸기
