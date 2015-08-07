@@ -29,7 +29,7 @@ if [ $(hostname) = "rilakkuma" ]; then
 fi
 
 if hash tmux 2>/dev/null; then
-  alias irc='tmux attach'
+  alias irc='tmux attach -t irc'
 fi
 
 alias mv='mv -i'
