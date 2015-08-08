@@ -97,6 +97,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'tikhomirov/vim-glsl'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'stephpy/vim-yaml'
+Plug 'mhinz/vim-rfc'
+Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
 
 " General
 Plug 'tpope/vim-sensible'
