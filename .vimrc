@@ -81,6 +81,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'junegunn/vim-xmark'
 Plug 'simnalamburt/vim-sensible'
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-git'
