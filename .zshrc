@@ -1,11 +1,16 @@
-#
-# oh-my-zsh
-#
-export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="agnoster"
-CASE_SENSITIVE="true"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
+source ~/.dotfiles/zgen.zsh
+if ! zgen saved; then
+  echo "Creating a zgen save"
+
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/cp
+  zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/command-not-found
+  zgen load zsh-users/zsh-completions src
+  zgen load zsh-users/zsh-syntax-highlighting
+  zgen oh-my-zsh themes/agnoster
+  zgen save
+fi
 
 
 #
