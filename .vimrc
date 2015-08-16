@@ -79,7 +79,6 @@ augroup END
 call plug#begin('~/.vim/plugged')
 
 " Beauty
-Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 
