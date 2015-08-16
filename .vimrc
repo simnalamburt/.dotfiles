@@ -95,7 +95,7 @@ Plug 'mhinz/vim-rfc'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
 
 " General
-Plug 'tpope/vim-sensible'
+Plug 'simnalamburt/vim-sensible'
 Plug 'tpope/vim-endwise'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-startify'
