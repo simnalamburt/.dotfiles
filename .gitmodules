@@ -1,3 +1,0 @@
-[submodule ".tmux/tmux-powerline"]
-  path = .tmux/tmux-powerline
-  url = git://github.com/simnalamburt/tmux-powerline

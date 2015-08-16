@@ -16,9 +16,8 @@ ln -sf .dotfiles/.gitexclude .
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
 # tmux
-ln -sf .dotfiles/.tmux .
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm --depth=1
 ln -sf .dotfiles/.tmux.conf .
-cd .dotfiles && git submodule update --init --depth=1 --recursive && cd ~
 ```
 
 * [Cheatsheat of various commands](cheatsheat.md)
