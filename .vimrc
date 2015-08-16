@@ -222,7 +222,7 @@ function! s:beauty()
   highlight DiffText   ctermfg=027  ctermbg=none
   highlight Folded     ctermfg=016  ctermbg=none
 endfunction
-call s:beauty()
+call <SID>beauty()
 
 " Don't user listchars for tab when tabstop is small
 autocmd vimrc VimEnter,Colorscheme *
@@ -232,17 +232,22 @@ autocmd vimrc VimEnter,Colorscheme *
 \   set listchars=tab:›\ ,extends:»,precedes:«  |
 \ endif
 
-" Use different colorscheme in vimdiff
-autocmd vimrc FilterWritePre *
-\ if &diff                                      |
-\   syntax off                                  |
-\   set foldcolumn=0                            |
-\ endif
 
-" Restore colorscheme on BufWinLeave
-autocmd vimrc BufWinLeave *
-\ if &diff                                      |
-\   call s:beauty()                             |
-\   call airline#load_theme()                   |
-\   call airline#update_statusline()            |
-\ endif
+" vimdiff customization
+function! s:vimdiff_enter()
+  if !&diff | return | endif
+
+  syntax off
+  set foldcolumn=0
+endfunction
+
+function! s:vimdiff_leave()
+  if !&diff | return | endif
+
+  call <SID>beauty()
+  call airline#load_theme()
+  call airline#update_statusline()
+endfunction
+
+autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
+autocmd! vimrc BufWinLeave * call <SID>vimdiff_leave()
