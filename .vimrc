@@ -1,14 +1,10 @@
 "
 " General configs
 "
-set enc=utf-8
-set backspace=indent,eol,start
 set diffopt+=iwhite,vertical
-set laststatus=2
 set pastetoggle=<F8>
 set scrolloff=3
 set switchbuf+=usetab,split
-set ruler
 set startofline
 set splitbelow
 set nobackup
@@ -19,7 +15,6 @@ set noswapfile
 set nowrap
 
 " History
-set history=1024
 set undolevels=1024
 
 " Indention
@@ -35,7 +30,6 @@ set expandtab
 " Searching
 set ignorecase
 set smartcase
-set incsearch
 set hlsearch
 set nowrapscan
 
@@ -155,7 +149,6 @@ endfunction
 
 autocmd! vimrc VimEnter,Colorscheme * call <SID>decoration()
 
-
 " vim-better-whitespace
 let g:strip_whitespace_on_save = 1
 
@@ -219,7 +212,6 @@ function! s:beauty()
   highlight MatchParen ctermfg=white ctermbg=016
 
   " Wildmenu settings
-  set wildmenu
   set wildmode=full
   highlight StatusLine ctermbg=darkgray ctermfg=234
   highlight WildMenu   ctermfg=white    ctermbg=234
