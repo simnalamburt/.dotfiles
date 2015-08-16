@@ -108,6 +108,7 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'stephpy/vim-yaml'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
+Plug 'tmux-plugins/vim-tmux'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
