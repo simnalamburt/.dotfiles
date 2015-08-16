@@ -96,6 +96,8 @@ Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
 
 " General
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-endwise'
+Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-startify'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/nerdtree'
