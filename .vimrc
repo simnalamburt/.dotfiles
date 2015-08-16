@@ -79,6 +79,8 @@ augroup END
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'simnalamburt/vim-sensible'
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-git'
@@ -112,6 +114,31 @@ Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
 
 call plug#end()
+
+
+" goyo.vim
+function! s:goyo_enter()
+  silent !tmux set status off
+  set noshowmode
+  set noshowcmd
+  set scrolloff=999
+  Limelight
+endfunction
+
+function! s:goyo_leave()
+  silent !tmux set status on
+  set showmode
+  set showcmd
+  set scrolloff=3
+  Limelight!
+  call <SID>beauty()
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+" limelight.vim
+let g:limelight_conceal_ctermfg = 240
 
 " vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
