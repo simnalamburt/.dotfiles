@@ -128,7 +128,6 @@ let g:cpp_experimental_template_highlight = 1
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " vim-indent-guides
 nmap <leader>i <Plug>IndentGuidesToggle
