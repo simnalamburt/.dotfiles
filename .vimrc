@@ -78,8 +78,24 @@ augroup END
 "
 call plug#begin('~/.vim/plugged')
 
-" Beauty
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'simnalamburt/vim-sensible'
+Plug 'simnalamburt/vim-mundo'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-endwise'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mhinz/vim-startify'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'godlygeek/tabular'
+Plug 'mhinz/vim-rfc'
+Plug '~/.racer/racer', { 'for': 'rust' }
+
+" Visual
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'editorconfig/editorconfig-vim'
 
 " Syntax
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
@@ -89,24 +105,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'tikhomirov/vim-glsl'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'stephpy/vim-yaml'
-Plug 'mhinz/vim-rfc'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
-
-" General
-Plug 'simnalamburt/vim-sensible'
-Plug 'tpope/vim-endwise'
-Plug 'jiangmiao/auto-pairs'
-Plug 'mhinz/vim-startify'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'simnalamburt/vim-mundo'
-Plug 'godlygeek/tabular'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'tpope/vim-git'
-Plug 'tpope/vim-fugitive'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-Plug '~/.racer/racer', { 'for': 'rust' }
 
 " Blink
 Plug 'rhysd/clever-f.vim'
