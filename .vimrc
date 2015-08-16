@@ -213,10 +213,13 @@ function! s:beauty()
   set showmatch
   highlight MatchParen ctermfg=white ctermbg=016
 
-  " Wildmenu settings
+  " Tab & status line settings
   set wildmode=full
-  highlight StatusLine ctermbg=darkgray ctermfg=234
-  highlight WildMenu   ctermfg=white    ctermbg=234
+  highlight StatusLine  ctermbg=darkgray ctermfg=234
+  highlight WildMenu    ctermfg=white    ctermbg=234
+  highlight TabLine     ctermfg=darkgray ctermbg=234 cterm=none
+  highlight TabLineSel  ctermfg=white    ctermbg=234 cterm=none
+  highlight TabLineFill ctermbg=234      ctermfg=234
 
   " Better diff
   set fillchars+=vert:\ ,fold:―,diff:·
