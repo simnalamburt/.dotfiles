@@ -136,15 +136,26 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:indent_guides_default_mapping = 0
-autocmd vimrc VimEnter,Colorscheme *
-\ if &softtabstop < 4                           |
-\   highlight IndentGuidesOdd  ctermbg=NONE     |
-\   highlight IndentGuidesEven ctermbg=black    |
-\ else                                          |
-\   let g:indent_guides_guide_size = 1          |
-\   highlight IndentGuidesOdd  ctermbg=black    |
-\   highlight IndentGuidesEven ctermbg=black    |
-\ endif
+
+function! s:decoration()
+  if &softtabstop < 4
+    highlight IndentGuidesOdd  ctermbg=NONE
+  else
+    let g:indent_guides_guide_size = 1
+    highlight IndentGuidesOdd  ctermbg=black
+  endif
+  highlight IndentGuidesEven ctermbg=black
+
+  if &tabstop < 4
+    " Do not decorate tab with '›' when tabstop is small
+    set listchars=tab:\ \ ,extends:»,precedes:«
+  else
+    set listchars=tab:›\ ,extends:»,precedes:«
+  endif
+endfunction
+
+autocmd! vimrc VimEnter,Colorscheme * call <SID>decoration()
+
 
 " vim-better-whitespace
 let g:strip_whitespace_on_save = 1
@@ -223,14 +234,6 @@ function! s:beauty()
   highlight Folded     ctermfg=016  ctermbg=none
 endfunction
 call <SID>beauty()
-
-" Don't user listchars for tab when tabstop is small
-autocmd vimrc VimEnter,Colorscheme *
-\ if &tabstop < 4                               |
-\   set listchars=tab:\ \ ,extends:»,precedes:« |
-\ else                                          |
-\   set listchars=tab:›\ ,extends:»,precedes:«  |
-\ endif
 
 
 " vimdiff customization
