@@ -79,7 +79,6 @@ augroup END
 call plug#begin('~/.vim/plugged')
 
 " Beauty
-Plug 'bling/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 
 " Syntax
@@ -118,10 +117,6 @@ call plug#end()
 " vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
-
-" vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 
 " vim-indent-guides
 nmap <leader>i <Plug>IndentGuidesToggle
@@ -243,8 +238,6 @@ function! s:vimdiff_leave()
   if !&diff | return | endif
 
   call <SID>beauty()
-  call airline#load_theme()
-  call airline#update_statusline()
 endfunction
 
 autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
