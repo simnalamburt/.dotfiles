@@ -52,16 +52,14 @@ Ubuntu Server
 Arch Linux
 --------
 1.  pacman
-    * sudo, grub, os-prober
+    * base, grub, sudo, gnome, xf86-input-synaptics
+    * openssh, wget, git, vim, zsh, tmux, mosh
+    * chromium *(remove epiphany)*
+    * gnome-tweak-tool, ibus-hangul, adobe-source-han-sans-otc-fonts
     * dialog, wpa_supplicant *(for wifi-menu)*
-    * bash-completion
-    * openssh
-    * gcc, gdb, valgrind
-    * git, vim-python3, zsh, mosh
-    * wget
-    * tmux
-    * the_silver_searcher
-    * python-pip
+1.  yaourt
+    * the_platinum_searcher
+    * gtk-theme-arc-git, numix-circle-icon-theme-git
 
 MSYS2
 --------
