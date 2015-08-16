@@ -33,6 +33,7 @@
 "   " Unmanaged plugin (manually installed and updated)
 "   Plug '~/my-prototype-plugin'
 "
+"   " Add plugins to &runtimepath
 "   call plug#end()
 "
 " Then reload .vimrc and :PlugInstall to install plugins.
@@ -1191,7 +1192,7 @@ class Command(object):
           raise CmdTimedOut(['Timeout!'])
 
       tfile.seek(0)
-      result = [line.decode().rstrip() for line in tfile]
+      result = [line.decode('utf-8', 'replace').rstrip() for line in tfile]
 
       if proc.returncode != 0:
         msg = ['']
@@ -1343,7 +1344,7 @@ def esc(name):
 def nonblock_read(fname):
   """ Read a file with nonblock flag. Return the last line. """
   fread = os.open(fname, os.O_RDONLY | os.O_NONBLOCK)
-  buf = os.read(fread, 100000).decode()
+  buf = os.read(fread, 100000).decode('utf-8', 'replace')
   os.close(fread)
 
   line = buf.rstrip('\r\n')
