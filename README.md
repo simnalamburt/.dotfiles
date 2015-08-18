@@ -14,6 +14,9 @@ ln -sf .dotfiles/.zshrc
 ln -sf .dotfiles/.gemrc
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.gitexclude
+
+mkdir -p .ssh
+chmod 700 .ssh
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
 # tmux
