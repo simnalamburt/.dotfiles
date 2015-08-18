@@ -6,11 +6,9 @@ OS X
     * iTerm2, xCode
     * 카톡, 라인, InsomniaX, GarageBand, OBS
 1.  [Homebrew](http://brew.sh)
-    * git, vim, mosh
-    * wget, htop
-    * gtar, xz, p7zip
-    * nmap, binutils
+    * vim, git, mosh, wget, xz, pt
     * ruby, iojs, python, python3
+    * p7zip, htop, gtar, nmap, binutils
     * haskell(ghc, cabal-install), ocaml, ledit
     * pandoc
     * w3m, peco
