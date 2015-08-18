@@ -6,6 +6,7 @@ Requires `git` and `zsh`
 ```bash
 cd ~
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
+curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ln -sf .dotfiles/.vim
 ln -sf .dotfiles/.vimrc
@@ -16,7 +17,7 @@ ln -sf .dotfiles/.gitexclude
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
 # tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm --depth=1
+git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
 ln -sf .dotfiles/.tmux.conf
 ```
 
