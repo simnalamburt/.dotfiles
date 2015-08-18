@@ -7,17 +7,17 @@ Requires `git` and `zsh`
 cd ~
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
 
-ln -sf .dotfiles/.vim .
-ln -sf .dotfiles/.vimrc .
-ln -sf .dotfiles/.zshrc .
-ln -sf .dotfiles/.gemrc .
-ln -sf .dotfiles/.gitconfig .
-ln -sf .dotfiles/.gitexclude .
+ln -sf .dotfiles/.vim
+ln -sf .dotfiles/.vimrc
+ln -sf .dotfiles/.zshrc
+ln -sf .dotfiles/.gemrc
+ln -sf .dotfiles/.gitconfig
+ln -sf .dotfiles/.gitexclude
 ln -sf ~/.dotfiles/.ssh/config .ssh
 
 # tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm --depth=1
-ln -sf .dotfiles/.tmux.conf .
+ln -sf .dotfiles/.tmux.conf
 ```
 
 * [Cheatsheat of various commands](cheatsheat.md)
