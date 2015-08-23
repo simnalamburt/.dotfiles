@@ -33,7 +33,7 @@ Ubuntu Server
     * tmux
     * weechat
     * nginx
-    * htop, fail2ban
+    * htop, fail2ban, ntp
     * silversearcher-ag, mosh
     * python, python-dev, python-pip
       * pysha3
