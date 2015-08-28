@@ -5,10 +5,8 @@ Requires `git` and `zsh`
 
 ```bash
 cd ~
-mkdir -p .ssh
-chmod 700 .ssh
+mkdir -p .ssh && chmod 700 .ssh
 
-ln -sf .dotfiles/.vim
 ln -sf .dotfiles/.vimrc
 ln -sf .dotfiles/.zshrc
 ln -sf .dotfiles/.gemrc
