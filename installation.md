@@ -136,36 +136,17 @@ MSYS2
 
     If `pacman` fails, download it from [SourceForge][] [(reference)][pacman-fail].
 
-1.  Use `zsh` as default shell [(reference)][chsh].
+1.  Install packages.
+1.  Open `/msys2_shell.bat`
 
-    ```sh
-    vim /msys2_shell.bat
-    vim /mingw64_shell.bat
-    # Replace /usr/bin/bash into /usr/bin/zsh
-    ```
-    ```sh
-    vim /etc/profile
-    # Add "SHELL=`which zsh`" line below "PS1='(%n@%m)[%h] %~ %% '" line.
-    ```
+    1. Add `set LANG=ko_KR.UTF-8`.
+    1. Enable [symlink][].
+    1. Replace `/usr/bin/bash` into `/usr/bin/zsh`.
 
-1.  Enable symlink [(reference)][symlink]
-
-    ```sh
-    vim /msys2_shell.bat
-    vim /mingw64_shell.bat
-    # Find 'symlink'
-    ```
-
+1.  Open `/etc/profile`, Add "SHELL=`which zsh`" line below "PS1='(%n@%m)[%h] %~ %% '" line.
 1.  Clone [dotfiles](https://github.com/simnalamburt/dotfiles).
-1.  Install vim plugins [(reference)][ca-cert].
-
-    ```sh
-    pacman -S ca-certificates python2
-    vim +PlugInstall
-    ```
+1.  Invoke zgen, and fix symlinks of the plugins manually.
 
 [SourceForge]: http://sourceforge.net/projects/msys2/files/REPOS/MSYS2/x86_64
 [pacman-fail]: http://qiita.com/k-takata/items/fcb2f1f9ca564fd78597
-[chsh]: http://qiita.com/magichan/items/7702d7865deaaca2ad44
-[ca-cert]: http://qiita.com/7shi/items/894fdd849658880bf6c9
 [symlink]: http://sourceforge.net/p/msys2/mailman/message/33004178/
