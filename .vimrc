@@ -111,6 +111,7 @@ Plug 'stephpy/vim-yaml'
 Plug 'vim-scripts/applescript.vim'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
 Plug 'tmux-plugins/vim-tmux'
+Plug 'rhysd/vim-crystal'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
