@@ -5,7 +5,7 @@ OS X
     * Google Drive
     * iTerm2, xCode
     * 카톡, 라인, InsomniaX, GarageBand, OBS
-1.  [Homebrew](http://brew.sh)
+1.  [brew](http://brew.sh)
     * vim, git, mosh, wget, xz, pt
     * ruby, iojs, python, python3
     * p7zip, htop, gtar, nmap, binutils
@@ -13,15 +13,14 @@ OS X
     * pandoc
     * w3m, peco
     * ffmpeg (--with-libvpx)
-1.  [Cask](http://caskroom.io)
+1.  [caskroom/cask](http://caskroom.io)
     * xquartz
     * horndis
     * mactex
     * dropbox
-1.  pip3
-    * Pygments
+1.  manastech/crystal
+    * crystal-lang
 1.  폰트
-    * [UnBatang](http://fonts2u.com/un-batang.font), [UnDotum](http://fonts2u.com/un-dotum.font)
     * [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
 1.  etc
     * [rust][]
