@@ -25,15 +25,12 @@ OS X
 1.  etc
     * [rust][]
 
-Ubuntu Server
+hyeonme
 --------
 1.  apt-get
-    * git, vim-nox, zsh, mosh
-    * tmux
+    * git, vim-nox, zsh, mosh, tmux, silversearcher-ag
+    * nginx, htop, speedometer, fail2ban, ntp
     * weechat
-    * nginx
-    * htop, speedometer, fail2ban, ntp
-    * silversearcher-ag, mosh
     * python, python-dev, python-pip
       * pysha3
     * postfix
@@ -45,6 +42,15 @@ Ubuntu Server
     * [ruby2.1, ruby2.1-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
 1.  etc
     * [gitlab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
+
+gemini.upnl.org
+--------
+1.  apt-get
+    * git, vim-nox, zsh, mosh, tmux, silversearcher-ag
+    * nginx, htop, speedometer, fail2ban, ntp
+    * weechat
+1.  PPA
+    * [ruby2.2, ruby2.2-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
 
 Arch Linux
 --------
