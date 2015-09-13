@@ -35,13 +35,12 @@ hyeonme
       * pysha3
     * postfix
       * `v=spf1 a mx ptr ptr:175.197.17.221 -all`
-    * debian-goodies
+    * debian-goodies, ppa-purge
 1.  PPA
     * mongodb
     * [nodejs](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
-    * [ruby2.1, ruby2.1-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
-1.  etc
-    * [gitlab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
+    * [tmux 2.0](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+1.  [GitLab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
 
 gemini.upnl.org
 --------
@@ -51,6 +50,8 @@ gemini.upnl.org
     * weechat
 1.  PPA
     * [ruby2.2, ruby2.2-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
+    * [tmux 2.0](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+1.  [GitLab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
 
 Arch Linux
 --------
