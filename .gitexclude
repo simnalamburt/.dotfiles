@@ -19,6 +19,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# clang
+*.dSYM
+
 # ------------------------ >8 ------------------------
 
 *~
