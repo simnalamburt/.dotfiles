@@ -26,17 +26,25 @@ if [ -f ~/.fzf.zsh ]; then
 fi
 
 if [ $(hostname) = "hyeonmac.local" ]; then
-  alias ml='ledit ocaml'                # ocaml
-  eval `/usr/libexec/path_helper -s`    # brew, mactex
+  eval `/usr/libexec/path_helper -s` # brew and mactex
 fi
 
 if [ $(hostname) = "rilakkuma" ]; then
   export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 fi
 
+alias mv='mv -i'
+alias cp='cp -i'
+alias ml='ledit ocaml'
+
 if hash tmux 2>/dev/null; then
   alias irc='tmux attach -t irc'
 fi
 
-alias mv='mv -i'
-alias cp='cp -i'
+# Alias ag and pt as each other
+if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then
+  alias pt='ag'
+fi; fi
+if hash pt 2>/dev/null; then; if ! hash ag 2>/dev/null; then
+  alias ag='pt'
+fi; fi
