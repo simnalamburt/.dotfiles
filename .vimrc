@@ -78,15 +78,16 @@ augroup END
 "
 call plug#begin('~/.vim/plugged')
 
+Plug 'bling/vim-airline'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-xmark'
-Plug 'simnalamburt/vim-sensible'
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-sensible'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -119,6 +120,9 @@ Plug 'Lokaltog/vim-easymotion'
 
 call plug#end()
 
+
+" vim-airline
+let g:airline_powerline_fonts = 1
 
 " goyo.vim
 function! s:goyo_enter()
@@ -268,6 +272,8 @@ function! s:vimdiff_leave()
   if !&diff | return | endif
 
   call <SID>beauty()
+  call airline#load_theme()
+  call airline#update_statusline()
 endfunction
 
 autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
