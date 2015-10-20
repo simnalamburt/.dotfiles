@@ -106,6 +106,7 @@ Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/seoul256.vim'
 
 " Syntax
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
@@ -218,15 +219,16 @@ omap / <Plug>(easymotion-tn)
 " Beutiful vim
 "
 filetype plugin indent on
-colorscheme elflord
+colorscheme seoul256
+let g:seoul256_background = 234
 
 function! s:beauty()
   syntax enable
 
   " Line number column & 80th column color
-  let column_color = "black"
-  highlight CursorLine cterm=none
-  execute printf("highlight CursorLineNr ctermfg=white ctermbg=%s", column_color)
+  let column_color = "235"
+  highlight CursorLine cterm=none ctermbg=none
+  execute printf("highlight CursorLineNr ctermbg=%s", column_color)
   execute printf("highlight LineNr ctermbg=%s",      column_color)
   execute printf("highlight ColorColumn ctermbg=%s", column_color)
 
