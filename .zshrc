@@ -9,7 +9,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/command-not-found
   zgen load zsh-users/zsh-completions src
   zgen load zsh-users/zsh-syntax-highlighting
-  zgen oh-my-zsh themes/agnoster
+  zgen load simnalamburt/shellder shellder
   zgen save
 fi
 
