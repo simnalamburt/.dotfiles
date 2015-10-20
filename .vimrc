@@ -129,6 +129,7 @@ Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rhysd/vim-crystal'
 Plug 'rgrinberg/vim-ocaml'
+Plug 'simnalamburt/k-.vim'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
