@@ -33,12 +33,20 @@ set smartcase
 set hlsearch
 set nowrapscan
 
-" Line number column & 80th column color
+" Line number column
 set number
 set cursorline
+" 80th column color
 set textwidth=80
 set formatoptions-=t
 set colorcolumn=+1,+2,+3
+" Listchars
+set list
+" Pair matching
+set matchpairs+=<:>
+set showmatch
+" Wildmenu
+set wildmode=longest,full
 
 
 "
@@ -199,40 +207,36 @@ omap / <Plug>(easymotion-tn)
 "
 " Beutiful vim
 "
-filetype plugin indent on
-colorscheme seoul256
+try
+  colorscheme seoul256
+catch /^Vim\%((\a\+)\)\=:E185/
+  " Fallback
+  colorscheme elflord
+endtry
 let g:seoul256_background = 233
-let s:back_color = "234"
+let s:back_color          = 234
 
 function! s:beauty()
   syntax enable
 
-  " Line number column & 80th column color
-  highlight CursorLine cterm=none ctermbg=none
-  execute printf("highlight CursorLineNr ctermbg=%s", s:back_color)
-  execute printf("highlight LineNr ctermbg=%s",       s:back_color)
-  execute printf("highlight ColorColumn ctermbg=%s",  s:back_color)
+  highlight CursorLine   cterm=none ctermbg=none
+  execute printf("highlight CursorLineNr ctermbg=%d", s:back_color)
+  execute printf("highlight LineNr       ctermbg=%d", s:back_color)
+  execute printf("highlight ColorColumn  ctermbg=%d", s:back_color)
+  execute printf("highlight VertSplit ctermfg=%d ctermbg=%d", s:back_color, s:back_color)
 
-  " Split bar
-  highlight VertSplit ctermfg=234 ctermbg=234
+  " Status line, Tab line
+  execute printf("highlight StatusLine  ctermbg=darkgray ctermfg=%d", s:back_color)
+  execute printf("highlight WildMenu    ctermfg=white    ctermbg=%d", s:back_color)
+  execute printf("highlight TabLine     ctermfg=darkgray ctermbg=%d cterm=none", s:back_color)
+  execute printf("highlight TabLineSel  ctermfg=white    ctermbg=%d cterm=none", s:back_color)
+  execute printf("highlight TabLineFill ctermbg=%d       ctermfg=%d", s:back_color, s:back_color)
 
   " Listchars for whitespaces
-  set list
   highlight NonText    ctermfg=darkblue
   highlight SpecialKey ctermfg=darkblue
-
   " Pair matching
-  set matchpairs+=<:>
-  set showmatch
   highlight MatchParen ctermfg=226 ctermbg=016
-
-  " Tab & status line settings
-  set wildmode=full
-  highlight StatusLine  ctermbg=darkgray ctermfg=234
-  highlight WildMenu    ctermfg=white    ctermbg=234
-  highlight TabLine     ctermfg=darkgray ctermbg=234 cterm=none
-  highlight TabLineSel  ctermfg=white    ctermbg=234 cterm=none
-  highlight TabLineFill ctermbg=234      ctermfg=234
 
   " Better diff
   set fillchars+=vert:\ ,fold:―,diff:·
@@ -249,7 +253,7 @@ call <SID>beauty()
 function! s:vimdiff_enter()
   if !&diff | return | endif
 
-  syntax off
+  syntax clear
   set foldcolumn=0
 endfunction
 autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
@@ -271,9 +275,9 @@ function! s:indent()
   else
     let g:indent_guides_guide_size = 1
     highlight IndentGuidesOdd ctermbg=black
-    execute printf("highlight IndentGuidesOdd ctermbg=%s", s:back_color)
+    execute printf("highlight IndentGuidesOdd ctermbg=%d", s:back_color)
   endif
-  execute printf("highlight IndentGuidesEven ctermbg=%s", s:back_color)
+  execute printf("highlight IndentGuidesEven ctermbg=%d", s:back_color)
 
   if &tabstop < 4
     " Do not decorate tab with '›' when tabstop is small
