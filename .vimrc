@@ -233,6 +233,7 @@ function! s:beauty()
 
   " 80th column layout concerns
   set textwidth=80
+  set formatoptions-=t
   set colorcolumn=+1,+2,+3
   highlight ColorColumn ctermbg=black
 
