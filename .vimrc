@@ -237,36 +237,8 @@ function! s:beauty()
   highlight SpecialKey ctermfg=darkblue
   " Pair matching
   highlight MatchParen ctermfg=226 ctermbg=016
-
-  " Better diff
-  set fillchars+=vert:\ ,fold:―,diff:·
-  highlight DiffAdd    ctermfg=040  ctermbg=none
-  highlight DiffDelete ctermfg=052  ctermbg=none
-  highlight DiffChange ctermfg=none ctermbg=none
-  highlight DiffText   ctermfg=027  ctermbg=none
-  highlight Folded     ctermfg=016  ctermbg=none
 endfunction
 call <SID>beauty()
-
-
-" vimdiff customization
-function! s:vimdiff_enter()
-  if !&diff | return | endif
-
-  syntax clear
-  set foldcolumn=0
-endfunction
-autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
-
-function! s:vimdiff_leave()
-  if !&diff | return | endif
-
-  call <SID>beauty()
-  call airline#load_theme()
-  call airline#update_statusline()
-endfunction
-autocmd! vimrc BufWinLeave * call <SID>vimdiff_leave()
-
 
 " indention
 function! s:indent()
