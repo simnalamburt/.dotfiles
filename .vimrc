@@ -168,25 +168,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
 let g:indent_guides_default_mapping = 0
 
-function! s:decoration()
-  if &softtabstop < 4
-    highlight IndentGuidesOdd  ctermbg=NONE
-  else
-    let g:indent_guides_guide_size = 1
-    highlight IndentGuidesOdd  ctermbg=black
-  endif
-  highlight IndentGuidesEven ctermbg=black
-
-  if &tabstop < 4
-    " Do not decorate tab with '›' when tabstop is small
-    set listchars=tab:\ \ ,extends:»,precedes:«
-  else
-    set listchars=tab:›\ ,extends:»,precedes:«
-  endif
-endfunction
-
-autocmd! vimrc VimEnter,Colorscheme * call <SID>decoration()
-
 " vim-better-whitespace
 let g:strip_whitespace_on_save = 1
 
@@ -220,17 +201,17 @@ omap / <Plug>(easymotion-tn)
 "
 filetype plugin indent on
 colorscheme seoul256
-let g:seoul256_background = 234
+let g:seoul256_background = 233
+let s:back_color = "234"
 
 function! s:beauty()
   syntax enable
 
   " Line number column & 80th column color
-  let column_color = "235"
   highlight CursorLine cterm=none ctermbg=none
-  execute printf("highlight CursorLineNr ctermbg=%s", column_color)
-  execute printf("highlight LineNr ctermbg=%s",      column_color)
-  execute printf("highlight ColorColumn ctermbg=%s", column_color)
+  execute printf("highlight CursorLineNr ctermbg=%s", s:back_color)
+  execute printf("highlight LineNr ctermbg=%s",       s:back_color)
+  execute printf("highlight ColorColumn ctermbg=%s",  s:back_color)
 
   " Split bar
   highlight VertSplit ctermfg=234 ctermbg=234
@@ -271,6 +252,7 @@ function! s:vimdiff_enter()
   syntax off
   set foldcolumn=0
 endfunction
+autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
 
 function! s:vimdiff_leave()
   if !&diff | return | endif
@@ -279,6 +261,25 @@ function! s:vimdiff_leave()
   call airline#load_theme()
   call airline#update_statusline()
 endfunction
-
-autocmd! vimrc FilterWritePre * call <SID>vimdiff_enter()
 autocmd! vimrc BufWinLeave * call <SID>vimdiff_leave()
+
+
+" indention
+function! s:indent()
+  if &softtabstop < 4
+    highlight IndentGuidesOdd ctermbg=NONE
+  else
+    let g:indent_guides_guide_size = 1
+    highlight IndentGuidesOdd ctermbg=black
+    execute printf("highlight IndentGuidesOdd ctermbg=%s", s:back_color)
+  endif
+  execute printf("highlight IndentGuidesEven ctermbg=%s", s:back_color)
+
+  if &tabstop < 4
+    " Do not decorate tab with '›' when tabstop is small
+    set listchars=tab:\ \ ,extends:»,precedes:«
+  else
+    set listchars=tab:›\ ,extends:»,precedes:«
+  endif
+endfunction
+autocmd! vimrc VimEnter,Colorscheme * call <SID>indent()
