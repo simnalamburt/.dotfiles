@@ -33,6 +33,13 @@ set smartcase
 set hlsearch
 set nowrapscan
 
+" Line number column & 80th column color
+set number
+set cursorline
+set textwidth=80
+set formatoptions-=t
+set colorcolumn=+1,+2,+3
+
 
 "
 " Key mappings
@@ -214,14 +221,14 @@ filetype plugin indent on
 colorscheme elflord
 
 function! s:beauty()
-  syntax on
+  syntax enable
 
-  " Line number column
-  set number
-  set cursorline
-  highlight LineNr ctermbg=black
+  " Line number column & 80th column color
+  let column_color = "black"
   highlight CursorLine cterm=none
-  highlight CursorLineNr ctermfg=white ctermbg=black
+  execute printf("highlight CursorLineNr ctermfg=white ctermbg=%s", column_color)
+  execute printf("highlight LineNr ctermbg=%s",      column_color)
+  execute printf("highlight ColorColumn ctermbg=%s", column_color)
 
   " Split bar
   highlight VertSplit ctermfg=234 ctermbg=234
@@ -231,16 +238,10 @@ function! s:beauty()
   highlight NonText    ctermfg=darkblue
   highlight SpecialKey ctermfg=darkblue
 
-  " 80th column layout concerns
-  set textwidth=80
-  set formatoptions-=t
-  set colorcolumn=+1,+2,+3
-  highlight ColorColumn ctermbg=black
-
   " Pair matching
   set matchpairs+=<:>
   set showmatch
-  highlight MatchParen ctermfg=white ctermbg=016
+  highlight MatchParen ctermfg=226 ctermbg=016
 
   " Tab & status line settings
   set wildmode=full
