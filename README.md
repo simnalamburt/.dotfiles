@@ -23,7 +23,7 @@ git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
 ln -sf .dotfiles/.tmux.conf
 ```
 
-* [Cheatsheat of various commands](cheatsheat.md)
+* [Cheatsheet of various commands](cheatsheet.md)
 * [Making various development environments](installation.md)
 * [Don't forget what you've installed](packages.md)
 
