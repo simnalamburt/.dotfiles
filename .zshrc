@@ -17,12 +17,15 @@ fi
 #
 # Basic configs
 #
-export TERM=xterm-256color
 export DEFAULT_USER="$USER"
 export RUST_BACKTRACE=1
 
 if [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
+fi
+
+if [ $TMUX = "" ]; then
+  export TERM="xterm-256color"
 fi
 
 if [ $(hostname) = "hyeonmac.local" ]; then
