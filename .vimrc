@@ -13,7 +13,6 @@ set nofoldenable
 set noshowmode
 set noswapfile
 set nowrap
-set t_ut=
 
 " History
 set undolevels=1024
