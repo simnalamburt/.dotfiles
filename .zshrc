@@ -36,6 +36,7 @@ fi
 alias mv='mv -i'
 alias cp='cp -i'
 alias ml='ledit ocaml'
+alias racket='ledit racket'
 
 if hash tmux 2>/dev/null; then
   alias irc='tmux attach -t irc'
