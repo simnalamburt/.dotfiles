@@ -131,6 +131,7 @@ Plug 'tmux-plugins/vim-tmux'
 Plug 'rhysd/vim-crystal'
 Plug 'rgrinberg/vim-ocaml'
 Plug 'simnalamburt/k-.vim'
+Plug 'wlangstroth/vim-racket'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
