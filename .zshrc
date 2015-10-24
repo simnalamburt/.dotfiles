@@ -24,7 +24,7 @@ if [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
 fi
 
-if [ $TMUX = "" ]; then
+if [ "$TMUX" = "" ]; then
   export TERM="xterm-256color"
 fi
 
