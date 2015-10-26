@@ -30,6 +30,7 @@ fi
 
 if [ $(hostname) = "hyeonmac.local" ]; then
   eval `/usr/libexec/path_helper -s` # brew and mactex
+  export PATH="/usr/local/sbin:$PATH"
 fi
 
 if [ $(hostname) = "rilakkuma" ]; then
