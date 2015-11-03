@@ -21,6 +21,9 @@ vim +PlugUpdate +qall
 # tmux
 git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
 ln -sf .dotfiles/.tmux.conf
+
+# etc
+mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
 ```
 
 * [Cheatsheet of various commands](cheatsheet.md)
