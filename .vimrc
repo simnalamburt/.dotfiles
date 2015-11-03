@@ -128,6 +128,7 @@ Plug 'evanmiller/nginx-vim-syntax'
 Plug 'stephpy/vim-yaml'
 Plug 'vim-scripts/applescript.vim'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
+Plug 'brk3/groovyindent'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'rhysd/vim-crystal'
 Plug 'rgrinberg/vim-ocaml'
