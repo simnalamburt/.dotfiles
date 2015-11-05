@@ -1,4 +1,4 @@
-source ~/.dotfiles/zgen.zsh
+source ~/.zgen/zgen/zgen.zsh
 if ! zgen saved; then
   echo "Creating a zgen save"
 

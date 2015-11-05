@@ -10,6 +10,8 @@ git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
 curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ln -sf .dotfiles/.vimrc
+
+git clone https://github.com/tarjoilija/zgen.git .zgen/zgen --depth=1
 ln -sf .dotfiles/.zshrc
 ln -sf .dotfiles/.gemrc
 ln -sf .dotfiles/.gitconfig
