@@ -39,7 +39,7 @@ fi
 
 alias mv='mv -i'
 alias cp='cp -i'
-alias ml='ledit ocaml'
+alias ocaml='ledit ocaml'
 alias racket='ledit racket'
 
 if hash tmux 2>/dev/null; then
