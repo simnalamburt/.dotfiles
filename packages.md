@@ -39,8 +39,9 @@ hyeonme
     * dhex, radare2
 1.  PPA
     * mongodb
-    * [nodejs](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
+    * [node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
     * [tmux 2.0](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+    * [ruby 2.2](https://www.brightbox.com/blog/2015/01/05/ruby-2-2-0-packages-for-ubuntu/)
 1.  [GitLab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
 
 gemini.upnl.org
