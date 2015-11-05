@@ -5,20 +5,21 @@ Requires `git` and `zsh`
 
 ```bash
 cd ~
-mkdir -p .ssh && chmod 700 .ssh
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
-curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-ln -sf .dotfiles/.vimrc
-
+# zsh
 git clone https://github.com/tarjoilija/zgen.git .zgen/zgen --depth=1
 ln -sf .dotfiles/.zshrc
+
+# vim
+curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ln -sf .dotfiles/.vimrc
+vim +PlugUpdate +qall
+
 ln -sf .dotfiles/.gemrc
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.gitexclude
-ln -sf ../.dotfiles/.ssh/config .ssh
-
-vim +PlugUpdate +qall
+mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
 
 # tmux
 git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
