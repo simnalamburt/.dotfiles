@@ -56,6 +56,8 @@ let g:mapleader = ","
 
 " Easy command-line mode
 nnoremap ; :
+" Easy delete key
+vnoremap <backspace> "_d
 " Easy newline insert
 nnoremap <CR> o<Esc>
 " Easy file save
