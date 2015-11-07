@@ -59,7 +59,9 @@ nnoremap ; :
 " Easy newline insert
 nnoremap <CR> o<Esc>
 " Easy file save
-nnoremap <silent> S :update<CR>
+nnoremap <silent> <C-s>      :update<CR>
+inoremap <silent> <C-s> <ESC>:update<CR>a
+vnoremap <silent> <C-s> <ESC>:update<CR>gv
 " Easy indentation
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv

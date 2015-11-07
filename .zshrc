@@ -17,6 +17,7 @@ fi
 #
 # Basic configs
 #
+stty stop undef
 export DEFAULT_USER="$USER"
 export RUST_BACKTRACE=1
 
