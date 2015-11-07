@@ -1,15 +1,14 @@
 OS X
 --------
-1.  Apple ID
+1.  설치
     * Apple ID 생성, iTunes로 계정 활성화
     * iTunes로 카드번호 입력해놓기
-1.  Upgrade OS
-1.  Configure Mac
+    * OS 업데이트
+1.  Configuration
     * 키 반복속도, 마우스 속도, 트랙패드 설정 변경
     * Finder 초기 디렉토리 경로 변경
     * Caps Lock → Command Key
 1.  iTerm2 설정
-    * [Solarized](https://github.com/altercation/solarized/blob/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors)
     * [Access for assistive device](http://www.tekrevue.com/how-to-enable-access-for-assistive-devices-in-os-x-mavericks/)
     * Left Command Key          → Ctrl
     * Option Key                → +Esc
