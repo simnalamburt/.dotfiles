@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitexclude
+	fscache = true
 [color]
 	ui = auto
 [push]
