@@ -138,6 +138,7 @@ Plug 'rhysd/vim-crystal'
 Plug 'rgrinberg/vim-ocaml'
 Plug 'simnalamburt/k-.vim'
 Plug 'wlangstroth/vim-racket'
+Plug 'leafgarland/typescript-vim'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
