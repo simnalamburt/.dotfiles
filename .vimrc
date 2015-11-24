@@ -15,7 +15,17 @@ set noswapfile
 set nowrap
 
 " History
-set undolevels=1024
+if has("persistent_undo")
+  " mkdir -p ~/.vim/undodir
+  let vimdir = '$HOME/.vim'
+  let &runtimepath.=','.vimdir
+  let vimundodir = expand(vimdir . '/undodir')
+  call system('mkdir ' . vimdir)
+  call system('mkdir ' . vimundodir)
+
+  let &undodir = vimundodir
+  set undofile
+endif
 
 " Indention
 set cindent
