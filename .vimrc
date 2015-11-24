@@ -123,7 +123,6 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'godlygeek/tabular'
 Plug 'mhinz/vim-rfc'
 Plug '~/.racer/racer', { 'for': 'rust' }
-Plug 'vim-utils/vim-troll-stopper'
 Plug 'vim-utils/vim-interruptless'
 
 " Visual
