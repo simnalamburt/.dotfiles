@@ -1,12 +1,25 @@
-OS X
+MSYS2
 --------
-1.  Apple ID를 생성<br>
-    카드번호가 필요하며, 구버전 OS X의 경우 iTunes를 써서 활성화해야한다.
-1.  OS 업데이트
-1.  키 반복속도, 마우스 속도 설정
-1.  Finder 초기 디렉토리 경로 변경
-1.  `caps lock` → `⌘`
-1.  `^space` 키도 IME 전환키로 사용
+1.  Install [Consolas for Powerline](https://github.com/nicolalamacchia/powerline-consolas)
+1.  Install [**msys2**](http://msys2.github.io)
+1.  Install [packages](packages.md)
+1.  Edit `/msys2_shell.bat`
+
+    1. Enable symlink
+    1. Add `set LANG=ko_KR.UTF-8`
+    1. Replace `/usr/bin/bash` into `/usr/bin/zsh`
+
+1.  Edit `/etc/profile`
+
+    ```
+    # ...
+    PS1='(%n@%m)[%h] %~ %% '
+    SHELL=$(which zsh) # <- Add this!!
+    ```
+
+1.  Clone [dotfiles](README.md)
+1.  Invoke zgen with `exec zsh`
+1.  Fix a symlink of zgen manually
 
 Arch Linux
 --------
@@ -107,36 +120,12 @@ Arch Linux
     sudo systemctl restart systemd-logind
     ```
 
-MSYS2
+OS X
 --------
-1.  Install [**Powerlined Consolas**](https://github.com/nicolalamacchia/powerline-consolas)
-1.  Change the `Caps Lock` key into a `Ctrl` Key
-
-    Find `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout`
-
-    Create a new binary key named `Scancode Map` with the hex values below:
-
-    ```
-    0000   00 00 00 00 00 00 00 00   ........
-    0008   02 00 00 00 1D 00 3D 00   ......:.
-    0010   00 00 00 00               ....
-    ```
-
-1.  [Install msys2](http://msys2.github.io).
-
-    If `pacman` fails, download it from [SourceForge][] [(reference)][pacman-fail].
-
-1.  Install packages.
-1.  Open `/msys2_shell.bat`
-
-    1. Add `set LANG=ko_KR.UTF-8`.
-    1. Enable [symlink][].
-    1. Replace `/usr/bin/bash` into `/usr/bin/zsh`.
-
-1.  Open `/etc/profile`, Add "SHELL=`which zsh`" line below "PS1='(%n@%m)[%h] %~ %% '" line.
-1.  Clone [dotfiles](https://github.com/simnalamburt/dotfiles).
-1.  Invoke zgen, and fix symlinks of the plugins manually.
-
-[SourceForge]: http://sourceforge.net/projects/msys2/files/REPOS/MSYS2/x86_64
-[pacman-fail]: http://qiita.com/k-takata/items/fcb2f1f9ca564fd78597
-[symlink]: http://sourceforge.net/p/msys2/mailman/message/33004178/
+1.  Apple ID를 생성<br>
+    카드번호가 필요하며, 구버전 OS X의 경우 iTunes를 써서 활성화해야한다.
+1.  OS 업데이트
+1.  키 반복속도, 마우스 속도 설정
+1.  Finder 초기 디렉토리 경로 변경
+1.  `caps lock` → `⌘`
+1.  `^space` 키도 IME 전환키로 사용
