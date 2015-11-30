@@ -8,13 +8,12 @@ OS X
     * 키 반복속도, 마우스 속도, 트랙패드 설정 변경
     * Finder 초기 디렉토리 경로 변경
     * Caps Lock → Command Key
+    * Ctrl + Space 도 IME 전환키로 사용하기
 1.  iTerm2 설정
-    * [Access for assistive device](http://www.tekrevue.com/how-to-enable-access-for-assistive-devices-in-os-x-mavericks/)
-    * Left Command Key          → Ctrl
-    * Option Key                → +Esc
-    * Alt + Enter               → Toggle Fullscren
-    * Command + (Space, Enter)  → Do not remap Modifier
-    * Cmd + (-, \)              → Split pane horizontal, vertical
+    * Left `⌘`          → `Ctrl`
+    * All `⌥`s          → `+Esc`
+    * `Ctrl` + `Enter`  → Do not remap Modifier
+    * `⌘-`, `⌘\ `       → Split pane horizontal, vertical
     * 쓰지않는 단축키 삭제
 
 Arch Linux
