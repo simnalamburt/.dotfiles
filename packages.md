@@ -12,15 +12,17 @@ OS X
     * ocaml, ledit
     * pandoc
     * ffmpeg (--with-libvpx)
-1.  [caskroom/cask](http://caskroom.io)
-    * xquartz
-    * horndis
+1.  [brew cask](http://caskroom.io)
+    * [karabiner][], [seil][] *(keyboard customization)*
+    * horndis *(USB tethering)*
     * mactex
     * dropbox
-1.  폰트
-    * [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
-1.  etc
-    * [rust][]
+1.  [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
+1.  [rust][]
+1.  [Haskell for Mac OS X](https://ghcformacosx.github.io/)
+
+[karabiner]: https://pqrs.org/osx/karabiner/
+[seil]: https://pqrs.org/osx/karabiner/seil.html.en
 
 hyeonme
 --------

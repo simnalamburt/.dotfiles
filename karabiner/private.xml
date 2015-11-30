@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+1.  Vim easy paste mode with F8
+
+    맥북에서 F8 키를 누르면 음악재생 대신, vim :set paste가 입력됨
+
+2.  Vim-friendly keyboard layout (ADM-3A like)
+
+    Left Control -> Esc
+    Caps Lock    -> Left Control
+
+3.  Use 'caps lock' as Command Key when usual
+
+    터미널 밖에선 캡스락을 커맨드키로 사용함
+-->
+<root>
+  <appdef>
+    <appname>iTerm2</appname>
+    <equal>com.googlecode.iterm2</equal>
+  </appdef>
+  <item>
+    <only>iTerm2</only>
+    <name>Vim easy paste mode with F8</name>
+    <identifier>private.vim_easy_paste_mode</identifier>
+    <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PLAY, KeyCode::F8</autogen>
+  </item>
+  <item>
+    <only>iTerm2</only>
+    <name>Vim-friendly keyboard layout (ADM-3A like)</name>
+    <identifier>private.adm_3a_like</identifier>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::ESCAPE</autogen>
+    <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CONTROL_L</autogen>
+  </item>
+  <item>
+    <not>iTerm2</not>
+    <name>Use 'caps lock' as ⌘ Key when usual</name>
+    <identifier>private.capslock</identifier>
+    <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::COMMAND_L</autogen>
+  </item>
+</root>
