@@ -127,5 +127,4 @@ OS X
 1.  OS 업데이트
 1.  키 반복속도, 마우스 속도 설정
 1.  Finder 초기 디렉토리 경로 변경
-1.  `caps lock` → `⌘`
-1.  `^space` 키도 IME 전환키로 사용
+1.  [`caps lock`키 커스터마이즈](https://pqrs.org/osx/karabiner/faq.html.en#capslock)
