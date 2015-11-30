@@ -697,13 +697,6 @@
 			<key>Text</key>
 			<string>94659C9F-8B92-45CE-9AD2-A9EF463303C9</string>
 		</dict>
-		<key>0xd-0x40000</key>
-		<dict>
-			<key>Action</key>
-			<integer>23</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 	</dict>
 	<key>HiddenAFRStrokeThickness</key>
 	<real>0.0</real>
@@ -740,7 +733,7 @@
 	<key>JobName</key>
 	<false/>
 	<key>LeftCommand</key>
-	<integer>1</integer>
+	<integer>7</integer>
 	<key>LeftOption</key>
 	<integer>2</integer>
 	<key>LoadPrefsFromCustomFolder</key>
