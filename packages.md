@@ -9,17 +9,14 @@ OS X
     * vim, git, mosh, wget, xz, pt
     * ruby, iojs, python, python3
     * p7zip, htop, gtar, nmap, binutils
-    * haskell(ghc, cabal-install), ocaml, ledit
+    * ocaml, ledit
     * pandoc
-    * w3m, peco
     * ffmpeg (--with-libvpx)
 1.  [caskroom/cask](http://caskroom.io)
     * xquartz
     * horndis
     * mactex
     * dropbox
-1.  manastech/crystal
-    * crystal-lang
 1.  폰트
     * [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
 1.  etc
