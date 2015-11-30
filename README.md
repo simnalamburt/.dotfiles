@@ -16,17 +16,17 @@ curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com
 ln -sf .dotfiles/.vimrc
 vim +PlugUpdate +qall
 
-ln -sf .dotfiles/.gemrc
-ln -sf .dotfiles/.gitconfig
-ln -sf .dotfiles/.gitexclude
-mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
-
 # tmux
 git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
 ln -sf .dotfiles/.tmux.conf
 
 # etc
+ln -sf .dotfiles/.gemrc
+ln -sf .dotfiles/.gitconfig
+ln -sf .dotfiles/.gitexclude
+mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
 mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
+ln -sf ~/.dotfiles/karabiner/private.xml "$HOME/Library/Application Support/Karabiner"
 ```
 
 * [Cheatsheet of various commands](cheatsheet.md)
