@@ -10,4 +10,11 @@
     <identifier>private.vim_easy_paste_mode</identifier>
     <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PLAY, KeyCode::F8</autogen>
   </item>
+  <item>
+    <only>iTerm2</only>
+    <name>Vim-friendly keyboard layout (ADM-3A)</name>
+    <identifier>private.adm_3a_like</identifier>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::ESCAPE</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+  </item>
 </root>
