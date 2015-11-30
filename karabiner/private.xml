@@ -4,4 +4,10 @@
     <appname>iTerm2</appname>
     <equal>com.googlecode.iterm2</equal>
   </appdef>
+  <item>
+    <only>iTerm2</only>
+    <name>Vim easy paste mode</name>
+    <identifier>private.vim_easy_paste_mode</identifier>
+    <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PLAY, KeyCode::F8</autogen>
+  </item>
 </root>
