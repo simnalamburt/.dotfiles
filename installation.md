@@ -1,20 +1,12 @@
 OS X
 --------
-1.  설치
-    * Apple ID 생성, iTunes로 계정 활성화
-    * iTunes로 카드번호 입력해놓기
-    * OS 업데이트
-1.  Configuration
-    * 키 반복속도, 마우스 속도, 트랙패드 설정 변경
-    * Finder 초기 디렉토리 경로 변경
-    * Caps Lock → Command Key
-    * Ctrl + Space 도 IME 전환키로 사용하기
-1.  iTerm2 설정
-    * Left `⌘`          → `Ctrl`
-    * All `⌥`s          → `+Esc`
-    * `Ctrl` + `Enter`  → Do not remap Modifier
-    * `⌘-`, `⌘\ `       → Split pane horizontal, vertical
-    * 쓰지않는 단축키 삭제
+1.  Apple ID를 생성<br>
+    카드번호가 필요하며, 구버전 OS X의 경우 iTunes를 써서 활성화해야한다.
+1.  OS 업데이트
+1.  키 반복속도, 마우스 속도 설정
+1.  Finder 초기 디렉토리 경로 변경
+1.  `caps lock` → `⌘`
+1.  `^space` 키도 IME 전환키로 사용
 
 Arch Linux
 --------
