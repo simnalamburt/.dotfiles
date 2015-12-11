@@ -1,21 +1,42 @@
-source ~/.zgen/zgen/zgen.zsh
-if ! zgen saved; then
-  echo "Creating a zgen save"
-
-  zgen oh-my-zsh
-  zgen oh-my-zsh plugins/cp
-  zgen oh-my-zsh plugins/git
-  zgen oh-my-zsh plugins/mosh
-  zgen oh-my-zsh plugins/command-not-found
-  zgen load zsh-users/zsh-completions src
-  zgen load zsh-users/zsh-syntax-highlighting
-  zgen load simnalamburt/shellder shellder
-  zgen save
+#
+# Auto installation
+#
+if ! [ -f ~/.zplug/zplug ]; then
+  echo "Installing \e[33mzplug\e[0m ... \c"
+  curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug 2>/dev/null
+  echo "Done"
+fi
+if ! [ -f ~/.vim/autoload/plug.vim ]; then
+  echo "Installing \e[33mplug.vim\e[0m ... \c"
+  curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 2>/dev/null
+  vim +PlugUpdate +qall
+  echo "Done"
+fi
+if (! [ -d ~/.tmux/plugins/tpm ]) && hash tmux 2>/dev/null; then
+  echo "Installing \e[33mtpm\e[0m ... \c"
+  git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
+  echo "Done"
 fi
 
 
 #
-# Basic configs
+# zplug
+#
+source ~/.zplug/zplug
+
+zplug "plugins/cp", from:oh-my-zsh
+zplug "plugins/git", from:oh-my-zsh, if:"which git"
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "simnalamburt/shellder"
+
+if ! zplug check; then; zplug install; fi
+zplug load
+
+
+#
+# zshrc
 #
 stty stop undef
 
