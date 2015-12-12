@@ -18,6 +18,20 @@ if (! [ -d ~/.tmux/plugins/tpm ]) && hash tmux 2>/dev/null; then
   echo "Done"
 fi
 
+# Remove legacy
+if [ -d ~/.oh-my-zsh ]; then
+  printf "Detected unused \e[31moh-my-zsh\e[0m, Remove? [y/N]: "
+  if read -q; then
+    echo "\bDone"; rm -rf ~/.zgen
+  fi
+fi
+if [ -d ~/.zgen ]; then
+  printf "Detected unused \e[31mzgen\e[0m, Remove? [y/N]: "
+  if read -q; then
+    echo "\bDone"; rm -rf ~/.zgen
+  fi
+fi
+
 
 #
 # zplug
