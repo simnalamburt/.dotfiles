@@ -52,7 +52,9 @@ source ~/.zplug/zplug
 zplug "plugins/cp", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh, if:"which git"
 zplug "plugins/command-not-found", from:oh-my-zsh
-zplug "plugins/z", from:oh-my-zsh
+zplug "plugins/fasd", from:oh-my-zsh
+zplug "lib/clipboard", from:oh-my-zsh
+zplug "rimraf/k"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "simnalamburt/shellder"
