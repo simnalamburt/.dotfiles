@@ -18,36 +18,23 @@ fi
 # Basic configs
 #
 stty stop undef
+
 export DEFAULT_USER="$USER"
 export RUST_BACKTRACE=1
-
-if [ -f ~/.fzf.zsh ]; then
-  source ~/.fzf.zsh
-fi
-
-if [ "$TMUX" = "" ]; then
-  export TERM="xterm-256color"
-fi
-
-if [ $(hostname) = "hyeonmac.local" ]; then
-  eval `/usr/libexec/path_helper -s` # brew and mactex
-  export PATH="/usr/local/sbin:$PATH"
-fi
-
-if [ $(hostname) = "rilakkuma" ]; then
-  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
-fi
 
 alias mv='mv -i'
 alias cp='cp -i'
 alias ocaml='ledit ocaml'
 alias racket='ledit racket'
 
-if hash tmux 2>/dev/null; then
-  alias irc='tmux attach -t irc'
-fi
+if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
+if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
+if [ -d /usr/local/opt/go/libexec/bin ]; then; export PATH=$PATH:/usr/local/opt/go/libexec/bin; fi
 
-# Alias `ag` as `pt` if ag does exist while pt doesn't
-if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then
-  alias pt='ag'
-fi; fi
+if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
+if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi; fi
+
+# Arch Linux specific
+if [ $(hostname) = "rilakkuma" ]; then
+  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
+fi
