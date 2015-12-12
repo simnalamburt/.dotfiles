@@ -6,7 +6,7 @@ OS X
     * iTerm2, xCode
     * 카톡, 라인, InsomniaX, GarageBand, OBS
 1.  [brew](http://brew.sh)
-    * vim, git, mosh, wget, xz, pt, peco
+    * vim, git, mosh, wget, xz, pt, peco, fpp
     * rust, ruby, node, python, python3
     * p7zip, htop, gtar, nmap, binutils
     * ocaml, ledit
