@@ -8,13 +8,14 @@ if ! [ -f ~/.zplug/zplug ]; then
 fi
 if ! [ -f ~/.vim/autoload/plug.vim ]; then
   echo "Installing \e[33mplug.vim\e[0m ... \c"
-  curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 2>/dev/null
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   vim +PlugUpdate +qall
   echo "Done"
 fi
 if (! [ -d ~/.tmux/plugins/tpm ]) && hash tmux 2>/dev/null; then
   echo "Installing \e[33mtpm\e[0m ... \c"
-  git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm --depth=1
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm --depth=1 2>/dev/null
   echo "Done"
 fi
 
