@@ -6,7 +6,7 @@ OS X
     * iTerm2, xCode
     * 카톡, 라인, InsomniaX, GarageBand, OBS
 1.  [brew](http://brew.sh)
-    * vim, git, mosh, wget, xz, pt, peco, fpp
+    * vim, git, mosh, wget, xz, pt, peco, fpp, fasd
     * rust, ruby, node, python, python3
     * p7zip, htop, gtar, nmap, binutils
     * ocaml, ledit
@@ -62,7 +62,7 @@ Arch Linux
     * gnome-tweak-tool, ibus-hangul, adobe-source-han-sans-otc-fonts
     * dialog, wpa_supplicant *(for wifi-menu)*
 1.  yaourt
-    * the_platinum_searcher
+    * the_platinum_searcher, fasd
     * gtk-theme-arc-git, numix-circle-icon-theme-git
 
 MSYS2
