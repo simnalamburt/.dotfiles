@@ -47,10 +47,7 @@ if hash tmux 2>/dev/null; then
   alias irc='tmux attach -t irc'
 fi
 
-# Alias ag and pt as each other
+# Alias `ag` as `pt` if ag does exist while pt doesn't
 if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then
   alias pt='ag'
-fi; fi
-if hash pt 2>/dev/null; then; if ! hash ag 2>/dev/null; then
-  alias ag='pt'
 fi; fi
