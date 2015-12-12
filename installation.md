@@ -91,7 +91,7 @@ Arch Linux
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
-1.  Clone [dotfiles](https://github.com/simnalamburt/dotfiles), symlink those to `/root`
+1.  Clone [dotfiles](README.md), symlink those to `/root`
 1.  [Configure `ssh`](https://wiki.archlinux.org/index.php/Secure_Shell)
 
     ```sh
