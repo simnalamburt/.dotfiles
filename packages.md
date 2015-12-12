@@ -7,11 +7,10 @@ OS X
     * 카톡, 라인, InsomniaX, GarageBand, OBS
 1.  [brew](http://brew.sh)
     * vim, git, mosh, wget, xz, pt, peco
-    * ruby, iojs, python, python3
+    * rust, ruby, node, python, python3
     * p7zip, htop, gtar, nmap, binutils
     * ocaml, ledit
     * pandoc
-    * ffmpeg (--with-libvpx)
 1.  [brew cask](http://caskroom.io)
     * [karabiner][], [seil][] *(keyboard customization)*
     * horndis *(USB tethering)*
