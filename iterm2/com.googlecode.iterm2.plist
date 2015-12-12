@@ -747,7 +747,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/Desktop</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -791,7 +791,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>363 329 650 508 0 0 1440 877 </string>
+	<string>312 78 720 799 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>136 226 810 601 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -810,6 +810,10 @@
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_B90761DF-6972-4D9A-93F8-575584D50405</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_E9DF22AD-F946-40F9-B534-3CC1F5B55709</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_E9DF22AD-F946-40F9-B534-3CC1F5B55709_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2225,6 +2229,10 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
+	<key>NoSyncSuppressAnnyoingBellOffer</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>470607524.18385398</real>
 	<key>NoSyncTimeOfLastPromo</key>
@@ -2301,7 +2309,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-11-30T20:18:43Z</date>
+	<date>2015-12-12T20:22:19Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2331,7 +2339,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1448917760</real>
+	<real>1448921472</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
