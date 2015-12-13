@@ -13,7 +13,6 @@ OS X
     * pandoc
 1.  [brew cask](http://caskroom.io)
     * [karabiner][], [seil][] *(keyboard customization)*
-    * horndis *(USB tethering)*
     * mactex
     * dropbox
 1.  [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
