@@ -8,7 +8,7 @@
 
 <p align=center>
   <b><a href="cheatsheet.md">CHEAT SHEET</a></b> |
-  <b><a href="installation.md">OS SETUP MANUEL</a></b> |
+  <b><a href="installation.md">OS SETUP MANUAL</a></b> |
   <b><a href="packages.md">PACKAGE LISTS</a></b>
 </p>
 
