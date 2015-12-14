@@ -56,10 +56,11 @@ Arch Linux
 --------
 1.  pacman
     * base, grub, sudo, gnome, xf86-input-synaptics
-    * openssh, wget, git, vim, zsh, tmux, mosh
+    * dialog, wpa_supplicant *(for wifi-menu)*
+    * openssh, wget, lshw, htop
+    * git, vim, zsh, tmux, mosh
     * chromium *(remove epiphany)*
     * gnome-tweak-tool, ibus-hangul, adobe-source-han-sans-otc-fonts
-    * dialog, wpa_supplicant *(for wifi-menu)*
 1.  yaourt
     * the_platinum_searcher, fasd
     * gtk-theme-arc-git, numix-circle-icon-theme-git
