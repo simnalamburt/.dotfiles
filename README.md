@@ -1,5 +1,18 @@
-dotfiles
-=====
+> My own dotfiles
+
+<p align=center>
+  <a href="https://github.com/simnalamburt">
+    <img src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/logo.png">
+  </a>
+</p>
+
+<p align=center>
+  <b><a href="cheatsheet.md">CHEAT SHEET</a></b> |
+  <b><a href="installation.md">OS SETUP MANUEL</a></b> |
+  <b><a href="packages.md">PACKAGE LISTS</a></b>
+</p>
+
+<br>
 
 Requires `git` and `zsh`
 
@@ -17,19 +30,6 @@ mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
 mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
 ln -sf ~/.dotfiles/karabiner/private.xml "$HOME/Library/Application Support/Karabiner"
 ```
-
-* [Cheatsheet of various commands](cheatsheet.md)
-* [Making various development environments](installation.md)
-* [Don't forget what you've installed](packages.md)
-
---------
-
-* **OS X**
-* **MSYS2**
-* **Arch Linux**
-* hyeon.me
-* upnl.org (server, upnl, root)
-* uriel.upnl.org
 
 --------
 
