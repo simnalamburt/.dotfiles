@@ -1,7 +1,8 @@
 MSYS2
 --------
-1.  Install [Consolas for Powerline](https://github.com/nicolalamacchia/powerline-consolas)
-1.  Install [**msys2**](http://msys2.github.io)
+1.  Remap [Caps Lock &rarr; Control][remap]
+1.  Install [Consolas for Powerline][consolas]
+1.  Install **[msys2](https://msys2.github.io)**
 1.  Install [packages](packages.md)
 1.  Edit `/msys2_shell.bat`
 
@@ -18,8 +19,11 @@ MSYS2
     ```
 
 1.  Clone [dotfiles][]
-1.  Invoke zgen with `exec zsh`
+1.  Invoke zplug with `exec zsh`
 1.  Fix a symlink of zgen manually
+
+[remap]: https://raw.githubusercontent.com/simnalamburt/.dotfiles/master/docs/capslock-to-control.reg
+[consolas]: https://raw.githubusercontent.com/nicolalamacchia/powerline-consolas/master/consola.ttf
 
 Arch Linux
 --------
