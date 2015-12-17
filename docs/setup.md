@@ -17,7 +17,7 @@ MSYS2
     SHELL=$(which zsh) # <- Add this!!
     ```
 
-1.  Clone [dotfiles](README.md)
+1.  Clone [dotfiles][]
 1.  Invoke zgen with `exec zsh`
 1.  Fix a symlink of zgen manually
 
@@ -91,7 +91,7 @@ Arch Linux
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
-1.  Clone [dotfiles](README.md), symlink those to `/root`
+1.  Clone [dotfiles][], symlink those to `/root`
 1.  [Configure `ssh`](https://wiki.archlinux.org/index.php/Secure_Shell)
 
     ```sh
@@ -128,3 +128,5 @@ OS X
 1.  키 반복속도, 마우스 속도 설정
 1.  Finder 초기 디렉토리 경로 변경
 1.  [`caps lock`키 커스터마이즈](https://pqrs.org/osx/karabiner/faq.html.en#capslock)
+
+[dotfiles]: ../README.md
