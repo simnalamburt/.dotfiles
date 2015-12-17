@@ -72,8 +72,7 @@ MSYS2
     * git, vim, zsh
     * wget, tar, zip
     * ruby, python2
-    * mingw-w64-x86_64-gcc, make
-    * base-devel, gcc, gmp-devel, libcrypt-devel, ncurses-devel (required by fzf)
+    * base-devel, gcc, make, gmp-devel, libcrypt-devel, ncurses-devel (required by fzf)
 1.  etc
     * [rust][]
 
