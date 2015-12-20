@@ -19,8 +19,8 @@ MSYS2
     ```
 
 1.  Clone [dotfiles][]
-1.  Invoke zplug with `exec zsh`
-1.  Fix a symlink of zgen manually
+1.  Invoke zplug with `exec zsh`, then fix symlinks manually
+1.  *(optional)* [Disable snap assistant](http://i.imgur.com/0O4BgFW.png)
 
 [remap]: https://raw.githubusercontent.com/simnalamburt/.dotfiles/master/docs/capslock-to-control.reg
 [consolas]: https://raw.githubusercontent.com/nicolalamacchia/powerline-consolas/master/consola.ttf
