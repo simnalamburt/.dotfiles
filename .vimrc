@@ -58,6 +58,9 @@ set showmatch
 " Wildmenu
 set wildmode=longest,full
 
+" Treat .eslintrc .babelrc as json
+au BufRead,BufNewFile .{eslintrc,babelrc} setf json
+
 
 "
 " Key mappings
