@@ -80,6 +80,7 @@ if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
 if [ -d /usr/local/opt/go/libexec/bin ]; then; export PATH=$PATH:/usr/local/opt/go/libexec/bin; fi
 
+if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi; fi
 
