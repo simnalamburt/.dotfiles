@@ -22,6 +22,9 @@ Temporary Items
 # clang
 *.dSYM
 
+# Xmark
+.xmark.*.html
+
 # ------------------------ >8 ------------------------
 
 *~
