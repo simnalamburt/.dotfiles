@@ -151,6 +151,7 @@ Plug 'rgrinberg/vim-ocaml'
 Plug 'simnalamburt/k-.vim'
 Plug 'wlangstroth/vim-racket'
 Plug 'leafgarland/typescript-vim'
+Plug 'dag/vim-fish'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
