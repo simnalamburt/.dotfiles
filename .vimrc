@@ -1,6 +1,7 @@
 "
 " General configs
 "
+set shell=/bin/bash " http://stackoverflow.com/a/12231417
 set diffopt+=iwhite,vertical
 set pastetoggle=<F8>
 set scrolloff=3
