@@ -15,6 +15,11 @@ set noshowmode
 set noswapfile
 set nowrap
 
+" define a group `vimrc` and initialize.
+augroup vimrc
+  autocmd!
+augroup END
+
 " History
 if has("persistent_undo")
   " mkdir -p ~/.vim/undodir
@@ -32,6 +37,7 @@ endif
 set cindent
 set autoindent
 set smartindent
+autocmd! vimrc BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4 "just for go
 
 " Tab
 set softtabstop=2
@@ -60,7 +66,7 @@ set showmatch
 set wildmode=longest,full
 
 " Treat .eslintrc .babelrc as json
-au BufRead,BufNewFile .{eslintrc,babelrc} setf json
+autocmd! vimrc BufRead,BufNewFile .{eslintrc,babelrc} setf json
 
 
 "
@@ -111,11 +117,6 @@ nnoremap <a-7> 7gt
 nnoremap <a-8> 8gt
 nnoremap <a-9> 9gt
 
-" define a group `vimrc` and initialize.
-augroup vimrc
-  autocmd!
-augroup END
-
 
 "
 " Plugins
@@ -164,6 +165,7 @@ Plug 'simnalamburt/k-.vim'
 Plug 'wlangstroth/vim-racket'
 Plug 'leafgarland/typescript-vim'
 Plug 'dag/vim-fish'
+Plug 'fatih/vim-go'
 
 " Blink
 Plug 'rhysd/clever-f.vim'

@@ -86,3 +86,11 @@ if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi;
 if [ $(hostname) = "rilakkuma" ]; then
   export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 fi
+
+
+#
+# Go
+#
+export GOPATH=~/.go
+mkdir -p $GOPATH
+export PATH="$PATH:$GOPATH/bin"
