@@ -289,7 +289,7 @@ function! s:indent()
   endif
   execute printf("highlight IndentGuidesEven ctermbg=%d", s:back_color)
 
-  if &tabstop < 4
+  if &tabstop <= 4
     " Do not decorate tab with '›' when tabstop is small
     set listchars=tab:\ \ ,extends:»,precedes:«
   else
