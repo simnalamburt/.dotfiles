@@ -791,7 +791,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>312 78 720 799 0 0 1440 877 </string>
+	<string>753 70 760 807 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>136 226 810 601 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2288,6 +2288,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/simnalamburt/.dotfiles/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2309,7 +2311,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-12-12T20:22:19Z</date>
+	<date>2016-01-05T06:46:34Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2363,6 +2365,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20151111</string>
+	<string>2.9.20160102</string>
 </dict>
 </plist>
