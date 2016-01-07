@@ -52,7 +52,7 @@ Arch Linux
     genfstab -p /mnt >> /mnt/etc/fstab
     arch-chroot /mnt
 
-    # hostname
+    # hostname (https://wiki.archlinux.org/index.php/Network_configuration#Set_the_hostname)
     echo 'rilakkuma' > /etc/hostname
 
     # Timezone
