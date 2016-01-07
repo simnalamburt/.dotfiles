@@ -280,7 +280,7 @@ call <SID>beauty()
 
 " indention
 function! s:indent()
-  if &softtabstop < 4
+  if &softtabstop < 4 || &softtabstop == &tabstop
     highlight IndentGuidesOdd ctermbg=NONE
   else
     let g:indent_guides_guide_size = 1
