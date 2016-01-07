@@ -286,3 +286,8 @@ https://widget.mibbit.com/?server=irc.uriirc.org:+16667&channel=%23hyeon
     "v=spf1 ip4:175.197.33.12 -all"
     ```
 3.  [KISA 화이트리스트](https://www.kisarbl.or.kr)에 등록
+
+### Too many open files
+```
+lsof | awk '{ print $2 " " $1; }' | sort -rn | uniq -c | sort -rn | head -20
+```
