@@ -76,6 +76,11 @@ let g:mapleader = ","
 
 " Easy command-line mode
 nnoremap ; :
+" Easy home/end
+inoremap <C-a> <ESC>I
+inoremap <C-e> <ESC>A
+nnoremap <C-a> ^
+nnoremap <C-e> $
 " Easy delete key
 vnoremap <backspace> "_d
 " Easy newline insert
