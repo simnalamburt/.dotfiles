@@ -41,17 +41,3 @@ Arch Linux
 1.  yaourt
     * the_platinum_searcher, fasd
     * gtk-theme-arc-git, numix-circle-icon-theme-git
-
-MSYS2
---------
-1.  pacman
-    * [ca-certificates][ca]
-    * git, vim, zsh
-    * wget, tar, zip
-    * ruby, python2
-    * base-devel, gcc, make, gmp-devel, libcrypt-devel, ncurses-devel (required by fzf)
-1.  etc
-    * [rust][]
-
-[ca]: http://qiita.com/7shi/items/894fdd849658880bf6c9
-[rust]: http://doc.rust-lang.org/book/installing-rust.html

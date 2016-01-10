@@ -12,6 +12,7 @@
   <b><a href="docs/packages.md">PACKAGE LISTS</a></b>
   <br>
   <a href="docs/os-x.md">OS X</a> |
+  <a href="docs/msys2.md">MSYS2</a>
 </p>
 
 <br>
