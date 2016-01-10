@@ -157,6 +157,7 @@ Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'plasticboy/vim-markdown'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'tikhomirov/vim-glsl'
 Plug 'evanmiller/nginx-vim-syntax'
 Plug 'stephpy/vim-yaml'
@@ -208,6 +209,9 @@ let g:limelight_conceal_ctermfg = 240
 
 " vim-cpp-enhanced-highlight
 let g:cpp_class_scope_highlight = 1
+
+" vim-jsx
+let g:jsx_ext_required = 0
 
 " vim-indent-guides
 nmap <leader>i <Plug>IndentGuidesToggle
