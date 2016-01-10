@@ -24,8 +24,8 @@ MSYS2
 1.  Clone [dotfiles](../README.md)
 1.  Invoke zplug with `exec zsh`, then fix symlinks manually
 
-[remap]: https://raw.githubusercontent.com/simnalamburt/.dotfiles/master/docs/capslock-to-control.reg
-[consolas]: https://raw.githubusercontent.com/nicolalamacchia/powerline-consolas/master/consola.ttf
+[remap]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/capslock-to-control.reg
+[consolas]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/consola.ttf
 
 ### `pacman`
 - ca-certificates

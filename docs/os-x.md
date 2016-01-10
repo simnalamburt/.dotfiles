@@ -13,7 +13,7 @@ OS X
 - iTerm2, xCode
 - 카톡, 라인, InsomniaX, GarageBand, OBS
 - [Haskell for Mac OS X](https://ghcformacosx.github.io/)
-- [Monaco for powerline](https://gist.github.com/baopham/1838072)
+- [Monaco for powerline][monaco]
 
 ### [`brew`](http://brew.sh)
 - vim, git, mosh, wget, xz, pt, peco, fpp, fasd
@@ -25,5 +25,6 @@ OS X
 ### [`brew cask`](http://caskroom.io)
 - [karabiner][], [seil][] *(keyboard customization)*
 
+[monaco]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
 [karabiner]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
