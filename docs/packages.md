@@ -28,16 +28,3 @@ gemini.upnl.org
     * [ruby2.2, ruby2.2-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
     * [tmux 2.0](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
 1.  [GitLab](https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/installation.md)
-
-Arch Linux
---------
-1.  pacman
-    * base, grub, sudo, gnome, xf86-input-synaptics
-    * dialog, wpa_supplicant *(for wifi-menu)*
-    * openssh, wget, lshw, htop
-    * git, vim, zsh, tmux, mosh
-    * chromium *(remove epiphany)*
-    * gnome-tweak-tool, ibus-hangul, adobe-source-han-sans-otc-fonts
-1.  yaourt
-    * the_platinum_searcher, fasd
-    * gtk-theme-arc-git, numix-circle-icon-theme-git

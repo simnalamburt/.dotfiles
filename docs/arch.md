@@ -1,5 +1,7 @@
 Arch Linux
---------
+========
+
+### Setup
 1.  Install Arch Linux
     * [linuxveda tutorial](http://www.linuxveda.com/2014/06/07/arch-linux-tutorial)
     * [Archlinux wiki tutorial](https://wiki.archlinux.org/index.php/Installation_guide)
@@ -9,7 +11,7 @@ Arch Linux
     wifi-menu
 
     # 디스크 파티셔닝
-    fdisk /dev/sda
+    cfdisk /dev/sda
 
     # 파티션 포맷
     mkfs.ext4 /dev/sda1
@@ -68,7 +70,7 @@ Arch Linux
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
-1.  Clone [dotfiles][], symlink those to `/root`
+1.  Clone [dotfiles](../README.md), symlink those to `/root`
 1.  [Configure `ssh`](https://wiki.archlinux.org/index.php/Secure_Shell)
 
     ```sh
@@ -97,4 +99,14 @@ Arch Linux
     sudo systemctl restart systemd-logind
     ```
 
-[dotfiles]: ../README.md
+### `pacman`
+- base, grub, sudo, gnome, xf86-input-synaptics
+- dialog, wpa_supplicant *(for wifi-menu)*
+- openssh, wget, lshw, htop
+- git, vim, zsh, tmux, mosh
+- chromium *(remove epiphany)*
+- gnome-tweak-tool, ibus-hangul, adobe-source-han-sans-otc-fonts
+
+### `yaourt`
+- the_platinum_searcher, fasd
+- gtk-theme-arc-git, numix-circle-icon-theme-git
