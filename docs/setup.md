@@ -124,13 +124,4 @@ Arch Linux
     sudo systemctl restart systemd-logind
     ```
 
-OS X
---------
-1.  Apple ID를 생성<br>
-    카드번호가 필요하며, 구버전 OS X의 경우 iTunes를 써서 활성화해야한다.
-1.  OS 업데이트
-1.  키 반복속도, 마우스 속도 설정
-1.  Finder 초기 디렉토리 경로 변경
-1.  [`caps lock`키 커스터마이즈](https://pqrs.org/osx/karabiner/faq.html.en#capslock)
-
 [dotfiles]: ../README.md

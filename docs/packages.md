@@ -1,27 +1,3 @@
-OS X
---------
-1.  Applications
-    * Firefox
-    * Google Drive
-    * iTerm2, xCode
-    * 카톡, 라인, InsomniaX, GarageBand, OBS
-1.  [brew](http://brew.sh)
-    * vim, git, mosh, wget, xz, pt, peco, fpp, fasd
-    * rust, ruby, node, python, python3
-    * p7zip, htop, gtar, nmap, binutils
-    * ocaml, ledit
-    * pandoc
-1.  [brew cask](http://caskroom.io)
-    * [karabiner][], [seil][] *(keyboard customization)*
-    * mactex
-    * dropbox
-1.  [Monaco for powerline.otf](https://gist.github.com/baopham/1838072)
-1.  [rust][]
-1.  [Haskell for Mac OS X](https://ghcformacosx.github.io/)
-
-[karabiner]: https://pqrs.org/osx/karabiner/
-[seil]: https://pqrs.org/osx/karabiner/seil.html.en
-
 hyeonme
 --------
 1.  apt-get
