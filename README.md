@@ -8,10 +8,9 @@
 
 <p align=center>
   <b><a href="docs/cheatsheet.md">CHEAT SHEET</a></b> |
-  <b><a href="docs/packages.md">PACKAGE LISTS</a></b>
-  <br>
   <a href="docs/os-x.md">OS X</a> |
   <a href="docs/msys2.md">MSYS2</a> |
+  <a href="docs/ubuntu.md">Ubuntu</a> |
   <a href="docs/arch.md">Arch Linux</a>
 </p>
 
