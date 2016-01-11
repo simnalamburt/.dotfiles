@@ -33,7 +33,7 @@ if has("persistent_undo")
   set undofile
 endif
 
-" Indention
+" Indentation
 set cindent
 set autoindent
 set smartindent
@@ -287,7 +287,7 @@ function! s:beauty()
 endfunction
 call <SID>beauty()
 
-" indention
+" indentation
 function! s:indent()
   if &softtabstop < 4 || &softtabstop == &tabstop
     highlight IndentGuidesOdd ctermbg=NONE
