@@ -42,9 +42,14 @@ Gnome Tweak Tools
 
 Terminator
 --------
+일반
+
+- Hide size from title
+
 프로파일
 
 - 글꼴 &rarr; [Monaco for Powerline]
+- 내장 색상표 &rarr; 탱고 (Tango)
 - 스크롤바 숨김
 
 키 설정
