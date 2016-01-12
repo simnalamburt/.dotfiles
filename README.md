@@ -11,6 +11,7 @@
   <a href="docs/os-x.md">OS X</a> |
   <a href="docs/msys2.md">MSYS2</a> |
   <a href="docs/ubuntu.md">Ubuntu</a> |
+  <a href="docs/fedora.md">Fedora</a> |
   <a href="docs/arch.md">Arch Linux</a>
 </p>
 
