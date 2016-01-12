@@ -10,9 +10,7 @@ Fedora
 ### `dnf`
 - gnome-tweak-tools
 - naver-nanum-barun-gothic-fonts
-
-### Third-party packaged
-- google-chrome
+- the_silver_searcher
 
 ### Manually Installed
 - [Monaco for Powerline]
