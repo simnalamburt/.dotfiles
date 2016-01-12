@@ -6,11 +6,13 @@ Fedora
 
 - PackageKit-command-not-found
 - naver-nanum-gothic-fonts
+- gnome-terminal
 
 ### `dnf`
 - gnome-tweak-tools
 - google-noto-sans-cjk-fonts
 - the_silver_searcher
+- terminator
 
 Third party
 
