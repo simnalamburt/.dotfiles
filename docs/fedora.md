@@ -56,8 +56,11 @@ Terminator
 
 - close_term          &rarr; Super+W
 - full_screen         &rarr; Super+Return
+- go_next             &rarr; Super+]
+- go_prev             &rarr; Super+[
 - new_tab             &rarr; Super+T
 - new_window          &rarr; Super+Y
+- paste               &rarr; Shift+Insert
 - split_horiz         &rarr; Super+-
 - split_vert          &rarr; Super+\
 - switch_to_tab_1     &rarr; Super+1
