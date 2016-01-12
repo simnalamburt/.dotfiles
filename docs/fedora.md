@@ -14,13 +14,19 @@ Fedora
 ### Third-party packaged
 - google-chrome
 
+### Manually Installed
+- [Monaco for Powerline]
+
 Gnome Tweak Tools
 --------
 글꼴
 
+- 고정폭 &rarr; [Monaco for Powerline]
 - Hinting &rarr; `Slight`
 - Antialiasing &rarr; `Rgba`
 - Scale Constant &rarr; `1.10`
+
+[Monaco for Powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
 
 입력
 
