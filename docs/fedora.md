@@ -9,7 +9,7 @@ Fedora
 
 ### `dnf`
 - gnome-tweak-tools
-- naver-nanum-barun-gothic-fonts
+- google-noto-sans-cjk-fonts
 - the_silver_searcher
 
 Third party
