@@ -13,7 +13,6 @@ Fedora
 - google-noto-sans-cjk-fonts
 - the_silver_searcher
 - terminator
-- java-1.8.0-openjdk-devel
 - kvm
 - *(Dependencies for Android Studio)* glibc.i686, glibc-devel.i686, libstdc++.i686, zlib-devel.i686, ncurses-devel.i686, libX11-devel.i686, libXrender.i686, libXrandr.i686,
 
@@ -23,6 +22,7 @@ Third party
 - [numix-icon-theme-circle][numix]
 - [PathPicker](https://github.com/facebook/pathpicker)
 - [fasd](https://github.com/clvv/fasd)
+- [Oracle JRE/JDK](http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/)
 
 ### Manually Installed
 - [Monaco for Powerline]
