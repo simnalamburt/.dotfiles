@@ -13,11 +13,14 @@ Fedora
 - google-noto-sans-cjk-fonts
 - the_silver_searcher
 - terminator
+- java-1.8.0-openjdk-devel
 
 Third party
 
 - [arc-theme][Arc Theme]
 - [numix-icon-theme-circle][numix]
+- [PathPicker](https://github.com/facebook/pathpicker)
+- [fasd](https://github.com/clvv/fasd)
 
 ### Manually Installed
 - [Monaco for Powerline]
