@@ -14,6 +14,7 @@ Fedora
 - the_silver_searcher
 - terminator
 - java-1.8.0-openjdk-devel
+- kvm
 
 Third party
 
