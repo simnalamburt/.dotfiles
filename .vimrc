@@ -289,7 +289,7 @@ call <SID>beauty()
 
 " indentation
 function! s:indent()
-  if &softtabstop < 4 || &softtabstop == &tabstop
+  if &softtabstop < 4 || &filetype == "go"
     highlight IndentGuidesOdd ctermbg=NONE
   else
     let g:indent_guides_guide_size = 1
