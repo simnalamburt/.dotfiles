@@ -51,6 +51,7 @@ source ~/.zplug/zplug
 
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/fasd", from:oh-my-zsh
+# oh-my-zsh/lib/clipboard.zsh
 zplug "rimraf/k", of:k.sh
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", of:zsh-syntax-highlighting.zsh
