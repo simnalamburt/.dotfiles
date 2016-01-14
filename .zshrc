@@ -82,11 +82,6 @@ if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi; fi
 
-# Arch Linux specific
-if [ $(hostname) = "rilakkuma" ]; then
-  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
-fi
-
 
 #
 # Go
