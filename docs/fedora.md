@@ -23,6 +23,7 @@ Third party
 - [PathPicker](https://github.com/facebook/pathpicker)
 - [fasd](https://github.com/clvv/fasd)
 - [Oracle JRE/JDK](http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/)
+- [slack](https://slack.com/downloads)
 
 ### Manually Installed
 - [Monaco for Powerline]
