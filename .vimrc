@@ -101,6 +101,7 @@ nnoremap <silent> <C-k> :resize +3<CR>
 nnoremap <silent> <C-l> :vertical resize +5<CR>
 " Tab navigations
 nnoremap <esc>t :tabnew<CR>
+nnoremap <esc>T :-tabnew<CR>
 nnoremap <esc>1 1gt
 nnoremap <esc>2 2gt
 nnoremap <esc>3 3gt
@@ -112,6 +113,7 @@ nnoremap <esc>8 8gt
 nnoremap <esc>9 9gt
 " Tab navigations (neovim)
 nnoremap <a-t> :tabnew<CR>
+nnoremap <a-T> :-tabnew<CR>
 nnoremap <a-1> 1gt
 nnoremap <a-2> 2gt
 nnoremap <a-3> 3gt
