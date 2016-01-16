@@ -1,3 +1,12 @@
+# clang
+*.dSYM
+
+# npm
+npm-debug.log
+
+#
+# OS X
+#
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -19,22 +28,22 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# clang
-*.dSYM
-
 # Xmark
 .xmark.*.html
 
-# ------------------------ >8 ------------------------
 
+#
+# Linux
+#
 *~
 
 # KDE directory preferences
 .directory
 
-# ------------------------ >8 ------------------------
 
-# Windows image file caches
+#
+# Windows
+#
 Thumbs.db
 ehthumbs.db
 
