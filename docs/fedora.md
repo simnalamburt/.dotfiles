@@ -14,8 +14,10 @@ Fedora
 - the_silver_searcher
 - terminator
 - glibc-devel.x86_64
-- *(Dependencies for Android Studio)* glibc.i686, glibc-devel.i686, libstdc++.i686, zlib-devel.i686, ncurses-devel.i686, libX11-devel.i686, libXrender.i686, libXrandr.i686,
-- [@virtualization](https://fedoraproject.org/wiki/Getting_started_with_virtualization#Installing_the_virtualization_packages)
+- *Dependencies for Android Studio*
+  - java-1.8.0-openjdk-devel
+  - glibc.i686, glibc-devel.i686, libstdc++.i686, zlib-devel.i686, ncurses-devel.i686, libX11-devel.i686, libXrender.i686, libXrandr.i686,
+  - [@virtualization](https://fedoraproject.org/wiki/Getting_started_with_virtualization#Installing_the_virtualization_packages)
 
 Third party
 
@@ -23,7 +25,6 @@ Third party
 - [numix-icon-theme-circle][numix]
 - [PathPicker](https://github.com/facebook/pathpicker)
 - [fasd](https://github.com/clvv/fasd)
-- [Oracle JRE/JDK](http://www.if-not-true-then-false.com/2014/install-oracle-java-8-on-fedora-centos-rhel/)
 - [slack](https://slack.com/downloads)
 
 ### Manually Installed
