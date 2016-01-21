@@ -62,14 +62,8 @@ if ! zplug check; then; zplug install; fi
 zplug load
 
 
-#
-# zshrc
-#
+# zsh-sensible
 stty stop undef
-
-export DEFAULT_USER="$USER"
-export RUST_BACKTRACE=1
-
 alias mv='mv -i'
 alias cp='cp -i'
 if hash ledit 2>/dev/null; then
@@ -77,17 +71,18 @@ if hash ledit 2>/dev/null; then
   alias racket='ledit racket'
 fi
 
+
+# zshrc
+export RUST_BACKTRACE=1
 if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
 
+# Aliases
 if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi; fi
 
-
-#
-# Go
-#
+# Golang
 export GOPATH=~/.go
 mkdir -p $GOPATH
 export PATH="$PATH:$GOPATH/bin"
