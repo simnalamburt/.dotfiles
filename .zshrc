@@ -72,8 +72,10 @@ export RUST_BACKTRACE=1
 
 alias mv='mv -i'
 alias cp='cp -i'
-alias ocaml='ledit ocaml'
-alias racket='ledit racket'
+if hash ledit 2>/dev/null; then
+  alias ocaml='ledit ocaml'
+  alias racket='ledit racket'
+fi
 
 if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
