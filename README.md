@@ -29,6 +29,10 @@ ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
 ln -sf .dotfiles/.gemrc
 
+# fish
+ln -s ~/.dotfiles/omf ~/.config/omf
+curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+
 mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
 mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
 ln -sf ~/.dotfiles/karabiner/private.xml "$HOME/Library/Application Support/Karabiner"
