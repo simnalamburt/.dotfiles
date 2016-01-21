@@ -175,6 +175,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'dag/vim-fish'
 Plug 'fatih/vim-go'
 Plug 'udalov/kotlin-vim'
+Plug 'tfnico/vim-gradle'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
