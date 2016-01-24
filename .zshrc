@@ -3,7 +3,7 @@
 #
 if ! [ -f ~/.zplug/zplug ]; then
   printf "Installing \e[33mzplug\e[0m ... "
-  curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug 2>/dev/null
+  git clone https://github.com/b4b4r07/zplug ~/.zplug --depth=1 2>/dev/null
   echo "Done"
 fi
 
