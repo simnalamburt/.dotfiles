@@ -147,6 +147,7 @@ Plug 'godlygeek/tabular'
 Plug 'mhinz/vim-rfc'
 Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
+Plug 'junegunn/gv.vim'
 
 " Visual
 Plug 'nathanaelkane/vim-indent-guides'
