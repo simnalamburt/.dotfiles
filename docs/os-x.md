@@ -21,6 +21,7 @@ OS X
 - p7zip, htop, gtar, nmap, binutils
 - ocaml, ledit
 - pandoc
+- ghc, cabal-install, haskell-stack
 
 ### [`brew cask`](http://caskroom.io)
 - [karabiner][], [seil][] *(keyboard customization)*
