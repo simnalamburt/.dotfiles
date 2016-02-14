@@ -21,6 +21,7 @@ hyeon.me
 - postfix
 - debian-goodies, ppa-purge
 - dhex, radare2
+- linux-generic-lts-wily *(높은버전 커널 쓰려고 깔음)*
 
 ### `apt-get` PPA
 - mongodb
