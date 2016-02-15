@@ -293,3 +293,28 @@ https://widget.mibbit.com/?server=irc.uriirc.org:+16667&channel=%23hyeon
 ```
 lsof | awk '{ print $2 " " $1; }' | sort -rn | uniq -c | sort -rn | head -20
 ```
+
+### 젠센터에서 새 하드 인식하는법
+1.  젠서버 호스트에 루트로 로그인, 인식시킬 Disk ID를 찾아낸다.
+
+    ```bash
+    cat /proc/partitions
+    ll /dev/disk/by-id
+    # scsi-SATA_Hitachi_HDS7230_MN5220F32J1MRK  ->  sda
+    ```
+
+2.  Host UUID를 알아낸다.
+
+    ```bash
+    xe host-list
+    # uuid (RO): 68895eb0-033a-45f6-bc85-a4d55d09828d
+    ```
+
+3.  Storage Repository를 만든다.
+
+    ```
+    xe sr-create content-type=user shared=false type=lvm \
+      device-config:device=/dev/disk/by-id/scsi-SATA_Hitachi_HDS7230_MN5220F32J1MRK \
+      host-uuid=68895eb0-033a-45f6-bc85-a4d55d09828d \
+      name-label="Secondary storage on localhost"
+    ```
