@@ -90,6 +90,7 @@ rsync                   | 설명
 `$ nc -z <domain> <port>` | 포트 열려있는지 확인하기
 `$ time -v <command>`     | 프로세스 실행시간 비교하기
 `$ ssh -D8000 hyeon.me`   | ssh 터널링 (dynamic)
+`$ sshuttle -r martini.snucse.org:443 0/0` | sshuttle
 
 압축                                  | 설명
 --------------------------------------|--------
