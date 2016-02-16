@@ -109,19 +109,19 @@ umount -R /mnt
 ```
 
 그놈 데스크톱을 쓰십니까?
-```
+```bash
 pacman -S gnome xf86-input-synaptics
 systemctl enable gdm
 systemctl enable NetworkManager
 ```
 
 [전원버튼 동작 설정하기](http://unix.stackexchange.com/a/52645)
-```
+```bash
 sudo vim /etc/systemd/login.conf
-# HandlePowerKey=ignore
-# HandleSuspendKey=ignore
-# HandleHibernateKey=ignore
-# HandleLidSwitch=ignore
+  # HandlePowerKey=ignore
+  # HandleSuspendKey=ignore
+  # HandleHibernateKey=ignore
+  # HandleLidSwitch=ignore
 sudo systemctl restart systemd-logind
 ```
 
