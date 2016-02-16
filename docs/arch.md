@@ -1,103 +1,13 @@
 Arch Linux
 ========
 
-### Setup
-1.  Install Arch Linux
-    * [linuxveda tutorial](http://www.linuxveda.com/2014/06/07/arch-linux-tutorial)
-    * [Archlinux wiki tutorial](https://wiki.archlinux.org/index.php/Installation_guide)
+kuma.hyeon.me
+--------
+### `pacman`
+- base, grub, sudo, openssh
 
-    ```sh
-    # 인터넷 연결
-    wifi-menu
-
-    # 디스크 파티셔닝
-    cfdisk /dev/sda
-
-    # 파티션 포맷
-    mkfs.ext4 /dev/sda1
-
-    # 파티션 마운트
-    mount /dev/sda1 /mnt
-
-    # 미러 우선순위 변경
-    vim /etc/pacman.d/mirrorlist
-
-    # Install Archlinux
-    pacstrap /mnt base
-    genfstab -p /mnt >> /mnt/etc/fstab
-    arch-chroot /mnt
-
-    # hostname (https://wiki.archlinux.org/index.php/Network_configuration#Set_the_hostname)
-    echo 'rilakkuma' > /etc/hostname
-
-    # Timezone
-    ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-
-    # Locale
-    nano /etc/locale.gen
-    locale-gen
-    echo LANG=en_US.UTF-8 > /etc/locale.conf
-    export LANG=en_US.UTF-8
-
-    # Grub
-    pacman -S grub
-    grub-install --recheck /dev/sda
-    grub-mkconfig -o /boot/grub/grub.cfg
-
-    # New user
-    useradd -m -G wheel -s /bin/bash simnalamburt
-    passwd simnalamburt
-    passwd root -dl
-    pacman -S sudo
-    EDITOR=nano visudo # 특정 라인 주석해제
-
-    # Gnome desktop environment
-    pacman -S gnome xf86-input-synaptics
-    systemctl enable gdm
-    systemctl enable NetworkManager
-
-    exit
-    umount -R /mnt
-    ```
-
-1.  Grub 대기시간 줄이기
-
-    ```
-    # /etc/default/grub
-    GRUB_TIMEOUT=1
-    ```
-    ```sh
-    grub-mkconfig -o /boot/grub/grub.cfg
-    ```
-
-1.  Clone [dotfiles](../README.md), symlink those to `/root`
-1.  [Configure `ssh`](https://wiki.archlinux.org/index.php/Secure_Shell)
-
-    ```sh
-    sudo systemctl start sshd
-    sudo systemctl enable sshd
-    ```
-    ```
-    # /etc/ssh/sshd_config
-    PermitRootLogin no
-    PasswordAuthentication no
-    PrintLastLog no
-    ```
-
-1.  [Install Yaourt](https://archlinux.fr/yaourt-en)
-
-1.  *(optional)* [Disable lid sleep](http://unix.stackexchange.com/a/52645)
-
-    ```
-    # /etc/systemd/login.conf
-    HandlePowerKey=ignore
-    HandleSuspendKey=ignore
-    HandleHibernateKey=ignore
-    HandleLidSwitch=ignore
-    ```
-    ```sh
-    sudo systemctl restart systemd-logind
-    ```
+아치 놋북
+--------
 
 ### `pacman`
 - base, grub, sudo, gnome, xf86-input-synaptics
@@ -110,3 +20,98 @@ Arch Linux
 ### `yaourt`
 - the_platinum_searcher, fasd
 - gtk-theme-arc-git, numix-circle-icon-theme-git
+
+
+
+<br>
+
+--------
+
+<br>
+
+
+
+How to Install
+--------
+부팅미디어에서 할 일
+```bash
+wifi-menu                             # 인터넷 연결
+ping google.com -c20
+
+timedatectl set-ntp true              # 시계 업데이트
+
+cfdisk /dev/sda                       # 디스크 파티셔닝
+mkfs.ext4 /dev/sda1                   # 파티션 포맷
+mount /dev/sda1 /mnt                  # 파티션 마운트
+
+vim /etc/pacman.d/mirrorlist          # 미러 우선순위 변경
+pacstrap /mnt base grub sudo openssh  # Install Archlinux
+genfstab -p /mnt >> /mnt/etc/fstab
+echo '<PC_NAME>' > /mnt/etc/hostname  # 컴터 이름설정
+arch-chroot /mnt /bin/bash            # 가자 디지몬 세상으로
+```
+
+설치 직후의 아치 안에서 할 일
+```bash
+# Timezone 설정
+ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
+# Locale 설정
+cat >> /etc/locale.gen <<END
+en_US.UTF-8 UTF-8
+ko_KR.UTF-8 UTF-8
+END
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+export LANG=en_US.UTF-8
+
+# Grub 설치, grub 대기시간 줄이기
+grub-install --recheck /dev/sda
+sed -i 's/GRUB_TIMEOUT=[0-9]*/GRUB_TIMEOUT=1/' /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+
+# 새 유저 생성, 루트 잠그기
+useradd -m -G wheel -s /bin/bash simnalamburt
+passwd simnalamburt
+EDITOR=nano visudo # 특정 라인 주석해제
+passwd root -dl
+
+# ssh 설정
+nano /etc/ssh/sshd_config
+# PermitRootLogin no
+# PasswordAuthentication no
+# PrintLastLog no
+systemctl enable sshd
+
+# Yaourt 설치
+cat >> /etc/pacman.conf <<END
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/\$arch
+END
+pacman -Sy --noconfirm yaourt
+
+# Gnome desktop environment (Optional)
+pacman -S gnome xf86-input-synaptics
+systemctl enable gdm
+systemctl enable NetworkManager
+
+exit
+umount -R /mnt
+```
+
+*(optional)* [Disable lid sleep](http://unix.stackexchange.com/a/52645)
+```
+# /etc/systemd/login.conf
+HandlePowerKey=ignore
+HandleSuspendKey=ignore
+HandleHibernateKey=ignore
+HandleLidSwitch=ignore
+```
+```sh
+sudo systemctl restart systemd-logind
+```
+
+###### References
+- [linuxveda tutorial](http://www.linuxveda.com/2014/06/07/arch-linux-tutorial)
+- [Archlinux wiki tutorial](https://wiki.archlinux.org/index.php/Installation_guide)
