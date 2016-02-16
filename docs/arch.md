@@ -78,9 +78,9 @@ passwd root -dl
 
 # ssh 설정
 nano /etc/ssh/sshd_config
-# PermitRootLogin no
-# PasswordAuthentication no
-# PrintLastLog no
+  # PermitRootLogin no
+  # PasswordAuthentication no
+  # PrintLastLog no
 systemctl enable sshd
 
 # Yaourt 설치
@@ -91,24 +91,37 @@ Server = http://repo.archlinux.fr/\$arch
 END
 pacman -Sy --noconfirm yaourt
 
-# Gnome desktop environment (Optional)
-pacman -S gnome xf86-input-synaptics
-systemctl enable gdm
-systemctl enable NetworkManager
+# DHCP 이너넷 설정 (그놈 쓸경우 하지마셈)
+nano /etc/systemd/network/20-dhcp.network
+  # [Match]
+  # Name=en*
+  #
+  # [Network]
+  # DHCP=ipv4
+systemctl enable systemd-networkd.service
+# DHCP DNS 설정
+systemctl enable systemd-resolved.service
+systemctl start systemd-resolved.service
+ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
 exit
 umount -R /mnt
 ```
 
-*(optional)* [Disable lid sleep](http://unix.stackexchange.com/a/52645)
+그놈 데스크톱을 쓰십니까?
 ```
-# /etc/systemd/login.conf
-HandlePowerKey=ignore
-HandleSuspendKey=ignore
-HandleHibernateKey=ignore
-HandleLidSwitch=ignore
+pacman -S gnome xf86-input-synaptics
+systemctl enable gdm
+systemctl enable NetworkManager
 ```
-```sh
+
+[전원버튼 동작 설정하기](http://unix.stackexchange.com/a/52645)
+```
+sudo vim /etc/systemd/login.conf
+# HandlePowerKey=ignore
+# HandleSuspendKey=ignore
+# HandleHibernateKey=ignore
+# HandleLidSwitch=ignore
 sudo systemctl restart systemd-logind
 ```
 
