@@ -1,7 +1,23 @@
 MSYS2
 ========
+### `pacman`
+- ca-certificates
+- git, vim, zsh
+- wget, tar, zip
+- ruby, python2
+- base-devel, gcc, make, gmp-devel, libcrypt-devel, ncurses-devel (required by fzf)
 
-### Setup
+### `.msi`
+- rust, go
+
+<br>
+
+--------
+
+<br>
+
+How to Install
+--------
 1.  Remap [Caps Lock &rarr; Control][remap]
 1.  Install [Consolas for Powerline][consolas]
 1.  [Disable snap assistant](http://i.imgur.com/0O4BgFW.png)
@@ -27,9 +43,3 @@ MSYS2
 [remap]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/capslock-to-control.reg
 [consolas]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/consola.ttf
 
-### `pacman`
-- ca-certificates
-- git, vim, zsh
-- wget, tar, zip
-- ruby, python2
-- base-devel, gcc, make, gmp-devel, libcrypt-devel, ncurses-devel (required by fzf)
