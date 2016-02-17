@@ -66,6 +66,12 @@ if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi; fi
 
+# Ruby
+if which ruby >/dev/null && which gem >/dev/null; then
+  export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+  export PATH="$PATH:$GEM_HOME/bin"
+fi
+
 # Golang
 export GOPATH=~/.go
 mkdir -p $GOPATH
