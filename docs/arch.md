@@ -5,7 +5,7 @@ kuma.hyeon.me
 --------
 ### `pacman`
 - base grub sudo openssh *(리눅스 기본)*
-- mosh git vim tmux zsh fish *(필수 툴)*
+- mosh git vim tmux zsh fish wget *(필수 툴)*
 - htop *(서버 관리도구)*
 - ruby python2 *(언어)*
 - nginx *(서비스)*
