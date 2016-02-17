@@ -7,8 +7,10 @@ kuma.hyeon.me
 - base grub sudo openssh *(리눅스 기본)*
 - mosh git vim tmux zsh fish wget *(필수 툴)*
 - htop *(서버 관리도구)*
-- ruby python2 *(언어)*
+- clang ruby python2 *(언어)*
 - nginx *(서비스)*
+- make
+- letsencrypt letsencrypt-nginx
 
 ```shell
 sudo systemctl enable nginx
