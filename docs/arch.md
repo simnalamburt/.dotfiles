@@ -9,7 +9,7 @@ kuma.hyeon.me
 - htop *(서버 관리도구)*
 - clang rust go ruby python2 *(언어)*
 - nginx *(서비스)*
-- make fakeroot
+- make fakeroot pkg-config
 - letsencrypt letsencrypt-nginx
 
 ### `yaourt`
