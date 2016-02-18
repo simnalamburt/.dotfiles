@@ -12,10 +12,9 @@ kuma.hyeon.me
 - make
 - letsencrypt letsencrypt-nginx
 
-```shell
-sudo systemctl enable nginx
-sudo systemctl start nginx
-```
+#### nginx
+- [Logjam Attack](https://weakdh.org)
+- [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx)
 
 아치 놋북
 --------
