@@ -178,6 +178,7 @@ Plug 'dag/vim-fish'
 Plug 'fatih/vim-go'
 Plug 'udalov/kotlin-vim'
 Plug 'tfnico/vim-gradle'
+Plug 'Matt-Deacalion/vim-systemd-syntax'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
