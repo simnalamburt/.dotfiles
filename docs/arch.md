@@ -16,8 +16,8 @@ kuma.hyeon.me
 - the_platinum_searcher fasd
 
 #### nginx
-- [Logjam Attack](https://weakdh.org)
-- [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx)
+- DHE 끄기 ([Logjam Attack](https://weakdh.org))
+- [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx) 강제하기
 
 아치 놋북
 --------
