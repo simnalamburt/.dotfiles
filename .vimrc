@@ -179,6 +179,7 @@ Plug 'fatih/vim-go'
 Plug 'udalov/kotlin-vim'
 Plug 'tfnico/vim-gradle'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'wavded/vim-stylus'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
