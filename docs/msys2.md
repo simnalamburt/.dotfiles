@@ -10,6 +10,9 @@ MSYS2
 ### `.msi`
 - rust, go
 
+### `go get`
+- [pt](https://github.com/monochromegane/the_platinum_searcher#developer)
+
 <br>
 
 --------
