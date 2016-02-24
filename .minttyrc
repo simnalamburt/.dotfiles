@@ -26,3 +26,5 @@ BellSound=no
 ConfirmExit=no
 Locale=ko_KR
 Charset=UTF-8
+
+Black=25,25,25
