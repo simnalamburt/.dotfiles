@@ -10,8 +10,8 @@ MSYS2
 ### `.msi`
 - rust, go
 
-### `go get`
-- [pt](https://github.com/monochromegane/the_platinum_searcher#developer)
+### Manual Installed
+- [ack2](https://github.com/petdance/ack2/tree/2.15_02), [file-next](https://github.com/petdance/file-next/tree/1.12)
 
 <br>
 
