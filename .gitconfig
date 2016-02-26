@@ -1,14 +1,25 @@
+# vim: noexpandtab sw=8
 [user]
 	name = Hyeon Kim
 	email = simnalamburt@gmail.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitexclude
-	fscache = true
+	fscache = yes
+	autocrlf = no
 [color]
 	ui = auto
+[diff]
+	renames = copies
+	tool = vimdiff
+[difftool]
+	prompt = no
+[fetch]
+	prune = yes
 [push]
 	default = simple
+[merge]
+	tool = vimdiff
 [credential]
 	helper = cache --timeout=3600
 [credential "https://github.com"]
@@ -17,10 +28,7 @@
 	username = simnalamburt
 [credential "http://git.upnl.org"]
 	username = simnalamburt
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
-	required = true
+	required = yes
