@@ -24,7 +24,6 @@ CopyOnSelect=no
 CtrlShiftShortcuts=no
 BellSound=no
 ConfirmExit=no
-Locale=ko_KR
+Locale=en_US
 Charset=UTF-8
-
 Black=25,25,25
