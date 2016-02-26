@@ -29,6 +29,6 @@
 [credential "http://git.upnl.org"]
 	username = simnalamburt
 [filter "lfs"]
+	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
-	required = yes
