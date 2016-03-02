@@ -7,6 +7,7 @@
 	excludesfile = ~/.gitexclude
 	fscache = yes
 	autocrlf = no
+	quotepath = false
 [color]
 	ui = auto
 [diff]
@@ -20,6 +21,7 @@
 	default = simple
 [merge]
 	tool = vimdiff
+	conflictstyle = diff3
 [credential]
 	helper = cache --timeout=3600
 [credential "https://github.com"]
@@ -32,3 +34,5 @@
 	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
+[branch]
+	autosetuprebase = always
