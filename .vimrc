@@ -149,6 +149,7 @@ Plug 'mhinz/vim-rfc'
 Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
 Plug 'junegunn/gv.vim'
+Plug 'tweekmonster/braceless.vim'
 
 " Visual
 Plug 'nathanaelkane/vim-indent-guides'
@@ -257,6 +258,9 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+" braceless.vim
+autocmd FileType python,yaml BracelessEnable +indent
 
 
 "
