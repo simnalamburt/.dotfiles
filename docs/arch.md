@@ -7,7 +7,7 @@ kuma.hyeon.me
 - base grub sudo openssh *(리눅스 기본)*
 - mosh git vim tmux zsh fish wget *(필수 툴)*
 - htop *(서버 관리도구)*
-- clang rust go ruby python2 *(언어)*
+- clang rust go ruby python2 nodejs npm *(언어)*
 - nginx *(서비스)*
 - make fakeroot pkg-config
 - letsencrypt letsencrypt-nginx
