@@ -16,16 +16,19 @@ OS X
 - [Monaco for powerline][monaco]
 
 ### [`brew`](http://brew.sh)
-- vim, git, mosh, wget, xz, pt, peco, fpp, fasd
-- rust, ruby, node, python, python3
-- p7zip, htop, gtar, nmap, binutils
-- ocaml, ledit
+- vim git mosh wget xz pt peco [fpp] fasd
+- rust ruby node python python3
+- p7zip htop gtar nmap binutils
+- ocaml ledit
 - pandoc
-- ghc, cabal-install, haskell-stack
+- ghc cabal-install haskell-stack
+- [keybase]
 
 ### [`brew cask`](http://caskroom.io)
-- [karabiner][], [seil][] *(keyboard customization)*
+- [karabiner][] [seil][] *(keyboard customization)*
 
 [monaco]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
+[fpp]: https://facebook.github.io/PathPicker/
+[keybase]: https://facebook.github.io/PathPicker/
 [karabiner]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
