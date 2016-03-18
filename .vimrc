@@ -150,6 +150,7 @@ Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
 Plug 'junegunn/gv.vim'
 Plug 'tweekmonster/braceless.vim'
+Plug 'rhysd/vim-grammarous'
 
 " Visual
 Plug 'nathanaelkane/vim-indent-guides'
@@ -261,6 +262,11 @@ map  N <Plug>(easymotion-prev)
 
 " braceless.vim
 autocmd FileType python,yaml BracelessEnable +indent
+
+" rhysd/vim-grammarous
+let g:grammarous#default_comments_only_filetypes = {
+            \ '*' : 1, 'help' : 0, 'markdown' : 0,
+            \ }
 
 
 "
