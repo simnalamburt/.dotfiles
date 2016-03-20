@@ -16,7 +16,7 @@ OS X
 - [Monaco for powerline][monaco]
 
 ### [`brew`](http://brew.sh)
-- vim git mosh wget xz pt peco [fpp] fasd
+- vim git [git-lfs] mosh wget xz pt peco [fpp] fasd
 - rust ruby node python python3
 - p7zip htop gtar nmap binutils
 - ocaml ledit
@@ -28,6 +28,7 @@ OS X
 - [karabiner][] [seil][] *(keyboard customization)*
 
 [monaco]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
+[git-lfs]: https://git-lfs.github.com/
 [fpp]: https://facebook.github.io/PathPicker/
 [keybase]: https://facebook.github.io/PathPicker/
 [karabiner]: https://pqrs.org/osx/karabiner/
