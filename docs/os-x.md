@@ -18,7 +18,7 @@ OS X
 ### [`brew`](http://brew.sh)
 - vim git [git-lfs] mosh wget xz pt peco [fpp] fasd
 - rust ruby node python python3
-- p7zip htop gtar nmap binutils
+- svn p7zip htop gtar nmap binutils
 - ocaml ledit
 - pandoc
 - ghc cabal-install haskell-stack
