@@ -14,6 +14,9 @@ kuma.hyeon.me
 
 ### `yaourt`
 - the_platinum_searcher fasd
+- [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+
+[nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 
 #### nginx
 - DHE 끄기 ([Logjam Attack](https://weakdh.org))
