@@ -16,7 +16,7 @@ OS X
 - [Monaco for powerline][monaco]
 
 ### [`brew`](http://brew.sh)
-- vim git [git-lfs] mosh wget xz pt peco [fpp] fasd
+- vim git [git-lfs] mosh wget xz pt peco [fpp] fasd [upx]
 - rust ruby node python python3 erlang elixir
 - svn p7zip htop gtar nmap binutils
 - ocaml ledit
@@ -34,3 +34,4 @@ OS X
 [keybase]: https://facebook.github.io/PathPicker/
 [karabiner]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
+[upx]: http://upx.sourceforge.net/
