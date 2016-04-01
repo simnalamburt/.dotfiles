@@ -28,6 +28,7 @@ kuma.hyeon.me
 ### `pacman`
 - base, grub, sudo, gnome, xf86-input-synaptics
 - dialog, wpa_supplicant *(for wifi-menu)*
+- weechat aspell
 - openssh, wget, lshw, htop
 - git, vim, zsh, tmux, mosh
 - chromium *(remove epiphany)*
