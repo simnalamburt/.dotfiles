@@ -238,9 +238,9 @@ let g:strip_whitespace_on_save = 1
 " nerdtree
 nnoremap <leader>n :NERDTreeToggle<CR>
 
-" gundo.vim
-let g:gundo_right = 1
-nnoremap <leader>g :GundoToggle<CR>
+" mundo.vim
+let g:mundo_right = 1
+nnoremap <leader>g :MundoToggle<CR>
 
 " vim-github-dashboard
 let g:github_dashboard = { 'username': 'simnalamburt' }
