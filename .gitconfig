@@ -10,6 +10,8 @@
 	autocrlf = no
 	quotepath = no
 	precomposeunicode = yes
+[log]
+	date = iso8601
 [color]
 	ui = auto
 [diff]
