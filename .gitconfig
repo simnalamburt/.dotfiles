@@ -8,7 +8,8 @@
 	excludesfile = ~/.gitexclude
 	fscache = yes
 	autocrlf = no
-	quotepath = false
+	quotepath = no
+	precomposeunicode = yes
 [color]
 	ui = auto
 [diff]
