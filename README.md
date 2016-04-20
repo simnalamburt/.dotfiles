@@ -29,6 +29,8 @@ ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
 ln -sf .dotfiles/.gemrc
 
+cp .dotfiles/.gitconfig.local .
+
 # fish
 ln -s ~/.dotfiles/omf ~/.config/omf
 curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish

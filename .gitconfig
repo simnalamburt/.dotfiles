@@ -41,3 +41,6 @@
 	smudge = git-lfs smudge %f
 [branch]
 	autosetuprebase = always
+
+[include]
+	path = ~/.gitconfig.local
