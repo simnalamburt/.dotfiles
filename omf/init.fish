@@ -1,4 +1,4 @@
-set -x RUST_BACKTRACE=1
+set -x RUST_BACKTRACE 1
 if not set -q TMUX; set TERM xterm-256color; end
 
 # Aliases
