@@ -10,3 +10,6 @@ if type -q ag; if not type -q pt; alias pt='ag'; end; end
 set -x GOPATH ~/.go
 mkdir -p $GOPATH
 set -x PATH $PATH "$GOPATH/bin"
+
+# chips (don't touch the line below!)
+if [ -e ~/.config/chips/build.fish ] ; source ~/.config/chips/build.fish ; end

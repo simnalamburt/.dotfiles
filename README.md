@@ -17,25 +17,25 @@
 
 <br>
 
-Requires `git` and `zsh`
+Requires `git` and `fish`
 
 ```bash
 cd ~
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
-ln -sf .dotfiles/.zshrc
+
+# Install https://github.com/kinoru/chips#os-x
+mkdir -p .config/fish  && ln -sf ~/.dotfiles/config.fish .config/fish/
+mkdir -p .config/chips && ln -sf ~/.dotfiles/plugin.yaml .config/chips/
+mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
 ln -sf .dotfiles/.vimrc
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
 ln -sf .dotfiles/.gemrc
-mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
-mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
 
 cp .dotfiles/.gitconfig.local .
-
-# fish
-ln -s ~/.dotfiles/omf ~/.config/omf
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+ln -sf .dotfiles/.zshrc
+mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
 
 # OS X
 ln -sf ~/.dotfiles/karabiner/private.xml "$HOME/Library/Application Support/Karabiner"
