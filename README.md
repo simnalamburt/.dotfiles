@@ -33,12 +33,10 @@ ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
 ln -sf .dotfiles/.gemrc
 
+# Optional dotfiles
 cp .dotfiles/.gitconfig.local .
 ln -sf .dotfiles/.zshrc
 mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
-
-# OS X
-ln -sf ~/.dotfiles/karabiner/private.xml "$HOME/Library/Application Support/Karabiner"
 ```
 
 --------
