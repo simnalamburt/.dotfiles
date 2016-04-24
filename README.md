@@ -31,6 +31,7 @@ ln -sf .dotfiles/.vimrc
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
+ln -sf .dotfiles/.npmrc
 ln -sf .dotfiles/.gemrc
 
 # Optional dotfiles
