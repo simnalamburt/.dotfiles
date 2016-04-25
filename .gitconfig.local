@@ -1,2 +1,4 @@
+# vim: ft=gitconfig noexpandtab sw=8
 [commit]
 	gpgsign = true
+	signingkey = E242057F
