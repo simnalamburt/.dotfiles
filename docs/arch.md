@@ -10,6 +10,7 @@ kuma.hyeon.me
 - clang rust go ruby python2 nodejs npm stack *(언어)*
 - nginx letsencrypt letsencrypt-nginx *(서비스)*
 - make fakeroot pkg-config
+- keybase weechat
 
 ### `yaourt`
 - the_platinum_searcher fasd
