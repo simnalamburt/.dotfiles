@@ -5,9 +5,10 @@ kuma.hyeon.me
 --------
 ### `pacman`
 - base grub sudo openssh *(리눅스 기본)*
-- mosh git vim tmux zsh fish wget upx zip *(필수 툴)*
+- mosh git tmux zsh fish wget upx zip *(필수 툴)*
+- neovim python2-neovim python-neovim
 - htop *(서버 관리도구)*
-- clang rust go ruby python2 nodejs npm stack *(언어)*
+- clang rust go ruby python python2 nodejs npm stack *(언어)*
 - nginx letsencrypt letsencrypt-nginx *(서비스)*
 - make fakeroot pkg-config
 - keybase weechat
