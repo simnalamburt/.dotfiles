@@ -1,5 +1,6 @@
 set -x RUST_BACKTRACE 1
 if not set -q TMUX; set TERM xterm-256color; end
+set -x PATH $PATH "$HOME/.local/bin"
 
 # Aliases
 if type -q nvim; alias vim='nvim'; end # neovim
