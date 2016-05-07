@@ -12,6 +12,5 @@ set -x GOPATH ~/.go
 mkdir -p $GOPATH
 set -x PATH $PATH "$GOPATH/bin"
 
-# chips (don't touch the line below!)
-alias chips "~/.local/bin/chips; and exec fish"
+# chips
 if [ -e ~/.config/chips/build.fish ] ; source ~/.config/chips/build.fish ; end
