@@ -38,7 +38,8 @@ hyeon.me
 
     v=spf1 a mx ptr ptr:175.197.17.221 -all
 
-ko.hyeon.me
+bear.hyeon.me
 --------
 ### apt
 - mosh htop
+- fish
