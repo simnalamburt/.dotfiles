@@ -3,13 +3,13 @@ Ubuntu
 
 gemini.upnl.org
 --------
-### `apt-get`
-- git, vim-nox, zsh, mosh, tmux, silversearcher-ag
-- nginx, htop, speedometer, fail2ban, ntp
+### apt
+- git vim-nox zsh mosh tmux silversearcher-ag
+- nginx htop speedometer fail2ban ntp
 - weechat
 
-### `apt-get` PPA
-- [ruby2.2, ruby2.2-dev](https://www.brightbox.com/docs/ruby/ubuntu/) (`sudo apt-add-repository ppa:brightbox/ruby-ng`)
+### apt PPA
+- [ruby2.2 ruby2.2-dev](https://www.brightbox.com/docs/ruby/ubuntu/) (`sudo apt-add-repository ppa:brightbox/ruby-ng`)
 - [tmux](https://launchpad.net/~pi-rho/+archive/ubuntu/dev) (`sudo apt-add-repository ppa:pi-rho/dev`)
 - [GitLab](https://about.gitlab.com/downloads/#ubuntu1404)
 - [mono](http://www.mono-project.com/docs/getting-started/install/linux/)
