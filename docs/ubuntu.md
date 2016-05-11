@@ -38,24 +38,6 @@ hyeon.me
 ### pip3
 - neovim
 
-<br>
-
-bear.hyeon.me
---------
-### apt
-- mosh htop
-- fish
-- nginx
-
-###### REMOVED
-- vim
-
-### apt PPA
-- neovim (`sudo apt-add-repository ppa:neovim-ppa/unstable`)
-
-### pip3
-- neovim
-
 
 
 <br>
