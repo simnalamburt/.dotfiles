@@ -43,3 +43,4 @@ bear.hyeon.me
 ### apt
 - mosh htop
 - fish
+- nginx
