@@ -23,7 +23,9 @@ Requires `git` and `fish`
 cd ~
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
 
-# Install https://github.com/kinoru/chips#os-x
+# chips     https://github.com/kinoru/chips
+# vim-plug  https://github.com/junegunn/vim-plug
+
 mkdir -p .config/fish  && ln -sf ~/.dotfiles/config.fish .config/fish/
 mkdir -p .config/chips && ln -sf ~/.dotfiles/plugin.yaml .config/chips/
 mkdir -p .config/nvim  && ln -sf ~/.dotfiles/.vimrc      .config/nvim/init.vim
