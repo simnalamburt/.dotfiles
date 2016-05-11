@@ -19,13 +19,12 @@ gemini.upnl.org
 hyeon.me
 --------
 ### apt
-- python, python-dev, python-pip
-    * pysha3
+- python python-dev python-pip
 - postfix
-- debian-goodies, ppa-purge
-- dhex, radare2
+- debian-goodies ppa-purge
+- dhex radare2
 - linux-generic-lts-wily *(높은버전 커널 쓰려고 깔음)*
-- mosh htop
+- mosh htop silversearcher-ag
 
 ### apt PPA
 - mongodb
@@ -33,10 +32,15 @@ hyeon.me
 - [ruby2.2](https://www.brightbox.com/blog/2015/01/05/ruby-2-2-0-packages-for-ubuntu/)
 - deluged, deluge-web (`sudo apt-add-repository ppa:deluge-team/ppa`)
 
+### pip
+- pysha3
+
 ### DNS Setting
 메일을 보내려면 SPF 레코드가 똑바로 설정되어있어야 한다.
 
     v=spf1 a mx ptr ptr:175.197.17.221 -all
+
+<br>
 
 bear.hyeon.me
 --------
