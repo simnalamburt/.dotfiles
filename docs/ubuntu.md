@@ -38,11 +38,6 @@ hyeon.me
 ### pip3
 - neovim
 
-### DNS Setting
-메일을 보내려면 SPF 레코드가 똑바로 설정되어있어야 한다.
-
-    v=spf1 a mx ptr ptr:175.197.17.221 -all
-
 <br>
 
 bear.hyeon.me
@@ -60,3 +55,30 @@ bear.hyeon.me
 
 ### pip3
 - neovim
+
+
+
+<br>
+
+--------
+
+<br>
+
+
+
+Documentation
+========
+### DNS Setting
+메일을 보내려면 SPF 레코드가 똑바로 설정되어있어야 한다.
+
+    v=spf1 a mx ptr ptr:175.197.17.221 -all
+
+### Use neovim as a default text editor
+```shell
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/nvim 60
+sudo update-alternatives --config vi
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
+```
