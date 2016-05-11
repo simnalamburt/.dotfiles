@@ -64,7 +64,6 @@ export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/iss
 # Aliases
 if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
-if hash ag 2>/dev/null; then; if ! hash pt 2>/dev/null; then; alias pt='ag'; fi; fi
 
 # Ruby
 if which ruby >/dev/null && which gem >/dev/null; then

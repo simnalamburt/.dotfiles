@@ -16,7 +16,7 @@ OS X
 - [Monaco for powerline][monaco]
 
 ### [`brew`](http://brew.sh)
-- vim git [git-lfs] mosh wget xz pt peco [fpp] fasd [upx]
+- vim git [git-lfs] mosh wget xz the_silver_searcher peco [fpp] fasd [upx]
 - rust ruby node python python3 erlang elixir
 - svn p7zip htop gtar nmap binutils
 - ocaml ledit
