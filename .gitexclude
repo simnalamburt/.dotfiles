@@ -62,5 +62,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# MS word temp file
+# MS office temp file
 ~$*.docx
+~$*.xlsx
