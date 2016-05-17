@@ -309,6 +309,12 @@ function! s:beauty()
   execute printf("highlight TabLineSel  ctermfg=white    ctermbg=%d cterm=none", s:back_color)
   execute printf("highlight TabLineFill ctermbg=%d       ctermfg=%d", s:back_color, s:back_color)
 
+  " vimdiff
+  highlight DiffChange ctermbg=NONE
+  highlight DiffText   ctermbg=22
+  highlight DiffAdd    ctermbg=22
+  highlight DiffDelete ctermbg=NONE ctermfg=235
+
   " Listchars for whitespaces
   highlight NonText    ctermfg=darkblue
   highlight SpecialKey ctermfg=darkblue
