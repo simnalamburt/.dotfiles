@@ -66,7 +66,7 @@ if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 
 # Ruby
-if which ruby >/dev/null && which gem >/dev/null; then
+if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
   export GEM_HOME=$(ruby -e 'print Gem.user_dir')
   export PATH="$PATH:$GEM_HOME/bin"
 fi
