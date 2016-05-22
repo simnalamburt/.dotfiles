@@ -27,6 +27,7 @@ OS X
 ### [`brew cask`](http://caskroom.io)
 - [karabiner][] [seil][] *(keyboard customization)*
 - virtualbox
+- android-studio
 
 [monaco]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
 [git-lfs]: https://git-lfs.github.com/
