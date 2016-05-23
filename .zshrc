@@ -72,6 +72,8 @@ if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
 fi
 
 # Golang
-export GOPATH=~/.go
-mkdir -p $GOPATH
-export PATH="$PATH:$GOPATH/bin"
+if hash go 2>/dev/null; then
+  export GOPATH=~/.go
+  mkdir -p $GOPATH
+  export PATH="$PATH:$GOPATH/bin"
+fi
