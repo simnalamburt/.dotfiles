@@ -13,5 +13,11 @@ if type -q go
   set -x PATH $PATH "$GOPATH/bin"
 end
 
+# React Native
+if [ -d ~/Library/Android/sdk ];
+  export ANDROID_HOME="$HOME/Library/Android/sdk"
+  set -x PATH "$HOME/Library/Android/sdk/tools" "$HOME/Library/Android/sdk/platform-tools" $PATH
+end
+
 # chips
 if [ -e ~/.config/chips/build.fish ] ; source ~/.config/chips/build.fish ; end
