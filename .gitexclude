@@ -65,3 +65,9 @@ $RECYCLE.BIN/
 # MS office temp file
 ~$*.docx
 ~$*.xlsx
+
+
+#
+# ETC
+#
+.byebug_history
