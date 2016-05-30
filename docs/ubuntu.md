@@ -43,7 +43,7 @@ hyeon.me
 cse.snu.ac.kr
 --------
 ### apt
-- mosh htop zsh fish
+- mosh htop zsh fish tmux
 - fail2ban
 
 
