@@ -6,6 +6,12 @@ set -x PATH $PATH "$HOME/.local/bin"
 if type -q nvim; alias vim='nvim'; end # neovim
 if type -q tmux; alias irc='tmux attach -t irc'; end
 
+# Ruby
+if begin; type -q ruby; and type -q gem; end
+  export GEM_HOME=(ruby -e 'print Gem.user_dir')
+  set -x PATH $PATH "$GEM_HOME/bin"
+end
+
 # Golang
 if type -q go
   set -x GOPATH ~/.go
