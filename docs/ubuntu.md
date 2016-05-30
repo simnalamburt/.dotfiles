@@ -38,6 +38,14 @@ hyeon.me
 ### pip3
 - neovim
 
+<br>
+
+cse.snu.ac.kr
+--------
+### apt
+- mosh htop zsh fish
+- fail2ban
+
 
 
 <br>
