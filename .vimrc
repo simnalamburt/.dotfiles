@@ -9,7 +9,9 @@ set switchbuf+=usetab,split
 set startofline
 set splitbelow
 set nobackup
-set nocompatible
+if !has('nvim')
+  set nocompatible
+endif
 set nofoldenable
 set noshowmode
 set noswapfile
