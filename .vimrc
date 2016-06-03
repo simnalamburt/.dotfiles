@@ -130,13 +130,6 @@ nnoremap <a-9> 9gt
 "
 " Plugins
 "
-
-" deoplete.nvim
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-let g:deoplete#enable_at_startup = 1
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -159,7 +152,6 @@ Plug 'vim-utils/vim-interruptless'
 Plug 'junegunn/gv.vim'
 Plug 'tweekmonster/braceless.vim'
 Plug 'rhysd/vim-grammarous'
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 " Haskell
 Plug 'eagletmt/neco-ghc'
@@ -200,6 +192,15 @@ Plug 'elixir-lang/vim-elixir'
 " Blink
 Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
+
+" deoplete.nvim
+if has('nvim')
+  function! DoRemote(arg)
+    UpdateRemotePlugins
+  endfunction
+  let g:deoplete#enable_at_startup = 1
+  Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+endif
 
 call plug#end()
 
