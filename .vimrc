@@ -191,7 +191,7 @@ Plug 'dag/vim-fish'
 Plug 'fatih/vim-go'
 Plug 'udalov/kotlin-vim'
 Plug 'tfnico/vim-gradle'
-Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'kurayama/systemd-vim-syntax'
 Plug 'wavded/vim-stylus'
 Plug 'elixir-lang/vim-elixir'
 
