@@ -84,14 +84,6 @@ nano /etc/ssh/sshd_config
   # PasswordAuthentication no
 systemctl enable sshd
 
-# Yaourt 설치
-cat >> /etc/pacman.conf <<END
-[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/\$arch
-END
-pacman -Sy --noconfirm yaourt
-
 # DHCP 이너넷 설정 (그놈 쓸경우 하지마셈)
 cat > /etc/systemd/network/20-dhcp.network <<END
 [Match]
