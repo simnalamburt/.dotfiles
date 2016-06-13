@@ -25,6 +25,7 @@ git clone https://github.com/simnalamburt/.dotfiles.git --depth=1
 
 # chips     https://github.com/kinoru/chips
 # vim-plug  https://github.com/junegunn/vim-plug
+# tpm       https://github.com/tmux-plugins/tpm
 
 mkdir -p .config/fish  && ln -sf ~/.dotfiles/config.fish .config/fish/
 mkdir -p .config/chips && ln -sf ~/.dotfiles/plugin.yaml .config/chips/
