@@ -12,7 +12,7 @@ kuma.hyeon.me
 
 ### AUR
 - pacaur *([손으로 설치해야함](https://aur.archlinux.org/packages/?O=0&SeB=nd&K=aur+helper&SB=v&SO=d&PP=50&do_Search=Go))*
-- libtinfo *([Required by stack][libtinfo])*
+- libtinfo-5 *([Required by stack][libtinfo])*
 - [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 
 > *TODO*
