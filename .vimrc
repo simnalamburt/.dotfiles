@@ -204,6 +204,7 @@ if has('nvim')
   let g:deoplete#enable_at_startup = 1
   Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 endif
+Plug 'Konfekt/FastFold'
 
 call plug#end()
 
