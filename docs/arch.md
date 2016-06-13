@@ -7,7 +7,7 @@ kuma.hyeon.me
 - neovim python2-neovim python-neovim
 - htop *(서버 관리도구)*
 - clang rust ruby python python2 nodejs npm stack *(언어)*
-- nginx certbot certbot-nginx *(서비스)*
+- nginx certbot *(서비스)*
 - keybase weechat
 
 ### AUR
