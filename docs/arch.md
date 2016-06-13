@@ -1,56 +1,36 @@
-Arch Linux
-========
-
 kuma.hyeon.me
 --------
 ### `pacman`
 - base grub sudo openssh *(리눅스 기본)*
-- mosh git tmux zsh fish wget upx zip the_silver_searcher *(필수 툴)*
+- base-devel binutils
+- mosh git tmux fish wget upx zip the_silver_searcher *(필수 툴)*
 - neovim python2-neovim python-neovim
 - htop *(서버 관리도구)*
-- clang rust ruby python python2 nodejs npm stack *(언어)*
-- nginx letsencrypt letsencrypt-nginx *(서비스)*
-- make fakeroot pkg-config
+- clang rust ruby python python2 nodejs npm *(언어)*
+- nginx certbot certbot-nginx *(서비스)*
 - keybase weechat
 
-### `yaourt`
-- fasd
-- [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
-- libtinfo *(Required by stack)*
+> *TODO*
+>
+> ### `pacman`
+> - stack
+>
+> ### AUR
+> - [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+> - libtinfo *([Required by stack][libtinfo])*
+>
+> #### nginx
+> - DHE 끄기 ([Logjam Attack](https://weakdh.org))
+> - [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx) 강제하기
 
-[nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
-
-#### nginx
-- DHE 끄기 ([Logjam Attack](https://weakdh.org))
-- [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx) 강제하기
-
-<br>
-
-아치 놋북
---------
-
-### `pacman`
-- base grub sudo gnome xf86-input-synaptics
-- dialog wpa_supplicant *(for wifi-menu)*
-- weechat aspell
-- openssh wget lshw htop
-- git vim zsh tmux mosh
-- chromium *(remove epiphany)*
-- gnome-tweak-tool ibus-hangul adobe-source-han-sans-otc-fonts
-
-### `yaourt`
-- the_platinum_searcher fasd
-- gtk-theme-arc-git numix-circle-icon-theme-git
-
-
+[irc]: https://wiki.archlinux.org/index.php/Identd_Setup
+[libtinfo]: https://github.com/commercialhaskell/stack/issues/1012
 
 <br>
 
 --------
 
 <br>
-
-
 
 How to Install
 --------
@@ -127,13 +107,6 @@ systemctl enable systemd-resolved.service
 
 exit
 umount -R /mnt
-```
-
-그놈 데스크톱을 쓰십니까?
-```bash
-pacman -S gnome xf86-input-synaptics
-systemctl enable gdm
-systemctl enable NetworkManager
 ```
 
 [전원버튼 동작 설정하기](http://unix.stackexchange.com/a/52645)
