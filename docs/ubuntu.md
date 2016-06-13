@@ -31,6 +31,7 @@ hyeon.me
 - [node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
 - [ruby2.2](https://www.brightbox.com/blog/2015/01/05/ruby-2-2-0-packages-for-ubuntu/)
 - neovim (`sudo apt-add-repository ppa:neovim-ppa/unstable`)
+- [weechat-curses weechat-plugins](https://weechat.org/download/debian/#instructions)
 
 ### pip2
 - pysha3
