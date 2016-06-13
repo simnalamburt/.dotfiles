@@ -6,18 +6,16 @@ kuma.hyeon.me
 - mosh git tmux fish wget upx zip the_silver_searcher *(필수 툴)*
 - neovim python2-neovim python-neovim
 - htop *(서버 관리도구)*
-- clang rust ruby python python2 nodejs npm *(언어)*
+- clang rust ruby python python2 nodejs npm stack *(언어)*
 - nginx certbot certbot-nginx *(서비스)*
 - keybase weechat
 
+### AUR
+- pacaur *([손으로 설치해야함](https://aur.archlinux.org/packages/?O=0&SeB=nd&K=aur+helper&SB=v&SO=d&PP=50&do_Search=Go))*
+- libtinfo *([Required by stack][libtinfo])*
+- [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+
 > *TODO*
->
-> ### `pacman`
-> - stack
->
-> ### AUR
-> - [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
-> - libtinfo *([Required by stack][libtinfo])*
 >
 > #### nginx
 > - DHE 끄기 ([Logjam Attack](https://weakdh.org))
