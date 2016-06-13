@@ -137,7 +137,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'junegunn/vim-xmark', { 'do': 'make' }
+if has('mac')
+  Plug 'junegunn/vim-xmark', { 'do': 'make' }
+endif
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
