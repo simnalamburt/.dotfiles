@@ -62,7 +62,9 @@ ping google.com -c20
 timedatectl set-ntp true              # 시계 업데이트
 
 cfdisk /dev/sda                       # 디스크 파티셔닝
-mkfs.ext4 /dev/sda1                   # 파티션 포맷
+mkfs.ext4 /dev/sda1                   # 파티션 포맷 (ext4)
+mkswap /dev/sda2                      # 파티션 포맷 (swap)
+swapon /dev/sda2                      # 스왑 활성화
 mount /dev/sda1 /mnt                  # 파티션 마운트
 
 vim /etc/pacman.d/mirrorlist          # 미러 우선순위 변경
@@ -99,9 +101,7 @@ passwd root -dl
 
 # ssh 설정
 nano /etc/ssh/sshd_config
-  # PermitRootLogin no
   # PasswordAuthentication no
-  # PrintLastLog no
 systemctl enable sshd
 
 # Yaourt 설치
@@ -113,17 +113,17 @@ END
 pacman -Sy --noconfirm yaourt
 
 # DHCP 이너넷 설정 (그놈 쓸경우 하지마셈)
-nano /etc/systemd/network/20-dhcp.network
-  # [Match]
-  # Name=en*
-  #
-  # [Network]
-  # DHCP=ipv4
+cat > /etc/systemd/network/20-dhcp.network <<END
+[Match]
+Name=en*
+
+[Network]
+DHCP=ipv4
+END
 systemctl enable systemd-networkd.service
 # DHCP DNS 설정
-systemctl enable systemd-resolved.service
-systemctl start systemd-resolved.service
 ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+systemctl enable systemd-resolved.service
 
 exit
 umount -R /mnt
