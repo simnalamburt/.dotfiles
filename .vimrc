@@ -191,6 +191,7 @@ Plug 'kurayama/systemd-vim-syntax'
 Plug 'wavded/vim-stylus'
 Plug 'elixir-lang/vim-elixir'
 Plug 'idris-hackers/idris-vim'
+Plug 'cespare/vim-toml'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
