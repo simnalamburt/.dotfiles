@@ -1,7 +1,7 @@
 [msys2]
 ========
 #### `pacman`
-- git vim zsh tar zip
+- git vim zsh tar zip mosh
 - gcc ruby python2
 - base-devel gmp-devel libcrypt-devel ncurses-devel *(required by fzf)*
 
