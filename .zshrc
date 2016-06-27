@@ -3,16 +3,11 @@
 #
 source ~/.zplug/zplug
 
-zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/fasd", from:oh-my-zsh
-# oh-my-zsh/lib/clipboard.zsh
-zplug "rimraf/k", of:k.sh
 zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", of:zsh-syntax-highlighting.zsh
+zplug "zsh-users/zsh-syntax-highlighting", use:zsh-syntax-highlighting.zsh
+zplug "simnalamburt/cgitc"
 zplug "simnalamburt/shellder"
-zplug "simnalamburt/16b755de2b20a08e3534", from:gist, of:cpv.sh
 
-if ! zplug check; then; zplug install; fi
 zplug load
 
 
