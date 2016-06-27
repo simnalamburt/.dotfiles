@@ -1,16 +1,13 @@
 [msys2]
 ========
 #### `pacman`
-- ca-certificates
-- git vim zsh wget tar zip
-- ruby python2
+- git vim zsh tar zip
+- gcc ruby python2
+- base-devel gmp-devel libcrypt-devel ncurses-devel *(required by fzf)*
 
 #### `.msi`
-- [rust][] [go][]
+- [rust] [go]
 - [git-lfs]
-
-#### Manual Installed
-- [ack][] [file-next][]
 
 <br>
 
@@ -25,17 +22,13 @@ How to Install
 1.  [Disable snap assistant](http://i.imgur.com/0O4BgFW.png)
 1.  Install **[msys2]**
 1.  Install packages
-1.  Edit `/msys2_shell.bat`, `/mingw32_shell.bat`, `/mingw64_shell.bat`
+1.  Edit `/msys2.ini`, `/mingw32.ini` and `/mingw64.ini`
 
-    1. Enable symlink
-    1. Replace `/usr/bin/bash` into `/usr/bin/zsh`
-
-1.  Edit `/etc/profile`
-
-    ```
+    ```ini
+    MSYS=winsymlinks:nativestrict
+    MSYS2_PATH_TYPE=inherit
+    SHELL=/usr/bin/zsh
     # ...
-    PS1='(%n@%m)[%h] %~ %% '
-    SHELL=$(which zsh) # <- Add this!!
     ```
 
 1.  Clone [dotfiles](../README.md)
