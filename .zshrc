@@ -1,33 +1,4 @@
 #
-# Auto installation
-#
-if ! [ -f ~/.zplug/zplug ]; then
-  printf "Installing \e[33mzplug\e[0m ... "
-  git clone https://github.com/b4b4r07/zplug ~/.zplug --depth=1 2>/dev/null
-  echo "Done"
-fi
-
-if ! [ -f ~/.vim/autoload/plug.vim ]; then
-  printf "Installing \e[33mplug.vim\e[0m ... "
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 2>/dev/null
-  echo "Done"
-
-  printf " - Will you link \e[33m.vimrc\e[0m now? [y/N]: "
-  if read -q; then
-    ln -sf .dotfiles/.vimrc ~
-    vim +PlugUpdate +qall
-  fi
-fi
-
-if (! [ -d ~/.tmux/plugins/tpm ]) && hash tmux 2>/dev/null; then
-  printf "Installing \e[33mtpm\e[0m ... "
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm --depth=1 2>/dev/null
-  echo "Done"
-fi
-
-
-#
 # zplug
 #
 source ~/.zplug/zplug
