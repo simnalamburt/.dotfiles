@@ -20,6 +20,7 @@ if hash ledit 2>/dev/null; then
   alias ocaml='ledit ocaml'
   alias racket='ledit racket'
 fi
+# TODO: 중간에 있는 글자+<tab>으로 자동완성이 안됨
 
 
 #
