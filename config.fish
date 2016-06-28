@@ -1,4 +1,3 @@
-set -x RUST_BACKTRACE 1
 if not set -q TMUX; set TERM xterm-256color; end
 set -x PATH $PATH "$HOME/.local/bin"
 
@@ -17,6 +16,14 @@ if type -q go
   set -x GOPATH ~/.go
   mkdir -p $GOPATH
   set -x PATH $PATH "$GOPATH/bin"
+end
+
+# Rust
+if type -q rustc
+  set -x RUST_BACKTRACE 1
+end
+if type -q cargo
+  set -x PATH $PATH "$HOME/.cargo/bin" 2> /dev/null
 end
 
 # React Native

@@ -53,7 +53,6 @@ fi
 #
 # zshrc
 #
-export RUST_BACKTRACE=1
 if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
@@ -73,4 +72,12 @@ if hash go 2>/dev/null; then
   export GOPATH=~/.go
   mkdir -p $GOPATH
   export PATH="$PATH:$GOPATH/bin"
+fi
+
+# Rust
+if hash rustc 2>/dev/null; then
+  export RUST_BACKTRACE=1
+fi
+if hash cargo 2>/dev/null; then
+  export PATH="$PATH:$HOME/.cargo/bin"
 fi
