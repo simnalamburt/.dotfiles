@@ -16,11 +16,6 @@ stty stop undef
 alias l='ls -lah'
 alias mv='mv -i'
 alias cp='cp -i'
-if hash ledit 2>/dev/null; then
-  alias ocaml='ledit ocaml'
-  alias racket='ledit racket'
-fi
-# TODO: 중간에 있는 글자+<tab>으로 자동완성이 안됨
 
 
 #
@@ -57,6 +52,10 @@ export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/iss
 # Aliases
 if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
+if hash ledit 2>/dev/null; then
+  alias ocaml='ledit ocaml'
+  alias racket='ledit racket'
+fi
 
 # Ruby
 if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
