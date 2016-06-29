@@ -66,6 +66,32 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 
 #
+# fzy.zsh
+#
+if hash fzy 2>/dev/null; then
+  [ -z "$HISTFILE" ] && HISTFILE=$HOME/.zsh_history
+  HISTSIZE=10000
+  SAVEHIST=10000
+  function fzy-history-widget() {
+    echo
+    setopt localoptions pipefail
+    local selected=( $(fc -l 1 | fzy -l25) )
+    local ret=$?
+    if [ -n "$selected" ]; then
+      local num=$selected[1]
+      if [ -n "$num" ]; then
+        zle vi-fetch-history -n $num
+      fi
+    fi
+    zle reset-prompt
+    return $ret
+  }
+  zle     -N    fzy-history-widget
+  bindkey '^R'  fzy-history-widget
+fi
+
+
+#
 # zshrc
 #
 if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
