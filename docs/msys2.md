@@ -4,6 +4,7 @@
 - git vim zsh tar zip mosh
 - gcc ruby python2
 - base-devel gmp-devel libcrypt-devel ncurses-devel *(required by fzf)*
+- mingw-w64-x86_64-gcc
 
 #### `.msi`
 - [rust] [go]
