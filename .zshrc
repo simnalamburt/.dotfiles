@@ -13,13 +13,17 @@ zplug load
 # zsh-sensible
 #
 stty stop undef
+
 alias l='ls -lah'
 alias mv='mv -i'
 alias cp='cp -i'
 
+setopt auto_cd
+zstyle ':completion:*:*:*:*:*' menu select
+
 
 #
-# dircolor
+# lscolors
 #
 autoload -U colors && colors
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
@@ -40,6 +44,24 @@ elif [[ "$(uname -s)" == "OpenBSD" ]]; then
 else
   ls --color -d . &>/dev/null 2>&1 && alias ls='ls --color=tty' || alias ls='ls -G'
 fi
+
+
+#
+# zsh-substring-completion
+#
+setopt complete_in_word
+setopt always_to_end
+WORDCHARS=''
+zmodload -i zsh/complist
+
+# Substring completion
+zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+## Case-insensitive substring completion
+#zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+## Case-insensitive & hyphen-insensitive substring completion
+#zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 
 #
