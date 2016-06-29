@@ -3,7 +3,7 @@
 #
 source ~/.zplug/zplug
 zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting", use:zsh-syntax-highlighting.zsh
+zplug "zsh-users/zsh-syntax-highlighting"
 zplug "simnalamburt/cgitc"
 zplug "simnalamburt/shellder"
 zplug load
