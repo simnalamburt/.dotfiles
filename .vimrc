@@ -134,7 +134,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+if !has('win32') && !has('win64') && !has('win32unix')
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+endif
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 if has('mac')
