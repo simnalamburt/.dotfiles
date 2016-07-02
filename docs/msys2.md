@@ -6,7 +6,7 @@
 - mingw-w64-x86_64-gcc base-devel
 
 #### `.msi`
-- [rust] [go]
+- [rust][] [go][]
 - [git-lfs]
 
 <br>
