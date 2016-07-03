@@ -6,7 +6,7 @@ kuma.hyeon.me
 - mosh git tmux fish wget upx zip the_silver_searcher *(필수 툴)*
 - neovim python2-neovim python-neovim
 - htop *(서버 관리도구)*
-- clang rust ruby python python2 nodejs npm stack *(언어)*
+- clang cargo rust ruby python python2 nodejs npm stack *(언어)*
 - nginx certbot *(서비스)*
 - keybase weechat
 
