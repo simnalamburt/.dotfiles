@@ -34,7 +34,6 @@ mkdir -p .ssh && chmod 700 .ssh && ln -sf ../.dotfiles/.ssh/config .ssh
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
-ln -sf .dotfiles/.npmrc
 ln -sf .dotfiles/.gemrc
 
 # Optional dotfiles
