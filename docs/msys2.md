@@ -32,7 +32,7 @@ How to Install
     ```
 
 1.  Clone [dotfiles](../README.md)
-1.  Invoke zplug with `exec zsh`, then fix symlinks manually
+1.  Execute `zplug install`
 
 [rust]: https://www.rust-lang.org/
 [go]: https://golang.org/
