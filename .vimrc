@@ -154,7 +154,6 @@ Plug 'godlygeek/tabular'
 Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
 Plug 'junegunn/gv.vim'
-Plug 'tweekmonster/braceless.vim'
 Plug 'rhysd/vim-grammarous'
 
 " Haskell
@@ -281,9 +280,6 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
-
-" braceless.vim
-autocmd FileType python,yaml BracelessEnable +indent
 
 " rhysd/vim-grammarous
 let g:grammarous#default_comments_only_filetypes = {
