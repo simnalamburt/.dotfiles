@@ -41,3 +41,9 @@ if [ -d ~/.pyenv ];
   . (pyenv init -|psub)
   . (pyenv virtualenv-init -|psub)
 end
+
+# exa
+if type -q exa
+  alias l="exa -alh --group-directories-first --git"
+  alias ll="exa -lh --group-directories-first --git"
+end
