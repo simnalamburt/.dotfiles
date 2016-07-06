@@ -71,3 +71,4 @@ $RECYCLE.BIN/
 # ETC
 #
 .byebug_history
+*.pyc
