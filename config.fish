@@ -9,7 +9,7 @@ export LS_COLORS="di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=0
 # Fishrc
 #
 if not set -q TMUX; set TERM xterm-256color; end
-set -x PATH $PATH "$HOME/.local/bin"
+set -x PATH "$HOME/.local/bin" $PATH
 
 # Aliases
 if type -q nvim; alias vim='nvim'; end # neovim
