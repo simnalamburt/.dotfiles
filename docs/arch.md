@@ -11,7 +11,7 @@ kuma.hyeon.me
 - keybase weechat
 
 ### AUR
-- pacaur *([손으로 설치해야함](https://aur.archlinux.org/packages/?O=0&SeB=nd&K=aur+helper&SB=v&SO=d&PP=50&do_Search=Go))*
+- pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - libtinfo-5 *([Required by stack][libtinfo])*
 - [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 
