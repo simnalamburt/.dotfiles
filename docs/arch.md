@@ -12,7 +12,7 @@ kuma.hyeon.me
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
-- libtinfo-5 *([Required by stack][libtinfo])*
+- ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack][libtinfo])*
 - [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 
 > *TODO*
