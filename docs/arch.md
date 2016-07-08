@@ -15,6 +15,9 @@ kuma.hyeon.me
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack][libtinfo])*
 - [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 
+### `cargo`
+- [exa](https://github.com/ogham/exa)
+
 > *TODO*
 >
 > #### nginx
