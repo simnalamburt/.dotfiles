@@ -24,7 +24,7 @@ end
 # Golang
 if type -q go
   set -x GOPATH ~/.go
-  mkdir -p $GOPATH
+  mkdir -p "$GOPATH/bin"
   set -x PATH $PATH "$GOPATH/bin"
 end
 
