@@ -167,32 +167,16 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/seoul256.vim'
 
 " Syntax
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
-Plug 'plasticboy/vim-markdown'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'tikhomirov/vim-glsl'
-Plug 'evanmiller/nginx-vim-syntax'
-Plug 'stephpy/vim-yaml'
+Plug 'sheerun/vim-polyglot'
+
 Plug 'vim-scripts/applescript.vim'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
-Plug 'brk3/groovyindent'
-Plug 'tmux-plugins/vim-tmux'
-Plug 'rhysd/vim-crystal'
-Plug 'rgrinberg/vim-ocaml'
 Plug 'simnalamburt/k-.vim'
 Plug 'wlangstroth/vim-racket'
-Plug 'leafgarland/typescript-vim'
-Plug 'dag/vim-fish'
-Plug 'fatih/vim-go'
-Plug 'udalov/kotlin-vim'
 Plug 'tfnico/vim-gradle'
-Plug 'kurayama/systemd-vim-syntax'
 Plug 'wavded/vim-stylus'
 Plug 'elixir-lang/vim-elixir'
 Plug 'idris-hackers/idris-vim'
-Plug 'cespare/vim-toml'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
@@ -237,12 +221,6 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " limelight.vim
 let g:limelight_conceal_ctermfg = 240
-
-" vim-cpp-enhanced-highlight
-let g:cpp_class_scope_highlight = 1
-
-" vim-jsx
-let g:jsx_ext_required = 0
 
 " vim-indent-guides
 nmap <leader>i <Plug>IndentGuidesToggle
