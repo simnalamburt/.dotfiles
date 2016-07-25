@@ -37,16 +37,16 @@ if type -q cargo
 end
 
 # React Native
-if [ -d ~/Library/Android/sdk ];
+if [ -d ~/Library/Android/sdk ]
   export ANDROID_HOME="$HOME/Library/Android/sdk"
   set -x PATH "$HOME/Library/Android/sdk/tools" "$HOME/Library/Android/sdk/platform-tools" $PATH
 end
 
 # chips
-if [ -e ~/.config/chips/build.fish ] ; source ~/.config/chips/build.fish ; end
+if [ -e ~/.config/chips/build.fish ]; source ~/.config/chips/build.fish ; end
 
 # pyenv
-if [ -d ~/.pyenv ];
+if [ -d ~/.pyenv ]
   set -x PATH "$HOME/.pyenv/bin" $PATH
   . (pyenv init -|psub)
   . (pyenv virtualenv-init -|psub)
