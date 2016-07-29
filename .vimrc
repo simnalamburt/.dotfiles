@@ -83,6 +83,8 @@ inoremap <C-a> <ESC>I
 inoremap <C-e> <ESC>A
 nnoremap <C-a> ^
 nnoremap <C-e> $
+vnoremap <C-a> ^
+vnoremap <C-e> $
 " Easy delete key
 vnoremap <backspace> "_d
 " Easy newline insert
