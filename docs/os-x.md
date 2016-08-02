@@ -36,3 +36,7 @@ OS X
 [karabiner]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
 [upx]: http://upx.sourceforge.net/
+
+### pip3
+- neovim
+- flake8
