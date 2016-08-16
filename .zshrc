@@ -75,14 +75,9 @@ if hash fzy 2>/dev/null; then
   function fzy-history-widget() {
     echo
     setopt localoptions pipefail
-    local selected=( $(fc -l 1 | fzy -l25) )
+    BUFFER=$(fc -l 1 | perl -pe 's/^\s*\d+\s+/  /' | tac | awk '!a[$0]++' | fzy -l25 --query=$LBUFFER | cut -c3-)
+    CURSOR=$#BUFFER
     local ret=$?
-    if [ -n "$selected" ]; then
-      local num=$selected[1]
-      if [ -n "$num" ]; then
-        zle vi-fetch-history -n $num
-      fi
-    fi
     zle reset-prompt
     return $ret
   }
