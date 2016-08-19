@@ -22,7 +22,7 @@ OS X
 - ocaml ledit
 - pandoc
 - ghc cabal-install haskell-stack
-- [keybase]
+- [keybase] gpg
 
 ### [`brew cask`](http://caskroom.io)
 - [karabiner][] [seil][] *(keyboard customization)*
