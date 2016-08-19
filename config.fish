@@ -54,8 +54,8 @@ end
 
 # exa
 if type -q exa
-  alias l="exa -alh --group-directories-first --git"
-  alias ll="exa -lh --group-directories-first --git"
+  alias l="exa -alh --group-directories-first"
+  alias ll="exa -lh --group-directories-first"
 end
 
 
