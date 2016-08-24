@@ -179,6 +179,7 @@ Plug 'tfnico/vim-gradle'
 Plug 'wavded/vim-stylus'
 Plug 'elixir-lang/vim-elixir'
 Plug 'idris-hackers/idris-vim'
+Plug 'Superbil/llvm.vim'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
