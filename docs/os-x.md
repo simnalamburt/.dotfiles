@@ -40,3 +40,6 @@ OS X
 ### pip3
 - neovim
 - flake8
+
+### `cargo`
+- [exa](https://github.com/ogham/exa)
