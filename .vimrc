@@ -308,12 +308,7 @@ function! s:beauty()
   " Pair matching
   highlight MatchParen ctermfg=226 ctermbg=016
 endfunction
-" Neovim이랑 Vim이랑 컬러스킴 로드되는 타이밍이 달라서 문제가 생김
-if !has('nvim')
-  call <SID>beauty()
-else
-  autocmd vimrc ColorScheme * call <SID>beauty()
-endif
+autocmd vimrc ColorScheme * call <SID>beauty()
 
 " indentation
 function! s:indent()
