@@ -39,7 +39,7 @@ endif
 set cindent
 set autoindent
 set smartindent
-autocmd! vimrc BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4 "just for go
+autocmd vimrc BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4 "just for go
 
 " Tab
 set softtabstop=2
@@ -68,7 +68,7 @@ set showmatch
 set wildmode=longest,full
 
 " Treat .eslintrc .babelrc as json
-autocmd! vimrc BufRead,BufNewFile .{eslintrc,babelrc} setf json
+autocmd vimrc BufRead,BufNewFile .{eslintrc,babelrc} setf json
 
 
 "
@@ -308,7 +308,7 @@ function! s:beauty()
   " Pair matching
   highlight MatchParen ctermfg=226 ctermbg=016
 endfunction
-call <SID>beauty()
+autocmd vimrc ColorScheme * call <SID>beauty()
 
 " indentation
 function! s:indent()
@@ -328,4 +328,4 @@ function! s:indent()
     set listchars=tab:›\ ,extends:»,precedes:«
   endif
 endfunction
-autocmd! vimrc VimEnter,Colorscheme * call <SID>indent()
+autocmd vimrc VimEnter,Colorscheme * call <SID>indent()
