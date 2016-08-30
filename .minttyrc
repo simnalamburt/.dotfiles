@@ -27,3 +27,4 @@ ConfirmExit=no
 Locale=en_US
 Charset=UTF-8
 Black=25,25,25
+BellType=0
