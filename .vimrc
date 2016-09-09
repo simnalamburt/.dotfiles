@@ -187,11 +187,8 @@ Plug 'Lokaltog/vim-easymotion'
 
 " deoplete.nvim
 if has('nvim')
-  function! DoRemote(arg)
-    UpdateRemotePlugins
-  endfunction
   let g:deoplete#enable_at_startup = 1
-  Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 Plug 'Konfekt/FastFold'
 
