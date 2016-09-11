@@ -92,7 +92,7 @@ nnoremap <CR> o<Esc>
 " Easy file save
 nnoremap <silent> <C-s>      :update<CR>
 inoremap <silent> <C-s> <ESC>:update<CR>
-vnoremap <silent> <C-s> <ESC>:update<CR>gv
+vnoremap <silent> <C-s> <ESC>:update<CR>
 " Easy indentation
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
