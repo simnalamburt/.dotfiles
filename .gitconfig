@@ -21,6 +21,8 @@
 	prompt = no
 [fetch]
 	prune = yes
+[branch]
+	autosetuprebase = always
 [push]
 	default = simple
 [merge]
@@ -38,8 +40,6 @@
 	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
-[branch]
-	autosetuprebase = always
 
 [include]
 	path = ~/.gitconfig.local
