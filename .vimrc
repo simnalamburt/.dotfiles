@@ -133,6 +133,22 @@ nnoremap <a-9> 9gt
 
 
 "
+" gVim (win32) only configs. Requires python 2.7
+"
+if has('gui_win32')
+  set clipboard=unnamed
+  set guioptions=
+  set guifont=Consolas:h12:cANSI:qDRAFT
+
+  " Use msys2 configs if does exist
+  if isdirectory('C:\msys64')
+    let $HOME = 'C:\msys64\home\admin'
+    let $PATH .= ';C:\msys64\usr\bin'
+  endif
+endif
+
+
+"
 " Plugins
 "
 call plug#begin('~/.vim/plugged')
