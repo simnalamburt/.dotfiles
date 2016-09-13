@@ -153,8 +153,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sensible'
 Plug 'mhinz/vim-startify'
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'godlygeek/tabular'
 Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
@@ -230,14 +228,11 @@ nmap <leader>i <Plug>IndentGuidesToggle
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_start_level = 2
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+let g:indent_guides_exclude_filetypes = ['help']
 let g:indent_guides_default_mapping = 0
 
 " vim-better-whitespace
 let g:strip_whitespace_on_save = 1
-
-" nerdtree
-nnoremap <leader>n :NERDTreeToggle<CR>
 
 " mundo.vim
 let g:mundo_right = 1
