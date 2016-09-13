@@ -166,7 +166,9 @@ Plug 'neovimhaskell/haskell-vim'
 " Visual
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'editorconfig/editorconfig-vim'
+if has('python')
+  Plug 'editorconfig/editorconfig-vim'
+endif
 Plug 'junegunn/seoul256.vim'
 
 " Syntax
