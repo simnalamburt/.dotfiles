@@ -153,7 +153,7 @@ endif
 "
 " Plugins
 "
-call plug#begin('~/.vim/plugged')
+try | call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -214,7 +214,7 @@ if has('nvim')
 endif
 Plug 'Konfekt/FastFold'
 
-call plug#end()
+call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | endtry
 
 
 " vim-airline
