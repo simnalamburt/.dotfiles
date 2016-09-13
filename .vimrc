@@ -175,6 +175,7 @@ Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
 Plug 'junegunn/gv.vim'
 Plug 'rhysd/vim-grammarous'
+Plug 'justinmk/vim-dirvish'
 
 " Haskell
 Plug 'eagletmt/neco-ghc'
