@@ -143,8 +143,9 @@ if has('gui_win32')
 
   " Use msys2 configs if does exist
   if isdirectory('C:\msys64')
-    let $HOME = 'C:\msys64\home\admin'
-    let $PATH .= ';C:\msys64\usr\bin'
+    let &viminfo="'100,n".$HOME."/_viminfo"   " Preserve viminfo path
+    let $HOME = 'C:\msys64\home\admin'        " Change home directory into msys2's one
+    let $PATH = 'C:\msys64\usr\bin;'.$PATH    " Use msys2's $PATH
   endif
 endif
 
