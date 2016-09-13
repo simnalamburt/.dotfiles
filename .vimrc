@@ -334,11 +334,11 @@ function! s:indent()
   endif
   execute printf("highlight IndentGuidesEven ctermbg=%d", s:back_color)
 
+  " Do not decorate tab with '›' when tabstop is small
   if &tabstop <= 4
-    " Do not decorate tab with '›' when tabstop is small
-    set listchars=tab:\ \ ,extends:»,precedes:«
+    let &listchars = "tab:\ \ ,extends:\u00BB,precedes:\u00AB"
   else
-    set listchars=tab:›\ ,extends:»,precedes:«
+    let &listchars = "tab:\u203A\ ,extends:\u00BB,precedes:\u00AB"
   endif
 endfunction
 autocmd vimrc VimEnter,Colorscheme * call <SID>indent()
