@@ -143,9 +143,9 @@ if has('gui_win32')
 
   " Use msys2 configs if does exist
   if isdirectory('C:\msys64')
-    let &viminfo="'100,n".$HOME."/_viminfo"   " Preserve viminfo path
-    let $HOME = 'C:\msys64\home\admin'        " Change home directory into msys2's one
-    let $PATH = 'C:\msys64\usr\bin;'.$PATH    " Use msys2's $PATH
+    let $PATH = 'C:\msys64\usr\bin;'.$PATH
+    let &runtimepath = 'C:\msys64\home\admin\.vim,'.&runtimepath
+    let s:plug = 'C:\msys64\home\admin\.vim\plugged'
   endif
 endif
 
@@ -153,7 +153,7 @@ endif
 "
 " Plugins
 "
-try | call plug#begin('~/.vim/plugged')
+try | call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -214,7 +214,7 @@ if has('nvim')
 endif
 Plug 'Konfekt/FastFold'
 
-call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | endtry
+call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | echo 'No vim-plug' | endtry
 
 
 " vim-airline
