@@ -139,6 +139,7 @@ if has('gui_win32')
   set clipboard=unnamed
   set guioptions=
   set guifont=Consolas:h12:cANSI:qDRAFT
+  set renderoptions=type:directx
 
   " Use msys2 configs if does exist
   if isdirectory('C:\msys64')
