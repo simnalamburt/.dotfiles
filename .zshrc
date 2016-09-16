@@ -90,7 +90,12 @@ fi
 #
 # zshrc
 #
-if [ -f ~/.fzf.zsh ]; then; source ~/.fzf.zsh; fi
+if [ -f ~/.fzf.zsh ]; then
+  [ -z "$HISTFILE" ] && HISTFILE=$HOME/.zsh_history
+  HISTSIZE=10000
+  SAVEHIST=10000
+  source ~/.fzf.zsh
+fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
 
