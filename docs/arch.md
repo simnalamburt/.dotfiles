@@ -9,6 +9,7 @@ kuma.hyeon.me
 - clang cargo rust ruby python python2 nodejs npm stack *(언어)*
 - nginx certbot *(서비스)*
 - keybase weechat
+- imagemagick
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
