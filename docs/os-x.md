@@ -21,7 +21,6 @@ OS X
 - svn p7zip htop gtar nmap binutils
 - ocaml ledit
 - pandoc
-- ghc cabal-install haskell-stack
 - [keybase] gpg
 
 ### [`brew cask`](http://caskroom.io)
