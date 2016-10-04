@@ -59,12 +59,6 @@ zmodload -i zsh/complist
 # Substring completion
 zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-## Case-insensitive substring completion
-#zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-## Case-insensitive & hyphen-insensitive substring completion
-#zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
 
 #
 # fzy.zsh
@@ -102,10 +96,6 @@ export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/iss
 # Aliases
 if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
-if hash ledit 2>/dev/null; then
-  alias ocaml='ledit ocaml'
-  alias racket='ledit racket'
-fi
 
 # Ruby
 if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
@@ -126,4 +116,11 @@ if hash rustc 2>/dev/null; then
 fi
 if hash cargo 2>/dev/null; then
   export PATH="$PATH:$HOME/.cargo/bin"
+fi
+
+# pyenv
+if [ -d ~/.pyenv ]; then
+  export PATH="$HOME/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
