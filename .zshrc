@@ -91,6 +91,7 @@ if [ -f ~/.fzf.zsh ]; then
   source ~/.fzf.zsh
 fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
+if [ -d ~/.local/bin ]; then; export PATH="$HOME/.local/bin:$PATH"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
 
 # Aliases
