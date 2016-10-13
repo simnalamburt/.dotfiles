@@ -118,7 +118,7 @@ nnoremap <esc>6 6gt
 nnoremap <esc>7 7gt
 nnoremap <esc>8 8gt
 nnoremap <esc>9 9gt
-" Tab navigations (neovim)
+" Tab navigations
 nnoremap <a-t> :tabnew<CR>
 nnoremap <a-T> :-tabnew<CR>
 nnoremap <a-1> 1gt
@@ -211,6 +211,8 @@ Plug 'Lokaltog/vim-easymotion'
 if has('nvim')
   let g:deoplete#enable_at_startup = 1
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'maralla/completor.vim'
 endif
 Plug 'Konfekt/FastFold'
 

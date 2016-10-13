@@ -3,7 +3,7 @@
 	name = Hyeon Kim
 	email = simnalamburt@gmail.com
 [core]
-	editor = nvim
+	editor = vim
 	pager = less -+XF -Qc
 	excludesfile = ~/.gitexclude
 	fscache = yes

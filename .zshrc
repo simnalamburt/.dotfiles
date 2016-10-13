@@ -95,7 +95,6 @@ if [ -d ~/.local/bin ]; then; export PATH="$HOME/.local/bin:$PATH"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
 
 # Aliases
-if hash nvim 2>/dev/null; then; alias vim='nvim'; fi # neovim
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 
 # Ruby

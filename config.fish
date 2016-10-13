@@ -14,7 +14,6 @@ set -x PATH "$HOME/.local/bin" $PATH
 export LANG=ko_KR.UTF-8
 
 # Aliases
-if type -q nvim; alias vim='nvim'; end # neovim
 if type -q tmux; alias irc='tmux attach -t irc'; end
 
 # Ruby
