@@ -28,11 +28,13 @@ hyeon.me
 - linux-image-extra-virtual *(도커 돌릴때 AUFS 쓰려고 깔음)*
 
 ### apt PPA
+- gitlab-ce
+- tmux
 - mongodb
 - [node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
 - [ruby2.2](https://www.brightbox.com/blog/2015/01/05/ruby-2-2-0-packages-for-ubuntu/)
 - [weechat-curses weechat-plugins](https://weechat.org/download/debian/#instructions)
-- [docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/update-your-apt-sources)
+- [docker-engine](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/update-your-apt-sources)
 
 ### pip2
 - pysha3
