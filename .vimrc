@@ -211,7 +211,7 @@ Plug 'Lokaltog/vim-easymotion'
 if has('nvim')
   let g:deoplete#enable_at_startup = 1
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
+elseif v:version >= 800
   Plug 'maralla/completor.vim'
 endif
 Plug 'Konfekt/FastFold'
