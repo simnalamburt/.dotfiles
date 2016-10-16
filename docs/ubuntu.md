@@ -20,7 +20,6 @@ hyeon.me
 --------
 ### apt
 - vim mosh git htop silversearcher-ag
-- python python-dev python-pip
 - dhex radare2
 - postfix
 - debian-goodies ppa-purge
