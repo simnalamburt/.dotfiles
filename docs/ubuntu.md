@@ -19,18 +19,20 @@ gemini.upnl.org
 hyeon.me
 --------
 ### apt
+- vim mosh git htop silversearcher-ag
 - python python-dev python-pip
+- dhex radare2
 - postfix
 - debian-goodies ppa-purge
-- dhex radare2
-- linux-generic-lts-wily *(높은버전 커널 쓰려고 깔음)*
-- vim mosh git htop silversearcher-ag
+- linux-generic-lts-xenial *(높은버전 커널 쓰려고 깔음)*
+- linux-image-extra-virtual *(도커 돌릴때 AUFS 쓰려고 깔음)*
 
 ### apt PPA
 - mongodb
 - [node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
 - [ruby2.2](https://www.brightbox.com/blog/2015/01/05/ruby-2-2-0-packages-for-ubuntu/)
 - [weechat-curses weechat-plugins](https://weechat.org/download/debian/#instructions)
+- [docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/update-your-apt-sources)
 
 ### pip2
 - pysha3
