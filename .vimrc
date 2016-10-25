@@ -207,15 +207,6 @@ Plug 'Superbil/llvm.vim'
 Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
 
-" deoplete.nvim
-if has('nvim')
-  let g:deoplete#enable_at_startup = 1
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-elseif v:version >= 800
-  Plug 'maralla/completor.vim'
-endif
-Plug 'Konfekt/FastFold'
-
 call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | echo 'No vim-plug' | endtry
 
 
