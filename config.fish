@@ -1,9 +1,9 @@
 #
 # lscolors
 #
-export LSCOLORS="Gxfxcxdxbxegedabagacad"
-export LS_COLORS="di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
-export TIME_STYLE="+%y%m%d"
+set -x LSCOLORS "Gxfxcxdxbxegedabagacad"
+set -x LS_COLORS "di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+set -x TIME_STYLE "+%y%m%d"
 
 
 #
@@ -11,14 +11,14 @@ export TIME_STYLE="+%y%m%d"
 #
 if not set -q TMUX; set TERM xterm-256color; end
 set -x PATH "$HOME/.local/bin" $PATH
-export LANG=ko_KR.UTF-8
+set -x LANG ko_KR.UTF-8
 
 # Aliases
 if type -q tmux; alias irc='tmux attach -t irc'; end
 
 # Ruby
 if begin; type -q ruby; and type -q gem; end
-  export GEM_HOME=(ruby -e 'print Gem.user_dir')
+  set -x GEM_HOME (ruby -e 'print Gem.user_dir')
   set -x PATH $PATH "$GEM_HOME/bin"
 end
 
@@ -38,7 +38,7 @@ if type -q cargo
 end
 
 # chips
-if [ -e ~/.config/chips/build.fish ]; source ~/.config/chips/build.fish ; end
+if [ -e ~/.config/chips/build.fish ]; . ~/.config/chips/build.fish ; end
 
 # pyenv
 if [ -d ~/.pyenv ]
@@ -55,4 +55,4 @@ end
 
 
 # Source local config
-if [ -f (status -f).local ]; source (status -f).local; end
+if [ -f (status -f).local ]; . (status -f).local; end
