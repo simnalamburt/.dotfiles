@@ -4,7 +4,7 @@ Ubuntu
 gemini.upnl.org
 --------
 ### apt
-- git vim-nox zsh mosh tmux silversearcher-ag
+- git vim-nox zsh fish mosh tmux silversearcher-ag
 - nginx htop speedometer fail2ban ntp
 - weechat
 
@@ -19,7 +19,7 @@ gemini.upnl.org
 hyeon.me
 --------
 ### apt
-- vim mosh git htop silversearcher-ag
+- vim mosh fish git htop silversearcher-ag
 - dhex radare2
 - postfix
 - debian-goodies ppa-purge
