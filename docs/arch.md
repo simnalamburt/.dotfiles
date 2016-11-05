@@ -12,8 +12,13 @@ kuma.hyeon.me
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
-- ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack][libtinfo])*
-- [nullidentdmod][irc] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+- ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
+- [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+- [yarn]
+
+[nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
+[Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
+[yarn]: https://yarnpkg.com/
 
 ### `cargo`
 - [exa](https://github.com/ogham/exa)
@@ -24,8 +29,6 @@ kuma.hyeon.me
 > - DHE 끄기 ([Logjam Attack](https://weakdh.org))
 > - [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx) 강제하기
 
-[irc]: https://wiki.archlinux.org/index.php/Identd_Setup
-[libtinfo]: https://github.com/commercialhaskell/stack/issues/1012
 
 <br>
 
