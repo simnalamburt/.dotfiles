@@ -35,6 +35,7 @@ How to Install
 1.  Execute `zplug install`
 
 [rust]: https://www.rust-lang.org/
+[node]: https://nodejs.org/
 [go]: https://golang.org/
 [git-lfs]: https://git-lfs.github.com/
 [ack]: https://github.com/petdance/ack2/tree/2.15_02
