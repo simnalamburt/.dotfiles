@@ -5,7 +5,7 @@ kuma.hyeon.me
 - base-devel binutils
 - vim mosh git tmux fish wget upx zip the_silver_searcher *(필수 툴)*
 - htop *(서버 관리도구)*
-- clang cargo rust ruby python python2 nodejs npm stack *(언어)*
+- clang cargo rust ruby python python2 nodejs stack *(언어)*
 - nginx certbot *(서비스)*
 - keybase weechat
 - imagemagick
