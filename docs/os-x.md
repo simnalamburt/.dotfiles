@@ -12,33 +12,31 @@ OS X
 - Google Drive
 - iTerm2, xCode
 - 카톡, 라인, InsomniaX, GarageBand, OBS
-- [Haskell for Mac OS X](https://ghcformacosx.github.io/)
-- [Monaco for powerline][monaco]
+- [Monaco for powerline]
+
+[Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
 
 ### [`brew`](http://brew.sh)
-- vim git [git-lfs] mosh wget xz the_silver_searcher peco [fpp] fasd [upx]
-- rust ruby node python python3
+- vim git mosh wget xz the_silver_searcher [upx]
+- rust ruby node python python3 haskell-stack
 - svn p7zip htop gtar nmap binutils
 - ocaml ledit
 - pandoc
 - [keybase] gpg
+
+[upx]: http://upx.sourceforge.net/
+[keybase]: https://facebook.github.io/PathPicker/
 
 ### [`brew cask`](http://caskroom.io)
 - [karabiner][] [seil][] *(keyboard customization)*
 - virtualbox
 - android-studio
 
-[monaco]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
-[git-lfs]: https://git-lfs.github.com/
-[fpp]: https://facebook.github.io/PathPicker/
-[keybase]: https://facebook.github.io/PathPicker/
 [karabiner]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
-[upx]: http://upx.sourceforge.net/
 
 ### pip3
 - neovim
-- flake8
 
 ### `cargo`
 - [exa](https://github.com/ogham/exa)
