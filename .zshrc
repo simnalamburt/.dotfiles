@@ -1,7 +1,7 @@
 #
 # zplug
 #
-source ~/.zplug/zplug
+source ~/.zplug/init.zsh
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "simnalamburt/cgitc"
