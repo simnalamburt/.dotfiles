@@ -3,7 +3,7 @@ kuma.hyeon.me
 ### `pacman`
 - base grub sudo openssh *(리눅스 기본)*
 - base-devel binutils
-- vim mosh git tmux fish wget upx zip the_silver_searcher *(필수 툴)*
+- vim mosh git tmux fish wget upx zip the_silver_searcher rsync *(필수 툴)*
 - htop *(서버 관리도구)*
 - clang cargo rust ruby python python2 nodejs stack *(언어)*
 - nginx certbot *(서비스)*
@@ -22,6 +22,10 @@ kuma.hyeon.me
 
 ### `cargo`
 - [exa](https://github.com/ogham/exa)
+
+### `yarn global`
+- [npm-check](https://www.npmjs.com/package/npm-check)
+- [elm](https://www.npmjs.com/package/elm)
 
 > *TODO*
 >
