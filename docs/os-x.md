@@ -18,7 +18,7 @@ OS X
 
 ### [`brew`](http://brew.sh)
 - vim git mosh wget xz the_silver_searcher [upx]
-- rust ruby node python python3 haskell-stack
+- rust ruby node yarn python python3 haskell-stack
 - svn p7zip htop gtar nmap binutils
 - ocaml ledit
 - pandoc
