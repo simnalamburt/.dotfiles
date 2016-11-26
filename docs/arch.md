@@ -20,12 +20,17 @@ kuma.hyeon.me
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 - [yarn]
 
+### `cargo`
+- [exa]
+
+### `yarn`
+- [@noraesae/pen]
+
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 [Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
 [yarn]: https://yarnpkg.com/
-
-### `cargo`
-- [exa](https://github.com/ogham/exa)
+[exa]: https://github.com/ogham/exa
+[@noraesae/pen]: https://github.com/ogham/exa
 
 <br>
 
