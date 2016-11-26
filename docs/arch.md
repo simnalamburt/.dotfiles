@@ -30,7 +30,7 @@ kuma.hyeon.me
 [Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
 [yarn]: https://yarnpkg.com/
 [exa]: https://github.com/ogham/exa
-[@noraesae/pen]: https://github.com/ogham/exa
+[@noraesae/pen]: https://github.com/noraesae/pen
 
 <br>
 
