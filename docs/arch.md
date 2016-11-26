@@ -10,6 +10,10 @@ kuma.hyeon.me
 - keybase weechat
 - imagemagick
 
+*For OpenIRC Project...*
+
+- rabbitmq
+
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
