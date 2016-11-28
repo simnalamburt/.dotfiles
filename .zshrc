@@ -2,10 +2,10 @@
 # zplug
 #
 source ~/.zplug/init.zsh
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "simnalamburt/cgitc"
-zplug "simnalamburt/shellder"
+zplug 'zsh-users/zsh-completions'
+zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'simnalamburt/cgitc'
+zplug 'simnalamburt/shellder', as:theme
 zplug load
 
 
