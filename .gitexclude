@@ -1,8 +1,8 @@
-# clang
-*.dSYM
-
-# npm
-npm-debug.log
+*.dSYM            # clang
+npm-debug.log     # npm
+.byebug_history   # Ruby byebug
+*.pyc             # Python 2
+.xmark.*.html     # Xmark
 
 #
 # OS X
@@ -10,11 +10,7 @@ npm-debug.log
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Icon must end with two \r
 Icon
-
-# Thumbnails
 ._*
 
 # Files that might appear on external disk
@@ -28,47 +24,18 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Xmark
-.xmark.*.html
-
-
 #
 # Linux
 #
 *~
-
-# KDE directory preferences
 .directory
-
 
 #
 # Windows
 #
 Thumbs.db
 ehthumbs.db
-
-# Folder config file
 Desktop.ini
-
-# Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# MS office temp file
 ~$*.docx
 ~$*.xlsx
-
-
-#
-# ETC
-#
-.byebug_history
-*.pyc
