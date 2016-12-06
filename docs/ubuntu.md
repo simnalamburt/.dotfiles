@@ -20,6 +20,7 @@ hyeon.me
 --------
 ### apt
 - vim mosh fish git htop silversearcher-ag
+- python3.4-venv *(스누족보)*
 - dhex radare2
 - postfix
 - debian-goodies ppa-purge
@@ -32,9 +33,6 @@ hyeon.me
 - gitlab-ce                      - [packages.gitlab.com](https://about.gitlab.com/downloads/#ubuntu1404)
 - mongodb-org                    - [repo.mongodb.org](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/)
 - weechat-curses weechat-plugins - [weechat.org/ubuntu](https://weechat.org/download/debian/#instructions)
-
-### etc
-- pyenv
 
 <br>
 
