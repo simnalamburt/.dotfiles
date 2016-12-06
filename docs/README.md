@@ -3,9 +3,14 @@
 
 항목     | 설명
 ---------|--------------------------------------------------
-서버     | 개인서버는 집에서 돌리는중, 동아리서버는 집/학교
-도메인   | [GoDaddy]에서 구매함
-네임서버 | 일부는 [CloudFlare], 내 소유가 아닌 도메인들은 [GoDaddy] 오프사이트 네임서버
+서버     | 대부분 집, 동아리서버 일부는 학교
+도메인   | [GoDaddy]
+네임서버 | [CloudFlare]
+
+### 구독중인 메일링리스트
+- [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
+- [arch-security](https://lists.archlinux.org/listinfo/arch-security)
+- [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
 
 [GoDaddy]: https://kr.godaddy.com/
 [CloudFlare]: https://www.cloudflare.com/
