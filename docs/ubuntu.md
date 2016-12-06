@@ -9,10 +9,10 @@ gemini.upnl.org
 - weechat
 
 ### apt PPA
-- [ruby2.3 ruby2.3-dev ruby-switch](https://www.brightbox.com/docs/ruby/ubuntu/) (`sudo apt-add-repository ppa:brightbox/ruby-ng`)
-- [tmux](https://launchpad.net/~pi-rho/+archive/ubuntu/dev) (`sudo apt-add-repository ppa:pi-rho/dev`)
-- [GitLab](https://about.gitlab.com/downloads/#ubuntu1404)
-- [mono](http://www.mono-project.com/docs/getting-started/install/linux/)
+- ruby2.3 ruby2.3-dev ruby-switch - [ppa:brightbox/ruby-ng](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng)
+- tmux                            - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+- gitlab-ce                       - [packages.gitlab.com](https://about.gitlab.com/downloads/#ubuntu1404)
+- mono-complete                   - [download.mono-project.com](http://www.mono-project.com/docs/getting-started/install/linux/)
 
 <br>
 
