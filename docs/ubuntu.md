@@ -27,16 +27,18 @@ hyeon.me
 - linux-image-extra-virtual *(도커 돌릴때 AUFS 쓰려고 깔음)*
 
 ### apt PPA
-- gitlab-ce
-- tmux
-- mongodb
-- [node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#debian-and-ubuntu-based-linux-distributions)
-- [ruby2.2](https://www.brightbox.com/blog/2015/01/05/ruby-2-2-0-packages-for-ubuntu/)
-- [weechat-curses weechat-plugins](https://weechat.org/download/debian/#instructions)
-- [docker-engine](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/update-your-apt-sources)
+- tmux *from* [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+- nginx *from* [ppa:nginx/stable](https://launchpad.net/~nginx/+archive/ubuntu/stable)
+- ruby2.2 *from* [ppa:brightbox/ruby-ng](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng) ([blog article](https://www.brightbox.com/blog/2016/01/06/ruby-2-3-ubuntu-packages/))
 
-### pip2
-- pysha3
+- gitlab-ce *from* [packages.gitlab.com](https://about.gitlab.com/downloads/#ubuntu1404)
+- mongodb-org *from* [repo.mongodb.org](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/)
+- nodejs *from* [deb.nodesource.com](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+- weechat-curses weechat-plugins *from* [weechat.org/ubuntu](https://weechat.org/download/debian/#instructions)
+- docker-engine *from* [apt.dockerproject.org](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/update-your-apt-sources)
+
+### etc
+- pyenv
 
 <br>
 
