@@ -202,6 +202,7 @@ Plug 'wavded/vim-stylus'
 Plug 'elixir-lang/vim-elixir'
 Plug 'idris-hackers/idris-vim'
 Plug 'Superbil/llvm.vim'
+Plug 'elmcast/elm-vim'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
@@ -260,6 +261,9 @@ set hidden
 let g:racer_cmd = "~/.racer/racer/target/release/racer"
 let $RUST_SRC_PATH=$HOME."/.racer/rust/src"
 inoremap <C-o> <C-x><C-o>
+
+" elm-vim
+let g:elm_format_autosave = 1
 
 " clever-f.vim
 let g:clever_f_across_no_line = 1
