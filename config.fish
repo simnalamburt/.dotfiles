@@ -52,7 +52,3 @@ if type -q exa
   alias l="exa -alh --group-directories-first"
   alias ll="exa -lh --group-directories-first"
 end
-
-
-# Source local config
-if [ -f (status -f).local ]; . (status -f).local; end
