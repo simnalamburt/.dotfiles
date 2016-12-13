@@ -191,8 +191,6 @@ endif
 Plug 'junegunn/seoul256.vim'
 
 " Syntax
-Plug 'sheerun/vim-polyglot'
-
 Plug 'vim-scripts/applescript.vim'
 Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
 Plug 'simnalamburt/k-.vim'
@@ -203,6 +201,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'idris-hackers/idris-vim'
 Plug 'Superbil/llvm.vim'
 Plug 'elmcast/elm-vim'
+
+Plug 'sheerun/vim-polyglot'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
