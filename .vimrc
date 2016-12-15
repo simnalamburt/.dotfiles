@@ -200,7 +200,6 @@ Plug 'wavded/vim-stylus'
 Plug 'elixir-lang/vim-elixir'
 Plug 'idris-hackers/idris-vim'
 Plug 'Superbil/llvm.vim'
-Plug 'elmcast/elm-vim'
 
 Plug 'sheerun/vim-polyglot'
 
