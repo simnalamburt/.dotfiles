@@ -119,10 +119,6 @@ sudo vim /etc/systemd/login.conf
 sudo systemctl restart systemd-logind
 ```
 
-#### nginx
-- DHE 끄기 ([Logjam Attack](https://weakdh.org))
-- [HSTS](https://scotthelme.co.uk/setting-up-hsts-in-nginx) 강제하기
-
 ###### References
 - [linuxveda tutorial](http://www.linuxveda.com/2014/06/07/arch-linux-tutorial)
 - [Archlinux wiki tutorial](https://wiki.archlinux.org/index.php/Installation_guide)
