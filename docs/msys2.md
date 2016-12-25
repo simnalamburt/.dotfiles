@@ -1,7 +1,7 @@
 [msys2]
 ========
 #### `pacman`
-- git svn vim zsh tar zip mosh
+- git svn vim zsh tar zip unzip mosh
 - ruby python2
 - mingw-w64-x86_64-gcc base-devel
 
