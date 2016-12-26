@@ -19,7 +19,7 @@ gemini.upnl.org
 hyeon.me
 --------
 ### apt
-- vim mosh fish git htop silversearcher-ag
+- vim mosh zsh fish git htop silversearcher-ag
 - python3.4-venv *(스누족보)*
 - dhex radare2
 - postfix
