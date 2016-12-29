@@ -27,4 +27,5 @@ ConfirmExit=no
 Locale=en_US
 Charset=UTF-8
 Black=25,25,25
+Blue=70,70,255
 BellType=0
