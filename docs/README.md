@@ -13,7 +13,17 @@
 - [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
 
 ### 서버 새로 세팅하면 해줄거
-1.  [sshd_config에서 DHE 끄기](https://weakdh.org/sysadmin.html#openssh)
+1.  sshd용으로 사용할 2048bit 소수 그룹 생성
+
+    ```bash
+    ssh-keygen -G moduli-2048.candidates -b 2048
+    ssh-keygen -T moduli-2048 -f moduli-2048.candidates
+
+    sudo mv moduli-2048 /etc/ssh/moduli
+    sudo chown root:root /etc/ssh/moduli
+    ```
+
+1.  [sshd_config에서 1024bit DHE 끄기](https://weakdh.org/sysadmin.html#openssh)
 
     ```sshd_config
     KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group14-sha1
