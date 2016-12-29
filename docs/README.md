@@ -13,10 +13,21 @@
 - [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
 
 ### 서버 새로 세팅하면 해줄거
-- [sshd_config에서 DHE 끄기](https://weakdh.org/sysadmin.html#openssh)
-- sshd_config에서 패스워드 인증을 끄거나, [fail2ban] 설치
-- [nginx TLS 설정하기][https]. ([DHE 끄기](https://weakdh.org), SSLv3 끄기, 등)
-- [HSTS] 강제하기
+1.  [sshd_config에서 DHE 끄기](https://weakdh.org/sysadmin.html#openssh)
+
+    ```sshd_config
+    KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group14-sha1
+    ```
+
+1.  sshd_config에서 패스워드 인증을 끄거나, [fail2ban] 설치
+
+    ```sshd_config
+    PasswordAuthentication no
+    ```
+
+1.  [nginx TLS 설정하기][https]. ([DHE 끄기](https://weakdh.org), SSLv3 끄기, 등)
+
+1.  [HSTS] 강제하기
 
 [GoDaddy]: https://kr.godaddy.com/
 [CloudFlare]: https://www.cloudflare.com/
