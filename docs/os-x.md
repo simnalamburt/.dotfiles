@@ -17,6 +17,7 @@ OS X
 [Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
 
 ### [`brew`](http://brew.sh)
+- [brew-rmtree](https://github.com/beeftornado/homebrew-rmtree)
 - vim git mosh wget xz ripgrep [upx]
 - rust ruby node yarn python python3
 - svn p7zip htop gtar nmap binutils
