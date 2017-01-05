@@ -18,14 +18,12 @@ OS X
 
 ### [`brew`](http://brew.sh)
 - [brew-rmtree](https://github.com/beeftornado/homebrew-rmtree)
-- vim git mosh wget xz ripgrep [upx]
+- vim git mosh wget xz ripgrep
 - rust ruby node yarn python python3
 - svn p7zip htop gtar nmap binutils
-- pandoc
 - [keybase] gpg
 
-[upx]: http://upx.sourceforge.net/
-[keybase]: https://facebook.github.io/PathPicker/
+[keybase]: https://keybase.io/
 
 ### [`brew cask`](http://caskroom.io)
 - [karabiner][] [seil][] *(keyboard customization)*
