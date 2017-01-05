@@ -18,9 +18,8 @@ OS X
 
 ### [`brew`](http://brew.sh)
 - vim git mosh wget xz ripgrep [upx]
-- rust ruby node yarn python python3 haskell-stack
+- rust ruby node yarn python python3
 - svn p7zip htop gtar nmap binutils
-- ocaml ledit
 - pandoc
 - [keybase] gpg
 
