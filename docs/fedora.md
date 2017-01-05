@@ -11,7 +11,7 @@ Fedora
 ### `dnf`
 - gnome-tweak-tools
 - google-noto-sans-cjk-fonts
-- the_silver_searcher
+- ripgrep
 - terminator
 - glibc-devel.x86_64
 - *Dependencies for Android Studio*
