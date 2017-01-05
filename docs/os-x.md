@@ -34,8 +34,5 @@ OS X
 [karabiner]: https://pqrs.org/osx/karabiner/
 [seil]: https://pqrs.org/osx/karabiner/seil.html.en
 
-### pip3
-- neovim
-
 ### `cargo`
 - [exa](https://github.com/ogham/exa)
