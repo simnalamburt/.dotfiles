@@ -20,18 +20,17 @@ OS X
 - [brew-rmtree](https://github.com/beeftornado/homebrew-rmtree)
 - vim git mosh wget xz ripgrep
 - rust ruby node yarn python python3
-- svn p7zip htop gtar nmap binutils
+- p7zip htop gtar nmap
 - [keybase] gpg
 
-[keybase]: https://keybase.io/
-
 ### [`brew cask`](http://caskroom.io)
-- [karabiner][] [seil][] *(keyboard customization)*
-- virtualbox
+- [karabiner-elements]
+- xquartz
 - android-studio
 
-[karabiner]: https://pqrs.org/osx/karabiner/
-[seil]: https://pqrs.org/osx/karabiner/seil.html.en
-
 ### `cargo`
-- [exa](https://github.com/ogham/exa)
+- [exa]
+
+[keybase]: https://keybase.io/
+[karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
+[exa]: https://the.exa.website/
