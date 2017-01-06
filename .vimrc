@@ -162,9 +162,6 @@ if !has('win32') && !has('win64') && !has('win32unix')
 endif
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-if has('mac')
-  Plug 'junegunn/vim-xmark', { 'do': 'make' }
-endif
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
