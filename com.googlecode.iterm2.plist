@@ -2412,7 +2412,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/simnalamburt/.dotfiles/iterm2</string>
+	<string>/Users/simnalamburt/.dotfiles</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnClose</key>
