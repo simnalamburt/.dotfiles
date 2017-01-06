@@ -1,4 +1,4 @@
-OS X specific dotfiles
+macOS specific dotfiles
 --------
 
 ```bash

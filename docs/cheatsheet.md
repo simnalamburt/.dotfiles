@@ -172,7 +172,7 @@ postfix | 설명
 `$ pbcopy < file` | 파일의 내용을 복사
 `$ pbpaste`       | 붙여넣기
 
-OS X Terminal | 설명
+macOS Terminal | 설명
 --------------|--------------
 ⌘  + {, }     | 탭 전환
 
