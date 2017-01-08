@@ -51,7 +51,7 @@ if type -q go
 end
 
 # Rust
-if type -q cargo
+if [ -d ~/.cargo/bin ]
   __path "$HOME/.cargo/bin"
 end
 

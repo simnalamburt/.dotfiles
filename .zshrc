@@ -111,7 +111,7 @@ if hash go 2>/dev/null; then
 fi
 
 # Rust
-if hash cargo 2>/dev/null; then
+if [ -d ~/.cargo/bin ]; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
