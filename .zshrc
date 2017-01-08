@@ -111,9 +111,6 @@ if hash go 2>/dev/null; then
 fi
 
 # Rust
-if hash rustc 2>/dev/null; then
-  export RUST_BACKTRACE=1
-fi
 if hash cargo 2>/dev/null; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi

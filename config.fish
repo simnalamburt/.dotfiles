@@ -51,9 +51,6 @@ if type -q go
 end
 
 # Rust
-if type -q rustc
-  set -x RUST_BACKTRACE 1
-end
 if type -q cargo
   __path "$HOME/.cargo/bin"
 end
