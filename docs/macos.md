@@ -1,5 +1,9 @@
 macOS
 ========
+#### Manually Installed
+- Firefox, Google Drive, iTerm2, [Monaco for powerline]
+- [rust]
+
 #### [`brew`]
 - [brew-rmtree]
 - vim git mosh wget xz ripgrep
@@ -18,15 +22,13 @@ macOS
 #### App Store
 - 카톡, 라인, InsomniaX, GarageBand, OBS
 
-#### Manually Installed
-- Firefox, Google Drive, iTerm2, [Monaco for powerline]
-
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
 [brew-rmtree]: https://github.com/beeftornado/homebrew-rmtree
 [keybase]: https://keybase.io/
 [karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
 [exa]: https://the.exa.website/
+[rust]: https://www.rust-lang.org/ko-KR/install.html
 
 <br>
 
