@@ -8,7 +8,7 @@ kuma.hyeon.me
 - clang cargo rust ruby python python2 nodejs stack *(언어)*
 - nginx certbot *(서비스)*
 - keybase weechat
-- imagemagick youtube-dl
+- imagemagick youtube-dl shellcheck
 
 *For OpenIRC Project...*
 
