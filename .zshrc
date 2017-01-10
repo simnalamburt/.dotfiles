@@ -110,10 +110,14 @@ if hash go 2>/dev/null; then
   export PATH="$PATH:$GOPATH/bin"
 fi
 
-# Rust
+# cargo install
 if [ -d ~/.cargo/bin ]; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
+# yarn global
+if hash yarn 2>/dev/null; then
+  __path "$HOME/.config/yarn/global/node_modules/.bin"
+end
 
 # pyenv
 if [ -d ~/.pyenv ]; then

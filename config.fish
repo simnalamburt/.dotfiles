@@ -50,9 +50,13 @@ if type -q go
   __path "$GOPATH/bin"
 end
 
-# Rust
+# cargo install
 if [ -d ~/.cargo/bin ]
   __path "$HOME/.cargo/bin"
+end
+# yarn global
+if type -q yarn
+  __path "$HOME/.config/yarn/global/node_modules/.bin"
 end
 
 # chips
