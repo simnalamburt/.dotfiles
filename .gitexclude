@@ -39,3 +39,8 @@ Desktop.ini
 $RECYCLE.BIN/
 ~$*.docx
 ~$*.xlsx
+
+
+
+# vim-obsession
+Session.vim

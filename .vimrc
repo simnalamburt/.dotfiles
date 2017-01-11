@@ -167,6 +167,7 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-obsession'
 Plug 'mhinz/vim-startify'
 Plug 'godlygeek/tabular'
 Plug '~/.racer/racer', { 'for': 'rust' }
