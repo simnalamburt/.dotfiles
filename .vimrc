@@ -205,7 +205,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rhysd/clever-f.vim'
 Plug 'Lokaltog/vim-easymotion'
 
-call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | echo 'No vim-plug' | endtry
+call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | endtry
 
 
 " vim-airline
