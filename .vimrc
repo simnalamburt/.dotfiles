@@ -61,7 +61,9 @@ set cursorline
 " 80th column color
 set textwidth=80
 set formatoptions-=t
-set colorcolumn=+1,+2,+3
+if v:version >= 703
+  set colorcolumn=+1,+2,+3
+endif
 " Listchars
 set list
 " Pair matching
