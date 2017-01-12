@@ -170,7 +170,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-obsession'
-Plug 'mhinz/vim-startify'
+if v:version >= 703
+  Plug 'mhinz/vim-startify'
+endif
 Plug 'godlygeek/tabular'
 Plug '~/.racer/racer', { 'for': 'rust' }
 Plug 'vim-utils/vim-interruptless'
