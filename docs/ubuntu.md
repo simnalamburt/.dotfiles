@@ -39,6 +39,7 @@ sodrak.upnl.org
 uriel.upnl.org
 --------
 ### apt
+- tmux *(1.8.5 버전으로 고정)*
 - mosh zsh fish git htop silversearcher-ag
 - htop fail2ban ntp
 - nginx mysql-server
@@ -50,7 +51,7 @@ uriel.upnl.org
 
 ### apt PPA
 - ruby2.4 ruby2.4-dev ruby-switch - [ppa:brightbox/ruby-ng](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng)
-- vim-nox tmux                    - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+- vim-nox                         - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
 - nodejs                          - [deb.nodesource.com/setup_6.x](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 - irssi                           - [irssi.org](https://irssi.org/download/)
 - weechat-curses weechat-plugins  - [weechat.org](https://weechat.org/download/debian/#instructions)
