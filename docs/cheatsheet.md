@@ -58,6 +58,7 @@ rsync                   | 설명
 `# dmidecode --type 17 | egrep 'Type:|Size:'` | 램 크기 및 종류 알아내기
 `$ dpigs -S -H`             | 어느 패키지그룹의 용량이 큰지 보기
 `$ dpigs -n 10`             | 용량 큰 패키지 10개 나열
+`lsblk -io KNAME,TYPE,SIZE,MODEL` | 스토리지 정보 얻어오기
 
 서버 모니터링       | 설명
 --------------------|--------
