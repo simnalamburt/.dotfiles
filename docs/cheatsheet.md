@@ -259,6 +259,15 @@ Ctrl + v  | 비주얼 블록 모드로 들어가기
 
 --------
 
+### List all manually installed packages
+
+```bash
+comm -23 <(apt-mark showmanual | sort -u) \
+  <(gzip -dc /var/log/installer/initial-status.gz |
+  sed -n 's/^Package: //p' | sort -u) | less
+```
+Reference: http://askubuntu.com/a/492343
+
 ### Check if reboot is required
 ```sh
 if [ -f /var/run/reboot-required ]; then echo 'Restart required'; fi
