@@ -19,7 +19,7 @@ gemini.upnl.org
 sodrak.upnl.org
 --------
 ### apt
-- vim-nox mosh zsh fish git htop silversearcher-ag
+- mosh zsh fish git htop silversearcher-ag
 - htop speedometer fail2ban ntp
 - apache2 php5 cvs subversion cmake bison ocaml openjdk-7-jdk pandoc redis-server
 - virtualbox firefox docker
@@ -29,15 +29,38 @@ sodrak.upnl.org
 
 ### apt PPA
 - ruby2.4 ruby2.4-dev ruby-switch - [ppa:brightbox/ruby-ng](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng)
-- tmux                            - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+- vim-nox tmux                    - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
 - nodejs                          - [deb.nodesource.com/setup_6.x](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+- irssi                           - [irssi.org](https://irssi.org/download/)
+- weechat-curses weechat-plugins  - [weechat.org](https://weechat.org/download/debian/#instructions)
+
+<br>
+
+uriel.upnl.org
+--------
+### apt
+- mosh zsh fish git htop silversearcher-ag
+- htop fail2ban ntp
+- nginx mysql-server
+- mono-runtime mono-devel
+- g++-6 firefox docker.io cmake
+- python3.4-venv
+- debian-goodies ppa-purge
+- linux-generic-lts-xenial linux-image-extra-virtual
+
+### apt PPA
+- ruby2.4 ruby2.4-dev ruby-switch - [ppa:brightbox/ruby-ng](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng)
+- vim-nox tmux                    - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+- nodejs                          - [deb.nodesource.com/setup_6.x](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+- irssi                           - [irssi.org](https://irssi.org/download/)
+- weechat-curses weechat-plugins  - [weechat.org](https://weechat.org/download/debian/#instructions)
 
 <br>
 
 hyeon.me
 --------
 ### apt
-- vim-nox mosh zsh fish git htop silversearcher-ag
+- mosh zsh fish git htop silversearcher-ag
 - python3.4-venv *(스누족보)*
 - dhex radare2
 - postfix
@@ -46,7 +69,7 @@ hyeon.me
 - linux-image-extra-virtual *(도커 돌릴때 AUFS 쓰려고 깔음)*
 
 ### apt PPA
-- tmux                           - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+- vim-nox tmux                   - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
 - gitlab-ce                      - [packages.gitlab.com](https://about.gitlab.com/downloads/#ubuntu1404)
 - mongodb-org                    - [repo.mongodb.org](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/)
 - weechat-curses weechat-plugins - [weechat.org](https://weechat.org/download/debian/#instructions)
