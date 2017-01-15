@@ -116,8 +116,8 @@ if [ -d ~/.cargo/bin ]; then
 fi
 # yarn global
 if hash yarn 2>/dev/null; then
-  __path "$HOME/.config/yarn/global/node_modules/.bin"
-end
+  export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+fi
 
 # pyenv
 if [ -d ~/.pyenv ]; then
