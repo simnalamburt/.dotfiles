@@ -62,7 +62,7 @@ end
 # Chips  -  https://github.com/xtendo-org/chips
 if [ -e ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
 # Hack for old systems like Ubuntu 14, CentOS 6, etc
-set _ "
+set __comment__ "
 if [ -e ~/.config/chips/build.fish ] ; source ~/.config/chips/build.fish ; end
 "
 
