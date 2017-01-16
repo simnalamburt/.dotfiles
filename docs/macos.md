@@ -1,8 +1,12 @@
 macOS
 ========
 #### Manually Installed
-- Firefox, Google Drive, iTerm2, [Monaco for powerline]
-- [rust]
+- MS Office, Photoshop CC 2015, Illustrator CC 2015
+- Chrome, Firefox, Google Drive, iTerm2
+- [Monaco for powerline], [rust]
+- StarUML, Transmission, MS 원격 데스크톱
+- 한컴오피스 뷰어
+- Xcode, Android Studio, Tizen Studio
 
 #### [`brew`]
 - [brew-rmtree]
@@ -20,7 +24,8 @@ macOS
 - [exa]
 
 #### App Store
-- 카톡, 라인, InsomniaX, GarageBand, OBS
+- 카톡, 라인, 텔레그램
+- InsomniaX, GarageBand, OBS
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
