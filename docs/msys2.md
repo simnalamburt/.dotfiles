@@ -6,6 +6,9 @@
 - mingw-w64-x86_64-gcc base-devel
 
 #### `.msi`
+- FF, Chrome
+- gVim, MS Office, Adobe CC, VS 2015
+- Android Studio, Tizen Studio
 - [rust][] [node][] [go][]
 - [git-lfs]
 
