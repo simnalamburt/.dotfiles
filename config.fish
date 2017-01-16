@@ -59,8 +59,12 @@ if type -q yarn
   __path "$HOME/.config/yarn/global/node_modules/.bin"
 end
 
-# chips
-if [ -e ~/.config/chips/build.fish ]; . ~/.config/chips/build.fish ; end
+# Chips  -  https://github.com/xtendo-org/chips
+if [ -e ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
+# Hack for old systems like Ubuntu 14, CentOS 6, etc
+set _ "
+if [ -e ~/.config/chips/build.fish ] ; source ~/.config/chips/build.fish ; end
+"
 
 # pyenv
 if [ -d ~/.pyenv ]
