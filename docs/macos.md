@@ -12,7 +12,7 @@ macOS
 - [brew-rmtree]
 - vim git mosh wget xz ripgrep
 - ruby node yarn python python3 haskell-stack
-- p7zip htop gtar nmap
+- p7zip htop gtar nmap upx
 - [keybase] gpg
 
 #### [`brew cask`]
