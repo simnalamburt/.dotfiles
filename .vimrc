@@ -284,13 +284,13 @@ let g:grammarous#default_comments_only_filetypes = {
 "
 " Beutiful vim
 "
+let g:seoul256_background = 233
 try
   colorscheme seoul256
 catch /^Vim\%((\a\+)\)\=:E185/
   " Fallback
   colorscheme elflord
 endtry
-let g:seoul256_background = 233
 let s:back_color          = 234
 
 " Reference: https://github.com/junegunn/seoul256.vim/blob/master/colors/seoul256.vim
