@@ -270,10 +270,12 @@ let g:clever_f_across_no_line = 1
 let g:clever_f_smart_case = 1
 
 " vim-easymotion
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
+if exists('g:EasyMotion_loaded')
+  map  / <Plug>(easymotion-sn)
+  omap / <Plug>(easymotion-tn)
+  map  n <Plug>(easymotion-next)
+  map  N <Plug>(easymotion-prev)
+endif
 
 " rhysd/vim-grammarous
 let g:grammarous#default_comments_only_filetypes = {
