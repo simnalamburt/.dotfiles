@@ -215,16 +215,15 @@ try
 
   call plug#end()
 
-  let has_vimplug = 1
+  let s:has_vimplug = 1
 catch /^Vim\%((\a\+)\)\=:E117/
-  let has_vimplug = 0
 endtry
 
 
 "
 " Configs for plugins
 "
-if has_vimplug
+if exists('s:has_vimplug') && s:has_vimplug
   " vim-airline
   let g:airline_powerline_fonts = 1
 
