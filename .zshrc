@@ -5,7 +5,7 @@
 # zplug
 #
 autoload -U is-at-least
-if is-at-least 4.3.9; then
+if is-at-least 4.3.9 && [ -f ~/.zplug/init.zsh ]; then
   source ~/.zplug/init.zsh
   zplug 'zsh-users/zsh-completions'
   zplug 'zsh-users/zsh-syntax-highlighting'
