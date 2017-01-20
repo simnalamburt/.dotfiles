@@ -184,7 +184,11 @@ try
     if has('python3')
       return 1
     elseif has('python')
-      python import vim, sys; vim.command('return %d' % int(sys.version_info >= (2, 5)))
+      python <<EOF
+import vim
+import sys
+vim.command('return %d' % int(sys.version_info >= (2, 5)))
+EOF
     endif
     return 0
   endfunction
