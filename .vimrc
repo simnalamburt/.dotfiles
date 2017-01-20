@@ -171,7 +171,9 @@ try
   Plug 'vim-utils/vim-interruptless'
   Plug 'junegunn/gv.vim'
   Plug 'rhysd/vim-grammarous'
-  Plug 'justinmk/vim-dirvish'
+  if v:version >= 702
+    Plug 'justinmk/vim-dirvish'
+  endif
 
   " Haskell
   Plug 'eagletmt/neco-ghc'
