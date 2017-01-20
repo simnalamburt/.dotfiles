@@ -20,11 +20,6 @@ set noshowmode
 set noswapfile
 set nowrap
 
-" define a group `vimrc` and initialize.
-augroup vimrc
-  autocmd!
-augroup END
-
 " History
 if has("persistent_undo")
   " mkdir -p ~/.vim/undodir
@@ -42,7 +37,6 @@ endif
 set cindent
 set autoindent
 set smartindent
-autocmd vimrc BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4 "just for go
 
 " Tab
 set softtabstop=2
@@ -72,9 +66,6 @@ set matchpairs+=<:>
 set showmatch
 " Wildmenu
 set wildmode=longest,full
-
-" Treat .eslintrc .babelrc as json
-autocmd vimrc BufRead,BufNewFile .{eslintrc,babelrc} setf json
 
 
 "
@@ -235,6 +226,7 @@ if exists('s:has_vimplug') && s:has_vimplug
     set scrolloff=999
     Limelight
   endfunction
+  autocmd! User GoyoEnter nested call s:goyo_enter()
 
   function! s:goyo_leave()
     silent !tmux set status on
@@ -242,11 +234,9 @@ if exists('s:has_vimplug') && s:has_vimplug
     set showcmd
     set scrolloff=3
     Limelight!
-    call <SID>beauty()
+    call s:beauty()
   endfunction
-
-  autocmd! User GoyoEnter nested call <SID>goyo_enter()
-  autocmd! User GoyoLeave nested call <SID>goyo_leave()
+  autocmd! User GoyoLeave nested call s:goyo_leave()
 
   " limelight.vim
   let g:limelight_conceal_ctermfg = 240
@@ -389,7 +379,7 @@ function! s:beauty()
   call s:fg('TabLineFill',  s:back_color)
   call s:bg('TabLineFill',  s:back_color)
 
-  " vimdiff
+  " Beauty vimdiff colorscheme
   call s:bg('DiffChange',   'NONE')
   call s:bg('DiffText',     22)
   call s:bg('DiffAdd',      22)
@@ -399,14 +389,12 @@ function! s:beauty()
   " Listchars for whitespaces
   call s:fg('NonText',      'darkblue')
   call s:fg('SpecialKey',   'darkblue')
+
   " Pair matching
   call s:fg('MatchParen',   226)
   call s:bg('MatchParen',   16)
-endfunction
-autocmd vimrc ColorScheme * call <SID>beauty()
 
-" indentation
-function! s:indent()
+  " Indentation
   if &softtabstop < 4 || !&expandtab
     call s:bg('IndentGuidesOdd', 'NONE')
   else
@@ -422,4 +410,18 @@ function! s:indent()
     let &listchars = "tab:\u203A\ ,extends:\u00BB,precedes:\u00AB"
   endif
 endfunction
-autocmd vimrc VimEnter,Colorscheme * call <SID>indent()
+
+
+"
+" Define a 'vimrc' augroup
+"
+augroup vimrc
+  autocmd!
+
+  " Indentation setting for Golang
+  autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
+  " Treat .eslintrc .babelrc as json
+  autocmd BufRead,BufNewFile .{eslintrc,babelrc} setf json
+
+  autocmd VimEnter,ColorScheme * call s:beauty()
+augroup END
