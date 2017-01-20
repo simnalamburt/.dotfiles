@@ -154,9 +154,10 @@ endif
 
 
 "
-" Plugins
+" List of plugins
 "
-try | call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
+try
+call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -212,8 +213,18 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 
-call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | endtry
+call plug#end()
 
+let has_vimplug = 1
+catch /^Vim\%((\a\+)\)\=:E117/
+  let has_vimplug = 0
+endtry
+
+
+"
+" Configs for plugins
+"
+if has_vimplug
 
 " vim-airline
 let g:airline_powerline_fonts = 1
@@ -306,6 +317,8 @@ noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 let g:grammarous#default_comments_only_filetypes = {
             \ '*' : 1, 'help' : 0, 'markdown' : 0,
             \ }
+
+endif
 
 
 "
