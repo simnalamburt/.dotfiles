@@ -180,7 +180,15 @@ try
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  if has('python') || has('python3')
+  function! s:is_editorconfig_supported()
+    if has('python3')
+      return 1
+    elseif has('python')
+      python import vim, sys; vim.command('return %d' % int(sys.version_info >= (2, 5)))
+    endif
+    return 0
+  endfunction
+  if s:is_editorconfig_supported()
     Plug 'editorconfig/editorconfig-vim'
   endif
   Plug 'junegunn/seoul256.vim'
