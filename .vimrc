@@ -282,9 +282,6 @@ if exists('s:has_vimplug') && s:has_vimplug
   let $RUST_SRC_PATH=$HOME."/.racer/rust/src"
   inoremap <C-o> <C-x><C-o>
 
-  " elm-vim
-  let g:elm_format_autosave = 1
-
   " clever-f.vim
   let g:clever_f_across_no_line = 1
   let g:clever_f_smart_case = 1
