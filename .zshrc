@@ -1,3 +1,6 @@
+# If not running interactively, don't do anything
+[[ -o interactive ]] || return
+
 #
 # zplug
 #
