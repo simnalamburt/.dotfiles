@@ -1,3 +1,10 @@
+#! WARNING
+#!
+#! I don't really use this configuration as it is. I instead
+#! copy/paste the part of it when I have to access the legacy
+#! system. You'd be better not to use this file as it is either.
+
+
 if [ -d $HOME/.local/bin ]; then
   export PATH=$HOME/.local/bin:$PATH
 fi

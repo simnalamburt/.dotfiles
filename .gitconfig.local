@@ -2,3 +2,8 @@
 [commit]
 	gpgsign = true
 	signingkey = E242057F
+
+# Use this config if you don't want to use TLS
+#
+# [url "git://"]
+# 	insteadOf = https://
