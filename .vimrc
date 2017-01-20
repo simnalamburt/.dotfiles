@@ -169,7 +169,6 @@ try
   Plug 'godlygeek/tabular'
   Plug 'vim-utils/vim-interruptless'
   Plug 'junegunn/gv.vim'
-  Plug 'rhysd/vim-grammarous'
   if v:version >= 702
     Plug 'justinmk/vim-dirvish'
   endif
@@ -307,11 +306,6 @@ if exists('s:has_vimplug') && s:has_vimplug
     endfunction
     noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
   endif
-
-  " rhysd/vim-grammarous
-  let g:grammarous#default_comments_only_filetypes = {
-              \ '*' : 1, 'help' : 0, 'markdown' : 0,
-              \ }
 endif
 
 
