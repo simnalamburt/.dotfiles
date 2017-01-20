@@ -208,8 +208,9 @@ EOF
   Plug 'wavded/vim-stylus'
   Plug 'elixir-lang/vim-elixir'
   Plug 'idris-hackers/idris-vim'
-
-  Plug 'sheerun/vim-polyglot'
+  if v:version >= 701
+    Plug 'sheerun/vim-polyglot'
+  endif
 
   " Blink
   if v:version >= 701
