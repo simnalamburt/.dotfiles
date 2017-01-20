@@ -50,9 +50,10 @@ set shiftwidth=2
 set expandtab
 
 " Searching
+set incsearch
 set ignorecase
 set smartcase
-set hlsearch
+set hlsearch | nohlsearch
 set nowrapscan
 
 " Line number column
@@ -206,7 +207,10 @@ Plug 'sheerun/vim-polyglot'
 
 " Blink
 Plug 'rhysd/clever-f.vim'
-Plug 'Lokaltog/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
+Plug 'haya14busa/incsearch-easymotion.vim'
 
 call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | endtry
 
@@ -269,13 +273,34 @@ let g:elm_format_autosave = 1
 let g:clever_f_across_no_line = 1
 let g:clever_f_smart_case = 1
 
-" vim-easymotion
-if exists('g:EasyMotion_loaded')
-  map  / <Plug>(easymotion-sn)
-  omap / <Plug>(easymotion-tn)
-  map  n <Plug>(easymotion-next)
-  map  N <Plug>(easymotion-prev)
-endif
+" incsearch.vim
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+let g:incsearch#auto_nohlsearch = 1
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)
+
+" incsearch-fuzzy.vim
+map z/ <Plug>(incsearch-fuzzy-/)
+map z? <Plug>(incsearch-fuzzy-?)
+map zg/ <Plug>(incsearch-fuzzy-stay)
+
+" incsearch-easymotion.vim
+function! s:config_easyfuzzymotion(...) abort
+  return extend(copy({
+  \   'converters': [incsearch#config#fuzzy#converter()],
+  \   'modules': [incsearch#config#easymotion#module()],
+  \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+  \   'is_expr': 0,
+  \   'is_stay': 1
+  \ }), get(a:, 1, {}))
+endfunction
+noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 
 " rhysd/vim-grammarous
 let g:grammarous#default_comments_only_filetypes = {
