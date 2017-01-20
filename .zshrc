@@ -12,6 +12,8 @@ if is-at-least 4.3.9; then
   zplug 'simnalamburt/cgitc'
   zplug 'simnalamburt/shellder', as:theme
   zplug load
+else
+  PS1='%n@%m:%~%# '
 fi
 
 
