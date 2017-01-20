@@ -334,7 +334,8 @@ if !exists('s:rgb_map')
   \  96: '#9A7599', 101: '#999872', 103: '#999ABD', 108: '#98BC99', 109: '#98BCBD',
   \ 110: '#98BEDE', 116: '#97DDDF', 125: '#BF2172', 131: '#BE7572', 137: '#BE9873',
   \ 143: '#BDBB72', 144: '#BDBC98', 145: '#BDBDBD', 151: '#BCDDBD', 152: '#BCDEDE',
-  \ 153: '#BCE0FF', 161: '#E12672', 168: '#E17899', 173: '#E19972', 174: '#E09B99',
+  \ 153: '#BCE0FF', 160: '#D70000',
+  \ 161: '#E12672', 168: '#E17899', 173: '#E19972', 174: '#E09B99',
   \ 179: '#DFBC72', 181: '#E0BEBC', 184: '#DEDC00', 186: '#DEDD99', 187: '#DFDEBD',
   \ 189: '#DFDFFF', 216: '#FFBD98', 217: '#FFBFBD', 218: '#FFC0DE', 220: '#FFDD00',
   \ 222: '#FFDE99', 224: '#FFDFDF', 226: '#FFFF00',
@@ -409,6 +410,9 @@ function! s:beauty()
   else
     let &listchars = "tab:\u203A\ ,extends:\u00BB,precedes:\u00AB"
   endif
+
+  " Extra whitespaces
+  call s:bg('ExtraWhitespace', 160)
 endfunction
 
 
