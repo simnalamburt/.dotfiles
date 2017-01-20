@@ -157,65 +157,65 @@ endif
 " List of plugins
 "
 try
-call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
+  call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-if !has('win32') && !has('win64') && !has('win32unix')
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-endif
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'simnalamburt/vim-mundo'
-Plug 'tpope/vim-git'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-obsession'
-if v:version >= 703
-  Plug 'mhinz/vim-startify'
-endif
-Plug 'godlygeek/tabular'
-Plug '~/.racer/racer', { 'for': 'rust' }
-Plug 'vim-utils/vim-interruptless'
-Plug 'junegunn/gv.vim'
-Plug 'rhysd/vim-grammarous'
-Plug 'justinmk/vim-dirvish'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  if !has('win32') && !has('win64') && !has('win32unix')
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+  endif
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
+  Plug 'simnalamburt/vim-mundo'
+  Plug 'tpope/vim-git'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-endwise'
+  Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-obsession'
+  if v:version >= 703
+    Plug 'mhinz/vim-startify'
+  endif
+  Plug 'godlygeek/tabular'
+  Plug '~/.racer/racer', { 'for': 'rust' }
+  Plug 'vim-utils/vim-interruptless'
+  Plug 'junegunn/gv.vim'
+  Plug 'rhysd/vim-grammarous'
+  Plug 'justinmk/vim-dirvish'
 
-" Haskell
-Plug 'eagletmt/neco-ghc'
-Plug 'neovimhaskell/haskell-vim'
+  " Haskell
+  Plug 'eagletmt/neco-ghc'
+  Plug 'neovimhaskell/haskell-vim'
 
-" Visual
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'ntpeters/vim-better-whitespace'
-if has('python') || has('python3')
-  Plug 'editorconfig/editorconfig-vim'
-endif
-Plug 'junegunn/seoul256.vim'
+  " Visual
+  Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'ntpeters/vim-better-whitespace'
+  if has('python') || has('python3')
+    Plug 'editorconfig/editorconfig-vim'
+  endif
+  Plug 'junegunn/seoul256.vim'
 
-" Syntax
-Plug 'vim-scripts/applescript.vim'
-Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
-Plug 'simnalamburt/k-.vim'
-Plug 'wlangstroth/vim-racket'
-Plug 'tfnico/vim-gradle'
-Plug 'wavded/vim-stylus'
-Plug 'elixir-lang/vim-elixir'
-Plug 'idris-hackers/idris-vim'
+  " Syntax
+  Plug 'vim-scripts/applescript.vim'
+  Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
+  Plug 'simnalamburt/k-.vim'
+  Plug 'wlangstroth/vim-racket'
+  Plug 'tfnico/vim-gradle'
+  Plug 'wavded/vim-stylus'
+  Plug 'elixir-lang/vim-elixir'
+  Plug 'idris-hackers/idris-vim'
 
-Plug 'sheerun/vim-polyglot'
+  Plug 'sheerun/vim-polyglot'
 
-" Blink
-Plug 'rhysd/clever-f.vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'haya14busa/incsearch.vim'
-Plug 'haya14busa/incsearch-fuzzy.vim'
-Plug 'haya14busa/incsearch-easymotion.vim'
+  " Blink
+  Plug 'rhysd/clever-f.vim'
+  Plug 'easymotion/vim-easymotion'
+  Plug 'haya14busa/incsearch.vim'
+  Plug 'haya14busa/incsearch-fuzzy.vim'
+  Plug 'haya14busa/incsearch-easymotion.vim'
 
-call plug#end()
+  call plug#end()
 
-let has_vimplug = 1
+  let has_vimplug = 1
 catch /^Vim\%((\a\+)\)\=:E117/
   let has_vimplug = 0
 endtry
@@ -225,99 +225,97 @@ endtry
 " Configs for plugins
 "
 if has_vimplug
+  " vim-airline
+  let g:airline_powerline_fonts = 1
 
-" vim-airline
-let g:airline_powerline_fonts = 1
+  " goyo.vim
+  function! s:goyo_enter()
+    silent !tmux set status off
+    set noshowmode
+    set noshowcmd
+    set scrolloff=999
+    Limelight
+  endfunction
 
-" goyo.vim
-function! s:goyo_enter()
-  silent !tmux set status off
-  set noshowmode
-  set noshowcmd
-  set scrolloff=999
-  Limelight
-endfunction
+  function! s:goyo_leave()
+    silent !tmux set status on
+    set showmode
+    set showcmd
+    set scrolloff=3
+    Limelight!
+    call <SID>beauty()
+  endfunction
 
-function! s:goyo_leave()
-  silent !tmux set status on
-  set showmode
-  set showcmd
-  set scrolloff=3
-  Limelight!
-  call <SID>beauty()
-endfunction
+  autocmd! User GoyoEnter nested call <SID>goyo_enter()
+  autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
+  " limelight.vim
+  let g:limelight_conceal_ctermfg = 240
 
-" limelight.vim
-let g:limelight_conceal_ctermfg = 240
+  " vim-indent-guides
+  nmap <leader>i <Plug>IndentGuidesToggle
+  let g:indent_guides_auto_colors = 0
+  let g:indent_guides_start_level = 2
+  let g:indent_guides_enable_on_vim_startup = 1
+  let g:indent_guides_exclude_filetypes = ['help', 'startify']
+  let g:indent_guides_default_mapping = 0
 
-" vim-indent-guides
-nmap <leader>i <Plug>IndentGuidesToggle
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_start_level = 2
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_exclude_filetypes = ['help', 'startify']
-let g:indent_guides_default_mapping = 0
+  " vim-better-whitespace
+  let g:strip_whitespace_on_save = 1
 
-" vim-better-whitespace
-let g:strip_whitespace_on_save = 1
+  " mundo.vim
+  let g:mundo_right = 1
+  nnoremap <leader>g :MundoToggle<CR>
 
-" mundo.vim
-let g:mundo_right = 1
-nnoremap <leader>g :MundoToggle<CR>
+  " vim-github-dashboard
+  let g:github_dashboard = { 'username': 'simnalamburt' }
 
-" vim-github-dashboard
-let g:github_dashboard = { 'username': 'simnalamburt' }
+  " racer
+  set hidden
+  let g:racer_cmd = "~/.racer/racer/target/release/racer"
+  let $RUST_SRC_PATH=$HOME."/.racer/rust/src"
+  inoremap <C-o> <C-x><C-o>
 
-" racer
-set hidden
-let g:racer_cmd = "~/.racer/racer/target/release/racer"
-let $RUST_SRC_PATH=$HOME."/.racer/rust/src"
-inoremap <C-o> <C-x><C-o>
+  " elm-vim
+  let g:elm_format_autosave = 1
 
-" elm-vim
-let g:elm_format_autosave = 1
+  " clever-f.vim
+  let g:clever_f_across_no_line = 1
+  let g:clever_f_smart_case = 1
 
-" clever-f.vim
-let g:clever_f_across_no_line = 1
-let g:clever_f_smart_case = 1
+  " incsearch.vim
+  map /  <Plug>(incsearch-forward)
+  map ?  <Plug>(incsearch-backward)
+  map g/ <Plug>(incsearch-stay)
+  let g:incsearch#auto_nohlsearch = 1
+  map n  <Plug>(incsearch-nohl-n)
+  map N  <Plug>(incsearch-nohl-N)
+  map *  <Plug>(incsearch-nohl-*)
+  map #  <Plug>(incsearch-nohl-#)
+  map g* <Plug>(incsearch-nohl-g*)
+  map g# <Plug>(incsearch-nohl-g#)
 
-" incsearch.vim
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
-let g:incsearch#auto_nohlsearch = 1
-map n  <Plug>(incsearch-nohl-n)
-map N  <Plug>(incsearch-nohl-N)
-map *  <Plug>(incsearch-nohl-*)
-map #  <Plug>(incsearch-nohl-#)
-map g* <Plug>(incsearch-nohl-g*)
-map g# <Plug>(incsearch-nohl-g#)
+  " incsearch-fuzzy.vim
+  map z/ <Plug>(incsearch-fuzzy-/)
+  map z? <Plug>(incsearch-fuzzy-?)
+  map zg/ <Plug>(incsearch-fuzzy-stay)
 
-" incsearch-fuzzy.vim
-map z/ <Plug>(incsearch-fuzzy-/)
-map z? <Plug>(incsearch-fuzzy-?)
-map zg/ <Plug>(incsearch-fuzzy-stay)
+  " incsearch-easymotion.vim
+  function! s:config_easyfuzzymotion(...) abort
+    return extend(copy({
+    \   'converters': [incsearch#config#fuzzy#converter()],
+    \   'modules': [incsearch#config#easymotion#module()],
+    \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+    \   'is_expr': 0,
+    \   'is_stay': 1
+    \ }), get(a:, 1, {}))
+  endfunction
+  noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 
-" incsearch-easymotion.vim
-function! s:config_easyfuzzymotion(...) abort
-  return extend(copy({
-  \   'converters': [incsearch#config#fuzzy#converter()],
-  \   'modules': [incsearch#config#easymotion#module()],
-  \   'keymap': {"\<CR>": '<Over>(easymotion)'},
-  \   'is_expr': 0,
-  \   'is_stay': 1
-  \ }), get(a:, 1, {}))
-endfunction
-noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
-
-" rhysd/vim-grammarous
-let g:grammarous#default_comments_only_filetypes = {
-            \ '*' : 1, 'help' : 0, 'markdown' : 0,
-            \ }
-
+  " rhysd/vim-grammarous
+  let g:grammarous#default_comments_only_filetypes = {
+              \ '*' : 1, 'help' : 0, 'markdown' : 0,
+              \ }
 endif
 
 
