@@ -4,12 +4,15 @@
 #
 # zplug
 #
-source ~/.zplug/init.zsh
-zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'simnalamburt/cgitc'
-zplug 'simnalamburt/shellder', as:theme
-zplug load
+autoload -U is-at-least
+if is-at-least 4.3.9; then
+  source ~/.zplug/init.zsh
+  zplug 'zsh-users/zsh-completions'
+  zplug 'zsh-users/zsh-syntax-highlighting'
+  zplug 'simnalamburt/cgitc'
+  zplug 'simnalamburt/shellder', as:theme
+  zplug load
+fi
 
 
 #
