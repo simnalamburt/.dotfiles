@@ -8,9 +8,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-stty sane
-stty stop ''
-stty start ''
+stty stop undef
 stty -ixon
 
 PS1='\u@\h:\w\$ '
