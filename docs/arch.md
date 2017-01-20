@@ -19,7 +19,6 @@ kuma.hyeon.me
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 - [yarn]
-- [certbot-systemd-nginx](https://github.com/lnicola/certbot-systemd-nginx)
 
 ### `cargo`
 - [exa]
