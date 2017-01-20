@@ -167,7 +167,6 @@ try
     Plug 'mhinz/vim-startify'
   endif
   Plug 'godlygeek/tabular'
-  Plug '~/.racer/racer', { 'for': 'rust' }
   Plug 'vim-utils/vim-interruptless'
   Plug 'junegunn/gv.vim'
   Plug 'rhysd/vim-grammarous'
@@ -275,12 +274,6 @@ if exists('s:has_vimplug') && s:has_vimplug
 
   " vim-github-dashboard
   let g:github_dashboard = { 'username': 'simnalamburt' }
-
-  " racer
-  set hidden
-  let g:racer_cmd = "~/.racer/racer/target/release/racer"
-  let $RUST_SRC_PATH=$HOME."/.racer/rust/src"
-  inoremap <C-o> <C-x><C-o>
 
   " clever-f.vim
   let g:clever_f_across_no_line = 1
