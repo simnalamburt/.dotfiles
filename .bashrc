@@ -8,20 +8,16 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Backspace
-stty erase ^H
-
-# Disable ^S and ^Q
+stty sane
 stty stop ''
 stty start ''
 stty -ixon
-stty -ixoff
 
 PS1='\u@\h:\w\$ '
 export LANG=ko_KR.UTF-8
 
-# Mini ag
-function ag {
+# Mini rg
+function rg {
   if [[ -z "$1" ]]; then
     grep --help
   else
@@ -30,6 +26,7 @@ function ag {
 }
 
 # User specific aliases and functions
+alias ls="ls --color=tty"
 alias l="ls -alh --color=yes"
 alias ll="ls -lh --color=yes"
 alias rm='rm -i'
