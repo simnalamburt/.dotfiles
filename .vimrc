@@ -272,9 +272,6 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:mundo_right = 1
   nnoremap <leader>g :MundoToggle<CR>
 
-  " vim-github-dashboard
-  let g:github_dashboard = { 'username': 'simnalamburt' }
-
   " clever-f.vim
   let g:clever_f_across_no_line = 1
   let g:clever_f_smart_case = 1
