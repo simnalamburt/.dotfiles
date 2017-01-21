@@ -7,10 +7,11 @@
 autoload -U is-at-least
 if is-at-least 4.3.9 && [ -f ~/.zplug/init.zsh ]; then
   source ~/.zplug/init.zsh
-  zplug 'zsh-users/zsh-completions'
-  zplug 'zsh-users/zsh-syntax-highlighting'
-  zplug 'simnalamburt/cgitc'
-  zplug 'simnalamburt/shellder', as:theme
+  zplug zsh-users/zsh-completions
+  zplug zsh-users/zsh-syntax-highlighting
+  zplug simnalamburt/cgitc
+  zplug mafredri/zsh-async
+  zplug sindresorhus/pure, use:pure.zsh, as:theme
   zplug load
 else
   PS1='%n@%m:%~%# '
