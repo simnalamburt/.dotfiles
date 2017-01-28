@@ -10,7 +10,7 @@ macOS
 
 #### [`brew`]
 - [brew-rmtree]
-- vim git mosh wget xz ripgrep
+- vim git mosh wget xz ripgrep md5sha1sum
 - ruby node yarn python python3 haskell-stack
 - p7zip htop gtar nmap upx
 - [keybase] gpg
