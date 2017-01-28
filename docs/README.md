@@ -1,11 +1,6 @@
 서버/PC 관리 문서
 ========
-
-항목     | 설명
----------|--------------------------------------------------
-서버     | 대부분 집, 동아리서버 일부는 학교
-도메인   | [GoDaddy]
-네임서버 | [CloudFlare]
+도메인은 [GoDaddy]를 사용하여 구입하였고, 네임서버는 [CloudFlare]를 쓰고있다.
 
 ### 구독중인 메일링리스트
 - [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
@@ -13,16 +8,6 @@
 - [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
 
 ### 서버 새로 세팅하면 해줄거
-1.  sshd용으로 사용할 2048bit 소수 그룹 생성
-
-    ```bash
-    ssh-keygen -G moduli-2048.candidates -b 2048
-    ssh-keygen -T moduli-2048 -f moduli-2048.candidates
-
-    sudo mv moduli-2048 /etc/ssh/moduli
-    sudo chown root:root /etc/ssh/moduli
-    ```
-
 1.  [sshd_config에서 1024bit DHE 끄기](https://weakdh.org/sysadmin.html#openssh)
 
     ```sshd_config
@@ -38,6 +23,41 @@
 1.  [nginx TLS 설정하기][https]. ([DHE 끄기](https://weakdh.org), SSLv3 끄기, 등)
 
 1.  [HSTS] 강제하기
+
+<br>
+
+서버목록
+--------
+
+### A. 도지
+프로덕션 서버.
+
+항목 | 내용
+-----|------
+주소 | doge.hyeon.me
+OS   | Ubuntu 14.04.5 LTS
+위치 | 춘천 IDC
+하드웨어 | 일반 탑형 데스크톱
+Mainboard | 인텔 DP35DP
+CPU | Intel Core2 Quad Q6600 (quad core, 2.40 GHz)
+RAM | DDR2 2GB×4
+Storage | 320GB, 삼성 HD321KJ (SSD)
+VGA | GeForce GTS 240
+
+### B. 쿠마
+개발용 서버.
+
+항목 | 내용
+-----|------
+주소 | doge.hyeon.me
+OS   | Ubuntu 14.04.5 LTS
+위치 | 춘천 IDC
+하드웨어 | 일반 탑형 데스크톱
+Mainboard | ASUS P5KPL-C/1600
+CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
+RAM | DDR2 2GB×2
+Storage | 128GB, SanDisk SD8SB8U1 (SSD)
+VGA | Radeon HD 3690/3850
 
 [GoDaddy]: https://kr.godaddy.com/
 [CloudFlare]: https://www.cloudflare.com/
