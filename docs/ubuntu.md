@@ -14,3 +14,4 @@ doge.hyeon.me
 - mongodb-org                    - [repo.mongodb.org](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/)
 - weechat-curses weechat-plugins - [weechat.org](https://weechat.org/download/debian/#instructions)
 - nginx                          - [nginx.org](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
+- docker-engine                  - [apt.dockerproject.org](https://docs.docker.com/engine/installation/linux/ubuntu/)
