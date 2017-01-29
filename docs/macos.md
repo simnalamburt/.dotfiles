@@ -13,6 +13,7 @@ macOS
 - vim git mosh wget xz ripgrep md5sha1sum
 - ruby node yarn python python3 haskell-stack
 - p7zip htop gtar nmap upx
+- youtube-dl libav
 - [keybase] gpg
 
 #### [`brew cask`]
