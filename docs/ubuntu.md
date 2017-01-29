@@ -11,7 +11,6 @@ doge.hyeon.me
 ### `apt` PPA
 - vim-nox tmux                   - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
 - gitlab-ce                      - [packages.gitlab.com](https://about.gitlab.com/downloads/#ubuntu1404)
-- mongodb-org                    - [repo.mongodb.org](https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/)
 - weechat-curses weechat-plugins - [weechat.org](https://weechat.org/download/debian/#instructions)
 - nginx                          - [nginx.org](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 - docker-engine                  - [apt.dockerproject.org](https://docs.docker.com/engine/installation/linux/ubuntu/)
