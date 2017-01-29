@@ -14,6 +14,10 @@ kuma.hyeon.me
 
 - rabbitmq
 
+*Hopefully temporal...*
+
+- docker (삭제할때 `loop` 커널모듈도 같이 끄기)
+
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
