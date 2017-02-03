@@ -68,12 +68,6 @@ alias l='ls -AlhF --color=auto'               # show all
 
 
 #
-# Umask
-#
-# Paranoid: neither group nor others have any perms:
-umask 077
-
-#
 # Functions
 #
 # This function defines a 'cd' replacement function capable of keeping,
