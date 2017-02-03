@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
-PS1=$'\e[48;5;234m\e[38;5;231m \w \e[38;5;234m\e[49m\xEE\x82\xB0\e[0m '
+PS1='\u@\h:\w\$ '
 # Prevent shell from being freezed
 stty stop undef
 stty -ixon
