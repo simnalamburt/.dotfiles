@@ -1,8 +1,8 @@
 [msys2]
 ========
 #### `pacman`
-- git svn vim zsh tar zip unzip mosh
-- ruby python2
+- git svn vim tar zip unzip mosh
+- winpty msys2-launcher
 - mingw-w64-x86_64-gcc base-devel
 
 #### `.msi`
