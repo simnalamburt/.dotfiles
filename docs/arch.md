@@ -15,10 +15,6 @@ kuma.hyeon.me
 
 - rabbitmq
 
-*Hopefully temporal...*
-
-- docker (삭제할때 `loop` 커널모듈도 같이 끄고, `/etc/systemd/system`에 놓은 드랍인 스니펫 정리)
-
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
