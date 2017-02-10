@@ -11,10 +11,6 @@ kuma.hyeon.me
 - imagemagick youtube-dl shellcheck
 - [rkt]
 
-*For OpenIRC Project...*
-
-- rabbitmq
-
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
