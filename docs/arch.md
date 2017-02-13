@@ -17,11 +17,10 @@ kuma.hyeon.me
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 - [yarn]
 
-### `cargo`
-- [exa]
-
-### `yarn`
-- [@noraesae/pen]
+### etc
+- [exa] using `cargo`
+- [@noraesae/pen] using `yarn`
+- [pipenv] using `pip`
 
 [rkt]: https://coreos.com/rkt/
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
@@ -29,6 +28,7 @@ kuma.hyeon.me
 [yarn]: https://yarnpkg.com/
 [exa]: https://github.com/ogham/exa
 [@noraesae/pen]: https://github.com/noraesae/pen
+[pipenv]: https://github.com/kennethreitz/pipenv
 
 <br>
 
