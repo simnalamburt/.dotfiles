@@ -21,20 +21,14 @@ macOS
 - xquartz
 - android-studio
 
-#### `cargo`
-- [exa]
+### etc
+- [exa] using `cargo`
+- [@noraesae/pen] using `yarn`
+- [pipenv] using `pip`
 
 #### App Store
-- 카톡, 라인, 텔레그램
+- 카톡, 라인
 - InsomniaX, GarageBand, OBS
-
-[`brew`]: http://brew.sh
-[`brew cask`]: https://caskroom.github.io/
-[brew-rmtree]: https://github.com/beeftornado/homebrew-rmtree
-[keybase]: https://keybase.io/
-[karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
-[exa]: https://the.exa.website/
-[rust]: https://www.rust-lang.org/ko-KR/install.html
 
 <br>
 
@@ -55,9 +49,15 @@ macOS
 1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 Left <kbd>⌘</kbd> 키가
     <kbd>Ctrl</kbd>키로 작동하도록 수정.
 
+[Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
+[rust]: https://www.rust-lang.org/ko-KR/install.html
+[`brew`]: http://brew.sh
+[`brew cask`]: https://caskroom.github.io/
+[brew-rmtree]: https://github.com/beeftornado/homebrew-rmtree
+[keybase]: https://keybase.io/
+[karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
+[exa]: https://the.exa.website/
+[@noraesae/pen]: https://github.com/noraesae/pen
+[pipenv]: https://github.com/kennethreitz/pipenv
 [`Karabiner-Elements`]: https://github.com/tekezo/Karabiner-Elements
 [iTerms2]: https://www.iterm2.com/
-
-
-[Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
-
