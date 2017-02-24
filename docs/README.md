@@ -29,34 +29,34 @@
 서버목록
 --------
 
-### A. 도지
-프로덕션 서버.
+### A. 쿠마
+개발/프로덕션용 서버.
 
 항목 | 내용
 -----|------
-주소 | doge.hyeon.me
-OS   | Ubuntu 14.04.5 LTS
+주소 | kuma.hyeon.me
+OS   | Arch Linux
 위치 | 춘천 IDC
 하드웨어 | 일반 탑형 데스크톱
 Mainboard | 인텔 DP35DP
 CPU | Intel Core2 Quad Q6600 (quad core, 2.40 GHz)
 RAM | DDR2 2GB×4
-Storage | 320GB, 삼성 HD321KJ (SSD)
+Storage | 128GB, SanDisk SD8SB8U1 (SSD)
 VGA | GeForce GTS 240
 
-### B. 쿠마
-개발용 서버.
+### B. 도지
+레거시 서버. 종료시킬 예정
 
 항목 | 내용
 -----|------
 주소 | doge.hyeon.me
-OS   | Ubuntu 14.04.5 LTS
+OS   | Ubuntu 14.04 LTS
 위치 | 춘천 IDC
 하드웨어 | 일반 탑형 데스크톱
 Mainboard | ASUS P5KPL-C/1600
 CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
 RAM | DDR2 2GB×2
-Storage | 128GB, SanDisk SD8SB8U1 (SSD)
+Storage | 320GB, 삼성 HD321KJ (SSD)
 VGA | Radeon HD 3690/3850
 
 [GoDaddy]: https://kr.godaddy.com/
