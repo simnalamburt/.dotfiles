@@ -4,6 +4,7 @@
 - git svn vim tar zip unzip mosh
 - winpty msys2-launcher
 - mingw-w64-x86_64-gcc base-devel
+- python2
 
 #### `.msi`
 - FF, Chrome
