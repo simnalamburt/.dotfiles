@@ -10,7 +10,7 @@
 - FF, Chrome
 - gVim, MS Office, Adobe CC, VS 2015
 - Android Studio, Tizen Studio
-- [rust][] [node][] [go][]
+- [Rust][] [Node.js][] [Go][]
 - [git-lfs]
 
 <br>
@@ -38,9 +38,9 @@ How to Install
 1.  Clone [dotfiles](../README.md)
 1.  Execute `zplug install`
 
-[rust]: https://www.rust-lang.org/
-[node]: https://nodejs.org/
-[go]: https://golang.org/
+[Rust]: https://www.rust-lang.org/
+[Node.js]: https://nodejs.org/
+[Go]: https://golang.org/
 [git-lfs]: https://git-lfs.github.com/
 [ack]: https://github.com/petdance/ack2/tree/2.15_02
 [file-next]: https://github.com/petdance/file-next/tree/1.12
