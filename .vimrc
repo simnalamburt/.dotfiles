@@ -271,6 +271,9 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:mundo_right = 1
   nnoremap <leader>g :MundoToggle<CR>
 
+  " vim-polyglot
+  let g:polyglot_disabled = ['systemd']
+
   " clever-f.vim
   let g:clever_f_across_no_line = 1
   let g:clever_f_smart_case = 1
