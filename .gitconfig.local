@@ -1,9 +1,15 @@
 # vim: ft=gitconfig noexpandtab sw=8
-[commit]
-	gpgsign = true
-	signingkey = E242057F
 
-# Use this config if you don't want to use TLS
-#
+# Want GPG commit sign?
+# [commit]
+#   gpgsign = true
+#   signingkey = E242057F
+
+# Cannot use TLS?
 # [url "git://"]
-# 	insteadOf = https://
+#   insteadOf = https://
+
+# Want to use GCMW?
+# [credential]
+#   helper = manager
+#   modalprompt = true
