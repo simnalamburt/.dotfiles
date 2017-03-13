@@ -28,8 +28,6 @@
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
-[credential]
-	helper = cache --timeout=3600
 [credential "https://github.com"]
 	username = simnalamburt
 [credential "http://git.hyeon.me"]
