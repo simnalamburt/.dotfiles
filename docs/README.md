@@ -56,7 +56,7 @@ OS   | Ubuntu 14.04 LTS
 Mainboard | ASUS P5KPL-C/1600
 CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
 RAM | DDR2 2GB×2
-Storage | 320GB, 삼성 HD321KJ (SSD)
+Storage | 320GB, 삼성 HD321KJ (HDD)
 VGA | Radeon HD 3690/3850
 
 [GoDaddy]: https://kr.godaddy.com/
