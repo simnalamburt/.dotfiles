@@ -12,4 +12,7 @@
 # Want to use GCMW?
 # [credential]
 #   helper = manager
-#   modalprompt = true
+
+# OS X credential cache
+# [credential]
+#   helper = osxkeychain
