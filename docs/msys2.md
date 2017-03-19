@@ -7,7 +7,7 @@
 - python2
 
 #### `.msi`
-- FF, Chrome
+- FF, Chrome, 구글 행아웃 플러그인
 - gVim, MS Office, Adobe CC, VS 2015
 - Android Studio, Tizen Studio
 - [Rust][] [Node.js][] [Go][]
