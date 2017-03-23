@@ -18,6 +18,7 @@ kuma.hyeon.me
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 - [yarn]
 - [docker2aci]
+- [python-numpy-mkl]
 
 ### etc
 - [exa] using `cargo`
@@ -26,6 +27,7 @@ kuma.hyeon.me
 
 [rkt]: https://coreos.com/rkt/
 [docker2aci]: https://github.com/appc/docker2aci
+[python-numpy-mkl]: https://aur.archlinux.org/packages/python-numpy-mkl/
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 [Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
 [yarn]: https://yarnpkg.com/
