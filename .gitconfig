@@ -4,7 +4,7 @@
 	email = simnalamburt@gmail.com
 [core]
 	editor = vim
-	pager = less -+XF -Qc
+	pager = less -+XF -SQc
 	excludesfile = ~/.gitexclude
 	fscache = yes
 	autocrlf = no
