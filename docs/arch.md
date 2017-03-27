@@ -4,7 +4,7 @@ kuma.hyeon.me
 - base grub sudo openssh *(리눅스 기본)*
 - base-devel binutils dnsutils
 - vim mosh git tmux fish wget upx zip unzip ripgrep rsync *(필수 툴)*
-- htop *(서버 관리도구)*
+- htop bmon *(서버 관리도구)*
 - clang rust cargo ruby python python2 python-pip nodejs stack elixir julia *(언어)*
 - nginx certbot *(서비스)*
 - keybase weechat
