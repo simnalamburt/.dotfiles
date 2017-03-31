@@ -111,13 +111,6 @@ if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
-# Golang
-if hash go 2>/dev/null; then
-  export GOPATH=~/.go
-  mkdir -p $GOPATH
-  export PATH="$PATH:$GOPATH/bin"
-fi
-
 # cargo install
 if [ -d ~/.cargo/bin ]; then
   export PATH="$PATH:$HOME/.cargo/bin"

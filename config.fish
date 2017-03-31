@@ -43,13 +43,6 @@ if begin; type -q ruby; and type -q gem; end
   __path "$GEM_HOME/bin"
 end
 
-# Golang
-if type -q go
-  set -x GOPATH ~/.go
-  mkdir -p "$GOPATH/bin"
-  __path "$GOPATH/bin"
-end
-
 # cargo install
 if [ -d ~/.cargo/bin ]
   __path "$HOME/.cargo/bin"
