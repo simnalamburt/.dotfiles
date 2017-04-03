@@ -119,3 +119,11 @@ fi
 if hash yarn 2>/dev/null; then
   export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 fi
+
+
+#
+# Load local configs
+#
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
