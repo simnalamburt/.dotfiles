@@ -55,13 +55,6 @@ end
 # chips <https://github.com/xtendo-org/chips>
 if [ -e ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
 
-# pyenv
-if [ -d ~/.pyenv ]
-  __path "$HOME/.pyenv/bin" --force
-  . (pyenv init -|psub)
-  . (pyenv virtualenv-init -|psub)
-end
-
 # exa
 if type -q exa
   alias l="exa -alh --group-directories-first"
