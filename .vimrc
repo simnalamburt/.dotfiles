@@ -207,6 +207,7 @@ EOF
   Plug 'elixir-lang/vim-elixir'
   Plug 'idris-hackers/idris-vim'
   Plug 'Matt-Deacalion/vim-systemd-syntax'
+  Plug 'fatih/vim-go'
   if v:version >= 701
     Plug 'sheerun/vim-polyglot'
   endif
