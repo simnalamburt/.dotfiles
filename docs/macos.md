@@ -15,6 +15,7 @@ macOS
 - p7zip htop gtar nmap upx
 - youtube-dl libav
 - [keybase] gpg
+- cmake
 
 #### [`brew cask`]
 - [karabiner-elements]
