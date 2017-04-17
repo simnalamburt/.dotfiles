@@ -7,7 +7,7 @@ kuma.hyeon.me
 - htop bmon *(서버 관리도구)*
 - clang rust cargo ruby python python2 python-pip nodejs stack elixir julia *(언어)*
 - gdb lldb
-- nginx certbot *(서비스)*
+- nginx certbot certbot-nginx *(서비스)*
 - keybase weechat
 - imagemagick youtube-dl shellcheck
 - [rkt]
