@@ -259,7 +259,18 @@ Ctrl + v  | 비주얼 블록 모드로 들어가기
 4.  Insert
 5.  `^[^[`
 
+<br>
+
+Tips
 --------
+### Git
+```bash
+# Commit with another name
+git -c "user.name=Your Name" -c "user.email=Your email" commit
+
+# Bundle all git repository as a single file
+git bundle create FILENAME --all
+```
 
 ### List all manually installed packages
 
@@ -290,11 +301,11 @@ sudo restart systemd-logind
 ### Customize message of the day
 Go `/etc/update-motd.d/`
 
-### [Internet configuration](http://neoguru.tistory.com/56)
+### Internet configuration
+https://neoguru.tistory.com/56
 
 ### Mibbit
-
-https://widget.mibbit.com/?server=irc.uriirc.org:+16667&channel=%23hyeon
+https://widget.mibbit.com/?server=irc.uriirc.org:+16664&channel=%23channel_name
 
 ### 메일서버 세팅하기
 1.  MX 레코드 설정
