@@ -21,6 +21,7 @@ macOS
 - [karabiner-elements]
 - xquartz
 - android-studio
+- [dash]
 
 ### etc
 - [exa] using `cargo`
@@ -57,6 +58,7 @@ macOS
 [brew-rmtree]: https://github.com/beeftornado/homebrew-rmtree
 [keybase]: https://keybase.io/
 [karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
+[dask]: https://kapeli.com/dash
 [exa]: https://the.exa.website/
 [@noraesae/pen]: https://github.com/noraesae/pen
 [pipenv]: https://github.com/kennethreitz/pipenv
