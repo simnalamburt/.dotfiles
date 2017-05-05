@@ -26,8 +26,12 @@ alias l='ls -lah'
 alias mv='mv -i'
 alias cp='cp -i'
 
-setopt auto_cd
+setopt auto_cd histignorealldups sharehistory
 zstyle ':completion:*' menu select
+
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
 
 
 #
@@ -72,9 +76,6 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # fzy.zsh
 #
 if hash fzy 2>/dev/null; then
-  [ -z "$HISTFILE" ] && HISTFILE=$HOME/.zsh_history
-  HISTSIZE=10000
-  SAVEHIST=10000
   function fzy-history-widget() {
     echo
     setopt localoptions pipefail
@@ -92,12 +93,7 @@ fi
 #
 # zshrc
 #
-if [ -f ~/.fzf.zsh ]; then
-  [ -z "$HISTFILE" ] && HISTFILE=$HOME/.zsh_history
-  HISTSIZE=10000
-  SAVEHIST=10000
-  source ~/.fzf.zsh
-fi
+if [ -f ~/.fzf.zsh ]; then source ~/.fzf.zsh; fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
 if [ -d ~/.local/bin ]; then; export PATH="$HOME/.local/bin:$PATH"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
