@@ -35,7 +35,6 @@ ln -sf .dotfiles/.vimrc
 ln -sf .dotfiles/.gitconfig
 ln -sf .dotfiles/.gitexclude
 ln -sf .dotfiles/.tmux.conf
-ln -sf .dotfiles/.gemrc
 
 # Optional dotfiles
 cp .dotfiles/.gitconfig.local .
