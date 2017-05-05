@@ -63,3 +63,11 @@ end
 
 
 functions --erase __path
+
+
+#
+# Load local configs
+#
+if [ -f ~/.config/fish/config.fish.local ]
+  source ~/.config/fish/config.fish.local
+end

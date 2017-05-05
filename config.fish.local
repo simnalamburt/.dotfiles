@@ -1,0 +1,4 @@
+# vim: ft=fish
+
+# Note: Bash on Windows does not currently apply umask properly.
+if [ (umask) = "0000" ]; umask 022; end
