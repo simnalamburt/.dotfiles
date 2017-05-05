@@ -53,7 +53,7 @@ if type -q yarn
 end
 
 # chips <https://github.com/xtendo-org/chips>
-if [ -e ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
+if [ -f ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
 
 # exa
 if type -q exa
