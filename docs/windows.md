@@ -14,9 +14,10 @@ Windows
 #### `apt`
 - mosh fish git htop
 - zsh (with zplug)
+- libsqlite3-dev
 
 #### `apt` PPA
-- [ruby2.4 ruby2.4-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
+- [ruby2.4 ruby2.4-dev](https://www.brightbox.com/docs/ruby/ubuntu/) ([bundler])
 - [nodejs](https://nodejs.org/en/download/package-manager/)
 - [yarn](https://yarnpkg.com/en/docs/install#linux-tab)
 
@@ -130,6 +131,7 @@ Setup [GCMW] for msys2
 - [git-credential-manager for Windows を入れて認証を省略](http://qiita.com/ymdymd/items/9c90e060de1c4393e6fa#git-credential-manager-for-windows-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E8%AA%8D%E8%A8%BC%E3%82%92%E7%9C%81%E7%95%A5)
 
 [wsltty]: https://github.com/mintty/wsltty
+[bundler]: https://bundler.io/
 [msys2]: https://msys2.github.io
 [stack]: https://haskell-lang.org/get-started/linux
 [ripgrep]: https://github.com/BurntSushi/ripgrep
