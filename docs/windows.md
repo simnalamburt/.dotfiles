@@ -91,6 +91,13 @@ Setup Windows Subsystem for Linux
     unsetopt BG_NICE
     ```
 
+10. If you're using zsh and mosh shell completion doesn't work, add the line
+    below to your zsh profile.
+
+    ```zsh
+    compdef mosh=ssh
+    ```
+
 How to install [msys2]
 --------
 1.  Install **[msys2]**
