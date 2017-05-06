@@ -16,6 +16,7 @@ Windows
 - zsh (with zplug)
 
 #### `apt` PPA
+- [ruby2.4 ruby2.4-dev](https://www.brightbox.com/docs/ruby/ubuntu/)
 - [nodejs](https://nodejs.org/en/download/package-manager/)
 - [yarn](https://yarnpkg.com/en/docs/install#linux-tab)
 
