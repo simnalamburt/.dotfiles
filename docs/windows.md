@@ -17,6 +17,7 @@ Windows
 - libsqlite3-dev
 
 #### `apt` PPA
+- [python3.6 python3.6-venv](https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes)
 - [ruby2.4 ruby2.4-dev](https://www.brightbox.com/docs/ruby/ubuntu/) ([bundler])
 - [nodejs](https://nodejs.org/en/download/package-manager/)
 - [yarn](https://yarnpkg.com/en/docs/install#linux-tab)
