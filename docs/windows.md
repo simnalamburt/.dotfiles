@@ -5,6 +5,7 @@ Windows
 - FF, Chrome, 구글 행아웃 플러그인
 - gVim, MS Office, Adobe CC, VS 2015
 - Android Studio, Tizen Studio
+- MPC-HC
 - [wsltty]
 
 ### B. Windows Subsystem for Linux
