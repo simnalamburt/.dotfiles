@@ -213,6 +213,7 @@ EOF
   endif
 
   " Blink
+  Plug 'farmergreg/vim-lastplace'
   if v:version >= 701
     Plug 'rhysd/clever-f.vim'
     Plug 'easymotion/vim-easymotion'
