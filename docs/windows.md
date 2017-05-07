@@ -33,14 +33,17 @@ Windows
 
 <br>
 
-How to Install
---------
+Setup note
+========
+
+### A. Basic customization
 1.  Remap [Caps Lock &rarr; Control][caps]
 1.  Install [Consolas for Powerline]
 1.  [Disable snap assistant](http://i.imgur.com/0O4BgFW.png)
 
-Setup Windows Subsystem for Linux
---------
+<br>
+
+### B. Setup Windows Subsystem for Linux
 1.  Update your Windows to the latest one.
 
     Ensure that you've downloaded the Windows 10 **Creators** Update to get Ubuntu 16.04 LTS.
@@ -100,10 +103,28 @@ Setup Windows Subsystem for Linux
     compdef mosh=ssh
     ```
 
-How to install [msys2]
---------
+**NOTE**: Do not try to run haskell program (e.g. [chips], [stack], etc) in WSL.
+Since GHC 8.0.1, haskell binaries require 1TB of virtual memory. With most
+modern generalised operating systems, it's completely OK because of [memory
+overcommitment] but Windows Subsystem for Linux does not support this yet. You
+need to build your own GHC binary with a [`--disable-large-address-space`]
+configure option to workaround this problem.
+
+[chips]: https://github.com/xtendo-org/chips
+[stack]: https://www.haskellstack.org
+[memory overcommitment]: https://en.wikipedia.org/wiki/Memory_overcommitment
+[`--disable-large-address-space`]: https://ghc.haskell.org/trac/ghc/ticket/10791
+
+###### References
+- [Microsoft/BashOnWindows#1671](https://github.com/Microsoft/BashOnWindows/issues/1671)
+
+<br>
+
+### C. How to install [msys2]
 1.  Install **[msys2]**
+
 1.  Install packages
+
 1.  Edit `/msys2.ini`, `/mingw32.ini` and `/mingw64.ini`
 
     ```ini
@@ -114,12 +135,16 @@ How to install [msys2]
     ```
 
 1.  Clone [dotfiles](../README.md)
+
 1.  Execute `zplug install`
 
-Setup [GCMW] for msys2
---------
+<br>
+
+### D. Setup [GCMW] for msys2
 1.  Download [latest GCMW]. Please download `gcmw-VERSION.zip` and unzip it.
+
 2.  Copy all EXEs and DLLs into the `/usr/lib/git-core/` directory.
+
 3.  Update the git configs.
 
     ```bash
