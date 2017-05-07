@@ -33,6 +33,9 @@ Windows
 - mingw-w64-x86_64-gcc base-devel
 - python2
 
+### D. etc
+- yarn: tget @noraesae/pen
+
 <br>
 
 Setup note
