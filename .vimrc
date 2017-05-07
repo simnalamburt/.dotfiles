@@ -12,7 +12,7 @@ set switchbuf+=usetab,split
 set startofline
 set splitbelow
 set nobackup
-if !has('nvim')
+if !has('nvim') && &compatible
   set nocompatible
 endif
 set nofoldenable
@@ -24,7 +24,6 @@ set nowrap
 if has("persistent_undo")
   " mkdir -p ~/.vim/undodir
   let vimdir = '$HOME/.vim'
-  let &runtimepath.=','.vimdir
   let vimundodir = expand(vimdir . '/undodir')
   call system('mkdir ' . vimdir)
   call system('mkdir ' . vimundodir)
