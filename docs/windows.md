@@ -34,7 +34,7 @@ Windows
 - python2
 
 ### D. etc
-- yarn: tget @noraesae/pen
+- yarn: t-get @noraesae/pen
 
 <br>
 

@@ -21,7 +21,7 @@ kuma.hyeon.me
 
 ### etc
 - [exa] using `cargo`
-- [tget] [@noraesae/pen] using `yarn`
+- [t-get] [@noraesae/pen] using `yarn`
 - [pipenv] using `pip`
 
 [rkt]: https://coreos.com/rkt/
@@ -30,7 +30,7 @@ kuma.hyeon.me
 [Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
 [yarn]: https://yarnpkg.com/
 [exa]: https://github.com/ogham/exa
-[tget]: https://github.com/jeffjose/tget
+[t-get]: https://github.com/jeffjose/tget
 [@noraesae/pen]: https://github.com/noraesae/pen
 [pipenv]: https://github.com/kennethreitz/pipenv
 
