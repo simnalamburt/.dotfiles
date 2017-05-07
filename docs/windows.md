@@ -12,7 +12,7 @@ Windows
 - byobu
 
 #### `apt`
-- mosh fish git htop
+- mosh git htop
 - zsh (with zplug)
 - libsqlite3-dev
 
