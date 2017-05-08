@@ -11,6 +11,7 @@ set scrolloff=3
 set switchbuf+=usetab,split
 set startofline
 set splitbelow
+set lazyredraw
 set nobackup
 if !has('nvim') && &compatible
   set nocompatible
