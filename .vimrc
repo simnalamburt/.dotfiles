@@ -163,9 +163,6 @@ try
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-obsession'
-  if v:version >= 703
-    Plug 'mhinz/vim-startify'
-  endif
   Plug 'godlygeek/tabular'
   Plug 'vim-utils/vim-interruptless'
   Plug 'junegunn/gv.vim'
@@ -265,7 +262,7 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:indent_guides_auto_colors = 0
   let g:indent_guides_start_level = 2
   let g:indent_guides_enable_on_vim_startup = 1
-  let g:indent_guides_exclude_filetypes = ['help', 'startify']
+  let g:indent_guides_exclude_filetypes = ['help']
   let g:indent_guides_default_mapping = 0
 
   " vim-better-whitespace
