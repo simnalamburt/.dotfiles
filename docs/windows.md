@@ -57,7 +57,7 @@ Setup note
 
 3.  Install [wsltty].
 
-4.  Place your `.minttyrc` to `%APPDATA%\mintty\config`.
+4.  Place or symlink your `.minttyrc` to `%APPDATA%\mintty\config`.
 
 5.  Install packages.
 
