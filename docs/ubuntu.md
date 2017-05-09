@@ -1,7 +1,7 @@
 doge.hyeon.me
 ========
 ### `apt`
-- mosh fish git htop silversearcher-ag
+- mosh fish git htop
 - python3.4-venv *(스누족보)*
 - postfix
 - debian-goodies ppa-purge
@@ -14,3 +14,6 @@ doge.hyeon.me
 - weechat-curses weechat-plugins - [weechat.org](https://weechat.org/download/debian/#instructions)
 - nginx                          - [nginx.org](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 - docker-engine                  - [apt.dockerproject.org](https://docs.docker.com/engine/installation/linux/ubuntu/)
+
+### etc in `/usr/local/bin`
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
