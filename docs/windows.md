@@ -1,12 +1,12 @@
 Windows
 ========
-
 ### A. Softwares
 - FF, Chrome, 구글 행아웃 플러그인
 - gVim, MS Office, Adobe CC, VS 2015
 - Android Studio, Tizen Studio
 - MPC-HC
 - [wsltty]
+
 
 ### B. Windows Subsystem for Linux
 #### *Removed* `apt`
@@ -23,15 +23,23 @@ Windows
 - [nodejs](https://nodejs.org/en/download/package-manager/)
 - [yarn](https://yarnpkg.com/en/docs/install#linux-tab)
 
-### etc
-- [stack] *(Haskell development)*
+### etc in the user space
+- [`rustup` and Rust toolchains](https://www.rust-lang.org)
+- [tpm](https://github.com/tmux-plugins/tpm)
+- [vim-plug](https://github.com/junegunn/vim-plug)
+- [zplug](https://github.com/zplug/zplug)
+
+### etc in `/usr/local/bin`
+- [rustup]
 - [ripgrep]
+
 
 ### C. [msys2], using `pacman`
 - git svn vim tar zip unzip mosh
 - winpty msys2-launcher
 - mingw-w64-x86_64-gcc base-devel
 - python2
+
 
 ### D. etc
 - yarn: t-get @noraesae/pen
@@ -163,7 +171,6 @@ configure option to workaround this problem.
 [wsltty]: https://github.com/mintty/wsltty
 [bundler]: https://bundler.io/
 [msys2]: https://msys2.github.io
-[stack]: https://haskell-lang.org/get-started/linux
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [caps]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/capslock-to-control.reg
 [Consolas for Powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/consola.ttf
