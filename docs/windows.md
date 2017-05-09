@@ -33,16 +33,13 @@ Windows
 - [rustup]
 - [ripgrep]
 
+### etc
+- yarn: [t-get](https://github.com/jeffjose/tget) [@noraesae/pen](https://github.com/noraesae/pen)
+
 
 ### C. [msys2], using `pacman`
-- git svn vim tar zip unzip mosh
-- winpty msys2-launcher
-- mingw-w64-x86_64-gcc base-devel
-- python2
+- git msys2-launcher
 
-
-### D. etc
-- yarn: t-get @noraesae/pen
 
 <br>
 
