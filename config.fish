@@ -22,8 +22,8 @@ end
 #
 # lscolors
 #
-set -x LSCOLORS "Gxfxcxdxbxegedabagacad"
-set -x LS_COLORS "di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+set -x LSCOLORS "Gxfxcxdxbxegedxbagxcad"
+set -x LS_COLORS "di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=30;46:tw=0;42:ow=30;43"
 set -x TIME_STYLE "+%y%m%d"
 
 
