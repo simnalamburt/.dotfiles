@@ -30,7 +30,6 @@ Windows
 - [zplug](https://github.com/zplug/zplug)
 
 ### etc in `/usr/local/bin`
-- [rustup]
 - [ripgrep]
 
 ### etc
@@ -38,7 +37,7 @@ Windows
 
 
 ### C. [msys2], using `pacman`
-- git msys2-launcher
+- zsh git msys2-launcher
 
 
 <br>
