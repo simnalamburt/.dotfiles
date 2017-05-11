@@ -177,7 +177,9 @@ try
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  Plug 'chr4/sslsecure.vim'
+  if v:version >= 703
+    Plug 'chr4/sslsecure.vim'
+  endif
   function! s:is_editorconfig_supported()
     if has('python3')
       return 1
