@@ -3,7 +3,7 @@
 
 ### 기본적인 세팅
 1.  IE 10 이하일경우, Firefox 설치, 기본브라우저로 FF 사용.
-1.  UI 원하는대로 개인화.
+1.  UI를 메뉴창의 '다운로드', '부가 기능', '설정' 세가지 버튼만 빼고 다 지워버림.
 1.  IE와 FF, Edge의 홈화면/검색공급자를 https://encrypted.google.com 로 변경
 1.  파이어폭스에 uBlock Origin + HTTPS Everywhere + privacy badger 설치.
 1.  파이어폭스 개인정보 설정에 들어가서, "방문 기록 저장 안 함" 설정.
