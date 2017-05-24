@@ -133,14 +133,6 @@ if has('gui_win32')
   set clipboard=unnamed
   set guioptions=
   set guifont=Consolas:h12:cANSI:qDRAFT
-  set renderoptions=type:directx
-
-  " Use msys2 configs if does exist
-  if isdirectory('C:\msys64')
-    let $PATH = 'C:\msys64\usr\bin;'.$PATH
-    let &runtimepath = 'C:\msys64\home\'.$USERNAME.'\.vim,'.&runtimepath
-    let s:plug = 'C:\msys64\home\'.$USERNAME.'\.vim\plugged'
-  endif
 endif
 
 
