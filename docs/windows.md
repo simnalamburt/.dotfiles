@@ -36,10 +36,6 @@ Windows
 - yarn: [t-get](https://github.com/jeffjose/tget) [@noraesae/pen](https://github.com/noraesae/pen)
 
 
-### C. [msys2], using `pacman`
-- zsh git msys2-launcher
-
-
 <br>
 
 Setup note
@@ -129,47 +125,9 @@ configure option to workaround this problem.
 
 <br>
 
-### C. How to install [msys2]
-1.  Install **[msys2]**
-
-1.  Install packages
-
-1.  Edit `/msys2.ini`, `/mingw32.ini` and `/mingw64.ini`
-
-    ```ini
-    MSYS=winsymlinks:nativestrict
-    MSYS2_PATH_TYPE=inherit
-    SHELL=/usr/bin/zsh
-    # ...
-    ```
-
-1.  Clone [dotfiles](../README.md)
-
-1.  Execute `zplug install`
-
-<br>
-
-### D. Setup [GCMW] for msys2
-1.  Download [latest GCMW]. Please download `gcmw-VERSION.zip` and unzip it.
-
-2.  Copy all EXEs and DLLs into the `/usr/lib/git-core/` directory.
-
-3.  Update the git configs.
-
-    ```bash
-    git config --global credential.helper manager
-    ```
-
-###### References
-- https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/146#issuecomment-211944606
-- [git-credential-manager for Windows を入れて認証を省略](http://qiita.com/ymdymd/items/9c90e060de1c4393e6fa#git-credential-manager-for-windows-%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E8%AA%8D%E8%A8%BC%E3%82%92%E7%9C%81%E7%95%A5)
-
 [wsltty]: https://github.com/mintty/wsltty
 [bundler]: https://bundler.io/
-[msys2]: https://msys2.github.io
 [ripgrep]: https://github.com/BurntSushi/ripgrep
 [caps]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/capslock-to-control.reg
 [Consolas for Powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/consola.ttf
-[GCMW]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
-[latest GCMW]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest
 [`umask`]: http://man7.org/linux/man-pages/man2/umask.2.html
