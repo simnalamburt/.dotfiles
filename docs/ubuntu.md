@@ -5,8 +5,7 @@ doge.hyeon.me
 - python3.4-venv *(스누족보)*
 - postfix
 - debian-goodies ppa-purge
-- linux-generic-lts-xenial *(높은버전 커널 쓰려고 깔음)*
-- linux-image-extra-virtual *(도커 돌릴때 AUFS 쓰려고 깔음)*
+- linux-generic-lts-xenial
 
 ### `apt` PPA
 - vim-nox tmux                   - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
