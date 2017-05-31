@@ -5,7 +5,7 @@ doge.hyeon.me
 - python3.4-venv *(스누족보)*
 - postfix
 - debian-goodies ppa-purge
-- linux-generic-lts-xenial
+- linux-signed-generic-lts-xenial
 
 ### `apt` PPA
 - vim-nox tmux                   - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
