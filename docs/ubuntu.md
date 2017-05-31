@@ -1,7 +1,7 @@
 doge.hyeon.me
 ========
 ### `apt`
-- mosh fish git htop
+- mosh zsh git htop
 - python3.4-venv *(스누족보)*
 - postfix
 - debian-goodies ppa-purge
