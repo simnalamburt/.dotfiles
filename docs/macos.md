@@ -11,7 +11,7 @@ macOS
 #### [`brew`]
 - [brew-rmtree]
 - vim git mosh wget xz ripgrep md5sha1sum
-- ruby node yarn python python3 haskell-stack
+- ruby node yarn python python3 haskell-stack gradle
 - p7zip htop gtar nmap upx
 - youtube-dl libav
 - [keybase] gpg
