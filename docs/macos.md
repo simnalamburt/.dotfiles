@@ -25,7 +25,7 @@ macOS
 
 ### etc
 - [exa] using `cargo`
-- [@noraesae/pen] using `yarn`
+- [@noraesae/pen] using `npm`
 - [pipenv] using `pip`
 
 #### App Store
