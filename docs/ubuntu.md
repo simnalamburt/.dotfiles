@@ -12,7 +12,7 @@ doge.hyeon.me
 - gitlab-ce                      - [packages.gitlab.com](https://about.gitlab.com/downloads/#ubuntu1404)
 - weechat-curses weechat-plugins - [weechat.org](https://weechat.org/download/debian/#instructions)
 - nginx                          - [nginx.org](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
-- docker-engine                  - [apt.dockerproject.org](https://docs.docker.com/engine/installation/linux/ubuntu/)
+- docker-ce                      - [download.docker.com](https://docs.docker.com/engine/installation/linux/ubuntu/)
 
 ### etc in `/usr/local/bin`
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
