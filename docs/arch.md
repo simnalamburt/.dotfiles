@@ -17,13 +17,11 @@ kuma.hyeon.me
 - [nginx-mainline-mod-brotli](https://aur.archlinux.org/packages/nginx-mainline-mod-brotli/)
 - ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
-- [docker2aci]
 
 ### etc
 - [exa] using `cargo`
 - [pipenv] using `pip`
 
-[docker2aci]: https://github.com/appc/docker2aci
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 [Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
 [exa]: https://github.com/ogham/exa
