@@ -10,7 +10,6 @@ kuma.hyeon.me
 - nginx-mainline certbot certbot-nginx *(서비스)*
 - keybase weechat
 - imagemagick youtube-dl shellcheck
-- [rkt]
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
@@ -23,7 +22,6 @@ kuma.hyeon.me
 - [exa] using `cargo`
 - [pipenv] using `pip`
 
-[rkt]: https://coreos.com/rkt/
 [docker2aci]: https://github.com/appc/docker2aci
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 [Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
