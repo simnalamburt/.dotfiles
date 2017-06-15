@@ -3,6 +3,7 @@ doge.hyeon.me
 ### `apt`
 - mosh zsh git htop
 - python3.4-venv *(스누족보)*
+- openjdk-8-version
 - postfix
 - debian-goodies ppa-purge
 - linux-signed-generic-lts-xenial
