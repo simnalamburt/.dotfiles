@@ -1,7 +1,7 @@
 doge.hyeon.me
 ========
 ### `apt`
-- mosh zsh git htop
+- mosh zsh git htop unzip
 - python3.4-venv *(스누족보)*
 - openjdk-8-version
 - postfix
