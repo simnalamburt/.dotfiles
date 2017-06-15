@@ -39,7 +39,6 @@ ln -sf .dotfiles/.tmux.conf
 # Optional dotfiles
 cp .dotfiles/.gitconfig.local .
 ln -sf .dotfiles/.zshrc
-mkdir -p .gradle && ln -s ../.dotfiles/gradle.properties .gradle
 ```
 <br>
 
