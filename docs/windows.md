@@ -10,7 +10,7 @@ Windows
 
 ### B. Windows Subsystem for Linux
 #### *Removed* `apt`
-- byobu
+- byobu snapd
 
 #### `apt`
 - mosh git htop
