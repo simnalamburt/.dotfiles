@@ -3,8 +3,9 @@ doge.hyeon.me
 ### `apt`
 - mosh zsh git htop unzip
 - postfix
-- ppa-purge
 - linux-signed-generic-lts-xenial
+
+- postgresql (지워야함)
 
 ### `apt` PPA
 - vim-nox tmux                   - [ppa:pi-rho/dev](https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
