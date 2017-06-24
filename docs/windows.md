@@ -13,7 +13,7 @@ Windows
 - byobu snapd
 
 #### `apt`
-- mosh git htop
+- mosh git htop traceroute
 - zsh (with zplug)
 - libsqlite3-dev
 
