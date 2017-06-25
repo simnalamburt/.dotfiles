@@ -5,17 +5,16 @@ kuma.hyeon.me
 - base-devel binutils dnsutils
 - vim mosh git tmux fish wget upx zip unzip ripgrep rsync *(필수 툴)*
 - htop bmon *(서버 관리도구)*
-- clang rust cargo ruby python python2 python-pip nodejs stack elixir julia *(언어)*
+- clang rust cargo ruby python python2 python-pip nodejs elixir julia *(언어)*
 - gdb lldb
 - nginx-mainline certbot certbot-nginx *(서비스)*
 - keybase weechat
-- imagemagick youtube-dl shellcheck
+- imagemagick youtube-dl
 - docker
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - [nginx-mainline-mod-brotli](https://aur.archlinux.org/packages/nginx-mainline-mod-brotli/)
-- ncurses5-compat-libs (`gpg --recv-keys F7E48EDB`) *([Required by stack])*
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 
 ### etc
@@ -23,7 +22,6 @@ kuma.hyeon.me
 - [pipenv] using `pip`
 
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
-[Required by stack]: https://github.com/commercialhaskell/stack/issues/1012
 [exa]: https://github.com/ogham/exa
 [t-get]: https://github.com/jeffjose/tget
 [@noraesae/pen]: https://github.com/noraesae/pen
