@@ -31,10 +31,6 @@ Windows
 ### etc in `/usr/local/bin`
 - [ripgrep]
 
-### etc
-- npm: [t-get](https://github.com/jeffjose/tget) [@noraesae/pen](https://github.com/noraesae/pen)
-
-
 <br>
 
 Setup note
