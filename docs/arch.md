@@ -5,7 +5,7 @@ kuma.hyeon.me
 - base-devel binutils dnsutils
 - vim mosh git tmux fish wget upx zip unzip ripgrep rsync *(필수 툴)*
 - htop bmon *(서버 관리도구)*
-- clang rust cargo ruby python python2 python-pip nodejs elixir julia *(언어)*
+- clang rust cargo ruby python python2 python-pip nodejs yarn elixir julia *(언어)*
 - gdb lldb
 - nginx-mainline certbot certbot-nginx *(서비스)*
 - keybase weechat
