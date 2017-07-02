@@ -144,11 +144,6 @@ try
 
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  if !has('win32') && !has('win64') && !has('win32unix')
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-  endif
-  Plug 'junegunn/goyo.vim'
-  Plug 'junegunn/limelight.vim'
   Plug 'simnalamburt/vim-mundo'
   Plug 'tpope/vim-git'
   Plug 'tpope/vim-fugitive'
@@ -162,16 +157,9 @@ try
     Plug 'justinmk/vim-dirvish'
   endif
 
-  " Haskell
-  Plug 'eagletmt/neco-ghc'
-  Plug 'neovimhaskell/haskell-vim'
-
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  if v:version >= 703
-    Plug 'chr4/sslsecure.vim'
-  endif
   function! s:is_editorconfig_supported()
     if has('python3')
       return 1
@@ -190,16 +178,9 @@ EOF
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
-  Plug 'vim-scripts/applescript.vim'
-  Plug 'vim-scripts/rfc-syntax', { 'for': 'rfc' }
-  Plug 'simnalamburt/k-.vim'
-  Plug 'wlangstroth/vim-racket'
   Plug 'tfnico/vim-gradle'
-  Plug 'wavded/vim-stylus'
   Plug 'elixir-lang/vim-elixir'
-  Plug 'idris-hackers/idris-vim'
   Plug 'Matt-Deacalion/vim-systemd-syntax'
-  Plug 'fatih/vim-go'
   if v:version >= 701
     Plug 'sheerun/vim-polyglot'
   endif
@@ -227,29 +208,6 @@ endtry
 if exists('s:has_vimplug') && s:has_vimplug
   " vim-airline
   let g:airline_powerline_fonts = 1
-
-  " goyo.vim
-  function! s:goyo_enter()
-    silent !tmux set status off
-    set noshowmode
-    set noshowcmd
-    set scrolloff=999
-    Limelight
-  endfunction
-  autocmd! User GoyoEnter nested call s:goyo_enter()
-
-  function! s:goyo_leave()
-    silent !tmux set status on
-    set showmode
-    set showcmd
-    set scrolloff=3
-    Limelight!
-    call s:beauty()
-  endfunction
-  autocmd! User GoyoLeave nested call s:goyo_leave()
-
-  " limelight.vim
-  let g:limelight_conceal_ctermfg = 240
 
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
@@ -355,8 +313,6 @@ function! s:bg(item, color)
 endfunction
 
 function! s:beauty()
-  syntax enable
-
   call s:rs('CursorLine')
   call s:bg('CursorLine',   'NONE')
   call s:bg('CursorLineNr', s:back_color)
@@ -413,6 +369,7 @@ function! s:beauty()
   " Extra whitespaces
   call s:bg('ExtraWhitespace', 160)
 endfunction
+call s:beauty()
 
 
 "
@@ -421,10 +378,6 @@ endfunction
 augroup vimrc
   autocmd!
 
-  " Indentation setting for Golang
-  autocmd BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
   " Treat .eslintrc .babelrc as json
   autocmd BufRead,BufNewFile .{eslintrc,babelrc} setf json
-
-  autocmd VimEnter,ColorScheme * call s:beauty()
 augroup END
