@@ -11,7 +11,7 @@ macOS
 #### [`brew`]
 - [brew-rmtree]
 - vim git mosh wget xz ripgrep md5sha1sum
-- ruby node python python3 haskell-stack
+- ruby node yarn python python3 haskell-stack
 - p7zip htop gtar nmap upx
 - youtube-dl libav
 - [keybase] gpg
@@ -25,7 +25,6 @@ macOS
 
 ### etc
 - [exa] using `cargo`
-- [@noraesae/pen] using `npm`
 - [pipenv] using `pip`
 
 #### App Store
