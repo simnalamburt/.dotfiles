@@ -312,64 +312,61 @@ function! s:bg(item, color)
   execute printf("highlight %s ctermbg=%s guibg=%s", a:item, a:color, get(s:rgb_map, a:color))
 endfunction
 
-function! s:beauty()
-  call s:rs('CursorLine')
-  call s:bg('CursorLine',   'NONE')
-  call s:bg('CursorLineNr', s:back_color)
-  call s:bg('LineNr',       s:back_color)
-  call s:bg('ColorColumn',  s:back_color)
-  call s:fg('VertSplit',    s:back_color)
-  call s:bg('VertSplit',    s:back_color)
+call s:rs('CursorLine')
+call s:bg('CursorLine',   'NONE')
+call s:bg('CursorLineNr', s:back_color)
+call s:bg('LineNr',       s:back_color)
+call s:bg('ColorColumn',  s:back_color)
+call s:fg('VertSplit',    s:back_color)
+call s:bg('VertSplit',    s:back_color)
 
-  " Status line, Tab line
-  call s:fg('StatusLine',   s:back_color)
-  call s:bg('StatusLine',   'darkgray')
-  call s:fg('WildMenu',     'white')
-  call s:bg('WildMenu',     s:back_color)
-  call s:rs('TabLine')
-  call s:fg('TabLine',      'darkgray')
-  call s:bg('TabLine',      s:back_color)
-  call s:rs('TabLineSel')
-  call s:fg('TabLineSel',   'white')
-  call s:bg('TabLineSel',   s:back_color)
-  call s:fg('TabLineFill',  s:back_color)
-  call s:bg('TabLineFill',  s:back_color)
+" Status line, Tab line
+call s:fg('StatusLine',   s:back_color)
+call s:bg('StatusLine',   'darkgray')
+call s:fg('WildMenu',     'white')
+call s:bg('WildMenu',     s:back_color)
+call s:rs('TabLine')
+call s:fg('TabLine',      'darkgray')
+call s:bg('TabLine',      s:back_color)
+call s:rs('TabLineSel')
+call s:fg('TabLineSel',   'white')
+call s:bg('TabLineSel',   s:back_color)
+call s:fg('TabLineFill',  s:back_color)
+call s:bg('TabLineFill',  s:back_color)
 
-  " Beauty vimdiff colorscheme
-  call s:bg('DiffChange',   'NONE')
-  call s:bg('DiffText',     22)
-  call s:bg('DiffAdd',      22)
-  call s:fg('DiffDelete',   235)
-  call s:bg('DiffDelete',   'NONE')
+" Beauty vimdiff colorscheme
+call s:bg('DiffChange',   'NONE')
+call s:bg('DiffText',     22)
+call s:bg('DiffAdd',      22)
+call s:fg('DiffDelete',   235)
+call s:bg('DiffDelete',   'NONE')
 
-  " Listchars for whitespaces
-  call s:fg('NonText',      'darkblue')
-  call s:fg('SpecialKey',   'darkblue')
+" Listchars for whitespaces
+call s:fg('NonText',      'darkblue')
+call s:fg('SpecialKey',   'darkblue')
 
-  " Pair matching
-  call s:fg('MatchParen',   226)
-  call s:bg('MatchParen',   16)
+" Pair matching
+call s:fg('MatchParen',   226)
+call s:bg('MatchParen',   16)
 
-  " Indentation
-  if &softtabstop < 4 || !&expandtab
-    call s:bg('IndentGuidesOdd', 'NONE')
-  else
-    let g:indent_guides_guide_size = 1
-    call s:bg('IndentGuidesOdd', s:back_color)
-  endif
-  call s:bg('IndentGuidesEven', s:back_color)
+" Indentation
+if &softtabstop < 4 || !&expandtab
+  call s:bg('IndentGuidesOdd', 'NONE')
+else
+  let g:indent_guides_guide_size = 1
+  call s:bg('IndentGuidesOdd', s:back_color)
+endif
+call s:bg('IndentGuidesEven', s:back_color)
 
-  " Do not decorate tab with '›' when tabstop is small
-  if &tabstop <= 4
-    let &listchars = "tab:\ \ ,extends:\u00BB,precedes:\u00AB"
-  else
-    let &listchars = "tab:\u203A\ ,extends:\u00BB,precedes:\u00AB"
-  endif
+" Do not decorate tab with '›' when tabstop is small
+if &tabstop <= 4
+  let &listchars = "tab:\ \ ,extends:\u00BB,precedes:\u00AB"
+else
+  let &listchars = "tab:\u203A\ ,extends:\u00BB,precedes:\u00AB"
+endif
 
-  " Extra whitespaces
-  call s:bg('ExtraWhitespace', 160)
-endfunction
-call s:beauty()
+" Extra whitespaces
+call s:bg('ExtraWhitespace', 160)
 
 
 "
