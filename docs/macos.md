@@ -1,7 +1,6 @@
 macOS
 ========
 #### Manually Installed
-- [Monaco for powerline]
 - [rustup]
 
 **NOTE**: 아래 프로그램들 전부 Cask로 옮겨야함
