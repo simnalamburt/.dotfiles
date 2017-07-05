@@ -10,9 +10,9 @@ macOS
 - insomeniax obs
 
 #### [`brew`]
-- vim git mosh wget xz ripgrep md5sha1sum b2sum
+- vim git fish mosh wget xz ripgrep md5sha1sum b2sum
 - ruby node yarn python python3 haskell-stack
-- htop gnu-tar nmap upx gpg
+- htop gnu-tar nmap upx gnupg
 - youtube-dl libav
 - [brew-rmtree]
 
@@ -47,13 +47,25 @@ macOS
     - 알림창에서 주식칸 빼기
     - 런치패드에서 안쓰는 기본앱들 전부 폴더 하나에 모음
 4.  Homebrew, Homebrew-Cask 설치 및 패키지들 전부 설치
+5.  소프트웨어 설치 후 설정들
+    - 키베이스에 디바이스 추가 (혹은 로그인)
+    - ed25519 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
+    - 닷파일즈 클론
+    - `/etc/shells`에 fish 추가, 기본 쉘 변경
+    - fish, chips, ssh, vimrc, gitconfig, gitexclude 설정 심링크
+    - chips, vim-plug 설치 후 플러그인 다운로드
+    - [Monaco for powerline] 설치
+    - Karabiner Elements 설정
+    - [ ] iTerm2 설정 임포트
+    - [ ] git 커밋사인 설정
+    - [ ] ssh config 생성
 
 #### 키보드 세팅
 [`Karabiner-Elements`]로 원하는걸 다 할수있었음.
 
 1.  <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키를 음악 재생 키 대신
     <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키로 사용함
-1.  <kbd>Caps Lock</kbd> 키를 Left <kbd>⌘</kbd> 키로 교체
+1.  <kbd>Caps Lock</kbd> 키와 <kbd>Left Ctrl</kbd>을 <kbd>Left ⌘</kbd> 키로 교체
 1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 Left <kbd>⌘</kbd> 키가
     <kbd>Ctrl</kbd>키로 작동하도록 수정.
 
