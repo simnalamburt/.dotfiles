@@ -1,10 +1,5 @@
 # vim: ft=gitconfig noexpandtab sw=8
 
-# Want GPG commit sign?
-# [commit]
-#   gpgsign = true
-#   signingkey = 0F85F46EE242057F
-
 # Cannot use TLS?
 # [url "git://"]
 #   insteadOf = https://

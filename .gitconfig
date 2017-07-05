@@ -2,6 +2,7 @@
 [user]
 	name = Hyeon Kim
 	email = simnalamburt@gmail.com
+	signingkey = 0F85F46EE242057F
 [core]
 	editor = vim
 	pager = less -+XF -SQc
@@ -43,3 +44,5 @@
 	path = ~/.gitconfig.local
 [alias]
 	g = "log --graph --pretty=\"format:%C(auto)%h%d %s%x1b[38;5;022m% GS%x1b[0m\""
+[commit]
+	gpgsign = true
