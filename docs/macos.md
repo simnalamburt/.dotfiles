@@ -9,7 +9,7 @@ macOS
 - google-chrome
 - microsoft-office adobe-photoshop-cc adobe-illustrator-cc
 - google-drive firefox
-- staruml transmission
+- transmission
 - insomeniax obs
 
 #### [`brew`]
@@ -50,19 +50,19 @@ macOS
     - Finder 사이드바, 초기 디렉토리 경로 변경, "모든 파일 확장자 보기"
     - 알림창에서 주식칸 빼기
     - 런치패드에서 안쓰는 기본앱들 전부 폴더 하나에 모음
+    - 입력소스 전환키 편한걸로 변경 (⌘ + Space)
 4.  Homebrew, Homebrew-Cask 설치 및 패키지들 전부 설치
 5.  소프트웨어 설치 후 설정들
-    - 키베이스에 디바이스 추가 (혹은 로그인)
     - ed25519 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
     - 닷파일즈 클론
+    - iTerm2 설정 임포트
     - `/etc/shells`에 fish 추가, 기본 쉘 변경
     - fish, chips, ssh, vimrc, gitconfig, gitexclude 설정 심링크
     - chips, vim-plug 설치 후 플러그인 다운로드
     - [Monaco for powerline] 설치
     - Karabiner Elements 설정
-    - [ ] iTerm2 설정 임포트
-    - [ ] git 커밋사인 설정
-    - [ ] ssh config 생성
+    - 키베이스에 디바이스 추가 (혹은 로그인)
+    - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
 
 #### 키보드 세팅
 [`Karabiner-Elements`][karabiner-elements]로 원하는걸 다 할수있었음.
