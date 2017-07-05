@@ -3,7 +3,7 @@
 # Want GPG commit sign?
 # [commit]
 #   gpgsign = true
-#   signingkey = E242057F
+#   signingkey = 0F85F46EE242057F
 
 # Cannot use TLS?
 # [url "git://"]
