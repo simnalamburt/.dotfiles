@@ -3,7 +3,7 @@ macOS
 #### Manually Installed
 **NOTE**: 아래 프로그램들 전부 Cask로 옮겨야함
 
-- google-chrome iterm2
+- google-chrome
 - microsoft-office adobe-photoshop-cc adobe-illustrator-cc
 - google-drive firefox
 - staruml transmission
@@ -17,6 +17,7 @@ macOS
 - [brew-rmtree]
 
 #### [`brew cask`]
+- iterm2
 - [karabiner-elements] [keybase]
 - xquartz [dash]
 
