@@ -144,6 +144,9 @@ try
 
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  if !has('win32') && !has('win64') && !has('win32unix')
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+  endif
   Plug 'simnalamburt/vim-mundo'
   Plug 'tpope/vim-git'
   Plug 'tpope/vim-fugitive'
