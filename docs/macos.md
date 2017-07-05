@@ -1,35 +1,33 @@
 macOS
 ========
 #### Manually Installed
-- MS Office, Photoshop CC 2015, Illustrator CC 2015
-- Chrome, Firefox, Google Drive, iTerm2
-- [Monaco for powerline], [rust]
-- StarUML, Transmission, MS 원격 데스크톱
-- 한컴오피스 뷰어
-- Xcode
+**NOTE**: 아래 프로그램들 전부 Cask로 옮겨야함
+
+- google-chrome iterm2
+- microsoft-office adobe-photoshop-cc adobe-illustrator-cc
+- google-drive firefox
+- staruml transmission
+- insomeniax obs
 
 #### [`brew`]
-- [brew-rmtree]
-- vim git mosh wget xz ripgrep md5sha1sum
+- vim git mosh wget xz ripgrep md5sha1sum b2sum
 - ruby node yarn python python3 haskell-stack
-- p7zip htop gtar nmap upx
+- htop gnu-tar nmap upx gpg
 - youtube-dl libav
-- [keybase] gpg
-- cmake
+- [brew-rmtree]
 
 #### [`brew cask`]
-- [karabiner-elements]
-- xquartz
-- android-studio
-- [dash]
+- [karabiner-elements] [keybase]
+- xquartz [dash]
 
 ### etc
 - [exa] using `cargo`
 - [pipenv] using `pip`
 
 #### App Store
-- 카톡, 라인
-- InsomniaX, GarageBand, OBS
+- 카카오톡, LINE
+- Xcode, Microsoft Remote Desktop, GarageBand
+- 한컴오피스 뷰어
 
 <br>
 
@@ -37,14 +35,18 @@ macOS
 --------
 #### Setup
 1.  Apple ID 생성. 카드번호가 필요하다. iTunes 혹은 앱스토어를 써서 활성화해야한다.
-1.  OS 최신버전으로 업데이트
-1.  iCloud로 어느어느 항목 공유할지 설정. 데스크톱, 문서, 사진, 이메일은 공유 안하도록 함.
-1.  FileVault로 Full Disk Encryption 수행
-1.  트랙패드/마우스 터치옵션 설정
-1.  손쉬운 사용 -> 트랙패드 옵션 -> 세 손가락으로 드래그하기 활성화
-1.  키 반복속도, 마우스 속도 설정
-1.  Finder 사이드바, 초기 디렉토리 경로 변경, "모든 파일 확장자 보기"
-1.  알림창에서 주식칸 빼기
+2.  OS 최신버전으로 업데이트
+3.  OS 설치 후 설정들
+    - iCloud로 어느어느 항목 공유할지 설정. 데스크톱, 문서, 사진, 이메일은 공유 안하도록 함.
+    - FileVault로 Full Disk Encryption 수행
+    - 트랙패드/마우스 터치옵션 설정
+    - 손쉬운 사용 &rarr; 트랙패드 옵션 &rarr; 세 손가락으로 드래그하기 활성화
+    - 키 반복속도, 마우스 속도 설정
+    - 색상 반전 키를 <kbd>⌘</kbd> + <kbd>Q</kbd> 로 리매핑해서 실수로 프로세스 종료하는것 막음.
+    - Finder 사이드바, 초기 디렉토리 경로 변경, "모든 파일 확장자 보기"
+    - 알림창에서 주식칸 빼기
+    - 런치패드에서 안쓰는 기본앱들 전부 폴더 하나에 모음
+4.  Homebrew, Homebrew-Cask 설치 및 패키지들 전부 설치
 
 #### 키보드 세팅
 [`Karabiner-Elements`]로 원하는걸 다 할수있었음.
