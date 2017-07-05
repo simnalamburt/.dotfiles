@@ -1,6 +1,9 @@
 macOS
 ========
 #### Manually Installed
+- [Monaco for powerline]
+- [rustup]
+
 **NOTE**: 아래 프로그램들 전부 Cask로 옮겨야함
 
 - google-chrome
@@ -62,24 +65,22 @@ macOS
     - [ ] ssh config 생성
 
 #### 키보드 세팅
-[`Karabiner-Elements`]로 원하는걸 다 할수있었음.
+[`Karabiner-Elements`][karabiner-elements]로 원하는걸 다 할수있었음.
 
 1.  <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키를 음악 재생 키 대신
     <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키로 사용함
 1.  <kbd>Caps Lock</kbd> 키와 <kbd>Left Ctrl</kbd>을 <kbd>Left ⌘</kbd> 키로 교체
-1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 Left <kbd>⌘</kbd> 키가
+1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 <kbd>Left ⌘</kbd> 키가
     <kbd>Ctrl</kbd>키로 작동하도록 수정.
 
 [Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
-[rust]: https://www.rust-lang.org/ko-KR/install.html
+[rustup]: https://www.rust-lang.org/ko-KR/install.html
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
 [brew-rmtree]: https://github.com/beeftornado/homebrew-rmtree
 [keybase]: https://keybase.io/
 [karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
-[dask]: https://kapeli.com/dash
+[dash]: https://kapeli.com/dash
 [exa]: https://the.exa.website/
-[@noraesae/pen]: https://github.com/noraesae/pen
 [pipenv]: https://github.com/kennethreitz/pipenv
-[`Karabiner-Elements`]: https://github.com/tekezo/Karabiner-Elements
 [iTerms2]: https://www.iterm2.com/
