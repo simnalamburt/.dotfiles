@@ -163,21 +163,7 @@ try
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  function! s:is_editorconfig_supported()
-    if has('python3')
-      return 1
-    elseif has('python')
-      python <<EOF
-import vim
-import sys
-vim.command('return %d' % int(sys.version_info >= (2, 5)))
-EOF
-    endif
-    return 0
-  endfunction
-  if s:is_editorconfig_supported()
-    Plug 'editorconfig/editorconfig-vim'
-  endif
+  Plug 'sgur/vim-editorconfig'
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
