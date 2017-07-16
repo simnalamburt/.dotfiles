@@ -17,6 +17,7 @@ macOS
 - htop gnu-tar nmap upx gnupg
 - youtube-dl libav
 - [brew-rmtree]
+- neovim
 
 #### [`brew cask`]
 - iterm2
