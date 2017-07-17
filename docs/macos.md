@@ -27,6 +27,7 @@ macOS
 ### etc
 - [exa] using `cargo`
 - [pipenv] using `pip`
+- OpenVPN Connect 2.1
 
 #### App Store
 - 카카오톡, LINE
