@@ -11,6 +11,7 @@ kuma.hyeon.me
 - keybase weechat
 - imagemagick youtube-dl
 - docker
+- zstd brotli
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
