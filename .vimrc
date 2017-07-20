@@ -82,6 +82,9 @@ nnoremap <C-a> ^
 nnoremap <C-e> $
 vnoremap <C-a> ^
 vnoremap <C-e> $
+" Easy pasting
+nnoremap p "0p
+nnoremap P "0P
 " Easy delete key
 vnoremap <backspace> "_d
 " Easy newline insert
