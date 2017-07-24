@@ -82,6 +82,9 @@ nnoremap <C-a> ^
 nnoremap <C-e> $
 vnoremap <C-a> ^
 vnoremap <C-e> $
+" Easy horizontal scrolling
+noremap <esc>l 3zl
+noremap <esc>h 3zh
 " Easy delete key
 vnoremap <backspace> "_d
 " Easy newline insert
