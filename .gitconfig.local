@@ -20,6 +20,6 @@
 
 # Want diff highlight in macOS?
 # [pager]
-#   log  = $(brew --prefix git)/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-#   show = $(brew --prefix git)/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-#   diff = $(brew --prefix git)/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+#   log  = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
+#   show = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
+#   diff = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
