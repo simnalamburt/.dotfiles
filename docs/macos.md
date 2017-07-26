@@ -18,11 +18,13 @@ macOS
 - youtube-dl libav
 - [brew-rmtree]
 - neovim
+- kubectl
 
 #### [`brew cask`]
 - iterm2
 - [karabiner-elements] [keybase]
 - xquartz [dash]
+- docker
 
 ### etc
 - [exa] using `cargo`
