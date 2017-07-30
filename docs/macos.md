@@ -1,16 +1,5 @@
 macOS
 ========
-#### Manually Installed
-- [rustup]
-
-**NOTE**: 아래 프로그램들 전부 Cask로 옮겨야함
-
-- google-chrome
-- microsoft-office adobe-photoshop-cc adobe-illustrator-cc
-- google-drive firefox
-- transmission
-- insomeniax obs
-
 #### [`brew`]
 - vim git fish mosh wget xz ripgrep md5sha1sum b2sum
 - ruby node yarn python python3 haskell-stack
@@ -21,20 +10,14 @@ macOS
 - kubectl
 
 #### [`brew cask`]
-- iterm2
+- google-chrome iterm2
 - [karabiner-elements] [keybase]
-- xquartz [dash]
 - docker
 
 ### etc
-- [exa] using `cargo`
-- [pipenv] using `pip`
 - OpenVPN Connect 2.1
-
-#### App Store
-- 카카오톡, LINE
-- Xcode, Microsoft Remote Desktop, GarageBand
-- 한컴오피스 뷰어
+- microsoft-office adobe-photoshop-cc adobe-illustrator-cc
+- 카카오톡, LINE (App Store)
 
 <br>
 
