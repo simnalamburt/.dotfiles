@@ -10,9 +10,9 @@ macOS
 - kubectl
 
 #### [`brew cask`]
-- google-chrome iterm2
-- [karabiner-elements] [keybase]
-- docker
+- google-chrome iterm2 iina
+- [karabiner-elements] docker
+- [keybase]
 
 ### etc
 - OpenVPN Connect 2.1
