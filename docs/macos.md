@@ -60,7 +60,6 @@ macOS
     <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키로 사용함
 1.  <kbd>Caps Lock</kbd> 키가 <kbd>Left ⌘</kbd>으로 작동하도록 설정
 1.  <kbd>Left ⌘</kbd> 키가 <kbd>Right ⌘</kbd>으로 작동하도록 설정
-1.  <kbd>Right ⌘</kbd> 키가 <kbd>Caps Lock</kbd>으로 작동하도록 설정
 1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 <kbd>Left ⌘</kbd> 키가
     <kbd>Ctrl</kbd>키로 작동하도록 수정.
 
