@@ -37,6 +37,7 @@ macOS
     - 알림창에서 주식칸 빼기
     - 런치패드에서 안쓰는 기본앱들 전부 폴더 하나에 모음
     - 입력소스 전환키 편한걸로 변경 (⌘ + Space)
+    - 개인 VPN 등록시키기
     - (opt) 원할경우 시스템설정 &rarr; 공유 &rarr; 원격 로그인 으로 ssh 서버 켬
 4.  Homebrew, Homebrew-Cask 설치 및 패키지들 전부 설치
 5.  소프트웨어 설치 후 설정들
@@ -48,15 +49,18 @@ macOS
     - chips, vim-plug 설치 후 플러그인 다운로드
     - [Monaco for powerline] 설치
     - Karabiner Elements 설정
-    - 키베이스에 디바이스 추가 (혹은 로그인)
+    - 키베이스에 디바이스 추가
     - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
 
 #### 키보드 세팅
 [`Karabiner-Elements`][karabiner-elements]로 원하는걸 다 할수있었음.
 
-1.  <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키를 음악 재생 키 대신
+1.  (터치바 없는 기종의 경우)
+    <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키를 음악 재생 키 대신
     <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키로 사용함
-1.  <kbd>Caps Lock</kbd> 키와 <kbd>Left Ctrl</kbd>을 <kbd>Left ⌘</kbd> 키로 교체
+1.  <kbd>Caps Lock</kbd> 키가 <kbd>Left ⌘</kbd>으로 작동하도록 설정
+1.  <kbd>Left ⌘</kbd> 키가 <kbd>Right ⌘</kbd>으로 작동하도록 설정
+1.  <kbd>Right ⌘</kbd> 키가 <kbd>Caps Lock</kbd>으로 작동하도록 설정
 1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 <kbd>Left ⌘</kbd> 키가
     <kbd>Ctrl</kbd>키로 작동하도록 수정.
 
