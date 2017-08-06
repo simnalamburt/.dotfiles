@@ -1,42 +1,15 @@
 Windows
 ========
-### A. Softwares
 - FF, Chrome, 구글 행아웃 플러그인
 - gVim, MS Office, Adobe CC, VS 2015
 - Android Studio, Tizen Studio
 - MPC-HC
 - [wsltty]
 
-
-### B. Windows Subsystem for Linux
-#### *Removed* `apt`
-- byobu snapd
-
-#### `apt`
-- mosh git htop traceroute
-- zsh (with zplug)
-- libsqlite3-dev
-
-#### `apt` PPA
-- [python3.6 python3.6-venv](https://launchpad.net/~fkrull/+archive/ubuntu/deadsnakes)
-- [ruby2.4 ruby2.4-dev](https://www.brightbox.com/docs/ruby/ubuntu/) ([bundler])
-- [nodejs](https://nodejs.org/en/download/package-manager/)
-- [yarn](https://yarnpkg.com/en/docs/install#linux-tab)
-
-### etc in the user space
-- [`rustup` and Rust toolchains](https://www.rust-lang.org)
-- [tpm](https://github.com/tmux-plugins/tpm)
-- [vim-plug](https://github.com/junegunn/vim-plug)
-- [zplug](https://github.com/zplug/zplug)
-
-### etc in `/usr/local/bin`
-- [ripgrep]
-
 <br>
 
 Setup note
 ========
-
 ### A. Basic customization
 1.  Remap [Caps Lock &rarr; Control][caps]
 1.  Install [Consolas for Powerline]
@@ -111,16 +84,13 @@ overcommitment] but Windows Subsystem for Linux does not support this yet. You
 need to build your own GHC binary with a [`--disable-large-address-space`]
 configure option to workaround this problem.
 
+###### References
+- [Microsoft/BashOnWindows#1671](https://github.com/Microsoft/BashOnWindows/issues/1671)
+
 [chips]: https://github.com/xtendo-org/chips
 [stack]: https://www.haskellstack.org
 [memory overcommitment]: https://en.wikipedia.org/wiki/Memory_overcommitment
 [`--disable-large-address-space`]: https://ghc.haskell.org/trac/ghc/ticket/10791
-
-###### References
-- [Microsoft/BashOnWindows#1671](https://github.com/Microsoft/BashOnWindows/issues/1671)
-
-<br>
-
 [wsltty]: https://github.com/mintty/wsltty
 [bundler]: https://bundler.io/
 [ripgrep]: https://github.com/BurntSushi/ripgrep
