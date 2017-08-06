@@ -1,5 +1,8 @@
 macOS
 ========
+
+MacBook Air
+--------
 #### [`brew`]
 - vim git fish mosh wget xz ripgrep md5sha1sum b2sum
 - ruby node yarn python python3 haskell-stack
@@ -18,6 +21,19 @@ macOS
 - OpenVPN Connect 2.1
 - microsoft-office adobe-photoshop-cc adobe-illustrator-cc
 - 카카오톡, LINE (App Store)
+
+<br>
+
+MacBook Pro
+--------
+#### [`brew`]
+- vim git fish mosh wget xz ripgrep md5sha1sum b2sum
+- ruby node yarn python python3
+- gnu-tar gnupg
+
+#### [`brew cask`]
+- google-chrome iterm2 [karabiner-elements]
+- docker [keybase]
 
 <br>
 
