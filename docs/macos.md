@@ -13,9 +13,9 @@ MacBook Air
 - kubectl
 
 #### [`brew cask`]
-- google-chrome iterm2 iina
-- [karabiner-elements] docker
-- [keybase]
+- google-chrome iterm2 [karabiner-elements]
+- docker [keybase]
+- iina
 
 ### etc
 - OpenVPN Connect 2.1
@@ -34,6 +34,7 @@ MacBook Pro
 #### [`brew cask`]
 - google-chrome iterm2 [karabiner-elements]
 - docker [keybase]
+- krita
 
 <br>
 
