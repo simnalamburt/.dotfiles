@@ -36,6 +36,10 @@ MacBook Pro
 - docker [keybase]
 - krita
 
+### etc
+- OpenVPN Connect 2.1
+- 카카오톡, LINE (App Store)
+
 <br>
 
 사용 가이드
