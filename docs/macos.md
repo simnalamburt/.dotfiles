@@ -11,7 +11,7 @@ MacBook Air
 - [brew-rmtree]
 - neovim
 - kubectl
-- imagemagick
+- imagemagick webp
 
 #### [`brew cask`]
 - google-chrome iterm2 [karabiner-elements]
