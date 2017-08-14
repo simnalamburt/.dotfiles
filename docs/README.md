@@ -39,6 +39,7 @@ OS   | Arch Linux
 위치 | 춘천 IDC
 하드웨어 | 일반 탑형 데스크톱
 Mainboard | 인텔 DP35DP
+파워 | SuperFlower SF-500R14SE Silver Green FX
 CPU | Intel Core2 Quad Q6600 (quad core, 2.40 GHz)
 RAM | DDR2 2GB×4
 Storage | 128GB, SanDisk SD8SB8U1 (SSD)
@@ -54,6 +55,7 @@ OS   | Ubuntu 14.04 LTS
 위치 | 춘천 IDC
 하드웨어 | 일반 탑형 데스크톱
 Mainboard | ASUS P5KPL-C/1600
+파워 | ?
 CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
 RAM | DDR2 2GB×2
 Storage | 320GB, 삼성 HD321KJ (HDD)
