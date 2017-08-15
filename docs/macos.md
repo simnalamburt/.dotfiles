@@ -97,5 +97,4 @@ MacBook Pro
 [karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
 [dash]: https://kapeli.com/dash
 [exa]: https://the.exa.website/
-[pipenv]: https://github.com/kennethreitz/pipenv
 [iTerms2]: https://www.iterm2.com/

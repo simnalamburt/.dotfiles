@@ -5,7 +5,7 @@ kuma.hyeon.me
 - base-devel binutils dnsutils
 - vim mosh git tmux fish wget upx zip unzip ripgrep rsync *(필수 툴)*
 - htop bmon *(서버 관리도구)*
-- clang rust cargo ruby python python2 python-pip nodejs yarn elixir julia *(언어)*
+- clang rust cargo ruby python python2 nodejs yarn elixir julia *(언어)*
 - gdb lldb
 - nginx nginx-mod-brotli certbot certbot-nginx *(서비스)*
 - keybase weechat
@@ -19,14 +19,12 @@ kuma.hyeon.me
 
 ### etc
 - [exa] using `cargo`
-- [pipenv] using `pip`
 - [t-get], [@noraesae/pen], node-gyp using `yarn`
 
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 [exa]: https://github.com/ogham/exa
 [t-get]: https://github.com/jeffjose/tget
 [@noraesae/pen]: https://github.com/noraesae/pen
-[pipenv]: https://github.com/kennethreitz/pipenv
 
 <br>
 
