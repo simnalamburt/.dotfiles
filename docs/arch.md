@@ -7,7 +7,7 @@ kuma.hyeon.me
 - htop bmon *(서버 관리도구)*
 - clang rust cargo ruby python python2 python-pip nodejs yarn elixir julia *(언어)*
 - gdb lldb
-- nginx-mainline certbot certbot-nginx *(서비스)*
+- nginx nginx-mod-brotli certbot certbot-nginx *(서비스)*
 - keybase weechat
 - imagemagick youtube-dl
 - docker
@@ -15,7 +15,6 @@ kuma.hyeon.me
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
-- [nginx-mainline-mod-brotli](https://aur.archlinux.org/packages/nginx-mainline-mod-brotli/)
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 
 ### etc
