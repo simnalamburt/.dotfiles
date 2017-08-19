@@ -31,6 +31,7 @@ MacBook Pro
 - vim git fish mosh wget xz ripgrep md5sha1sum b2sum
 - ruby node yarn python python3
 - gnu-tar gnupg
+- zstd
 
 #### [`brew cask`]
 - google-chrome iterm2 [karabiner-elements]
