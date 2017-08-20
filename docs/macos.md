@@ -32,6 +32,7 @@ MacBook Pro
 - ruby node yarn python python3
 - gnu-tar gnupg
 - zstd
+- p7zip
 
 #### [`brew cask`]
 - google-chrome iterm2 [karabiner-elements]
