@@ -1,10 +1,33 @@
 Windows
 ========
-- FF, Chrome, 구글 행아웃 플러그인
-- gVim, MS Office, Adobe CC, VS 2015
-- Android Studio, Tizen Studio
-- MPC-HC
+- 7zip
+- Adobe Illustrator CC 2015
+- Adobe Photoshop CC 2015
+- Chrome, Chrome Remote Desktop Host
+- Firefox
+- MS Office, 한컴 오피스 2014
+- Visual Studio 2015
+- VirtualBox
 - [wsltty]
+
+이하는 게임
+
+- Uplay
+- Steam
+- Battle.net
+
+게임들
+
+- AC Syndicate
+- Braid
+- Danganronpa 2
+- Civilization V
+- Civilization VI
+- Starbound
+- StartCraft
+- The Witness
+- THe Wolf Among Us
+- Undertale
 
 <br>
 
