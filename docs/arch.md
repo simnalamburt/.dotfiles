@@ -36,21 +36,30 @@ How to Install
 --------
 부팅미디어에서 할 일
 ```bash
-wifi-menu                             # 인터넷 연결
-ping google.com -c20
+wifi-menu                             # 와이파이 체크
+ping google.com -c20                  # 인터넷 연결
 
-timedatectl set-ntp true              # 시계 업데이트
+timedatectl set-ntp true              # 시간 동기화 켬
 
-cfdisk /dev/sda                       # 디스크 파티셔닝
+gdisk /dev/sda                        # GPT로 만들고싶으면 사용
+
+cfdisk /dev/sda                       # 디스크 파티셔닝 (MBR)
+cgdisk /dev/sda                       # 디스크 파티셔닝 (GPT)
+# BIOS/GPT 조합일경우 BIOS boot partition 만들기
+
 mkfs.ext4 /dev/sda1                   # 파티션 포맷 (ext4)
-mkswap /dev/sda2                      # 파티션 포맷 (swap)
-swapon /dev/sda2                      # 스왑 활성화
 mount /dev/sda1 /mnt                  # 파티션 마운트
+
+mkfs.btrfs /dev/sda1                  # 파티션 포맷 (btrfs)
+mount -o compress=lzo /dev/sda1 /mnt  # 파티션 마운트
+
+mkswap /dev/sda2                      # 파티션 포맷 (swap)
+swapon /dev/sda2                      # 스왑 파티션 마운트
 
 vim /etc/pacman.d/mirrorlist          # 미러 우선순위 변경
 pacstrap /mnt base grub sudo openssh  # Install Archlinux
-genfstab -p /mnt >> /mnt/etc/fstab
-echo '<PC_NAME>' > /mnt/etc/hostname  # 컴터 이름설정
+
+genfstab -U /mnt >> /mnt/etc/fstab    # /etc/fstab 생성
 arch-chroot /mnt /bin/bash            # 가자 디지몬 세상으로
 ```
 
@@ -58,6 +67,7 @@ arch-chroot /mnt /bin/bash            # 가자 디지몬 세상으로
 ```bash
 # Timezone 설정
 ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+hwclock --systohc
 
 # Locale 설정
 cat >> /etc/locale.gen <<END
@@ -67,6 +77,25 @@ END
 locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 export LANG=en_US.UTF-8
+
+# 이름 설정
+echo 'PC_NAME' > /etc/hostname  # 컴터 이름설정
+cat >> /etc/hosts <<END
+127.0.1.1	PC_NAME.localdomain	PC_NAME
+END
+
+# DHCP 이너넷 설정 (그놈 쓸경우 하지마셈)
+cat > /etc/systemd/network/20-dhcp.network <<END
+[Match]
+Name=en*
+
+[Network]
+DHCP=ipv4
+END
+systemctl enable systemd-networkd.service
+# DHCP DNS 설정
+ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+systemctl enable systemd-resolved.service
 
 # Grub 설치, grub 대기시간 줄이기
 grub-install --recheck /dev/sda
@@ -82,20 +111,11 @@ passwd root -dl
 # ssh 설정
 nano /etc/ssh/sshd_config
   # PasswordAuthentication no
+  # KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group14-sha1
 systemctl enable sshd
 
-# DHCP 이너넷 설정 (그놈 쓸경우 하지마셈)
-cat > /etc/systemd/network/20-dhcp.network <<END
-[Match]
-Name=en*
-
-[Network]
-DHCP=ipv4
-END
-systemctl enable systemd-networkd.service
-# DHCP DNS 설정
-ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-systemctl enable systemd-resolved.service
+sudo -u simnalamburt bash -c \
+  "curl -fLo ~/.ssh/authorized_keys --create-dirs https://github.com/simnalamburt.keys"
 
 exit
 umount -R /mnt

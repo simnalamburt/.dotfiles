@@ -36,7 +36,7 @@
 -----|------
 주소 | kuma.hyeon.me
 OS   | Arch Linux
-위치 | 춘천 IDC
+위치 | 집
 하드웨어 | 일반 탑형 데스크톱
 Mainboard | 인텔 DP35DP
 파워 | SuperFlower SF-500R14SE Silver Green FX
@@ -51,11 +51,11 @@ VGA | GeForce GTS 240
 항목 | 내용
 -----|------
 주소 | doge.hyeon.me
-OS   | Ubuntu 14.04 LTS
-위치 | 춘천 IDC
+OS   | Arch Linux
+위치 | 집
 하드웨어 | 일반 탑형 데스크톱
 Mainboard | ASUS P5KPL-C/1600
-파워 | ?
+파워 | ? (80 Plus Bronze)
 CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
 RAM | DDR2 2GB×2
 Storage | 320GB, 삼성 HD321KJ (HDD)
