@@ -42,6 +42,7 @@ MacBook Pro
 ### etc
 - OpenVPN Connect 2.1
 - 카카오톡, LINE (App Store)
+- @noraesae/pen (yarn)
 
 <br>
 
