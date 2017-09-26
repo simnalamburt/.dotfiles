@@ -90,6 +90,18 @@ MacBook Pro
 1.  <kbd>Left ⌘</kbd> 키가 <kbd>Right ⌘</kbd>으로 작동하도록 설정
 1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 <kbd>Left ⌘</kbd> 키가
     <kbd>Ctrl</kbd>키로 작동하도록 수정.
+1.  <kbd>₩</kbd> 대신 <kbd>\`</kbd>가 입력되도록 수정한다. 아래 커맨드를 실행한
+    뒤, 로그오프 후 다시 로그인 하면 반영된다.
+
+    ```bash
+    if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then
+      mkdir -p ~/Library/KeyBindings &&\
+        echo '{"₩" = ("insertText:", "\`");}' >\
+          ~/Library/KeyBindings/DefaultkeyBinding.dict
+    fi
+
+    # Reference: https://gist.github.com/redism/43bc51cab62269fa97a220a7bb5e1103
+    ```
 
 [Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
 [rustup]: https://www.rust-lang.org/ko-KR/install.html
