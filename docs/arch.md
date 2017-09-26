@@ -12,6 +12,7 @@ kuma.hyeon.me
 - imagemagick youtube-dl
 - docker
 - zstd brotli
+- jdk8-openjdk
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
