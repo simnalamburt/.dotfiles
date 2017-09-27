@@ -1,30 +1,6 @@
 macOS
 ========
 
-MacBook Air
---------
-#### [`brew`]
-- vim git fish mosh wget xz ripgrep md5sha1sum b2sum
-- ruby node yarn python python3 haskell-stack
-- htop gnu-tar nmap upx gnupg
-- youtube-dl libav
-- [brew-rmtree]
-- neovim
-- kubectl
-- imagemagick webp
-
-#### [`brew cask`]
-- google-chrome iterm2 [karabiner-elements]
-- docker [keybase]
-- iina
-
-### etc
-- OpenVPN Connect 2.1
-- microsoft-office adobe-photoshop-cc adobe-illustrator-cc
-- 카카오톡, LINE (App Store)
-
-<br>
-
 MacBook Pro
 --------
 #### [`brew`]
@@ -107,7 +83,6 @@ MacBook Pro
 [rustup]: https://www.rust-lang.org/ko-KR/install.html
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
-[brew-rmtree]: https://github.com/beeftornado/homebrew-rmtree
 [keybase]: https://keybase.io/
 [karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
 [dash]: https://kapeli.com/dash
