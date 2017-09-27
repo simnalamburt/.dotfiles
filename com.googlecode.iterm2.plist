@@ -706,6 +706,13 @@
 			<key>Text</key>
 			<string>94659C9F-8B92-45CE-9AD2-A9EF463303C9</string>
 		</dict>
+		<key>0x5c-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Text</key>
+			<string>94659C9F-8B92-45CE-9AD2-A9EF463303C9</string>
+		</dict>
 		<key>0x6c-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -837,9 +844,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1869 -401 606 456 1600 -540 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>10 267 958 451 0 0 1600 877 </string>
+	<string>1622 90 958 451 1600 -540 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>329 387 650 490 0 0 1600 877 </string>
+	<string>1621 -291 820 577 1600 -540 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1922 -331 1130 877 1600 -540 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
@@ -2435,7 +2442,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-26T02:29:26Z</date>
+	<date>2017-09-27T02:29:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
