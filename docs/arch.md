@@ -13,6 +13,7 @@ kuma.hyeon.me
 - docker
 - zstd brotli
 - jdk8-openjdk
+- aria2
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
@@ -20,11 +21,10 @@ kuma.hyeon.me
 
 ### etc
 - [exa] using `cargo`
-- [t-get], [@noraesae/pen], node-gyp using `yarn`
+- [@noraesae/pen], node-gyp using `yarn`
 
 [nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
 [exa]: https://github.com/ogham/exa
-[t-get]: https://github.com/jeffjose/tget
 [@noraesae/pen]: https://github.com/noraesae/pen
 
 <br>
