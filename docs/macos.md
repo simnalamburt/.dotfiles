@@ -11,9 +11,8 @@ MacBook Pro
 - awscli
 
 #### [`brew cask`]
-- google-chrome iterm2 [karabiner-elements]
-- docker [keybase]
-- paintbrush
+- google-chrome iterm2 [karabiner-elements] paintbrush
+- docker
 
 ### etc
 - OpenVPN Connect 2.1
@@ -83,7 +82,6 @@ MacBook Pro
 [rustup]: https://www.rust-lang.org/ko-KR/install.html
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
-[keybase]: https://keybase.io/
 [karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
 [dash]: https://kapeli.com/dash
 [exa]: https://the.exa.website/
