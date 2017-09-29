@@ -11,8 +11,9 @@ MacBook Pro
 - awscli
 
 #### [`brew cask`]
-- google-chrome iterm2 [karabiner-elements] paintbrush
-- docker
+- google-chrome iina painbrush
+- iterm2 [karabiner-elements]
+- docker sqlitebrowser
 
 ### etc
 - OpenVPN Connect 2.1
