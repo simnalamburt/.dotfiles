@@ -13,7 +13,7 @@ MacBook Pro
 #### [`brew cask`]
 - google-chrome iterm2 [karabiner-elements]
 - docker [keybase]
-- krita
+- paintbrush
 
 ### etc
 - OpenVPN Connect 2.1
