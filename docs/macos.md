@@ -9,6 +9,7 @@ MacBook Pro
 - gnu-tar gnupg
 - zstd p7zip redis
 - awscli
+- aria2
 
 #### [`brew cask`]
 - google-chrome iina painbrush
