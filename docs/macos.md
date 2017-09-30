@@ -12,13 +12,15 @@ MacBook Pro
 - aria2
 
 #### [`brew cask`]
-- google-chrome iina painbrush
+- google-chrome iina paintbrush
 - iterm2 [karabiner-elements]
 - docker sqlitebrowser
+- microsoft-office
+- steam
 
 ### etc
 - OpenVPN Connect 2.1
-- 카카오톡, LINE, Magnet (App Store)
+- 카카오톡, LINE, Magnet, 한글 뷰어 (App Store)
 - @noraesae/pen (yarn)
 
 <br>
