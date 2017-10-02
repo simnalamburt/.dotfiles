@@ -36,7 +36,7 @@
 [credential "http://git.upnl.org"]
 	username = simnalamburt
 [filter "lfs"]
-	required = true
+	required = yes
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 
@@ -45,4 +45,6 @@
 [alias]
 	g = "log --graph --pretty=\"format:%C(auto)%h%d %s%x1b[38;5;022m% GS%x1b[0m\""
 [commit]
-	gpgsign = true
+	gpgsign = yes
+[rerere]
+	enabled = yes
