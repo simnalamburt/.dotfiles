@@ -16,7 +16,7 @@ MacBook Pro
 - iterm2 [karabiner-elements]
 - docker sqlitebrowser
 - microsoft-office
-- steam
+- steam battle-net
 
 ### etc
 - OpenVPN Connect 2.1
