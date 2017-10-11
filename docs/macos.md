@@ -4,7 +4,7 @@ macOS
 MacBook Pro
 --------
 #### [`brew`]
-- vim git fish mosh wget xz ripgrep md5sha1sum b2sum
+- vim git fish mosh wget xz ripgrep fd md5sha1sum b2sum
 - ruby node yarn python python3
 - gnu-tar gnupg
 - zstd p7zip redis
