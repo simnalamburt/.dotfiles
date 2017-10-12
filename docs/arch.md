@@ -18,6 +18,7 @@ kuma.hyeon.me
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+- fd-rs
 
 ### etc
 - [exa] using `cargo`
