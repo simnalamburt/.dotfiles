@@ -87,8 +87,6 @@ noremap <esc>l 3zl
 noremap <esc>h 3zh
 " Easy delete key
 vnoremap <backspace> "_d
-" Easy newline insert
-nnoremap <CR> o<Esc>
 " Easy file save
 nnoremap <silent> <C-s>      :update<CR>
 inoremap <silent> <C-s> <ESC>:update<CR>
@@ -127,6 +125,17 @@ nnoremap <a-6> 6gt
 nnoremap <a-7> 7gt
 nnoremap <a-8> 8gt
 nnoremap <a-9> 9gt
+
+" Easy newline insert
+function! CustomEnter()
+  " Exception for quickfix buffer. Reference: https://vi.stackexchange.com/a/3129
+  if &buftype ==# 'quickfix'
+    execute "normal! \<CR>"
+  else
+    normal! o
+  endif
+endfunction
+nnoremap <CR> :call CustomEnter()<CR>
 
 
 "
