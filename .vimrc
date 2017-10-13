@@ -128,11 +128,12 @@ nnoremap <a-9> 9gt
 
 " Easy newline insert
 function! CustomEnter()
-  " Exception for quickfix buffer. Reference: https://vi.stackexchange.com/a/3129
-  if &buftype ==# 'quickfix'
-    execute "normal! \<CR>"
-  else
+  if &modifiable
     normal! o
+  else
+    " Exception for quickfix buffer and other unmodifiable buffers.
+    " See https://vi.stackexchange.com/a/3129
+    execute "normal! \<CR>"
   endif
 endfunction
 nnoremap <CR> :call CustomEnter()<CR>
