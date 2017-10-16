@@ -17,6 +17,7 @@ MacBook Pro
 - docker sqlitebrowser
 - microsoft-office
 - steam battle-net
+- android-file-transfer
 
 ### etc
 - OpenVPN Connect 2.1
