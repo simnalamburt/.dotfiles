@@ -37,6 +37,16 @@ set -x LANG ko_KR.UTF-8
 # Aliases
 if type -q tmux; alias irc='tmux attach -t irc'; end
 
+# Neovim
+if type -q nvim
+  set -x EDITOR nvim
+end
+
+# Terraform
+if type -q terraform
+  set -x TF_PLUGIN_CACHE_DIR "$HOME/.terraform.d/plugin-cache"
+end
+
 # Ruby
 if begin; type -q ruby; and type -q gem; end
   set -x GEM_HOME (ruby -e 'print Gem.user_dir')

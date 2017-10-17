@@ -101,6 +101,16 @@ export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/iss
 # Aliases
 if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
 
+# Neovim
+if hash nvim 2>/dev/null; then
+  export EDITOR=nvim
+fi
+
+# Terraform
+if hash terraform 2>/dev/null; then
+  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+end
+
 # Ruby
 if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
   export GEM_HOME=$(ruby -e 'print Gem.user_dir')
