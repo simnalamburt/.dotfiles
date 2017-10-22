@@ -10,6 +10,7 @@ Windows
 - VirtualBox
 - [wsltty]
 - OpenVPN Connect
+- VLC
 
 이하는 게임
 
