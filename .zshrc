@@ -109,7 +109,7 @@ fi
 # Terraform
 if hash terraform 2>/dev/null; then
   export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
-end
+fi
 
 # Ruby
 if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
