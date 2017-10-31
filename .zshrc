@@ -75,7 +75,7 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 #
 # fzy.zsh
 #
-if hash fzy 2>/dev/null; then
+if (( $+commands[fzy] )); then
   function fzy-history-widget() {
     echo
     setopt localoptions pipefail
@@ -99,30 +99,30 @@ if [ -d ~/.local/bin ]; then; export PATH="$HOME/.local/bin:$PATH"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
 
 # Aliases
-if hash tmux 2>/dev/null; then; alias irc='tmux attach -t irc'; fi
+if (( $+commands[tmux] )); then; alias irc='tmux attach -t irc'; fi
 
 # Neovim
-if hash nvim 2>/dev/null; then
+if (( $+commands[nvim] )); then
   export EDITOR=nvim
 fi
 
 # Terraform
-if hash terraform 2>/dev/null; then
+if (( $+commands[terraform] )); then
   export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 fi
 
 # Ruby
-if hash ruby 2>/dev/null && hash gem 2>/dev/null; then
+if (( $+commands[ruby] )) && (( $+commands[gem] )); then
   export GEM_HOME=$(ruby -e 'print Gem.user_dir')
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
 # cargo install
-if [ -d ~/.cargo/bin ]; then
+if (( $+commands[cargo] )) && [ -d ~/.cargo/bin ]; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
 # yarn global
-if hash yarn 2>/dev/null; then
+if (( $+commands[yarn] )); then
   export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 fi
 
