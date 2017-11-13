@@ -10,6 +10,7 @@ MacBook Pro
 - zstd p7zip redis
 - awscli
 - aria2
+- vault
 
 #### [`brew cask`]
 - google-chrome iina paintbrush
