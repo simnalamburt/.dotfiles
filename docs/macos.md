@@ -8,9 +8,9 @@ MacBook Pro
 - ruby node yarn python python3
 - gnu-tar gnupg
 - zstd p7zip redis
-- awscli
 - aria2
-- vault
+- terraform vault
+- awscli kubectl
 
 #### [`brew cask`]
 - google-chrome iina paintbrush
