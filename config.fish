@@ -71,6 +71,11 @@ if type -q exa
   alias ll="exa -lh --group-directories-first"
 end
 
+# Couchbase tools
+if [ -d /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/ ]
+  __path "/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/"
+end
+
 
 functions --erase __path
 

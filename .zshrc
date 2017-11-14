@@ -126,6 +126,11 @@ if (( $+commands[yarn] )); then
   export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 fi
 
+# Couchbase tools
+if [ -d /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/ ]; then
+  export PATH="$PATH:/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/"
+fi
+
 
 #
 # Load local configs
