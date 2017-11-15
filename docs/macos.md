@@ -19,7 +19,7 @@ MacBook Pro
 - microsoft-office
 - steam battle-net
 - android-file-transfer
-- firefox-beta
+- firefox
 
 ### etc
 - OpenVPN Connect 2.1
