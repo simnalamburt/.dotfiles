@@ -1,16 +1,14 @@
 Windows
 ========
 - 7zip
-- Adobe Illustrator CC 2015
-- Adobe Photoshop CC 2015
-- Chrome, Chrome Remote Desktop Host
-- Firefox
+- Firefox, Chrome
+- Adobe Photoshop CC 2015, Adobe Illustrator CC 2015
 - MS Office, 한컴 오피스 2014
 - Visual Studio 2015
-- VirtualBox
 - [wsltty]
 - OpenVPN Connect
 - VLC
+- KakaoTalk, LINE
 
 이하는 게임
 
