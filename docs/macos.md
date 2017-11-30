@@ -6,6 +6,7 @@ MacBook Pro
 #### [`brew`]
 - vim git fish mosh wget xz ripgrep fd md5sha1sum b2sum mtr
 - ruby node yarn python python3
+- go dep
 - gnu-tar gnupg
 - zstd p7zip redis
 - aria2
