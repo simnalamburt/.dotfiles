@@ -95,8 +95,12 @@ fi
 #
 if [ -f ~/.fzf.zsh ]; then source ~/.fzf.zsh; fi
 if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
-if [ -d ~/.local/bin ]; then; export PATH="$HOME/.local/bin:$PATH"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
+
+# ~/.local/bin
+if [ -d ~/.local/bin ]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
 
 # Aliases
 if (( $+commands[tmux] )); then; alias irc='tmux attach -t irc'; fi
@@ -109,6 +113,12 @@ fi
 # Terraform
 if (( $+commands[terraform] )); then
   export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+fi
+
+# Golang
+if (( $+commands[go] )) && [ -d ~/.go ]; then
+  export GOPATH="$HOME/.go"
+  export PATH="$PATH:$GOPATH/bin"
 fi
 
 # Ruby
@@ -126,8 +136,14 @@ if (( $+commands[yarn] )); then
   export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 fi
 
+# exa
+if (( $+commands[exa] )); then
+  alias l='exa -alh --group-directories-first'
+  alias ll='exa -lh --group-directories-first'
+fi
+
 # Couchbase tools
-if [ -d /Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin/ ]; then
+if [ -d '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/' ]; then
   export PATH="$PATH:/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/"
 fi
 
