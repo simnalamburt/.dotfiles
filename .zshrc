@@ -91,6 +91,19 @@ fi
 
 
 #
+# notify
+#
+if (( $+commands[osascript] )); then
+  notify () {
+    cat <<END | osascript
+      display notification "$*" sound name "Glass" with title "Shell Notification"
+      say "$*"
+END
+  }
+fi
+
+
+#
 # zshrc
 #
 if [ -f ~/.fzf.zsh ]; then source ~/.fzf.zsh; fi

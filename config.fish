@@ -20,13 +20,26 @@ end
 
 if printf '%s\n' '2.2.0' $FISH_VERSION | sort --check=silent --version-sort
   # Current version ≥ 2.2.0
-  function __available -a name -d 'Check if a function or program is available.'
+  function __available -a name
     command -v "$name" ^/dev/null >&2
   end
 else
   # Current version < 2.2.0
-  function __available -a name -d 'Check if a function or program is available.'
+  function __available -a name
     type "$name" ^/dev/null >&2
+  end
+end
+
+
+#
+# notify
+#
+if __available osascript
+  function notify -d 'Create a notification'
+    osascript -e "
+      display notification \"$argv\" sound name \"Glass\" with title \"Shell Notification\"
+      say \"$argv\"
+    "
   end
 end
 
