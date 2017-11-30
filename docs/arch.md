@@ -41,7 +41,8 @@ How to Install
 wifi-menu                             # 와이파이 체크
 ping google.com -c20                  # 인터넷 연결
 
-timedatectl set-ntp true              # 시간 동기화 켬
+timedatectl set-ntp true              # systemd-timesyncd를 사용하여 동기화하도록 설정
+                                      # https://wiki.archlinux.org/index.php/systemd-timesyncd
 
 gdisk /dev/sda                        # GPT로 만들고싶으면 사용
 
