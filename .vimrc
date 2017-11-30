@@ -180,6 +180,7 @@ try
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
+  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'tfnico/vim-gradle'
   Plug 'elixir-lang/vim-elixir'
   Plug 'Matt-Deacalion/vim-systemd-syntax'
@@ -377,6 +378,9 @@ call s:bg('ExtraWhitespace', 160)
 "
 augroup vimrc
   autocmd!
+
+  " Indentation setting for Golang
+  autocmd BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 
   " Treat .eslintrc .babelrc as json
   autocmd BufRead,BufNewFile .{eslintrc,babelrc} setf json
