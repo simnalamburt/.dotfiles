@@ -848,7 +848,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>1622 90 796 473 1600 -540 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1967 -238 1130 825 1600 -540 2560 1440 </string>
+	<string>1913 -56 1341 648 1600 -540 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1922 -331 1130 877 1600 -540 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
@@ -2374,6 +2374,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>520932522.03542399</real>
+	<key>NoSyncTurnOffBracketedPasteOnHostChange</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -2446,7 +2448,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-01T04:08:59Z</date>
+	<date>2017-12-08T04:14:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2477,6 +2479,11 @@
 	<false/>
 	<key>TmuxDashboardLimit</key>
 	<integer>10</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+		<string>Jobs</string>
+	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>URLHandlersByGuid</key>
@@ -2504,7 +2511,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
