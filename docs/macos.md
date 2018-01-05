@@ -14,13 +14,14 @@ MacBook Pro
 - awscli kubectl
 
 #### [`brew cask`]
-- google-chrome iina paintbrush
+- firefox google-chrome iina
 - iterm2 [karabiner-elements]
-- docker sqlitebrowser
-- microsoft-office
+- jetbrains-toolbox
+- docker insomenia wireshark
+- signal
+
 - steam battle-net
-- android-file-transfer
-- firefox
+- microsoft-office android-file-transfer
 
 ### etc
 - OpenVPN Connect 2.1
