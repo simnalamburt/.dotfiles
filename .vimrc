@@ -277,7 +277,7 @@ try
   colorscheme seoul256
 catch /^Vim\%((\a\+)\)\=:E185/
   " Fallback
-  colorscheme elflord
+  silent! colorscheme elflord
 endtry
 let s:back_color          = 234
 
