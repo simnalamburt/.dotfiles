@@ -5,3 +5,4 @@ WSL
 --------
 #### `zypper`
 - mosh htop mtr zsh
+- pinentry
