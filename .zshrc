@@ -13,7 +13,7 @@ if is-at-least 4.3.9 && [ -f ~/.zplug/init.zsh ]; then
   zplug simnalamburt/shellder, as:theme
   zplug load
 else
-  PS1='%n@%m:%~%# '
+  PS1='%n@%m:%~%(!.#.$) '
 fi
 
 
