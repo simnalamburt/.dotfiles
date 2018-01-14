@@ -235,6 +235,9 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:clever_f_across_no_line = 1
   let g:clever_f_smart_case = 1
 
+  " vim-go
+  let g:go_version_warning = 0
+
   " Configs for incsearch-family plugins
   if v:version >= 701
     " incsearch.vim
