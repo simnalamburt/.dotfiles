@@ -14,6 +14,7 @@ kuma.hyeon.me
 - zstd brotli
 - jdk8-openjdk
 - aria2
+- pinentry
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
