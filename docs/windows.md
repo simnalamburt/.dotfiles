@@ -6,7 +6,7 @@ Windows
 - MS Office, 한컴 오피스 2014
 - Visual Studio 2015
 - [wsltty]
-- OpenVPN Connect
+- OpenVPN Connect, OpenVPN
 - VLC
 - KakaoTalk, LINE
 
