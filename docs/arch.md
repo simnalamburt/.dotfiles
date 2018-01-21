@@ -15,6 +15,7 @@ kuma.hyeon.me
 - jdk8-openjdk
 - aria2
 - pinentry
+- mtr
 
 ### AUR
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
