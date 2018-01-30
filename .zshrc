@@ -7,10 +7,26 @@
 autoload -U is-at-least
 if is-at-least 4.3.9 && [ -f ~/.zplug/init.zsh ]; then
   source ~/.zplug/init.zsh
-  zplug zsh-users/zsh-completions
-  zplug zsh-users/zsh-syntax-highlighting
-  zplug simnalamburt/cgitc
-  zplug simnalamburt/shellder, as:theme
+
+  zplug "simnalamburt/cgitc"
+
+  zplug "zsh-users/zsh-completions"
+  zplug "zsh-users/zsh-autosuggestions"
+  zplug "zsh-users/zsh-syntax-highlighting"
+
+  zplug "zsh-users/zsh-history-substring-search"
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
+
+  if is-at-least 5.2.0; then
+    # Zsh 5.2+ 에선 pure 사용
+    zplug "mafredri/zsh-async"
+    zplug "sindresorhus/pure", use:pure.zsh, as:theme
+  else
+    # 옛 버전에선 shellder 사용
+    zplug "simnalamburt/shellder", as:theme
+  fi
+
   zplug load
 else
   PS1='%n@%m:%~%(!.#.$) '

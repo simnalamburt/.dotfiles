@@ -4,7 +4,7 @@ macOS
 MacBook Pro
 --------
 #### [`brew`]
-- vim git fish mosh wget xz ripgrep fd md5sha1sum b2sum mtr
+- vim git zsh mosh wget xz ripgrep fd md5sha1sum b2sum mtr
 - ruby node yarn python python3
 - go dep
 - gnu-tar gnupg
@@ -56,8 +56,8 @@ MacBook Pro
     - ed25519 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
     - 닷파일즈 클론
     - iTerm2 설정 임포트
-    - `/etc/shells`에 fish 추가, 기본 쉘 변경
-    - fish, chips, ssh, vimrc, gitconfig, gitexclude 설정 심링크
+    - `/etc/shells`에 원하는 쉘 추가, 기본 쉘 변경
+    - ssh, vimrc, gitconfig, gitexclude 등의 설정들 심링크
     - chips, vim-plug 설치 후 플러그인 다운로드
     - [Monaco for powerline] 설치
     - Karabiner Elements 설정
