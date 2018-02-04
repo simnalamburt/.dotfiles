@@ -37,29 +37,29 @@
 주소 | kuma.hyeon.me
 OS   | Arch Linux
 위치 | 집
-하드웨어 | 일반 탑형 데스크톱
+케이스 | COX A3 노빌레 풀아크릴윈도우 with 헤일로X4 블랙
 Mainboard | 인텔 DP35DP
 파워 | SuperFlower SF-500R14SE Silver Green FX
 CPU | Intel Core2 Quad Q6600 (quad core, 2.40 GHz)
 RAM | DDR2 2GB×4
 Storage | 128GB, SanDisk SD8SB8U1 (SSD)
-VGA | GeForce GTS 240
+VGA | *N/A*
 
-### B. 도지
-레거시 서버. 종료시킬 예정
+### B. 도지 (retired)
+레거시 서버. 퇴역함.
 
 항목 | 내용
 -----|------
-주소 | doge.hyeon.me
+주소 | *N/A*
 OS   | Arch Linux
 위치 | 집
-하드웨어 | 일반 탑형 데스크톱
+케이스 | ? (일반 탑형 데스크톱)
 Mainboard | ASUS P5KPL-C/1600
-파워 | ? (80 Plus Bronze)
+파워 | topower TOP-500D 80PLUS Bronze
 CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
 RAM | DDR2 2GB×2
 Storage | 320GB, 삼성 HD321KJ (HDD)
-VGA | Radeon HD 3690/3850
+VGA | *N/A*
 
 [GoDaddy]: https://kr.godaddy.com/
 [CloudFlare]: https://www.cloudflare.com/
