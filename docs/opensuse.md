@@ -6,3 +6,4 @@ WSL
 #### `zypper`
 - mosh htop mtr zsh aria2
 - pinentry
+- python3
