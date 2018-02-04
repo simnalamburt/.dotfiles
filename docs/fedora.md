@@ -1,9 +1,7 @@
 Fedora
 ========
 
-### `dnf` Death note
-*(Remove items below)*
-
+### *Removed* `dnf`
 - PackageKit-command-not-found
 - naver-nanum-gothic-fonts
 - gnome-terminal

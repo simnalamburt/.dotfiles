@@ -3,6 +3,10 @@ openSUSE Leap 42
 
 WSL
 --------
+#### *Removed* `zypper`
+- command-not-found
+- screen
+
 #### `zypper`
 - vim-data
 - mosh htop mtr aria2
