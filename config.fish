@@ -118,6 +118,6 @@ functions --erase __path __available
 #
 # Load local configs
 #
-if [ -f ~/.config/fish/config.fish.local ]
-  source ~/.config/fish/config.fish.local
+if [ -f ~/.config/fish/config-local.fish ]
+  source ~/.config/fish/config-local.fish
 end
