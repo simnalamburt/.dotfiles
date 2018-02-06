@@ -18,7 +18,7 @@ if is-at-least 4.3.9 && [ -f ~/.zplug/init.zsh ]; then
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 
-  if grep -q Microsoft /proc/version; then
+  if [[ -a /proc/version ]] && grep -q Microsoft /proc/version; then
     # WSL에선 테마 쓰지 않음
     PS1='%n@%m:%~%(!.#.$) '
   elif is-at-least 5.2.0; then
