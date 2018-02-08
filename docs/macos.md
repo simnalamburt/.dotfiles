@@ -14,6 +14,7 @@ MacBook Pro
 - awscli kubectl
 - cdiff
 - jq
+- rust
 
 #### [`brew cask`]
 - firefox google-chrome iina
