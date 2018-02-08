@@ -25,6 +25,7 @@ MacBook Pro
 
 - steam battle-net
 - microsoft-office android-file-transfer
+- visual-studio-code
 
 ### etc
 - OpenVPN Connect 2.1
