@@ -12,6 +12,7 @@ MacBook Pro
 - aria2
 - terraform vault
 - awscli kubectl
+- cdiff
 
 #### [`brew cask`]
 - firefox google-chrome iina
