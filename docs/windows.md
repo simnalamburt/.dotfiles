@@ -7,27 +7,9 @@ Windows
 - Visual Studio 2015
 - [wsltty]
 - OpenVPN Connect, OpenVPN
-- VLC
 - KakaoTalk, LINE
-
-이하는 게임
-
-- Uplay
-- Steam
-- Battle.net
-
-게임들
-
-- AC Syndicate
-- Braid
-- Danganronpa 2
-- Civilization V
-- Civilization VI
-- Starbound
-- StartCraft
-- The Witness
-- THe Wolf Among Us
-- Undertale
+- Uplay, Steam, Battle.net, 오리진
+- VLC
 
 <br>
 
