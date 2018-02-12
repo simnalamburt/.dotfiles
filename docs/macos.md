@@ -22,7 +22,6 @@ MacBook Pro
 - jetbrains-toolbox
 - docker insomenia wireshark
 - signal
-
 - steam battle-net
 - microsoft-office android-file-transfer
 - visual-studio-code
@@ -31,6 +30,42 @@ MacBook Pro
 - OpenVPN Connect 2.1
 - 카카오톡, LINE, Magnet, 한글 뷰어 (App Store)
 - @noraesae/pen (yarn)
+
+<br>
+
+iMac
+--------
+#### [`brew`]
+- vim git fish mosh wget xz fd ripgrep md5sha1sum b2sum tmux cdiff
+- neovim
+- ruby node yarn python python3 rust
+- go dep
+- htop gnu-tar nmap upx gnupg mtr
+- awscli kubectl kops
+- terraform vault packer
+- p7zip youtube-dl
+- imagemagick webp
+- wrk jq
+- redis
+- mysql
+
+#### [`brew cask`]
+- firefox google-chrome iina
+- iterm2 karabiner-elements
+- jetbrains-toolbox
+- docker insomnia wireshark
+- signal
+- couchbase-server-community
+- minikube
+
+#### App Store
+- 카카오톡, LINE, Microsoft Remote Desktop, 텔레그램
+- 한컴오피스 한글 2014 VP 뷰어
+
+#### etc
+- OpenVPN Connect 2.1
+- 프린터 드라이버, 스캐너 드라이버
+- node-gyp @noraesae/pen (by yarn)
 
 <br>
 
