@@ -48,6 +48,7 @@ iMac
 - wrk jq
 - redis
 - mysql
+- watch
 
 #### [`brew cask`]
 - firefox google-chrome iina
