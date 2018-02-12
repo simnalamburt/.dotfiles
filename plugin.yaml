@@ -2,3 +2,6 @@ github:
 - simnalamburt/shellder
 - simnalamburt/cgitc
 - simnalamburt/fish-sensible
+
+# 수동설치:
+# https://github.com/evanlucas/fish-kubectl-completions
