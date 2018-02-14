@@ -67,6 +67,7 @@ iMac
 - OpenVPN Connect 2.1
 - 프린터 드라이버, 스캐너 드라이버
 - node-gyp @noraesae/pen (by yarn)
+- [circleci](https://circleci.com/docs/2.0/local-jobs/#installing-the-cli-locally)
 
 <br>
 
