@@ -49,6 +49,7 @@ iMac
 - redis
 - mysql
 - watch
+- tag-ag
 
 #### [`brew cask`]
 - firefox google-chrome iina

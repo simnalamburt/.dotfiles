@@ -92,24 +92,6 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 
 #
-# fzy.zsh
-#
-if (( $+commands[fzy] )); then
-  function fzy-history-widget() {
-    echo
-    setopt localoptions pipefail
-    BUFFER=$(fc -l 1 | perl -pe 's/^\s*\d+\s+/  /' | tac | awk '!a[$0]++' | fzy -l25 --query=$LBUFFER | cut -c3-)
-    CURSOR=$#BUFFER
-    local ret=$?
-    zle reset-prompt
-    return $ret
-  }
-  zle     -N    fzy-history-widget
-  bindkey '^R'  fzy-history-widget
-fi
-
-
-#
 # notify
 #
 if (( $+commands[osascript] )); then
@@ -172,6 +154,13 @@ fi
 if (( $+commands[exa] )); then
   alias l='exa -alh --group-directories-first'
   alias ll='exa -lh --group-directories-first'
+fi
+
+# tag
+if (( $+commands[tag] )) && (( $+commands[rg] )); then
+  export TAG_SEARCH_PROG=rg
+  tag() { command tag "$@"; source ${TAG_ALIAS_FILE:-/tmp/tag_aliases} 2>/dev/null }
+  alias rg=tag  # replace with rg for ripgrep
 fi
 
 # Couchbase tools
