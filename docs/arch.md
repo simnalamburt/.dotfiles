@@ -22,6 +22,7 @@ kuma.hyeon.me
 - pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
 - [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
 - fd-rs
+- [tag-ag](https://github.com/aykamko/tag)
 
 ### etc
 - [exa] using `cargo`
