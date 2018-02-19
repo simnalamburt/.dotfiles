@@ -15,6 +15,7 @@ MacBook Pro
 - cdiff
 - jq
 - rust
+- tag-ag
 
 #### [`brew cask`]
 - firefox google-chrome iina
