@@ -50,6 +50,7 @@ iMac
 - mysql
 - watch
 - tag-ag
+- pipenv
 
 #### [`brew cask`]
 - firefox google-chrome iina
