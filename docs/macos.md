@@ -52,6 +52,7 @@ iMac
 - watch
 - tag-ag
 - pipenv
+- shellcheck
 
 #### [`brew cask`]
 - firefox google-chrome iina
