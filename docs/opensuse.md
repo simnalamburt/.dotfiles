@@ -13,6 +13,7 @@ WSL
 - fish hostname
 - pinentry
 - python3
+- ffmpeg
 
 #### etc
 - fisher
