@@ -89,7 +89,7 @@ if __available ruby; and __available gem
 end
 
 # cargo install
-if [ -d ~/.cargo/bin ]; and [ -d ~/.cargo/bin ]
+if [ -d ~/.cargo/bin ]
   __path "$HOME/.cargo/bin"
 end
 # yarn global

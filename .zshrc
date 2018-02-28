@@ -142,7 +142,7 @@ if (( $+commands[ruby] )) && (( $+commands[gem] )); then
 fi
 
 # cargo install
-if (( $+commands[cargo] )) && [ -d ~/.cargo/bin ]; then
+if [ -d ~/.cargo/bin ]; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
 # yarn global
