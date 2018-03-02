@@ -229,7 +229,7 @@ if exists('s:has_vimplug') && s:has_vimplug
   nnoremap <leader>g :MundoToggle<CR>
 
   " vim-polyglot
-  let g:polyglot_disabled = ['systemd']
+  let g:polyglot_disabled = ['systemd', 'python']
   let g:vue_disable_pre_processors=1
 
   " clever-f.vim
