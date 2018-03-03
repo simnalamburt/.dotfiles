@@ -31,6 +31,7 @@ MacBook Pro
 - OpenVPN Connect 2.1
 - 카카오톡, LINE, Magnet, 한글 뷰어 (App Store)
 - @noraesae/pen (yarn)
+- [rustup]
 
 <br>
 
