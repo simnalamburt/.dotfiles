@@ -846,9 +846,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1869 -401 606 469 1600 -540 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>3024 -227 918 401 1600 -540 2560 1440 </string>
+	<string>3024 -227 796 473 1600 -540 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1600 -418 1026 587 1600 -540 2560 1417 </string>
+	<string>2322 -410 1410 979 1600 -540 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1923 -107 1130 877 1600 -540 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
@@ -2358,6 +2358,8 @@
 			<string>/Users/HyeonKim</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -2444,7 +2446,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-20T02:53:59Z</date>
+	<date>2018-03-02T08:54:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2499,7 +2501,7 @@
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
-	<string></string>
+	<string>Using clang for Chrome production builds on Linux</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findMode_iTerm</key>
