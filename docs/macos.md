@@ -24,7 +24,6 @@ MacBook Pro
 - iterm2 [karabiner-elements]
 - jetbrains-toolbox
 - docker insomenia wireshark
-- signal
 - steam battle-net
 - microsoft-office android-file-transfer
 - visual-studio-code
@@ -63,7 +62,6 @@ iMac
 - iterm2 karabiner-elements
 - jetbrains-toolbox
 - docker insomnia wireshark
-- signal
 - couchbase-server-community
 - minikube
 
