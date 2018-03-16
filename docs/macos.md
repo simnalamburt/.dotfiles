@@ -14,8 +14,10 @@ MacBook Pro
 - awscli kubectl
 - cdiff
 - jq
-- rust
+- watch
 - tag-ag
+- htop
+- geth
 
 #### [`brew cask`]
 - firefox google-chrome iina
@@ -26,6 +28,7 @@ MacBook Pro
 - steam battle-net
 - microsoft-office android-file-transfer
 - visual-studio-code
+- ganache
 
 ### etc
 - OpenVPN Connect 2.1
