@@ -30,7 +30,7 @@ Setup note
 
 1.  [Install WSL.](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-1.  Edit `/etc/profile` and uncomment or add the line below:
+1.  Edit `/etc/profile`, `/etc/bashrc`, or `/etc/bash.bashrc` and uncomment or add the line below:
 
     ```bash
     umask 022
