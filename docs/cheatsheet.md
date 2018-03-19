@@ -1,3 +1,6 @@
+Cheatsheet
+========
+
 ssh                     | 설명
 ------------------------|-----
 `ssh-keygen -t ed25519` | 공개키/비공개키쌍 만들기
@@ -251,18 +254,18 @@ Ctrl + v  | 비주얼 블록 모드로 들어가기
 `<`       | 인덴트 제거
 `J`       | 선택된 라인 전부 한줄로 붙이기
 
-##### Per-line insertion
 
+<br>
+
+Random Tips
+--------
+### Per-line insertion in vim
 1.  `^v`
 2.  Select
 3.  `I` or `A`
 4.  Insert
 5.  `^[^[`
 
-<br>
-
-Tips
---------
 ### Git
 ```bash
 # Commit with another name

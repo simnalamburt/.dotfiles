@@ -1,85 +1,7 @@
 macOS
 ========
 
-MacBook Pro
---------
-#### [`brew`]
-- vim git zsh mosh wget xz ripgrep fd md5sha1sum b2sum mtr
-- ruby node yarn python python3
-- go dep
-- gnu-tar gnupg
-- zstd p7zip redis
-- aria2
-- terraform vault
-- awscli kubectl
-- cdiff
-- jq
-- watch
-- tag-ag
-- htop
-- geth
-
-#### [`brew cask`]
-- firefox google-chrome iina
-- iterm2 [karabiner-elements]
-- jetbrains-toolbox
-- docker insomenia wireshark
-- steam battle-net
-- microsoft-office android-file-transfer
-- visual-studio-code
-- ganache
-
-### etc
-- OpenVPN Connect 2.1
-- 카카오톡, LINE, Magnet, 한글 뷰어 (App Store)
-- @noraesae/pen (yarn)
-- [rustup]
-
-<br>
-
-iMac
---------
-#### [`brew`]
-- vim git fish mosh wget xz fd ripgrep md5sha1sum b2sum tmux cdiff
-- neovim
-- ruby node yarn python python3 rust
-- go dep
-- htop gnu-tar nmap upx gnupg mtr
-- awscli kubectl kops
-- terraform vault packer
-- p7zip youtube-dl
-- imagemagick webp
-- wrk jq
-- redis
-- mysql
-- watch
-- tag-ag
-- pipenv
-- shellcheck
-
-#### [`brew cask`]
-- firefox google-chrome iina
-- iterm2 karabiner-elements
-- jetbrains-toolbox
-- docker insomnia wireshark
-- couchbase-server-community
-- minikube
-
-#### App Store
-- 카카오톡, LINE, Microsoft Remote Desktop, 텔레그램
-- 한컴오피스 한글 2014 VP 뷰어
-
-#### etc
-- OpenVPN Connect 2.1
-- 프린터 드라이버, 스캐너 드라이버
-- node-gyp @noraesae/pen (by yarn)
-- [circleci](https://circleci.com/docs/2.0/local-jobs/#installing-the-cli-locally)
-
-<br>
-
-사용 가이드
---------
-#### Setup
+### Setup
 1.  Apple ID 생성. 카드번호가 필요하다. iTunes 혹은 앱스토어를 써서 활성화해야한다.
 2.  OS 최신버전으로 업데이트
 3.  OS 설치 후 설정들
@@ -111,7 +33,9 @@ iMac
     - 키베이스에 디바이스 추가
     - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
 
-#### 키보드 세팅
+<br>
+
+### 키보드 세팅
 [`Karabiner-Elements`][karabiner-elements]로 원하는걸 다 할수있었음.
 
 1.  (터치바 없는 기종의 경우)
@@ -135,10 +59,3 @@ iMac
     ```
 
 [Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
-[rustup]: https://www.rust-lang.org/ko-KR/install.html
-[`brew`]: http://brew.sh
-[`brew cask`]: https://caskroom.github.io/
-[karabiner-elements]: https://github.com/tekezo/Karabiner-Elements
-[dash]: https://kapeli.com/dash
-[exa]: https://the.exa.website/
-[iTerms2]: https://www.iterm2.com/

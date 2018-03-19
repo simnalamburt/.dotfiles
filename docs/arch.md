@@ -1,46 +1,7 @@
-kuma.hyeon.me
---------
-### `pacman`
-- base grub sudo openssh *(리눅스 기본)*
-- base-devel binutils dnsutils
-- vim mosh git tmux fish wget upx zip unzip ripgrep rsync *(필수 툴)*
-- htop bmon *(서버 관리도구)*
-- clang rust cargo ruby python python2 nodejs yarn elixir julia *(언어)*
-- gdb lldb
-- nginx nginx-mod-brotli certbot-nginx *(서비스)*
-- keybase weechat
-- imagemagick youtube-dl
-- docker
-- zstd brotli
-- jdk8-openjdk
-- aria2
-- pinentry
-- mtr
-- go
+Arch Linux
+========
 
-### AUR
-- pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
-- [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
-- fd-rs
-- [tag-ag](https://github.com/aykamko/tag)
-
-### etc
-- [exa] using `cargo`
-- [@noraesae/pen], node-gyp using `yarn`
-
-[nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
-[exa]: https://github.com/ogham/exa
-[@noraesae/pen]: https://github.com/noraesae/pen
-
-<br>
-
---------
-
-<br>
-
-How to Install
---------
-부팅미디어에서 할 일
+### 부팅미디어에서 할 일
 ```bash
 wifi-menu                             # 와이파이 체크
 ping google.com -c20                  # 인터넷 연결
@@ -70,7 +31,7 @@ genfstab -U /mnt >> /mnt/etc/fstab    # /etc/fstab 생성
 arch-chroot /mnt /bin/bash            # 가자 디지몬 세상으로
 ```
 
-설치 직후의 아치 안에서 할 일
+### 설치 직후의 아치 안에서 할 일
 ```bash
 # Timezone 설정
 ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
@@ -128,7 +89,7 @@ exit
 umount -R /mnt
 ```
 
-[전원버튼 동작 설정하기](http://unix.stackexchange.com/a/52645)
+### [전원버튼 동작 설정하기](http://unix.stackexchange.com/a/52645)
 ```bash
 sudo vim /etc/systemd/login.conf
   # HandlePowerKey=ignore

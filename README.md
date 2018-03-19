@@ -1,18 +1,9 @@
-> My own dotfiles
-
 <p align=center>
   <a href="https://github.com/simnalamburt">
-    <img src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/logo.png">
+    <img alt="dotfiles" src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/logo.png">
   </a>
-</p>
-
-<p align=center>
-  <b><a href="docs/cheatsheet.md">CHEAT SHEET</a></b> |
-  <a href="docs/macos.md">macOS</a> |
-  <a href="docs/windows.md">Windows</a> |
-  <a href="docs/ubuntu.md">Ubuntu</a> |
-  <a href="docs/fedora.md">Fedora</a> |
-  <a href="docs/arch.md">Arch Linux</a>
+  <br>
+  <b><a href="docs/">documentation</a></b> | <a href="packages/">packages</a>
 </p>
 
 <br>
