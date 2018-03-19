@@ -1,3 +1,3 @@
 WSL - Debian Stretch
 ========
-- git
+- vim mosh git
