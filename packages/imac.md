@@ -4,7 +4,7 @@ iMac
 ### [`brew`]
 - vim git fish mosh wget xz fd ripgrep md5sha1sum b2sum tmux cdiff
 - neovim
-- ruby node yarn python python3 rust
+- ruby node yarn python python3
 - go dep
 - htop gnu-tar nmap upx gnupg mtr
 - awscli kubectl kops
@@ -36,6 +36,8 @@ iMac
 - 프린터 드라이버, 스캐너 드라이버
 - node-gyp @noraesae/pen (by yarn)
 - [circleci](https://circleci.com/docs/2.0/local-jobs/#installing-the-cli-locally)
+- [rustup]
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
+[rustup]: https://www.rust-lang.org/ko-KR/install.html
