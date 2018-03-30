@@ -844,13 +844,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 376 620 392 0 0 1600 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1869 -401 606 469 1600 -540 2560 1440 </string>
+	<string>1869 -168 606 469 1600 -304 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>3024 -227 796 473 1600 -540 2560 1417 </string>
+	<string>3024 3 796 473 1600 -304 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2322 -410 1410 979 1600 -540 2560 1440 </string>
+	<string>108 135 990 537 0 0 1280 720 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1923 -107 1130 877 1600 -540 2560 1417 </string>
+	<string>1923 147 1130 877 1600 -304 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9_selection</key>
@@ -2446,7 +2446,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-02T08:54:31Z</date>
+	<date>2018-03-28T00:38:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2501,7 +2501,7 @@
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
-	<string>Using clang for Chrome production builds on Linux</string>
+	<string>mosh k</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findMode_iTerm</key>
