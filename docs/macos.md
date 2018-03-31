@@ -36,7 +36,7 @@ macOS
 <br>
 
 ### 키보드 세팅
-[`Karabiner-Elements`][karabiner-elements]로 원하는걸 다 할수있었음.
+[`Karabiner-Elements`]로 원하는걸 다 할수있었음.
 
 1.  (터치바 없는 기종의 경우)
     <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키를 음악 재생 키 대신
@@ -59,3 +59,4 @@ macOS
     ```
 
 [Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
+[`Karabiner-Elements`]: https://github.com/tekezo/Karabiner-Elements

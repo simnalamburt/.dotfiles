@@ -10,3 +10,5 @@ Windows
 - KakaoTalk, LINE
 - Uplay, Steam, Battle.net, 오리진
 - VLC
+
+[wsltty]: https://github.com/mintty/wsltty
