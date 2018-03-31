@@ -4,7 +4,7 @@ Windows
 - Firefox, Chrome
 - Adobe Photoshop CC 2015, Adobe Illustrator CC 2015
 - MS Office, 한컴 오피스 2014
-- Visual Studio 2015
+- Visual Studio 2015, Visual Studio Code
 - [wsltty]
 - OpenVPN Connect, OpenVPN
 - KakaoTalk, LINE
