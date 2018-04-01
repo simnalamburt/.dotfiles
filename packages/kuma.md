@@ -23,6 +23,7 @@ kuma.hyeon.me
 - [nullidentdmod](https://github.com/Acidhub/nullidentdmod)
 - fd-rs
 - [tag-ag](https://github.com/aykamko/tag)
+- [caddy](https://github.com/mholt/caddy)
 
 ### etc
 - [exa](https://github.com/Acidhub/nullidentdmod) using `cargo`
