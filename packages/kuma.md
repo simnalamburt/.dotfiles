@@ -19,15 +19,11 @@ kuma.hyeon.me
 - go
 
 ### AUR
-- pacaur *([instruction](https://gist.github.com/rumpelsepp/d646750910be19332753))*
-- [nullidentdmod] *(Enable & Start `nullidentdmod.socket` with systemctl)*
+- [aurman](https://github.com/polygamma/aurman)
+- [nullidentdmod](https://github.com/Acidhub/nullidentdmod)
 - fd-rs
 - [tag-ag](https://github.com/aykamko/tag)
 
 ### etc
-- [exa] using `cargo`
-- [@noraesae/pen], node-gyp using `yarn`
-
-[nullidentdmod]: https://wiki.archlinux.org/index.php/Identd_Setup
-[exa]: https://github.com/ogham/exa
-[@noraesae/pen]: https://github.com/noraesae/pen
+- [exa](https://github.com/Acidhub/nullidentdmod) using `cargo`
+- [@noraesae/pen](https://github.com/Acidhub/nullidentdmod), node-gyp using `yarn`
