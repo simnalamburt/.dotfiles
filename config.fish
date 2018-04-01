@@ -1,5 +1,9 @@
 if not status --is-interactive; exit; end
 
+# chips <https://github.com/xtendo-org/chips>
+if [ -f ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
+
+
 function __path
   switch (count $argv)
   case 1
@@ -107,10 +111,6 @@ end
 if [ -d '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/' ]
   __path '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/'
 end
-
-# chips <https://github.com/xtendo-org/chips>
-if [ -f ~/.config/chips/build.fish ] ; . ~/.config/chips/build.fish ; end
-
 
 functions --erase __path __available
 
