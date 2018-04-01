@@ -184,6 +184,7 @@ try
   Plug 'tfnico/vim-gradle'
   Plug 'elixir-lang/vim-elixir'
   Plug 'Matt-Deacalion/vim-systemd-syntax'
+  Plug 'isobit/vim-caddyfile'
   if v:version >= 701
     Plug 'sheerun/vim-polyglot'
   endif
