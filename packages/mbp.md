@@ -16,6 +16,7 @@ MacBook Pro
 - tag-ag
 - htop
 - geth
+- shellcheck
 
 ### [`brew cask`]
 - firefox google-chrome iina
