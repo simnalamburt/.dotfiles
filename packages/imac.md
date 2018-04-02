@@ -6,14 +6,13 @@ iMac
 - neovim
 - ruby node yarn python python3
 - go dep
-- htop gnu-tar nmap upx gnupg mtr
+- htop gnu-tar nmap gnupg mtr
 - awscli kubectl kops
 - terraform vault packer
 - p7zip youtube-dl
-- imagemagick webp
-- wrk jq
+- imagemagick
+- jq
 - redis
-- mysql
 - watch
 - tag-ag
 - pipenv
