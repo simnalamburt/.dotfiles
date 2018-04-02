@@ -12,7 +12,6 @@ iMac
 - p7zip youtube-dl
 - imagemagick
 - jq
-- redis
 - watch
 - tag-ag
 - pipenv
