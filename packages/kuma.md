@@ -3,15 +3,14 @@ kuma.hyeon.me
 ### `pacman`
 - base grub sudo openssh *(리눅스 기본)*
 - base-devel binutils dnsutils
-- vim mosh git tmux fish wget upx zip unzip ripgrep rsync *(필수 툴)*
+- vim mosh git tmux fish wget upx unzip ripgrep rsync *(필수 툴)*
 - htop bmon *(서버 관리도구)*
-- clang rust cargo ruby python python2 nodejs yarn elixir julia *(언어)*
+- clang rust cargo ruby python python2 nodejs yarn elixir *(언어)*
 - gdb lldb
-- nginx nginx-mod-brotli certbot-nginx *(서비스)*
-- keybase weechat
+- weechat
 - imagemagick youtube-dl
 - docker
-- zstd brotli
+- zstd
 - jdk8-openjdk
 - aria2
 - pinentry
