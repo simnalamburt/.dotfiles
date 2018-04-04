@@ -2,7 +2,8 @@ MacBook Pro
 ========
 
 ### [`brew`]
-- vim git zsh mosh wget xz ripgrep fd md5sha1sum b2sum mtr
+- vim git zsh mosh wget xz md5sha1sum b2sum mtr
+- ripgrep fd tag-ag jq exa
 - ruby node yarn python python3
 - go dep
 - gnu-tar gnupg
@@ -11,9 +12,7 @@ MacBook Pro
 - terraform vault
 - awscli kubectl
 - cdiff
-- jq
 - watch
-- tag-ag exa
 - htop
 - geth
 - pipenv

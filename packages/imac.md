@@ -2,7 +2,8 @@ iMac
 ========
 
 ### [`brew`]
-- vim git zsh mosh wget xz fd ripgrep md5sha1sum b2sum tmux cdiff
+- vim git zsh mosh wget xz md5sha1sum b2sum tmux cdiff
+- ripgrep fd tag-ag jq exa
 - neovim
 - ruby node yarn python python3
 - go dep
@@ -11,9 +12,7 @@ iMac
 - terraform vault packer
 - p7zip youtube-dl
 - imagemagick
-- jq
 - watch
-- tag-ag exa
 - pipenv
 - shellcheck
 
