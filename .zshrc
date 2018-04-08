@@ -21,6 +21,8 @@ if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 
+  zplug "g-plane/zsh-yarn-autocompletions", hook-build:"./zplug.zsh", defer:2
+
   if is-at-least 5.2.0; then
     # Zsh 5.2+ 에선 pure 사용
     zplug "mafredri/zsh-async"
