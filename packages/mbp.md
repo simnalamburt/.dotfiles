@@ -13,7 +13,7 @@ MacBook Pro
 - cdiff
 - jq
 - watch
-- tag-ag
+- tag-ag exa
 - htop
 - geth
 - shellcheck
