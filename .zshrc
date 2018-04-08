@@ -16,6 +16,7 @@ if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
   zplug "simnalamburt/cgitc"
   zplug "simnalamburt/zsh-expand-all"
   zplug "zsh-users/zsh-completions"
+  ZSH_AUTOSUGGEST_USE_ASYNC=true
   zplug "zsh-users/zsh-autosuggestions"
   zplug "zsh-users/zsh-syntax-highlighting"
   zplug "zsh-users/zsh-history-substring-search"
