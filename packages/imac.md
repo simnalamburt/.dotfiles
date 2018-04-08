@@ -2,7 +2,7 @@ iMac
 ========
 
 ### [`brew`]
-- vim git fish mosh wget xz fd ripgrep md5sha1sum b2sum tmux cdiff
+- vim git zsh mosh wget xz fd ripgrep md5sha1sum b2sum tmux cdiff
 - neovim
 - ruby node yarn python python3
 - go dep
@@ -13,7 +13,7 @@ iMac
 - imagemagick
 - jq
 - watch
-- tag-ag
+- tag-ag exa
 - pipenv
 - shellcheck
 
