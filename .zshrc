@@ -5,7 +5,7 @@
 # zplug
 #
 autoload -U is-at-least
-if is-at-least 4.3.9 && [ -f ~/.zplug/init.zsh ]; then
+if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
   source ~/.zplug/init.zsh
 
   zplug "simnalamburt/cgitc"
@@ -107,12 +107,12 @@ fi
 #
 # zshrc
 #
-if [ -f ~/.fzf.zsh ]; then source ~/.fzf.zsh; fi
-if [ "$TMUX" = "" ]; then; export TERM="xterm-256color"; fi
+if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
+if [[ "$TMUX" = "" ]]; then; export TERM="xterm-256color"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
 
 # ~/.local/bin
-if [ -d ~/.local/bin ]; then
+if [[ -d ~/.local/bin ]]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
@@ -130,7 +130,7 @@ if (( $+commands[terraform] )); then
 fi
 
 # Golang
-if (( $+commands[go] )) && [ -d ~/.go ]; then
+if (( $+commands[go] )) && [[ -d ~/.go ]]; then
   export GOPATH="$HOME/.go"
   export PATH="$PATH:$GOPATH/bin"
 fi
@@ -142,7 +142,7 @@ if (( $+commands[ruby] )) && (( $+commands[gem] )); then
 fi
 
 # cargo install
-if [ -d ~/.cargo/bin ]; then
+if [[ -d ~/.cargo/bin ]]; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
 # yarn global
@@ -164,7 +164,7 @@ if (( $+commands[tag] )) && (( $+commands[rg] )); then
 fi
 
 # Couchbase tools
-if [ -d '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/' ]; then
+if [[ -d '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/' ]]; then
   export PATH="$PATH:/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/"
 fi
 
@@ -172,6 +172,6 @@ fi
 #
 # Load local configs
 #
-if [ -f ~/.zshrc.local ]; then
+if [[ -f ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
