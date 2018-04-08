@@ -44,3 +44,6 @@ $RECYCLE.BIN/
 
 # vim-obsession
 Session.vim
+
+# yarn
+yarn-error.log
