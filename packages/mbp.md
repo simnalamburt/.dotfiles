@@ -16,6 +16,7 @@ MacBook Pro
 - tag-ag exa
 - htop
 - geth
+- pipenv
 - shellcheck
 
 ### [`brew cask`]
