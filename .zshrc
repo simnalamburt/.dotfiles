@@ -149,6 +149,11 @@ if (( $+commands[exa] )); then
   alias ll='exa -lh --group-directories-first'
 fi
 
+# kubectl
+if (( $+commands[kubectl] )); then
+  source <(kubectl completion zsh)
+fi
+
 # tag
 if (( $+commands[tag] )) && (( $+commands[rg] )); then
   export TAG_SEARCH_PROG=rg
