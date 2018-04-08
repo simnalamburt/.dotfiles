@@ -6,9 +6,10 @@ Windows
 - MS Office, 한컴 오피스 2014
 - Visual Studio 2015, Visual Studio Code
 - [wsltty]
-- OpenVPN Connect, OpenVPN
+- [OpenVPN GUI]
 - KakaoTalk, LINE
 - Uplay, Steam, Battle.net, 오리진
 - VLC
 
 [wsltty]: https://github.com/mintty/wsltty
+[OpenVPN GUI]: https://github.com/openvpn/openvpn-gui
