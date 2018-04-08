@@ -3,10 +3,7 @@
 
 # Check if zsh is running under WSL
 if [[ -a /proc/version ]] && grep -q Microsoft /proc/version; then
-  WSL=true
   unsetopt BG_NICE
-else
-  WSL=false
 fi
 
 #
@@ -17,11 +14,9 @@ if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
   source ~/.zplug/init.zsh
 
   zplug "simnalamburt/cgitc"
-
   zplug "zsh-users/zsh-completions"
   zplug "zsh-users/zsh-autosuggestions"
   zplug "zsh-users/zsh-syntax-highlighting"
-
   zplug "zsh-users/zsh-history-substring-search"
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
@@ -65,23 +60,12 @@ autoload -U colors && colors
 export LSCOLORS="Gxfxcxdxbxegedxbagxcad"
 export LS_COLORS="di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=30;46:tw=0;42:ow=30;43"
 export TIME_STYLE="+%y%m%d"
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-# Find the option for using colors in ls, depending on the version: Linux or BSD
-if [[ "$(uname -s)" == "NetBSD" ]]; then
-  # On NetBSD, test if "gls" (GNU ls) is installed (this one supports colors);
-  # otherwise, leave ls as is, because NetBSD's ls doesn't support -G
-  gls --color -d . &>/dev/null 2>&1 && alias ls='gls --color=tty'
-elif [[ "$(uname -s)" == "OpenBSD" ]]; then
-  # On OpenBSD, "gls" (ls from GNU coreutils) and "colorls" (ls from base,
-  # with color and multibyte support) are available from ports.  "colorls"
-  # will be installed on purpose and can't be pulled in by installing
-  # coreutils, so prefer it to "gls".
-  gls --color -d . &>/dev/null 2>&1 && alias ls='gls --color=tty'
-  colorls -G -d . &>/dev/null 2>&1 && alias ls='colorls -G'
-else
-  ls --color -d . &>/dev/null 2>&1 && alias ls='ls --color=tty' || alias ls='ls -G'
-fi
+# Put one of the following two linew in '.zshrc.local'
+#
+# alias ls='ls --color=tty'
+# alias ls='ls -G'
 
 
 #
@@ -113,7 +97,7 @@ fi
 # zshrc
 #
 if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
-if [[ "$TMUX" = "" ]]; then; export TERM="xterm-256color"; fi
+if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 export DEFAULT_USER="$USER" # TODO: https://github.com/simnalamburt/shellder/issues/10
 
 # ~/.local/bin
@@ -122,7 +106,7 @@ if [[ -d ~/.local/bin ]]; then
 fi
 
 # Aliases
-if (( $+commands[tmux] )); then; alias irc='tmux attach -t irc'; fi
+if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
 
 # Neovim
 if (( $+commands[nvim] )); then
@@ -142,7 +126,8 @@ fi
 
 # Ruby
 if (( $+commands[ruby] )) && (( $+commands[gem] )); then
-  export GEM_HOME=$(ruby -e 'print Gem.user_dir')
+  GEM_HOME=$(ruby -e 'print Gem.user_dir')
+  export GEM_HOME
   export PATH="$PATH:$GEM_HOME/bin"
 fi
 
@@ -164,7 +149,9 @@ fi
 # tag
 if (( $+commands[tag] )) && (( $+commands[rg] )); then
   export TAG_SEARCH_PROG=rg
-  tag() { command tag "$@"; source ${TAG_ALIAS_FILE:-/tmp/tag_aliases} 2>/dev/null }
+  tag() {
+    command tag "$@"; source "${TAG_ALIAS_FILE:-/tmp/tag_aliases}" 2>/dev/null
+  }
   alias rg=tag  # replace with rg for ripgrep
 fi
 
