@@ -7,7 +7,7 @@ stty stop undef
 stty -ixon
 # Plugins
 [[ -d ~/.cgitc ]] && source ~/.cgitc/init.bash
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[[ -f ~/.fzf.bash ]] && source ~/.fzf.bash
 
 
 #
