@@ -18,9 +18,9 @@ iMac
 
 ### [`brew cask`]
 - firefox google-chrome iina
-- iterm2 karabiner-elements
+- iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
-- docker insomnia wireshark
+- docker wireshark
 - couchbase-server-community
 - minikube
 
