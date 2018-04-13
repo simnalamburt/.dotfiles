@@ -31,7 +31,7 @@ MacBook Pro
 ### etc
 - OpenVPN Connect 2.1
 - 카카오톡, LINE, Magnet, 한글 뷰어 (App Store)
-- @noraesae/pen (yarn)
+- yarn global: pen
 - [rustup]
 
 [rustup]: https://www.rust-lang.org/ko-KR/install.html

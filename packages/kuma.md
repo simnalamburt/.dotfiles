@@ -26,4 +26,4 @@ kuma.hyeon.me
 
 ### etc
 - [exa](https://github.com/Acidhub/nullidentdmod) using `cargo`
-- [@noraesae/pen](https://github.com/Acidhub/nullidentdmod), node-gyp using `yarn`
+- yarn global: pen node-gyp
