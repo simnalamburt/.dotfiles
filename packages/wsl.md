@@ -1,5 +1,5 @@
 WSL - Debian Stretch
 ========
-- curl
+- curl bash-completion
 - vim mosh git zsh
 - aria2
