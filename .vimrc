@@ -229,9 +229,6 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:mundo_right = 1
   nnoremap <leader>g :MundoToggle<CR>
 
-  " vim-vue
-  let g:vue_disable_pre_processors=1
-
   " vim-polyglot
   let g:polyglot_disabled = ['systemd', 'python']
   let g:vue_disable_pre_processors=1
