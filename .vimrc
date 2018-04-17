@@ -73,6 +73,11 @@ set wildmode=longest,full
 "
 let g:mapleader = ","
 
+" Easy file save without switching IME
+cabbrev ㅈ w
+cabbrev ㅂ q
+cabbrev ㅈㅂ wq
+
 " Easy command-line mode
 nnoremap ; :
 " Easy home/end
