@@ -4,6 +4,7 @@
 scriptencoding utf-8
 set encoding=utf-8
 set fileencoding=utf-8
+set fileencodings=utf-8,cp949,default,latin1
 set shell=/bin/bash " http://stackoverflow.com/a/12231417
 set diffopt+=iwhite,vertical
 set pastetoggle=<F8>
