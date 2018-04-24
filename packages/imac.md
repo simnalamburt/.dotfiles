@@ -20,10 +20,7 @@ iMac
 - firefox google-chrome iina
 - iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
-- docker wireshark
-- couchbase-server-community
-- minikube
-- java
+- docker
 - visual-studio-code
 
 ### App Store
