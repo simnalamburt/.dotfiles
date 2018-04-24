@@ -24,6 +24,7 @@ iMac
 - couchbase-server-community
 - minikube
 - java
+- visual-studio-code
 
 ### App Store
 - 카카오톡, LINE, Microsoft Remote Desktop, 텔레그램
