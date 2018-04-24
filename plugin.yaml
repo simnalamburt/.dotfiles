@@ -1,7 +1,8 @@
+# Chips 플러그인 정의
+# https://github.com/xtendo-org/chips
+
 github:
 - simnalamburt/shellder
 - simnalamburt/cgitc
 - simnalamburt/fish-sensible
-
-# 수동설치:
-# https://github.com/evanlucas/fish-kubectl-completions
+# kubectl 자동완성은 손으로 설치해야 한다. https://github.com/evanlucas/fish-kubectl-completions

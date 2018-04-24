@@ -1,3 +1,4 @@
+# vim: ft=yaml
 ---
 BUNDLE_PATH: ".bundle/lib"
 BUNDLE_DISABLE_SHARED_GEMS: "true"

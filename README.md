@@ -8,35 +8,42 @@
 
 <br>
 
-Requires `git` and `fish`
-
-```bash
+```shell
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
-# chips     https://github.com/kinoru/chips
+# zplug     https://github.com/zplug/zplug
 # vim-plug  https://github.com/junegunn/vim-plug
 # tpm       https://github.com/tmux-plugins/tpm
 
-mkdir -p ~/.config/fish;  ln -sf ~/.dotfiles/config.fish ~/.config/fish/
-mkdir -p ~/.config/chips; ln -sf ~/.dotfiles/plugin.yaml ~/.config/chips/
-mkdir -p ~/.config/fish;  ln -sf ~/.dotfiles/fishfile    ~/.config/fish/
-cp ~/.dotfiles/config-local.fish ~/.config/fish/
-
-mkdir -p ~/.ssh; chmod 700 ~/.ssh
-ln -sf ~/.dotfiles/.ssh/config ~/.ssh
-cp ~/.dotfiles/.ssh/config.local ~/.ssh
-
-mkdir -p ~/.gnupg; ln -sf ~/.dotfiles/gpg-agent.conf ~/.gnupg
-ln -sf .dotfiles/.vimrc ~
-ln -sf .dotfiles/.gitconfig ~
-ln -sf .dotfiles/.gitexclude ~
-ln -sf .dotfiles/.tmux.conf ~
-mkdir -p ~/.bundle; ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
-
-# Optional dotfiles
-cp ~/.dotfiles/.gitconfig.local ~
 ln -sf ~/.dotfiles/.zshrc ~
+ln -sf ~/.dotfiles/.vimrc ~
+ln -sf ~/.dotfiles/.tmux.conf ~
+ln -sf ~/.dotfiles/.gitconfig ~ && ln -sf ~/.dotfiles/.gitexclude ~ &&\
+  cp ~/.dotfiles/.gitconfig.local ~
+
+mkdir -p ~/.ssh && chmod 700 ~/.ssh &&\
+  ln -sf ~/.dotfiles/.ssh/config ~/.ssh &&\
+  cp ~/.dotfiles/.ssh/config.local ~/.ssh
+
+# Misc
+mkdir -p ~/.gnupg && ln -sf ~/.dotfiles/gpg-agent.conf ~/.gnupg
+mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
+
+# If you use fish shell:
+# chips     https://github.com/kinoru/chips
+mkdir -p ~/.config/fish &&  ln -sf ~/.dotfiles/config.fish ~/.config/fish/
+mkdir -p ~/.config/chips && ln -sf ~/.dotfiles/plugin.yaml ~/.config/chips/
+cp ~/.dotfiles/config-local.fish ~/.config/fish/
 ```
+
+#### Relevant plugins
+- [simnalamburt/vim-mundo     ](https://github.com/simnalamburt/vim-mundo) - Vim undo tree visualizer
+- [simnalamburt/cgitc         ](https://github.com/simnalamburt/cgitc) - Close Git Combat
+- [simnalamburt/zsh-expand-all](https://github.com/simnalamburt/zsh-expand-all) - Automatically expands all glob expressions, subcommands, and aliases
+- [simnalamburt/tmux-pane     ](https://github.com/simnalamburt/tmux-pane) - Key-bindings for tmux pane control
+- [simnalamburt/shellder      ](https://github.com/simnalamburt/shellder) - Featured zsh/fish shell theme
+- [simnalamburt/fish-sensible ](https://github.com/simnalamburt/fish-sensible) - Agreeable dafault aliases for fish
+
 <br>
 
 --------
