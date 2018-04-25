@@ -169,9 +169,6 @@ if [[ -d '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/b
   export PATH="$PATH:/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/"
 fi
 
-# iTerm2 integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 #
 # Load local configs
