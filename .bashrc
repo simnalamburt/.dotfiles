@@ -72,7 +72,6 @@ fi
 # Aliases
 #
 # Interactive operation...
-alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 # Default to human readable figures
