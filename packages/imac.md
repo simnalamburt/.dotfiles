@@ -15,6 +15,7 @@ iMac
 - watch
 - pipenv
 - shellcheck
+- cmake
 
 ### [`brew cask`]
 - firefox google-chrome iina
