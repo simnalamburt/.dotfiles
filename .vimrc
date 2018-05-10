@@ -228,9 +228,6 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:indent_guides_exclude_filetypes = ['help']
   let g:indent_guides_default_mapping = 0
 
-  " vim-better-whitespace
-  let g:strip_whitespace_on_save = 1
-
   " mundo.vim
   let g:mundo_right = 1
   nnoremap <leader>g :MundoToggle<CR>
