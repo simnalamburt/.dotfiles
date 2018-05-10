@@ -15,7 +15,7 @@ iMac
 - watch
 - pipenv
 - shellcheck
-- cmake
+- cmake libcouchbase mysql lz4
 
 ### [`brew cask`]
 - firefox google-chrome iina
