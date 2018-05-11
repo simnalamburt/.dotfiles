@@ -169,6 +169,12 @@ if [[ -d '/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/b
   export PATH="$PATH:/Applications/Couchbase Server.app/Contents/Resources/couchbase-core/bin/"
 fi
 
+# Vault autocompletion
+if (( $+commands[vault] )); then
+  autoload -U +X bashcompinit && bashcompinit
+  complete -o nospace -C /usr/local/bin/vault vault
+fi
+
 
 #
 # Load local configs
