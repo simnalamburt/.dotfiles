@@ -161,7 +161,6 @@ if (( $+commands[tag] )) && (( $+commands[rg] )); then
   tag() {
     command tag "$@"; source "${TAG_ALIAS_FILE:-/tmp/tag_aliases}" 2>/dev/null
   }
-  alias rg=tag  # replace with rg for ripgrep
 fi
 
 # Couchbase tools
