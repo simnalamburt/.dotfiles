@@ -846,9 +846,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1869 -168 606 469 1600 -304 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>3024 3 796 473 1600 -304 2560 1440 </string>
+	<string>2706 681 918 401 1600 -304 2560 1440 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>118 293 592 584 0 0 1600 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>108 135 990 537 0 0 1280 720 </string>
+	<string>1773 37 1130 823 1600 -304 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1923 147 1130 877 1600 -304 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
@@ -1589,7 +1591,7 @@
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
-			<false/>
+			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
 			<key>Use HFS Plus Mapping</key>
@@ -2358,6 +2360,8 @@
 			<string>/Users/HyeonKim</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -2446,7 +2450,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-28T00:38:30Z</date>
+	<date>2018-05-14T02:40:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2484,6 +2488,8 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1524111744</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2509,7 +2515,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
