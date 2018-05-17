@@ -29,9 +29,13 @@ MacBook Pro
 - microsoft-office android-file-transfer
 - ganache
 
+### App Store
+- 카카오톡, LINE, 텔레그램
+- 한컴오피스 한글 2014 VP 뷰어
+- Magnet
+
 ### etc
 - OpenVPN Connect 2.1
-- 카카오톡, LINE, Magnet, 한글 뷰어 (App Store)
 - yarn global: pen
 - [rustup]
 

@@ -25,15 +25,16 @@ iMac
 - visual-studio-code sketchbook
 
 ### App Store
-- 카카오톡, LINE, Microsoft Remote Desktop, 텔레그램
+- 카카오톡, LINE, 텔레그램
 - 한컴오피스 한글 2014 VP 뷰어
+- Magnet
 
 ### etc
 - OpenVPN Connect 2.1
-- 프린터 드라이버, 스캐너 드라이버
 - yarn global: node-gyp pen
-- [circleci](https://circleci.com/docs/2.0/local-jobs/#installing-the-cli-locally)
 - [rustup]
+- 프린터 드라이버, 스캐너 드라이버
+- [circleci](https://circleci.com/docs/2.0/local-jobs/#installing-the-cli-locally)
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
