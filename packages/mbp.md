@@ -20,12 +20,13 @@ MacBook Pro
 
 ### [`brew cask`]
 - firefox google-chrome iina
-- iterm2 karabiner-elements insomeniax
+- iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
-- docker wireshark
+- docker
+- visual-studio-code sketchbook
+- wireshark
 - steam battle-net
 - microsoft-office android-file-transfer
-- visual-studio-code
 - ganache
 
 ### etc

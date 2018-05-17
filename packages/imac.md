@@ -22,8 +22,7 @@ iMac
 - iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
 - docker
-- visual-studio-code
-- sketchbook
+- visual-studio-code sketchbook
 
 ### App Store
 - 카카오톡, LINE, Microsoft Remote Desktop, 텔레그램
