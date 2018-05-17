@@ -17,6 +17,7 @@ MacBook Pro
 - geth
 - pipenv
 - shellcheck
+- hugo
 
 ### [`brew cask`]
 - firefox google-chrome iina
