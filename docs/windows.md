@@ -23,7 +23,7 @@ Setup note
 
 1.  Install [wsltty].
 
-1.  Place or symlink your `.minttyrc` to `%APPDATA%\mintty\config`.
+1.  Place or symlink your `.minttyrc` to `%APPDATA%\wsltty\config`.
 
 1.  Install packages.
 
