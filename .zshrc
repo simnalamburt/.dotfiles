@@ -2,7 +2,7 @@
 [[ -o interactive ]] || return
 
 # Check if zsh is running under WSL
-if [[ -a /proc/version ]] && grep -q Microsoft /proc/version; then
+if [[ -r /proc/version ]] && grep -q Microsoft /proc/version; then
   unsetopt BG_NICE
 fi
 
