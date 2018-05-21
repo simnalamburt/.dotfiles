@@ -217,9 +217,6 @@ endtry
 " Configs for plugins
 "
 if exists('s:has_vimplug') && s:has_vimplug
-  " vim-airline
-  let g:airline_powerline_fonts = 1
-
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
   let g:indent_guides_auto_colors = 0
@@ -396,3 +393,11 @@ augroup vimrc
   " vim-vue
   autocmd FileType vue syntax sync fromstart
 augroup END
+
+
+"
+" Local configs
+"
+if filereadable($HOME . '/.vimrc.local')
+  source $HOME/.vimrc.local
+endif
