@@ -29,3 +29,7 @@
 #   tool = cdiff
 # [difftool "cdiff"]
 #   cmd = cdiff -sw0
+
+# To use GPG 2.x instead of 1.x in Ubuntu 16
+# [gpg]
+#   program = gpg2
