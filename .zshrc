@@ -89,10 +89,10 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 #
 if (( $+commands[osascript] )); then
   notify () {
-    cat <<END | osascript
-      display notification "$*" sound name "Glass" with title "Shell Notification"
-      say "$*"
-END
+    # 'sound name' 파라미터가 작동 안해서 afplay로 바꿈
+    # Reference: https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html#//apple_ref/doc/uid/TP40000983-CH216-SW224
+    echo 'display notification "일어나세요" with title "작업 끝!"' | osascript
+    afplay /System/Library/Sounds/Glass.aiff &
   }
 fi
 
