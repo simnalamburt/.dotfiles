@@ -14,6 +14,7 @@ if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
   source ~/.zplug/init.zsh
 
   zplug "simnalamburt/cgitc"
+  ZSH_EXPAND_ALL_DISABLE=word
   zplug "simnalamburt/zsh-expand-all"
   zplug "zsh-users/zsh-completions"
   ZSH_AUTOSUGGEST_USE_ASYNC=true
