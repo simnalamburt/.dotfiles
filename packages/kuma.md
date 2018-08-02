@@ -6,7 +6,6 @@ kuma.hyeon.me
 - vim mosh git tmux zsh wget upx unzip ripgrep rsync *(필수 툴)*
 - htop bmon *(서버 관리도구)*
 - clang rust cargo ruby python python2 nodejs yarn elixir *(언어)*
-- chrony
 - gdb lldb
 - weechat
 - imagemagick youtube-dl
