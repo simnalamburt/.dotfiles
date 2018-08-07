@@ -7,17 +7,15 @@ MacBook Pro
 - ruby node yarn python python3
 - go dep
 - gnu-tar gnupg
-- zstd p7zip redis
+- zstd p7zip
 - aria2
 - terraform vault
 - awscli kubectl
 - cdiff
 - watch
 - htop
-- geth
 - pipenv
 - shellcheck
-- hugo
 
 ### [`brew cask`]
 - firefox google-chrome iina
@@ -28,7 +26,6 @@ MacBook Pro
 - wireshark
 - steam battle-net
 - microsoft-office android-file-transfer
-- ganache
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
