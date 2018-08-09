@@ -672,7 +672,7 @@
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
-	<true/>
+	<false/>
 	<key>DimOnlyText</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
@@ -844,15 +844,15 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>490 376 620 392 0 0 1600 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>1869 -168 606 469 1600 -304 2560 1417 </string>
+	<string>-2291 -148 606 469 -2560 -287 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2706 681 918 401 1600 -304 2560 1440 </string>
+	<string>-1713 381 796 486 -2560 -287 2560 1440 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 293 592 584 0 0 1600 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1773 37 1130 823 1600 -304 2560 1440 </string>
+	<string>-2114 -20 1130 825 -2560 -287 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1923 147 1130 877 1600 -304 2560 1440 </string>
+	<string>-2237 164 1130 877 -2560 -287 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9_selection</key>
@@ -2450,7 +2450,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-14T02:40:02Z</date>
+	<date>2018-08-09T04:40:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2515,7 +2515,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
