@@ -16,6 +16,7 @@ MacBook Pro
 - htop
 - pipenv
 - shellcheck
+- rocksdb
 
 ### [`brew cask`]
 - firefox google-chrome iina
