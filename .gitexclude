@@ -1,9 +1,15 @@
-*.dSYM            # clang
-npm-debug.log     # npm
-.byebug_history   # Ruby byebug
-*.pyc             # Python 2
-.xmark.*.html     # Xmark
-.gdb_history      # gdb
+# clang
+*.dSYM
+# npm
+npm-debug.log
+# Ruby byebug
+.byebug_history
+# Python 2
+*.pyc
+# Xmark
+.xmark.*.html
+# gdb
+.gdb_history
 
 #
 # OS X
