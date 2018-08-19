@@ -3,6 +3,7 @@ npm-debug.log     # npm
 .byebug_history   # Ruby byebug
 *.pyc             # Python 2
 .xmark.*.html     # Xmark
+.gdb_history      # gdb
 
 #
 # OS X
