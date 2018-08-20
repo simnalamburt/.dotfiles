@@ -10,6 +10,7 @@ Windows
 - KakaoTalk, LINE
 - Uplay, Steam, Battle.net, 오리진
 - VLC
+- lmms audacity guitarrig5 asio4all
 
 [wsltty]: https://github.com/mintty/wsltty
 [OpenVPN GUI]: https://github.com/openvpn/openvpn-gui
