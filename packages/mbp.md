@@ -23,7 +23,7 @@ MacBook Pro
 - iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
 - docker
-- visual-studio-code visual-studio sketchbook
+- visual-studio-code
 - wireshark
 - steam battle-net
 - microsoft-office android-file-transfer
