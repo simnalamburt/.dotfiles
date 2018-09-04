@@ -3,7 +3,7 @@ MacBook Pro
 
 ### [`brew`]
 - vim git zsh mosh wget xz md5sha1sum b2sum mtr
-- ripgrep fd tag-ag jq exa
+- ripgrep fd tag-ag jq exa bat
 - ruby node yarn python python3
 - go dep
 - gnu-tar gnupg
