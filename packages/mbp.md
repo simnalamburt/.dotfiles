@@ -33,6 +33,7 @@ MacBook Pro
 - 한컴오피스 한글 2014 VP 뷰어
 - Magnet
 - Garage Band, MainStage 3
+- Autodesk SketchBook
 
 ### etc
 - OpenVPN Connect 2.1
