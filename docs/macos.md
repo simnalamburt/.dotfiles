@@ -35,6 +35,24 @@ macOS
 
 <br>
 
+### 4K가 아닌 디스플레이에 대해서도 HiDPI 강제로 활성화하기
+아니 이걸 제가 손으로 강제로 켜줘야한다는게 말이 됩니까? Special thanks to
+[@serialx](https://github.com/serialx)
+
+```sh
+# 켜기
+sudo defaults write \
+  /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+
+# 끄기
+sudo defaults delete \
+  /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled
+
+# Reference: https://www.tekrevue.com/tip/hidpi-mode-os-x/
+```
+
+<br>
+
 ### 키보드 세팅
 [`Karabiner-Elements`]로 원하는걸 다 할수있었음.
 
