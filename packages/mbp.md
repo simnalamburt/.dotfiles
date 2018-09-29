@@ -39,6 +39,7 @@ MacBook Pro
 - OpenVPN Connect 2.1
 - yarn global: pen
 - [rustup]
+- [PS4 remote play](https://remoteplay.dl.playstation.net/remoteplay/lang/kr/index.html)
 
 [rustup]: https://www.rust-lang.org/ko-KR/install.html
 [`brew`]: http://brew.sh
