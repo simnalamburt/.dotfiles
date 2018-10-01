@@ -846,13 +846,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-2291 -148 606 469 -2560 -287 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1713 381 796 486 -2560 -287 2560 1440 </string>
+	<string>-1048 687 916 394 -1280 433 1280 720 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 293 592 584 0 0 1600 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-2114 -20 1130 825 -2560 -287 2560 1440 </string>
+	<string>-1000 442 810 602 -1280 433 1280 720 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-2237 164 1130 877 -2560 -287 2560 1440 </string>
+	<string>-1758 -19 1130 825 -2560 -287 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9_selection</key>
@@ -1429,7 +1429,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MonacoForPowerline 24</string>
+			<string>MonacoForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2179,7 +2179,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MonacoForPowerline 24</string>
+			<string>MonacoForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2450,7 +2450,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-09T04:40:12Z</date>
+	<date>2018-09-19T04:48:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
