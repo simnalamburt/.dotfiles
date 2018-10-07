@@ -21,6 +21,7 @@ set nofoldenable
 set noshowmode
 set noswapfile
 set nowrap
+set updatetime=500
 
 " History
 if has("persistent_undo")
@@ -402,6 +403,11 @@ augroup vimrc
 
   " vim-vue
   autocmd FileType vue syntax sync fromstart
+
+  " Vim automatic reload
+  autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+  autocmd FileChangedShellPost *
+    \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 augroup END
 
 
