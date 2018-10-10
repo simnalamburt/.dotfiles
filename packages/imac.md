@@ -16,6 +16,7 @@ iMac
 - pipenv
 - shellcheck
 - cmake ninja ccache libcouchbase mysql@5.7 lz4
+- flintrock
 
 ### [`brew cask`]
 - firefox google-chrome iina
