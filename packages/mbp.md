@@ -17,6 +17,7 @@ MacBook Pro
 - pipenv
 - shellcheck
 - rocksdb
+- flintrock
 
 ### [`brew cask`]
 - firefox google-chrome iina
