@@ -6,7 +6,7 @@ iMac
 - ripgrep fd tag-ag jq exa
 - neovim
 - ruby node yarn python python3
-- go dep
+- go
 - htop gnu-tar nmap gnupg mtr
 - awscli kubectl kops
 - terraform vault packer
@@ -36,7 +36,9 @@ iMac
 - [rustup]
 - 프린터 드라이버, 스캐너 드라이버
 - [circleci](https://circleci.com/docs/2.0/local-jobs/#installing-the-cli-locally)
+- [kcinit] via `go get`
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
 [rustup]: https://www.rust-lang.org/ko-KR/install.html
+[kcinit]: https://github.com/keycloak/kcinit
