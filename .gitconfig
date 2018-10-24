@@ -31,9 +31,9 @@
 	conflictstyle = diff3
 [credential "https://github.com"]
 	username = simnalamburt
-[credential "http://git.hyeon.me"]
+[credential "https://git.hyeon.me"]
 	username = simnalamburt
-[credential "http://git.upnl.org"]
+[credential "https://git.upnl.org"]
 	username = simnalamburt
 [filter "lfs"]
 	required = yes
@@ -48,6 +48,12 @@
 	gpgsign = yes
 [rerere]
 	enabled = yes
+[stash]
+	showPatch = true
+[status]
+	showStash = true
+[submodule]
+	fetchJobs = 0
 
 [include]
 	path = ~/.gitconfig.local
