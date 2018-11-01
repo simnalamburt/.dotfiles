@@ -28,6 +28,7 @@ MacBook Pro
 - wireshark
 - steam battle-net
 - microsoft-office android-file-transfer
+- dotnet-sdk
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
