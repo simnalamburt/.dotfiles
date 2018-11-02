@@ -25,23 +25,19 @@ MacBook Pro
 - jetbrains-toolbox
 - docker
 - visual-studio-code
-- wireshark
-- steam battle-net
+- steam
 - microsoft-office android-file-transfer
-- dotnet-sdk
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
 - 한컴오피스 한글 2014 VP 뷰어
 - Magnet
 - Garage Band, MainStage 3
-- Autodesk SketchBook
 
 ### etc
 - OpenVPN Connect 2.1
 - yarn global: pen
 - [rustup]
-- [PS4 remote play](https://remoteplay.dl.playstation.net/remoteplay/lang/kr/index.html)
 
 [rustup]: https://www.rust-lang.org/ko-KR/install.html
 [`brew`]: http://brew.sh
