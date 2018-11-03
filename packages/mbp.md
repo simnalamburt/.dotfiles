@@ -36,9 +36,10 @@ MacBook Pro
 
 ### etc
 - OpenVPN Connect 2.1
-- yarn global: pen
+- [pen] (`npm install --global pen`)
 - [rustup]
 
-[rustup]: https://www.rust-lang.org/ko-KR/install.html
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
+[pen]: https://github.com/utatti/pen
+[rustup]: https://www.rust-lang.org/ko-KR/install.html
