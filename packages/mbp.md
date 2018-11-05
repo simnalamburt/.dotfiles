@@ -2,22 +2,20 @@ MacBook Pro
 ========
 
 ### [`brew`]
-- vim git zsh mosh wget xz md5sha1sum b2sum mtr
-- ripgrep fd tag-ag jq exa bat
-- ruby node yarn python python3
-- go dep
-- gnu-tar gnupg
-- zstd p7zip
-- aria2
-- terraform vault
-- awscli kubectl
+- vim git zsh mosh wget xz md5sha1sum b2sum watch
 - cdiff
-- watch
-- htop
-- pipenv
+- ripgrep fd tag-ag jq exa
+- ruby node yarn python python3 go
+- htop gnu-tar gnupg mtr
+- awscli kubectl
+- terraform vault
+- flintrock
+
+&nbsp;
+
+- aria2
 - shellcheck
 - rocksdb
-- flintrock
 
 ### [`brew cask`]
 - firefox google-chrome iina

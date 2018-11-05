@@ -2,28 +2,27 @@ iMac
 ========
 
 ### [`brew`]
-- vim git zsh mosh wget xz md5sha1sum b2sum tmux cdiff
+- vim git zsh mosh wget xz md5sha1sum b2sum watch
+- cdiff
 - ripgrep fd tag-ag jq exa
-- neovim
-- ruby node yarn python python3
-- go
-- htop gnu-tar nmap gnupg mtr
-- awscli kubectl kops
-- terraform vault packer
-- p7zip youtube-dl
-- imagemagick
-- watch
-- pipenv
-- shellcheck
-- cmake ninja ccache libcouchbase mysql@5.7 lz4
+- ruby node yarn python python3 go
+- htop gnu-tar gnupg mtr
+- awscli kubectl
+- terraform vault
 - flintrock
+
+&nbsp;
+
+- tmux
+- kops
+- shellcheck
 
 ### [`brew cask`]
 - firefox google-chrome iina
 - iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
 - docker
-- visual-studio-code sketchbook
+- visual-studio-code
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
