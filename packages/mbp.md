@@ -15,7 +15,6 @@ MacBook Pro
 
 - aria2
 - shellcheck
-- rocksdb
 
 ### [`brew cask`]
 - firefox google-chrome iina
