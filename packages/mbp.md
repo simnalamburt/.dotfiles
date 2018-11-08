@@ -6,7 +6,7 @@ MacBook Pro
 - cdiff
 - ripgrep fd tag-ag jq exa
 - ruby node yarn python python3 go
-- htop gnu-tar gnupg mtr
+- htop gnu-tar gnupg
 - awscli kubectl
 - terraform vault
 - flintrock
