@@ -10,12 +10,12 @@ iMac
 - awscli kubectl
 - terraform vault
 - flintrock
+- tmux
+- shellcheck
 
 &nbsp;
 
-- tmux
 - kops
-- shellcheck
 
 ### [`brew cask`]
 - firefox google-chrome iina

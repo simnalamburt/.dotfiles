@@ -10,11 +10,12 @@ MacBook Pro
 - awscli kubectl
 - terraform vault
 - flintrock
+- tmux
+- shellcheck
 
 &nbsp;
 
 - aria2
-- shellcheck
 
 ### [`brew cask`]
 - firefox google-chrome iina
