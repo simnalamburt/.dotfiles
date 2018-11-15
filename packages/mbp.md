@@ -35,6 +35,7 @@ MacBook Pro
 - OpenVPN Connect 2.1
 - [pen] (`npm install --global pen`)
 - [rustup]
+- [kcinit] via `go get`
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
