@@ -130,13 +130,6 @@ if (( $+commands[go] )) && [[ -d ~/.go ]]; then
   export PATH="$PATH:$GOPATH/bin"
 fi
 
-# Ruby
-if (( $+commands[ruby] )) && (( $+commands[gem] )); then
-  GEM_HOME=$(ruby -e 'print Gem.user_dir')
-  export GEM_HOME
-  export PATH="$PATH:$GEM_HOME/bin"
-fi
-
 # cargo install
 if [[ -d ~/.cargo/bin ]]; then
   export PATH="$PATH:$HOME/.cargo/bin"
