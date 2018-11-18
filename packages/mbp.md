@@ -25,6 +25,7 @@ MacBook Pro
 - visual-studio-code
 - steam
 - microsoft-office android-file-transfer
+- parsec
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
