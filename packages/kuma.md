@@ -16,6 +16,7 @@ kuma.hyeon.me
 - pinentry
 - mtr
 - go
+- whois
 
 ### AUR
 - yay-bin
