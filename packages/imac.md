@@ -25,7 +25,7 @@ iMac
 - visual-studio-code
 
 ### App Store
-- 카카오톡, LINE, 텔레그램
+- 카카오톡, LINE
 - 한컴오피스 한글 2014 VP 뷰어
 - Magnet
 
