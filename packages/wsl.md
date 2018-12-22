@@ -1,5 +1,10 @@
 WSL - Debian Stretch
 ========
+
+### `apt`
 - curl bash-completion
 - vim mosh git zsh
-- aria2
+
+### `/usr/local/bin`
+- fd rg
+- packer
