@@ -16,6 +16,7 @@ iMac
 &nbsp;
 
 - kops
+- kubernetes-helm
 
 ### [`brew cask`]
 - firefox google-chrome iina
