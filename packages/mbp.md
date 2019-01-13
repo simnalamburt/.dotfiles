@@ -15,7 +15,7 @@ MacBook Pro
 
 &nbsp;
 
-- mtr aria2
+- mtr aria2 nim
 
 ### [`brew cask`]
 - firefox google-chrome iina
