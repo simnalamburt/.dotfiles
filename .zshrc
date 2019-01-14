@@ -114,8 +114,10 @@ fi
 # Aliases
 if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
 
-# Neovim
-if (( $+commands[nvim] )); then
+# Vim & Neovim
+if (( $+commands[vim] )); then
+  export EDITOR=vim
+elif (( $+commands[nvim] )); then
   export EDITOR=nvim
 fi
 
