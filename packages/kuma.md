@@ -6,7 +6,7 @@ kuma.hyeon.me
 - vim mosh git tmux zsh wget upx unzip rsync
 - exa ripgrep fd
 - htop bmon
-- clang rust cargo ruby python python2 nodejs yarn elixir
+- clang rust cargo python python2 nodejs yarn elixir
 - gdb lldb
 - weechat
 - imagemagick
