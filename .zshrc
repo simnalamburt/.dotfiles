@@ -1,11 +1,6 @@
 # If not running interactively, don't do anything
 [[ -o interactive ]] || return
 
-# Check if zsh is running under WSL
-if [[ -r /proc/version ]] && grep -q Microsoft /proc/version; then
-  unsetopt BG_NICE
-fi
-
 #
 # zplug
 #
