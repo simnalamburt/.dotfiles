@@ -1,0 +1,41 @@
+## GNU Coreutils
+# alias ls='ls --color=tty'
+## BSD
+# alias ls='ls -G'
+
+## Aliases
+#if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
+
+##
+## notify
+##
+#if (( $+commands[osascript] )); then
+#  notify () {
+#    # 'sound name' 파라미터가 작동 안해서 afplay로 바꿈
+#    # Reference: https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html#//apple_ref/doc/uid/TP40000983-CH216-SW224
+#    echo 'display notification "일어나세요" with title "작업 끝!"' | osascript
+#    afplay /System/Library/Sounds/Glass.aiff &
+#  }
+#fi
+
+## kubectl
+#if (( $+commands[kubectl] )); then
+#  source <(kubectl completion zsh)
+#fi
+
+## Terraform
+#if (( $+commands[terraform] )); then
+#  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+#fi
+
+## Vault autocompletion
+#if (( $+commands[vault] )); then
+#  autoload -U +X bashcompinit && bashcompinit
+#  complete -o nospace -C /usr/local/bin/vault vault
+#fi
+
+## Golang
+#if (( $+commands[go] )) && [[ -d ~/.go ]]; then
+#  export GOPATH="$HOME/.go"
+#  export PATH="$PATH:$GOPATH/bin"
+#fi
