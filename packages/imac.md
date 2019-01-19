@@ -31,7 +31,6 @@ iMac
 
 ### etc
 - OpenVPN Connect 2.1
-- yarn global: node-gyp pen
 - [rustup]
 - [kcinit] via `go get`
 - 프린터 드라이버, 스캐너 드라이버
