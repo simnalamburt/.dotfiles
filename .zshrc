@@ -76,6 +76,14 @@ if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 # Vim & Neovim
 if (( $+commands[vim] )); then
   export EDITOR=vim
+  # EDITOR이나 VISUAL 환경변수가 vim 으로 설정되어있으면 자동으로 emacs-like
+  # 키바인딩들이 해제되어서, ^A ^E 등을 모조리 쓸 수 없어진다. 무슨짓이냐...
+  #
+  # References:
+  #   https://stackoverflow.com/a/43087047
+  #   https://github.com/zsh-users/zsh/blob/96a79938010073d14bd9db31924f7646968d2f4a/Src/Zle/zle_keymap.c#L1437-L1439
+  bindkey '^A' beginning-of-line
+  bindkey '^E' end-of-line
 elif (( $+commands[nvim] )); then
   export EDITOR=nvim
 fi
