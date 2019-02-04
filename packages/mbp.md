@@ -29,6 +29,7 @@ MacBook Pro
 - authy
 - horndis
 - wireshark
+- tableplus
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
