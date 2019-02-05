@@ -16,6 +16,7 @@ MacBook Pro
 &nbsp;
 
 - mtr aria2 crystal
+- composer
 
 ### [`brew cask`]
 - firefox google-chrome iina
