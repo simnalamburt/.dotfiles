@@ -28,6 +28,7 @@ iMac
 - 카카오톡, LINE
 - 한컴오피스 한글 2014 VP 뷰어
 - Magnet
+- Microsoft Remote Desktop
 
 ### etc
 - OpenVPN Connect 2.1
