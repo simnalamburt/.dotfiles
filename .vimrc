@@ -197,9 +197,7 @@ try
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
-  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'tfnico/vim-gradle'
-  Plug 'elixir-lang/vim-elixir'
   Plug 'Matt-Deacalion/vim-systemd-syntax'
   Plug 'isobit/vim-caddyfile'
   if v:version >= 701
