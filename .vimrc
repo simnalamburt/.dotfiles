@@ -1,3 +1,5 @@
+" See https://github.com/simnalamburt/.dotfiles/blob/master/.vimrc
+
 "
 " General configs
 "

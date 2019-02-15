@@ -1,3 +1,5 @@
+# See https://github.com/simnalamburt/.dotfiles/blob/master/.bashrc
+
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
