@@ -1,3 +1,4 @@
 ---
 BUNDLE_PATH: ".bundle/lib"
 BUNDLE_DISABLE_SHARED_GEMS: "true"
+BUNDLE_JOBS: "8"
