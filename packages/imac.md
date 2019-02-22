@@ -12,6 +12,7 @@ iMac
 - flintrock
 - tmux
 - shellcheck
+- terraform_landscape
 
 &nbsp;
 
