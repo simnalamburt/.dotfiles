@@ -5,6 +5,7 @@
 
 ## Aliases
 #if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
+#if (( $+commands[ydiff] )); then alias vd='ydiff -sw0'; fi
 
 ##
 ## notify
