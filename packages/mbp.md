@@ -15,8 +15,7 @@ MacBook Pro
 
 &nbsp;
 
-- mtr aria2 crystal
-- composer
+- mtr aria2
 
 ### [`brew cask`]
 - firefox google-chrome iina
@@ -29,8 +28,6 @@ MacBook Pro
 - parsec
 - authy
 - horndis
-- wireshark
-- tableplus
 
 ### App Store
 - 카카오톡, LINE, 텔레그램

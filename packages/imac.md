@@ -12,10 +12,10 @@ iMac
 - flintrock
 - tmux
 - shellcheck
-- terraform_landscape
 
 &nbsp;
 
+- terraform_landscape
 - kops
 
 ### [`brew cask`]
