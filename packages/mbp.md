@@ -33,7 +33,7 @@ MacBook Pro
 - 카카오톡, LINE, 텔레그램
 - 한컴오피스 한글 2014 VP 뷰어
 - Magnet
-- Garage Band, MainStage 3
+- Garage Band, MainStage 3, iMovie
 
 ### etc
 - OpenVPN Connect 2.1
