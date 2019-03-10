@@ -32,6 +32,7 @@
 ## Vault autocompletion
 #if (( $+commands[vault] )); then
 #  autoload -U +X bashcompinit && bashcompinit
+#  autoload -Uz compinit && compinit
 #  complete -o nospace -C /usr/local/bin/vault vault
 #fi
 

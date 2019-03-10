@@ -1,27 +1,28 @@
 # If not running interactively, don't do anything
 [[ -o interactive ]] || return
 
+
 #
-# zplug
+# zplugin
 #
 autoload -U is-at-least
-if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
-  source ~/.zplug/init.zsh
+if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
+  source '/Users/hyeon/.zplugin/bin/zplugin.zsh'
+  autoload -Uz _zplugin
+  (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-  zplug "simnalamburt/cgitc"
+  zplugin light simnalamburt/cgitc
   ZSH_EXPAND_ALL_DISABLE=word
-  zplug "simnalamburt/zsh-expand-all"
-  zplug "zsh-users/zsh-completions"
+  zplugin light simnalamburt/zsh-expand-all
+  zplugin light zsh-users/zsh-completions
   ZSH_AUTOSUGGEST_USE_ASYNC=true
-  zplug "zsh-users/zsh-autosuggestions"
-  zplug "zdharma/fast-syntax-highlighting"
-  zplug "zsh-users/zsh-history-substring-search"
+  zplugin light zsh-users/zsh-autosuggestions
+  zplugin light zdharma/fast-syntax-highlighting
+  zplugin light zsh-users/zsh-history-substring-search
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
-  zplug "mafredri/zsh-async"
-  zplug "sindresorhus/pure", use:pure.zsh, as:theme
-
-  zplug load
+  zplugin ice pick"async.zsh" src"pure.zsh"
+  zplugin light sindresorhus/pure
 else
   PS1='%n@%m:%~%(!.#.$) '
 fi
