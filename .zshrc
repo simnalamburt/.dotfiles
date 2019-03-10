@@ -7,22 +7,24 @@
 #
 autoload -U is-at-least
 if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
-  source '/Users/hyeon/.zplugin/bin/zplugin.zsh'
+  source ~/.zplugin/bin/zplugin.zsh
   autoload -Uz _zplugin
   (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-  zplugin light simnalamburt/cgitc
   ZSH_EXPAND_ALL_DISABLE=word
+  ZSH_AUTOSUGGEST_USE_ASYNC=true
+
+  zplugin light simnalamburt/cgitc
   zplugin light simnalamburt/zsh-expand-all
   zplugin light zsh-users/zsh-completions
-  ZSH_AUTOSUGGEST_USE_ASYNC=true
   zplugin light zsh-users/zsh-autosuggestions
   zplugin light zdharma/fast-syntax-highlighting
   zplugin light zsh-users/zsh-history-substring-search
-  bindkey '^[[A' history-substring-search-up
-  bindkey '^[[B' history-substring-search-down
   zplugin ice pick"async.zsh" src"pure.zsh"
   zplugin light sindresorhus/pure
+
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
 else
   PS1='%n@%m:%~%(!.#.$) '
 fi
@@ -32,6 +34,7 @@ fi
 # zsh-sensible
 #
 stty stop undef
+autoload -Uz compinit && compinit
 
 alias l='ls -lah'
 alias mv='mv -i'
