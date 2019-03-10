@@ -14,7 +14,7 @@ if is-at-least 4.3.9 && [[ -f ~/.zplug/init.zsh ]]; then
   zplug "zsh-users/zsh-completions"
   ZSH_AUTOSUGGEST_USE_ASYNC=true
   zplug "zsh-users/zsh-autosuggestions"
-  zplug "zsh-users/zsh-syntax-highlighting"
+  zplug "zdharma/fast-syntax-highlighting"
   zplug "zsh-users/zsh-history-substring-search"
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
