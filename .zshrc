@@ -17,6 +17,9 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   zplugin light simnalamburt/cgitc
   zplugin light simnalamburt/zsh-expand-all
   zplugin light zsh-users/zsh-completions
+  if is-at-least 5.3; then
+    zplugin ice silent wait'1' atload'_zsh_autosuggest_start'
+  fi
   zplugin light zsh-users/zsh-autosuggestions
   zplugin light zdharma/fast-syntax-highlighting
   zplugin light zsh-users/zsh-history-substring-search
