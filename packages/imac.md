@@ -17,6 +17,7 @@ iMac
 
 - terraform_landscape
 - kops
+- pipenv
 
 ### [`brew cask`]
 - firefox google-chrome iina
