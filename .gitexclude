@@ -4,8 +4,11 @@
 npm-debug.log
 # Ruby byebug
 .byebug_history
-# Python 2
+
+# Python
 *.pyc
+.python-version
+
 # Xmark
 .xmark.*.html
 # gdb
@@ -47,10 +50,6 @@ $RECYCLE.BIN/
 ~$*.docx
 ~$*.xlsx
 
-
-
-# vim-obsession
-Session.vim
 
 # yarn
 yarn-error.log
