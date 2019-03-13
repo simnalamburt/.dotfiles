@@ -34,6 +34,7 @@ iMac
 
 ### etc
 - OpenVPN Connect 2.1
+- [pen] (`npm install --global pen`)
 - [kcinit] via `go get`
 - 프린터 드라이버, 스캐너 드라이버
 
