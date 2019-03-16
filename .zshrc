@@ -31,7 +31,14 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 else
-  PS1=$'\e[1;32m%n@%m\e[0m:\e[1;34m%~\e[0m%(!.#.$) '
+  # Default terminal
+  case "$TERM" in
+    xterm-color|*-256color)
+      PS1=$'\e[1;32m%n@%m\e[0m:\e[1;34m%~\e[0m%(!.#.$) ';;
+    *)
+      PS1='%n@%m:%~%(!.#.$) ';;
+  esac
+
   autoload -Uz compinit
   compinit
 fi
