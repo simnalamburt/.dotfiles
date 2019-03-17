@@ -16,6 +16,7 @@ MacBook Pro
 &nbsp;
 
 - mtr aria2
+- pypy3
 
 ### [`brew cask`]
 - firefox google-chrome iina
