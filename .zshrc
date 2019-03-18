@@ -7,13 +7,12 @@
 #
 autoload -U is-at-least
 if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
+  ZSH_EXPAND_ALL_DISABLE=word
+  ZSH_AUTOSUGGEST_USE_ASYNC=1
+
   source ~/.zplugin/bin/zplugin.zsh
   autoload -Uz _zplugin
   (( ${+_comps} )) && _comps[zplugin]=_zplugin
-
-  ZSH_EXPAND_ALL_DISABLE=word
-  ZSH_AUTOSUGGEST_USE_ASYNC=true
-
   zplugin light simnalamburt/cgitc
   zplugin light simnalamburt/zsh-expand-all
   zplugin light zsh-users/zsh-completions
@@ -25,11 +24,16 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   zplugin light zsh-users/zsh-history-substring-search
   zplugin ice pick"async.zsh" src"pure.zsh"
   zplugin light sindresorhus/pure
+  autoload -Uz compinit
+  compinit
+  zplugin cdreplay
 
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 else
-  PS1='%n@%m:%~%(!.#.$) '
+  PS1=$'\e[1;32m%n@%m\e[0m:\e[1;34m%~\e[0m%(!.#.$) '
+  autoload -Uz compinit
+  compinit
 fi
 
 
@@ -37,7 +41,6 @@ fi
 # zsh-sensible
 #
 stty stop undef
-autoload -Uz compinit && compinit
 
 alias l='ls -lah'
 alias mv='mv -i'
