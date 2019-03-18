@@ -12,6 +12,7 @@ MacBook Pro
 - flintrock
 - tmux
 - shellcheck
+- pipenv pyenv
 
 &nbsp;
 

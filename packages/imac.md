@@ -12,12 +12,12 @@ iMac
 - flintrock
 - tmux
 - shellcheck
+- pipenv pyenv
 
 &nbsp;
 
 - terraform_landscape
 - kops
-- pipenv
 - pyenv
 
 ### [`brew cask`]
