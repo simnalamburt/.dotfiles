@@ -85,7 +85,7 @@ cabbrev ㅈㅂ wq
 " Easy command-line mode
 nnoremap ; :
 " Easy home/end
-inoremap <C-a> <Home>
+inoremap <C-a> <ESC>I
 inoremap <C-e> <End>
 nnoremap <C-a> ^
 nnoremap <C-e> $
