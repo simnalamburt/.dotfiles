@@ -8,7 +8,7 @@ kuma.hyeon.me
 - rust cargo python python2
 - weechat
 - docker
-- gcc gcc-fortran
+- gcc fpc
 
 ### AUR
 - yay-bin
