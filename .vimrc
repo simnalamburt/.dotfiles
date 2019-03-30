@@ -205,6 +205,7 @@ try
   if v:version >= 701
     Plug 'sheerun/vim-polyglot'
   endif
+  Plug 'boeckmann/vim-freepascal'
 
   " Blink
   Plug 'farmergreg/vim-lastplace'
