@@ -36,6 +36,7 @@ MacBook Pro
 - 한컴오피스 한글 2014 VP 뷰어
 - Magnet
 - Garage Band, MainStage 3, iMovie
+- Microsoft Remote Desktop 10
 
 ### etc
 - OpenVPN Connect 2.1
