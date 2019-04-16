@@ -191,6 +191,7 @@ try
   if v:version >= 702
     Plug 'justinmk/vim-dirvish'
   endif
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
@@ -229,6 +230,10 @@ endtry
 " Configs for plugins
 "
 if exists('s:has_vimplug') && s:has_vimplug
+  " vim-prettier
+  let g:prettier#autoformat = 0
+  autocmd BufWritePre *.js,*.ts,*.css,*.less,*.scss,*.vue PrettierAsync
+
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
   let g:indent_guides_auto_colors = 0
