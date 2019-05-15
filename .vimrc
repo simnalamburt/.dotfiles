@@ -179,7 +179,6 @@ try
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
     Plug 'junegunn/fzf.vim'
   endif
-  Plug 'simnalamburt/vim-mundo'
   Plug 'tpope/vim-git'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-endwise'
@@ -217,6 +216,12 @@ try
     Plug 'haya14busa/incsearch.vim'
     Plug 'haya14busa/incsearch-fuzzy.vim'
     Plug 'haya14busa/incsearch-easymotion.vim'
+  endif
+
+  " My plugins
+  Plug 'simnalamburt/vim-mundo'
+  if has("macunix")
+    Plug 'simnalamburt/vim-tiny-ime', { 'do' : './build' }
   endif
 
   call plug#end()
