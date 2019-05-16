@@ -9,13 +9,13 @@ MacBook Pro
 - htop gnu-tar gnupg
 - awscli kubectl
 - terraform vault
-- flintrock
 - tmux
 - shellcheck
 - pipenv pyenv
 
 &nbsp;
 
+- cmake
 - mtr aria2
 
 ### [`brew cask`]

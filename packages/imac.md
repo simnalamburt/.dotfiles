@@ -9,13 +9,13 @@ iMac
 - htop gnu-tar gnupg
 - awscli kubectl
 - terraform vault
-- flintrock
 - tmux
 - shellcheck
 - pipenv pyenv
 
 &nbsp;
 
+- flintrock
 - terraform_landscape
 - kops
 - pyenv
