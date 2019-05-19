@@ -30,6 +30,7 @@ MacBook Pro
 - authy
 - horndis
 - discord
+- minecraft
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
