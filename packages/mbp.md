@@ -17,6 +17,7 @@ MacBook Pro
 
 - cmake
 - mtr aria2
+- saml2aws (from tap `versent/homebrew-taps`)
 
 ### [`brew cask`]
 - firefox google-chrome iina
@@ -31,6 +32,7 @@ MacBook Pro
 - horndis
 - discord
 - minecraft
+- slack
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
