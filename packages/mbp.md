@@ -33,6 +33,7 @@ MacBook Pro
 - discord
 - minecraft
 - slack
+- keycastr
 
 ### App Store
 - 카카오톡, LINE, 텔레그램
