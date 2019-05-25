@@ -8,4 +8,4 @@ WSL - Debian Stretch
 
 ### `/usr/local/bin`
 - fd rg
-- packer
+- packer terraform terraformer
