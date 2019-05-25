@@ -3,7 +3,7 @@ WSL - Debian Stretch
 
 ### `apt`
 - curl bash-completion
-- vim mosh git zsh
+- vim mosh git zsh tmux
 - unzip
 - python3-venv
 
