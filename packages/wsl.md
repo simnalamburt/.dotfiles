@@ -5,6 +5,7 @@ WSL - Debian Stretch
 - curl bash-completion
 - vim mosh git zsh
 - unzip
+- python3-venv
 
 ### `/usr/local/bin`
 - fd rg
