@@ -1,4 +1,4 @@
-Windows
+Windows 10 Build 1903
 ========
 - 7zip
 - Firefox, Chrome
@@ -11,6 +11,8 @@ Windows
 - VLC
 - ParsecGaming
 - Discord
+- Windows Sandbox
+- https://github.com/microsoft/terminal
 
 [wsltty]: https://github.com/mintty/wsltty
 [OpenVPN GUI]: https://github.com/openvpn/openvpn-gui
