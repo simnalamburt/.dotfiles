@@ -21,7 +21,7 @@ MacBook Pro
 - saml2aws (from tap `versent/homebrew-taps`)
 
 ### [`brew cask`]
-- firefox google-chrome iina
+- firefox-beta google-chrome iina
 - iterm2 karabiner-elements insomniax
 - jetbrains-toolbox
 - docker
