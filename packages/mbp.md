@@ -15,6 +15,7 @@ MacBook Pro
 
 &nbsp;
 
+- flintrock
 - cmake
 - mtr aria2
 - saml2aws (from tap `versent/homebrew-taps`)
