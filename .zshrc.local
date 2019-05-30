@@ -19,6 +19,39 @@
 #  }
 #fi
 
+## macOS OpenVPN
+#vpn() {
+#  local CLI='/Library/Frameworks/OpenVPN.framework/Versions/Current/bin/ovpncli'
+#  case "$1" in
+#    ("h" | "home") "$CLI" -t home.example.com -U connect;;
+#    ("o" | "office") "$CLI" -t office.example.com -U connect;;
+#    ("q" | "quit") "$CLI" -U disconnect;;
+#    (*) cat <<'EOF' && return 1;;
+#vpn
+#CLI로 OpenVPN 연결을 제어할 수 있도록 해줍니다
+#
+#USAGE:
+#    vpn [COMMAND]
+#
+#COMMANDS:
+#    h, home     home.example.com 으로 연결합니다
+#    o, office   office.example.com 으로 연결합니다
+#    q, quit     모든 VPN 연결을 종료시킵니다
+#EOF
+#  esac
+#}
+
+## brew
+#export PATH="/usr/local/sbin:$PATH"
+
+## brew ruby
+#export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+
+## rust
+#if (( $+commands[cargo] )); then
+#  export PATH="$HOME/.cargo/bin:$PATH"
+#fi
+
 ## kubectl
 #if (( $+commands[kubectl] )); then
 #  source <(kubectl completion zsh)
