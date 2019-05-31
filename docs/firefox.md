@@ -5,15 +5,13 @@
 
 1.  파이어폭스 68 이상을 쓸것
 
-2.  기본 검색엔진으로 DuckDuckGo 사용
-
-3.  [HNTP] 플러그인 설정 수정
+2.  [HNTP] 플러그인 설정 수정
 
     - 웹사이트 아이콘은 구글 통해 받아오도록
     - 테마는 "Midnight"
     - 배경색은 `#2a292e`
 
-4.  <about:config>에서 아래 값들 수정
+3.  <about:config>에서 아래 값들 수정
 
     ```
     browser.in-content.dark-mode;true
@@ -21,7 +19,7 @@
     network.trr.bootstrapAddress;1.1.1.1
     ```
 
-5.  [UserContent.css] 에 아래 코드 삽입
+4.  [UserContent.css] 에 아래 코드 삽입
 
     ```
     @-moz-document url("about:blank") {
