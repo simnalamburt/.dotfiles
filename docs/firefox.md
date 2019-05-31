@@ -15,7 +15,7 @@
 
     ```
     browser.in-content.dark-mode;true
-    network.trr.mode;3
+    network.trr.mode;2
     network.trr.bootstrapAddress;1.1.1.1
     ```
 
