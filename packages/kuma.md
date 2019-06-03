@@ -9,6 +9,7 @@ kuma.hyeon.me
 - weechat
 - docker
 - gcc fpc
+- smartmontools
 
 ### AUR
 - yay-bin
