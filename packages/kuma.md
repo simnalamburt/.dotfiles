@@ -9,7 +9,7 @@ kuma.hyeon.me
 - weechat
 - docker
 - gcc fpc
-- smartmontools
+- smartmontools lm_sensors
 
 ### AUR
 - yay-bin
