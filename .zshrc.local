@@ -74,3 +74,7 @@
 #  export GOPATH="$HOME/.go"
 #  export PATH="$PATH:$GOPATH/bin"
 #fi
+
+## WSL
+#umask 022
+#export SHELL=/usr/bin/zsh
