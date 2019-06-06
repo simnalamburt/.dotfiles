@@ -14,3 +14,6 @@ WSL - Debian Stretch
 ### `/usr/local/bin`
 - fd rg
 - packer terraform terraformer
+
+### etc
+- rustup
