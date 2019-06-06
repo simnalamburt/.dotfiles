@@ -15,7 +15,7 @@ MacBook Pro
 
 &nbsp;
 
-- rust
+- rust zola
 - mtr aria2
 - saml2aws (from tap `versent/homebrew-taps`)
 
