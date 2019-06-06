@@ -15,6 +15,7 @@ MacBook Pro
 
 &nbsp;
 
+- rust
 - mtr aria2
 - saml2aws (from tap `versent/homebrew-taps`)
 
@@ -43,10 +44,8 @@ MacBook Pro
 ### etc
 - OpenVPN Connect 2.1
 - [pen] (`npm install --global pen`)
-- [rustup]
 - [kcinit] via `go get`
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
 [pen]: https://github.com/utatti/pen
-[rustup]: https://www.rust-lang.org/ko-KR/install.html
