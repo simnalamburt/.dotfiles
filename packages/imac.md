@@ -5,7 +5,7 @@ iMac
 - vim git zsh mosh wget xz md5sha1sum b2sum watch
 - cdiff
 - ripgrep fd tag-ag jq exa
-- ruby node yarn python python3 go
+- ruby node yarn python go
 - htop gnu-tar gnupg
 - awscli kubectl
 - terraform vault
