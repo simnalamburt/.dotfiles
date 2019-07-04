@@ -16,3 +16,4 @@ kuma.hyeon.me
 - nullidentdmod
 - tag-ag
 - caddy
+- intel-lms
