@@ -15,6 +15,7 @@ MacBook Pro
 
 &nbsp;
 
+- terraform@0.11
 - kops
 - rust
 - mtr aria2
