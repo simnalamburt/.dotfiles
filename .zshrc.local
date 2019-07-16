@@ -79,3 +79,4 @@
 ## WSL
 #umask 022
 #export SHELL=/usr/bin/zsh
+#export GPG_TTY=$(tty)
