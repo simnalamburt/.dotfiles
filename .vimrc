@@ -206,6 +206,7 @@ try
     Plug 'sheerun/vim-polyglot'
   endif
   Plug 'boeckmann/vim-freepascal'
+  Plug 'hashivim/vim-terraform'
 
   " Blink
   Plug 'farmergreg/vim-lastplace'
@@ -254,6 +255,9 @@ if exists('s:has_vimplug') && s:has_vimplug
   " vim-polyglot
   let g:polyglot_disabled = ['systemd', 'python']
   let g:vue_disable_pre_processors=1
+
+  " vim-terraform
+  let g:terraform_fmt_on_save=1
 
   " clever-f.vim
   let g:clever_f_across_no_line = 1
