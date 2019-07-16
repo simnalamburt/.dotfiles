@@ -19,6 +19,7 @@ MacBook Pro
 - kops
 - rust
 - mtr aria2
+- fpc
 - saml2aws (from tap `versent/homebrew-taps`)
 
 ### [`brew cask`]
