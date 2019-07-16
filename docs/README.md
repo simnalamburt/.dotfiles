@@ -24,45 +24,52 @@
 
 1.  [HSTS] 강제하기
 
-<br>
-
-서버목록
---------
-
-### A. 쿠마
-개발/프로덕션용 서버.
-
-항목 | 내용
------|------
-주소 | kuma.hyeon.me
-OS   | Arch Linux
-위치 | 집
-케이스 | COX A3 노빌레 풀아크릴윈도우 with 헤일로X4 블랙
-Mainboard | 인텔 DP35DP
-파워 | SuperFlower SF-500R14SE Silver Green FX
-CPU | Intel Core2 Quad Q6600 (quad core, 2.40 GHz)
-RAM | DDR2 2GB×4
-Storage | 128GB, SanDisk SD8SB8U1 (SSD)
-VGA | *N/A*
-
-### B. 도지 (retired)
-레거시 서버. 퇴역함.
-
-항목 | 내용
------|------
-주소 | *N/A*
-OS   | Arch Linux
-위치 | 집
-케이스 | ? (일반 탑형 데스크톱)
-Mainboard | ASUS P5KPL-C/1600
-파워 | topower TOP-500D 80PLUS Bronze
-CPU | Intel Core2 Duo E7300 (dual core, 2.66 GHz)
-RAM | DDR2 2GB×2
-Storage | 320GB, 삼성 HD321KJ (HDD)
-VGA | *N/A*
-
 [GoDaddy]: https://kr.godaddy.com/
 [CloudFlare]: https://www.cloudflare.com/
 [fail2ban]: https://github.com/fail2ban/fail2ban
 [https]: https://github.com/simnalamburt/nginx.conf
 [HSTS]: https://scotthelme.co.uk/setting-up-hsts-in-nginx
+
+<br>
+
+서버목록
+--------
+
+### A. kuma.hyeon.me
+
+항목      | 내용
+----------|------
+CPU       | [Intel Core2 Quad Q6600 (quad core, 2.40 GHz)](https://ark.intel.com/content/www/kr/ko/ark/products/29765/intel-core-2-quad-processor-q6600-8m-cache-2-40-ghz-1066-mhz-fsb.html)
+Mainboard | [Intel DP35DP](https://www.cnet.com/products/intel-desktop-board-dp35dp-media-series-motherboard-atx-lga775-socket-p35-series/)
+Socket    | LGA775
+OS        | Arch Linux
+케이스    | COX A3 노빌레 풀아크릴윈도우 with 헤일로X4 블랙
+파워      | SuperFlower SF-500R14SE Silver Green FX
+RAM       | DDR2 2GB×4
+Storage   | 128GB, SanDisk SD8SB8U1 (SSD)
+
+### B. doge
+
+항목      | 내용
+----------|------
+CPU       | [Intel Core2 Duo E7300 (dual core, 2.66 GHz)](https://ark.intel.com/content/www/kr/ko/ark/products/36463/intel-core-2-duo-processor-e7300-3m-cache-2-66-ghz-1066-mhz-fsb.html)
+Mainboard | [ASUS P5KPL-C/1600](https://www.cnet.com/products/asus-p5kpl-c-1600-motherboard-atx-lga775-socket-g31/)
+Socket    | LGA775
+OS        | Arch Linux
+케이스    | 불명 (일반 탑형 데스크톱)
+파워      | topower TOP-500D 80PLUS Bronze
+RAM       | DDR2 2GB×2
+Storage   | 320GB, Western Digital WD3200BPVT (HDD, 2011-01-07)
+ 
+### C. 구 UPNL 클라이언트 
+
+항목      | 내용
+----------|------
+CPU       | [Intel Pentium D 945 (2코어, 3.40GHz)](https://ark.intel.com/content/www/kr/ko/ark/products/27520/intel-pentium-d-processor-945-4m-cache-3-40-ghz-800-mhz-fsb.html)
+Mainboard | [MSI MS-7173 RC410M](https://www.cnet.com/products/msi-rc410m-l-motherboard-micro-atx-lga775-socket-radeon-xpress-200-series/)
+Socket    | PLGA775
+OS        | 불명
+케이스    | [(주)브라보텍 스텔스 EX270 파노라마 윈도우 블랙](http://bravotec.co.kr/shop/item.php?it_id=1520313864)
+파워      | 스카이디지탈 파워스테이션2 PS2-450EF 80PLUS
+RAM       | DDR2 1GBx2
+Storage   | 320GB, 삼성 HD321KJ (HDD)
