@@ -43,6 +43,7 @@ MacBook Pro
 - Magnet
 - Garage Band, MainStage 3, iMovie
 - Microsoft Remote Desktop 10
+- Microsoft To-Do
 
 ### etc
 - OpenVPN Connect 2.1
