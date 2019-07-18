@@ -24,7 +24,7 @@ MacBook Pro
 
 ### [`brew cask`]
 - firefox-beta google-chrome iina
-- iterm2 karabiner-elements insomniax
+- iterm2 karabiner-elements insomniax synergy
 - jetbrains-toolbox
 - docker
 - visual-studio-code
