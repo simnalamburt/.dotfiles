@@ -73,3 +73,14 @@ OS        | 불명
 파워      | 스카이디지탈 파워스테이션2 PS2-450EF 80PLUS
 RAM       | DDR2 1GBx2
 Storage   | 320GB, 삼성 HD321KJ (HDD)
+
+<br>
+
+그 외 재고들
+--------
+
+1.  [NVIDIA GeForce 9500 GT](https://www.geforce.com/hardware/desktop-gpus/geforce-9500-gt/specifications)
+2.  [NVIDIA GeForce GTS 240](https://www.geforce.com/hardware/desktop-gpus/geforce-gts-240-oem-product/specifications)
+3.  Radeon HD 3850
+4.  [AMD Radeon R7 360](https://www.gigabyte.com/Graphics-Card/GV-R736OC-2GD-rev-10#kf) (춘천에 있음)
+5.  [NVIDIA GeForce GTX 970](https://www.nvidia.com/en-us/geforce/900-series/#specsmodal-970) (사용중)
