@@ -13,6 +13,7 @@ Windows 10 Build 1903
 - Discord
 - Windows Sandbox
 - https://github.com/microsoft/terminal
+- autopsy
 
 [wsltty]: https://github.com/mintty/wsltty
 [OpenVPN GUI]: https://github.com/openvpn/openvpn-gui
