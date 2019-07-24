@@ -16,7 +16,7 @@
     ```
     browser.in-content.dark-mode;true
     network.trr.mode;2
-    network.trr.bootstrapAddress;1.1.1.1
+    mousewheel.with_meta.action;1
     ```
 
 4.  [UserContent.css] 에 아래 코드 삽입
