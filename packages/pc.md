@@ -8,12 +8,9 @@ Windows 10 Build 1903
 - [wsltty]
 - [OpenVPN GUI]
 - Uplay, Steam, Battle.net, 오리진
-- VLC
 - ParsecGaming
 - Discord
 - Windows Sandbox
-- https://github.com/microsoft/terminal
-- autopsy
 
 [wsltty]: https://github.com/mintty/wsltty
 [OpenVPN GUI]: https://github.com/openvpn/openvpn-gui
