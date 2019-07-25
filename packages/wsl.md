@@ -6,6 +6,7 @@ WSL - Debian Stretch
 - apt-transport-https build-essential lsb-release
 - vim mosh git zsh tmux
 - python3-venv
+- zip
 
 ### `apt` PPA
 - nodejs (from nodesource.com)
