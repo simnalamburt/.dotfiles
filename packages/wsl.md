@@ -7,6 +7,7 @@ WSL - Debian Stretch
 - vim mosh git zsh tmux
 - python3-venv
 - zip
+- fp-compiler
 
 ### `apt` PPA
 - nodejs (from nodesource.com)
