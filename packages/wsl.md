@@ -8,6 +8,7 @@ WSL - Debian Stretch
 - python3-venv
 - zip
 - clang fp-compiler
+- shellcheck
 
 ### `apt` PPA
 - nodejs (from nodesource.com)
