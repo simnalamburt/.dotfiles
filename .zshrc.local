@@ -60,6 +60,15 @@
 
 ## Terraform
 #if (( $+commands[terraform] )); then
+#  alias tf11='/usr/local/opt/terraform@0.11/bin/terraform'
+#  alias tf12='/usr/local/bin/terraform'
+#
+#  ## Terraform 0.11 as default
+#  # alias tf='AWS_PROFILE=se tf11'
+#  # export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+#  ## Terraform 0.12 as default
+#  # alias tf='AWS_PROFILE=se tf12'
+#
 #  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 #fi
 
