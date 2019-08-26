@@ -50,6 +50,7 @@ MacBook Pro
 - OpenVPN Connect 2.1
 - [pen] (`npm install --global pen`)
 - [kcinit] via `go get`
+- SamsungDeX
 
 [`brew`]: http://brew.sh
 [`brew cask`]: https://caskroom.github.io/
