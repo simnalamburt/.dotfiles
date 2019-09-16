@@ -60,13 +60,11 @@
 
 ## Terraform
 #if (( $+commands[terraform] )); then
-#  alias tf11='/usr/local/opt/terraform@0.11/bin/terraform'
-#  alias tf12='/usr/local/bin/terraform'
-#
-#  ## Use Terraform 0.11 as default
-#  # export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
-#
 #  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+#
+#  tf11 () {
+#    export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+#  }
 #fi
 
 ## Vault autocompletion
