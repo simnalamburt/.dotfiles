@@ -26,6 +26,7 @@ iMac
 - jetbrains-toolbox
 - docker
 - visual-studio-code
+- duet
 
 ### App Store
 - 카카오톡, LINE
