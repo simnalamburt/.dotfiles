@@ -21,7 +21,7 @@ iMac
 - pyenv
 
 ### [`brew cask`]
-- firefox google-chrome iina
+- firefox-beta google-chrome iina
 - iterm2 karabiner-elements insomniax synergy
 - jetbrains-toolbox
 - docker
