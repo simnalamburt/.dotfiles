@@ -8,7 +8,7 @@ iMac
 - ruby node yarn python go
 - htop gnu-tar gnupg
 - awscli kubectl
-- terraform vault
+- terraform terraform@0.11 vault
 - tmux
 - shellcheck
 - pipenv pyenv
