@@ -27,6 +27,7 @@ iMac
 - docker
 - visual-studio-code
 - duet
+- slack
 
 ### App Store
 - 카카오톡, LINE
