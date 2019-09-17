@@ -12,6 +12,7 @@ iMac
 - tmux
 - shellcheck
 - pipenv pyenv
+- packer
 
 &nbsp;
 
