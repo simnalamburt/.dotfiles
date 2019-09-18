@@ -3,7 +3,7 @@ iMac
 
 ### [`brew`]
 - vim git zsh mosh wget xz md5sha1sum b2sum watch
-- cdiff
+- ydiff
 - ripgrep fd tag-ag jq exa
 - ruby node yarn python go
 - htop gnu-tar gnupg
