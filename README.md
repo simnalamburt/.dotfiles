@@ -26,7 +26,7 @@ mkdir -p ~/.ssh && chmod 700 ~/.ssh &&\
   cp ~/.dotfiles/.ssh/config.local ~/.ssh
 
 # Misc
-mkdir -p ~/.gnupg && ln -sf ~/.dotfiles/gpg-agent.conf ~/.gnupg
+mkdir -p ~/.gnupg && cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
 mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
 ```
 
