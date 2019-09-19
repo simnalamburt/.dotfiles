@@ -698,6 +698,13 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0x20-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>22</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x3161-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -856,7 +863,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 293 592 584 0 0 1600 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-934 64 810 592 -1280 85 1280 720 </string>
+	<string>-956 139 650 492 -1280 0 1280 720 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>125 -33 1546 877 0 0 1600 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
@@ -1643,6 +1650,7 @@
 		<string>3.3.2</string>
 		<string>3.2.9</string>
 		<string>3.3.1</string>
+		<string>3.3.4</string>
 		<string>3.3.0</string>
 		<string>3.3.3</string>
 	</array>
@@ -1651,9 +1659,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-1280, 85}, {1280, 720}}</string>
+		<string>{{-1280, 0}, {1280, 720}}</string>
 		<key>topLeft</key>
-		<string>{-1054, 742}</string>
+		<string>{-1011, 595}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -1662,7 +1670,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>36A32BF2-7EBC-470B-84D9-5BAE6785074F</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>20</integer>
+	<integer>30</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2447,7 +2455,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-16T02:38:32Z</date>
+	<date>2019-09-19T03:54:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2517,7 +2525,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.3</string>
+	<string>3.3.4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
