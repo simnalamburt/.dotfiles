@@ -32,6 +32,7 @@ macOS
     - [Monaco for powerline] 설치
     - 키베이스에 디바이스 추가
     - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
+    - 구름 IME 설정: 두벌식, 쿼티 추가. 항상 백틱 입력하도록, ESC 누르면 영어자판 사용하도록, Shift+Space로 IME전환
 
 <br>
 
@@ -51,30 +52,4 @@ sudo defaults delete \
 # Reference: https://www.tekrevue.com/tip/hidpi-mode-os-x/
 ```
 
-<br>
-
-### 키보드 세팅
-[`Karabiner-Elements`]로 원하는걸 다 할수있었음.
-
-1.  (터치바 없는 기종의 경우)
-    <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키를 음악 재생 키 대신
-    <kbd>F7</kbd>, <kbd>F8</kbd>, <kbd>F9</kbd>키로 사용함
-1.  <kbd>Caps Lock</kbd> 키가 <kbd>Left ⌘</kbd>으로 작동하도록 설정
-1.  <kbd>Left ⌘</kbd> 키가 <kbd>Right ⌘</kbd>으로 작동하도록 설정
-1.  [iTerms2] 설정을 고쳐서, 터미널 내에선 <kbd>Left ⌘</kbd> 키가
-    <kbd>Ctrl</kbd>키로 작동하도록 수정.
-1.  <kbd>₩</kbd> 대신 <kbd>\`</kbd>가 입력되도록 수정한다. 아래 커맨드를 실행한
-    뒤, 로그오프 후 다시 로그인 하면 반영된다.
-
-    ```bash
-    if ! [ -f ~/Library/KeyBindings/DefaultkeyBinding.dict ]; then
-      mkdir -p ~/Library/KeyBindings &&\
-        echo '{"₩" = ("insertText:", "\`");}' >\
-          ~/Library/KeyBindings/DefaultkeyBinding.dict
-    fi
-
-    # Reference: https://gist.github.com/redism/43bc51cab62269fa97a220a7bb5e1103
-    ```
-
 [Monaco for powerline]: https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/monaco-powerline.otf
-[`Karabiner-Elements`]: https://github.com/tekezo/Karabiner-Elements

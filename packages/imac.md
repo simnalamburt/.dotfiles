@@ -22,6 +22,7 @@ iMac
 - duet
 - slack
 - datagrip
+- gureumkim
 
 &nbsp;
 
