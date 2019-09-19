@@ -208,9 +208,6 @@ try
 
   " My plugins
   Plug 'simnalamburt/vim-mundo'
-  if has("macunix")
-    Plug 'simnalamburt/vim-tiny-ime', { 'do' : './build' }
-  endif
 
   call plug#end()
 
