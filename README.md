@@ -11,7 +11,7 @@
 ```shell
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
-# zplug     https://github.com/zplug/zplug
+# zplugin   https://github.com/zdharma/zplugin
 # vim-plug  https://github.com/junegunn/vim-plug
 # tpm       https://github.com/tmux-plugins/tpm
 
@@ -28,12 +28,6 @@ mkdir -p ~/.ssh && chmod 700 ~/.ssh &&\
 # Misc
 mkdir -p ~/.gnupg && ln -sf ~/.dotfiles/gpg-agent.conf ~/.gnupg
 mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
-
-# If you use fish shell:
-# chips     https://github.com/kinoru/chips
-mkdir -p ~/.config/fish &&  ln -sf ~/.dotfiles/config.fish ~/.config/fish/
-mkdir -p ~/.config/chips && ln -sf ~/.dotfiles/plugin.yaml ~/.config/chips/
-cp ~/.dotfiles/config-local.fish ~/.config/fish/
 ```
 
 #### Relevant plugins

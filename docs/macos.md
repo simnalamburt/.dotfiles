@@ -28,9 +28,8 @@ macOS
     - iTerm2 설정 임포트, iTerm2에 엑세서빌리티 권한 부여
     - `/etc/shells`에 원하는 쉘 추가, 기본 쉘 변경
     - ssh, vimrc, gitconfig, gitexclude 등의 설정들 심링크
-    - chips, vim-plug 설치 후 플러그인 다운로드
+    - zplugin, vim-plug 등 설치 후 플러그인 다운로드
     - [Monaco for powerline] 설치
-    - Karabiner Elements 설정
     - 키베이스에 디바이스 추가
     - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
 
