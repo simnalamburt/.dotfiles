@@ -7,9 +7,7 @@
 #if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
 #if (( $+commands[ydiff] )); then alias vd='ydiff -sw0'; fi
 
-##
 ## notify
-##
 #if (( $+commands[osascript] )); then
 #  notify () {
 #    # 'sound name' 파라미터가 작동 안해서 afplay로 바꿈
@@ -41,12 +39,13 @@
 #  esac
 #}
 
-## brew
-#export PATH="/usr/local/sbin:$PATH"
-
-## ruby
-#export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
-#export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+## Update PATH
+#export PATH="\
+#$HOME/.local/bin:\
+#/usr/local/sbin:\
+#/usr/local/opt/ruby/bin:\
+#/usr/local/lib/ruby/gems/2.6.0/bin:\
+#$PATH"
 
 ## rust
 #if (( $+commands[cargo] )); then
