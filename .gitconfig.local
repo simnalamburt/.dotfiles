@@ -30,11 +30,11 @@
 #   show = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
 #   diff = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
 
-## Want to use cdiff as a difftool?
+## Want to use ydiff as a difftool?
 # [diff]
-#   tool = cdiff
-# [difftool "cdiff"]
-#   cmd = cdiff -sw0
+#   tool = ydiff
+# [difftool "ydiff"]
+#   cmd = ydiff -sw0
 
 ## To use GPG 2.x instead of 1.x in Ubuntu 16
 # [gpg]
