@@ -19,7 +19,7 @@ iMac
 ### [`brew cask`]
 - firefox-beta (from tap `homebrew/cask-versions`)
 - iterm2 docker visual-studio-code
-- duet synergy
+- duet
 - slack
 - datagrip
 
