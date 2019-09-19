@@ -147,15 +147,6 @@ function! CustomEnter()
 endfunction
 nnoremap <CR> :call CustomEnter()<CR>
 
-" Easy find definition/declaration
-map <c-p> :FZF<CR>
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview('up:60%')
-  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
-  \ <bang>0)
-
 
 "
 " gVim (win32) only configs. Requires python 2.7
@@ -175,10 +166,6 @@ try
 
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  if !has('win32') && !has('win64') && !has('win32unix')
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-    Plug 'junegunn/fzf.vim'
-  endif
   Plug 'tpope/vim-git'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-endwise'
