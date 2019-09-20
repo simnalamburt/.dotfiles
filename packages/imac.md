@@ -37,6 +37,7 @@ iMac
 - OpenVPN Connect 2.1
 - [pen] (`npm install --global pen`)
 - [kcinit] (`go get github.com/keycloak/kcinit`)
+- [eclair](https://github.com/devsisters/eclair)
 
 &nbsp;
 
