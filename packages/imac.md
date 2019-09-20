@@ -12,11 +12,6 @@ iMac
 - terraform terraform@0.11 vault packer
 - saml2aws (from tap `versent/homebrew-taps`)
 
-&nbsp;
-
-- flintrock
-- terraform_landscape
-
 ### [`brew cask`]
 - firefox-beta (from tap `homebrew/cask-versions`)
 - iterm2 docker visual-studio-code
