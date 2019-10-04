@@ -7,23 +7,39 @@
 #
 autoload -U is-at-least
 if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
-  ZSH_EXPAND_ALL_DISABLE=word
-  ZSH_AUTOSUGGEST_USE_ASYNC=1
 
   source ~/.zplugin/bin/zplugin.zsh
   autoload -Uz _zplugin
   (( ${+_comps} )) && _comps[zplugin]=_zplugin
-  zplugin light simnalamburt/cgitc
+
+  # theme
+  zplugin ice pick"async.zsh" src"pure.zsh"
+  zplugin light sindresorhus/pure
+
+  # expand aliases
+  ZSH_EXPAND_ALL_DISABLE=word
   zplugin light simnalamburt/zsh-expand-all
-  zplugin light zsh-users/zsh-completions
+
+  # autosuggestions
+  ZSH_AUTOSUGGEST_USE_ASYNC=1
   if is-at-least 5.3; then
     zplugin ice silent wait'1' atload'_zsh_autosuggest_start'
   fi
   zplugin light zsh-users/zsh-autosuggestions
+
+  # kube-ps1
+  zplugin light jonmosco/kube-ps1
+  RPROMPT='$(kube_ps1)'
+  KUBE_PS1_PREFIX=''
+  KUBE_PS1_SYMBOL_ENABLE='false'
+  KUBE_PS1_SUFFIX=''
+  KUBE_PS1_DIVIDER=' '
+
+  zplugin light simnalamburt/cgitc
   zplugin light zdharma/fast-syntax-highlighting
   zplugin light zsh-users/zsh-history-substring-search
-  zplugin ice pick"async.zsh" src"pure.zsh"
-  zplugin light sindresorhus/pure
+  zplugin light zsh-users/zsh-completions
+
   autoload -Uz compinit
   compinit
   zplugin cdreplay
