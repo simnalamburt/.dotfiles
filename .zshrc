@@ -12,9 +12,33 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   autoload -Uz _zplugin
   (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
+  # kube-ps1
+  zplugin light jonmosco/kube-ps1
+  KUBE_PS1_SYMBOL_ENABLE='false'
+  KUBE_PS1_PREFIX=''
+  KUBE_PS1_SUFFIX=''
+  KUBE_PS1_DIVIDER=' '
+  KUBE_PS1_CTX_COLOR=238
+  KUBE_PS1_NS_COLOR=242
+
   # theme
   zplugin ice pick"async.zsh" src"pure.zsh"
   zplugin light sindresorhus/pure
+  zstyle :prompt:pure:prompt:success color 242
+  zstyle :prompt:pure:prompt:error color 226
+  zstyle :prompt:pure:path color 033
+  # 안 꺼진 job들 시각화
+  PROMPT='%F{226}%(1j.%j .)'$PROMPT
+  # 프로세스들 exit code 시각화
+  precmd_pipestatus() {
+    local STAT=${(j.|.)pipestatus}
+    if [[ "$STAT" = 0 ]]; then
+      RPROMPT='$(kube_ps1) %F{238}%*'
+    else
+      RPROMPT='%F{242}'"$STAT"' $(kube_ps1) %F{238}%*'
+    fi
+  }
+  add-zsh-hook precmd precmd_pipestatus
 
   # expand aliases
   ZSH_EXPAND_ALL_DISABLE=word
@@ -27,14 +51,7 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   fi
   zplugin light zsh-users/zsh-autosuggestions
 
-  # kube-ps1
-  zplugin light jonmosco/kube-ps1
-  RPROMPT='$(kube_ps1)'
-  KUBE_PS1_PREFIX=''
-  KUBE_PS1_SYMBOL_ENABLE='false'
-  KUBE_PS1_SUFFIX=''
-  KUBE_PS1_DIVIDER=' '
-
+  # etc
   zplugin light simnalamburt/cgitc
   zplugin light zdharma/fast-syntax-highlighting
   zplugin light zsh-users/zsh-history-substring-search
