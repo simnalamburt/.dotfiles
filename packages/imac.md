@@ -18,6 +18,7 @@ iMac
 - slack
 - datagrip
 - gureumkim
+- authy
 
 &nbsp;
 
