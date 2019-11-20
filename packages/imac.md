@@ -19,6 +19,7 @@ iMac
 - datagrip
 - gureumkim
 - authy
+- android-file-transfer
 
 &nbsp;
 
