@@ -29,7 +29,7 @@ Setup note
 1.  Enable `extras` repo.
 
     ```powershell
-    scoop bucket add firefox
+    scoop bucket add extras
     ```
 
 <br>
