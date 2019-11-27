@@ -8,16 +8,28 @@ Setup note
 <br>
 
 ### B. Install [scoop](https://scoop.sh/)
-1.  Set ExecutionPolicy as `RemoteSigned`
+1.  Set ExecutionPolicy as `RemoteSigned`.
 
     ```powershell
     Set-ExecutionPolicy RemoteSigned -scope CurrentUser
     ```
     
-1.  Download and execute scoop installer
+1.  Download and execute scoop installer.
 
     ```powershell
     iwr -useb get.scoop.sh | iex
+    ```
+
+1.  Install git. This is requied for next steps.
+
+    ```powershell
+    scoop install git
+    ```
+
+1.  Enable `extras` repo.
+
+    ```powershell
+    scoop bucket add firefox
     ```
 
 <br>
