@@ -7,7 +7,22 @@ Setup note
 
 <br>
 
-### B. Setup Windows Subsystem for Linux
+### B. Install [scoop](https://scoop.sh/)
+1.  Set ExecutionPolicy as `RemoteSigned`
+
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+    ```
+    
+1.  Download and execute scoop installer
+
+    ```powershell
+    iwr -useb get.scoop.sh | iex
+    ```
+
+<br>
+
+### C. Setup Windows Subsystem for Linux
 1.  Update your Windows to the latest one. Make sure that you're using Windows
     build 16215 or later, so that you can install latest WSL via Windows Store.
 
