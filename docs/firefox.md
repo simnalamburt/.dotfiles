@@ -9,26 +9,10 @@
     - 테마는 "Midnight"
     - 배경색은 `#2a292e`
 
-2.  <about:config>에서 아래 값들 수정
+2.  about:config 에서 DoH 활성화
 
     ```
-    browser.in-content.dark-mode;true
     network.trr.mode;2
-    mousewheel.with_meta.action;1
-    mousewheel.with_control.action;1
     ```
-
-3.  [UserContent.css] 에 아래 코드 삽입
-
-    ```
-    @-moz-document url("about:blank") {
-      html {
-        background-color: #2A292E;
-      }
-    }
-    ```
-
-    출처: https://www.reddit.com/r/firefox/comments/822j2y/how_do_you_stop_firefox_from_flashing_a_white/dv7jix2/
 
 [HNTP]: https://github.com/quodroc/HumbleNewTabPage
-[UserContent.css]: https://www.userchrome.org/
