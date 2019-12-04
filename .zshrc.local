@@ -60,11 +60,8 @@
 
 ## Terraform
 #if (( $+commands[terraform] )); then
+#  alias tf='terraform'
 #  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
-#
-#  tf11 () {
-#    export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
-#  }
 #fi
 
 ## Vault autocompletion
@@ -86,3 +83,7 @@
 #export GPG_TTY=$(tty)
 #alias pbcopy=clip.exe
 #alias pbpaste='powershell.exe Get-Clipboard'
+#alias code=/mnt/c/Users/simna/scoop/apps/vscode/current/bin/code
+#
+## Mosh
+#compdef mosh=ssh
