@@ -60,8 +60,8 @@ OS        | Arch Linux
 파워      | topower TOP-500D 80PLUS Bronze
 RAM       | DDR2 2GB×2
 Storage   | 320GB, Western Digital WD3200BPVT (HDD, 2011-01-07)
- 
-### C. 구 UPNL 클라이언트 
+
+### C. 구 UPNL 클라이언트
 
 항목      | 내용
 ----------|------

@@ -13,7 +13,7 @@ Setup note
     ```powershell
     Set-ExecutionPolicy RemoteSigned -scope CurrentUser
     ```
-    
+
 1.  Download and execute scoop installer.
 
     ```powershell
