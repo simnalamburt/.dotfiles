@@ -7,9 +7,11 @@ Setup note
 
 3.  Disable snap assistant
 
-    <img width=650 src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/disable-snap-assist.png">
+    <img width=500 src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/disable-snap-assist.png">
 
-4.  Disable "Activity History". It has a privacy issue, and it disturbs the Task View.
+4.  Disable Activity History. It has not only a privacy issue, but also a disturbance at the Task View screen.
+
+    <img width=500 src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/disable-activity-history.png">
 
 <br>
 
