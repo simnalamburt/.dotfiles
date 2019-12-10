@@ -4,6 +4,7 @@ Setup note
 1.  Remap [Caps Lock &rarr; Control][caps]
 1.  Install [Consolas for Powerline], or [Consolas NF](https://github.com/Znuff/consolas-powerline)
 1.  [Disable snap assistant](http://i.imgur.com/0O4BgFW.png)
+1.  Disable "Activity History". It has a privacy issue, and it disturbs the Task View.
 
 <br>
 
