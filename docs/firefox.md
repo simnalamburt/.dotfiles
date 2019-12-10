@@ -9,10 +9,11 @@
     - 테마는 "Midnight"
     - 배경색은 `#2a292e`
 
-2.  about:config 에서 DoH 활성화
+2.  about:config 에서 DoH 활성화, 키보드+휠 동작 커스텀화
 
     ```
     network.trr.mode;2
+    mousewheel.with_alt.action;1
     mousewheel.with_control.action;1
     ```
 
