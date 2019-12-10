@@ -13,6 +13,7 @@
 
     ```
     network.trr.mode;2
+    mousewheel.with_control.action;1
     ```
 
 [HNTP]: https://github.com/quodroc/HumbleNewTabPage
