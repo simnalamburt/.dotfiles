@@ -11,5 +11,5 @@ Windows 10 Build 1909
 ### Microsoft Store
 - Debian
 - [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
-- Line, slack
+- Line, KakaoTalk, slack
 - Word 2016, Excel 2016, PowerPoint 2016
