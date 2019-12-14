@@ -6,11 +6,12 @@ Windows 10 Build 1909
 - 7zip git
 - vim
 - firefox
-
-&nbsp;
-
 - vscode
 - openjdk
+
+### Microsoft Store
+- Debian
+- Line
 
 ### Manually Installed
 - Chrome Remote Desktop Host
