@@ -11,7 +11,7 @@ Windows 10 Build 1909
 
 ### Microsoft Store
 - Debian
-- Line
+- Line, KakaoTalk
 
 ### Manually Installed
 - Chrome Remote Desktop Host
