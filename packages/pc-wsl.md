@@ -1,5 +1,6 @@
-WSL - Debian Stretch
+PC WSL
 ========
+Debian Stretch
 
 ### `apt`
 - curl bash-completion unzip
