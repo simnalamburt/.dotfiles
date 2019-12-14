@@ -8,3 +8,4 @@ LG Gram 2-in-1
 
 ### Microsoft Store
 - [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
+- slack
