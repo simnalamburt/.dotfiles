@@ -1,5 +1,6 @@
 LG Gram 2-in-1
 ========
+Windows 10 Build 1909
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git
