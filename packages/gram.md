@@ -5,7 +5,7 @@ Windows 10 Build 1909
 ### [`scoop`](https://scoop.sh)
 - 7zip git
 - vim
-- firefox
+- firefox googlechrome
 - discord
 
 ### Microsoft Store
