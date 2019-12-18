@@ -7,6 +7,7 @@ Windows 10 Build 1909
 - vim
 - firefox
 - vscode
+- discord
 
 ### Microsoft Store
 - Debian
@@ -17,5 +18,4 @@ Windows 10 Build 1909
 - MS Office
 - Uplay, Steam, Battle.net, 오리진
 - ParsecGaming
-- Discord
 - Windows Sandbox
