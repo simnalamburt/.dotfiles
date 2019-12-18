@@ -201,7 +201,7 @@ iTerm2              | 설명
 `Ctrl` + `Tab`              | Mintty 전환 (앞)
 `Ctrl` + `Shift` + `Tab`    | Mintty 전환 (뒤)
 
-[Mintty]: http://mintty.googlecode.com/svn-history/r1065/trunk/docs/mintty.1.html#20
+[Mintty]: https://github.com/mintty/mintty
 
 ### vim
 
