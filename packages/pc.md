@@ -8,6 +8,7 @@ Windows 10 Build 1909
 - firefox
 - vscode
 - discord
+- windows-terminal vcredist2019
 
 ### Microsoft Store
 - Debian
