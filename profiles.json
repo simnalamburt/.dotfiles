@@ -1,6 +1,11 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
-// This file resides at "%LocalAppData%\Microsoft\Windows Terminal"
+//
+// This file resides at "%LocalAppData%\Microsoft\Windows Terminal". Sync with the
+// commands below:
+//     cp ~/.dotfiles/profiles.json '/mnt/c/Users/simna/AppData/Local/Microsoft/Windows Terminal/profiles.json'
+//     cp '/mnt/c/Users/simna/AppData/Local/Microsoft/Windows Terminal/profiles.json' ~/.dotfiles/profiles.json
+
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
@@ -20,12 +25,16 @@
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "name": "PowerShell",
             "commandline": "powershell.exe",
+            "fontFace": "Cascadia Code",
+            "fontSize": 14,
             "hidden": false
         },
         {
             "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
             "name": "cmd",
             "commandline": "cmd.exe",
+            "fontFace": "Cascadia Code",
+            "fontSize": 14,
             "hidden": false
         },
         {
