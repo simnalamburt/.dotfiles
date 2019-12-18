@@ -67,6 +67,10 @@
         { "command": "switchToTab7", "keys": [ "ctrl+8"] },
         { "command": "switchToTab8", "keys": [ "ctrl+9"] },
         { "command": "splitHorizontal", "keys": [ "ctrl+-" ] },
-        { "command": "splitVertical", "keys": [ "ctrl+\\" ] }
+        { "command": "splitVertical", "keys": [ "ctrl+\\" ] },
+        { "command": "resizePaneLeft", "keys": [ "ctrl+left" ]},
+        { "command": "resizePaneRight", "keys": [ "ctrl+right" ]},
+        { "command": "resizePaneUp", "keys": [ "ctrl+up" ]},
+        { "command": "resizePaneDown", "keys": [ "ctrl+down" ]}
     ]
 }
