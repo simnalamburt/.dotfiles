@@ -6,7 +6,9 @@ Windows 10 Build 1909
 - 7zip git
 - vim
 - firefox googlechrome
+- vscode
 - discord
+- windows-terminal vcredist2019
 
 ### Microsoft Store
 - Debian
