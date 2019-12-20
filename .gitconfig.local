@@ -18,6 +18,12 @@
 #   show = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
 #   diff = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
 
+## Diff highlight (Debian)
+# [pager]
+#   log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+#   show = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+#   diff = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+
 ## Diff highlight (Ubuntu 16.04 LTS)
 # [pager]
 #   log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less -+XF -SQc
