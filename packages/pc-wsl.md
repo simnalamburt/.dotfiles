@@ -3,12 +3,11 @@ PC WSL
 Debian Buster
 
 ### `apt`
-- curl bash-completion unzip
 - apt-transport-https build-essential lsb-release
-- vim-nox mosh git zsh tmux
+- curl bash-completion zip unzip
+- vim-nox git zsh tmux mosh
 - ruby ruby-dev libsqlite3-dev
 - python3-venv
-- zip
 - clang fp-compiler
 - shellcheck jq
 
