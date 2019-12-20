@@ -1,6 +1,8 @@
 Setup note
 ========
 ### A. Basic customization
+1.  Install [Cascadia Code](https://github.com/microsoft/cascadia-code)
+
 1.  Remap [Caps Lock → Control](https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/capslock-to-control.reg)
 
 1.  Disable snap assistant
