@@ -48,22 +48,3 @@ Setup note
     ```bash
     umask 022
     ```
-
-    <!-- TODO: Is it still necessary? -->
-
-1.  Install packages.
-
-1.  Change the default shell and override `$SHELL` environment variable.
-
-    ```bash
-    chsh -s /bin/zsh
-    ```
-
-    ```zsh
-    # In '.zshrc' or somewhere
-    SHELL=/bin/zsh
-
-    # Reference https://github.com/Microsoft/BashOnWindows/issues/846#issuecomment-242910947
-    ```
-
-    <!-- TODO: Is it still necessary? -->
