@@ -66,6 +66,7 @@
         { "command": "switchToTab6", "keys": [ "ctrl+7"] },
         { "command": "switchToTab7", "keys": [ "ctrl+8"] },
         { "command": "switchToTab8", "keys": [ "ctrl+9"] },
+        { "command": "decreaseFontSize", "keys": [ "ctrl+shift+-" ] },
         { "command": "splitHorizontal", "keys": [ "ctrl+-" ] },
         { "command": "splitVertical", "keys": [ "ctrl+\\" ] },
         { "command": "resizePaneLeft", "keys": [ "ctrl+left" ]},
