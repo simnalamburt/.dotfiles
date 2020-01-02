@@ -44,7 +44,7 @@ Mainboard | [Intel DP35DP](https://www.cnet.com/products/intel-desktop-board-dp3
 Socket    | LGA775
 OS        | Arch Linux
 케이스    | COX A3 노빌레 풀아크릴윈도우 with 헤일로X4 블랙
-파워      | SuperFlower SF-500R14SE Silver Green FX
+파워      | *(없음)*
 RAM       | DDR2 2GB×4
 Storage   | 128GB, SanDisk SD8SB8U1 (SSD)
 
