@@ -8,12 +8,13 @@ Debian Buster
 - vim-nox git zsh tmux mosh
 - ruby ruby-dev libsqlite3-dev
 - python3-venv
-- clang fp-compiler
+- fp-compiler
 - shellcheck jq
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
 - yarn
+- clang-9 (https://apt.llvm.org/)
 
 ### `/usr/local/bin`
 - fd rg
