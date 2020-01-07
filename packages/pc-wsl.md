@@ -4,7 +4,7 @@ Debian Buster
 
 ### `apt`
 - apt-transport-https build-essential lsb-release
-- man curl bash-completion zip unzip
+- htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux mosh
 - ruby ruby-dev libsqlite3-dev
 - python3-venv
