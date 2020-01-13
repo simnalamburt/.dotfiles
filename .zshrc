@@ -152,20 +152,6 @@ elif (( $+commands[nvim] )); then
   bindkey '^E' end-of-line
 fi
 
-# exa
-if (( $+commands[exa] )); then
-  alias l='exa -alh --group-directories-first'
-  alias ll='exa -lh --group-directories-first'
-fi
-
-# tag
-if (( $+commands[tag] )) && (( $+commands[rg] )); then
-  export TAG_SEARCH_PROG=rg
-  tag() {
-    command tag "$@"; source "${TAG_ALIAS_FILE:-/tmp/tag_aliases}" 2>/dev/null
-  }
-fi
-
 
 #
 # Load local configs
