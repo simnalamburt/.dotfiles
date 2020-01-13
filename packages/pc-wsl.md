@@ -5,7 +5,7 @@ Debian Buster
 ### `apt`
 - apt-transport-https build-essential lsb-release
 - htop man curl bash-completion zip unzip
-- vim-nox git zsh tmux mosh
+- vim-nox git zsh tmux fd-find ripgrep fzf
 - ruby ruby-dev libsqlite3-dev
 - python3-venv
 - fp-compiler
@@ -17,7 +17,6 @@ Debian Buster
 - clang-9 (https://apt.llvm.org/)
 
 ### `/usr/local/bin`
-- fd rg
 - packer terraform terraformer
 
 ### `gem`
