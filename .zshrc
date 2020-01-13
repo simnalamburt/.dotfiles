@@ -12,7 +12,7 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   autoload -Uz _zplugin
   (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-  # kube-ps1
+  # My kube-ps theme
   zplugin light jonmosco/kube-ps1
   KUBE_PS1_SYMBOL_ENABLE='false'
   KUBE_PS1_PREFIX=''
@@ -21,7 +21,7 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   KUBE_PS1_CTX_COLOR=238
   KUBE_PS1_NS_COLOR=242
 
-  # theme
+  # My ZSH theme
   zplugin ice pick"async.zsh" src"pure.zsh"
   zplugin light sindresorhus/pure
   zstyle :prompt:pure:prompt:success color 242
@@ -40,11 +40,11 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   }
   add-zsh-hook precmd precmd_pipestatus
 
-  # expand aliases
+  # Automatically expand all aliases
   ZSH_EXPAND_ALL_DISABLE=word
   zplugin light simnalamburt/zsh-expand-all
 
-  # autosuggestions
+  # Show autosuggestions
   ZSH_AUTOSUGGEST_USE_ASYNC=1
   if is-at-least 5.3; then
     zplugin ice silent wait'1' atload'_zsh_autosuggest_start'
@@ -60,7 +60,7 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   zplugin light andrewferrier/fzf-z
   export FZFZ_SUBDIR_LIMIT=0
 
-  # etc
+  # Others
   zplugin light simnalamburt/cgitc
   zplugin light zdharma/fast-syntax-highlighting
   zplugin light zsh-users/zsh-history-substring-search
