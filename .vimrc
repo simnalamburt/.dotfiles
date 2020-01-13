@@ -208,7 +208,11 @@ endtry
 if exists('s:has_vimplug') && s:has_vimplug
   " vim-prettier
   let g:prettier#autoformat = 0
-  autocmd BufWritePre *.js,*.ts,*.css,*.less,*.scss,*.vue PrettierAsync
+  let g:prettier#config#semi = 'false'
+  let g:prettier#config#bracket_spacing = 'true'
+  let g:prettier#config#arrow_parens = 'avoid'
+  let g:prettier#config#trailing_comma = 'none'
+  autocmd BufWritePre *.js,*.ts,*.css,*.less,*.scss PrettierAsync
 
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
