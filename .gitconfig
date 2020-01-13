@@ -43,6 +43,16 @@
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
 
+	# git pr [<remote>]
+	#
+	# Fetch pull requests from GitHub. Fetch "origin" if remote is not
+	# specified.
+	#
+	# Usage:
+	#   git pr
+	#   git pr other
+	pr = "!_() { git config fetch.prune no && git fetch ${1:-origin} +refs/pull/*/head:refs/remotes/${1:-origin}/pr/*; }; _"
+
 	# git b <filename>
 	#
 	# Beautiful `git blame`
