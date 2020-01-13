@@ -32,13 +32,12 @@ mkdir -p ~/.gnupg && cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
 mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
 ```
 
-#### Relevant plugins
+#### Check out my vim/zsh/tmux plugins
 - [simnalamburt/vim-mundo     ](https://github.com/simnalamburt/vim-mundo) - Vim undo tree visualizer
 - [simnalamburt/cgitc         ](https://github.com/simnalamburt/cgitc) - Close Git Combat
 - [simnalamburt/zsh-expand-all](https://github.com/simnalamburt/zsh-expand-all) - Automatically expands all glob expressions, subcommands, and aliases
-- [simnalamburt/tmux-pane     ](https://github.com/simnalamburt/tmux-pane) - Key-bindings for tmux pane control
-- [simnalamburt/shellder      ](https://github.com/simnalamburt/shellder) - Featured zsh/fish shell theme
-- [simnalamburt/fish-sensible ](https://github.com/simnalamburt/fish-sensible) - Agreeable dafault aliases for fish
+- [simnalamburt/tmux-pane     ](https://github.com/simnalamburt/tmux-pane) - My key-bindings for tmux pane resizing and splitting
+- [simnalamburt/shellder      ](https://github.com/simnalamburt/shellder) - Simple and feature-rich zsh/fish shell theme
 
 <br>
 
