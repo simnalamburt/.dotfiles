@@ -95,7 +95,6 @@ alias l='ls -AlhF --color=auto'               # show all
 # Plugins
 #
 [[ -d ~/.cgitc ]] && source ~/.cgitc/init.bash
-[[ -f ~/.fzf.bash ]] && source ~/.fzf.bash
 
 
 #
