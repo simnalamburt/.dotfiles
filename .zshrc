@@ -27,9 +27,9 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   zstyle :prompt:pure:prompt:success color 242
   zstyle :prompt:pure:prompt:error color 226
   zstyle :prompt:pure:path color 033
-  # 안 꺼진 job들 시각화
+  # Visualize the running background jobs
   PROMPT='%F{226}%(1j.%j .)'$PROMPT
-  # 프로세스들 exit code 시각화
+  # VIsualize the non-zero exit code of previous tasks
   precmd_pipestatus() {
     local STAT=${(j.|.)pipestatus}
     if [[ "$STAT" = 0 ]]; then
