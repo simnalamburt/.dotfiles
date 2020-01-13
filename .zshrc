@@ -51,6 +51,15 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   fi
   zplugin light zsh-users/zsh-autosuggestions
 
+  # Easily access the directories you visit most often.
+  #
+  # Usage:
+  #   $ z work
+  #   $ <CTRL-G>work
+  zplugin light agkozak/zsh-z
+  zplugin light andrewferrier/fzf-z
+  export FZFZ_SUBDIR_LIMIT=0
+
   # etc
   zplugin light simnalamburt/cgitc
   zplugin light zdharma/fast-syntax-highlighting
