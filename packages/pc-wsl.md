@@ -23,5 +23,7 @@ Debian Buster
 ### `gem`
 - bundler
 
-### etc
+### `rustup`
 - rustup
+- exa
+- svgcleaner
