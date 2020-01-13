@@ -5,10 +5,11 @@ Windows 10 Build 1909
 ### [`scoop`](https://scoop.sh)
 - 7zip git
 - vim
-- firefox
+- firefox chromium
 - vscode
 - discord
 - windows-terminal vcredist2019
+- inkscape krita gimp
 
 ### Microsoft Store
 - Debian
@@ -20,3 +21,4 @@ Windows 10 Build 1909
 - Uplay, Steam, Battle.net, 오리진
 - ParsecGaming
 - Windows Sandbox
+- [Dark Theme for Inkscape (Windows)](https://github.com/SimBotBiz/inkscape-dark-theme)
