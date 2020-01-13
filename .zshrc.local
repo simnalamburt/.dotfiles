@@ -77,6 +77,14 @@
 #  export PATH="$PATH:$GOPATH/bin"
 #fi
 
+## fzf
+#if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
+## fzf (debian)
+#source /usr/share/doc/fzf/examples
+
+## fd (debian)
+#alias fd=fdfind
+
 ## exa
 #if (( $+commands[exa] )); then
 #  alias l='exa -alh --group-directories-first'

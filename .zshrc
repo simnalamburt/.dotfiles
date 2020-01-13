@@ -130,7 +130,6 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 #
 export DOCKER_BUILDKIT=1
 export AWS_SDK_LOAD_CONFIG=true
-if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
 if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 
 # Vim & Neovim
