@@ -10,6 +10,7 @@ Windows 10 Build 1909
 - discord
 - windows-terminal vcredist2019
 - inkscape krita gimp
+- https://raw.githubusercontent.com/simnalamburt/scoop-extras/xournalpp/bucket/xournalpp.json
 
 ### Microsoft Store
 - Debian
