@@ -18,3 +18,4 @@ Windows 10 Build 1909
 
 ### Manually Installed
 - [desktop-dimmer](https://github.com/sidneys/desktop-dimmer)
+- 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
