@@ -9,6 +9,7 @@ Windows 10 Build 1909
 - vscode
 - discord
 - windows-terminal vcredist2019
+- xournalpp
 
 ### Microsoft Store
 - Debian
