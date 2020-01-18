@@ -80,7 +80,7 @@
 ## fzf
 #if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
 ## fzf (debian)
-#source /usr/share/doc/fzf/examples
+#source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 ## fd (debian)
 #alias fd=fdfind
