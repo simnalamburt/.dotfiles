@@ -6,6 +6,7 @@ Debian Buster
 - apt-transport-https build-essential
 - htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux fd-find ripgrep fzf
+- wget
 
 ### `rustup`
 - rustup
