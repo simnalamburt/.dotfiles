@@ -16,6 +16,7 @@ Windows 10 Build 1909
 - [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
 - Line, KakaoTalk, slack
 - Word 2016, Excel 2016, PowerPoint 2016
+- Netflix
 
 ### Manually Installed
 - [desktop-dimmer](https://github.com/sidneys/desktop-dimmer)
