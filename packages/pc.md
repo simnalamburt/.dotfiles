@@ -4,13 +4,13 @@ Windows 10 Build 1909
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git
-- vim
+- neovim
 - firefox chromium
 - vscode
 - discord
 - windows-terminal vcredist2019
 - inkscape krita gimp
-- https://github.com/simnalamburt/scoop-extras/blob/xournalpp/bucket/xournalpp.json
+- xournalpp
 
 ### Microsoft Store
 - Debian

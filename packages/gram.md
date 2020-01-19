@@ -4,7 +4,7 @@ Windows 10 Build 1909
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git
-- nvim
+- neovim
 - firefox chromium
 - vscode
 - discord
