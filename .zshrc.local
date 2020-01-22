@@ -109,3 +109,7 @@
 
 ## Mosh
 #compdef mosh=ssh
+
+## devscripts
+#export DEBFULLNAME='Hyeon Kim'
+#export DEBEMAIL='simnalamburt@gmail.com'
