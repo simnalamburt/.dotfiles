@@ -13,6 +13,8 @@ Setup note
 
     <img width=500 src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/disable-activity-history.png">
 
+1.  (Optional) Enable Hyper-V and Windows Sandbox.
+
 <br>
 
 ### B. Install [scoop](https://scoop.sh/)
