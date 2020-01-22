@@ -72,7 +72,7 @@
 	#
 	# Usage:
 	#   git h README.md
-	h = "git log -p -M --follow"
+	h = "log -p -M --follow"
 
 [commit]
 	gpgsign = yes
