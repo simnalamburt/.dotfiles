@@ -26,3 +26,4 @@ Windows 10 Build 1909
 - [Dark Theme for Inkscape (Windows)](https://github.com/SimBotBiz/inkscape-dark-theme)
 - 한컴오피스 2018
 - Edge Chromium
+- VirtualBox
