@@ -1,4 +1,4 @@
-Build Machine (Hyper-V VM)
+PC Debian, Hyper-V VM
 ========
 Debian Buster
 
