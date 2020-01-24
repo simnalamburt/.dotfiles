@@ -21,5 +21,5 @@ Windows 10 Build 1909
 - [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
 
 ### Manually Installed
-- [desktop-dimmer](https://github.com/sidneys/desktop-dimmer)
 - 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
+- VirtualBox
