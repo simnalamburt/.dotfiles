@@ -10,7 +10,6 @@ Debian Buster
 - python3-venv
 - fp-compiler
 - shellcheck jq
-- libtool bison flex devscripts debhelper
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
