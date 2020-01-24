@@ -1,4 +1,4 @@
-LG Gram 2-in-1 WSL
+LG Gram 2-in-1, WSL
 ========
 Debian Buster
 
