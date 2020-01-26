@@ -26,3 +26,4 @@ Debian Buster
 - rustup
 - exa
 - svgcleaner
+- cargo-bloat
