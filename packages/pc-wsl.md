@@ -13,7 +13,7 @@ Debian Buster
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
-- yarn
+- yarn (v1.x)
 - clang-9 (https://apt.llvm.org/)
 
 ### `/usr/local/bin`
