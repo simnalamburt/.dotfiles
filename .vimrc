@@ -388,7 +388,7 @@ augroup vimrc
   autocmd BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
 
   " Treat .eslintrc .babelrc as json
-  autocmd BufRead,BufNewFile .{eslintrc,babelrc} setf json
+  autocmd BufRead,BufNewFile .{eslintrc,babelrc,swcrc} setf json
 
   " vim-vue
   autocmd FileType vue syntax sync fromstart
