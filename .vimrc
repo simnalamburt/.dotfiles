@@ -163,7 +163,9 @@ try
   if v:version >= 702
     Plug 'justinmk/vim-dirvish'
   endif
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+  Plug 'simnalamburt/vim-prettier', {
+    \ 'do': 'yarn install',
+    \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
 
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
@@ -207,12 +209,10 @@ endtry
 "
 if exists('s:has_vimplug') && s:has_vimplug
   " vim-prettier
-  let g:prettier#autoformat = 0
-  let g:prettier#config#semi = 'false'
-  let g:prettier#config#bracket_spacing = 'true'
-  let g:prettier#config#arrow_parens = 'avoid'
-  let g:prettier#config#trailing_comma = 'none'
-  autocmd BufWritePre *.js,*.ts,*.css,*.less,*.scss PrettierAsync
+  let g:prettier#autoformat_config_present = 1
+  let g:prettier#autoformat_require_pragma = 0
+  let g:prettier#exec_cmd_async = 1
+  let g:prettier#quickfix_enabled = 0
 
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
