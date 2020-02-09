@@ -163,7 +163,7 @@ try
   if v:version >= 702
     Plug 'justinmk/vim-dirvish'
   endif
-  Plug 'simnalamburt/vim-prettier', {
+  Plug 'prettier/vim-prettier', {
     \ 'do': 'yarn install',
     \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
 
