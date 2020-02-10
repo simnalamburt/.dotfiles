@@ -165,7 +165,7 @@ try
   endif
   Plug 'prettier/vim-prettier', {
     \ 'do': 'yarn install',
-    \ 'for': ['javascript', 'typescript', 'css', 'scss', 'graphql'] }
+    \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
 
   " Visual
   Plug 'nathanaelkane/vim-indent-guides'
