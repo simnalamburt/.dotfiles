@@ -3,17 +3,17 @@
 
 
 #
-# zplugin
+# zinit
 #
 autoload -U is-at-least
-if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
+if is-at-least 4.3.9 && [[ -d ~/.zinit ]]; then
 
-  source ~/.zplugin/bin/zplugin.zsh
-  autoload -Uz _zplugin
-  (( ${+_comps} )) && _comps[zplugin]=_zplugin
+  source ~/.zinit/bin/zinit.zsh
+  autoload -Uz _zinit
+  (( ${+_comps} )) && _comps[zinit]=_zinit
 
   # My kube-ps theme
-  zplugin light jonmosco/kube-ps1
+  zinit light jonmosco/kube-ps1
   KUBE_PS1_SYMBOL_ENABLE='false'
   KUBE_PS1_PREFIX=''
   KUBE_PS1_SUFFIX=''
@@ -22,8 +22,8 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
   KUBE_PS1_NS_COLOR=242
 
   # My ZSH theme
-  zplugin ice pick"async.zsh" src"pure.zsh"
-  zplugin light sindresorhus/pure
+  zinit ice pick"async.zsh" src"pure.zsh"
+  zinit light sindresorhus/pure
   zstyle :prompt:pure:prompt:success color 242
   zstyle :prompt:pure:prompt:error color 226
   zstyle :prompt:pure:path color 033
@@ -42,33 +42,33 @@ if is-at-least 4.3.9 && [[ -d ~/.zplugin ]]; then
 
   # Automatically expand all aliases
   ZSH_EXPAND_ALL_DISABLE=word
-  zplugin light simnalamburt/zsh-expand-all
+  zinit light simnalamburt/zsh-expand-all
 
   # Show autosuggestions
   ZSH_AUTOSUGGEST_USE_ASYNC=1
   if is-at-least 5.3; then
-    zplugin ice silent wait'1' atload'_zsh_autosuggest_start'
+    zinit ice silent wait'1' atload'_zsh_autosuggest_start'
   fi
-  zplugin light zsh-users/zsh-autosuggestions
+  zinit light zsh-users/zsh-autosuggestions
 
   # Easily access the directories you visit most often.
   #
   # Usage:
   #   $ z work
   #   $ <CTRL-G>work
-  zplugin light agkozak/zsh-z
-  zplugin light andrewferrier/fzf-z
+  zinit light agkozak/zsh-z
+  zinit light andrewferrier/fzf-z
   export FZFZ_SUBDIR_LIMIT=0
 
   # Others
-  zplugin light simnalamburt/cgitc
-  zplugin light zdharma/fast-syntax-highlighting
-  zplugin light zsh-users/zsh-history-substring-search
-  zplugin light zsh-users/zsh-completions
+  zinit light simnalamburt/cgitc
+  zinit light zdharma/fast-syntax-highlighting
+  zinit light zsh-users/zsh-history-substring-search
+  zinit light zsh-users/zsh-completions
 
   autoload -Uz compinit
   compinit
-  zplugin cdreplay
+  zinit cdreplay
 
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
