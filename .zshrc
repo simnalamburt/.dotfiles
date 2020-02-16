@@ -40,10 +40,6 @@ if is-at-least 4.3.9 && [[ -d ~/.zinit ]]; then
   }
   add-zsh-hook precmd precmd_pipestatus
 
-  # Automatically expand all aliases
-  ZSH_EXPAND_ALL_DISABLE=word
-  zinit light simnalamburt/zsh-expand-all
-
   # Show autosuggestions
   ZSH_AUTOSUGGEST_USE_ASYNC=1
   if is-at-least 5.3; then
@@ -60,8 +56,13 @@ if is-at-least 4.3.9 && [[ -d ~/.zinit ]]; then
   zinit light andrewferrier/fzf-z
   export FZFZ_SUBDIR_LIMIT=0
 
+  # Automatically expand all aliases
+  ZSH_EXPAND_ALL_DISABLE=word
+  zinit light simnalamburt/zsh-expand-all
+
   # Others
   zinit light simnalamburt/cgitc
+  zinit light simnalamburt/ctrlf
   zinit light zdharma/fast-syntax-highlighting
   zinit light zsh-users/zsh-history-substring-search
   zinit light zsh-users/zsh-completions
