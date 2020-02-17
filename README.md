@@ -1,6 +1,6 @@
 <p align=center>
   <a href="https://github.com/simnalamburt">
-    <img alt="dotfiles" src="https://raw.githubusercontent.com/simnalamburt/.dotfiles/resources/logo.png">
+    <img alt="dotfiles" src="https://raw.githubusercontent.com/simnalamburt/i/master/.dotfiles/logo.png">
   </a>
   <br>
   <b><a href="docs/">documentation</a></b> | <a href="packages/">packages</a>
