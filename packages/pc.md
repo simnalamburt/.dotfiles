@@ -27,3 +27,4 @@ Windows 10 Build 1909
 - 한컴오피스 2018
 - Edge Chromium
 - Radeon Adrenalin 2020
+- Minecraft: Java Edition
