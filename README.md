@@ -36,6 +36,7 @@ mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
 - [simnalamburt/vim-mundo     ](https://github.com/simnalamburt/vim-mundo) - Vim undo tree visualizer
 - [simnalamburt/cgitc         ](https://github.com/simnalamburt/cgitc) - Close Git Combat
 - [simnalamburt/zsh-expand-all](https://github.com/simnalamburt/zsh-expand-all) - Automatically expands all glob expressions, subcommands, and aliases
+- [simnalamburt/ctrlf         ](https://github.com/simnalamburt/ctrlf) - Ctrl+F for your shell
 - [simnalamburt/tmux-pane     ](https://github.com/simnalamburt/tmux-pane) - My key-bindings for tmux pane resizing and splitting
 - [simnalamburt/shellder      ](https://github.com/simnalamburt/shellder) - Simple and feature-rich zsh/fish shell theme
 
