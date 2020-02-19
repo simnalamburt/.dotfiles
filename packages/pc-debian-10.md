@@ -1,4 +1,4 @@
-PC, Hyper-V VM, Debian
+PC, Hyper-V VM
 ========
 Debian Buster
 
