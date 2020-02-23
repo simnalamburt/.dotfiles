@@ -27,14 +27,9 @@ set updatetime=500
 
 " History
 if has('persistent_undo')
-  " mkdir -p ~/.vim/undodir
-  let vimdir = '$HOME/.vim'
-  let vimundodir = expand(vimdir . '/undodir')
-  call system('mkdir ' . vimdir)
-  call system('mkdir ' . vimundodir)
-
-  let &undodir = vimundodir
   set undofile
+  let &undodir = $HOME . '/.vim/undodir'
+  call mkdir(&undodir, 'p')
 endif
 
 " Indentation
