@@ -63,6 +63,7 @@ set formatoptions-=t
 set colorcolumn=+1,+2,+3
 " Listchars
 set list
+let &listchars = 'tab:› ,extends:»,precedes:«'
 " Pair matching
 set matchpairs+=<:>
 set showmatch
@@ -334,13 +335,6 @@ else
   call s:bg('IndentGuidesOdd', s:back_color)
 endif
 call s:bg('IndentGuidesEven', s:back_color)
-
-" Do not decorate tab with '›' when tabstop is small
-if &tabstop <= 4
-  let &listchars = 'tab:\ \ ,extends:\u00BB,precedes:\u00AB'
-else
-  let &listchars = 'tab:\u203A\ ,extends:\u00BB,precedes:\u00AB'
-endif
 
 " Extra whitespaces
 call s:bg('ExtraWhitespace', 160)
