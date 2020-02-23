@@ -244,7 +244,7 @@ endif
 
 
 "
-" Beutiful vim
+" My vim theme
 "
 let g:seoul256_background = 233
 try
@@ -253,41 +253,16 @@ catch /^Vim\%((\a\+)\)\=:E185/
   " Fallback
   silent! colorscheme elflord
 endtry
-let s:back_color          = 234
+let s:back_color = 234
 
-" Reference: https://github.com/junegunn/seoul256.vim/blob/master/colors/seoul256.vim
-if !exists('s:rgb_map')
-  let s:rgb_map = {
-  \ 'NONE': 'NONE',
-  \ 'white': '#FFFFFF', 'black': '#191919',
-  \ 'darkblue': '#0000BF', 'darkgray': '#6C6C6C',
-  \  16: '#000000',
-  \  22: '#006F00', 23: '#007173', 24: '#007299', 25: '#0074BE', 30: '#009799',
-  \  31: '#0099BD', 38: '#00BDDF', 52: '#730B00', 58: '#727100', 59: '#727272',
-  \  65: '#719872', 66: '#719899', 67: '#7299BC', 68: '#719CDF', 73: '#6FBCBD',
-  \  74: '#70BDDF', 88: '#9B1300', 89: '#9B1D72', 94: '#9A7200', 95: '#9A7372',
-  \  96: '#9A7599', 101: '#999872', 103: '#999ABD', 108: '#98BC99', 109: '#98BCBD',
-  \ 110: '#98BEDE', 116: '#97DDDF', 125: '#BF2172', 131: '#BE7572', 137: '#BE9873',
-  \ 143: '#BDBB72', 144: '#BDBC98', 145: '#BDBDBD', 151: '#BCDDBD', 152: '#BCDEDE',
-  \ 153: '#BCE0FF', 160: '#D70000',
-  \ 161: '#E12672', 168: '#E17899', 173: '#E19972', 174: '#E09B99',
-  \ 179: '#DFBC72', 181: '#E0BEBC', 184: '#DEDC00', 186: '#DEDD99', 187: '#DFDEBD',
-  \ 189: '#DFDFFF', 216: '#FFBD98', 217: '#FFBFBD', 218: '#FFC0DE', 220: '#FFDD00',
-  \ 222: '#FFDE99', 224: '#FFDFDF', 226: '#FFFF00',
-  \ 230: '#FFFFDF', 231: '#FFFFFF', 232: '#060606',
-  \ 233: '#171717', 234: '#252525', 235: '#333233', 236: '#3F3F3F', 237: '#4B4B4B',
-  \ 238: '#565656', 239: '#616161', 240: '#6B6B6B', 241: '#757575', 249: '#BFBFBF',
-  \ 250: '#C8C8C8', 251: '#D1D0D1', 252: '#D9D9D9', 253: '#E1E1E1', 254: '#E9E9E9',
-  \ 255: '#F1F1F1' }
-endif
 function! s:rs(item)
-  execute printf('highlight %s cterm=NONE gui=NONE', a:item)
+  execute printf('highlight %s cterm=NONE', a:item)
 endfunction
 function! s:fg(item, color)
-  execute printf('highlight %s ctermfg=%s guifg=%s', a:item, a:color, get(s:rgb_map, a:color))
+  execute printf('highlight %s ctermfg=%s', a:item, a:color)
 endfunction
 function! s:bg(item, color)
-  execute printf('highlight %s ctermbg=%s guibg=%s', a:item, a:color, get(s:rgb_map, a:color))
+  execute printf('highlight %s ctermbg=%s', a:item, a:color)
 endfunction
 
 call s:rs('CursorLine')
@@ -312,7 +287,7 @@ call s:bg('TabLineSel',   s:back_color)
 call s:fg('TabLineFill',  s:back_color)
 call s:bg('TabLineFill',  s:back_color)
 
-" Beauty vimdiff colorscheme
+" Pretty vimdiff colorscheme
 call s:bg('DiffChange',   'NONE')
 call s:bg('DiffText',     22)
 call s:bg('DiffAdd',      22)
