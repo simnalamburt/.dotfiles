@@ -65,6 +65,12 @@ set showmatch
 " Wildmenu
 set wildmode=longest,full
 
+" Completion
+set hidden
+set completeopt=menuone,noinsert,noselect
+set shortmess+=c
+set signcolumn=yes
+
 
 "
 " Key mappings
@@ -140,6 +146,16 @@ try
   Plug 'tpope/vim-sensible'
   Plug 'vim-utils/vim-interruptless'
 
+  " IDE
+  if v:version >= 800
+    Plug 'prabirshrestha/async.vim'
+    Plug 'simnalamburt/vim-lsp'
+    Plug 'prabirshrestha/asyncomplete.vim'
+    Plug 'prabirshrestha/asyncomplete-lsp.vim'
+    Plug 'mattn/vim-lsp-settings'
+    Plug 'junegunn/fzf'
+  endif
+
   " Visual
   Plug 'vim-airline/vim-airline'
   Plug 'nathanaelkane/vim-indent-guides'
@@ -179,6 +195,90 @@ try
   "
   " Configs for plugins
   "
+
+  " vim-lsp
+  nnoremap <silent> K :LspHover<CR>
+  nnoremap <silent> gd :rightb vsplit<CR>:LspDefinition<CR>
+  nnoremap <F5> :call <SID>lsp_menu()<CR>
+  autocmd CursorMoved * call s:auto_close_preview()
+  let g:lsp_diagnostics_echo_cursor = 1
+  let g:lsp_preview_doubletap = [function('lsp#ui#vim#output#closepreview')]
+  let g:lsp_signs_error = {'text': '🚨'}
+  let g:lsp_signs_warning = {'text': '🤔'}
+  let g:lsp_signs_information = {'text': '👀'}
+  let g:lsp_signs_hint = {'text': '💁'}
+
+  let s:cursor_counter = 0
+
+  function! s:auto_close_preview()
+    if !s:have_preview()
+      return
+    endif
+
+    let s:cursor_counter += 1
+
+    if s:cursor_counter >= 2
+      call lsp#ui#vim#output#closepreview()
+      let s:cursor_counter = 0
+    endif
+  endfunction
+
+  function! s:have_preview()
+    for nr in range(1, winnr('$'))
+      if getwinvar(nr, '&pvw') == 1
+        return 1
+      endif
+    endfor
+    return 0
+  endfunction
+
+  function! s:lsp_menu()
+    call fzf#run({
+    \ 'source': [
+    \   'Rename',
+    \   'Definition',
+    \   'Declaration',
+    \   'References',
+    \   'Implementation',
+    \   'CodeAction',
+    \   'Hover',
+    \   'Status',
+    \
+    \   'DocumentDiagnostics',
+    \   'DocumentFold',
+    \   'DocumentFormat',
+    \   'DocumentRangeFormat',
+    \   'DocumentSymbol',
+    \   'NextDiagnostic',
+    \   'NextError',
+    \   'NextReference',
+    \   'NextWarning',
+    \   'PeekDeclaration',
+    \   'PeekDefinition',
+    \   'PeekImplementation',
+    \   'PeekTypeDefinition',
+    \   'PreviousDiagnostic',
+    \   'PreviousError',
+    \   'PreviousReference',
+    \   'PreviousWarning',
+    \   'SemanticScopes',
+    \   'TypeDefinition',
+    \   'TypeHierarchy',
+    \   'WorkspaceSymbol',
+    \   'StopServer',
+    \ ],
+    \ 'sink': function('<SID>lsp_selected'),
+    \ 'options': '+m',
+    \ 'down': 10 })
+  endfunction
+
+  function! s:lsp_selected(entry)
+    execute printf('Lsp%s', a:entry)
+  endfunction
+
+  " asyncomplete.vim
+  inoremap <expr><TAB> pumvisible() ? '<C-n>' : '<TAB>'
+  let g:asyncomplete_auto_completeopt = 0
 
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
