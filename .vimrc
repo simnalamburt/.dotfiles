@@ -1,3 +1,4 @@
+" Require Vim 7.3+
 " See https://github.com/simnalamburt/.dotfiles/blob/master/.vimrc
 
 "
@@ -58,9 +59,7 @@ set cursorline
 " 80th column color
 set textwidth=80
 set formatoptions-=t
-if v:version >= 703
-  set colorcolumn=+1,+2,+3
-endif
+set colorcolumn=+1,+2,+3
 " Listchars
 set list
 " Pair matching
@@ -155,9 +154,7 @@ try
   Plug 'tpope/vim-sensible'
   Plug 'godlygeek/tabular'
   Plug 'vim-utils/vim-interruptless'
-  if v:version >= 702
-    Plug 'justinmk/vim-dirvish'
-  endif
+  Plug 'justinmk/vim-dirvish'
   Plug 'prettier/vim-prettier', {
     \ 'do': 'yarn install',
     \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
@@ -169,21 +166,17 @@ try
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
-  if v:version >= 701
-    Plug 'sheerun/vim-polyglot'
-  endif
+  Plug 'sheerun/vim-polyglot'
   Plug 'boeckmann/vim-freepascal'
   Plug 'hashivim/vim-terraform'
 
   " Blink
   Plug 'farmergreg/vim-lastplace'
-  if v:version >= 701
-    Plug 'rhysd/clever-f.vim'
-    Plug 'easymotion/vim-easymotion'
-    Plug 'haya14busa/incsearch.vim'
-    Plug 'haya14busa/incsearch-fuzzy.vim'
-    Plug 'haya14busa/incsearch-easymotion.vim'
-  endif
+  Plug 'rhysd/clever-f.vim'
+  Plug 'easymotion/vim-easymotion'
+  Plug 'haya14busa/incsearch.vim'
+  Plug 'haya14busa/incsearch-fuzzy.vim'
+  Plug 'haya14busa/incsearch-easymotion.vim'
 
   " My plugins
   Plug 'simnalamburt/vim-mundo'
@@ -231,37 +224,29 @@ if exists('s:has_vimplug') && s:has_vimplug
   " vim-go
   let g:go_version_warning = 0
 
-  " Configs for incsearch-family plugins
-  if v:version >= 701
-    " incsearch.vim
-    map /  <Plug>(incsearch-forward)
-    map ?  <Plug>(incsearch-backward)
-    map g/ <Plug>(incsearch-stay)
-    let g:incsearch#auto_nohlsearch = 1
-    map n  <Plug>(incsearch-nohl-n)
-    map N  <Plug>(incsearch-nohl-N)
-    map *  <Plug>(incsearch-nohl-*)
-    map #  <Plug>(incsearch-nohl-#)
-    map g* <Plug>(incsearch-nohl-g*)
-    map g# <Plug>(incsearch-nohl-g#)
+  " incsearch.vim
+  map /  <Plug>(incsearch-forward)
+  map ?  <Plug>(incsearch-backward)
+  map g/ <Plug>(incsearch-stay)
+  let g:incsearch#auto_nohlsearch = 1
+  map n  <Plug>(incsearch-nohl-n)
+  map N  <Plug>(incsearch-nohl-N)
+  map *  <Plug>(incsearch-nohl-*)
+  map #  <Plug>(incsearch-nohl-#)
+  map g* <Plug>(incsearch-nohl-g*)
+  map g# <Plug>(incsearch-nohl-g#)
 
-    " incsearch-fuzzy.vim
-    map z/ <Plug>(incsearch-fuzzy-/)
-    map z? <Plug>(incsearch-fuzzy-?)
-    map zg/ <Plug>(incsearch-fuzzy-stay)
-
-    " incsearch-easymotion.vim
-    function! s:config_easyfuzzymotion(...) abort
-      return extend(copy({
-      \   'converters': [incsearch#config#fuzzy#converter()],
-      \   'modules': [incsearch#config#easymotion#module()],
-      \   'keymap': {"\<CR>": '<Over>(easymotion)'},
-      \   'is_expr': 0,
-      \   'is_stay': 1
-      \ }), get(a:, 1, {}))
-    endfunction
-    noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
-  endif
+  " incsearch-easymotion.vim
+  function! s:config_easyfuzzymotion(...) abort
+    return extend(copy({
+    \   'converters': [incsearch#config#fuzzy#converter()],
+    \   'modules': [incsearch#config#easymotion#module()],
+    \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+    \   'is_expr': 0,
+    \   'is_stay': 1
+    \ }), get(a:, 1, {}))
+  endfunction
+  noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 endif
 
 
