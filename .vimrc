@@ -134,16 +134,6 @@ nnoremap <CR> :call CustomEnter()<CR>
 
 
 "
-" gVim (win32) only configs. Requires python 2.7
-"
-if has('gui_win32')
-  set clipboard=unnamed
-  set guioptions=
-  set guifont=Consolas:h12:cANSI:qDRAFT
-endif
-
-
-"
 " List of plugins
 "
 try
