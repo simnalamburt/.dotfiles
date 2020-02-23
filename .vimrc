@@ -17,6 +17,7 @@ set startofline
 set splitbelow
 set lazyredraw
 set nobackup
+set nowritebackup
 set nocompatible
 set nofoldenable
 set noshowmode
