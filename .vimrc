@@ -26,7 +26,7 @@ set nowrap
 set updatetime=500
 
 " History
-if has("persistent_undo")
+if has('persistent_undo')
   " mkdir -p ~/.vim/undodir
   let vimdir = '$HOME/.vim'
   let vimundodir = expand(vimdir . '/undodir')
@@ -73,7 +73,7 @@ set wildmode=longest,full
 "
 " Key mappings
 "
-let g:mapleader = ","
+let g:mapleader = ','
 
 " Easy file save without switching IME
 cabbrev ㅈ w
@@ -128,7 +128,7 @@ function! CustomEnter()
   else
     " Exception for quickfix buffer and other unmodifiable buffers.
     " See https://vi.stackexchange.com/a/3129
-    execute "normal! \<CR>"
+    execute 'normal! \<CR>'
   endif
 endfunction
 nnoremap <CR> :call CustomEnter()<CR>
@@ -229,7 +229,7 @@ if exists('s:has_vimplug') && s:has_vimplug
     return extend(copy({
     \   'converters': [incsearch#config#fuzzy#converter()],
     \   'modules': [incsearch#config#easymotion#module()],
-    \   'keymap': {"\<CR>": '<Over>(easymotion)'},
+    \   'keymap': {'\<CR>': '<Over>(easymotion)'},
     \   'is_expr': 0,
     \   'is_stay': 1
     \ }), get(a:, 1, {}))
@@ -280,13 +280,13 @@ if !exists('s:rgb_map')
   \ 255: '#F1F1F1' }
 endif
 function! s:rs(item)
-  execute printf("highlight %s cterm=NONE gui=NONE", a:item)
+  execute printf('highlight %s cterm=NONE gui=NONE', a:item)
 endfunction
 function! s:fg(item, color)
-  execute printf("highlight %s ctermfg=%s guifg=%s", a:item, a:color, get(s:rgb_map, a:color))
+  execute printf('highlight %s ctermfg=%s guifg=%s', a:item, a:color, get(s:rgb_map, a:color))
 endfunction
 function! s:bg(item, color)
-  execute printf("highlight %s ctermbg=%s guibg=%s", a:item, a:color, get(s:rgb_map, a:color))
+  execute printf('highlight %s ctermbg=%s guibg=%s', a:item, a:color, get(s:rgb_map, a:color))
 endfunction
 
 call s:rs('CursorLine')
@@ -337,9 +337,9 @@ call s:bg('IndentGuidesEven', s:back_color)
 
 " Do not decorate tab with '›' when tabstop is small
 if &tabstop <= 4
-  let &listchars = "tab:\ \ ,extends:\u00BB,precedes:\u00AB"
+  let &listchars = 'tab:\ \ ,extends:\u00BB,precedes:\u00AB'
 else
-  let &listchars = "tab:\u203A\ ,extends:\u00BB,precedes:\u00AB"
+  let &listchars = 'tab:\u203A\ ,extends:\u00BB,precedes:\u00AB'
 endif
 
 " Extra whitespaces
@@ -361,7 +361,7 @@ augroup vimrc
   " Vim automatic reload
   autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
   autocmd FileChangedShellPost *
-    \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+    \ echohl WarningMsg | echo 'File changed on disk. Buffer reloaded.' | echohl None
 augroup END
 
 
