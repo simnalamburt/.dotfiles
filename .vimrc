@@ -151,15 +151,10 @@ try
   call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
 
   Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'tpope/vim-git'
-  Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-sensible'
-  Plug 'tpope/vim-obsession'
   Plug 'godlygeek/tabular'
   Plug 'vim-utils/vim-interruptless'
-  Plug 'junegunn/gv.vim'
   if v:version >= 702
     Plug 'justinmk/vim-dirvish'
   endif
@@ -174,9 +169,6 @@ try
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
-  Plug 'tfnico/vim-gradle'
-  Plug 'Matt-Deacalion/vim-systemd-syntax'
-  Plug 'isobit/vim-caddyfile'
   if v:version >= 701
     Plug 'sheerun/vim-polyglot'
   endif
@@ -185,7 +177,6 @@ try
 
   " Blink
   Plug 'farmergreg/vim-lastplace'
-  Plug 'jremmen/vim-ripgrep'
   if v:version >= 701
     Plug 'rhysd/clever-f.vim'
     Plug 'easymotion/vim-easymotion'
