@@ -165,9 +165,11 @@ try
   Plug 'hashivim/vim-terraform'
 
   " Format
-  Plug 'prettier/vim-prettier', {
-    \ 'do': 'yarn install',
-    \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
+  if executable('yarn')
+    Plug 'prettier/vim-prettier', {
+      \ 'do': 'yarn install',
+      \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
+  endif
   Plug 'sgur/vim-editorconfig'
 
   " Blink
