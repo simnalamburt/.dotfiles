@@ -175,15 +175,11 @@ try
 
   call plug#end()
 
-  let s:has_vimplug = 1
-catch /^Vim\%((\a\+)\)\=:E117/
-endtry
 
+  "
+  " Configs for plugins
+  "
 
-"
-" Configs for plugins
-"
-if exists('s:has_vimplug') && s:has_vimplug
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
   let g:indent_guides_auto_colors = 0
@@ -235,7 +231,8 @@ if exists('s:has_vimplug') && s:has_vimplug
   " mundo.vim
   let g:mundo_right = 1
   nnoremap <leader>g :MundoToggle<CR>
-endif
+catch /^Vim\%((\a\+)\)\=:E117/
+endtry
 
 
 "
