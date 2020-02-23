@@ -198,7 +198,6 @@ if exists('s:has_vimplug') && s:has_vimplug
 
   " vim-polyglot
   let g:polyglot_disabled = ['systemd', 'python']
-  let g:vue_disable_pre_processors=1
 
   " vim-terraform
   let g:terraform_fmt_on_save=1
@@ -358,9 +357,6 @@ augroup vimrc
 
   " Treat .eslintrc .babelrc as json
   autocmd BufRead,BufNewFile .{eslintrc,babelrc,swcrc} setf json
-
-  " vim-vue
-  autocmd FileType vue syntax sync fromstart
 
   " Vim automatic reload
   autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
