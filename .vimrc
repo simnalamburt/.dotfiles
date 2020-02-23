@@ -149,26 +149,26 @@ endif
 try
   call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
 
-  Plug 'vim-airline/vim-airline'
-  Plug 'tpope/vim-endwise'
+  " Configs
   Plug 'tpope/vim-sensible'
-  Plug 'godlygeek/tabular'
   Plug 'vim-utils/vim-interruptless'
-  Plug 'justinmk/vim-dirvish'
-  Plug 'prettier/vim-prettier', {
-    \ 'do': 'yarn install',
-    \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
 
   " Visual
+  Plug 'vim-airline/vim-airline'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  Plug 'sgur/vim-editorconfig'
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
   Plug 'sheerun/vim-polyglot'
   Plug 'boeckmann/vim-freepascal'
   Plug 'hashivim/vim-terraform'
+
+  " Format
+  Plug 'prettier/vim-prettier', {
+    \ 'do': 'yarn install',
+    \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
+  Plug 'sgur/vim-editorconfig'
 
   " Blink
   Plug 'farmergreg/vim-lastplace'
@@ -178,8 +178,11 @@ try
   Plug 'haya14busa/incsearch-fuzzy.vim'
   Plug 'haya14busa/incsearch-easymotion.vim'
 
-  " My plugins
+  " Util
   Plug 'simnalamburt/vim-mundo'
+  Plug 'tpope/vim-endwise'
+  Plug 'godlygeek/tabular'
+  Plug 'justinmk/vim-dirvish'
 
   call plug#end()
 
@@ -192,12 +195,6 @@ endtry
 " Configs for plugins
 "
 if exists('s:has_vimplug') && s:has_vimplug
-  " vim-prettier
-  let g:prettier#autoformat_config_present = 1
-  let g:prettier#autoformat_require_pragma = 0
-  let g:prettier#exec_cmd_async = 1
-  let g:prettier#quickfix_enabled = 0
-
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
   let g:indent_guides_auto_colors = 0
@@ -206,10 +203,6 @@ if exists('s:has_vimplug') && s:has_vimplug
   let g:indent_guides_exclude_filetypes = ['help']
   let g:indent_guides_default_mapping = 0
 
-  " mundo.vim
-  let g:mundo_right = 1
-  nnoremap <leader>g :MundoToggle<CR>
-
   " vim-polyglot
   let g:polyglot_disabled = ['systemd', 'python']
   let g:vue_disable_pre_processors=1
@@ -217,12 +210,15 @@ if exists('s:has_vimplug') && s:has_vimplug
   " vim-terraform
   let g:terraform_fmt_on_save=1
 
+  " vim-prettier
+  let g:prettier#autoformat_config_present = 1
+  let g:prettier#autoformat_require_pragma = 0
+  let g:prettier#exec_cmd_async = 1
+  let g:prettier#quickfix_enabled = 0
+
   " clever-f.vim
   let g:clever_f_across_no_line = 1
   let g:clever_f_smart_case = 1
-
-  " vim-go
-  let g:go_version_warning = 0
 
   " incsearch.vim
   map /  <Plug>(incsearch-forward)
@@ -247,6 +243,10 @@ if exists('s:has_vimplug') && s:has_vimplug
     \ }), get(a:, 1, {}))
   endfunction
   noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
+
+  " mundo.vim
+  let g:mundo_right = 1
+  nnoremap <leader>g :MundoToggle<CR>
 endif
 
 
