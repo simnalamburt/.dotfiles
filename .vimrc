@@ -155,6 +155,9 @@ try
     Plug 'mattn/vim-lsp-settings'
     Plug 'junegunn/fzf'
   endif
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'preservim/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " Visual
   Plug 'vim-airline/vim-airline'
@@ -279,6 +282,26 @@ try
   " asyncomplete.vim
   inoremap <expr><TAB> pumvisible() ? '<C-n>' : '<TAB>'
   let g:asyncomplete_auto_completeopt = 0
+
+  " nerdtree
+  noremap <silent> <C-n> :NERDTreeToggle<CR>
+  function! s:nerdtree_startup()
+    if exists('s:std_in') || argc() != 1 || !isdirectory(argv()[0])
+      return
+    endif
+    execute 'NERDTree' argv()[0]
+    wincmd p
+    enew
+    execute 'cd '.argv()[0]
+    NERDTreeFocus
+  endfunction
+  augroup vimrc_nerdtree
+    autocmd!
+
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * call s:nerdtree_startup()
+    autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+  augroup END
 
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
