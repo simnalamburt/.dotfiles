@@ -85,10 +85,18 @@
 ## fd (debian)
 #alias fd=fdfind
 
+## lsd
+#if (( $+commands[lsd] )); then
+#  alias l='lsd -Al --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
+#  alias ll='lsd -l --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
+#  alias lt='lsd --tree --depth=2 --date=relative --group-dirs=first'
+#fi
+
 ## exa
 #if (( $+commands[exa] )); then
 #  alias l='exa -alh --group-directories-first'
 #  alias ll='exa -lh --group-directories-first'
+#  alias lt='exa -TL2 --group-directories-first'
 #fi
 
 ## tag
