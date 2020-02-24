@@ -14,4 +14,6 @@ Debian Buster
 
 ### `rustup`
 - rustup
+
+###`cargo install`
 - exa

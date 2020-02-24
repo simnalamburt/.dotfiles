@@ -24,6 +24,11 @@ Debian Buster
 
 ### `rustup`
 - rustup
-- exa
+- rust-analysis
+- rust-src
+- rls
+
+###`cargo install`
+- lsd
 - svgcleaner
 - cargo-bloat
