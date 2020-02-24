@@ -28,16 +28,10 @@ Setup note
     iwr -useb get.scoop.sh | iex
     ```
 
-1.  Install git. This is requied for next steps.
+1.  Install git. This is requied for enable non-default buckets.
 
     ```powershell
     scoop install git
-    ```
-
-1.  Enable `extras` repo.
-
-    ```powershell
-    scoop bucket add extras
     ```
 
 <br>
