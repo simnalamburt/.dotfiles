@@ -118,7 +118,7 @@ nnoremap <esc>8 8gt
 nnoremap <esc>9 9gt
 
 " Easy newline insert
-function! CustomEnter()
+function! s:CustomEnter()
   if &modifiable
     normal! o
   else
@@ -127,7 +127,7 @@ function! CustomEnter()
     execute 'normal! \<CR>'
   endif
 endfunction
-nnoremap <CR> :call CustomEnter()<CR>
+nnoremap <CR> :call <SID>CustomEnter()<CR>
 
 
 "
