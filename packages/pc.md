@@ -3,6 +3,9 @@ PC
 Windows 10 Build 1909
 
 ### [`scoop`](https://scoop.sh)
+Please add `extra` and `nerd-fonts` bucket.
+
+- sudo
 - 7zip git
 - neovim
 - firefox chromium
@@ -11,6 +14,7 @@ Windows 10 Build 1909
 - windows-terminal vcredist2019
 - inkscape krita gimp
 - xournalpp
+- CascadiaCode-NF *(requires sudo)*
 
 ### Microsoft Store
 - Debian
