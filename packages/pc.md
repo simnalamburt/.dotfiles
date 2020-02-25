@@ -5,9 +5,8 @@ Windows 10 Build 1909
 ### [`scoop`](https://scoop.sh)
 Please add `extra` and `nerd-fonts` bucket.
 
-- sudo
 - 7zip git
-- neovim
+- sudo neovim
 - firefox chromium
 - vscode
 - discord

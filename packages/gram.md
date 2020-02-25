@@ -3,14 +3,17 @@ LG Gram 2-in-1
 Windows 10 Build 1909
 
 ### [`scoop`](https://scoop.sh)
+Please add `extra` and `nerd-fonts` bucket.
+
 - 7zip git
-- neovim
+- sudo neovim
 - firefox chromium
 - vscode
 - discord
-- windows-terminal vcredist2019
+- windows-terminal<sup>0.7.3451.0</sup> vcredist2019
 - inkscape krita gimp
 - xournalpp
+- CascadiaCode-NF<sup>sudo</sup>
 
 ### Microsoft Store
 - Debian
