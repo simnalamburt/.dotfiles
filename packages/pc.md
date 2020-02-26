@@ -14,6 +14,7 @@ Please add `extra` and `nerd-fonts` bucket.
 - inkscape krita gimp
 - xournalpp
 - CascadiaCode-NF *(requires sudo)*
+- spacesniffer
 
 ### Microsoft Store
 - Debian
