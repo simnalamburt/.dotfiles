@@ -32,3 +32,4 @@ Please add `extra` and `nerd-fonts` bucket.
 - Edge Chromium
 - Radeon Adrenalin 2020
 - Minecraft: Java Edition
+- Visual Studio 2019 Community
