@@ -14,6 +14,9 @@ Debian Buster
 
 ### `rustup`
 - rustup
+- rust-analysis
+- rust-src
+- rls
 
 ###`cargo install`
 - exa
