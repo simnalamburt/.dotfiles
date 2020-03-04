@@ -1,31 +1,38 @@
 서버/PC 관리 문서
 ========
-도메인은 [GoDaddy]를 사용하여 구입하였고, 네임서버는 [CloudFlare]를 쓰고있다.
+Domain Registrar는 [Cloudflare Registrar]와 [Namecheap]을 쓰고있다. Name
+server는 [Cloudflare]를 쓰고있다.
+
+[Cloudflare Registrar]: https://www.cloudflare.com/products/registrar/
+[Namecheap]: https://www.namecheap.com/
+[Cloudflare]: https://www.cloudflare.com/
+
+### 서버 세팅 주의사항
+1.  sshd에서 비밀번호 인증은 꼭 끄고, 안 쓰는 사이퍼들도 모두 꺼주자.
+    https://sshcheck.com 참고
+
+    ```sshd_config
+    # Only Private Key Authn is allowed
+    PasswordAuthentication no
+    ChallengeResponseAuthentication no
+
+    # We want the PAM account and session checks to run without PAM authentication
+    UsePAM yes
+    PrintMotd no
+
+    # Everyone loves SFTP
+    Subsystem sftp /usr/lib/openssh/sftp-server
+
+    # See <https://sshcheck.com> and `ssh -Q [kex|key|mac]`
+    KexAlgorithms curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group-exchange-sha256
+    HostKeyAlgorithms ssh-ed25519,ssh-rsa,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com
+    MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,umac-128@openssh.com
+    ```
+
+1.  웹서버를 돌린다면 HTTP/2, TLS 1.3, HSTS, brotli 지원을 신경써주자.
+    https://www.ssllabs.com/ssltest/ 참고
 
 ### 구독중인 메일링리스트
 - [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
 - [arch-security](https://lists.archlinux.org/listinfo/arch-security)
 - [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
-
-### 서버 새로 세팅하면 해줄거
-1.  [sshd_config에서 1024bit DHE 끄기](https://weakdh.org/sysadmin.html#openssh)
-
-    ```sshd_config
-    KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group14-sha1
-    ```
-
-1.  sshd_config에서 패스워드 인증을 끄거나, [fail2ban] 설치
-
-    ```sshd_config
-    PasswordAuthentication no
-    ```
-
-1.  [nginx TLS 설정하기][https]. ([DHE 끄기](https://weakdh.org), SSLv3 끄기, 등)
-
-1.  [HSTS] 강제하기
-
-[GoDaddy]: https://kr.godaddy.com/
-[CloudFlare]: https://www.cloudflare.com/
-[fail2ban]: https://github.com/fail2ban/fail2ban
-[https]: https://github.com/simnalamburt/nginx.conf
-[HSTS]: https://scotthelme.co.uk/setting-up-hsts-in-nginx

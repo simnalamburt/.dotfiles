@@ -78,8 +78,6 @@ passwd root -dl
 
 # ssh 설정
 nano /etc/ssh/sshd_config
-  # PasswordAuthentication no
-  # KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group14-sha1
 systemctl enable sshd
 
 sudo -u simnalamburt bash -c \
