@@ -29,7 +29,7 @@ set updatetime=500
 if has('persistent_undo')
   set undofile
   let &undodir = $HOME . '/.vim/undodir'
-  call mkdir(&undodir, 'p')
+  silent! call mkdir(&undodir, 'p')
 endif
 
 " Indentation
