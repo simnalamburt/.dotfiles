@@ -107,9 +107,11 @@
 #  }
 #fi
 
+## GPG
+#export GPG_TTY=$(tty)
+
 ## WSL
 #umask 022
-#export GPG_TTY=$(tty)
 #alias open=explorer.exe
 #alias pbcopy=clip.exe
 #alias pbpaste='powershell.exe Get-Clipboard'
