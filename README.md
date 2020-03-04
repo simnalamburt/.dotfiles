@@ -11,7 +11,7 @@
 ```shell
 git clone https://github.com/simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
-# zplugin       https://github.com/zdharma/zplugin
+# zinit         https://github.com/zdharma/zinit
 # vim-plug      https://github.com/junegunn/vim-plug
 # tpm           https://github.com/tmux-plugins/tpm
 # kubectl-ctx   https://github.com/weibeld/kubectl-ctx
