@@ -13,4 +13,5 @@ Debian Stretch
 
 ###`cargo install`
 - lsd
+- ripgrep
 - fd-find
