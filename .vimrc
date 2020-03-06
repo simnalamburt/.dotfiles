@@ -183,7 +183,6 @@ try
   Plug 'rhysd/clever-f.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'haya14busa/incsearch.vim'
-  Plug 'haya14busa/incsearch-fuzzy.vim'
   Plug 'haya14busa/incsearch-easymotion.vim'
 
   " Util
@@ -328,9 +327,6 @@ try
   let g:clever_f_smart_case = 1
 
   " incsearch.vim
-  map /  <Plug>(incsearch-forward)
-  map ?  <Plug>(incsearch-backward)
-  map g/ <Plug>(incsearch-stay)
   let g:incsearch#auto_nohlsearch = 1
   map n  <Plug>(incsearch-nohl-n)
   map N  <Plug>(incsearch-nohl-N)
@@ -340,16 +336,18 @@ try
   map g# <Plug>(incsearch-nohl-g#)
 
   " incsearch-easymotion.vim
-  function! s:config_easyfuzzymotion(...) abort
-    return extend(copy({
-    \   'converters': [incsearch#config#fuzzy#converter()],
-    \   'modules': [incsearch#config#easymotion#module()],
-    \   'keymap': {'\<CR>': '<Over>(easymotion)'},
-    \   'is_expr': 0,
-    \   'is_stay': 1
+  function! s:incsearch_config(...) abort
+    return incsearch#util#deepextend(deepcopy({
+    \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
+    \   'keymap': {
+    \     "\<C-l>": '<Over>(easymotion)'
+    \   },
+    \   'is_expr': 0
     \ }), get(a:, 1, {}))
   endfunction
-  noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
+  noremap <silent><expr> /  incsearch#go(<SID>incsearch_config())
+  noremap <silent><expr> ?  incsearch#go(<SID>incsearch_config({'command': '?'}))
+  noremap <silent><expr> g/ incsearch#go(<SID>incsearch_config({'is_stay': 1}))
 
   " mundo.vim
   let g:mundo_right = 1
