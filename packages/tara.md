@@ -2,5 +2,5 @@ tara
 ========
 
 ### `opkg`
-- sudo
-- htop
+- sudo shadow-su htop
+- luci-ssl
