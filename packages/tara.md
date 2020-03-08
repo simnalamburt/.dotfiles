@@ -1,0 +1,6 @@
+tara
+========
+
+### `opkg`
+- sudo
+- htop
