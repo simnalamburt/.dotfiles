@@ -7,6 +7,7 @@ Debian Buster
 - htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux fd-find ripgrep fzf
 - wget
+- fp-compiler
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
