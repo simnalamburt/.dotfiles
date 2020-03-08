@@ -1,6 +1,6 @@
-PC, Hyper-V VM
+hyper.hyeon.me
 ========
-Debian Stretch
+Hyper-V VM of PC, Debian Stretch
 
 ### `apt`
 - openssh-server htop git
