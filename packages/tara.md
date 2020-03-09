@@ -2,5 +2,3 @@ tara
 ========
 
 ### `opkg`
-- sudo
-- htop
