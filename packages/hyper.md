@@ -6,7 +6,7 @@ Hyper-V VM of PC, Debian Stretch
 - openssh-server htop git
 - make linux-headers-4.9.0-12-amd64
 - zsh vim tmux
-- gcc
+- gcc clang-format
 
 ### `rustup`
 - rustup
