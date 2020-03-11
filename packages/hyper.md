@@ -9,7 +9,8 @@ Hyper-V VM of PC, Debian Stretch
 - gcc clang-format
 
 ### `rustup`
-- rustup
+- stable
+- nightly: rust-src
 
 ###`cargo install`
 - lsd

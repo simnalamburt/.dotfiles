@@ -23,10 +23,7 @@ Debian Buster
 - bundler
 
 ### `rustup`
-- rustup
-- rust-analysis
-- rust-src
-- rls
+- stable: rust-analysis rust-src rls
 
 ###`cargo install`
 - lsd
