@@ -7,10 +7,10 @@ Enabled `stretch-backports` repo
 
 - openssh-server htop git
 - make linux-headers-4.9.0-12-amd64
-- zsh vim tmux
-- gcc
-- build-essential cmake libssl-dev pkg-config python3
-- bear
+- curl zsh vim tmux gcc
+- build-essential cmake libssl-dev pkg-config python3 bear
+
+### Homebrew on Linux
 
 ### `rustup`
 - stable
