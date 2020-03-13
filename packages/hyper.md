@@ -10,6 +10,7 @@ Enabled `stretch-backports` repo
 - zsh vim tmux
 - gcc clang-format-6.0
 - build-essential llvm-6.0 clang-6.0 libclang-6.0-dev cmake libssl-dev pkg-config python3
+- bear
 
 ### `rustup`
 - stable
