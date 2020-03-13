@@ -41,11 +41,17 @@
 
 ## Update PATH
 #export PATH="\
+#$HOME/.cargo/bin:\
 #$HOME/.local/bin:\
+#/home/linuxbrew/.linuxbrew/bin:\
+#/home/linuxbrew/.linuxbrew/sbin:\
 #/usr/local/sbin:\
 #/usr/local/opt/ruby/bin:\
-#/usr/local/lib/ruby/gems/2.6.0/bin:\
-#$PATH"
+#/usr/local/lib/ruby/gems/2.6.0/bin\
+#${PATH+:$PATH}"
+
+## Homebrew for Linux
+#eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 ## rust
 #if (( $+commands[cargo] )); then
