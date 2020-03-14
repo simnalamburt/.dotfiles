@@ -11,6 +11,7 @@ Enabled `stretch-backports` repo
 - build-essential cmake libssl-dev pkg-config python3 bear
 
 ### Homebrew on Linux
+- llvm@8 ncurses
 
 ### `rustup`
 - stable
@@ -21,3 +22,4 @@ Enabled `stretch-backports` repo
 - lsd
 - ripgrep
 - fd-find
+- c2rust
