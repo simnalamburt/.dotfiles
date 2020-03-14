@@ -22,4 +22,5 @@ Enabled `stretch-backports` repo
 - lsd
 - ripgrep
 - fd-find
+- tokei
 - c2rust
