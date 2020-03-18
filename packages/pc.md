@@ -34,3 +34,4 @@ Please add `extra` and `nerd-fonts` bucket.
 - Minecraft: Java Edition
 - Visual Studio 2019 Community
 - Zoom Client for Meetings
+- VideoDownloadHelper CoApp
