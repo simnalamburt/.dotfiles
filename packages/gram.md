@@ -26,3 +26,4 @@ Please add `extra` and `nerd-fonts` bucket.
 ### Manually Installed
 - 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
 - VirtualBox
+- Zoom Client for Meetings

@@ -33,4 +33,4 @@ Please add `extra` and `nerd-fonts` bucket.
 - Radeon Adrenalin 2020
 - Minecraft: Java Edition
 - Visual Studio 2019 Community
-- Zoom
+- Zoom Client for Meetings
