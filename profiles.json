@@ -3,49 +3,49 @@
 //
 // This file resides at "%LocalAppData%\Microsoft\Windows Terminal". Sync with the
 // commands below:
-//     cp ~/.dotfiles/profiles.json '/mnt/c/Users/simna/AppData/Local/Microsoft/Windows Terminal/profiles.json'
-//     cp '/mnt/c/Users/simna/AppData/Local/Microsoft/Windows Terminal/profiles.json' ~/.dotfiles/profiles.json
-
+//     cp ~/.dotfiles/profiles.json /mnt/c/Users/simna/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json
+//     cp /mnt/c/Users/simna/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json ~/.dotfiles/profiles.json
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
 
-    "profiles": [
-        {
-            "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-            "name": "Debian",
-            "startingDirectory": "\\\\wsl$\\Debian\\home\\simnalamburt",
-            "source": "Windows.Terminal.Wsl",
-            "cursorShape": "filledBox",
+    "profiles": {
+        "defaults": {
+            // Put settings here that you want to apply to all profiles
             "fontFace": "CaskaydiaCove NF",
-            "fontSize": 14,
-            "hidden": false
+            "fontSize": 14
         },
-        {
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "name": "PowerShell",
-            "commandline": "powershell.exe",
-            "fontFace": "CaskaydiaCove NF",
-            "fontSize": 14,
-            "hidden": false
-        },
-        {
-            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "name": "cmd",
-            "commandline": "cmd.exe",
-            "fontFace": "CaskaydiaCove NF",
-            "fontSize": 14,
-            "hidden": false
-        },
-        {
-            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure",
-            "fontFace": "CaskaydiaCove NF",
-            "fontSize": 14,
-            "hidden": true
-        }
-    ],
+        "list": [
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl",
+                "cursorShape": "filledBox",
+                "startingDirectory": "\\\\wsl$\\Debian\\home\\simnalamburt"
+            },
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
 
     // Add custom color schemes to this array
     "schemes": [],
@@ -53,12 +53,6 @@
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
-        // nextTab: ctrl+tab
-        // prevTab: ctrl+shift+tab
-        // toggleFullscreen: alt+enter or f11
-        { "command": "copy", "keys": [ "ctrl+insert" ] },
-        { "command": "paste", "keys": [ "shift+insert" ] },
-        { "command": "newTab", "keys": [ "alt+f2" ] },
         { "command": "switchToTab0", "keys": [ "ctrl+1"] },
         { "command": "switchToTab1", "keys": [ "ctrl+2"] },
         { "command": "switchToTab2", "keys": [ "ctrl+3"] },

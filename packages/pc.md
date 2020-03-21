@@ -10,7 +10,6 @@ Please add `extra` and `nerd-fonts` bucket.
 - firefox chromium
 - vscode
 - discord
-- windows-terminal vcredist2019
 - inkscape krita gimp
 - xournalpp
 - CascadiaCode-NF *(requires sudo)*
@@ -18,6 +17,7 @@ Please add `extra` and `nerd-fonts` bucket.
 
 ### Microsoft Store
 - Debian
+- Windows Terminal (Preview)
 - Line, KakaoTalk
 - Microsoft To Do
 
