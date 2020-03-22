@@ -280,7 +280,9 @@ try
   " asyncomplete.vim
   inoremap <expr> <Tab>   pumvisible() ? '<C-n>' : '<Tab>'
   inoremap <expr> <S-Tab> pumvisible() ? '<C-p>' : '<S-Tab>'
-  inoremap <expr> <CR>    pumvisible() ? '<C-y>' : '<CR>'
+  inoremap <expr> <CR>    pumvisible() ? '<C-y><CR>' : '<CR>'
+  inoremap <expr> <Up>    pumvisible() ? '<C-y><Up>' : '<Up>'
+  inoremap <expr> <Down>  pumvisible() ? '<C-y><Down>' : '<Down>'
   let g:asyncomplete_auto_completeopt = 0
 
   " nerdtree
