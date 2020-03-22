@@ -10,13 +10,13 @@ Please add `extra` and `nerd-fonts` bucket.
 - firefox chromium
 - vscode
 - discord
-- windows-terminal<sup>0.7.3451.0</sup> vcredist2019
 - inkscape krita gimp
 - xournalpp
 - CascadiaCode-NF<sup>sudo</sup>
 
 ### Microsoft Store
 - Debian
+- Windows Terminal (Preview)
 - Line, KakaoTalk
 - Microsoft To Do
 - Word 2016, Excel 2016, PowerPoint 2016
