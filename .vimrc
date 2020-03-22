@@ -187,7 +187,6 @@ try
 
   " Util
   Plug 'simnalamburt/vim-mundo'
-  Plug 'tpope/vim-endwise'
   Plug 'godlygeek/tabular'
   Plug 'justinmk/vim-dirvish'
 
@@ -279,7 +278,9 @@ try
   endfunction
 
   " asyncomplete.vim
-  inoremap <expr><TAB> pumvisible() ? '<C-n>' : '<TAB>'
+  inoremap <expr> <Tab>   pumvisible() ? '<C-n>' : '<Tab>'
+  inoremap <expr> <S-Tab> pumvisible() ? '<C-p>' : '<S-Tab>'
+  inoremap <expr> <CR>    pumvisible() ? '<C-y>' : '<CR>'
   let g:asyncomplete_auto_completeopt = 0
 
   " nerdtree
