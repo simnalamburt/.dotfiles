@@ -1,2 +1,5 @@
+"" If you want vim-prettier autoformatting
+" let g:prettier#autoformat_config_present = 1
+
 "" If you use powerline patched fonts
 " let g:airline_powerline_fonts = 1
