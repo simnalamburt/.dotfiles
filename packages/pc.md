@@ -6,20 +6,20 @@ Windows 10 Build 1909
 Please add `extra` and `nerd-fonts` bucket.
 
 - 7zip git
-- sudo neovim
+- sudo
 - firefox chromium
 - vscode
 - discord
 - inkscape krita gimp
 - xournalpp
-- CascadiaCode-NF *(requires sudo)*
-- spacesniffer
+- CascadiaCode-NF<sup>sudo</sup>
 
 ### Microsoft Store
 - Debian
 - Windows Terminal (Preview)
 - Line, KakaoTalk
 - Microsoft To Do
+- Netflix
 
 ### Manually Installed
 - Chrome Remote Desktop Host
@@ -32,6 +32,5 @@ Please add `extra` and `nerd-fonts` bucket.
 - Edge Chromium
 - Radeon Adrenalin 2020
 - Minecraft: Java Edition
-- Visual Studio 2019 Community
 - Zoom Client for Meetings
 - VideoDownloadHelper CoApp
