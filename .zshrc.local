@@ -43,6 +43,7 @@
 #export PATH="\
 #$HOME/.cargo/bin:\
 #$HOME/.local/bin:\
+#$HOME/.yarn/bin:\
 #/home/linuxbrew/.linuxbrew/bin:\
 #/home/linuxbrew/.linuxbrew/sbin:\
 #/usr/local/sbin:\
