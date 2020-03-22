@@ -22,10 +22,6 @@ Debian Buster
 ### `gem`
 - bundler
 
-### `yarn global`
-- typescript-language-server
-- vscode-css-languageserver-bin
-
 ### `rustup`
 - stable: rust-analysis rust-src rls
 
