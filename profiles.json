@@ -22,7 +22,7 @@
                 "name": "Debian",
                 "source": "Windows.Terminal.Wsl",
                 "cursorShape": "filledBox",
-                "startingDirectory": "\\\\wsl$\\Debian\\home\\simnalamburt"
+                "startingDirectory": "//wsl$/Debian/home/simnalamburt"
             },
             {
                 // Make changes here to the powershell.exe profile
