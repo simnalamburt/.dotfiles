@@ -10,7 +10,9 @@ Debian Buster
 - python3-venv
 - fp-compiler
 - shellcheck jq
-- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
+- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu [qemu-system-riscv64]
+
+[qemu-system-riscv64]: https://github.com/simnalamburt/qemu-system-riscv64.deb
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
