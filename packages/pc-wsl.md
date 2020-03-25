@@ -10,6 +10,7 @@ Debian Buster
 - python3-venv
 - fp-compiler
 - shellcheck jq
+- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
