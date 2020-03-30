@@ -34,3 +34,4 @@ Please add `extra` and `nerd-fonts` bucket.
 - Minecraft: Java Edition
 - Zoom Client for Meetings
 - VideoDownloadHelper CoApp
+- Xilinx Vivado HLx Editions 2018.3
