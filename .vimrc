@@ -415,7 +415,7 @@ call s:fg('MatchParen',   226)
 call s:bg('MatchParen',   16)
 
 " Indentation
-if &softtabstop < 4 || !&expandtab
+if &tabstop < 4
   call s:bg('IndentGuidesOdd', 'NONE')
 else
   let g:indent_guides_guide_size = 1
