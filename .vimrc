@@ -166,7 +166,7 @@ try
   Plug 'junegunn/seoul256.vim'
 
   " Syntax
-  Plug 'sheerun/vim-polyglot'
+  let g:polyglot_disabled = ['v'] | Plug 'sheerun/vim-polyglot'
   Plug 'boeckmann/vim-freepascal'
   Plug 'hashivim/vim-terraform'
 
@@ -312,9 +312,6 @@ try
   let g:indent_guides_enable_on_vim_startup = 1
   let g:indent_guides_exclude_filetypes = ['help']
   let g:indent_guides_default_mapping = 0
-
-  " vim-polyglot
-  let g:polyglot_disabled = ['systemd', 'python']
 
   " vim-terraform
   let g:terraform_fmt_on_save=1
