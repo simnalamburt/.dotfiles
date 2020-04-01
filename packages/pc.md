@@ -35,3 +35,4 @@ Please add `extra` and `nerd-fonts` bucket.
 - Zoom Client for Meetings
 - VideoDownloadHelper CoApp
 - Xilinx Vivado HLx Editions 2018.3
+- Xilinx (D:\ 에 설치함), WinPcap 4.1.1, Jungo, Xilingx Programming cables
