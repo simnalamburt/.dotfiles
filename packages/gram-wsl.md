@@ -8,6 +8,9 @@ Debian Buster
 - vim-nox git zsh tmux fd-find ripgrep fzf
 - wget
 - fp-compiler
+- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu [qemu-system-riscv64]
+
+[qemu-system-riscv64]: https://github.com/simnalamburt/qemu-system-riscv64.deb
 
 ### `apt` PPA
 - nodejs (nodesource.com, v13.x)
