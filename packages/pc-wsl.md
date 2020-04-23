@@ -27,6 +27,7 @@ Debian Buster
 
 ### `rustup`
 - stable: rust-analysis rust-src rls
+- nightly: rust-src
 
 ###`cargo install`
 - lsd
