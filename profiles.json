@@ -11,7 +11,6 @@
 
     "profiles": {
         "defaults": {
-            // Put settings here that you want to apply to all profiles
             "fontFace": "CaskaydiaCove NF",
             "fontSize": 14
         },
@@ -25,14 +24,13 @@
                 "startingDirectory": "//wsl$/Debian/home/simnalamburt"
             },
             {
-                // Make changes here to the powershell.exe profile
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
+                "colorScheme": "Campbell Powershell",
                 "hidden": false
             },
             {
-                // Make changes here to the cmd.exe profile
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
                 "commandline": "cmd.exe",
@@ -53,21 +51,21 @@
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
-        { "command": "switchToTab0", "keys": [ "ctrl+1"] },
-        { "command": "switchToTab1", "keys": [ "ctrl+2"] },
-        { "command": "switchToTab2", "keys": [ "ctrl+3"] },
-        { "command": "switchToTab3", "keys": [ "ctrl+4"] },
-        { "command": "switchToTab4", "keys": [ "ctrl+5"] },
-        { "command": "switchToTab5", "keys": [ "ctrl+6"] },
-        { "command": "switchToTab6", "keys": [ "ctrl+7"] },
-        { "command": "switchToTab7", "keys": [ "ctrl+8"] },
-        { "command": "switchToTab8", "keys": [ "ctrl+9"] },
-        { "command": "decreaseFontSize", "keys": [ "ctrl+shift+-" ] },
-        { "command": "splitHorizontal", "keys": [ "ctrl+-" ] },
-        { "command": "splitVertical", "keys": [ "ctrl+\\" ] },
-        { "command": "resizePaneLeft", "keys": [ "ctrl+left" ]},
-        { "command": "resizePaneRight", "keys": [ "ctrl+right" ]},
-        { "command": "resizePaneUp", "keys": [ "ctrl+up" ]},
-        { "command": "resizePaneDown", "keys": [ "ctrl+down" ]}
+        { "command": { "action": "switchToTab", "index": 0 }, "keys": "ctrl+1" },
+        { "command": { "action": "switchToTab", "index": 1 }, "keys": "ctrl+2" },
+        { "command": { "action": "switchToTab", "index": 2 }, "keys": "ctrl+3" },
+        { "command": { "action": "switchToTab", "index": 3 }, "keys": "ctrl+4" },
+        { "command": { "action": "switchToTab", "index": 4 }, "keys": "ctrl+5" },
+        { "command": { "action": "switchToTab", "index": 5 }, "keys": "ctrl+6" },
+        { "command": { "action": "switchToTab", "index": 6 }, "keys": "ctrl+7" },
+        { "command": { "action": "switchToTab", "index": 7 }, "keys": "ctrl+8" },
+        { "command": { "action": "switchToTab", "index": 8 }, "keys": "ctrl+9" },
+        { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "ctrl+-" },
+        { "command": { "action": "splitPane", "split": "vertical" }, "keys": "ctrl+\\" },
+        { "command": { "action": "adjustFontSize", "delta": -1 }, "keys": "ctrl+shift+-" },
+        { "command": { "action": "resizePane", "direction": "down" }, "keys": "ctrl+down" },
+        { "command": { "action": "resizePane", "direction": "left" }, "keys": "ctrl+left" },
+        { "command": { "action": "resizePane", "direction": "right" }, "keys": "ctrl+right" },
+        { "command": { "action": "resizePane", "direction": "up" }, "keys": "ctrl+up" }
     ]
 }
