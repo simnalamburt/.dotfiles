@@ -15,9 +15,8 @@ Debian Buster
 [qemu-system-riscv64]: https://github.com/simnalamburt/qemu-system-riscv64.deb
 
 ### `apt` PPA
-- nodejs (nodesource.com, v13.x)
+- nodejs (nodesource.com, v14.x)
 - yarn (v1.x)
-- clang-9 (https://apt.llvm.org/)
 
 ### `/usr/local/bin`
 - packer terraform terraformer
