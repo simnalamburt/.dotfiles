@@ -14,6 +14,10 @@ Please add `extra` and `nerd-fonts` bucket.
 - xournalpp
 - CascadiaCode-NF<sup>sudo</sup>
 
+`java` bucket
+
+- oraclejre8
+
 ### Microsoft Store
 - Debian
 - Windows Terminal (Preview)
