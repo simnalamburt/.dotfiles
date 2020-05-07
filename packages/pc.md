@@ -5,7 +5,7 @@ Windows 10 Build 1909
 ### [`scoop`](https://scoop.sh)
 Please add `extra` and `nerd-fonts` bucket.
 
-- 7zip git
+- 7zip git aria2
 - sudo
 - firefox chromium
 - vscode
