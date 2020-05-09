@@ -25,7 +25,7 @@ Debian Buster
 - bundler
 
 ### `rustup`
-- stable: rust-analysis rust-src rls
+- stable: rust-analysis rust-src rls clippy
 - nightly: rust-src
 
 ###`cargo install`
