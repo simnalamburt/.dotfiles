@@ -28,7 +28,8 @@ Debian Buster
 - stable: rust-analysis rust-src rls clippy
 - nightly: rust-src
 
-###`cargo install`
+### `cargo install`
 - lsd
 - svgcleaner
 - cargo-bloat
+- bat
