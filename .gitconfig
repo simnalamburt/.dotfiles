@@ -74,6 +74,14 @@
 	#   git h README.md
 	h = "log -p -M --follow"
 
+	# git sed <regex>
+	#
+	# Find and replace patterns with given regex.
+	#
+	# Usage:
+	#   git sed 's/yolo/swag/g'
+	sed = "!_() { git ls-files -z | xargs -0 perl -i -pe ${1}; }; _"
+
 [commit]
 	gpgsign = yes
 [rerere]
