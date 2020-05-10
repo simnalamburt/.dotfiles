@@ -3,20 +3,26 @@ PC
 Windows 10 Build 1909
 
 ### [`scoop`](https://scoop.sh)
-Please add `extra` and `nerd-fonts` bucket.
+Default and `extra` bucket:
 
 - 7zip git aria2
-- sudo
+- sudo gcc
 - firefox chromium
 - vscode
 - discord
 - inkscape krita gimp
 - xournalpp
+
+`nerd-fonts` bucket:
+
 - CascadiaCode-NF<sup>sudo</sup>
 
-`java` bucket
+`java` bucket:
 
 - oraclejre8
+
+### `rustup`
+- stable-gnu
 
 ### Microsoft Store
 - Debian
