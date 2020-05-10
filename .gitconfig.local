@@ -1,47 +1,17 @@
 # vim: ft=gitconfig noexpandtab sw=8
 
-## Cannot use TLS?
-# [url "git://"]
-#   insteadOf = https://
+# git-delta
+[core]
+	pager = BAT_PAGER='less -+XF -SQc' delta
 
-## Want to use GCMW?
-# [credential]
-#   helper = manager
+# diff-highlight.perl (Debian)
+[pager]
+	log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+	show = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+	diff = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
 
-## OS X credential cache
-# [credential]
-#   helper = osxkeychain
-
-## Diff highlight (Arch Linux)
-# [pager]
-#   log  = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-#   show = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-#   diff = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-
-## Diff highlight (Debian)
-# [pager]
-#   log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
-#   show = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
-#   diff = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
-
-## Diff highlight (Ubuntu 16.04 LTS)
-# [pager]
-#   log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less -+XF -SQc
-#   show = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less -+XF -SQc
-#   diff = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less -+XF -SQc
-
-## Diff highlight (macOS)
-# [pager]
-#   log  = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
-#   show = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
-#   diff = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
-
-## Want to use ydiff as a difftool?
-# [diff]
-#   tool = ydiff
-# [difftool "ydiff"]
-#   cmd = ydiff -sw0
-
-## To use GPG 2.x instead of 1.x in Ubuntu 16
-# [gpg]
-#   program = gpg2
+# diff-highlight.perl (Arch Linux)
+[pager]
+	log  = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+	show = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+	diff = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
