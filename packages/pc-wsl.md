@@ -29,7 +29,4 @@ Debian Buster
 - nightly: rust-src
 
 ### `cargo install`
-- lsd
-- svgcleaner
-- cargo-bloat
-- bat
+- lsd bat git-delta
