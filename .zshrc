@@ -1,44 +1,30 @@
 # If not running interactively, don't do anything
 [[ -o interactive ]] || return
 
+# Disable undef
+stty stop undef
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+
 
 #
 # zinit
 #
 autoload -U is-at-least
-if is-at-least 4.3.9 && [[ -d ~/.zinit ]]; then
+if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
 
   source ~/.zinit/bin/zinit.zsh
   autoload -Uz _zinit
   (( ${+_comps} )) && _comps[zinit]=_zinit
 
-  # My kube-ps theme
-  zinit light jonmosco/kube-ps1
-  KUBE_PS1_SYMBOL_ENABLE='false'
-  KUBE_PS1_PREFIX=''
-  KUBE_PS1_SUFFIX=''
-  KUBE_PS1_DIVIDER=' '
-  KUBE_PS1_CTX_COLOR=238
-  KUBE_PS1_NS_COLOR=242
-
-  # My ZSH theme
-  zinit ice pick"async.zsh" src"pure.zsh"
-  zinit light sindresorhus/pure
-  zstyle :prompt:pure:prompt:success color 242
-  zstyle :prompt:pure:prompt:error color 226
-  zstyle :prompt:pure:path color 033
-  # Visualize the running background jobs
-  PROMPT='%F{226}%(1j.%j .)'$PROMPT
-  # VIsualize the non-zero exit code of previous tasks
-  precmd_pipestatus() {
-    local STAT=${(j.|.)pipestatus}
-    if [[ "$STAT" = 0 ]]; then
-      RPROMPT='$(kube_ps1) %F{238}%*'
-    else
-      RPROMPT='%F{242}'"$STAT"' $(kube_ps1) %F{238}%*'
-    fi
-  }
-  add-zsh-hook precmd precmd_pipestatus
+  zplugin ice depth=1
+  zplugin light romkatv/powerlevel10k
 
   # Show autosuggestions
   ZSH_AUTOSUGGEST_USE_ASYNC=1
@@ -88,10 +74,20 @@ fi
 
 
 #
+# powerlevel10k. To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+#
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Show me exit codes
+typeset -g POWERLEVEL9K_STATUS_ERROR=true
+# Less distractive colorscheme
+typeset -g POWERLEVEL9K_TIME_FOREGROUND=238
+typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=242
+typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=226
+
+
+#
 # zsh-sensible
 #
-stty stop undef
-
 alias l='ls -lah'
 alias mv='mv -i'
 alias cp='cp -i'
