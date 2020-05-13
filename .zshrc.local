@@ -114,9 +114,6 @@
 #  }
 #fi
 
-## GPG
-#export GPG_TTY=$(tty)
-
 ## WSL
 #umask 022
 #alias open=explorer.exe
