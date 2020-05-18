@@ -17,10 +17,6 @@ Default and `extra` bucket:
 
 - CascadiaCode-NF<sup>sudo</sup>
 
-`java` bucket:
-
-- oraclejre8
-
 ### `rustup`
 - stable-gnu
 
