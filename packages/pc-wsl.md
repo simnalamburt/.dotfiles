@@ -10,13 +10,13 @@ Debian Buster
 - python3-venv
 - fp-compiler
 - shellcheck jq
-- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu [qemu-system-riscv64]
-
-[qemu-system-riscv64]: https://github.com/simnalamburt/qemu-system-riscv64.deb
+- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
+- openjdk-11-jdk
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
 - yarn (v1.x)
+- [qemu-system-riscv64](https://github.com/simnalamburt/qemu-system-riscv64.deb)
 
 ### `/usr/local/bin`
 - packer terraform terraformer
