@@ -12,6 +12,7 @@ Default and `extra` bucket:
 - discord
 - inkscape krita gimp
 - xournalpp
+- dd
 
 `nerd-fonts` bucket:
 
