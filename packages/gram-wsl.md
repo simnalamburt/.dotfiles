@@ -20,4 +20,4 @@ Debian Buster
 - stable: rust-analysis rust-src rls
 
 ###`cargo install`
-- exa
+- lsd bat git-delta
