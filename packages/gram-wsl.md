@@ -6,7 +6,7 @@ Debian Buster
 - apt-transport-https build-essential lsb-release
 - htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux fd-find ripgrep fzf
-- wget
+- python3-venv
 - fp-compiler
 - gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu [qemu-system-riscv64]
 
