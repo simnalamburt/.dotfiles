@@ -27,3 +27,4 @@ Please add `extra` and `nerd-fonts` bucket.
 - 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
 - Zoom Client for Meetings
 - ParsecGaming
+- Video DownloadHelper Companion App 1.5.0
