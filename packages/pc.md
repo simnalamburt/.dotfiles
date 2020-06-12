@@ -1,28 +1,22 @@
 PC
 ========
-Windows 10 Build 1909
+Windows 10 Pro, version 2004
 
 ### [`scoop`](https://scoop.sh)
 Default and `extra` bucket:
 
-- 7zip git aria2
-- sudo gcc
+- 7zip git sudo
 - firefox chromium
 - vscode
 - discord
-- inkscape krita gimp
-- xournalpp
 
 `nerd-fonts` bucket:
 
 - CascadiaCode-NF<sup>sudo</sup>
 
-### `rustup`
-- stable-gnu
-
 ### Microsoft Store
 - Debian
-- Windows Terminal (Preview)
+- Windows Terminal
 - Line, KakaoTalk
 - Microsoft To Do
 - Netflix
@@ -33,11 +27,9 @@ Default and `extra` bucket:
 - Uplay, Steam, Battle.net, 오리진
 - ParsecGaming
 - Windows Sandbox
-- [Dark Theme for Inkscape (Windows)](https://github.com/SimBotBiz/inkscape-dark-theme)
 - 한컴오피스 2018
 - Edge Chromium
 - Radeon Adrenalin 2020
-- Minecraft: Java Edition
 - Zoom Client for Meetings
 - VideoDownloadHelper CoApp
 - Xilinx Vivado HLx Editions 2018.3
