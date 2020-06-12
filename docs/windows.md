@@ -37,7 +37,14 @@ Setup note
 <br>
 
 ### C. Setup Windows Subsystem for Linux
-1.  [Install WSL.](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+1.  [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
+    ```powershell
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+    # And, install Linux distros from Microsoft Store
+    ```
 
 1.  Edit `/etc/profile`, `/etc/bashrc`, or `/etc/bash.bashrc` and uncomment or add the line below:
 
