@@ -1,4 +1,4 @@
-PC, WSL
+PC, WSL 2
 ========
 Debian Buster
 
