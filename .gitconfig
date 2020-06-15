@@ -8,6 +8,7 @@
 	pager = less -+XF -SQc
 	excludesfile = ~/.gitexclude
 	fscache = yes
+	preloadindex = yes
 	autocrlf = no
 	quotepath = no
 	precomposeunicode = yes
