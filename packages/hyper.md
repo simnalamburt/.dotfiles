@@ -11,7 +11,6 @@ Hyper-V VM of PC, Debian Stretch
 - stable
 - nightly: rust-src
 
-###`cargo install`
-- lsd
-- ripgrep
-- fd-find
+### `cargo install`
+- lsd bat
+- ripgrep fd-find

@@ -20,5 +20,5 @@ Debian Buster
 ### `rustup`
 - stable: rust-analysis rust-src rls
 
-###`cargo install`
+### `cargo install`
 - lsd bat git-delta
