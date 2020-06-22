@@ -9,6 +9,7 @@ Debian Buster
 - python3-venv
 - gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
 - openjdk-11-jdk
+- libprotobuf-dev protobuf-compiler
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
