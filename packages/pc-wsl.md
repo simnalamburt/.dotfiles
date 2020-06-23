@@ -7,6 +7,7 @@ Debian Buster
 - htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux fd-find ripgrep fzf
 - python3-venv
+- ruby
 - gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
 - openjdk-11-jdk
 - libprotobuf-dev protobuf-compiler
