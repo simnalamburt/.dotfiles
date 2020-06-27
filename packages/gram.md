@@ -22,6 +22,7 @@ Default and `extra` bucket:
 - Netflix
 - Word 2016, Excel 2016, PowerPoint 2016
 - [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
+- iTunes
 
 ### Manually Installed
 - 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
