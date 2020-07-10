@@ -126,3 +126,7 @@
 
 ## AWS
 #export AWS_DEFAULT_PROFILE=blabla
+
+## Cloudflare
+#export CLOUDFLARE_EMAIL=simnalamburt@gmail.com
+#export CLOUDFLARE_API_KEY=xxxxxxxx
