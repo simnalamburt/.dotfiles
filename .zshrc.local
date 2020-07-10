@@ -124,6 +124,5 @@
 ## Mosh
 #compdef mosh=ssh
 
-## devscripts
-#export DEBFULLNAME='Hyeon Kim'
-#export DEBEMAIL='simnalamburt@gmail.com'
+## AWS
+#export AWS_DEFAULT_PROFILE=blabla
