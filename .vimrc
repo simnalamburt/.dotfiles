@@ -1,4 +1,4 @@
-" Require Vim 7.3+
+" Require Vim ≥8.0
 " See https://github.com/simnalamburt/.dotfiles/blob/master/.vimrc
 
 "
@@ -24,6 +24,7 @@ set noshowmode
 set noswapfile
 set nowrap
 set updatetime=500
+set termguicolors
 
 " History
 if has('persistent_undo')
@@ -69,7 +70,12 @@ set wildmode=longest,full
 set hidden
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
-set signcolumn=yes
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
 
 
 "
@@ -147,12 +153,12 @@ try
   Plug 'vim-utils/vim-interruptless'
 
   " IDE
-  if v:version >= 800
-    Plug 'prabirshrestha/async.vim'
-    Plug 'prabirshrestha/vim-lsp'
-    Plug 'prabirshrestha/asyncomplete.vim'
-    Plug 'prabirshrestha/asyncomplete-lsp.vim'
-    Plug 'mattn/vim-lsp-settings'
+  if executable('yarn')
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'simnalamburt/coc-tsserver', {'do': 'yarn install --frozen-lockfile'} " https://github.com/neoclide/coc-tsserver/pull/181
+    Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
   Plug 'ryanoasis/vim-devicons'
@@ -171,11 +177,6 @@ try
   Plug 'hashivim/vim-terraform'
 
   " Format
-  if executable('yarn')
-    Plug 'prettier/vim-prettier', {
-      \ 'do': 'yarn install',
-      \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'graphql'] }
-  endif
   Plug 'sgur/vim-editorconfig'
 
   " Blink
@@ -197,93 +198,54 @@ try
   " Configs for plugins
   "
 
-  " vim-lsp
-  nnoremap <silent> K :LspHover<CR>
-  nnoremap <silent> gd :rightb vsplit<CR>:LspDefinition<CR>
+  " coc.nvim
+  let g:coc_disable_startup_warning = 1
+
+  nnoremap <silent> K :call <SID>show_documentation()<CR>
+  function! s:show_documentation()
+    if (index(['vim','help'], &filetype) >= 0)
+      execute 'h '.expand('<cword>')
+    else
+      call CocActionAsync('doHover')
+    endif
+  endfunction
+
+  " coc-highlight
+  augroup vimrc_highlight
+    autocmd!
+    autocmd CursorHold * silent call CocActionAsync('highlight')
+  augroup END
+
+  " coc-prettier
+  command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+  " supertab
+  let g:SuperTabDefaultCompletionType = "<c-n>"
+
+  " fzf
   nnoremap <F5> :call <SID>lsp_menu()<CR>
-  autocmd CursorMoved * call s:auto_close_preview()
-  let g:lsp_diagnostics_echo_cursor = 1
-  let g:lsp_preview_doubletap = [function('lsp#ui#vim#output#closepreview')]
-  let g:lsp_signs_error = {'text': '🚨'}
-  let g:lsp_signs_warning = {'text': '🤔'}
-  let g:lsp_signs_information = {'text': '👀'}
-  let g:lsp_signs_hint = {'text': '💁'}
-
-  let s:cursor_counter = 0
-
-  function! s:auto_close_preview()
-    if !s:have_preview()
-      return
-    endif
-
-    let s:cursor_counter += 1
-
-    if s:cursor_counter >= 2
-      call lsp#ui#vim#output#closepreview()
-      let s:cursor_counter = 0
-    endif
-  endfunction
-
-  function! s:have_preview()
-    for nr in range(1, winnr('$'))
-      if getwinvar(nr, '&pvw') == 1
-        return 1
-      endif
-    endfor
-    return 0
-  endfunction
-
   function! s:lsp_menu()
     call fzf#run({
     \ 'source': [
-    \   'Rename',
-    \   'Definition',
-    \   'Declaration',
-    \   'References',
-    \   'Implementation',
-    \   'CodeAction',
-    \   'Hover',
-    \   'Status',
-    \
-    \   'DocumentDiagnostics',
-    \   'DocumentFold',
-    \   'DocumentFormat',
-    \   'DocumentRangeFormat',
-    \   'DocumentSymbol',
-    \   'NextDiagnostic',
-    \   'NextError',
-    \   'NextReference',
-    \   'NextWarning',
-    \   'PeekDeclaration',
-    \   'PeekDefinition',
-    \   'PeekImplementation',
-    \   'PeekTypeDefinition',
-    \   'PreviousDiagnostic',
-    \   'PreviousError',
-    \   'PreviousReference',
-    \   'PreviousWarning',
-    \   'SemanticScopes',
-    \   'TypeDefinition',
-    \   'TypeHierarchy',
-    \   'WorkspaceSymbol',
-    \   'StopServer',
+    \   'rename',
+    \   'jumpDefinition',
+    \   'jumpDeclaration',
+    \   'jumpImplementation',
+    \   'jumpTypeDefinition',
+    \   'jumpReferences',
+    \   'diagnosticInfo',
+    \   'diagnosticNext',
+    \   'diagnosticPrevious',
+    \   'format',
+    \   'openLink',
+    \   'doQuickfix',
+    \   'doHover',
+    \   'refactor',
     \ ],
-    \ 'sink': function('<SID>lsp_selected'),
+    \ 'sink': function('CocActionAsync'),
     \ 'options': '+m',
     \ 'down': 10 })
   endfunction
-
-  function! s:lsp_selected(entry)
-    execute printf('Lsp%s', a:entry)
-  endfunction
-
-  " asyncomplete.vim
-  inoremap <expr> <Tab>   pumvisible() ? '<C-n>' : '<Tab>'
-  inoremap <expr> <S-Tab> pumvisible() ? '<C-p>' : '<S-Tab>'
-  inoremap <expr> <CR>    pumvisible() ? '<C-y><CR>' : '<CR>'
-  inoremap <expr> <Up>    pumvisible() ? '<C-y><Up>' : '<Up>'
-  inoremap <expr> <Down>  pumvisible() ? '<C-y><Down>' : '<Down>'
-  let g:asyncomplete_auto_completeopt = 0
 
   " nerdtree
   noremap <silent> <C-n> :NERDTreeToggle<CR>
@@ -315,11 +277,6 @@ try
 
   " vim-terraform
   let g:terraform_fmt_on_save=1
-
-  " vim-prettier
-  let g:prettier#autoformat_require_pragma = 0
-  let g:prettier#exec_cmd_async = 1
-  let g:prettier#quickfix_enabled = 0
 
   " clever-f.vim
   let g:clever_f_across_no_line = 1
@@ -362,19 +319,26 @@ let g:seoul256_background = 233
 try
   colorscheme seoul256
 catch /^Vim\%((\a\+)\)\=:E185/
-  " Fallback
-  silent! colorscheme elflord
+  colorscheme elflord
 endtry
+
+" Reference: https://github.com/junegunn/seoul256.vim/blob/master/colors/seoul256.vim
+if !exists('s:rgb_map')
+  let s:rgb_map = {
+  \ 'NONE': 'NONE', 'white': '#FFFFFF', 'darkblue': '#0000BF',
+  \ 'darkgray': '#6C6C6C', 16: '#000000', 22: '#006F00', 160: '#D70000',
+  \ 226: '#FFFF00', 234: '#252525', 235: '#333233', 237: '#3A3A3A' }
+endif
 let s:back_color = 234
 
 function! s:rs(item)
-  execute printf('highlight %s cterm=NONE', a:item)
+  execute printf('highlight %s cterm=NONE gui=NONE', a:item)
 endfunction
 function! s:fg(item, color)
-  execute printf('highlight %s ctermfg=%s', a:item, a:color)
+  execute printf('highlight %s ctermfg=%s guifg=%s', a:item, a:color, get(s:rgb_map, a:color))
 endfunction
 function! s:bg(item, color)
-  execute printf('highlight %s ctermbg=%s', a:item, a:color)
+  execute printf('highlight %s ctermbg=%s guibg=%s', a:item, a:color, get(s:rgb_map, a:color))
 endfunction
 
 call s:rs('CursorLine')
@@ -410,9 +374,8 @@ call s:bg('DiffDelete',   'NONE')
 call s:fg('NonText',      'darkblue')
 call s:fg('SpecialKey',   'darkblue')
 
-" Pair matching
-call s:fg('MatchParen',   226)
-call s:bg('MatchParen',   16)
+" Matching
+call s:bg('CocHighlightText', 237)
 
 " Indentation
 if &tabstop < 4
