@@ -68,7 +68,7 @@ set wildmode=longest,full
 
 " Completion
 set hidden
-set completeopt=menuone,noinsert,noselect
+set completeopt=preview,menuone,noinsert,noselect
 set shortmess+=c
 if has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
@@ -157,7 +157,11 @@ try
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'simnalamburt/coc-tsserver', {'do': 'yarn install --frozen-lockfile'} " https://github.com/neoclide/coc-tsserver/pull/181
+    Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile', 'rtp': 'packages/emoji'}
     Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
