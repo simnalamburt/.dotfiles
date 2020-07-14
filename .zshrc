@@ -128,7 +128,6 @@ zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 #
 export DOCKER_BUILDKIT=1
 export AWS_SDK_LOAD_CONFIG=true
-if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 
 # EDITOR이나 VISUAL 환경변수 안에 'vi' 라는 글자가 들어있으면 자동으로
 # emacs-like 키바인딩들이 해제되어서, ^A ^E 등을 모조리 쓸 수 없어진다.
