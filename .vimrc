@@ -173,7 +173,7 @@ try
   Plug 'vim-airline/vim-airline'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  Plug 'junegunn/seoul256.vim'
+  Plug 'ayu-theme/ayu-vim'
 
   " Syntax
   let g:polyglot_disabled = ['v'] | Plug 'sheerun/vim-polyglot'
@@ -319,79 +319,50 @@ endtry
 "
 " My vim theme
 "
-let g:seoul256_background = 233
+let ayucolor = 'dark'
 try
-  colorscheme seoul256
+  colorscheme ayu
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme elflord
 endtry
 
-" Reference: https://github.com/junegunn/seoul256.vim/blob/master/colors/seoul256.vim
-if !exists('s:rgb_map')
-  let s:rgb_map = {
-  \ 'NONE': 'NONE', 'white': '#FFFFFF', 'darkblue': '#0000BF',
-  \ 'darkgray': '#6C6C6C', 16: '#000000', 22: '#006F00', 160: '#D70000',
-  \ 226: '#FFFF00', 234: '#252525', 235: '#333233', 237: '#3A3A3A' }
-endif
-let s:back_color = 234
+let s:tab_color = '#1c2328'
+let s:indent_color = '#1c2328' " TODO
+let s:match_color = '#232b32' " TODO
 
-function! s:rs(item)
-  execute printf('highlight %s cterm=NONE gui=NONE', a:item)
-endfunction
 function! s:fg(item, color)
-  execute printf('highlight %s ctermfg=%s guifg=%s', a:item, a:color, get(s:rgb_map, a:color))
+  execute printf('highlight %s guifg=%s', a:item, a:color)
 endfunction
 function! s:bg(item, color)
-  execute printf('highlight %s ctermbg=%s guibg=%s', a:item, a:color, get(s:rgb_map, a:color))
+  execute printf('highlight %s guibg=%s', a:item, a:color)
 endfunction
 
-call s:rs('CursorLine')
-call s:bg('CursorLine',   'NONE')
-call s:bg('CursorLineNr', s:back_color)
-call s:bg('LineNr',       s:back_color)
-call s:bg('ColorColumn',  s:back_color)
-call s:fg('VertSplit',    s:back_color)
-call s:bg('VertSplit',    s:back_color)
-
-" Status line, Tab line
-call s:fg('StatusLine',   s:back_color)
-call s:bg('StatusLine',   'darkgray')
-call s:fg('WildMenu',     'white')
-call s:bg('WildMenu',     s:back_color)
-call s:rs('TabLine')
-call s:fg('TabLine',      'darkgray')
-call s:bg('TabLine',      s:back_color)
-call s:rs('TabLineSel')
-call s:fg('TabLineSel',   'white')
-call s:bg('TabLineSel',   s:back_color)
-call s:fg('TabLineFill',  s:back_color)
-call s:bg('TabLineFill',  s:back_color)
+" TabLine
+highlight TabLine cterm=NONE gui=NONE
+call s:fg('TabLine', '#62788c')
+call s:bg('TabLine', s:tab_color)
+call s:fg('TabLineSel', '#FFFFFF')
+call s:bg('TabLineSel', s:tab_color)
+call s:fg('TabLineFill', s:tab_color)
 
 " Pretty vimdiff colorscheme
-call s:bg('DiffChange',   'NONE')
-call s:bg('DiffText',     22)
-call s:bg('DiffAdd',      22)
-call s:fg('DiffDelete',   235)
-call s:bg('DiffDelete',   'NONE')
+call s:fg('DiffDelete', '#232b32')
+call s:bg('DiffDelete', 'NONE')
 
-" Listchars for whitespaces
-call s:fg('NonText',      'darkblue')
-call s:fg('SpecialKey',   'darkblue')
-
-" Matching
-call s:bg('CocHighlightText', 237)
-
-" Indentation
+" IndentGuides
+call s:bg('IndentGuidesEven', s:indent_color)
 if &tabstop < 4
   call s:bg('IndentGuidesOdd', 'NONE')
 else
   let g:indent_guides_guide_size = 1
-  call s:bg('IndentGuidesOdd', s:back_color)
+  call s:bg('IndentGuidesOdd', s:indent_color)
 endif
-call s:bg('IndentGuidesEven', s:back_color)
 
-" Extra whitespaces
-call s:bg('ExtraWhitespace', 160)
+" Matching
+highlight MatchParen cterm=NONE gui=NONE
+call s:bg('MatchParen', s:match_color)
+call s:bg('CocHighlightText', s:match_color)
+
 
 
 "
