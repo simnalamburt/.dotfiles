@@ -1,4 +1,4 @@
-" Require Vim ≥8.0
+" Require Vim ≥8.0 or Neovim
 " See https://github.com/simnalamburt/.dotfiles/blob/master/.vimrc
 
 "
@@ -70,10 +70,9 @@ set wildmode=longest,full
 set hidden
 set completeopt=preview,menuone,noinsert,noselect
 set shortmess+=c
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
+if has('patch-8.1.1564')
   set signcolumn=number
-else
+elseif has('nvim') ? has('nvim-0.2') : 1
   set signcolumn=yes
 endif
 
@@ -100,6 +99,8 @@ vnoremap <C-e> $
 " Easy horizontal scrolling
 noremap <esc>l 3zl
 noremap <esc>h 3zh
+noremap <a-l> 3zl
+noremap <a-h> 3zh
 " Easy delete key
 vnoremap <backspace> "_d
 " Easy file save
@@ -116,6 +117,12 @@ nnoremap <silent> <esc>h :vertical resize -5<CR>
 nnoremap <silent> <esc>j :resize -3<CR>
 nnoremap <silent> <esc>k :resize +3<CR>
 nnoremap <silent> <esc>l :vertical resize +5<CR>
+nnoremap <silent> <a--> :split<CR>
+nnoremap <silent> <a-\> :vertical split<CR>
+nnoremap <silent> <a-h> :vertical resize -5<CR>
+nnoremap <silent> <a-j> :resize -3<CR>
+nnoremap <silent> <a-k> :resize +3<CR>
+nnoremap <silent> <a-l> :vertical resize +5<CR>
 " Tab navigations
 nnoremap <esc>t :tabnew<CR>
 nnoremap <esc>T :-tabnew<CR>
@@ -128,6 +135,17 @@ nnoremap <esc>6 6gt
 nnoremap <esc>7 7gt
 nnoremap <esc>8 8gt
 nnoremap <esc>9 9gt
+nnoremap <a-t> :tabnew<CR>
+nnoremap <a-T> :-tabnew<CR>
+nnoremap <a-1> 1gt
+nnoremap <a-2> 2gt
+nnoremap <a-3> 3gt
+nnoremap <a-4> 4gt
+nnoremap <a-5> 5gt
+nnoremap <a-6> 6gt
+nnoremap <a-7> 7gt
+nnoremap <a-8> 8gt
+nnoremap <a-9> 9gt
 
 " Easy newline insert
 function! s:CustomEnter()
@@ -145,15 +163,16 @@ nnoremap <CR> :call <SID>CustomEnter()<CR>
 "
 " List of plugins
 "
+let s:use_coc = (has('nvim') ? has('nvim-0.3.2') : has('patch-8.0.1453')) && executable('yarn')
 try
-  call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
+  call plug#begin('~/.vim/plugged')
 
   " Configs
   Plug 'tpope/vim-sensible'
   Plug 'vim-utils/vim-interruptless'
 
   " IDE
-  if has('patch-8.0.1453') && executable('yarn')
+  if s:use_coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
@@ -201,7 +220,7 @@ try
   "
   " Configs for plugins
   "
-  if has('patch-8.0.1453') && executable('yarn') && exists('*CocActionAsync')
+  if s:use_coc && exists('*CocActionAsync')
     " coc.nvim
     let g:coc_disable_startup_warning = 1
 
