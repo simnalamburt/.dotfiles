@@ -14,22 +14,24 @@ git clone https://github.com/simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 # zinit         https://github.com/zdharma/zinit
 # vim-plug      https://github.com/junegunn/vim-plug
 # tpm           https://github.com/tmux-plugins/tpm
-# kubectl-ctx   https://github.com/weibeld/kubectl-ctx
-# kubectl-ns    https://github.com/weibeld/kubectl-ns
 
 ln -sf ~/.dotfiles/.zshrc ~
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.tmux.conf ~
-ln -sf ~/.dotfiles/.gitconfig ~ && ln -sf ~/.dotfiles/.gitexclude ~ &&\
-  cp ~/.dotfiles/.gitconfig.local ~
 
-mkdir -p ~/.ssh && chmod 700 ~/.ssh &&\
-  ln -sf ~/.dotfiles/.ssh/config ~/.ssh &&\
-  cp ~/.dotfiles/.ssh/config.local ~/.ssh
+# git
+ln -sf ~/.dotfiles/.gitconfig ~
+ln -sf ~/.dotfiles/.gitexclude ~
+cp ~/.dotfiles/.gitconfig.local ~
+
+# ssh
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+ln -sf ~/.dotfiles/.ssh/config ~/.ssh
+cp ~/.dotfiles/.ssh/config.local ~/.ssh
 
 # Misc
 mkdir -p ~/.gnupg && cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
-mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
 ```
 
 #### Check out my vim/zsh/tmux plugins
