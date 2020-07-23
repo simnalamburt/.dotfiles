@@ -153,7 +153,7 @@ try
   Plug 'vim-utils/vim-interruptless'
 
   " IDE
-  if executable('yarn')
+  if has('patch-8.0.1453') && executable('yarn')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
@@ -201,7 +201,7 @@ try
   "
   " Configs for plugins
   "
-  if executable('yarn')
+  if has('patch-8.0.1453') && executable('yarn') && exists('*CocActionAsync')
     " coc.nvim
     let g:coc_disable_startup_warning = 1
 
