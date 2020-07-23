@@ -7,6 +7,7 @@ Hyper-V VM of PC, Debian Stretch
 - apt-transport-https lsb-release
 - make linux-headers-4.9.0-12-amd64
 - zsh vim tmux gcc
+- fuse
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
@@ -19,3 +20,6 @@ Hyper-V VM of PC, Debian Stretch
 ### `cargo install`
 - lsd bat
 - ripgrep fd-find
+
+### `/usr/local/bin`
+- nvim.appimage (v0.5.0)
