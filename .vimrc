@@ -201,55 +201,56 @@ try
   "
   " Configs for plugins
   "
+  if executable('yarn')
+    " coc.nvim
+    let g:coc_disable_startup_warning = 1
 
-  " coc.nvim
-  let g:coc_disable_startup_warning = 1
+    nnoremap <silent> K :call <SID>show_documentation()<CR>
+    function! s:show_documentation()
+      if (index(['vim','help'], &filetype) >= 0)
+        execute 'h '.expand('<cword>')
+      else
+        call CocActionAsync('doHover')
+      endif
+    endfunction
 
-  nnoremap <silent> K :call <SID>show_documentation()<CR>
-  function! s:show_documentation()
-    if (index(['vim','help'], &filetype) >= 0)
-      execute 'h '.expand('<cword>')
-    else
-      call CocActionAsync('doHover')
-    endif
-  endfunction
+    " coc-highlight
+    augroup vimrc_highlight
+      autocmd!
+      autocmd CursorHold * silent call CocActionAsync('highlight')
+    augroup END
 
-  " coc-highlight
-  augroup vimrc_highlight
-    autocmd!
-    autocmd CursorHold * silent call CocActionAsync('highlight')
-  augroup END
+    " coc-prettier
+    command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-  " coc-prettier
-  command! -nargs=0 Prettier :CocCommand prettier.formatFile
+    " supertab
+    let g:SuperTabDefaultCompletionType = "<c-n>"
 
-  " supertab
-  let g:SuperTabDefaultCompletionType = "<c-n>"
-
-  " fzf
-  nnoremap <F5> :call <SID>lsp_menu()<CR>
-  function! s:lsp_menu()
-    call fzf#run({
-    \ 'source': [
-    \   'rename',
-    \   'jumpDefinition',
-    \   'jumpDeclaration',
-    \   'jumpImplementation',
-    \   'jumpTypeDefinition',
-    \   'jumpReferences',
-    \   'diagnosticInfo',
-    \   'diagnosticNext',
-    \   'diagnosticPrevious',
-    \   'format',
-    \   'openLink',
-    \   'doQuickfix',
-    \   'doHover',
-    \   'refactor',
-    \ ],
-    \ 'sink': function('CocActionAsync'),
-    \ 'options': '+m',
-    \ 'down': 10 })
-  endfunction
+    " fzf
+    nnoremap <F5> :call <SID>lsp_menu()<CR>
+    function! s:lsp_menu()
+      call fzf#run({
+      \ 'source': [
+      \   'rename',
+      \   'jumpDefinition',
+      \   'jumpDeclaration',
+      \   'jumpImplementation',
+      \   'jumpTypeDefinition',
+      \   'jumpReferences',
+      \   'diagnosticInfo',
+      \   'diagnosticNext',
+      \   'diagnosticPrevious',
+      \   'format',
+      \   'openLink',
+      \   'doQuickfix',
+      \   'doHover',
+      \   'refactor',
+      \ ],
+      \ 'sink': function('CocActionAsync'),
+      \ 'options': '+m',
+      \ 'down': 10 })
+    endfunction
+  endif
 
   " nerdtree
   noremap <silent> <C-n> :NERDTreeToggle<CR>
