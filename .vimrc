@@ -223,7 +223,7 @@ try
   "
   " Configs for plugins
   "
-  if s:use_coc && exists('*CocActionAsync')
+  if s:use_coc
     " coc.nvim
     let g:coc_disable_startup_warning = 1
 
@@ -239,8 +239,13 @@ try
     " coc-highlight
     augroup vimrc_highlight
       autocmd!
-      autocmd CursorHold * silent call CocActionAsync('highlight')
+      autocmd CursorHold * silent call <SID>highlight()
     augroup END
+    function! s:highlight()
+      if exists('*CocActionAsync')
+        call CocActionAsync('highlight')
+      endif
+    endfunction
 
     " coc-prettier
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
