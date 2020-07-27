@@ -181,6 +181,9 @@ try
     Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile', 'rtp': 'packages/emoji'}
+    if executable('clangd')
+      Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
+    endif
     Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
