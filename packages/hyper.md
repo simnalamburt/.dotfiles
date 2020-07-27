@@ -7,7 +7,7 @@ Hyper-V VM of PC, Debian Stretch
 - apt-transport-https lsb-release
 - make linux-headers-4.9.0-12-amd64
 - zsh vim tmux gcc
-- fuse
+- fuse clang-tools-7
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
