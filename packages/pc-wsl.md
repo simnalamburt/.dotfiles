@@ -16,4 +16,4 @@ Debian Buster
 - stable: rust-analysis rust-src rls clippy
 
 ### `cargo install`
-- lsd bat git-delta
+- lsd bat
