@@ -13,7 +13,7 @@ Debian Buster
 - yarn (v1.x)
 
 ### `rustup`
-- stable: rust-analysis rust-src rls clippy
+- stable: rust-src clippy
 
 ### `cargo install`
 - lsd bat git-delta
