@@ -7,8 +7,6 @@ Debian Buster
 - htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux fd-find ripgrep fzf
 - python3-venv
-- gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
-- openjdk-11-jdk
 - clangd-8
 
 ### `apt` PPA
@@ -16,7 +14,7 @@ Debian Buster
 - yarn (v1.x)
 
 ### `rustup`
-- stable: rust-analysis rust-src rls
+- stable: rust-src
 
 ### `cargo install`
 - lsd bat git-delta
