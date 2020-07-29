@@ -18,28 +18,28 @@
 	ui = auto
 [diff]
 	renames = copies
-	tool = vimdiff
-[difftool]
-	prompt = no
 [fetch]
 	prune = yes
-[branch]
-	autosetuprebase = always
 [push]
 	default = simple
+[pull]
+	rebase = true
 [merge]
-	tool = vimdiff
 	conflictstyle = diff3
+[commit]
+	gpgsign = yes
+[rerere]
+	enabled = yes
+[stash]
+	showPatch = true
+[status]
+	showStash = true
+[submodule]
+	fetchJobs = 0
 [credential "https://github.com"]
-	username = simnalamburt
-[credential "https://git.hyeon.me"]
 	username = simnalamburt
 [credential "https://git.upnl.org"]
 	username = simnalamburt
-[filter "lfs"]
-	required = yes
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
 [alias]
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
@@ -82,17 +82,6 @@
 	# Usage:
 	#   git sed 's/yolo/swag/g'
 	sed = "!_() { git ls-files -z | xargs -0 perl -i -pe ${1}; }; _"
-
-[commit]
-	gpgsign = yes
-[rerere]
-	enabled = yes
-[stash]
-	showPatch = true
-[status]
-	showStash = true
-[submodule]
-	fetchJobs = 0
 
 [include]
 	path = ~/.gitconfig.local
