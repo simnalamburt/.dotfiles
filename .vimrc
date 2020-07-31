@@ -302,10 +302,10 @@ try
 
   " vim-indent-guides
   nmap <leader>i <Plug>IndentGuidesToggle
-  let g:indent_guides_auto_colors = 0
-  let g:indent_guides_start_level = 2
   let g:indent_guides_enable_on_vim_startup = 1
-  let g:indent_guides_exclude_filetypes = ['help']
+  let g:indent_guides_auto_colors = 0
+  let g:indent_guides_guide_size = 1
+  let g:indent_guides_start_level = 2
   let g:indent_guides_default_mapping = 0
 
   " vim-terraform
@@ -355,10 +355,6 @@ catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme elflord
 endtry
 
-let s:tab_color = '#1c2328'
-let s:indent_color = '#1c2328' " TODO
-let s:match_color = '#232b32' " TODO
-
 function! s:fg(item, color)
   execute printf('highlight %s guifg=%s', a:item, a:color)
 endfunction
@@ -367,6 +363,7 @@ function! s:bg(item, color)
 endfunction
 
 " TabLine
+let s:tab_color = '#1c2328'
 highlight TabLine cterm=NONE gui=NONE
 call s:fg('TabLine', '#62788c')
 call s:bg('TabLine', s:tab_color)
@@ -379,15 +376,12 @@ call s:fg('DiffDelete', '#232b32')
 call s:bg('DiffDelete', 'NONE')
 
 " IndentGuides
+let s:indent_color = '#151a1e'
 call s:bg('IndentGuidesEven', s:indent_color)
-if &tabstop < 4
-  call s:bg('IndentGuidesOdd', 'NONE')
-else
-  let g:indent_guides_guide_size = 1
-  call s:bg('IndentGuidesOdd', s:indent_color)
-endif
+call s:bg('IndentGuidesOdd', s:indent_color)
 
 " Matching
+let s:match_color = '#232b32'
 highlight MatchParen cterm=NONE gui=NONE
 call s:bg('MatchParen', s:match_color)
 call s:bg('CocHighlightText', s:match_color)
@@ -399,12 +393,6 @@ call s:bg('CocHighlightText', s:match_color)
 "
 augroup vimrc
   autocmd!
-
-  " Indentation setting for Golang
-  autocmd BufNewFile,BufRead *.go setlocal noet ts=8 sw=8 sts=8
-
-  " Treat .eslintrc .babelrc as json
-  autocmd BufRead,BufNewFile .{eslintrc,babelrc,swcrc} setf json
 
   " Vim automatic reload
   autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
