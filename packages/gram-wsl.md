@@ -7,11 +7,11 @@ Debian Buster
 - htop man curl bash-completion zip unzip
 - vim-nox git zsh tmux fd-find ripgrep fzf
 - python3-venv
-- clangd-8
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
 - yarn (v1.x)
+- clangd-12 (https://apt.llvm.org/)
 
 ### `rustup`
 - stable: rust-src
