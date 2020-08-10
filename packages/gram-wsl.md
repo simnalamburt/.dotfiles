@@ -11,7 +11,7 @@ Debian Buster
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
 - yarn (v1.x)
-- clangd-12 (https://apt.llvm.org/)
+- clangd-12 libclang-12-dev (https://apt.llvm.org/)
 
 ### `rustup`
 - stable: rust-src
