@@ -190,7 +190,6 @@ try
   endif
   Plug 'ryanoasis/vim-devicons'
   Plug 'preservim/nerdtree'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
 
   " Visual
   Plug 'vim-airline/vim-airline'
