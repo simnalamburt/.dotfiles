@@ -9,7 +9,6 @@ Default and `extra` bucket:
 - firefox chromium
 - vscode
 - discord
-- xournalpp
 
 `nerd-fonts` bucket:
 
