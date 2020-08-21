@@ -29,3 +29,4 @@ Default and `extra` bucket:
 - Zoom Client for Meetings
 - ParsecGaming
 - Video DownloadHelper Companion App 1.5.0
+- Adobe Acrobat DC
