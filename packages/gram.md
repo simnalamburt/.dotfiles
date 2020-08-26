@@ -17,7 +17,7 @@ Default and `extra` bucket:
 ### Microsoft Store
 - Debian
 - Windows Terminal
-- Line, KakaoTalk
+- Line
 - Microsoft To Do
 - Netflix
 - Word 2016, Excel 2016, PowerPoint 2016
@@ -30,3 +30,4 @@ Default and `extra` bucket:
 - Zoom Client for Meetings
 - ParsecGaming
 - Video DownloadHelper Companion App 1.5.0
+- KakaoTalk
