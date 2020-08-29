@@ -32,7 +32,7 @@ server는 [Cloudflare]를 쓰고있다.
 1.  웹서버를 돌린다면 HTTP/2, TLS 1.3, HSTS, brotli 지원을 신경써주자.
     https://www.ssllabs.com/ssltest/ 참고
 
-### 구독중인 메일링리스트
+### 서버 운영할 때 구독하면 좋은 메일링리스트
 - [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
 - [arch-security](https://lists.archlinux.org/listinfo/arch-security)
 - [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
