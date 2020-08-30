@@ -17,7 +17,7 @@ Default and `extra` bucket:
 ### Microsoft Store
 - Debian
 - Windows Terminal
-- Line, KakaoTalk
+- Line
 - Microsoft To Do
 - Netflix
 
@@ -28,9 +28,6 @@ Default and `extra` bucket:
 - ParsecGaming
 - Windows Sandbox
 - 한컴오피스 2018
-- Edge Chromium
 - Radeon Adrenalin 2020
 - Zoom Client for Meetings
-- VideoDownloadHelper CoApp
-- Xilinx Vivado HLx Editions 2018.3
-- Xilinx (D:\ 에 설치함), WinPcap 4.1.1, Jungo, Xilingx Programming cables
+- KakaoTalk
