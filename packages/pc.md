@@ -31,4 +31,3 @@ Default and `extra` bucket:
 - Radeon Adrenalin 2020
 - Zoom Client for Meetings
 - KakaoTalk
-- Samsung Data Migration Software
