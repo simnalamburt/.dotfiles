@@ -36,3 +36,4 @@ server는 [Cloudflare]를 쓰고있다.
 - [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
 - [arch-security](https://lists.archlinux.org/listinfo/arch-security)
 - [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
+- [debian-security-announce](https://lists.debian.org/debian-security-announce/)
