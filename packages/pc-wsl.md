@@ -11,6 +11,7 @@ Debian Buster
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
 - yarn (v1.x)
+- terraform nomad consul (apt.releases.hashicorp.com)
 
 ### `rustup`
 - stable: rust-src clippy
