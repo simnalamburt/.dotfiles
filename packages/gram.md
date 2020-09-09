@@ -5,7 +5,7 @@ Windows 10, version 2004
 ### [`scoop`](https://scoop.sh)
 Default and `extra` bucket:
 
-- 7zip git sudo
+- 7zip git sudo gcc
 - firefox chromium
 - vscode
 - discord
@@ -32,3 +32,4 @@ Default and `extra` bucket:
 - Video DownloadHelper Companion App 1.5.0
 - KakaoTalk
 - .NET 3.5 SP1 runtiem, Hancom Office 2020 viewer
+- rustup: stable-gnu
