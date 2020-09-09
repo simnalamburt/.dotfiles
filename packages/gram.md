@@ -31,3 +31,4 @@ Default and `extra` bucket:
 - ParsecGaming
 - Video DownloadHelper Companion App 1.5.0
 - KakaoTalk
+- .NET 3.5 SP1 runtiem, Hancom Office 2020 viewer
