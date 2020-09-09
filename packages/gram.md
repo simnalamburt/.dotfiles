@@ -3,16 +3,12 @@ LG Gram 2-in-1
 Windows 10, version 2004
 
 ### [`scoop`](https://scoop.sh)
-Default and `extra` bucket:
-
 - 7zip git sudo gcc
-- firefox chromium
-- vscode
-- discord
-
-`nerd-fonts` bucket:
-
-- CascadiaCode-NF<sup>sudo</sup>
+- extras/firefox extras/chromium
+- extras/vscode
+- extras/discord
+- extras/vcredist2019
+- nerd-fonts/CascadiaCode-NF
 
 ### Microsoft Store
 - Debian
@@ -31,5 +27,5 @@ Default and `extra` bucket:
 - ParsecGaming
 - Video DownloadHelper Companion App 1.5.0
 - KakaoTalk
-- .NET 3.5 SP1 runtiem, Hancom Office 2020 viewer
+- .NET 3.5 SP1 runtime, Hancom Office 2020 viewer
 - rustup: stable-gnu

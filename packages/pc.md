@@ -3,16 +3,11 @@ PC
 Windows 10 Pro, version 2004
 
 ### [`scoop`](https://scoop.sh)
-Default and `extra` bucket:
-
 - 7zip git sudo
-- firefox chromium
-- vscode
-- discord
-
-`nerd-fonts` bucket:
-
-- CascadiaCode-NF<sup>sudo</sup>
+- extras/firefox extras/chromium
+- extras/vscode
+- extras/discord
+- nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 
 ### Microsoft Store
 - Debian
