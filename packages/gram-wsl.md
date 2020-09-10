@@ -4,7 +4,7 @@ Debian Buster
 
 ### `apt`
 - apt-transport-https build-essential lsb-release
-- htop man curl bash-completion zip unzip
+- htop man curl bash-completion zip unzip watch wget
 - vim-nox git zsh tmux fd-find ripgrep fzf
 - python3-venv
 
