@@ -28,4 +28,3 @@ Windows 10 Pro, version 2004
 - KakaoTalk
 - Windows Package Manager v0.1.42241 Preview
 - Docker Desktop
-- KoPubWorld서체 TTF
