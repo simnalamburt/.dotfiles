@@ -26,3 +26,6 @@ Windows 10 Pro, version 2004
 - Radeon Adrenalin 2020
 - Zoom Client for Meetings
 - KakaoTalk
+- Windows Package Manager v0.1.42241 Preview
+- Docker Desktop
+- KoPubWorld서체 TTF
