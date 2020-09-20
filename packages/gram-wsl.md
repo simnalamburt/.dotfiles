@@ -5,7 +5,7 @@ Debian Buster
 ### `apt`
 - apt-transport-https build-essential lsb-release
 - htop man curl wget zip unzip watch
-- vim git zsh tmux fd-find ripgrep fzf
+- vim git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv
 
 ### `apt` PPA
