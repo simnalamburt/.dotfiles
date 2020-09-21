@@ -121,6 +121,9 @@
 #alias pbpaste='powershell.exe Get-Clipboard'
 #alias code=/mnt/c/Users/simna/scoop/apps/vscode/current/bin/code
 
+## WSL2 + X11
+#export DISPLAY=$(ip route | awk '/default via / {print $3}'):0
+
 ## Clear screen
 #clear_screen() { tput clear }
 #zle -N clear_screen
