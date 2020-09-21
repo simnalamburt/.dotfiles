@@ -9,6 +9,7 @@ Windows 10, version 2004
 - extras/discord
 - extras/vcredist2019
 - nerd-fonts/CascadiaCode-NF
+- extras/vcxsrv
 
 ### Microsoft Store
 - Debian
