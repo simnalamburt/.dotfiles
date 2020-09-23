@@ -347,3 +347,14 @@ lsof | awk '{ print $2 " " $1; }' | sort -rn | uniq -c | sort -rn | head -20
       host-uuid=68895eb0-033a-45f6-bc85-a4d55d09828d \
       name-label="Secondary storage on localhost"
     ```
+
+### 공인인증서 변환
+개인키를 암호화하는데에 [sha1-with-rsa-signature](https://oidref.com/1.2.840.113549.1.1.5)를 사용하는 증권전산 공인인증센터의 공인인증서와는 다르게, 금융결제원 전자인증센터의 공인인증서는 [seedCBCWithSHA1](https://oidref.com/1.2.410.200004.1.15) 알고리즘을 써서, OpenSSL이 이해하지 못한다.
+
+증권전산 공인인증센터의 공인인증서를 쓰거나, `enable-seed` 옵션을 사용해 OpenSSL을 새로 빌드해야한다.
+
+```bash
+openssl x509 -inform der -in signCert.der -out cert.pem
+openssl pkcs8 -inform der -in signPri.key -out privatekey.pem
+openssl pkcs12 -export -in cert.pem -inkey privatekey.pem -out privatekey.pfx
+```
