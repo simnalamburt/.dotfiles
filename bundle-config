@@ -1,3 +1,4 @@
+# mkdir -p ~/.bundle && ln -sf ~/.dotfiles/bundle-config ~/.bundle/config
 ---
 BUNDLE_PATH: ".bundle/lib"
 BUNDLE_DISABLE_SHARED_GEMS: "true"
