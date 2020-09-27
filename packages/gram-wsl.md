@@ -8,6 +8,7 @@ Debian Buster
 - git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv
 - ruby-dev
+- libsndfile1
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
