@@ -7,6 +7,7 @@ Debian Buster
 - htop man curl wget zip unzip watch
 - git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv
+- ruby-dev
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
@@ -17,6 +18,9 @@ Debian Buster
 
 ### `cargo install`
 - lsd bat git-delta
+
+### `gem`
+- bundler
 
 ### `/usr/local/bin`
 - nvim.appimage (v0.4.4)
