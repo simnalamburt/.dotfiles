@@ -3,8 +3,8 @@ LG Gram 2-in-1
 Windows 10, version 2004
 
 ### [`scoop`](https://scoop.sh)
-- 7zip git sudo gcc
-- extras/firefox extras/chromium
+- 7zip git sudo
+- extras/firefox
 - extras/vscode
 - extras/discord
 - extras/vcredist2019
@@ -26,5 +26,4 @@ Windows 10, version 2004
 - ParsecGaming
 - KakaoTalk
 - .NET 3.5 SP1 runtime, Hancom Office 2020 viewer
-- rustup: stable-gnu
 - Cloudflare WARP
