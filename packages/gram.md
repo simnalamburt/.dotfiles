@@ -27,3 +27,4 @@ Windows 10, version 2004
 - KakaoTalk
 - .NET 3.5 SP1 runtime, Hancom Office 2020 viewer
 - Cloudflare WARP
+- Video DownloadHelper Companion App 1.5.0
