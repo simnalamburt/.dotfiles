@@ -12,6 +12,15 @@
 	autocrlf = no
 	quotepath = no
 	precomposeunicode = yes
+[init]
+	# Run `git config --global init.defaultBranch main` to get this
+	#
+	# References:
+	#   https://sfconservancy.org/news/2020/jun/23/gitbranchname/
+	#   https://lore.kernel.org/git/pull.656.v4.git.1593009996.gitgitgadget@gmail.com/
+	#   https://github.com/github/renaming/
+	#   https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/
+	defaultBranch = main
 [log]
 	date = iso8601
 [color]
