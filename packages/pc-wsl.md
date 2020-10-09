@@ -8,11 +8,15 @@ Debian Buster
 - htop man curl wget zip unzip watch
 - git zsh tmux fd-find ripgrep fzf
 - python3-venv
+- openjdk-11-jdk
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
 - yarn (v1.x)
 - terraform nomad consul (apt.releases.hashicorp.com)
+
+### `apt` using `.deb`
+- scala (<https://www.scala-lang.org/download/>)
 
 ### `rustup`
 - stable: rust-src clippy
