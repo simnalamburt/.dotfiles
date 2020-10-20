@@ -7,8 +7,7 @@ Debian Buster
 - vim-nox bash-completion
 - htop man curl wget zip unzip watch entr
 - git zsh tmux fd-find ripgrep fzf
-- python3-venv
-- openjdk-11-jdk
+- python3-venv openjdk-11-jre-headless
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
