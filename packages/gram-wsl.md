@@ -7,6 +7,7 @@ Debian Buster
 - htop man curl wget zip unzip watch
 - git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv ruby-dev openjdk-11-jre-headless
+- openjdk-11-jdk-headless
 
 ### `apt` PPA
 - nodejs (nodesource.com, v14.x)
