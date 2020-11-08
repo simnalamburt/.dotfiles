@@ -4,9 +4,8 @@ Debian Buster
 
 ### `apt`
 - apt-transport-https build-essential lsb-release
-- vim-nox bash-completion
 - htop man curl wget zip unzip watch entr
-- git zsh tmux fd-find ripgrep fzf
+- git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv openjdk-11-jre-headless
 
 ### `apt` PPA
@@ -22,3 +21,11 @@ Debian Buster
 
 ### `cargo install`
 - lsd bat git-delta
+
+### `/usr/local/bin`
+- nvim.appimage (v0.4.4)
+
+  ```bash
+  sudo update-alternatives --install /usr/bin/vim vim /usr/local/bin/nvim.appimage 110
+  sudo update-alternatives --install /usr/bin/vi  vi  /usr/local/bin/nvim.appimage 110
+  ```
