@@ -9,7 +9,7 @@ Debian Buster
 - python3-venv openjdk-11-jre-headless
 
 ### `apt` PPA
-- nodejs (nodesource.com, v14.x)
+- nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
 
 ### `apt` using `.deb`
