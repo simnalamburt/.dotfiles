@@ -6,11 +6,11 @@ Hyper-V VM of PC, Debian Stretch
 - openssh-server htop git curl man
 - apt-transport-https lsb-release
 - make linux-headers-4.9.0-12-amd64
-- zsh vim tmux gcc
+- zsh tmux gcc
 - fuse clang-tools-7
 
 ### `apt` PPA
-- nodejs (nodesource.com, v14.x)
+- nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
 
 ### `rustup`
@@ -22,4 +22,4 @@ Hyper-V VM of PC, Debian Stretch
 - ripgrep fd-find
 
 ### `/usr/local/bin`
-- nvim.appimage (v0.5.0)
+- nvim.appimage (v0.4.4)
