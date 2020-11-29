@@ -8,7 +8,7 @@ Windows 10 Pro, version 2004
 - extras/vscode
 - extras/discord
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
-- java/adopt8-upstream extras/adb extras/android-sdk
+- java/openjdk extras/adb extras/android-sdk
 
 ### Microsoft Store
 - Debian
