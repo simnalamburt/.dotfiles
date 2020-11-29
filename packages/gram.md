@@ -4,11 +4,9 @@ Windows 10, version 2004
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git sudo
-- extras/firefox
-- extras/vscode
-- extras/discord
-- extras/vcredist2019
+- extras/firefox extras/vscode extras/discord
 - nerd-fonts/CascadiaCode-NF
+- extras/vcredist2019
 
 ### Microsoft Store
 - Debian

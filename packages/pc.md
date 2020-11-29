@@ -4,9 +4,7 @@ Windows 10 Pro, version 2004
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git sudo
-- extras/firefox
-- extras/vscode
-- extras/discord
+- extras/firefox extras/vscode extras/discord
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 
 ### Microsoft Store
