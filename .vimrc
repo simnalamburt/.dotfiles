@@ -174,12 +174,12 @@ try
   " IDE
   if s:use_coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'simnalamburt/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'simnalamburt/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'simnalamburt/coc-json', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'simnalamburt/coc-css', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'simnalamburt/coc-html', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile', 'rtp': 'packages/emoji'}
     if executable('clangd')
       Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
