@@ -358,3 +358,9 @@ openssl x509 -inform der -in signCert.der -out cert.pem
 openssl pkcs8 -inform der -in signPri.key -out privatekey.pem
 openssl pkcs12 -export -in cert.pem -inkey privatekey.pem -out privatekey.pfx
 ```
+
+### `update-alternatives` 사용해 `nvim.appimage`를 `vim`으로 alias 하는법
+```bash
+sudo update-alternatives --install /usr/bin/vim vim /usr/local/bin/nvim.appimage 110
+sudo update-alternatives --install /usr/bin/vi  vi  /usr/local/bin/nvim.appimage 110
+```

@@ -24,8 +24,3 @@ Debian Buster
 
 ### `/usr/local/bin`
 - nvim.appimage (v0.4.4)
-
-  ```bash
-  sudo update-alternatives --install /usr/bin/vim vim /usr/local/bin/nvim.appimage 110
-  sudo update-alternatives --install /usr/bin/vi  vi  /usr/local/bin/nvim.appimage 110
-  ```
