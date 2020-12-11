@@ -11,8 +11,8 @@ Debian Buster
 ### `apt` PPA
 - nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
-- terraform nomad consul (apt.releases.hashicorp.com)
 - sbt [(dl.bintray.com/sbt/debian)](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html#Ubuntu+and+other+Debian-based+distributions)
+- terraform nomad consul (apt.releases.hashicorp.com)
 
 ### `apt` using `.deb`
 - scala (<https://www.scala-lang.org/download/>)
