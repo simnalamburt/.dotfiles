@@ -12,7 +12,8 @@ Debian Buster
 - nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
 - terraform nomad consul (apt.releases.hashicorp.com)
-- adoptopenjdk-15-openj9 ([adoptopenjdk.jfrog.io](https://adoptopenjdk.net/installation.html#linux-pkg))
+- adoptopenjdk-15-hotspot ([adoptopenjdk.jfrog.io](https://adoptopenjdk.net/installation.html#linux-pkg))
+- gradle ([ppa:cwchien/gradle, focal](https://launchpad.net/~cwchien/+archive/ubuntu/gradle))
 
 ### `rustup`
 - stable: rust-src clippy
