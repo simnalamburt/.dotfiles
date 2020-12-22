@@ -6,16 +6,11 @@ Debian Buster
 - apt-transport-https build-essential lsb-release
 - htop man curl wget zip unzip watch entr
 - git zsh tmux fd-find ripgrep fzf fuse
-- python3-venv openjdk-11-jre-headless
+- python3-venv
 
 ### `apt` PPA
 - nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
-- sbt [(dl.bintray.com/sbt/debian)](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html#Ubuntu+and+other+Debian-based+distributions)
-
-
-### `apt` using `.deb`
-- scala (<https://www.scala-lang.org/download/>)
 
 ### `rustup`
 - stable: rust-src clippy
