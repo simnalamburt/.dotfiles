@@ -42,6 +42,7 @@
 ## Update PATH
 #export PATH="\
 #$HOME/.cargo/bin:\
+#$HOME/.awscliv2/binaries:\
 #$HOME/.local/bin:\
 #$HOME/.yarn/bin:\
 #/home/linuxbrew/.linuxbrew/bin:\
