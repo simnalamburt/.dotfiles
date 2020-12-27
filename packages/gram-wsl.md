@@ -11,6 +11,7 @@ Debian Buster
 ### `apt` PPA
 - nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
+- terraform ([apt.releases.hashicorp.com](https://www.terraform.io/docs/cli/install/apt.html))
 
 ### `rustup`
 - stable: rust-src clippy
