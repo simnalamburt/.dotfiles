@@ -135,6 +135,7 @@
 
 ## AWS
 #export AWS_DEFAULT_PROFILE=blabla
+#export AWS_DEFAULT_REGION=blabla
 
 ## Cloudflare
 #export CLOUDFLARE_EMAIL=simnalamburt@gmail.com
