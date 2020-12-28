@@ -133,9 +133,10 @@
 ## Mosh
 #compdef mosh=ssh
 
-## AWS
+## AWSCLIv2
 #export AWS_DEFAULT_PROFILE=blabla
 #export AWS_DEFAULT_REGION=blabla
+#complete -C aws_completer aws
 
 ## Cloudflare
 #export CLOUDFLARE_EMAIL=simnalamburt@gmail.com
