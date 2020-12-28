@@ -54,8 +54,9 @@ if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
   zinit light zsh-users/zsh-history-substring-search
   zinit light zsh-users/zsh-completions
 
-  autoload -Uz compinit
+  autoload -Uz compinit bashcompinit
   compinit
+  bashcompinit
   zinit cdreplay
 
   bindkey '^[[A' history-substring-search-up
@@ -69,8 +70,9 @@ else
       PS1='%n@%m:%~%(!.#.$) ';;
   esac
 
-  autoload -Uz compinit
+  autoload -Uz compinit bashcompinit
   compinit
+  bashcompinit
 fi
 
 
