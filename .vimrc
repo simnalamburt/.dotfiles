@@ -159,6 +159,19 @@ function! s:CustomEnter()
 endfunction
 nnoremap <CR> :call <SID>CustomEnter()<CR>
 
+" Easy drag select
+function! s:DragSelectMode()
+  if &signcolumn != 'no'
+    let s:previous_scl = &signcolumn
+    set signcolumn=no
+    set nonumber
+  else
+    let &signcolumn = s:previous_scl
+    set number
+  endif
+endfunction
+nnoremap <F9> :call <SID>DragSelectMode()<CR>
+
 
 "
 " List of plugins
