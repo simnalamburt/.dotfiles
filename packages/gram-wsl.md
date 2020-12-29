@@ -21,3 +21,4 @@ Debian Buster
 
 ### `/usr/local/bin`
 - nvim.appimage (v0.4.4)
+- aws ([appimage](https://github.com/simnalamburt/awscliv2.appimage/), v2.1.14) 
