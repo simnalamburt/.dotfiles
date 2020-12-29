@@ -2,4 +2,5 @@ iPhone
 ========
 
 ### `apk`
-- vim
+- shadow
+- vim curl git zsh sudo openssh-client
