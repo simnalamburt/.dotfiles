@@ -39,26 +39,21 @@
 #  esac
 #}
 
-## Update PATH
+## Update PATH (examples)
 #export PATH="\
-#$HOME/.cargo/bin:\
-#$HOME/.awscliv2/binaries:\
-#$HOME/.local/bin:\
-#$HOME/.yarn/bin:\
-#/home/linuxbrew/.linuxbrew/bin:\
-#/home/linuxbrew/.linuxbrew/sbin:\
-#/usr/local/sbin:\
-#/usr/local/opt/ruby/bin:\
-#/usr/local/lib/ruby/gems/2.6.0/bin\
+#$HOME/.cargo/bin\
+#:$HOME/.awscliv2/binaries\
+#:$HOME/.local/bin\
+#:$HOME/.yarn/bin\
+#:/home/linuxbrew/.linuxbrew/bin\
+#:/home/linuxbrew/.linuxbrew/sbin\
+#:/usr/local/sbin\
+#:/usr/local/opt/ruby/bin\
+#:/usr/local/lib/ruby/gems/2.6.0/bin\
 #${PATH+:$PATH}"
 
 ## Homebrew for Linux
 #eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
-## rust
-#if (( $+commands[cargo] )); then
-#  export PATH="$HOME/.cargo/bin:$PATH"
-#fi
 
 ## kubectl
 #if (( $+commands[kubectl] )); then
