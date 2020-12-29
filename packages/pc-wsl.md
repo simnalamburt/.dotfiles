@@ -7,7 +7,6 @@ Debian Buster
 - htop man curl wget zip unzip watch entr
 - git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv
-- weechat
 
 ### `apt` PPA
 - nodejs (nodesource.com, v15.x)

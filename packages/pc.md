@@ -15,18 +15,21 @@ Windows 10 Pro, version 2004
 - Netflix
 
 ### Manually Installed
+- Zoom Client for Meetings
+- ParsecGaming
+- KakaoTalk
+- Cloudflare WARP
+- Docker Desktop
+
+&nbsp;
+
 - Chrome Remote Desktop Host
 - MS Office
 - Uplay, Steam, 오리진
-- ParsecGaming
 - Windows Sandbox
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
-- Zoom Client for Meetings
-- KakaoTalk
 - Windows Package Manager v0.1.42241 Preview
-- Docker Desktop
-- Cloudflare WARP
 
 <!-- Removed apps
 
