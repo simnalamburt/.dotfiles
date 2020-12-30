@@ -134,3 +134,6 @@
 ## Cloudflare
 #export CLOUDFLARE_EMAIL=simnalamburt@gmail.com
 #export CLOUDFLARE_API_KEY=xxxxxxxx
+
+## bat
+#export BAT_PAGER='less -+XF -RSQc'
