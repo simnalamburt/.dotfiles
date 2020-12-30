@@ -52,7 +52,7 @@ if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
   zinit light simnalamburt/ctrlf
   zinit light zdharma/fast-syntax-highlighting
   zinit light zsh-users/zsh-history-substring-search
-  zinit light zsh-users/zsh-completions
+  zinit light simnalamburt/zsh-completions
 
   autoload -Uz compinit bashcompinit
   compinit
