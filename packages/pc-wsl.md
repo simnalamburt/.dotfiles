@@ -18,6 +18,7 @@ Debian Buster
 
 ### `cargo install`
 - lsd bat git-delta
+- drill
 
 ### `/usr/local/bin`
 - nvim.appimage (v0.4.4)
