@@ -82,11 +82,16 @@
 
 ## fzf
 #if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
+
 ## fzf (debian)
-#source /usr/share/doc/fzf/examples/key-bindings.zsh
+#if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
+#  source /usr/share/doc/fzf/examples/key-bindings.zsh
+#fi
 
 ## fd (debian)
-#alias fd=fdfind
+#if (( $+commands[fdfind] )); then
+#  alias fd=fdfind
+#fi
 
 ## lsd
 #if (( $+commands[lsd] )); then
@@ -109,13 +114,6 @@
 #    command tag "$@"; source "${TAG_ALIAS_FILE:-/tmp/tag_aliases}" 2>/dev/null
 #  }
 #fi
-
-## WSL
-#umask 022
-#alias open=explorer.exe
-#alias pbcopy=clip.exe
-#alias pbpaste='powershell.exe Get-Clipboard'
-#alias code=/mnt/c/Users/simna/scoop/apps/vscode/current/bin/code
 
 ## WSL2 + X11
 #export DISPLAY=$(ip route | awk '/default via / {print $3}'):0
