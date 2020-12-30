@@ -95,22 +95,26 @@ alias l='ls -lah'
 alias mv='mv -i'
 alias cp='cp -i'
 
-setopt auto_cd histignorealldups sharehistory
-zstyle ':completion:*' menu select
-
 HISTSIZE=90000
 SAVEHIST=90000
 HISTFILE=~/.zsh_history
+
+setopt auto_cd histignorealldups sharehistory
+zstyle ':completion:*' menu select
+zstyle ':completion:*' use-cache on
+# Substring completion
+zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 
 #
 # lscolors
 #
-autoload -U colors && colors
-export LSCOLORS="Gxfxcxdxbxegedxbagxcad"
 export LS_COLORS="di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=0;41:sg=30;46:tw=0;42:ow=30;43"
-export TIME_STYLE='long-iso'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+export LSCOLORS="Gxfxcxdxbxegedxbagxcad"
+export TIME_STYLE='long-iso'
+autoload -U colors && colors
 
 
 #
@@ -120,9 +124,6 @@ setopt complete_in_word
 setopt always_to_end
 WORDCHARS=''
 zmodload -i zsh/complist
-
-# Substring completion
-zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 
 #
