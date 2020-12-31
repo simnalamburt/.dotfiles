@@ -23,3 +23,4 @@ Debian Buster
 ### `/usr/local/bin`
 - nvim.appimage (v0.4.4)
 - aws ([appimage](https://github.com/simnalamburt/awscliv2.appimage/), v2.1.14) 
+- [aws-mfa](https://github.com/simnalamburt/snippets/blob/fa7c39e01c00e7394edf22f4e9a24fe171969b9b/sh/aws-mfa)
