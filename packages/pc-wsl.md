@@ -7,6 +7,8 @@ Debian Buster
 - htop man curl wget zip unzip watch entr
 - git zsh tmux fd-find ripgrep fzf fuse
 - python3-venv
+- default-mysql-client
+- php-fpm php-curl php-xml php-json php-mbstring php-mysql php-imagick php-zip php-gd
 
 ### `apt` PPA
 - nodejs (nodesource.com, v15.x)
