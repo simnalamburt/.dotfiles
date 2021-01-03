@@ -12,6 +12,7 @@ Debian Buster
 - nodejs (nodesource.com, v15.x)
 - yarn (v1.x)
 - terraform nomad consul ([apt.releases.hashicorp.com](https://www.terraform.io/docs/cli/install/apt.html))
+- golang ([ppa:longsleep/golang-backports, focal](https://launchpad.net/~longsleep/+archive/ubuntu/golang-backports))
 
 ### `rustup`
 - stable: rust-src clippy
