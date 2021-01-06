@@ -88,6 +88,11 @@
 #  source /usr/share/doc/fzf/examples/key-bindings.zsh
 #fi
 
+## fzf (arch)
+#if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
+#  source /usr/share/fzf/key-bindings.zsh
+#fi
+
 ## fd (debian)
 #if (( $+commands[fdfind] )); then
 #  alias fd=fdfind
