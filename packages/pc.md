@@ -10,6 +10,7 @@ Windows 10 Pro, version 2004
 
 ### Microsoft Store
 - Debian
+- Ubuntu 20.04
 - Windows Terminal
 - Line
 - Microsoft To Do
