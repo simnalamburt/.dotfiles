@@ -7,7 +7,7 @@
 //     cp /mnt/c/Users/simna/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json ~/.dotfiles/settings.json
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "defaultProfile": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
 
     "profiles": {
         "defaults": {
@@ -16,6 +16,15 @@
         },
         "list": [
             {
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "hidden": false,
+                "name": "Arch",
+                "icon": "ms-appdata:///roaming/arch.png",
+                "source": "Windows.Terminal.Wsl",
+                "cursorShape": "filledBox",
+                "startingDirectory": "//wsl$/Arch/home/simnalamburt"
+            },
+            {
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu-20.04",
@@ -23,15 +32,6 @@
                 "source": "Windows.Terminal.Wsl",
                 "cursorShape": "filledBox",
                 "startingDirectory": "//wsl$/Ubuntu-20.04/home/simnalamburt"
-            },
-            {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "hidden": false,
-                "name": "Arch",
-                "icon": "ms-appdata:///roaming/arch.png",
-                "source": "Windows.Terminal.Wsl",
-                "cursorShape": "filledBox",
-                "startingDirectory": "//wsl$/Arch/"
             },
             {
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
