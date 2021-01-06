@@ -7,7 +7,7 @@
 //     cp /mnt/c/Users/simna/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json ~/.dotfiles/settings.json
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
 
     "profiles": {
         "defaults": {
@@ -15,6 +15,24 @@
             "fontSize": 14
         },
         "list": [
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "icon": "ms-appdata:///roaming/ubuntu.png",
+                "source": "Windows.Terminal.Wsl",
+                "cursorShape": "filledBox",
+                "startingDirectory": "//wsl$/Ubuntu-20.04/home/simnalamburt"
+            },
+            {
+                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "hidden": false,
+                "name": "Arch",
+                "icon": "ms-appdata:///roaming/arch.png",
+                "source": "Windows.Terminal.Wsl",
+                "cursorShape": "filledBox",
+                "startingDirectory": "//wsl$/Arch/"
+            },
             {
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
@@ -28,12 +46,14 @@
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
                 "colorScheme": "Campbell Powershell",
+                "cursorShape": "filledBox",
                 "hidden": false
             },
             {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
                 "commandline": "cmd.exe",
+                "cursorShape": "filledBox",
                 "hidden": false
             },
             {
@@ -63,9 +83,9 @@
         { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "ctrl+-" },
         { "command": { "action": "splitPane", "split": "vertical" }, "keys": "ctrl+\\" },
         { "command": { "action": "adjustFontSize", "delta": -1 }, "keys": "ctrl+shift+-" },
-        { "command": { "action": "resizePane", "direction": "down" }, "keys": "ctrl+down" },
-        { "command": { "action": "resizePane", "direction": "left" }, "keys": "ctrl+left" },
-        { "command": { "action": "resizePane", "direction": "right" }, "keys": "ctrl+right" },
-        { "command": { "action": "resizePane", "direction": "up" }, "keys": "ctrl+up" }
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+[" },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+]" },
+        { "command": "unbound", "keys": "alt+left" },
+        { "command": "unbound", "keys": "alt+right" }
     ]
 }
