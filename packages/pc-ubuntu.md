@@ -12,7 +12,7 @@ Ubuntu 20.04
 
 PPA:
 
-- python3.10-dev python3.10-venv
+- python3.9-dev python3.9-venv
   ([ppa:deadsnakes/ppa](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa))
 - nodejs
   (v15.x, [deb.nodesource.com](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions))
