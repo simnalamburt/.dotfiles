@@ -13,6 +13,10 @@ AUR:
 - paru
 - git-delta-bin
 
+Manual:
+
+- [subsystemctl](https://github.com/sorah/subsystemctl)
+
 ### `rustup` & `cargo install`
 - stable: rust-src
 
