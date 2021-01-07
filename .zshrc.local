@@ -61,23 +61,11 @@
 #  alias k=kubectl
 #fi
 
-## Terraform
-#if (( $+commands[terraform] )); then
-#  alias tf='terraform'
-#  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
-#fi
-
 ## Vault autocompletion
 #if (( $+commands[vault] )); then
 #  autoload -U +X bashcompinit && bashcompinit
 #  autoload -Uz compinit && compinit
 #  complete -o nospace -C /usr/local/bin/vault vault
-#fi
-
-## Golang
-#if (( $+commands[go] )) && [[ -d ~/.go ]]; then
-#  export GOPATH="$HOME/.go"
-#  export PATH="$PATH:$GOPATH/bin"
 #fi
 
 ## fzf
@@ -96,20 +84,6 @@
 ## fd (debian)
 #if (( $+commands[fdfind] )); then
 #  alias fd=fdfind
-#fi
-
-## lsd
-#if (( $+commands[lsd] )); then
-#  alias l='lsd -Al --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
-#  alias ll='lsd -l --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
-#  alias lt='lsd --tree --depth=2 --date=relative --group-dirs=first'
-#fi
-
-## exa
-#if (( $+commands[exa] )); then
-#  alias l='exa -alh --group-directories-first'
-#  alias ll='exa -lh --group-directories-first'
-#  alias lt='exa -TL2 --group-directories-first'
 #fi
 
 ## tag

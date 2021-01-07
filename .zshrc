@@ -91,7 +91,14 @@ typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=2
 #
 # zsh-sensible
 #
-alias l='ls -lah'
+if (( $+commands[lsd] )); then
+  alias l='lsd -Al --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
+  alias ll='lsd -l --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
+  alias lt='lsd --tree --depth=2 --date=relative --group-dirs=first'
+else
+  alias l='ls -alh'
+  alias ll='ls -lh'
+fi
 alias mv='mv -i'
 alias cp='cp -i'
 
@@ -155,6 +162,21 @@ export AWS_SDK_LOAD_CONFIG=true
 if (( $+commands[vim] )); then
   export EDITOR=vim
   bindkey -e
+elif (( $+commands[nvim] )); then
+  export EDITOR=nvim
+  bindkey -e
+fi
+
+# Terraform
+if (( $+commands[terraform] )); then
+  alias tf='terraform'
+  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+fi
+
+# Golang
+if (( $+commands[go] )); then
+  export GOPATH="$HOME/.go"
+  export PATH="$PATH:$GOPATH/bin"
 fi
 
 
