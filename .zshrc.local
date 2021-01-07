@@ -142,3 +142,7 @@
 
 ## bat
 #export BAT_PAGER='less -+XF -RSQc'
+
+## neovim
+#alias vi=nvim
+#alias vim=nvim
