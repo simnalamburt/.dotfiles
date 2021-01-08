@@ -16,11 +16,13 @@ Using Arch Linux in WSL2
     EDITOR=vim visudo
     # %wheel ALL=(ALL) ALL
 
+
     #
     # Create a new user
     #
     useradd -m -G wheel -s /bin/bash simnalamburt
     passwd simnalamburt
+
 
     #
     # Setup pacman
@@ -36,6 +38,12 @@ Using Arch Linux in WSL2
 
     vim /etc/pacman.conf
     # Add `ParallelDownloads = 5` under `[options]`
+
+
+    #
+    # Remove unused packages
+    #
+    pacman -R vim
     ```
 
 3.  Change the default user

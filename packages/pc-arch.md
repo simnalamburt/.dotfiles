@@ -4,7 +4,7 @@ PC, WSL 2
 
 ### `pacman`
 - base-devel openssh htop man zip unzip
-- neovim git zsh fd ripgrep fzf fuse watchexec lsd bat
+- neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat
 - python nodejs yarn go
 - terraform
 
