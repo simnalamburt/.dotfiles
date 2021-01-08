@@ -7,6 +7,7 @@ Windows 10, version 2004
 - extras/firefox extras/vscode extras/discord
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - extras/vcredist2019
+- archwsl
 
 ### Microsoft Store
 - Debian
