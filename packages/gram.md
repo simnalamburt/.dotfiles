@@ -10,7 +10,6 @@ Windows 10, version 2004
 - archwsl
 
 ### Microsoft Store
-- Debian
 - Windows Terminal
 - Line
 - Microsoft To Do
