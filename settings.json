@@ -25,23 +25,6 @@
                 "startingDirectory": "//wsl$/Arch/home/simnalamburt"
             },
             {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "icon": "ms-appdata:///roaming/ubuntu.png",
-                "source": "Windows.Terminal.Wsl",
-                "cursorShape": "filledBox",
-                "startingDirectory": "//wsl$/Ubuntu-20.04/home/simnalamburt"
-            },
-            {
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "hidden": false,
-                "name": "Debian",
-                "source": "Windows.Terminal.Wsl",
-                "cursorShape": "filledBox",
-                "startingDirectory": "//wsl$/Debian/home/simnalamburt"
-            },
-            {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
