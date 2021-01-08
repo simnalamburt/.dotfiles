@@ -1,7 +1,28 @@
+## PATH
+#export PATH="\
+#$HOME/.cargo/bin:\
+#$GOPATH/bin:\
+#${PATH}"
+
 ## GNU Coreutils
 # alias ls='ls --color=tty'
 ## BSD
 # alias ls='ls -G'
+
+## fzf
+#if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
+## fzf (debian)
+#if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
+#  source /usr/share/doc/fzf/examples/key-bindings.zsh
+#fi
+## fzf (arch)
+#if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
+#  source /usr/share/fzf/key-bindings.zsh
+#fi
+
+## neovim
+#alias vi=nvim
+#alias vim=nvim
 
 ## Aliases
 #if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
@@ -39,22 +60,6 @@
 #  esac
 #}
 
-## Update PATH (examples)
-#export PATH="\
-#$HOME/.cargo/bin\
-#:$HOME/.awscliv2/binaries\
-#:$HOME/.local/bin\
-#:$HOME/.yarn/bin\
-#:/home/linuxbrew/.linuxbrew/bin\
-#:/home/linuxbrew/.linuxbrew/sbin\
-#:/usr/local/sbin\
-#:/usr/local/opt/ruby/bin\
-#:/usr/local/lib/ruby/gems/2.6.0/bin\
-#${PATH+:$PATH}"
-
-## Homebrew for Linux
-#eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
 ## kubectl
 #if (( $+commands[kubectl] )); then
 #  source <(kubectl completion zsh)
@@ -66,19 +71,6 @@
 #  autoload -U +X bashcompinit && bashcompinit
 #  autoload -Uz compinit && compinit
 #  complete -o nospace -C /usr/local/bin/vault vault
-#fi
-
-## fzf
-#if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
-
-## fzf (debian)
-#if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-#  source /usr/share/doc/fzf/examples/key-bindings.zsh
-#fi
-
-## fzf (arch)
-#if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
-#  source /usr/share/fzf/key-bindings.zsh
 #fi
 
 ## fd (debian)
@@ -97,11 +89,6 @@
 ## WSL2 + X11
 #export DISPLAY=$(ip route | awk '/default via / {print $3}'):0
 
-## Clear screen
-#clear_screen() { tput clear }
-#zle -N clear_screen
-#bindkey '^s' clear_screen
-
 ## Mosh
 #compdef mosh=ssh
 
@@ -116,7 +103,3 @@
 
 ## bat
 #export BAT_PAGER='less -+XF -RSQc'
-
-## neovim
-#alias vi=nvim
-#alias vim=nvim
