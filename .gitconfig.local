@@ -8,14 +8,14 @@
 [core]
 	pager = BAT_PAGER='less -+XF -SQc' delta
 
-# diff-highlight.perl (Debian)
-[pager]
-	log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
-	show = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
-	diff = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
-
-# diff-highlight.perl (Arch Linux)
-[pager]
-	log  = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-	show = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
-	diff = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+## diff-highlight.perl (Debian)
+#[pager]
+#	log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+#	show = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+#	diff = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
+#
+## diff-highlight.perl (Arch Linux)
+#[pager]
+#	log  = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+#	show = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+#	diff = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc

@@ -9,20 +9,21 @@
 <br>
 
 ```shell
-git clone https://github.com/simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
+# Import or initialize secrets:
+#   SSH private keys, GPG secret keys, AWSCLI API keys, Terraform API keys,
+#   Docker tokens, Cargo tokens, Bundle tokens, NPM tokens, PIP tokens, ...
 
-# zinit         https://github.com/zdharma/zinit
-# vim-plug      https://github.com/junegunn/vim-plug
-# tpm           https://github.com/tmux-plugins/tpm
+git clone git@github.com:simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
+# neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+mkdir -p ~/.config/nvim
+ln -s ~/.dotfiles/.vimrc ~/.config/nvim/init.vim
+
+# zsh
+git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
 ln -sf ~/.dotfiles/.zshrc ~
-ln -sf ~/.dotfiles/.vimrc ~
-ln -sf ~/.dotfiles/.tmux.conf ~
-
-# git
-ln -sf ~/.dotfiles/.gitconfig ~
-ln -sf ~/.dotfiles/.gitexclude ~
-cp ~/.dotfiles/.gitconfig.local ~
 
 # ssh
 mkdir -p ~/.ssh
@@ -30,16 +31,18 @@ chmod 700 ~/.ssh
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh
 cp ~/.dotfiles/.ssh/config.local ~/.ssh
 
-# neovim
-mkdir -p ~/.config/nvim
-ln -s ~/.dotfiles/.vimrc ~/.config/nvim/init.vim
+# git
+ln -sf ~/.dotfiles/.gitconfig ~
+ln -sf ~/.dotfiles/.gitexclude ~
+cp ~/.dotfiles/.gitconfig.local ~
 
-# Misc
-mkdir -p ~/.gnupg && cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
+# gpg
+mkdir -p ~/.gnupg
+cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
 
-# Import or initialize secrets:
-#   SSH private keys, GPG secret keys, AWSCLI API keys, Terraform API keys,
-#   Docker tokens, Cargo tokens, Bundle tokens, NPM tokens, PIP tokens, ...
+# tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -sf ~/.dotfiles/.tmux.conf ~
 ```
 
 #### Check out my vim/zsh/tmux plugins

@@ -52,6 +52,15 @@ Using Arch Linux in WSL2
     arch.exe config --default-user simnalamburt
     ```
 
+4.  (Optional) Create handy symlinks
+
+    ```bash
+    ln -s '/mnt/c/Users/simna/OneDrive/바탕 화면' Desktop
+    ln -s '/mnt/c/Users/simna/Downloads'
+    ln -s '/mnt/c/Windows/System32/drivers/etc/hosts'
+    mkdir workspace
+    ```
+
 ### References
 - https://github.com/yuk7/ArchWSL
 - https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/
