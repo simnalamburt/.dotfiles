@@ -24,6 +24,11 @@
 #alias vi=nvim
 #alias vim=nvim
 
+## Fix home/end/delete
+#bindkey  "^[[H"   beginning-of-line
+#bindkey  "^[[F"   end-of-line
+#bindkey  "^[[3~"  delete-char
+
 ## Aliases
 #if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
 #if (( $+commands[ydiff] )); then alias vd='ydiff -sw0'; fi
