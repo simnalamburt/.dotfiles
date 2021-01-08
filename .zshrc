@@ -145,7 +145,7 @@ if [[ -f /proc/sys/fs/binfmt_misc/WSLInterop ]]; then
   umask 022
   alias open=explorer.exe
   alias pbcopy=clip.exe
-  alias pbpaste='powershell.exe Get-Clipboard | sed "s/\r$//" | head -n -1'
+  alias pbpaste='powershell.exe Get-Clipboard | sed "s/\r$//" | head -c -1'
   alias code=/mnt/c/Users/simna/scoop/apps/vscode/current/bin/code
 fi
 
