@@ -37,7 +37,9 @@ ln -s ~/.dotfiles/.vimrc ~/.config/nvim/init.vim
 # Misc
 mkdir -p ~/.gnupg && cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
 
-# Initialize secrets: ssh, aws, terraform, ...
+# Import or initialize secrets:
+#   SSH private keys, GPG secret keys, AWSCLI API keys, Terraform API keys,
+#   Docker tokens, Cargo tokens, Bundle tokens, NPM tokens, PIP tokens, ...
 ```
 
 #### Check out my vim/zsh/tmux plugins
