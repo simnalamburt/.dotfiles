@@ -46,7 +46,7 @@ Setup note
     # And, install Linux distros from Microsoft Store
     ```
 
-1.  Edit `/etc/profile`, `/etc/bashrc`, or `/etc/bash.bashrc` and uncomment or add the line below:
+1.  (Optional) Edit `/etc/profile`, `/etc/bashrc`, or `/etc/bash.bashrc` and uncomment or add the line below:
 
     ```bash
     umask 022

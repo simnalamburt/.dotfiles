@@ -12,24 +12,16 @@ stty stop undef
 stty -ixon
 
 PS1='\u@\h:\w\$ '
-export LANG=ko_KR.UTF-8
+export LANG=en_US.UTF-8
 
-# Mini rg
-function rg {
-  if [[ -z "$1" ]]; then
-    grep --help
-  else
-    grep --line-number --recursive "$1" .
-  fi
-}
-
-# User specific aliases and functions
+# Useful aliases
 alias ls="ls --color=tty"
 alias l="ls -alh --color=yes"
 alias ll="ls -lh --color=yes"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias rg='grep -nr'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
