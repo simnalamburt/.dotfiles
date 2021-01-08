@@ -8,7 +8,7 @@ Using Arch Linux in WSL2
 
     # Icon
     curl.exe -L https://raw.githubusercontent.com/simnalamburt/i/master/.dotfiles/arch.png `
-      -o "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bb\RoamingState\arch.png"
+      -o "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState\arch.png"
     ```
 
 2.  Basic setup
