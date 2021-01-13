@@ -7,6 +7,7 @@ Windows 10 Pro, version 2004
 - extras/firefox extras/vscode extras/discord
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - archwsl
+- vlc
 
 ### Microsoft Store
 - Windows Terminal
