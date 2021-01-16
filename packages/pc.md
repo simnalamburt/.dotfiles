@@ -12,6 +12,7 @@ Windows 10 Pro, version 2004
 ### Microsoft Store
 - Windows Terminal
 - Line
+- Unigram - Telegram for Windows 10
 - Microsoft To Do
 - Netflix
 
