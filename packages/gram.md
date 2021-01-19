@@ -11,7 +11,6 @@ Windows 10, version 2004
 
 ### Microsoft Store
 - Windows Terminal
-- [Files](https://github.com/files-community/Files)
 - Line
 - [Unigram - Telegram for Windows 10](https://github.com/UnigramDev/Unigram)
 - Microsoft To Do
