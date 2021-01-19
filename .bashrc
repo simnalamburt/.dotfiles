@@ -74,8 +74,13 @@ fi
 # Aliases
 #
 # Interactive operation...
-alias cp='cp -i'
+alias rm='rm -I'
 alias mv='mv -i'
+alias cp='cp -i'
+# Some shortcuts for different directory listings
+alias ls='ls -hF --color=auto'                # classify files in colour
+alias ll='ls -lhF --color=auto'               # long list
+alias l='ls -AlhF --color=auto'               # show all
 # Default to human readable figures
 alias df='df -h'
 alias du='du -h'
@@ -85,10 +90,6 @@ alias whence='type -a'                        # where, of a sort
 alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
-# Some shortcuts for different directory listings
-alias ls='ls -hF --color=auto'                # classify files in colour
-alias ll='ls -lhF --color=auto'               # long list
-alias l='ls -AlhF --color=auto'               # show all
 
 
 #

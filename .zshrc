@@ -99,6 +99,7 @@ else
   alias l='ls -alh'
   alias ll='ls -lh'
 fi
+alias rm='rm -I'
 alias mv='mv -i'
 alias cp='cp -i'
 
