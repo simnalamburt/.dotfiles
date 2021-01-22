@@ -33,7 +33,7 @@ server는 [Cloudflare]를 쓰고있다.
     https://www.ssllabs.com/ssltest/ 참고
 
 ### 서버 운영할 때 구독하면 좋은 메일링리스트
-- [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
-- [arch-security](https://lists.archlinux.org/listinfo/arch-security)
-- [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
-- [debian-security-announce](https://lists.debian.org/debian-security-announce/)
+- [x] [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
+- [x] [arch-security](https://lists.archlinux.org/listinfo/arch-security)
+- [ ] [ubuntu-security-announce](https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce)
+- [ ] [debian-security-announce](https://lists.debian.org/debian-security-announce/)
