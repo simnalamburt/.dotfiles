@@ -8,13 +8,11 @@ LG Gram 2-in-1, WSL 2
 - python nodejs yarn go
 - terraform
 
-AUR:
-
+### `pacman` (AUR)
 - paru
 - git-delta-bin
 
-Manual:
-
+### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
 - [subsystemctl](https://github.com/sorah/subsystemctl)
 
