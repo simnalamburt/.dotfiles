@@ -41,7 +41,7 @@ Using Arch Linux in WSL2
     #   https://archlinux.org/mirrors/status/
 
     vim /etc/pacman.conf
-    # Add `ParallelDownloads = 5` under `[options]`
+    # Add `ParallelDownloads = 10` under `[options]`
 
 
     #

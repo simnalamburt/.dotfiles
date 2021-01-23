@@ -103,11 +103,12 @@ passwd simnalamburt
 EDITOR=nvim visudo # 특정 라인 주석해제
 passwd root -dl
 
+
 # 전원버튼 동작 설정하기
 #
 # Reference:
 #   http://unix.stackexchange.com/a/52645
-sudo vim /etc/systemd/login.conf
+sudo nvim /etc/systemd/login.conf
 # HandlePowerKey=ignore
 # HandleSuspendKey=ignore
 # HandleHibernateKey=ignore
@@ -116,6 +117,16 @@ sudo vim /etc/systemd/login.conf
 # HandleLidSwitchDocked=ignore
 # HandleRebootKey=ignore
 sudo systemctl restart systemd-logind
+
+
+# GPU 확인, 적절히 드라이버 깔아주기
+lspci
+
+
+# pacman 설정 수정
+sudo nvim /etc/pacman.conf
+# Uncomment `Color` under `[options]`
+# (pacman 6 사용중일경우) Add `ParallelDownloads = 10` under `[options]`
 ```
 
 ###### References
