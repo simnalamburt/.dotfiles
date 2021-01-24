@@ -3,7 +3,7 @@ kuma
 [Arch Linux](https://archlinux.org/)
 
 ### `pacman`
-Commandline tools:
+CLI:
 
 - base linux linux-firmware grub
 - sudo iwd
@@ -12,14 +12,15 @@ Commandline tools:
 - python nodejs yarn go
 - terraform
 
-Wayland:
+GUI:
 
 - noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
 - mesa sway
+- purseaudio
 
 Applications:
 
-- alacritty bemenu-wlroots wl-clipboard
+- alacritty bemenu-wlroots wl-clipboard i3status-rust
 - firefox
 
 ### `pacman` (AUR)
