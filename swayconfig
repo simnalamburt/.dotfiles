@@ -196,7 +196,6 @@ bindsym $mod+r mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    font pango:Noto Sans Mono, FontAwesome 12
     position top
     status_command i3status-rs ~/.dotfiles/i3status-rust.toml
     colors {
