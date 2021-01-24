@@ -19,11 +19,12 @@ Wayland:
 
 Applications:
 
-- alacritty bemenu-wlroots
+- alacritty bemenu-wlroots wl-clipboard
 - firefox
 
 ### `pacman` (AUR)
 - paru
+- git-delta-bin
 
 ### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
