@@ -23,7 +23,14 @@ Applications:
 - firefox
 
 ### `pacman` (AUR)
-
+- paru
 
 ### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
+
+### `rustup`
+- stable: rust-src
+
+### `/usr/local/bin`
+- aws
+- aws-mfa
