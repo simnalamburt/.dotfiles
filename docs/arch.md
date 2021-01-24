@@ -57,7 +57,8 @@ EOF
 # 루트 계정 비밀번호 설정
 passwd
 
-# 파티셔닝 했던 방식에 맞춰 grub을 설정해줘야 한다. 이하는 예시
+# 파티셔닝 했던 방식에 맞춰 grub을 설정해줘야 한다. 이하는 예시. EFI 시스템의
+# 경우 grub을 쓰지 않아도 된다.
 #
 # Reference:
 #   https://wiki.archlinux.org/index.php/GRUB
