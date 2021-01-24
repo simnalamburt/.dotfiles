@@ -69,6 +69,10 @@ ln -s ~/.dotfiles/sirula.css  ~/.config/sirula/style.css
 # GTK 3
 mkdir -p ~/.config/gtk-3.0
 ln -s ~/.dotfiles/gtk3.ini ~/.config/gtk-3.0/settings.ini
+
+# kime
+mkdir -p ~/.config/kime
+ln -s ~/.dotfiles/kime.yml ~/.config/kime/config.yaml
 ```
 
 #### Check out my vim/zsh/tmux plugins
