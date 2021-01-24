@@ -14,7 +14,7 @@ CLI:
 
 Desktop Environment:
 
-- noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
+- noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-nerd-fonts-symbols-mono
 - mesa sway swayidle swaylock
 - purseaudio brightnessctl
 - arc-gtk-theme
