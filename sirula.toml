@@ -16,4 +16,7 @@ markup_highlight = 'weight="bold" underline="low"'
 exclude = [
   "qv4l2",
   "qvidcap",
+  "avahi-discover",
+  "bssh",
+  "bvnc",
 ]
