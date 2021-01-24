@@ -96,6 +96,14 @@ systemctl poweroff
 
 ### 설치 이후에 해도 되는 일들
 ```bash
+# Create 4GiB swap
+dd if=/dev/zero of=/swapfile bs=1M count=4096 status=progress
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+cat <<< '/swapfile none swap defaults 0 0' >> /etc/fstab
+
+
 # sudo 설치, 새 유저 생성 및 루트 잠그기
 pacman -S sudo
 useradd -mG wheel simnalamburt
