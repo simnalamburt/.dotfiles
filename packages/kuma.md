@@ -17,6 +17,7 @@ Desktop Environment:
 - noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
 - mesa sway
 - purseaudio brightnessctl
+- arc-gtk-theme
 
 Applications:
 

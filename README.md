@@ -65,6 +65,10 @@ ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/.
 mkdir -p ~/.config/sirula
 ln -s ~/.dotfiles/sirula.toml ~/.config/sirula/config.toml
 ln -s ~/.dotfiles/sirula.css  ~/.config/sirula/style.css
+
+# GTK 3
+mkdir -p ~/.config/gtk-3.0
+ln -s ~/.dotfiles/gtk3.ini ~/.config/gtk-3.0/settings.ini
 ```
 
 #### Check out my vim/zsh/tmux plugins
