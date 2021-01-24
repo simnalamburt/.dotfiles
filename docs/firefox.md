@@ -16,5 +16,8 @@
     mousewheel.with_alt.action;1
     mousewheel.with_control.action;1
     ```
+    
+###### References
+- https://wiki.mozilla.org/Trusted_Recursive_Resolver#DNS-over-HTTPS_Prefs_in_Firefox
 
 [HNTP]: https://github.com/quodroc/HumbleNewTabPage
