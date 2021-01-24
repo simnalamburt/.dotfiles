@@ -55,7 +55,7 @@ ln -sf ~/.dotfiles/.tmux.conf ~
 
 # sway
 mkdir -p ~/.config/sway
-ln -s ~/.dotfiles/swayconfig ~/.config/sway/config
+ln -s ~/.dotfiles/sway ~/.config/sway/config
 # swaylock
 mkdir -p ~/.config/swaylock
 ln -s ~/.dotfiles/swaylock ~/.config/swaylock/config
