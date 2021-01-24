@@ -52,6 +52,10 @@ gpg --edit-key 0F85F46EE242057F
 # tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sf ~/.dotfiles/.tmux.conf ~
+
+# sway
+mkdir -p .config/sway
+ln -s ~/.dotfiles/swayconfig ~/.config/sway/config
 ```
 
 #### Check out my vim/zsh/tmux plugins
