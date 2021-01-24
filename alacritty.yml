@@ -1,3 +1,7 @@
+key_bindings:
+  - { key: Insert, mods: Shift, action: Paste }
+  - { key: Insert, mods: Control, action: Copy }
+
 # Campbell (Windows 10 default)
 #
 # Reference:
