@@ -12,11 +12,11 @@ CLI:
 - python nodejs yarn go
 - terraform
 
-GUI:
+Desktop Environment:
 
 - noto-fonts-extra noto-fonts-cjk noto-fonts-emoji
 - mesa sway
-- purseaudio
+- purseaudio brightnessctl
 
 Applications:
 
