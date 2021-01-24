@@ -20,12 +20,13 @@ Desktop Environment:
 
 Applications:
 
-- alacritty bemenu-wlroots wl-clipboard i3status-rust
+- alacritty wl-clipboard i3status-rust
 - firefox
 
 ### `pacman` (AUR)
 - paru
 - git-delta-bin
+- sirula-git
 
 ### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)

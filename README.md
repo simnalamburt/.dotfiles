@@ -60,6 +60,11 @@ ln -s ~/.dotfiles/swayconfig ~/.config/sway/config
 # alacritty
 mkdir -p ~/.config/alacritty
 ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/.
+
+# sirula
+mkdir -p ~/.config/sirula
+ln -s ~/.dotfiles/sirula.toml ~/.config/sirula/config.toml
+ln -s ~/.dotfiles/sirula.css  ~/.config/sirula/style.css
 ```
 
 #### Check out my vim/zsh/tmux plugins

@@ -1,0 +1,36 @@
+.app-row {
+  transition: unset;
+  padding: 5px 0 5px 10px;
+  border-radius: 3px;
+}
+.app-row:selected {
+  background: #37474F;
+}
+
+.app-label {
+  margin-left: 10px;
+  color: #eee;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#app-list {
+  background: none;
+}
+
+#root-box {
+  background-color: #263238;
+  border: 3px solid #263238;
+  border-radius: 10px;
+  box-shadow: 0 10px 50px black, 0 5px 12px black;
+  margin: 100px;
+}
+
+#search {
+  font-size: 18px;
+  color: white;
+  background: none;
+  border-radius: 7px;
+  padding: 2px 8px;
+  margin-bottom: 5px;
+}
