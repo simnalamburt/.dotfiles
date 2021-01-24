@@ -54,8 +54,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sf ~/.dotfiles/.tmux.conf ~
 
 # sway
-mkdir -p .config/sway
+mkdir -p ~/.config/sway
 ln -s ~/.dotfiles/swayconfig ~/.config/sway/config
+
+# alacritty
+mkdir -p ~/.config/alacritty
+ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/.
 ```
 
 #### Check out my vim/zsh/tmux plugins
