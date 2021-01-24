@@ -112,9 +112,11 @@ EDITOR=nvim visudo # 특정 라인 주석해제
 passwd root -dl
 
 
-# 전원버튼 동작 설정하기
+# 전원버튼 동작 설정하기 (ignore, poweroff, reboot, halt, kexec, suspend,
+# hibernate, hybrid-sleep, suspend-then-hibernate, lock)
 #
 # Reference:
+#   man 5 logind.conf
 #   http://unix.stackexchange.com/a/52645
 sudo nvim /etc/systemd/login.conf
 # HandlePowerKey=ignore
