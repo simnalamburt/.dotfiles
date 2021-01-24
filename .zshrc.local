@@ -6,15 +6,7 @@
 
 ## GNU Coreutils
 # alias ls='ls --color=tty'
-## BSD
-# alias ls='ls -G'
 
-## fzf
-#if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
-## fzf (debian)
-#if [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]]; then
-#  source /usr/share/doc/fzf/examples/key-bindings.zsh
-#fi
 ## fzf (arch)
 #if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
 #  source /usr/share/fzf/key-bindings.zsh
@@ -29,42 +21,6 @@
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
 
-## Aliases
-#if (( $+commands[tmux] )); then alias irc='tmux attach -t irc'; fi
-#if (( $+commands[ydiff] )); then alias vd='ydiff -sw0'; fi
-
-## notify
-#if (( $+commands[osascript] )); then
-#  notify () {
-#    # 'sound name' 파라미터가 작동 안해서 afplay로 바꿈
-#    # Reference: https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html#//apple_ref/doc/uid/TP40000983-CH216-SW224
-#    echo 'display notification "일어나세요" with title "작업 끝!"' | osascript
-#    afplay /System/Library/Sounds/Glass.aiff &
-#  }
-#fi
-
-## macOS OpenVPN
-#vpn() {
-#  local CLI='/Library/Frameworks/OpenVPN.framework/Versions/Current/bin/ovpncli'
-#  case "$1" in
-#    ("h" | "home") "$CLI" -t home.example.com -U connect;;
-#    ("o" | "office") "$CLI" -t office.example.com -U connect;;
-#    ("q" | "quit") "$CLI" -U disconnect;;
-#    (*) cat <<'EOF' && return 1;;
-#vpn
-#CLI로 OpenVPN 연결을 제어할 수 있도록 해줍니다
-#
-#USAGE:
-#    vpn [COMMAND]
-#
-#COMMANDS:
-#    h, home     home.example.com 으로 연결합니다
-#    o, office   office.example.com 으로 연결합니다
-#    q, quit     모든 VPN 연결을 종료시킵니다
-#EOF
-#  esac
-#}
-
 ## kubectl
 #if (( $+commands[kubectl] )); then
 #  source <(kubectl completion zsh)
@@ -77,25 +33,6 @@
 #  autoload -Uz compinit && compinit
 #  complete -o nospace -C /usr/local/bin/vault vault
 #fi
-
-## fd (debian)
-#if (( $+commands[fdfind] )); then
-#  alias fd=fdfind
-#fi
-
-## tag
-#if (( $+commands[tag] )) && (( $+commands[rg] )); then
-#  export TAG_SEARCH_PROG=rg
-#  tag() {
-#    command tag "$@"; source "${TAG_ALIAS_FILE:-/tmp/tag_aliases}" 2>/dev/null
-#  }
-#fi
-
-## WSL2 + X11
-#export DISPLAY=$(ip route | awk '/default via / {print $3}'):0
-
-## Mosh
-#compdef mosh=ssh
 
 ## AWSCLIv2
 #export AWS_DEFAULT_PROFILE=blabla
