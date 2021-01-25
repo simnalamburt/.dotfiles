@@ -60,6 +60,8 @@ input "type:keyboard" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    # Start a firefox
+    bindsym $mod+Shift+Return exec firefox
 
     # Kill focused window
     bindsym $mod+Shift+q kill
