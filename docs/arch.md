@@ -113,23 +113,6 @@ EDITOR=nvim visudo # 특정 라인 주석해제
 passwd root -dl
 
 
-# 전원버튼 동작 설정하기 (ignore, poweroff, reboot, halt, kexec, suspend,
-# hibernate, hybrid-sleep, suspend-then-hibernate, lock)
-#
-# Reference:
-#   man 5 logind.conf
-#   http://unix.stackexchange.com/a/52645
-sudo nvim /etc/systemd/login.conf
-# HandlePowerKey=ignore
-# HandleSuspendKey=ignore
-# HandleHibernateKey=ignore
-# HandleLidSwitch=ignore
-# HandleLidSwitchExternalPower=ignore
-# HandleLidSwitchDocked=ignore
-# HandleRebootKey=ignore
-sudo systemctl restart systemd-logind
-
-
 # GPU 확인, 적절히 드라이버 깔아주기
 lspci
 
@@ -138,6 +121,33 @@ lspci
 sudo nvim /etc/pacman.conf
 # Uncomment `Color` under `[options]`
 # (pacman 6 사용중일경우) Add `ParallelDownloads = 10` under `[options]`
+
+
+# Find UUID of swap device to "resume" and the number of "resume_offset"
+findmnt -no UUID -T /swapfile
+sudo filefrag -v /swapfile | awk '{ if($1=="0:"){print substr($4, 1, length($4)-2)} }'
+sudo nvim /etc/default/grub
+# Update GRUB_CMDLINE_LINUX_DEFAULT_DEFAULT: "resume=UUID=... resume_offset=... "
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo nvim /etc/mkinitcpio.conf
+# Update HOOKS, place "resume" after "udev" and "lvm2"
+sudo mkinitcpio -p linux
+
+
+# 전원버튼 동작 설정하기 (ignore, poweroff, reboot, halt, kexec, suspend,
+# hibernate, hybrid-sleep, suspend-then-hibernate, lock)
+#
+# Reference:
+#   man 5 logind.conf
+#   http://unix.stackexchange.com/a/52645
+sudo nvim /etc/systemd/login.conf
+#HandlePowerKey=hybrid-sleep
+#HandleSuspendKey=hybrid-sleep
+#HandleHibernateKey=hybrid-sleep
+#HandleLidSwitch=hybrid-sleep
+#HandleLidSwitchExternalPower=hybrid-sleep
+#HandleLidSwitchDocked=hybrid-sleep
+sudo systemctl restart systemd-logind
 ```
 
 ###### References
