@@ -194,13 +194,13 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 #
-# Multimedia keys
+# Multimedia:
 #
-bindsym XF86MonBrightnessUp   exec brightnessctl -d intel_backlight s 10%+
-bindsym XF86MonBrightnessDown exec brightnessctl -d intel_backlight s 10%-
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
-bindsym XF86AudioMute        exec pactl set-sink-mute 0 toggle
+    bindsym XF86MonBrightnessUp     exec brightnessctl -d intel_backlight s 10%+
+    bindsym XF86MonBrightnessDown   exec brightnessctl -d intel_backlight s 10%-
+    bindsym XF86AudioRaiseVolume    exec pactl set-sink-volume 0 +10%
+    bindsym XF86AudioLowerVolume    exec pactl set-sink-volume 0 -10%
+    bindsym XF86AudioMute           exec pactl set-sink-mute 0 toggle
 
 #
 # Status Bar:
