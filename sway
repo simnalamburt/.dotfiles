@@ -201,6 +201,20 @@ bindsym $mod+r mode "resize"
     bindsym XF86AudioRaiseVolume    exec pactl set-sink-volume 0 +10%
     bindsym XF86AudioLowerVolume    exec pactl set-sink-volume 0 -10%
     bindsym XF86AudioMute           exec pactl set-sink-mute 0 toggle
+#
+# Screen capture:
+# TODO: Play sound
+#
+    # Take a screenshot and copy to clipboard
+    bindsym Print exec              grim - | wl-copy
+    # Take a screenshot and save to "~/Downloads"
+    bindsym $mod+Print exec         mkdir -p ~/Downloads && GRIM_DEFAULT_DIR=~/Downloads grim
+    # Capture active window
+    bindsym Mod1+Print exec         swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | xargs -I{} grim -g '{}' - | wl-copy
+    # Capture a portion of the screen
+    bindsym $mod+Shift+s exec       grim -g "$(slurp)" - | wl-copy
+    # Capture a window
+    bindsym $mod+Mod1+s exec        swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | xargs -I{} grim -g '{}' - | wl-copy
 
 #
 # Status Bar:
