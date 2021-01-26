@@ -197,7 +197,7 @@ bindsym $mod+r mode "resize"
 # Multimedia:
 #
     bindsym XF86MonBrightnessUp     exec brightnessctl -d intel_backlight s 10%+
-    bindsym XF86MonBrightnessDown   exec brightnessctl -d intel_backlight s 10%-
+    bindsym XF86MonBrightnessDown   exec brightnessctl -d intel_backlight --min-value=50 s 10%-
     bindsym XF86AudioRaiseVolume    exec pactl set-sink-volume 0 +10%
     bindsym XF86AudioLowerVolume    exec pactl set-sink-volume 0 -10%
     bindsym XF86AudioMute           exec pactl set-sink-mute 0 toggle
