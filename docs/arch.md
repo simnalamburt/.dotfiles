@@ -123,6 +123,11 @@ sudo nvim /etc/pacman.conf
 # (pacman 6 사용중일경우) Add `ParallelDownloads = 10` under `[options]`
 
 
+# Change paru configs
+sudo nvim /etc/paru.conf
+# Uncomment `RemoveMake` under `[options]`
+
+
 # Find UUID of swap device to "resume" and the number of "resume_offset"
 findmnt -no UUID -T /swapfile
 sudo filefrag -v /swapfile | awk '{ if($1=="0:"){print substr($4, 1, length($4)-2)} }'
