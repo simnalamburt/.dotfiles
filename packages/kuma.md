@@ -21,7 +21,7 @@ Desktop Environment:
 
 Applications:
 
-- alacritty wl-clipboard i3status-rust
+- alacritty wl-clipboard i3status-rust grim slurp
 - firefox
 
 ### `pacman` (AUR)
