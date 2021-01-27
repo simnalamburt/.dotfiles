@@ -117,15 +117,16 @@ passwd root -dl
 lspci
 
 
-# pacman 설정 수정
+# pacman, paru, makepkg
 sudo nvim /etc/pacman.conf
 # Uncomment `Color` under `[options]`
 # (pacman 6 사용중일경우) Add `ParallelDownloads = 10` under `[options]`
-
-
-# Change paru configs
 sudo nvim /etc/paru.conf
 # Uncomment `RemoveMake` under `[options]`
+sudo nvim /etc/makepkg.conf
+# MAKEFLAGS="-j8"
+# COMPRESSZST=(zstd -c -z -q -15 -)
+# PKGEXT='.pkg.tar.zst'
 
 
 # Find UUID of swap device to "resume" and the number of "resume_offset"
