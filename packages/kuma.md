@@ -15,7 +15,8 @@ CLI:
 Desktop Environment:
 
 - noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-nerd-fonts-symbols-mono
-- mesa swayidle swaylock
+- mesa libva-intel-driver libva-mesa-driver
+- swayidle swaylock
 - purseaudio brightnessctl
 - arc-gtk-theme
 

@@ -124,6 +124,10 @@ sudo nvim /etc/mkinitcpio.conf
 sudo mkinitcpio -p linux
 
 
+# 자신의 환경에 맞는 VA-API 드라이버 설치
+sudo pacman -S libva-intel-driver libva-mesa-driver
+
+
 # pacman, paru, makepkg
 sudo nvim /etc/pacman.conf
 # Uncomment `Color` under `[options]`
