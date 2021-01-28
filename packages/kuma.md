@@ -15,7 +15,7 @@ CLI:
 Desktop Environment:
 
 - noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-nerd-fonts-symbols-mono
-- mesa sway swayidle swaylock
+- mesa swayidle swaylock
 - purseaudio brightnessctl
 - arc-gtk-theme
 
@@ -29,6 +29,7 @@ Applications:
 - git-delta-bin
 - sirula-git
 - kime
+- sway-im
 
 ### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
