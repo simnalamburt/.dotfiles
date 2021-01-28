@@ -115,8 +115,13 @@ EDITOR=nvim visudo # 특정 라인 주석해제
 passwd root -dl
 
 
-# GPU 확인, 적절히 드라이버 깔아주기
+# GPU 확인
 lspci
+# 적절히 드라이버 깔아주기
+sudo pacman -S mesa
+sudo nvim /etc/mkinitcpio.conf
+# MODULES="... nouveau ..."
+sudo mkinitcpio -p linux
 
 
 # pacman, paru, makepkg
