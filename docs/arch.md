@@ -80,6 +80,8 @@ cat > /etc/iwd/main.conf <<'EOF'
 [Network]
 NameResolvingService=systemd
 EOF
+# Reference: https://man.archlinux.org/man/systemd-resolved.8#/ETC/RESOLV.CONF
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 systemctl enable iwd systemd-networkd systemd-resolved
 
 # 텍스트에디터 최소 한개 필요함
