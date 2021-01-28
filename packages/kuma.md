@@ -32,6 +32,7 @@ Applications:
 
 ### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
+- [libsndfile 1.0.31-1](https://github.com/simnalamburt/PKGBUILD/tree/main/libsndfile)
 
 ### `rustup`
 - stable: rust-src
