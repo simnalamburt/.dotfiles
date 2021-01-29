@@ -70,3 +70,7 @@
 #export GTK_IM_MODULE='kime'
 #export QT_IM_MODULE='kime'
 #export XMODIFIERS='@im=kime'
+
+## sway
+#alias run-sway='systemd-cat -t sway sway'
+#alias run-sway-gpu='WLR_DRM_DEVICES=/dev/dri/card0:/dev/dri/card1 systemd-cat -t sway sway'
