@@ -33,8 +33,9 @@ Applications:
 - sway-im
 
 ### `pacman` (Manual)
-- [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
-- [libsndfile 1.0.31-1](https://github.com/simnalamburt/PKGBUILD/tree/main/libsndfile)
+- [pacman-6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
+- [libsndfile-1.0.31-1](https://github.com/simnalamburt/PKGBUILD/tree/main/libsndfile)
+- [nouveau-fw-340.108-1](https://github.com/simnalamburt/PKGBUILD/tree/main/nouveau-fw)
 
 ### `rustup`
 - stable: rust-src
