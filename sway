@@ -238,6 +238,7 @@ xwayland disable
 
 for_window [title="^Picture-in-Picture$"] floating enable, sticky enable, resize set 30 ppt 30 ppt, move absolute position 946 px 537 px
 for_window [title="^$" app_id="^firefox$"] floating enable, sticky enable, border none, move absolute position 1000 px 10 px
+for_window [title="^Firefox — Sharing Indicator$" app_id="^firefox$"] floating enable, move position 20 px 20 px
 
 # Execute kime-wayland
 exec systemd-cat -t kime kime-wayland
