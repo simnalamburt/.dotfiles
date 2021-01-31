@@ -26,7 +26,7 @@ Applications:
 - firefox
 
 ### `pacman` (AUR)
-- paru
+- paru-bin
 - git-delta-bin
 - sirula-git
 - kime
