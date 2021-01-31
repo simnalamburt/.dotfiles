@@ -22,6 +22,7 @@ Windows 10 Pro, version 2004
 - KakaoTalk
 - Cloudflare WARP
 - Docker Desktop
+- Battle.net, Modern Warfare
 
 &nbsp;
 
@@ -35,6 +36,6 @@ Windows 10 Pro, version 2004
 
 <!-- Removed apps
 
-- Battle.net, Epic Games
+- Epic Games
 
 -->
