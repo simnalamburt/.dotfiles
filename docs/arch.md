@@ -126,6 +126,12 @@ sudo mkinitcpio -p linux
 
 # 자신의 환경에 맞는 VA-API 드라이버 설치
 sudo pacman -S libva-intel-driver libva-mesa-driver
+# References:
+#   https://nouveau.freedesktop.org/VideoAcceleration.html#firmware
+#   https://github.com/simnalamburt/PKGBUILD/tree/main/nouveau-fw
+sudo pacman-key -r 0F85F46EE242057F
+sudo pacman-key --lsign-key 0F85F46EE242057F
+sudo pacman -U https://i.hyeon.me/PKGBUILD/nouveau-fw-340.108-1-any.pkg.tar.zst
 
 
 # pacman, paru, makepkg
