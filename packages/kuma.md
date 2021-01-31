@@ -23,7 +23,7 @@ Desktop Environment:
 Applications:
 
 - alacritty wl-clipboard i3status-rust grim slurp
-- firefox
+- firefox code
 
 ### `pacman` (AUR)
 - paru-bin
