@@ -205,15 +205,15 @@ bindsym $mod+r mode "resize"
 # Screen capture:
 #
     # Take a screenshot and copy to clipboard
-    bindsym Print exec              (set -o pipefail && grim - | wl-copy) && paplay ~/.dotfiles/resources/grab.opus
+    bindsym Print exec              (set -o pipefail && grim - | wl-copy -t image/png) && paplay ~/.dotfiles/resources/grab.opus
     # Take a screenshot and save to "~/Downloads"
     bindsym $mod+Print exec         mkdir -p ~/Downloads && GRIM_DEFAULT_DIR=~/Downloads grim && paplay ~/.dotfiles/resources/grab.opus
     # Capture active window
-    bindsym Mod1+Print exec         (set -o pipefail && swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | xargs -I{} grim -g '{}' - | wl-copy) && paplay ~/.dotfiles/resources/grab.opus
+    bindsym Mod1+Print exec         (set -o pipefail && swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | xargs -I{} grim -g '{}' - | wl-copy -t image/png) && paplay ~/.dotfiles/resources/grab.opus
     # Capture a portion of the screen
-    bindsym $mod+Shift+s exec       (set -o pipefail && grim -g "$(slurp)" - | wl-copy) && paplay ~/.dotfiles/resources/grab.opus
+    bindsym $mod+Shift+s exec       (set -o pipefail && grim -g "$(slurp)" - | wl-copy -t image/png) && paplay ~/.dotfiles/resources/grab.opus
     # Capture a window
-    bindsym $mod+Mod1+s exec        (set -o pipefail && swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | xargs -I{} grim -g '{}' - | wl-copy) && paplay ~/.dotfiles/resources/grab.opus
+    bindsym $mod+Mod1+s exec        (set -o pipefail && swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp | xargs -I{} grim -g '{}' - | wl-copy -t image/png) && paplay ~/.dotfiles/resources/grab.opus
 
 #
 # Status Bar:
