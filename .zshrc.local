@@ -49,11 +49,6 @@
 ## Wayland
 ## Firefox
 #export MOZ_ENABLE_WAYLAND=1
-## Qt
-#export XDG_SESSION_TYPE=wayland
-#export QT_QPA_PLATFORM=wayland-egl
-#export QT_WAYLAND_FORCE_DPI=physical
-#export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 ## Elementary/EFL
 #export ECORE_EVAS_ENGINE=wayland_egl
 #export ELM_ENGINE=wayland_egl
