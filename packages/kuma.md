@@ -16,13 +16,12 @@ Desktop Environment:
 
 - noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-nerd-fonts-symbols-mono
 - mesa libva-intel-driver libva-mesa-driver
-- swayidle swaylock
+- arc-gtk-theme qt5-wayland
 - purseaudio brightnessctl
-- arc-gtk-theme
 
 Applications:
 
-- alacritty wl-clipboard i3status-rust grim slurp
+- swayidle swaylock alacritty wl-clipboard i3status-rust grim slurp
 - firefox code
 
 ### `pacman` (AUR)
