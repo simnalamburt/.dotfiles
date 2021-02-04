@@ -24,6 +24,11 @@ Applications:
 - swayidle swaylock alacritty wl-clipboard i3status-rust grim slurp
 - firefox code
 
+Temp:
+
+- (build dependencies of kime) libappindicator-gtk3 clang cmake ninja
+- (build dependencies of sway) meson scdoc
+
 ### `pacman` (AUR)
 - paru-bin
 - git-delta-bin
