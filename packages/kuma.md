@@ -42,7 +42,7 @@ Temp:
 - [nouveau-fw-340.108-1](https://github.com/simnalamburt/PKGBUILD/tree/main/nouveau-fw)
 
 ### `rustup`
-- stable: rust-src
+- stable: rust-src rls rust-analysis
 
 ### `/usr/local/bin`
 - aws
