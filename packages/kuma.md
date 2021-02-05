@@ -21,7 +21,7 @@ Desktop Environment:
 
 Applications:
 
-- swayidle swaylock alacritty wl-clipboard i3status-rust grim slurp
+- swayidle swaylock alacritty wl-clipboard i3status-rust grim slurp mako
 - firefox code
 
 Temp:
