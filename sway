@@ -246,6 +246,8 @@ for_window [title="^$" app_id="^firefox$"] floating enable, sticky enable, borde
 for_window [title="^Firefox — Sharing Indicator$" app_id="^firefox$"] floating enable, move position 20 px 20 px
 
 # Execute kime-wayland
-exec systemd-cat -t kime kime-wayland
+#exec systemd-cat -t kime kime-wayland
+# Using development version
+exec systemd-cat -t kime ~/workspace/kime/build/out/kime-wayland
 
 include /etc/sway/config.d/*
