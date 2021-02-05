@@ -31,7 +31,7 @@ Temp:
 ### `pacman` (AUR)
 - paru-bin
 - git-delta-bin
-- sirula-git
+- sirula-git swappy
 - kime
 - sway-im
 
