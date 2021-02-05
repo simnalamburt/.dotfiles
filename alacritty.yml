@@ -2,6 +2,8 @@ key_bindings:
   - { key: Insert, mods: Shift, action: Paste }
   - { key: Insert, mods: Control, action: Copy }
 
+background_opacity: 0.92
+
 # Campbell (Windows 10 default)
 #
 # Reference:
