@@ -26,7 +26,7 @@ Applications:
 
 Temp:
 
-- (build dependencies of kime) libappindicator-gtk3 clang cmake ninja
+- (build dependencies of kime) libappindicator-gtk3 clang cmake ninja cbindgen
 - (build dependencies of sway) meson scdoc
 
 ### `pacman` (AUR)
