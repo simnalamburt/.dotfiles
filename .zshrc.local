@@ -69,3 +69,9 @@
 ## sway
 #alias run-sway='systemd-cat -t sway sway'
 #alias run-sway-gpu='WLR_DRM_DEVICES=/dev/dri/card0:/dev/dri/card1 systemd-cat -t sway sway'
+#alias edit-clipboard='swappy -f <(wl-paste -t image/png) -o >(wl-copy -t image/png)'
+#alias record='wf-recorder'
+#alias record-part='wf-recorder -g "$(slurp)"'
+
+## alacritty
+#alias ssh='TERM=xterm-256color ssh'
