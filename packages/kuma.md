@@ -28,7 +28,7 @@ Applications:
 - paru-bin
 - git-delta-bin
 - sirula-git swappy
-- kime-git
+- kime-bin
 - sway-im
 
 ### `pacman` (Manual)
