@@ -187,11 +187,18 @@ try
   " IDE
   if s:use_coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
+    if exists('##TextYankPost')
+      Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
+    endif
     Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile', 'rtp': 'packages/emoji'}
     if executable('clangd')
@@ -260,6 +267,9 @@ try
         call CocActionAsync('highlight')
       endif
     endfunction
+
+    " coc-yank
+    nnoremap <silent> <leader>y :<C-u>CocList -A --normal yank<CR>
 
     " coc-prettier
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
