@@ -342,7 +342,7 @@ try
     return incsearch#util#deepextend(deepcopy({
     \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
     \   'keymap': {
-    \     "\<C-l>": '<Over>(easymotion)'
+    \     "\<tab>": '<Over>(easymotion)'
     \   },
     \   'is_expr': 0
     \ }), get(a:, 1, {}))
