@@ -11,18 +11,15 @@ server는 [Cloudflare]를 쓰고있다.
 1.  sshd에서 비밀번호 인증은 꼭 끄고, 안 쓰는 사이퍼들도 모두 꺼주자.
     https://sshcheck.com 참고
 
-    ```sshd_config
+    ```
     # Only Private Key Authn is allowed
     PasswordAuthentication no
     ChallengeResponseAuthentication no
+    ```
 
-    # We want the PAM account and session checks to run without PAM authentication
-    UsePAM yes
-    PrintMotd no
+    Put below to the `/etc/ssh/sshd_config` or `/etc/ssh/sshd_config.d/cipher.conf`.
 
-    # Everyone loves SFTP
-    Subsystem sftp /usr/lib/openssh/sftp-server
-
+    ```
     # See <https://sshcheck.com> and `ssh -Q [kex|key|mac]`
     KexAlgorithms curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group-exchange-sha256
     HostKeyAlgorithms ssh-ed25519,ssh-rsa,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com
