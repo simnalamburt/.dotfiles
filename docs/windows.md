@@ -46,8 +46,13 @@ Setup note
     # And, install Linux distros from Microsoft Store
     ```
 
-1.  (Optional) Edit `/etc/profile`, `/etc/bashrc`, or `/etc/bash.bashrc` and uncomment or add the line below:
+1.  (Optional) If you're using VPN, disable resolvConf generation and manually
+    update `/etc/resolv.conf`.
 
     ```bash
-    umask 022
+    # Reference: https://github.com/microsoft/WSL/issues/1350
+    sudo tee /etc/wsl.conf <<'EOF'
+    [network]
+    generateResolvConf = false
+    EOF
     ```

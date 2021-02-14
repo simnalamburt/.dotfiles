@@ -17,10 +17,10 @@ Windows 10 Pro, version 2004
 - Netflix
 
 ### Manually Installed
+- Wireguard
 - Zoom Client for Meetings
 - ParsecGaming
 - KakaoTalk
-- Cloudflare WARP
 - Docker Desktop
 - Battle.net, Modern Warfare
 
