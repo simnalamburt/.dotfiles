@@ -23,10 +23,10 @@ Windows 10, version 2004
 - iTunes
 
 ### Manually Installed
+- Wireguard
 - Zoom Client for Meetings
 - ParsecGaming
 - KakaoTalk
-- Cloudflare WARP
 - Docker Desktop
 
 &nbsp;
