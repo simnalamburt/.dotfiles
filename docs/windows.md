@@ -11,6 +11,13 @@ Setup note
 
     <img width=500 src="https://raw.githubusercontent.com/simnalamburt/i/master/.dotfiles/disable-activity-history.png">
 
+1.  Block KakaoTalk ad server
+
+    ```
+    # C:\Windows\System32\drivers\etc\hosts
+    127.0.0.1 display.ad.daum.net
+    ```
+
 1.  (Optional) Enable Hyper-V and Windows Sandbox.
 
 <br>
