@@ -62,6 +62,15 @@ server는 [Cloudflare]를 쓰고있다.
     ExecStart의 인자로 `--address 0.0.0.0`를 넣어주면 Wireguard Client들도 DoH
     프록시를 함께 사용할 수 있다.
 
+    단 Cloudflare DoH를 쓰면 EDNS가 막혀서 archive.today에 들어가지지 않는다.
+    EDNS는 프라이버시 문제가 있는 프로토콜이어서, EDNS를 켜는게 아니라
+    archive.today를 해결해야한다.
+
+    ```
+    # hosts
+    217.79.181.101 archive.today archive.is archive.fo archive.li archive.vn archive.md archive.ph
+    ```
+
 
 ### 서버 운영할 때 구독하면 좋은 메일링리스트
 - [x] [arch-announce](https://lists.archlinux.org/listinfo/arch-announce)
