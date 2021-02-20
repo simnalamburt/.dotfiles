@@ -11,7 +11,6 @@ LG Gram 2-in-1, WSL 2
 ### `pacman` (AUR)
 - paru-bin
 - git-delta-bin
-- python38
 
 ### `pacman` (Manual)
 - [pacman 6.0.0alpha1](http://allanmcrae.com/2020/12/pacman-6-0-0alpha1/)
