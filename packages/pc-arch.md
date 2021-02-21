@@ -7,6 +7,7 @@ PC, WSL 2
 - neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq
 - python nodejs yarn go
 - terraform
+- mariadb-clients
 
 ### `pacman` (AUR)
 - paru-bin
