@@ -12,6 +12,7 @@ PPA:
 
 - nodejs (v15.x, [deb.nodesource.com](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions))
 - yarn (v1.x, [dl.yarnpkg.com](https://classic.yarnpkg.com/en/docs/install#debian-stable))
+- docker-ce docker-ce-cli containerd.io (https://docs.docker.com/engine/install/ubuntu/)
 
 ### `/usr/local/bin`
 
