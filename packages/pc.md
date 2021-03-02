@@ -8,6 +8,7 @@ Windows 10 Pro, version 2004
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - archwsl
 - vlc
+- gimp
 
 ### Microsoft Store
 - Windows Terminal
