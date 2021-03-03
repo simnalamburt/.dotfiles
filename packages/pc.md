@@ -34,6 +34,7 @@ Windows 10 Pro, version 2004
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
 - Windows Package Manager v0.1.42241 Preview
+- Fusion 360
 
 <!-- Removed apps
 
