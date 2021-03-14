@@ -28,6 +28,7 @@ Windows 10, version 2004
 - ParsecGaming
 - KakaoTalk
 - Docker Desktop
+- Fusion 360
 
 &nbsp;
 

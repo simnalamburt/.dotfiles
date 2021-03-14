@@ -23,10 +23,11 @@ Windows 10 Pro, version 2004
 - ParsecGaming
 - KakaoTalk
 - Docker Desktop
-- Battle.net, Modern Warfare
+- Fusion 360
 
 &nbsp;
 
+- Battle.net, Modern Warfare
 - Chrome Remote Desktop Host
 - MS Office
 - Uplay, Steam, 오리진
@@ -34,7 +35,6 @@ Windows 10 Pro, version 2004
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
 - Windows Package Manager v0.1.42241 Preview
-- Fusion 360
 
 <!-- Removed apps
 
