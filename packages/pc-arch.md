@@ -5,7 +5,7 @@ PC, WSL 2
 ### `pacman`
 - base-devel openssh htop man zip unzip
 - neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq
-- python nodejs yarn go
+- python nodejs yarn go ruby
 - terraform
 - mariadb-clients
 
