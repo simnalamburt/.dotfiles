@@ -92,5 +92,13 @@
 	#   git sed 's/yolo/swag/g'
 	sed = "!_() { git ls-files -z | xargs -0 perl -i -pe ${1}; }; _"
 
+	# git chdate
+	#
+	# Change git commit date and author date
+	#
+	# Usage:
+	#   git chdate 2013-05-05T12:34:56+0800
+	chdate = "!_() { GIT_COMMITTER_DATE=${1} git commit --amend --no-edit --date ${1}; }; _"
+
 [include]
 	path = ~/.gitconfig.local
