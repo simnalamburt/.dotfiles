@@ -9,6 +9,7 @@ Windows 10 Pro, version 2004
 - archwsl
 - vlc
 - gimp
+- starship busybox neovim
 
 ### Microsoft Store
 - Windows Terminal
