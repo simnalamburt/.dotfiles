@@ -30,6 +30,7 @@ Windows 10, version 2004
 - KakaoTalk
 - Docker Desktop
 - Fusion 360
+- Video DownloadHelper Companion App
 
 &nbsp;
 

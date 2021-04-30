@@ -25,6 +25,7 @@ Windows 10 Pro, version 2004
 - KakaoTalk
 - Docker Desktop
 - Fusion 360
+- Video DownloadHelper Companion App
 
 &nbsp;
 
@@ -36,7 +37,6 @@ Windows 10 Pro, version 2004
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
 - Windows Package Manager v0.1.42241 Preview
-- Video DownloadHelper Companion App
 
 <!-- Removed apps
 
