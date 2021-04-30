@@ -24,7 +24,6 @@ Windows 10 Pro, version 2004
 - ParsecGaming
 - KakaoTalk
 - Docker Desktop
-- Fusion 360
 - Video DownloadHelper Companion App
 
 &nbsp;
