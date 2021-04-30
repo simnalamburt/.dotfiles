@@ -25,7 +25,6 @@ Windows 10 Pro, version 2004
 - KakaoTalk
 - Docker Desktop
 - Fusion 360
-- [Tracker](https://physlets.org/tracker/)
 
 &nbsp;
 
