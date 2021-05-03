@@ -188,11 +188,7 @@ try
   if s:use_coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
-    if exists('##TextYankPost')
-      Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
-    endif
     Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
@@ -220,7 +216,6 @@ try
 
   " Syntax
   let g:polyglot_disabled = ['v'] | Plug 'sheerun/vim-polyglot'
-  Plug 'boeckmann/vim-freepascal'
   Plug 'hashivim/vim-terraform'
 
   " Format
