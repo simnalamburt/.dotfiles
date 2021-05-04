@@ -1,4 +1,5 @@
 {
   "html.autoClosingTags": true,
-  "git.addGBlameToVirtualText": true
+  "git.addGBlameToVirtualText": true,
+  "rust-analyzer.updates.prompt": false
 }
