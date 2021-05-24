@@ -35,3 +35,4 @@ Windows 10, version 2004
 
 - 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
 - .NET 3.5 SP1 runtime, Hancom Office 2020 viewer
+- Anaconda
