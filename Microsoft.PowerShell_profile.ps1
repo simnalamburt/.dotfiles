@@ -2,12 +2,12 @@
 Invoke-Expression (&starship init powershell)
 
 # neovim
-function vim { nvim }
-function vi { nvim }
+function vim { nvim @Args }
+function vi { nvim @Args }
 
 # busybox
-function l { busybox ls -al }
-function ll { busybox ls }
+function l { busybox ls -al @Args }
+function ll { busybox ls @Args }
 
 # https://github.com/simnalamburt/cgitc/issues/48
 # Abbreviations sorted in alphabetically
