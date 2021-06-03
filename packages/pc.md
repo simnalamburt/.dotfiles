@@ -35,7 +35,7 @@ Windows 10 Pro, version 2004
 - Windows Sandbox
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
-- Windows Package Manager v0.1.42241 Preview
+- winget v1.0.11451
 
 <!-- Removed apps
 
