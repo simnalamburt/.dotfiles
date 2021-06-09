@@ -8,6 +8,7 @@ Windows 10, version 2004
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - extras/vcredist2019
 - archwsl
+- vlc
 - starship busybox neovim
 
 ### Microsoft Store
