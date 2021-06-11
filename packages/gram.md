@@ -12,8 +12,6 @@ Windows 10, version 2004
 
 ### Microsoft Store
 - Windows Terminal
-- Line
-- [Unigram - Telegram for Windows 10](https://github.com/UnigramDev/Unigram)
 - Microsoft To Do
 - Netflix
 

@@ -7,14 +7,10 @@ Windows 10 Pro, version 2004
 - extras/firefox extras/vscode extras/discord
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - archwsl
-- vlc
-- gimp
 - starship busybox neovim
 
 ### Microsoft Store
 - Windows Terminal
-- Line
-- [Unigram - Telegram for Windows 10](https://github.com/UnigramDev/Unigram)
 - Microsoft To Do
 - Netflix
 
@@ -24,7 +20,6 @@ Windows 10 Pro, version 2004
 - ParsecGaming
 - KakaoTalk
 - Docker Desktop
-- Video DownloadHelper Companion App
 
 &nbsp;
 
