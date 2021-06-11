@@ -23,10 +23,9 @@ Windows 10 Pro, version 2004
 
 &nbsp;
 
-- Battle.net, Modern Warfare
 - Chrome Remote Desktop Host
 - MS Office
-- Uplay, Steam, 오리진
+- Steam, Uplay, 오리진
 - Windows Sandbox
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
