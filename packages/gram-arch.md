@@ -16,5 +16,5 @@ LG Gram 2-in-1, WSL 2
 - stable: rust-src
 
 ### `/usr/local/bin`
-- aws ([v2.1.17](https://github.com/simnalamburt/awscliv2.appimage/releases))
+- aws ([v2](https://github.com/simnalamburt/awscliv2.appimage/releases))
 - [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
