@@ -15,6 +15,7 @@ Windows 10 Pro, version 2004
 - Netflix
 
 ### Manually Installed
+- winget v1.0.11451
 - Wireguard
 - Zoom Client for Meetings
 - ParsecGaming
@@ -29,7 +30,6 @@ Windows 10 Pro, version 2004
 - Windows Sandbox
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
-- winget v1.0.11451
 
 <!-- Removed apps
 
