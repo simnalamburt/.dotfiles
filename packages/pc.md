@@ -22,6 +22,7 @@ Windows 10 Pro, version 2004
 
 ### Manually Installed
 - KakaoTalk
+- Discord
 - Chrome Remote Desktop Host
 - MS Office
 - Steam, Uplay, 오리진
