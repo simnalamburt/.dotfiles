@@ -19,6 +19,7 @@ Windows 10 Pro, version 2004
 - zoom
 - parsec
 - docker
+- battle.net
 
 ### Manually Installed
 - KakaoTalk
