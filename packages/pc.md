@@ -31,4 +31,3 @@ Windows 10 Pro, version 2004
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
 <!-- Epic Games -->
-- Video DownloadHelper Companion App
