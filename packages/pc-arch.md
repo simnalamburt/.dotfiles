@@ -11,6 +11,7 @@ PC, WSL 2
 ### `pacman` (AUR)
 - paru-bin
 - git-delta-bin
+- xxd-standalone
 
 ### `rustup` & `cargo install`
 - stable: rust-src
