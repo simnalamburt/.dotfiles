@@ -20,6 +20,7 @@ Windows 10 Pro, version 2004
 - parsec
 - docker
 - battle.net
+- signal
 
 ### Manually Installed
 - KakaoTalk
