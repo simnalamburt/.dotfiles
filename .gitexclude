@@ -2,15 +2,6 @@
 *.dSYM
 # npm
 npm-debug.log
-# Ruby byebug
-.byebug_history
-
-# Python
-*.pyc
-.python-version
-
-# Xmark
-.xmark.*.html
 # gdb
 .gdb_history
 
