@@ -21,6 +21,7 @@ Windows 10 Pro, version 2004
 - docker
 - battle.net
 - signal
+- chrome
 
 ### Manually Installed
 - KakaoTalk
