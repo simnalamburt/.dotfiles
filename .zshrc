@@ -8,8 +8,8 @@ export GPG_TTY=$(tty)
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+if [[ -r "${XDG_CACHE_HOME:-${HOME}/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-${HOME}/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 
@@ -175,13 +175,12 @@ fi
 # Terraform
 if (( $+commands[terraform] )); then
   alias tf='terraform'
-  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+  export TF_PLUGIN_CACHE_DIR="${HOME}/.terraform.d/plugin-cache"
 fi
 
 # Golang
 if (( $+commands[go] )); then
-  export GOPATH="$HOME/.go"
-  export PATH="$PATH:$GOPATH/bin"
+  export GOPATH="${HOME}/.go"
 fi
 
 
