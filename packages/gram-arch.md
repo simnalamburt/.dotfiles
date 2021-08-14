@@ -8,6 +8,7 @@ LG Gram 2-in-1, WSL 2
 - python python-docs
 - nodejs yarn go
 - terraform
+- musl
 
 ### `pacman` (AUR)
 - paru-bin
