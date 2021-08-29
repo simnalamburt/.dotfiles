@@ -162,12 +162,21 @@ nnoremap <CR> :call <SID>CustomEnter()<CR>
 " Easy drag select
 function! s:DragSelectMode()
   if &signcolumn != 'no'
+    " Enable DragSelectMode
     let s:previous_scl = &signcolumn
     set signcolumn=no
     set nonumber
+    call nvim_buf_clear_namespace(0, -1, 0, -1)
+    if s:use_coc
+      call coc#config('git', {'addGBlameToVirtualText': 0})
+    endif
   else
+    " Disable DragSelectMode
     let &signcolumn = s:previous_scl
     set number
+    if s:use_coc
+      call coc#config('git', {'addGBlameToVirtualText': 1})
+    endif
   endif
 endfunction
 nnoremap <F9> :call <SID>DragSelectMode()<CR>
