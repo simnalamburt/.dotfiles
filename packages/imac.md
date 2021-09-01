@@ -1,4 +1,4 @@
-MacBook Pro (13-inch, M1, 2020)
+iMac
 ========
 
 ### [`brew`]
@@ -13,7 +13,3 @@ MacBook Pro (13-inch, M1, 2020)
 - firefox visual-studio-code iterm2 rectangle
 - slack
 - docker
-
-&nbsp;
-
-- discord parsec
