@@ -683,20 +683,6 @@
 	<real>1.9376301765441895</real>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x20-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>22</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0x20-0x20000</key>
-		<dict>
-			<key>Action</key>
-			<integer>22</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0x3161-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -724,27 +710,6 @@
 			<integer>28</integer>
 			<key>Text</key>
 			<string>A7698058-832D-4738-8561-D399D7C6ACA1</string>
-		</dict>
-		<key>0x72-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>13</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0x77-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>13</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0xd-0x40000</key>
-		<dict>
-			<key>Action</key>
-			<integer>23</integer>
-			<key>Text</key>
-			<string></string>
 		</dict>
 	</dict>
 	<key>HapticFeedbackForEsc</key>
