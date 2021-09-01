@@ -89,6 +89,14 @@ typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=2
 
 
 #
+# Load local configs
+#
+if [[ -f ~/.zshrc.local ]]; then
+  source ~/.zshrc.local
+fi
+
+
+#
 # zsh-sensible
 #
 if (( $+commands[lsd] )); then
@@ -99,7 +107,6 @@ else
   alias l='ls -alh'
   alias ll='ls -lh'
 fi
-alias rm='rm -I'
 alias mv='mv -i'
 alias cp='cp -i'
 
@@ -181,12 +188,4 @@ fi
 # Golang
 if (( $+commands[go] )); then
   export GOPATH="${HOME}/.go"
-fi
-
-
-#
-# Load local configs
-#
-if [[ -f ~/.zshrc.local ]]; then
-  source ~/.zshrc.local
 fi

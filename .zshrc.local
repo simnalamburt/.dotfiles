@@ -8,6 +8,9 @@
 
 ## GNU Coreutils
 # alias ls='ls --color=tty'
+# alias rm='rm -I'
+## macOS
+# alias ls='ls -G'
 
 ## fzf (arch)
 #if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
