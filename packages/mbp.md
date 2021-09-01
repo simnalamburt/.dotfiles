@@ -10,7 +10,8 @@ MacBook Pro (13-inch, M1, 2020)
 - terraform vault packer
 
 ### `brew --cask`
-- firefox visual-studio-code iterm2 rectangle
+- firefox google-chrome
+- visual-studio-code iterm2 rectangle
 - slack
 - docker
 - karabiner-elements
