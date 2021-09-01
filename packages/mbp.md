@@ -1,4 +1,4 @@
-MacBook 12"
+MacBook Pro (13-inch, M1, 2020)
 ========
 
 ### [`brew`]
