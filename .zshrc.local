@@ -1,5 +1,6 @@
 ## PATH
 #export PATH="\
+#/opt/homebrew/bin:\
 #${HOME}/.cargo/bin:\
 #${GOPATH}/bin:\
 #$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
