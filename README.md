@@ -26,6 +26,8 @@ cp ~/.dotfiles/.vimrc.local ~
 # zsh
 git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
 ln -sf ~/.dotfiles/.zshrc ~
+cp ~/.dotfiles/.zshrc.local ~
+exec zsh
 p10k configure
 
 # ssh
