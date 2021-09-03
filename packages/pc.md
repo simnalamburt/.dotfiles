@@ -1,6 +1,6 @@
 PC
 ========
-Windows 10 Pro, version 2004
+Windows 10 Pro
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git sudo
@@ -14,7 +14,7 @@ Windows 10 Pro, version 2004
 - Netflix
 
 ### `winget`
-- firefox vscode
+- firefox vscode discord
 - wireguard
 - zoom
 - parsec
@@ -24,7 +24,6 @@ Windows 10 Pro, version 2004
 
 ### Manually Installed
 - KakaoTalk
-- Discord
 - Chrome Remote Desktop Host
 - MS Office
 - Steam, Uplay, 오리진

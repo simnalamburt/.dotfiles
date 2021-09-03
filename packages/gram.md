@@ -1,6 +1,6 @@
 LG Gram 2-in-1
 ========
-Windows 10, version 2004
+Windows 10
 
 ### [`scoop`](https://scoop.sh)
 - 7zip git sudo
