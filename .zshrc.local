@@ -3,6 +3,7 @@
 #/opt/homebrew/bin:\
 #${HOME}/.cargo/bin:\
 #${HOME}/.go/bin:\
+#$(brew --prefix ruby)/bin:\
 #$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
 #${PATH}"
 
@@ -12,19 +13,27 @@
 ## macOS
 # alias ls='ls -G'
 
+## neovim
+#alias vi=nvim
+#alias vim=nvim
+
 ## fzf (arch)
 #if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
 #  source /usr/share/fzf/key-bindings.zsh
 #fi
 
-## neovim
-#alias vi=nvim
-#alias vim=nvim
+## fzf (brew)
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## Fix home/end/delete
 #bindkey  "^[[H"   beginning-of-line
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
+
+## Homebrewed Ruby
+#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+#export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
 ## kubectl
 #if (( $+commands[kubectl] )); then
