@@ -14,11 +14,13 @@ Windows 10 Pro
 - Netflix
 
 ### `winget`
-- firefox vscode discord
-- wireguard
-- zoom
-- parsec
-- docker
+- firefox chrome
+- vscode docker
+- slack zoom
+- discord parsec wireguard
+
+&nbsp;
+
 - battle.net
 - signal
 

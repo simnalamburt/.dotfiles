@@ -20,11 +20,10 @@ Windows 10
 - iTunes
 
 ### `winget`
-- firefox vscode discord
-- wireguard
-- zoom
-- parsec
-- docker
+- firefox chrome
+- vscode docker
+- slack zoom
+- discord parsec wireguard
 
 ### Manually Installed
 - KakaoTalk
