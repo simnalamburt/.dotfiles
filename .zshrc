@@ -63,7 +63,7 @@ if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
   bindkey '^[[B' history-substring-search-down
 else
   # Default terminal
-  case "$TERM" in
+  case "${TERM}" in
     xterm-color|*-256color)
       PS1=$'\e[1;32m%n@%m\e[0m:\e[1;34m%~\e[0m%(!.#.$) ';;
     *)

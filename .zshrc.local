@@ -2,7 +2,7 @@
 #export PATH="\
 #/opt/homebrew/bin:\
 #${HOME}/.cargo/bin:\
-#${GOPATH}/bin:\
+#${HOME}/.go/bin:\
 #$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
 #${PATH}"
 
