@@ -15,7 +15,7 @@ Windows 10 Pro
 
 ### `winget`
 - firefox chrome
-- vscode docker
+- vscode
 - slack zoom
 - discord parsec wireguard
 
