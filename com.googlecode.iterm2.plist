@@ -750,10 +750,6 @@
 	<integer>4</integer>
 	<key>JobName</key>
 	<false/>
-	<key>LeftCommand</key>
-	<integer>1</integer>
-	<key>LeftOption</key>
-	<integer>2</integer>
 	<key>MaxVertically</key>
 	<false/>
 	<key>NeverWarnAboutShortLivedSessions_94659C9F-8B92-45CE-9AD2-A9EF463303C9</key>
@@ -1595,7 +1591,7 @@
 	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
 	<key>RightCommand</key>
-	<integer>8</integer>
+	<integer>1</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SavePasteHistory</key>
