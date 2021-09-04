@@ -28,10 +28,12 @@ macOS
     - ssh, vimrc, gitconfig, gitexclude 등의 설정들 심링크
     - zinit, vim-plug 등 설치 후 플러그인 다운로드
     - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
-    - Karabiner-Elements: Caps Lock → Left Command, Left Command → Right Command,
-      Right Command → Caps Lock
-    - Karabiner-Elements: [import this](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6InNpbW5hbGFtYnVydCIsInJ1bGVzIjpbeyJkZXNjcmlwdGlvbiI6ImNtZCt0YWIgdG8gY3RybCt0YWIiLCJtYW5pcHVsYXRvcnMiOlt7InR5cGUiOiJiYXNpYyIsImZyb20iOnsibW9kaWZpZXJzIjp7Im1hbmRhdG9yeSI6WyJjb21tYW5kIl19LCJrZXlfY29kZSI6InRhYiJ9LCJ0byI6W3sicmVwZWF0Ijp0cnVlLCJrZXlfY29kZSI6InRhYiIsIm1vZGlmaWVycyI6WyJyaWdodF9jb250cm9sIl19XX1dfV19)
     - (optional) Wireguard 프로필 생성
+8.  Karabiner-Elements
+    - Caps Lock → Left Command
+    - Left Command → Right Command,
+    - [capslock to IME](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6InNpbW5hbGFtYnVydCIsInJ1bGVzIjpbeyJkZXNjcmlwdGlvbiI6ImNhcHNsb2NrIHRvIElNRSIsIm1hbmlwdWxhdG9ycyI6W3sidHlwZSI6ImJhc2ljIiwiZnJvbSI6eyJrZXlfY29kZSI6ImNhcHNfbG9jayJ9LCJ0byI6W3sic2VsZWN0X2lucHV0X3NvdXJjZSI6eyJpbnB1dF9zb3VyY2VfaWQiOiJeY29tXFwuYXBwbGVcXC5pbnB1dG1ldGhvZFxcLktvcmVhblxcLjJTZXRLb3JlYW4kIn19XSwiY29uZGl0aW9ucyI6W3sidHlwZSI6ImlucHV0X3NvdXJjZV9pZiIsImlucHV0X3NvdXJjZXMiOlt7ImlucHV0X3NvdXJjZV9pZCI6Il5jb21cXC5hcHBsZVxcLmtleWxheW91dFxcLkFCQyQifV19XX0seyJ0eXBlIjoiYmFzaWMiLCJmcm9tIjp7ImtleV9jb2RlIjoiY2Fwc19sb2NrIn0sInRvIjpbeyJzZWxlY3RfaW5wdXRfc291cmNlIjp7ImlucHV0X3NvdXJjZV9pZCI6Il5jb21cXC5hcHBsZVxcLmtleWxheW91dFxcLkFCQyQifX1dLCJjb25kaXRpb25zIjpbeyJ0eXBlIjoiaW5wdXRfc291cmNlX2lmIiwiaW5wdXRfc291cmNlcyI6W3siaW5wdXRfc291cmNlX2lkIjoiXmNvbVxcLmFwcGxlXFwuaW5wdXRtZXRob2RcXC5Lb3JlYW5cXC4yU2V0S29yZWFuJCJ9XX1dfV19XX0=)
+    - [cmd + tab to ctrl + tab](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6InNpbW5hbGFtYnVydCIsInJ1bGVzIjpbeyJkZXNjcmlwdGlvbiI6ImNtZCt0YWIgdG8gY3RybCt0YWIiLCJtYW5pcHVsYXRvcnMiOlt7InR5cGUiOiJiYXNpYyIsImZyb20iOnsibW9kaWZpZXJzIjp7Im1hbmRhdG9yeSI6WyJjb21tYW5kIl19LCJrZXlfY29kZSI6InRhYiJ9LCJ0byI6W3sicmVwZWF0Ijp0cnVlLCJrZXlfY29kZSI6InRhYiIsIm1vZGlmaWVycyI6WyJyaWdodF9jb250cm9sIl19XX1dfV19)
 
 <br>
 
