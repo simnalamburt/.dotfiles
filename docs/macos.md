@@ -30,6 +30,7 @@ macOS
     - [git 커밋사인 설정](https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88)
     - Karabiner-Elements: Caps Lock → Left Command, Left Command → Right Command,
       Right Command → Caps Lock
+    - Karabiner-Elements: [import this](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6InNpbW5hbGFtYnVydCIsInJ1bGVzIjpbeyJkZXNjcmlwdGlvbiI6ImNtZCt0YWIgdG8gY3RybCt0YWIiLCJtYW5pcHVsYXRvcnMiOlt7InR5cGUiOiJiYXNpYyIsImZyb20iOnsibW9kaWZpZXJzIjp7Im1hbmRhdG9yeSI6WyJjb21tYW5kIl19LCJrZXlfY29kZSI6InRhYiJ9LCJ0byI6W3sicmVwZWF0Ijp0cnVlLCJrZXlfY29kZSI6InRhYiIsIm1vZGlmaWVycyI6WyJyaWdodF9jb250cm9sIl19XX1dfV19)
     - (optional) Wireguard 프로필 생성
 
 <br>
