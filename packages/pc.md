@@ -18,6 +18,7 @@ Windows 10 Pro
 - vscode
 - slack zoom
 - discord parsec wireguard
+- FortiClientVPN
 
 &nbsp;
 
