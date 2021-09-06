@@ -6,7 +6,7 @@ PC, WSL 2
 - base-devel openssh htop man zip unzip
 - neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq git-delta
 - python nodejs yarn go
-- terraform
+- terraform vault
 - podman
 
 ### `pacman` (AUR)
