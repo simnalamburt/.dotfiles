@@ -16,3 +16,7 @@ iMac
 - docker
 - karabiner-elements
 - forticlient zoom
+
+&nbsp;
+
+- chrome-remote-desktop-host
