@@ -16,7 +16,7 @@ MacBook Pro (13-inch, M1, 2020)
 - slack
 - docker
 - karabiner-elements
-- forticlient
+- forticlient zoom
 
 &nbsp;
 
