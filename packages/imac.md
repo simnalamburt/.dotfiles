@@ -2,7 +2,7 @@ iMac
 ========
 
 ### [`brew`]
-- neovim git xz md5sha1sum b2sum watchexec gnu-tar
+- neovim git xz md5sha1sum b2sum watchexec gnu-tar mtr
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
 - node yarn python go shellcheck
@@ -15,3 +15,4 @@ iMac
 - slack
 - docker
 - karabiner-elements
+- forticlient zoom
