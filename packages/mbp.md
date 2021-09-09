@@ -8,6 +8,7 @@ MacBook Pro (13-inch, M1, 2020)
 - node yarn python go shellcheck
 - awscli kubernetes-cli kubernetes-helm
 - terraform vault packer
+- mtr
 
 ### `brew --cask`
 - firefox google-chrome
@@ -15,6 +16,7 @@ MacBook Pro (13-inch, M1, 2020)
 - slack
 - docker
 - karabiner-elements
+- forticlient
 
 &nbsp;
 
