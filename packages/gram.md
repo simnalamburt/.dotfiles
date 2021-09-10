@@ -24,6 +24,7 @@ Windows 10
 - vscode
 - slack zoom
 - discord parsec wireguard
+- FortiClientVPN
 
 ### Manually Installed
 - KakaoTalk
