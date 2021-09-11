@@ -16,9 +16,9 @@ Windows 10 Pro
 ### `winget`
 - firefox chrome
 - vscode
-- slack zoom
+- vlc
 - discord parsec wireguard
-- FortiClientVPN
+- slack zoom FortiClientVPN
 
 &nbsp;
 
