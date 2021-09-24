@@ -40,6 +40,14 @@
 #  source <(kubectl completion zsh)
 #  alias k=kubectl
 #fi
+## kubectx
+#if (( $+commands[kubectx] )); then
+#  alias ktx=kubectx
+#fi
+## kubens
+#if (( $+commands[kubens] )); then
+#  alias kns=kubens
+#fi
 
 ## Vault autocompletion
 #if (( $+commands[vault] )); then
