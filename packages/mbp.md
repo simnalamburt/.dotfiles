@@ -8,12 +8,13 @@ MacBook Pro (13-inch, M1, 2020)
 - node yarn python go shellcheck
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
+- mysql
 
 ### `brew --cask`
 - firefox google-chrome
 - visual-studio-code iterm2 rectangle
 - slack
-- docker
+- docker lens
 - karabiner-elements
 - forticlient openvpn-connect zoom
 
