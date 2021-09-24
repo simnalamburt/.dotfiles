@@ -6,13 +6,14 @@ iMac
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
 - node yarn python go shellcheck
-- awscli kubernetes-cli kubernetes-helm
+- awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
+- mysql
 
 ### `brew --cask`
 - firefox google-chrome
 - visual-studio-code iterm2 rectangle
 - slack
-- docker
+- docker lens
 - karabiner-elements
-- forticlient zoom
+- forticlient openvpn-connect zoom
