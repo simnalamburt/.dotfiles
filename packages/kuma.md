@@ -21,7 +21,7 @@ Desktop Environment:
 
 Applications:
 
-- swayidle swaylock alacritty wl-clipboard i3status-rust grim wf-recorder slurp mako
+- sway swayidle swaylock alacritty wl-clipboard i3status-rust grim wf-recorder slurp mako
 - firefox
 
 ### `pacman` (AUR)
@@ -29,7 +29,6 @@ Applications:
 - git-delta-bin
 - sirula-git swappy
 - kime-bin
-- sway-im
 
 ### `pacman` (Manual)
 - [libsndfile-1.0.31-1](https://github.com/simnalamburt/PKGBUILD/tree/main/libsndfile)
