@@ -22,6 +22,7 @@ Desktop Environment:
 Applications:
 
 - sway swayidle swaylock alacritty wl-clipboard i3status-rust grim wf-recorder slurp mako
+- pavucontrol iwgtk
 - firefox
 
 ### `pacman` (AUR)
