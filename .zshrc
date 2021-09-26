@@ -88,6 +88,22 @@ typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=242
 typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=226
 
 
+# EDITOR이나 VISUAL 환경변수 안에 'vi' 라는 글자가 들어있으면 자동으로
+# emacs-like 키바인딩들이 해제되어서, ^A ^E 등을 모조리 쓸 수 없어진다.
+# 무슨짓이냐...
+#
+# References:
+#   https://stackoverflow.com/a/43087047
+#   https://github.com/zsh-users/zsh/blob/96a79938010073d14bd9db31924f7646968d2f4a/Src/Zle/zle_keymap.c#L1437-L1439
+#   https://github.com/yous/dotfiles/commit/c29bf215f5a8edc6123819944e1bf3336a4a6648
+if (( $+commands[vim] )); then
+  export EDITOR=vim
+elif (( $+commands[nvim] )); then
+  export EDITOR=nvim
+fi
+bindkey -e
+
+
 #
 # Load local configs
 #
@@ -161,22 +177,6 @@ fi
 # zshrc
 #
 export DOCKER_BUILDKIT=1
-
-# EDITOR이나 VISUAL 환경변수 안에 'vi' 라는 글자가 들어있으면 자동으로
-# emacs-like 키바인딩들이 해제되어서, ^A ^E 등을 모조리 쓸 수 없어진다.
-# 무슨짓이냐...
-#
-# References:
-#   https://stackoverflow.com/a/43087047
-#   https://github.com/zsh-users/zsh/blob/96a79938010073d14bd9db31924f7646968d2f4a/Src/Zle/zle_keymap.c#L1437-L1439
-#   https://github.com/yous/dotfiles/commit/c29bf215f5a8edc6123819944e1bf3336a4a6648
-if (( $+commands[vim] )); then
-  export EDITOR=vim
-  bindkey -e
-elif (( $+commands[nvim] )); then
-  export EDITOR=nvim
-  bindkey -e
-fi
 
 # Terraform
 if (( $+commands[terraform] )); then
