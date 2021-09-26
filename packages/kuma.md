@@ -22,12 +22,12 @@ Desktop Environment:
 Applications:
 
 - sway swayidle swaylock alacritty wl-clipboard i3status-rust grim wf-recorder slurp mako
-- pavucontrol iwgtk
+- pavucontrol iwgtk swappy
 - firefox
 
 ### `pacman` (AUR)
 - paru-bin
-- sirula-git swappy
+- sirula-git
 - kime-bin
 
 ### `pacman` (Manual)
