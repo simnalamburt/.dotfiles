@@ -30,7 +30,6 @@ Applications:
 - kime-bin
 
 ### `pacman` (Manual)
-- [libsndfile-1.0.31-1](https://github.com/simnalamburt/PKGBUILD/tree/main/libsndfile)
 - [nouveau-fw-340.108-1](https://github.com/simnalamburt/PKGBUILD/tree/main/nouveau-fw)
 
 ### `rustup`
