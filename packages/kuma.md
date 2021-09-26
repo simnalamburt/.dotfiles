@@ -18,6 +18,7 @@ Desktop Environment:
 - mesa libva-intel-driver libva-mesa-driver
 - arc-gtk-theme qt5-wayland
 - purseaudio brightnessctl
+- libnotify
 
 Applications:
 

@@ -245,5 +245,7 @@ for_window [title="^Firefox — Sharing Indicator$" app_id="^firefox$"] floating
 
 # Execute kime-wayland
 exec systemd-cat -t kime kime-wayland
+# Execute mako
+exec systemd-cat -t mako mako
 
 include /etc/sway/config.d/*
