@@ -8,7 +8,7 @@ CLI:
 - base linux linux-firmware grub
 - sudo iwd
 - base-devel openssh htop man zip unzip
-- neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq
+- neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq git-delta
 - python nodejs yarn go
 - terraform
 
@@ -26,7 +26,6 @@ Applications:
 
 ### `pacman` (AUR)
 - paru-bin
-- git-delta-bin
 - sirula-git swappy
 - kime-bin
 
