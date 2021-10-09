@@ -40,3 +40,20 @@ Applications:
 ### `/usr/local/bin`
 - aws
 - aws-mfa
+
+&nbsp;
+
+TODOs
+--------
+하드웨어가 너무 낡아서인지, 블루투스 드라이버랑 CPU 온도 모니터가 똑바로
+동작하지 않는다. 리눅스 커널이 지원하지 않는 장치를 쓰고있는것인지도 모른다.
+
+- wf-recorder
+  - https://wiki.archlinux.org/index.php/PipeWire#WebRTC_screen_sharing
+  - https://wiki.archlinux.org/index.php/Screen_capture#Wayland
+  - https://mozilla.github.io/webrtc-landing/gum_test.html
+- Wine + Kakaotalk
+- Steam Proton
+- [greetd](https://git.sr.ht/~kennylevinsen/greetd)
+- Bluetooth
+- CPU temp monitor
