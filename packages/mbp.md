@@ -9,6 +9,7 @@ MacBook Pro (13-inch, M1, 2020)
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
 - mysql
+- openfortivpn
 
 ### `brew --cask`
 - firefox google-chrome
@@ -16,7 +17,7 @@ MacBook Pro (13-inch, M1, 2020)
 - slack
 - docker lens
 - karabiner-elements
-- forticlient openvpn-connect zoom
+- openvpn-connect zoom
 
 &nbsp;
 
