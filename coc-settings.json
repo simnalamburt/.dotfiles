@@ -1,4 +1,7 @@
 {
   "git.addGBlameToVirtualText": true,
-  "rust-analyzer.updates.prompt": false
+  "rust-analyzer.updates.prompt": false,
+  "yaml.schemas":{"kubernetes":"/*"},
+  "coc.source.around.enable": false,
+  "coc.source.buffer.enable": false
 }
