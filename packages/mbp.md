@@ -27,3 +27,7 @@ MacBook Pro (13-inch, M1, 2020)
 - WireGuard
 - Microsoft To Do
 - 카카오톡
+
+### `/usr/local/bin`
+- vpn
+- totp
