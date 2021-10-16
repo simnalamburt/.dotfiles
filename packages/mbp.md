@@ -10,6 +10,7 @@ MacBook Pro (13-inch, M1, 2020)
 - terraform vault packer
 - mysql
 - openfortivpn
+- simnalamburt/x/totp
 
 ### `brew --cask`
 - firefox google-chrome
@@ -30,4 +31,3 @@ MacBook Pro (13-inch, M1, 2020)
 
 ### `/usr/local/bin`
 - vpn
-- totp
