@@ -9,6 +9,8 @@ iMac
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
 - mysql
+- openfortivpn
+- simnalamburt/x/totp
 
 ### `brew --cask`
 - firefox google-chrome
@@ -16,4 +18,7 @@ iMac
 - slack
 - docker lens
 - karabiner-elements
-- forticlient openvpn-connect zoom
+- openvpn-connect zoom forticlient-vpn
+
+### `/usr/local/bin`
+- vpn
