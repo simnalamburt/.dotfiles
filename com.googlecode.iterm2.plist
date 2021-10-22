@@ -16,8 +16,6 @@
 	<true/>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
-	<key>BootstrapDaemon</key>
-	<false/>
 	<key>CheckTestRelease</key>
 	<false/>
 	<key>ClosingHotkeySwitchesSpaces</key>
