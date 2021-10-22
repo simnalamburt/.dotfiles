@@ -9,8 +9,7 @@ MacBook Pro (13-inch, M1, 2020)
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
 - mysql
-- openfortivpn
-- simnalamburt/x/totp
+- saml2aws openfortivpn simnalamburt/x/totp
 
 ### `brew --cask`
 - firefox google-chrome
