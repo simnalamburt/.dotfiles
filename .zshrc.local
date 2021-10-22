@@ -49,10 +49,11 @@
 #  alias kns=kubens
 #fi
 
-## Vault autocompletion
+## Vault
 #if (( $+commands[vault] )); then
 #  autoload -U +X bashcompinit && bashcompinit
 #  autoload -Uz compinit && compinit
+#  export VAULT_ADDR=vault.example.com
 #  complete -o nospace -C /usr/local/bin/vault vault
 #fi
 
