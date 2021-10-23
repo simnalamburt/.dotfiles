@@ -8,22 +8,17 @@ Windows 10 Pro
 - archwsl
 - starship busybox neovim
 
+### `winget`
+- firefox chrome
+- vscode
+- discord parsec wireguard
+- slack FortiClientVPN
+- vlc
+
 ### Microsoft Store
 - Windows Terminal
 - Microsoft To Do
 - Netflix
-
-### `winget`
-- firefox chrome
-- vscode
-- vlc
-- discord parsec wireguard
-- slack zoom FortiClientVPN
-
-&nbsp;
-
-- battle.net
-- signal
 
 ### Manually Installed
 - KakaoTalk

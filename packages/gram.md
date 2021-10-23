@@ -8,6 +8,12 @@ Windows 10
 - archwsl
 - starship busybox neovim
 
+### `winget`
+- firefox chrome
+- vscode
+- discord parsec wireguard
+- slack FortiClientVPN
+
 ### Microsoft Store
 - Windows Terminal
 - Microsoft To Do
@@ -17,16 +23,7 @@ Windows 10
 
 - Word 2016, Excel 2016, PowerPoint 2016
 - [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
-- iTunes
-
-### `winget`
-- firefox chrome
-- vscode
-- slack zoom
-- discord parsec wireguard
-- FortiClientVPN
 
 ### Manually Installed
 - KakaoTalk
-- 학교 와이파이 플러그인 (BISHOP_SE_64_Plugin.exe)
 - .NET 3.5 SP1 runtime, Hancom Office 2020 viewer
