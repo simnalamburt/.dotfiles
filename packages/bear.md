@@ -2,10 +2,8 @@ bear
 ========
 Ubuntu 20.04 LTS, AArch64
 
-### Removed `apt`
-- snapd screen bzip2 byobu
-
 ### `apt`
+- (removed) snapd screen bzip2 byobu
 - wireguard-tools
 
 PPA:

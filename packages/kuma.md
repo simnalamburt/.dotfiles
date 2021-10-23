@@ -1,6 +1,6 @@
 kuma
 ========
-[Arch Linux](https://archlinux.org/)
+Arch Linux
 
 ### `pacman`
 CLI:

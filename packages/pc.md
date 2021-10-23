@@ -2,7 +2,7 @@ PC
 ========
 Windows 10 Pro
 
-### [`scoop`](https://scoop.sh)
+### `scoop`
 - 7zip git sudo
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - archwsl
@@ -28,4 +28,3 @@ Windows 10 Pro
 - Windows Sandbox
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
-<!-- Epic Games -->

@@ -2,7 +2,7 @@ LG Gram 2-in-1
 ========
 Windows 10
 
-### [`scoop`](https://scoop.sh)
+### `scoop`
 - 7zip git sudo
 - nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
 - archwsl

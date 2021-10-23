@@ -1,7 +1,7 @@
 MacBook Pro (13-inch, M1, 2020)
 ========
 
-### [`brew`]
+### `brew`
 - neovim git xz md5sha1sum b2sum watchexec gnu-tar mtr
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta

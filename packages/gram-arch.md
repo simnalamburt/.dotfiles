@@ -1,6 +1,6 @@
 LG Gram 2-in-1, WSL 2
 ========
-[Arch Linux](https://github.com/yuk7/ArchWSL)
+[ArchWSL](https://github.com/yuk7/ArchWSL)
 
 ### `pacman`
 - base-devel openssh htop man zip unzip
@@ -17,5 +17,5 @@ LG Gram 2-in-1, WSL 2
 - stable: rust-src
 
 ### `/usr/local/bin`
-- aws ([v2](https://github.com/simnalamburt/awscliv2.appimage/releases))
+- aws ([awscliv2.appimage](https://github.com/simnalamburt/awscliv2.appimage/releases))
 - [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
