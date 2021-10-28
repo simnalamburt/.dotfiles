@@ -47,6 +47,8 @@
 	fetchJobs = 0
 [credential "https://github.com"]
 	username = simnalamburt
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [credential "https://git.upnl.org"]
 	username = simnalamburt
 [alias]
