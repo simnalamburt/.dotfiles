@@ -19,10 +19,7 @@ fi
 #
 autoload -U is-at-least
 if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
-
   source ~/.zinit/bin/zinit.zsh
-  autoload -Uz _zinit
-  (( ${+_comps} )) && _comps[zinit]=_zinit
 
   zplugin ice depth=1
   zplugin light romkatv/powerlevel10k
@@ -52,7 +49,7 @@ if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
   zinit light simnalamburt/ctrlf
   zinit light zdharma/fast-syntax-highlighting
   zinit light zsh-users/zsh-history-substring-search
-  zinit light simnalamburt/zsh-completions
+  zinit light zsh-users/zsh-completions
 
   autoload -Uz compinit bashcompinit
   compinit
