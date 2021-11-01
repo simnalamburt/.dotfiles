@@ -58,9 +58,24 @@
 #fi
 
 ## AWSCLIv2
-#export AWS_DEFAULT_PROFILE=blabla
-#export AWS_DEFAULT_REGION=blabla
 #complete -C aws_completer aws
+#if [[ -f ~/.aws/current_profile ]]; then
+#  read -r AWS_PROFILE < ~/.aws/current_profile
+#  export AWS_PROFILE
+#fi
+#awsctx() {
+#  # shellcheck disable=SC2016
+#  AWS_PROFILE=$(FZF_DEFAULT_COMMAND='aws configure list-profiles | perl -pe "s/^(${AWS_PROFILE})$/\x1b[33m\1\x1b[0m/g"' fzf --ansi) &&\
+#    mkdir -p ~/.aws &&\
+#    cat <<< "${AWS_PROFILE}" > ~/.aws/current_profile &&\
+#    export AWS_PROFILE
+#}
+#awsregion() {
+#  # shellcheck disable=SC2016
+#  FZF_DEFAULT_COMMAND='aws ec2 describe-regions --all-regions --query "Regions[].{Name:RegionName}" --output text | perl -pe "s/^(${REGION})$/\x1b[33m\1\x1b[0m/g"' \
+#  REGION=$(aws configure get region) \
+#  fzf --ansi | xargs aws configure set region
+#}
 
 ## Cloudflare
 #export CLOUDFLARE_EMAIL=simnalamburt@gmail.com
