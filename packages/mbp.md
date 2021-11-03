@@ -30,3 +30,4 @@ MacBook Pro (13-inch, M1, 2020)
 
 ### `/usr/local/bin`
 - vpn
+- [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
