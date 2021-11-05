@@ -8,7 +8,7 @@ MacBook Pro (13-inch, M1, 2020)
 - node yarn python go shellcheck
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
-- redis mysql istioctl grpc
+- redis mysql istioctl grpc grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp
 
 ### `brew --cask`
