@@ -1,6 +1,7 @@
 ## PATH
 #export PATH="\
 #/opt/homebrew/bin:\
+#/opt/homebrew/sbin:\
 #${HOME}/.cargo/bin:\
 #${HOME}/.go/bin:\
 #$(brew --prefix ruby)/bin:\
@@ -16,6 +17,7 @@
 ## neovim
 #alias vi=nvim
 #alias vim=nvim
+#export EDITOR=nvim
 
 ## fzf (arch)
 #if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
