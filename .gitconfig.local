@@ -8,6 +8,10 @@
 [core]
 	pager = BAT_PAGER='less -+XF -SQc' delta
 
+# Go private modules
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
 ## diff-highlight.perl (Debian)
 #[pager]
 #	log  = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight.perl | less -+XF -SQc
