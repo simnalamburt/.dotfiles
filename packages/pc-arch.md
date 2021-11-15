@@ -13,7 +13,7 @@ PC, WSL 2
 - paru-bin
 - xxd-standalone
 
-### `rustup` & `cargo install`
+### `rustup`
 - stable: rust-src
 
 ### `/usr/local/bin`

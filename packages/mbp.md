@@ -23,6 +23,9 @@ MacBook Pro (13-inch, M1, 2020)
 
 - discord parsec
 
+### `rustup`
+- stable
+
 ### App Store
 - WireGuard
 - Microsoft To Do

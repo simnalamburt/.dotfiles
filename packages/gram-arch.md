@@ -13,7 +13,7 @@ LG Gram 2-in-1, WSL 2
 - paru-bin
 - xxd-standalone
 
-### `rustup` & `cargo install`
+### `rustup`
 - stable: rust-src
 
 ### `/usr/local/bin`
