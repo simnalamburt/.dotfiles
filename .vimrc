@@ -211,7 +211,7 @@ try
     if executable('go')
       Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
     endif
-    "Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
     Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
