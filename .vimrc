@@ -37,11 +37,6 @@ set cindent
 set autoindent
 set smartindent
 
-" Tab
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-
 " Searching
 set incsearch
 set ignorecase
@@ -310,6 +305,10 @@ try
       \ 'options': '+m',
       \ 'down': 10 })
     endfunction
+  else
+    set softtabstop=2
+    set shiftwidth=2
+    set expandtab
   endif
 
   " nerdtree
