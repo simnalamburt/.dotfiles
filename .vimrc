@@ -229,7 +229,7 @@ try
   Plug 'ayu-theme/ayu-vim'
 
   " Syntax
-  let g:polyglot_disabled = ['v'] | Plug 'sheerun/vim-polyglot'
+  let g:polyglot_disabled = ['sensible', 'v'] | Plug 'sheerun/vim-polyglot'
   Plug 'hashivim/vim-terraform'
 
   " Format
