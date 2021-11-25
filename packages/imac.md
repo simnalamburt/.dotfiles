@@ -2,15 +2,14 @@ iMac
 ========
 
 ### `brew`
-- neovim git xz md5sha1sum b2sum watchexec gnu-tar mtr
+- neovim<sub>`--HEAD`</sub> git xz md5sha1sum b2sum watchexec gnu-tar mtr
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
 - node yarn python go shellcheck
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
-- mysql
-- openfortivpn
-- simnalamburt/x/totp
+- redis mysql istioctl grpc grpcurl
+- saml2aws openfortivpn simnalamburt/x/totp
 
 ### `brew --cask`
 - firefox google-chrome
@@ -18,7 +17,8 @@ iMac
 - slack
 - docker lens
 - karabiner-elements
-- openvpn-connect zoom forticlient-vpn
+- openvpn-connect forticlient-vpn zoom
 
 ### `/usr/local/bin`
 - vpn
+- [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
