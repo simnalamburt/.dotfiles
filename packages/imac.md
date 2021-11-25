@@ -20,6 +20,9 @@ iMac
 - karabiner-elements
 - openvpn-connect forticlient-vpn zoom
 
+### `rustup`
+- stable
+
 ### `/usr/local/bin`
 - vpn
 - [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
