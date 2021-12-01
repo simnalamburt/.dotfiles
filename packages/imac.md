@@ -2,8 +2,8 @@ iMac
 ========
 
 ### `brew`
-- neovim<sub>`--HEAD`</sub> git xz md5sha1sum b2sum watch watchexec gnu-tar parallel
-- netcat mtr
+- neovim git xz md5sha1sum b2sum watch watchexec gnu-tar parallel
+- netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
 - node yarn python go shellcheck
