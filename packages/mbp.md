@@ -6,7 +6,7 @@ MacBook Pro (13-inch, M1, 2020)
 - netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
-- node yarn python go shellcheck haskell-stack
+- node yarn python go shellcheck haskell-stack ghc
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
 - redis mysql istioctl grpc grpcurl
