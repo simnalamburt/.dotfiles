@@ -23,6 +23,9 @@ iMac
 ### `rustup`
 - stable
 
+### App Store
+- WireGuard
+
 ### `/usr/local/bin`
 - vpn
 - [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
