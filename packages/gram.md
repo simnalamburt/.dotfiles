@@ -1,6 +1,6 @@
 LG Gram 2-in-1
 ========
-Windows 10
+Windows 11
 
 ### `scoop`
 - 7zip git sudo
@@ -21,7 +21,6 @@ Windows 10
 &nbsp;
 
 - Word 2016, Excel 2016, PowerPoint 2016
-- [LG OSD3](https://www.microsoft.com/store/productId/9MT4DPF2JW9Z)
 
 ### Manually Installed
 - KakaoTalk
