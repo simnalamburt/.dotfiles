@@ -9,10 +9,9 @@ Windows 10
 - starship busybox neovim
 
 ### `winget`
-- firefox chrome
+- firefox
 - vscode
 - discord parsec wireguard
-- slack FortiClientVPN
 
 ### Microsoft Store
 - Windows Terminal
@@ -26,4 +25,3 @@ Windows 10
 
 ### Manually Installed
 - KakaoTalk
-- .NET 3.5 SP1 runtime, Hancom Office 2020 viewer
