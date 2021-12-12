@@ -3,5 +3,13 @@
   "rust-analyzer.updates.prompt": false,
   "yaml.schemas":{"kubernetes":"/*"},
   "coc.source.around.enable": false,
-  "coc.source.buffer.enable": false
+  "coc.source.buffer.enable": false,
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+      "filetypes": ["haskell", "lhaskell"]
+    }
+  }
 }
