@@ -18,7 +18,7 @@ iMac
 - slack
 - docker lens
 - karabiner-elements
-- openvpn-connect forticlient-vpn zoom
+- openvpn-connect zoom
 
 ### `rustup`
 - stable

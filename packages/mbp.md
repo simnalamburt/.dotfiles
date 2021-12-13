@@ -18,7 +18,7 @@ MacBook Pro (13-inch, M1, 2020)
 - slack
 - docker lens
 - karabiner-elements
-- openvpn-connect forticlient-vpn zoom
+- openvpn-connect zoom
 
 &nbsp;
 
