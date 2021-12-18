@@ -9,11 +9,14 @@ Windows 10 Pro
 - starship busybox neovim
 
 ### `winget`
-- firefox chrome
+- firefox
 - vscode
 - discord parsec wireguard
-- slack FortiClientVPN
-- vlc
+
+&nbsp;
+
+- chrome slack FortiClientVPN
+- docker
 
 ### Microsoft Store
 - Windows Terminal
@@ -22,6 +25,9 @@ Windows 10 Pro
 
 ### Manually Installed
 - KakaoTalk
+
+&nbsp;
+
 - Chrome Remote Desktop Host
 - MS Office
 - Steam, Uplay, 오리진
