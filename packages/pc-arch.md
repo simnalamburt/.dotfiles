@@ -4,7 +4,7 @@ PC, WSL 2
 
 ### `pacman`
 - base-devel openssh htop man zip unzip
-- git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq git-delta
+- neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq git-delta
 - gnu-netcat
 - python nodejs yarn go
 - terraform vault
@@ -13,7 +13,6 @@ PC, WSL 2
 ### `pacman` (AUR)
 - paru-bin
 - xxd-standalone
-- neovim-nightly-bin
 
 ### `rustup`
 - stable: rust-src
