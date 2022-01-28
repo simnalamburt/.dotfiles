@@ -9,6 +9,7 @@ PC, WSL 2
 - python nodejs yarn go
 - terraform vault
 - podman
+- git-filter-repo
 
 ### `pacman` (AUR)
 - paru-bin
