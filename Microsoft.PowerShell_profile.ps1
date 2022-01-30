@@ -1,14 +1,3 @@
-# starship
-Invoke-Expression (&starship init powershell)
-
-# neovim
-function vim { nvim @Args }
-function vi { nvim @Args }
-
-# busybox
-function l { busybox ls -al @Args }
-function ll { busybox ls @Args }
-
 # https://github.com/simnalamburt/cgitc/issues/48
 # Abbreviations sorted in alphabetically
 function g                    { git @Args }
