@@ -3,10 +3,7 @@ PC
 Windows 10 Pro
 
 ### `scoop`
-- 7zip git sudo
-- nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
-- archwsl
-- starship busybox neovim
+- 7zip git nerd-fonts/CascadiaCode-NF extras/archwsl
 
 ### `winget`
 - firefox

@@ -3,10 +3,8 @@ LG Gram 2-in-1
 Windows 11
 
 ### `scoop`
-- 7zip git sudo
-- nerd-fonts/CascadiaCode-NF<sup>sudo</sup>
-- archwsl
-- starship busybox neovim
+- 7zip git nerd-fonts/CascadiaCode-NF extras/archwsl
+- sudo starship busybox neovim
 
 ### `winget`
 - firefox
