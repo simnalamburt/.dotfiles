@@ -9,12 +9,18 @@ Ubuntu 20.04 LTS, AArch64
 PPA:
 
 - docker-ce docker-ce-cli containerd.io (https://docs.docker.com/engine/install/ubuntu/)
+- cloudflared (https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation)
 
 &nbsp;
 
 docs
 --------
 ```bash
+# systemd-resolved was replaced with cloudflared-proxy-dns
+# See /etc/systemd/system/cloudflared-proxy-dns.service
+sudo systemctl disable --now systemd-resolved
+sudo systemctl enable --now cloudflared-proxy-dns
+
 # Reload wireguard configs after updating /etc/wireguard/wg0.conf
 sudo wg-quick strip /etc/wireguard/wg0.conf | sudo wg syncconf wg0 /dev/stdin
 
