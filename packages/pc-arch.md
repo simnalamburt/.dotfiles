@@ -15,6 +15,7 @@ PC, WSL 2
 ### `pacman` (AUR)
 - paru-bin
 - xxd-standalone
+- stack-static
 
 ### `rustup`
 - stable: rust-src
