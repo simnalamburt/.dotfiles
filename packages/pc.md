@@ -16,7 +16,7 @@ Windows 10 Pro
 - docker
 
 ### Microsoft Store
-- Windows Terminal
+- Windows Terminal (Preview)
 - Microsoft To Do
 - Netflix
 
