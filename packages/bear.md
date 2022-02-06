@@ -38,4 +38,9 @@ docker run -d --restart=always \
 
 # fakeidentd
 docker run -d --restart=always -p 113:113 ghcr.io/simnalamburt/fakeidentd:1.0.0
+
+# personal-op-bot
+docker run -d --restart=always \
+  --mount type=bind,source=/home/ubuntu/personal-op-bot,target=/a \
+  ghcr.io/simnalamburt/personal-op-bot:1.0.1
 ```
