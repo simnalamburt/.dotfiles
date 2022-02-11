@@ -10,6 +10,7 @@
     ```
     mousewheel.with_alt.action;1
     mousewheel.with_control.action;1
+    browser.fullscreen.exit_on_escape
     ```
 
 3.  테마 수정
