@@ -6,11 +6,15 @@ MacBook Pro (13-inch, M1, 2020)
 - netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
-- node yarn python go shellcheck ghc haskell-stack haskell-language-server
+- node yarn python go shellcheck
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
 - redis mysql istioctl grpc grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp
+
+&nbsp;
+
+- ghc cabal-install haskell-stack haskell-language-server
 
 ### `brew --cask`
 - firefox google-chrome
