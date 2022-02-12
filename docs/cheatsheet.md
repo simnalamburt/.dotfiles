@@ -307,9 +307,6 @@ Go `/etc/update-motd.d/`
 ### Internet configuration
 https://neoguru.tistory.com/56
 
-### Mibbit
-https://widget.mibbit.com/?server=irc.uriirc.org:+16664&channel=%23channel_name
-
 ### 메일서버 세팅하기
 1.  MX 레코드 설정
 2.  SPF 레코드 설정
