@@ -14,7 +14,7 @@ MacBook Pro (13-inch, M1, 2020)
 
 &nbsp;
 
-- ghc cabal-install haskell-stack haskell-language-server
+- llvm@12 simnalamburt/x/haskell-stack haskell-language-server
 
 ### `brew --cask`
 - firefox google-chrome
