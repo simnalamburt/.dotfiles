@@ -14,7 +14,7 @@ MacBook Pro (13-inch, M1, 2020)
 
 &nbsp;
 
-- simnalamburt/x/haskell-stack haskell-language-server
+- ghc cabal-install simnalamburt/x/haskell-stack haskell-language-server
 
 ### `brew --cask`
 - firefox google-chrome
