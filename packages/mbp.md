@@ -2,7 +2,7 @@ MacBook Pro (13-inch, M1, 2020)
 ========
 
 ### `brew`
-- neovim git xz md5sha1sum b2sum watch watchexec gnu-tar parallel
+- neovim git xz md5sha1sum watch watchexec gnu-tar parallel
 - netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
