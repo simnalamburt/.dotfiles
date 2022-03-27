@@ -10,6 +10,7 @@ Windows 11
 - firefox
 - vscode
 - discord parsec wireguard
+- videolan.vlc
 
 ### Microsoft Store
 - Windows Terminal
@@ -22,3 +23,4 @@ Windows 11
 
 ### Manually Installed
 - KakaoTalk
+- Raspberry Pi Imager
