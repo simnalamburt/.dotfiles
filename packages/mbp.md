@@ -39,3 +39,6 @@ MacBook Pro (13-inch, M1, 2020)
 ### `/usr/local/bin`
 - vpn
 - [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
+
+### Manually installed
+- 구름 입력기 1.12.1
