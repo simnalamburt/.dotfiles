@@ -26,7 +26,7 @@ MacBook Pro (13-inch, M1, 2020)
 
 &nbsp;
 
-- discord parsec
+- discord parsec steam
 
 ### `rustup`
 - stable
