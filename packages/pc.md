@@ -33,3 +33,4 @@ Windows 10 Pro
 - Radeon Adrenalin 2020
 - OuterWildsModManager
 - Zoom
+- Mabinogi
