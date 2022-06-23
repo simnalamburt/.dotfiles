@@ -63,14 +63,6 @@
 	#   git pr other
 	pr = "!_() { git config fetch.prune no && git fetch ${1:-origin} +refs/pull/*/head:refs/remotes/${1:-origin}/pr/*; }; _"
 
-	# git b <filename>
-	#
-	# Beautiful `git blame`
-	#
-	# Usage:
-	#   git b README.md
-	b = "!_() { git blame -sfMCCC $GIT_PREFIX$1 | perl -pe 's|^(.{8}) .+? ([0-9]+?)\\) |\\x1b[38;5;243m$1 \\x1b[38;5;216;48;5;234m @{[sprintf(\"%5d\",$2)]} \\x1b[0m |g' | $(git config core.pager) -R; }; _"
-
 	# git g
 	#
 	# Git graph with signature info
