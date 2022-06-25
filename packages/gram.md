@@ -4,18 +4,13 @@ Windows 11
 
 ### `scoop`
 - 7zip git nerd-fonts/CascadiaCode-NF extras/archwsl
-- sudo starship busybox neovim
 
 ### `winget`
 - firefox
-- vscode
-- discord parsec wireguard
-- videolan.vlc
+- wireguard
 
 ### Microsoft Store
 - Windows Terminal
-- Microsoft To Do
-- Netflix
 
 &nbsp;
 
@@ -23,4 +18,4 @@ Windows 11
 
 ### Manually Installed
 - KakaoTalk
-- Raspberry Pi Imager
+- Mabinogi
