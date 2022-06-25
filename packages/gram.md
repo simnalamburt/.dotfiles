@@ -18,4 +18,4 @@ Windows 11
 
 ### Manually Installed
 - KakaoTalk
-- Mabinogi
+- Nexon Game Manager, Mabinogi
