@@ -1,7 +1,9 @@
 {
   "git.addGBlameToVirtualText": true,
   "rust-analyzer.updates.prompt": false,
-  "yaml.schemas":{"kubernetes":"/*"},
+  "yaml.schemas":{
+    "https://gist.githubusercontent.com/simnalamburt/2c3263b783ed3f4471bda9ca901bb69f/raw/9c2cd17d6f4683cf80b6360a2d53b33fd49556d7/allow-all-json-schema.json": "/*"
+  },
   "coc.source.around.enable": false,
   "coc.source.buffer.enable": false,
   "languageserver": {
