@@ -7,7 +7,7 @@ iMac
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
 - node yarn pnpm python go shellcheck
-- awscli kubernetes-cli kubernetes-helm kubectx
+- awscli kubernetes-cli kubernetes-helm kubectx k9s
 - terraform vault packer
 - redis mysql istioctl grpc grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp
