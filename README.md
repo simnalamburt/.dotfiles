@@ -44,13 +44,7 @@ cp ~/.dotfiles/.gitconfig.local ~
 # gpg
 mkdir -p ~/.gnupg
 cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
-# Trust my key
-gpg --edit-key 0F85F46EE242057F
-# gpg> uid 1
-# gpg> trust
-# Your decision? 5
-# Do you really want to set this key to ultimate trust? (y/N) y
-# gpg> save
+# See https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88 for how to set up a PGP key pair.
 
 # tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
