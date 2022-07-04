@@ -2,7 +2,7 @@
 [user]
 	name = Hyeon Kim
 	email = simnalamburt@gmail.com
-	signingkey = 0F85F46EE242057F
+	signingkey = 13E12F01AD9C017AA999A7FE0F85F46EE242057F
 [core]
 	editor = vim
 	pager = less -+XF -SQc
