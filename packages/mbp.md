@@ -17,24 +17,16 @@ MacBook Pro (13-inch, M1, 2020)
 - ghc cabal-install haskell-stack haskell-language-server
 
 ### `brew --cask`
-- firefox google-chrome
-- visual-studio-code iterm2 rectangle
-- slack
+- google-chrome
+- iterm2 rectangle
 - docker lens
 - karabiner-elements
 - zoom
-
-&nbsp;
-
-- discord parsec steam
 
 ### `rustup`
 - stable
 
 ### App Store
-- WireGuard
-- Microsoft To Do
-- 카카오톡
 
 ### `/usr/local/bin`
 - vpn
