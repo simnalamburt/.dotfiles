@@ -34,3 +34,4 @@ Windows 10 Pro
 - OuterWildsModManager
 - Zoom
 - Nexon Game Manager, Mabinogi
+- Signal for Windows
