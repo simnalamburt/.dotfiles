@@ -15,6 +15,7 @@ Windows 11
 &nbsp;
 
 - Word 2016, Excel 2016, PowerPoint 2016
+- iTunes
 
 ### Manually Installed
 - KakaoTalk
