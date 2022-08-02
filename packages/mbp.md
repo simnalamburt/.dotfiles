@@ -17,8 +17,9 @@ MacBook Pro (13-inch, M1, 2020)
 - ghc cabal-install haskell-stack haskell-language-server
 
 ### `brew --cask`
-- google-chrome
+- firefox google-chrome
 - iterm2 rectangle
+- slack
 - docker lens
 - karabiner-elements
 - zoom
