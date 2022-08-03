@@ -19,10 +19,10 @@ MacBook Pro (13-inch, M1, 2020)
 ### `brew --cask`
 - firefox google-chrome
 - iterm2 rectangle
-- slack
+- slack zoom
 - docker lens
 - karabiner-elements
-- zoom
+- signal
 
 ### `rustup`
 - stable
