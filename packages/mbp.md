@@ -6,32 +6,25 @@ MacBook Pro (13-inch, M1, 2020)
 - curl netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
-- node yarn pnpm python go shellcheck
+- node yarn pnpm python go
 - awscli kubernetes-cli kubernetes-helm kubectx
 - terraform vault packer
 - redis mysql libpq istioctl grpc grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp
 
-&nbsp;
-
-- ghc cabal-install haskell-stack haskell-language-server
-
 ### `brew --cask`
-- firefox google-chrome
-- iterm2 rectangle
-- slack zoom
-- docker lens
-- karabiner-elements
-- signal
+- gureumkim rectangle karabiner-elements
+- firefox discord signal steam
+- google-chrome slack zoom
+- iterm2 docker lens
 
 ### `rustup`
 - stable
 
 ### App Store
+- WireGuard
+- 카카오톡
 
 ### `/usr/local/bin`
 - vpn
 - [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)
-
-### Manually installed
-- 구름 입력기 1.12.1
