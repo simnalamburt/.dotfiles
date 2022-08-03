@@ -24,7 +24,7 @@ ln -s ~/.dotfiles/coc-settings.json ~/.config/nvim/coc-settings.json
 cp ~/.dotfiles/.vimrc.local ~
 
 # zsh
-git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
+git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
 ln -sf ~/.dotfiles/.zshrc ~
 cp ~/.dotfiles/.zshrc.local ~
 exec zsh
