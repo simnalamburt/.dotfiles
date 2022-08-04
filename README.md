@@ -44,6 +44,7 @@ cp ~/.dotfiles/.gitconfig.local ~
 # gpg
 mkdir -p ~/.gnupg
 cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
+gpgconf --kill gpg-agent
 # See https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88 for how to set up a PGP key pair.
 
 # tmux

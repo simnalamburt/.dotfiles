@@ -4,9 +4,15 @@
 #/opt/homebrew/sbin:\
 #${HOME}/.cargo/bin:\
 #${HOME}/.go/bin:\
-#$(brew --prefix ruby)/bin:\
-#$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
+#$(/opt/homebrew/bin/brew --prefix ruby)/bin:\
+#$(/opt/homebrew/bin/ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
 #${PATH}"
+
+## Homebrewed autocompletion
+#fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
+#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib -L/opt/homebrew/opt/libpq/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include -I/opt/homebrew/opt/libpq/include"
+#export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
 ## GNU Coreutils
 # alias ls='ls --color=tty'

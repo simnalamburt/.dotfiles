@@ -13,10 +13,10 @@ MacBook Pro (13-inch, M1, 2020)
 - saml2aws openfortivpn simnalamburt/x/totp
 
 ### `brew --cask`
-- gureumkim rectangle karabiner-elements
+- rectangle karabiner-elements
 - firefox discord signal steam
 - google-chrome slack zoom
-- iterm2 docker lens
+- iterm2 docker
 
 ### `rustup`
 - stable
