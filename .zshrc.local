@@ -2,6 +2,9 @@
 #export PATH="\
 #/opt/homebrew/bin:\
 #/opt/homebrew/sbin:\
+#/opt/homebrew/opt/gnu-tar/libexec/gnubin:\
+#/opt/homebrew/opt/curl/bin:\
+#/opt/homebrew/opt/libpq/bin:\
 #${HOME}/.cargo/bin:\
 #${HOME}/.go/bin:\
 #$(/opt/homebrew/bin/brew --prefix ruby)/bin:\
