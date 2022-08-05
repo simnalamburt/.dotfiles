@@ -3,39 +3,23 @@ iMac
 
 ### `brew`
 - neovim git xz md5sha1sum watch watchexec gnu-tar parallel
-- netcat mtr aria2
+- curl netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq bat git-delta
-- node yarn pnpm python go shellcheck
+- node yarn pnpm python go
 - awscli kubernetes-cli kubernetes-helm kubectx k9s
 - terraform vault packer
-- redis mysql istioctl grpc grpcurl
+- redis mysql libpq istioctl grpc grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp
 
-
-
-
-
 ### `brew --cask`
-- firefox google-chrome
-- visual-studio-code iterm2 rectangle
-- slack
-- docker lens
-- karabiner-elements
-- zoom
-
-
-
-
+- rectangle karabiner-elements
+- firefox
+- google-chrome slack zoom
+- iterm2 docker
 
 ### `rustup`
 - stable
 
-
-
-
-
-
 ### `/usr/local/bin`
 - vpn
-- [aws-mfa](https://github.com/simnalamburt/snippets/blob/master/sh/aws-mfa)

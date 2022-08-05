@@ -21,9 +21,9 @@ MacBook Pro (13-inch, M1, 2020)
 ### `rustup`
 - stable
 
+### `/usr/local/bin`
+- vpn
+
 ### App Store
 - WireGuard
 - 카카오톡
-
-### `/usr/local/bin`
-- vpn
