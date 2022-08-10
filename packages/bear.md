@@ -4,6 +4,7 @@ Ubuntu 20.04 LTS, AArch64
 
 ### `apt`
 - (removed) snapd screen bzip2 byobu
+- fzf
 - wireguard-tools
 
 PPA:
