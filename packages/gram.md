@@ -6,14 +6,10 @@ Windows 11
 - 7zip git nerd-fonts/CascadiaCode-NF extras/archwsl
 
 ### `winget`
-- firefox
-- wireguard
+- firefox wireguard
 
 ### Microsoft Store
 - Windows Terminal
-
-&nbsp;
-
 - Word 2016, Excel 2016, PowerPoint 2016
 - iTunes
 
