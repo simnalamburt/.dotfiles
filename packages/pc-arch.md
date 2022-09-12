@@ -4,18 +4,17 @@ PC, WSL 2
 
 ### `pacman`
 - base-devel openssh htop man zip unzip
-- mtr
 - neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq git-delta
-- gnu-netcat
 - python nodejs yarn go
 - terraform vault
-- podman
-- git-filter-repo
+
+&nbsp;
+
+- aria2 mtr gnu-netcat
 
 ### `pacman` (AUR)
 - paru-bin
 - xxd-standalone
-- stack-static
 
 ### `rustup`
 - stable: rust-src
