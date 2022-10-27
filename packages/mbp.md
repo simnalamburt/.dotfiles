@@ -11,6 +11,7 @@ MacBook Pro (13-inch, M1, 2020)
 - terraform vault packer
 - redis mysql libpq istioctl grpc grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp
+- qemu simnalamburt/riscv/riscv-tools
 
 ### `brew --cask`
 - rectangle karabiner-elements
