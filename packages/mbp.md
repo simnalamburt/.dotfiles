@@ -15,7 +15,7 @@ MacBook Pro (13-inch, M1, 2020)
 
 ### `brew --cask`
 - rectangle karabiner-elements
-- firefox discord signal steam
+- firefox discord steam
 - google-chrome slack zoom
 - iterm2 docker
 
