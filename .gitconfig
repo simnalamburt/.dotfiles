@@ -49,6 +49,11 @@
 	username = simnalamburt
 [credential "https://git.upnl.org"]
 	username = simnalamburt
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
 [alias]
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
