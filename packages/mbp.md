@@ -29,3 +29,6 @@ MacBook Pro (13-inch, M1, 2020)
 ### App Store
 - WireGuard
 - 카카오톡
+
+### etc
+- FUJIFILM Print Driver
