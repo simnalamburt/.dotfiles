@@ -231,6 +231,7 @@ try
   let g:polyglot_disabled = ['sensible', 'v'] | Plug 'sheerun/vim-polyglot'
   Plug 'hashivim/vim-terraform'
   Plug 'qnighy/lalrpop.vim'
+  Plug 'wuelnerdotexe/vim-astro'
 
   " Format
   Plug 'sgur/vim-editorconfig'
@@ -342,6 +343,9 @@ try
 
   " vim-terraform
   let g:terraform_fmt_on_save=1
+
+  " vim-astro
+  let g:astro_typescript = 'enable'
 
   " clever-f.vim
   let g:clever_f_across_no_line = 1
