@@ -24,6 +24,7 @@ set noswapfile
 set nowrap
 set updatetime=500
 set termguicolors
+set mouse=
 
 " History
 if has('persistent_undo')
