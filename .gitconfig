@@ -33,6 +33,8 @@
 	default = simple
 [pull]
 	rebase = true
+[rebase]
+	autoStash = true
 [merge]
 	conflictstyle = diff3
 [commit]
