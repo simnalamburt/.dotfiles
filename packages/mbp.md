@@ -19,6 +19,7 @@ MacBook Pro (13-inch, M1, 2020)
 - firefox discord steam
 - google-chrome slack zoom
 - iterm2 docker
+- visual-studio-code
 
 ### `rustup`
 - stable
