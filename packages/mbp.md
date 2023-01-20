@@ -13,7 +13,7 @@ MacBook Pro (13-inch, M1, 2020)
 - saml2aws openfortivpn simnalamburt/x/totp
 - qemu simnalamburt/riscv/riscv-tools
 - git-lfs
-- mkcert caddy
+- mkcert caddy buf
 
 ### `brew --cask`
 - rectangle karabiner-elements
