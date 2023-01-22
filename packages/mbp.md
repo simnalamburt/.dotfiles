@@ -14,7 +14,7 @@ MacBook Pro (13-inch, M1, 2020)
 - qemu simnalamburt/riscv/riscv-tools
 - git-lfs
 - mkcert caddy
-- birdayz/kaf
+- birdayz/kaf/kaf
 
 ### `brew --cask`
 - rectangle karabiner-elements
