@@ -231,8 +231,6 @@ try
 
   " Syntax
   let g:polyglot_disabled = ['sensible', 'v'] | Plug 'sheerun/vim-polyglot'
-  Plug 'hashivim/vim-terraform'
-  Plug 'qnighy/lalrpop.vim'
   Plug 'wuelnerdotexe/vim-astro'
 
   " Format
