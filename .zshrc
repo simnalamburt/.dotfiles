@@ -133,10 +133,15 @@ zstyle ':completion:*' use-cache on
 # Substring completion
 zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# Clear screen
+# Unset ctrl-s key
 clear_screen() { tput clear }
 zle -N clear_screen
 bindkey '^s' clear_screen
+
+# Fix home/end/delete
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 
 #
