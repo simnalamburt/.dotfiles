@@ -39,6 +39,7 @@ set autoindent
 set smartindent
 
 " Tab
+set tabstop=4
 set softtabstop=2
 set shiftwidth=2
 set expandtab
@@ -59,7 +60,7 @@ set formatoptions-=t
 set colorcolumn=+1,+2,+3
 " Listchars
 set list
-let &listchars = 'tab:› ,extends:»,precedes:«'
+let &listchars = 'tab:› ,trail:-,extends:»,precedes:«,nbsp:.'
 " Pair matching
 set matchpairs+=<:>
 set showmatch
