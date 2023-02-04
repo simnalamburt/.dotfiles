@@ -1,3 +1,4 @@
+// vim: ft=jsonc:
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 //
@@ -6,28 +7,30 @@
 //     cp ~/.dotfiles/settings.json /mnt/c/Users/simna/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 //     cp /mnt/c/Users/simna/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json ~/.dotfiles/settings.json
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "defaultProfile": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-
     "profiles": {
         "defaults": {
-            "fontFace": "CaskaydiaCove NF",
-            "fontSize": 14
+            "font": {
+                "face": "CaskaydiaCove NF",
+                "size": 14
+            }
         },
         "list": [
             {
                 "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+                "bellStyle": "window",
                 "hidden": false,
                 "name": "Arch",
                 "icon": "ms-appdata:///roaming/arch.png",
                 "source": "Windows.Terminal.Wsl",
                 "cursorShape": "filledBox",
-                "startingDirectory": "//wsl$/Arch/home/simnalamburt"
+                "startingDirectory": "\\\\wsl$\\Arch\\home\\simnalamburt"
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
-                "commandline": "powershell.exe",
                 "colorScheme": "Campbell Powershell",
                 "cursorShape": "filledBox",
                 "hidden": false
@@ -35,7 +38,6 @@
             {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
-                "commandline": "cmd.exe",
                 "cursorShape": "filledBox",
                 "hidden": false
             },
@@ -53,7 +55,16 @@
 
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": [
+    "actions": [
+        { "command": "unbound", "keys": "alt+left" },
+        { "command": "unbound", "keys": "alt+right" },
+        { "command": "unbound", "keys": "ctrl+plus" },
+        { "command": { "action": "adjustFontSize", "delta": -1 }, "keys": "ctrl+shift+minus" },
+        { "command": { "action": "adjustFontSize", "delta": 1 }, "keys": "ctrl+shift+plus" },
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+[" },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+]" },
+        { "command": { "action": "splitPane", "split": "down" }, "keys": "ctrl+minus" },
+        { "command": { "action": "splitPane", "split": "right" }, "keys": "ctrl+\\" },
         { "command": { "action": "switchToTab", "index": 0 }, "keys": "ctrl+1" },
         { "command": { "action": "switchToTab", "index": 1 }, "keys": "ctrl+2" },
         { "command": { "action": "switchToTab", "index": 2 }, "keys": "ctrl+3" },
@@ -62,13 +73,6 @@
         { "command": { "action": "switchToTab", "index": 5 }, "keys": "ctrl+6" },
         { "command": { "action": "switchToTab", "index": 6 }, "keys": "ctrl+7" },
         { "command": { "action": "switchToTab", "index": 7 }, "keys": "ctrl+8" },
-        { "command": { "action": "switchToTab", "index": 8 }, "keys": "ctrl+9" },
-        { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "ctrl+-" },
-        { "command": { "action": "splitPane", "split": "vertical" }, "keys": "ctrl+\\" },
-        { "command": { "action": "adjustFontSize", "delta": -1 }, "keys": "ctrl+shift+-" },
-        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+[" },
-        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+]" },
-        { "command": "unbound", "keys": "alt+left" },
-        { "command": "unbound", "keys": "alt+right" }
+        { "command": { "action": "switchToTab", "index": 8 }, "keys": "ctrl+9" }
     ]
 }
