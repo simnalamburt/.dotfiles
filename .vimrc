@@ -250,7 +250,6 @@ try
   " Util
   Plug 'simnalamburt/vim-mundo'
   Plug 'godlygeek/tabular'
-  Plug 'tpope/vim-fugitive'
 
   call plug#end()
 
@@ -281,9 +280,6 @@ try
         call CocActionAsync('highlight')
       endif
     endfunction
-
-    " coc-yank
-    nnoremap <silent> <leader>y :<C-u>CocList -A --normal yank<CR>
 
     " coc-prettier
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
