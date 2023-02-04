@@ -67,14 +67,9 @@ set showmatch
 set wildmode=longest,full
 
 " Completion
-set hidden
 set completeopt=preview,menuone,noinsert,noselect
 set shortmess+=c
-if has('patch-8.1.1564')
-  set signcolumn=number
-elseif has('nvim') ? has('nvim-0.2') : 1
-  set signcolumn=yes
-endif
+set signcolumn=yes
 
 
 "
