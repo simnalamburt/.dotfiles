@@ -322,7 +322,7 @@ try
   endif
 
   " nerdtree
-  noremap <silent> <C-n> :NERDTreeToggle<CR>
+  noremap <silent> <leader>n :NERDTreeToggle<CR>
   function! s:nerdtree_startup()
     if exists('s:std_in') || argc() != 1 || !isdirectory(argv()[0])
       return
@@ -380,7 +380,7 @@ try
   endfunction
   noremap <silent><expr> /  incsearch#go(<SID>incsearch_config())
   noremap <silent><expr> ?  incsearch#go(<SID>incsearch_config({'command': '?'}))
-  noremap <silent><expr> g/ incsearch#go(<SID>incsearch_config({'is_stay': 1}))
+  noremap <silent><expr> <leader>/ incsearch#go(<SID>incsearch_config({'is_stay': 1}))
 
   " mundo.vim
   let g:mundo_right = 1
