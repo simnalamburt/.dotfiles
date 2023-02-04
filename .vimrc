@@ -219,6 +219,9 @@ try
   if has('nvim-0.6')
     Plug 'github/copilot.vim'
   endif
+  if has('nvim-0.5')
+    Plug 'folke/which-key.nvim'
+  endif
 
   " File browsing
   Plug 'justinmk/vim-dirvish'
@@ -311,6 +314,11 @@ try
       \ 'options': '+m',
       \ 'down': 10 })
     endfunction
+  endif
+
+  " which-key.nvim
+  if has('nvim-0.5')
+    lua require('which-key').setup()
   endif
 
   " nerdtree
