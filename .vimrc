@@ -411,8 +411,8 @@ call s:bg('TabLineSel', s:tab_color)
 call s:fg('TabLineFill', s:tab_color)
 
 " Pretty vimdiff colorscheme
-call s:fg('DiffDelete', '#232b32')
-call s:bg('DiffDelete', 'NONE')
+call s:fg('DiffDelete', '#5a0000')
+call s:bg('DiffDelete', '#340000')
 
 " IndentGuides
 let s:indent_color = '#151a1e'
