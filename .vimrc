@@ -216,12 +216,14 @@ try
     Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
-  Plug 'ryanoasis/vim-devicons'
-  Plug 'preservim/nerdtree'
-  Plug 'tpope/vim-fugitive'
   if has('nvim-0.6')
     Plug 'github/copilot.vim'
   endif
+
+  " File browsing
+  Plug 'justinmk/vim-dirvish'
+  Plug 'preservim/nerdtree'
+  Plug 'ryanoasis/vim-devicons'
 
   " Visual
   Plug 'vim-airline/vim-airline'
@@ -238,7 +240,7 @@ try
   " Format
   Plug 'sgur/vim-editorconfig'
 
-  " Blink
+  " Cursor navigation
   Plug 'farmergreg/vim-lastplace'
   Plug 'rhysd/clever-f.vim'
   Plug 'easymotion/vim-easymotion'
@@ -248,7 +250,7 @@ try
   " Util
   Plug 'simnalamburt/vim-mundo'
   Plug 'godlygeek/tabular'
-  Plug 'justinmk/vim-dirvish'
+  Plug 'tpope/vim-fugitive'
 
   call plug#end()
 
