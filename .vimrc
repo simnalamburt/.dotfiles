@@ -415,8 +415,12 @@ call s:bg('DiffDelete', '#340000')
 
 " IndentGuides
 let s:indent_color = '#151a1e'
+let s:whitespace_color = '#2d3640'
 call s:bg('IndentGuidesEven', s:indent_color)
 call s:bg('IndentGuidesOdd', s:indent_color)
+call s:fg('IndentGuidesEven', s:whitespace_color)
+call s:fg('IndentGuidesOdd', s:whitespace_color)
+call s:fg('Whitespace', s:whitespace_color)
 
 " Matching
 let s:match_color = '#232b32'
