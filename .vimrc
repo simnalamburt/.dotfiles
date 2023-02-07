@@ -312,7 +312,10 @@ try
 
   " which-key.nvim
   if has('nvim-0.5')
-    lua require('which-key').setup()
+    try
+      lua require('which-key').setup()
+    catch /^Vim\%((\a\+)\)\=:E5108/
+    endtry
   endif
 
   " nerdtree
