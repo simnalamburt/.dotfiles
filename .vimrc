@@ -212,11 +212,12 @@ try
     Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
-  if has('nvim-0.6')
+
+  " Neovim plugins
+  if has('nvim-0.7')
     Plug 'github/copilot.vim'
-  endif
-  if has('nvim-0.5')
     Plug 'folke/which-key.nvim'
+    Plug 'NvChad/nvim-colorizer.lua'
   endif
 
   " File browsing
@@ -310,10 +311,11 @@ try
     endfunction
   endif
 
-  " which-key.nvim
+  " Neovim plugins
   if has('nvim-0.5')
     try
       lua require('which-key').setup()
+      lua require('colorizer').setup()
     catch /^Vim\%((\a\+)\)\=:E5108/
     endtry
   endif
