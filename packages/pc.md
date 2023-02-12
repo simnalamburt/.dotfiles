@@ -7,9 +7,10 @@ Windows 10 Pro
 
 ### `winget`
 - firefox wireguard discord
-- chrome slack FortiClientVPN
+- chrome slack
 
 ### Microsoft Store
+- Windows Subsystem for Linux
 - Windows Terminal (Preview)
 - Netflix
 
@@ -22,5 +23,3 @@ Windows 10 Pro
 - Windows Sandbox
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
-- Zoom
-- Signal for Windows
