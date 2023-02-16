@@ -7,6 +7,7 @@
 #/opt/homebrew/opt/libpq/bin:\
 #${HOME}/.cargo/bin:\
 #${HOME}/.go/bin:\
+#${HOME}/.krew/bin:\
 #$(/opt/homebrew/bin/brew --prefix ruby)/bin:\
 #$(/opt/homebrew/bin/ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
 #${PATH}"
