@@ -40,3 +40,4 @@ MacBook Pro (13-inch, M1, 2020)
 ### etc
 - FUJIFILM Print Driver
 - Ryujinx.app
+- zed.app
