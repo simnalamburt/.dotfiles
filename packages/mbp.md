@@ -15,6 +15,7 @@ MacBook Pro (13-inch, M1, 2020)
 - git-lfs
 - mkcert caddy
 - birdayz/kaf/kaf
+- cmake
 
 ### `brew --cask`
 - rectangle karabiner-elements
