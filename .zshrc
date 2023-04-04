@@ -178,6 +178,7 @@ fi
 #
 # zshrc
 #
+export LANG=en_US.UTF-8
 export DOCKER_BUILDKIT=1
 
 # Terraform
