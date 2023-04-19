@@ -699,6 +699,17 @@
 			<key>Text</key>
 			<string>A7698058-832D-4738-8561-D399D7C6ACA1</string>
 		</dict>
+		<key>0x6b-0x100000-0x28</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
 		<key>0x6c-0x100000</key>
 		<dict>
 			<key>Action</key>
