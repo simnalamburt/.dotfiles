@@ -20,44 +20,32 @@ fi
 autoload -U is-at-least
 if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
   source ~/.zinit/bin/zinit.zsh
+  zinit ice depth=1
+  zinit light romkatv/powerlevel10k
+  zinit light simnalamburt/cgitc
+  zinit light zdharma/fast-syntax-highlighting
+  zinit light zsh-users/zsh-completions
 
-  zplugin ice depth=1
-  zplugin light romkatv/powerlevel10k
-
-  # Show autosuggestions
+  # zsh-autosuggestions
   ZSH_AUTOSUGGEST_USE_ASYNC=1
   if is-at-least 5.3; then
     zinit ice silent wait'1' atload'_zsh_autosuggest_start'
   fi
   zinit light zsh-users/zsh-autosuggestions
 
-  # Easily access the directories you visit most often.
-  #
-  # Usage:
-  #   $ z work
-  #   $ <CTRL-G>work
-  zinit light agkozak/zsh-z
-  zinit light andrewferrier/fzf-z
-  export FZFZ_SUBDIR_LIMIT=0
-
-  # Automatically expand all aliases
+  # zsh-expand-all
   ZSH_EXPAND_ALL_DISABLE=word
   zinit light simnalamburt/zsh-expand-all
 
-  # Others
-  zinit light simnalamburt/cgitc
-  zinit light simnalamburt/ctrlf
-  zinit light zdharma/fast-syntax-highlighting
+  # zsh-history-substring-search
   zinit light zsh-users/zsh-history-substring-search
-  zinit light zsh-users/zsh-completions
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
 
   autoload -Uz compinit bashcompinit
   compinit
   bashcompinit
   zinit cdreplay
-
-  bindkey '^[[A' history-substring-search-up
-  bindkey '^[[B' history-substring-search-down
 else
   # Default terminal
   case "${TERM}" in
