@@ -2,14 +2,16 @@
 #export PATH="\
 #/opt/homebrew/bin:\
 #/opt/homebrew/sbin:\
+#/opt/homebrew/opt/ruby/bin:\
+#/opt/homebrew/lib/ruby/gems/3.2.0/bin:\
 #/opt/homebrew/opt/gnu-tar/libexec/gnubin:\
 #/opt/homebrew/opt/curl/bin:\
 #/opt/homebrew/opt/libpq/bin:\
+#/opt/homebrew/opt/mysql-client/bin:\
+#/opt/homebrew/opt/openjdk/bin:\
 #${HOME}/.cargo/bin:\
 #${HOME}/.go/bin:\
 #${HOME}/.krew/bin:\
-#$(/opt/homebrew/bin/brew --prefix ruby)/bin:\
-#$(/opt/homebrew/bin/ruby -r rubygems -e 'puts Gem.user_dir')/bin:\
 #${PATH}"
 
 ## Homebrewed autocompletion
