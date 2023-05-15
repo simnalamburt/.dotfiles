@@ -12,7 +12,7 @@ MacBook Pro (13-inch, M1, 2020)
 - redis mysql-client libpq grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
-- simnalamburt/x/jaso
+- ffmpeg simnalamburt/x/jaso
 
 ### `brew --cask`
 - rectangle karabiner-elements
