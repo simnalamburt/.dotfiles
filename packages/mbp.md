@@ -13,7 +13,7 @@ MacBook Pro (13-inch, M1, 2020)
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
 - simnalamburt/x/jaso
-- ffmpeg libavif
+- ffmpeg libavif imagemagick
 
 ### `brew --cask`
 - rectangle karabiner-elements
