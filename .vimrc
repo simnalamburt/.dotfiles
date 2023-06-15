@@ -175,7 +175,7 @@ function! s:DragSelectMode()
     endif
   endif
 endfunction
-nnoremap <F9> :call <SID>DragSelectMode()<CR>
+nnoremap <F7> :call <SID>DragSelectMode()<CR>
 
 
 "
