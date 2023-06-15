@@ -187,7 +187,6 @@ try
 
   " Configs
   Plug 'tpope/vim-sensible'
-  Plug 'vim-utils/vim-interruptless'
 
   " IDE
   if s:use_coc
