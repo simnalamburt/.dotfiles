@@ -241,9 +241,7 @@ try
   " Cursor navigation
   Plug 'farmergreg/vim-lastplace'
   Plug 'rhysd/clever-f.vim'
-  Plug 'easymotion/vim-easymotion'
   Plug 'haya14busa/incsearch.vim'
-  Plug 'haya14busa/incsearch-easymotion.vim'
 
   " Util
   Plug 'simnalamburt/vim-mundo'
@@ -366,20 +364,6 @@ try
   map #  <Plug>(incsearch-nohl-#)
   map g* <Plug>(incsearch-nohl-g*)
   map g# <Plug>(incsearch-nohl-g#)
-
-  " incsearch-easymotion.vim
-  function! s:incsearch_config(...) abort
-    return incsearch#util#deepextend(deepcopy({
-    \   'modules': [incsearch#config#easymotion#module({'overwin': 1})],
-    \   'keymap': {
-    \     "\<tab>": '<Over>(easymotion)'
-    \   },
-    \   'is_expr': 0
-    \ }), get(a:, 1, {}))
-  endfunction
-  noremap <silent><expr> /  incsearch#go(<SID>incsearch_config())
-  noremap <silent><expr> ?  incsearch#go(<SID>incsearch_config({'command': '?'}))
-  noremap <silent><expr> <leader>/ incsearch#go(<SID>incsearch_config({'is_stay': 1}))
 
   " mundo.vim
   let g:mundo_right = 1
