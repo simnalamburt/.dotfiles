@@ -241,7 +241,7 @@ try
   " Cursor navigation
   Plug 'farmergreg/vim-lastplace'
   Plug 'rhysd/clever-f.vim'
-  Plug 'haya14busa/incsearch.vim'
+  Plug 'haya14busa/is.vim'
 
   " Util
   Plug 'simnalamburt/vim-mundo'
@@ -355,15 +355,6 @@ try
   " clever-f.vim
   let g:clever_f_across_no_line = 1
   let g:clever_f_smart_case = 1
-
-  " incsearch.vim
-  let g:incsearch#auto_nohlsearch = 1
-  map n  <Plug>(incsearch-nohl-n)
-  map N  <Plug>(incsearch-nohl-N)
-  map *  <Plug>(incsearch-nohl-*)
-  map #  <Plug>(incsearch-nohl-#)
-  map g* <Plug>(incsearch-nohl-g*)
-  map g# <Plug>(incsearch-nohl-g#)
 
   " mundo.vim
   let g:mundo_right = 1
