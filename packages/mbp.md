@@ -12,7 +12,6 @@ MacBook Pro (13-inch, M1, 2020)
 - redis mysql-client libpq grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
-- simnalamburt/x/jaso
 - ffmpeg libavif
 
 ### `brew --cask`
@@ -24,9 +23,11 @@ MacBook Pro (13-inch, M1, 2020)
 
 ### krew
 - exec-as
+- ssh https://github.com/luksa/kubectl-plugins
 
 ### `rustup`
 - stable
+- jaso (`cargo install`)
 
 ### `/usr/local/bin`
 - vpn
