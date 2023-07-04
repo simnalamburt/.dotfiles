@@ -101,9 +101,9 @@ fi
 # zsh-sensible
 #
 if (( $+commands[lsd] )); then
-  alias l='lsd -Al --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
-  alias ll='lsd -l --date=relative --group-dirs=first --blocks=permission,user,size,date,name'
-  alias lt='lsd --tree --depth=2 --date=relative --group-dirs=first'
+  alias l='lsd -Al'
+  alias ll='lsd -l'
+  alias lt='lsd --tree --depth=2'
 else
   alias l='ls -alh'
   alias ll='ls -lh'

@@ -1,0 +1,12 @@
+# ~/.config/lsd/config.yaml
+blocks:
+  - permission
+  - user
+  - size
+  - date
+  - name
+
+date: relative
+
+sorting:
+  dir-grouping: first
