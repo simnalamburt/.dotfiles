@@ -41,6 +41,10 @@ ln -sf ~/.dotfiles/.gitconfig ~
 ln -sf ~/.dotfiles/.gitexclude ~
 cp ~/.dotfiles/.gitconfig.local ~
 
+# lsd
+mkdir -p ~/.config/lsd
+ln -sf ~/.dotfiles/lsd.yaml ~/.config/lsd/config.yaml
+
 # gpg
 mkdir -p ~/.gnupg
 cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
