@@ -20,6 +20,7 @@ MacBook Pro (13-inch, M1, 2020)
 - google-chrome slack
 - iterm2 docker
 - zed visual-studio-code
+- superhuman
 
 ### krew
 - exec-as
