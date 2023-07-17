@@ -21,6 +21,7 @@ MacBook Pro (13-inch, M1, 2020)
 - iterm2 docker
 - zed visual-studio-code
 - superhuman
+- unity
 
 ### krew
 - exec-as
