@@ -20,6 +20,7 @@ MacBook Pro (13-inch, M1, 2020)
 - iterm2 orbstack
 - zed visual-studio-code
 - superhuman
+- linear-linear
 
 ### krew
 - exec-as
