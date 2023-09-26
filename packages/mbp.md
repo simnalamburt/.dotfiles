@@ -17,7 +17,7 @@ MacBook Pro (13-inch, M1, 2020)
 - rectangle karabiner-elements
 - firefox discord steam
 - google-chrome slack
-- iterm2 orbstack
+- iterm2
 - zed visual-studio-code
 - superhuman
 - linear-linear
