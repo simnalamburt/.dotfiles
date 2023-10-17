@@ -12,6 +12,7 @@ MacBook Pro (13-inch, M1, 2020)
 - redis mysql-client libpq grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
+- mkcert nss
 
 ### `brew --cask`
 - rectangle karabiner-elements
@@ -21,6 +22,7 @@ MacBook Pro (13-inch, M1, 2020)
 - zed visual-studio-code
 - superhuman
 - linear-linear
+- parsec
 
 ### krew
 - exec-as
