@@ -24,3 +24,4 @@ Windows 10 Pro
 - 한컴오피스 2018
 - Radeon Adrenalin 2020
 - Video DownloadHelper Companion App 1.6.3
+- rustup
