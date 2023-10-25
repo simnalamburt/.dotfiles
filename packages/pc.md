@@ -25,3 +25,4 @@ Windows 10 Pro
 - Radeon Adrenalin 2020
 - Video DownloadHelper Companion App 1.6.3
 - rustup
+- VLC
