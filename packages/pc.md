@@ -22,7 +22,7 @@ Windows 10 Pro
 - Steam, Uplay, 오리진
 - Windows Sandbox
 - 한컴오피스 2018
-- Radeon Adrenalin 2020
+- NVIDIA GeForce Experience
 - Video DownloadHelper Companion App 1.6.3
 - rustup
 - VLC
