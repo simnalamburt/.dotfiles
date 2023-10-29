@@ -5,7 +5,7 @@ MacBook Pro (13-inch, M1, 2020)
 - neovim git xz watch watchexec gnu-tar parallel coreutils
 - curl netcat mtr aria2
 - tmux wget htop gnupg pinentry-mac
-- fzf ripgrep lsd fd jq yq bat git-delta ydiff
+- fzf ripgrep lsd fd jq yq bat git-delta
 - node yarn pnpm python go java ruby
 - awscli kubernetes-cli kubernetes-helm kubectx krew
 - terraform vault packer
