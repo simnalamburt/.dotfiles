@@ -26,3 +26,5 @@ Windows 10 Pro
 - Video DownloadHelper Companion App 1.6.3
 - rustup
 - VLC
+- Logitech Options+
+- WinDirStat
