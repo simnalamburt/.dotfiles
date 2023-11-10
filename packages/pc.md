@@ -10,11 +10,11 @@ Windows 10 Pro
 - Windows Subsystem for Linux
 - Windows Terminal
 - Netflix
+- KakaoTalk
 
 ### Manually Installed
 - 7zip
 - https://github.com/yuk7/ArchWSL
-- KakaoTalk
 - Nexon Game Manager, Mabinogi
 - Chrome Remote Desktop Host
 - MS Office
