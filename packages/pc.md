@@ -25,5 +25,4 @@ Windows 10 Pro
 - Video DownloadHelper Companion App 1.6.3
 - VLC
 - Logitech Options+
-- WinDirStat
 - CaskaydiaCove Nerd Font
