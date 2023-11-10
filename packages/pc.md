@@ -3,7 +3,7 @@ PC
 Windows 10 Pro
 
 ### `scoop`
-- 7zip git nerd-fonts/CascadiaCode-NF extras/archwsl
+- 7zip git extras/archwsl
 
 ### `winget`
 - firefox wireguard discord
@@ -28,3 +28,4 @@ Windows 10 Pro
 - VLC
 - Logitech Options+
 - WinDirStat
+- CaskaydiaCove Nerd Font
