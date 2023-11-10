@@ -10,9 +10,6 @@ PC, WSL 2
 
 - mtr gnu-netcat
 
-### `pacman` (AUR)
-- paru-bin
-
 ### `rustup`
 - stable: rust-src
 
