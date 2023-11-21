@@ -47,6 +47,7 @@
 	showStash = true
 [submodule]
 	fetchJobs = 0
+	recurse = true
 [credential "https://github.com"]
 	username = simnalamburt
 [credential "https://git.upnl.org"]
