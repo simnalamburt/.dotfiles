@@ -110,6 +110,9 @@ else
 fi
 alias mv='mv -i'
 alias cp='cp -i'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 
 HISTSIZE=90000
 SAVEHIST=90000
