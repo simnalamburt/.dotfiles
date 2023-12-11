@@ -182,4 +182,5 @@ fi
 # Golang
 if (( $+commands[go] )); then
   export GOPATH="${HOME}/.go"
+  export GOPRIVATE=github.com/portone-io/go
 fi
