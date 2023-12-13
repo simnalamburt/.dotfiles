@@ -13,6 +13,7 @@ MacBook Pro (13-inch, M1, 2020)
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
 - mkcert nss
+- shivammathur/php/php@5.6
 
 ### `brew --cask`
 - rectangle karabiner-elements
