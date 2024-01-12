@@ -26,3 +26,4 @@ Windows 10 Pro
 - VLC
 - Logitech Options+
 - CaskaydiaCove Nerd Font
+- Tailscale
