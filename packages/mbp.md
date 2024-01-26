@@ -23,6 +23,7 @@ MacBook Pro (13-inch, M1, 2020)
 - zed visual-studio-code
 - superhuman
 - linear-linear
+- languagetool
 
 ### krew
 - exec-as
