@@ -171,7 +171,6 @@ fi
 #
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export DOCKER_BUILDKIT=1
 
 # Terraform
 if (( $+commands[terraform] )); then
