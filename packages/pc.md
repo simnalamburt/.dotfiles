@@ -27,4 +27,3 @@ Windows 10 Pro
 - Logitech Options+
 - CaskaydiaCove Nerd Font
 - Tailscale
-- vJoy driver
