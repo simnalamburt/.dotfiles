@@ -20,7 +20,7 @@ MacBook Pro (13-inch, M1, 2020)
 - firefox discord steam
 - google-chrome slack
 - iterm2 orbstack
-- zed visual-studio-code
+- zed visual-studio-code gitbutler
 - superhuman
 - linear-linear
 
