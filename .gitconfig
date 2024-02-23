@@ -27,36 +27,44 @@
 	ui = auto
 [diff]
 	renames = copies
+	algorithm = histogram
+	submodule = log
+[branch]
+	sort = committerdate
 [fetch]
 	prune = yes
+	prunetags = true
+	fsckobjects = true
+[transfer]
+	fsckobjects = true
+[receive]
+	fsckObjects = true
 [push]
 	default = simple
 [pull]
 	rebase = true
 [rebase]
-	autoStash = true
+	autostash = true
+	autosquash = true
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 [commit]
 	gpgsign = yes
+	verbose = true
 [rerere]
-	enabled = yes
+	enabled = true
 [stash]
 	showPatch = true
 [status]
 	showStash = true
+	submoduleSummary = true
 [submodule]
 	fetchJobs = 0
 	recurse = true
+[help]
+	autocorrect = prompt
 [credential "https://github.com"]
 	username = simnalamburt
-[credential "https://git.upnl.org"]
-	username = simnalamburt
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
 [alias]
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
