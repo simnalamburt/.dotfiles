@@ -23,6 +23,7 @@ MacBook Pro (13-inch, M1, 2020)
 - zed visual-studio-code gitbutler
 - superhuman
 - linear-linear
+- ghidra
 
 ### krew
 - exec-as
@@ -40,6 +41,7 @@ MacBook Pro (13-inch, M1, 2020)
 - 카카오톡
 - Microsoft Excel
 - Tailscale
+- 알라딘 이북리더
 
 ### etc
 - FUJIFILM Print Driver
