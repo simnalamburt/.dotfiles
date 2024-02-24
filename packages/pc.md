@@ -5,6 +5,7 @@ Windows 10 Pro
 ### `winget`
 - firefox wireguard discord
 - chrome slack
+- Microsoft.OpenJDK.21
 
 ### Microsoft Store
 - Windows Subsystem for Linux
@@ -27,3 +28,5 @@ Windows 10 Pro
 - Logitech Options+
 - CaskaydiaCove Nerd Font
 - Tailscale
+- 알라딘 전자책 뷰어
+- VisualStudio
