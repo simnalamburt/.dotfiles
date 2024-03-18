@@ -63,8 +63,8 @@
 	recurse = true
 [help]
 	autocorrect = prompt
-[credential "https://github.com"]
-	username = simnalamburt
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
 [alias]
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
