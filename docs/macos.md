@@ -26,7 +26,13 @@ macOS
 [brew 패키지들 설치](../packages/)
 
 ### Advanced configs
-한영키 설정
+영어 키 꾹 누르면 키 반복되게 만들기
+
+```bash
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
+
+Shift + Space 로 빠르게 한영 전환하기
 
 ```bash
 defaults export com.apple.symbolichotkeys - | plutil -convert json -o - - |
