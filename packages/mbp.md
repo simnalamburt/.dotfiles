@@ -12,8 +12,8 @@ MacBook Pro (13-inch, M1, 2020)
 - redis mysql-client libpq grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
-- mkcert nss
 - shivammathur/php/php@5.6 php
+- golangci-lint
 
 ### `brew --cask`
 - rectangle karabiner-elements
@@ -21,9 +21,6 @@ MacBook Pro (13-inch, M1, 2020)
 - google-chrome slack
 - iterm2 orbstack
 - zed visual-studio-code gitbutler
-- superhuman
-- linear-linear
-- ghidra
 
 ### krew
 - exec-as
