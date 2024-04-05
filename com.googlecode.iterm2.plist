@@ -1409,6 +1409,8 @@
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Send Session Ended Alert</key>
+			<false/>
 			<key>Set Local Environment Vars</key>
 			<false/>
 			<key>Shortcut</key>
