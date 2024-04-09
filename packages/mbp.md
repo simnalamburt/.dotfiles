@@ -4,7 +4,7 @@ MacBook Pro (13-inch, M1, 2020)
 ### `brew`
 - neovim git xz watch watchexec gnu-tar parallel coreutils
 - curl netcat mtr aria2
-- tmux wget htop gnupg pinentry-mac
+- mosh tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq yq bat git-delta
 - node yarn pnpm python go java ruby
 - awscli kubernetes-cli kubernetes-helm kubectx krew
@@ -12,7 +12,6 @@ MacBook Pro (13-inch, M1, 2020)
 - redis mysql-client libpq grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
-- shivammathur/php/php@5.6 php
 - golangci-lint
 
 ### `brew --cask`
