@@ -63,7 +63,7 @@
 	recurse = true
 [help]
 	autocorrect = prompt
-[url "ssh://git@github.com/"]
+[url "git@github.com:"]
 	insteadOf = https://github.com/
 [alias]
 	# Complex and long git aliases.
