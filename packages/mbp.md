@@ -6,13 +6,13 @@ MacBook Pro (13-inch, M1, 2020)
 - curl netcat mtr aria2
 - mosh tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq yq bat git-delta
-- node yarn pnpm python go java ruby zig zls
+- node yarn pnpm python java ruby zig zls
 - awscli kubernetes-cli kubernetes-helm kubectx krew
 - hashicorp/tap/terraform hashicorp/tap/vault hashicorp/tap/packer
 - redis mysql-client libpq grpcurl
 - saml2aws openfortivpn simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - birdayz/kaf/kaf
-- golangci-lint
+- go mockery gofumpt golangci-lint
 
 ### `brew --cask`
 - rectangle karabiner-elements
