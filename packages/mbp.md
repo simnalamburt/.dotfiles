@@ -4,7 +4,7 @@ MacBook Pro (13-inch, M1, 2020)
 ### `brew`
 - neovim git xz watch watchexec gnu-tar parallel coreutils
 - curl netcat mtr aria2
-- mosh tmux wget htop gnupg pinentry-mac
+- git-filter-repo mosh tmux wget htop gnupg pinentry-mac
 - fzf ripgrep lsd fd jq yq bat git-delta ast-grep
 - node yarn pnpm python java ruby zig zls
 - awscli kubernetes-cli kubernetes-helm kubectx krew
@@ -20,6 +20,12 @@ MacBook Pro (13-inch, M1, 2020)
 - google-chrome slack
 - iterm2 orbstack
 - zed visual-studio-code gitbutler
+
+### `go install`
+- gci
+- godoc
+- pkgsite
+- staticcheck
 
 ### krew
 - exec-as
