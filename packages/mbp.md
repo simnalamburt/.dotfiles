@@ -33,7 +33,7 @@ MacBook Pro (13-inch, M1, 2020)
 - ssh https://github.com/luksa/kubectl-plugins
 
 ### `rustup`
-- stable
+- stable: rust-analyzer
 - jaso (`cargo install`)
 
 ### `/usr/local/bin`
