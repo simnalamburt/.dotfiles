@@ -21,7 +21,6 @@ MacBook Pro (13-inch, M1, 2020)
 - iterm2 orbstack
 - zed visual-studio-code gitbutler
 - chatgpt
-- zoom
 
 ### `go install`
 - gci
