@@ -11,9 +11,9 @@ macOS
 - Fastest key repeat rate, shortest delay until repeat
 - Hide unnecessary items from sidebar of Finder, set home directory as a Finder's initial directory, show all filename extensions
 - Organize launchpad; put all unused apps under a same directory
-- Use a 24-hour clock in the menu bar
-- 메뉴막대에서 시리 보이지 않도록 변경
-- 색상 반전 키를 <kbd>⌘</kbd> + <kbd>Q</kbd> 로 리매핑해서 실수로 프로세스 종료하는것 막음.
+- Use a 24-hour clock on Lock Screen and menu bar
+- Hide Siri from menu bar (if you have enabled Siri)
+- Remap <kbd>⌘</kbd> + <kbd>Q</kbd> as a color revert key to prevent accidental process Quit
 - (optional) 시스템설정 &rarr; 공유 &rarr; 원격 로그인 으로 ssh 서버 켬
 
 ### Homebrew
