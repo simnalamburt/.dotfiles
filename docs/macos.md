@@ -14,7 +14,6 @@ macOS
 - Use a 24-hour clock on Lock Screen and menu bar
 - Hide Siri from menu bar (if you have enabled Siri)
 - Remap <kbd>⌘</kbd> + <kbd>Q</kbd> as a color revert key to prevent accidental process Quit
-- (optional) 시스템설정 &rarr; 공유 &rarr; 원격 로그인 으로 ssh 서버 켬
 
 ### Homebrew
 [Homebrew](https://brew.sh/) 설치
