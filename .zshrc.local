@@ -6,18 +6,15 @@
 #/opt/homebrew/lib/ruby/gems/3.2.0/bin:\
 #/opt/homebrew/opt/gnu-tar/libexec/gnubin:\
 #/opt/homebrew/opt/curl/bin:\
-#/opt/homebrew/opt/libpq/bin:\
 #/opt/homebrew/opt/mysql-client/bin:\
 #/opt/homebrew/opt/openjdk/bin:\
 #${HOME}/.cargo/bin:\
-#${HOME}/.go/bin:\
-#${HOME}/.krew/bin:\
 #${PATH}"
 
 ## Homebrewed autocompletion
 #fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
-#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib -L/opt/homebrew/opt/libpq/lib"
-#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include -I/opt/homebrew/opt/libpq/include"
+#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include"
 #export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
 ## GNU Coreutils
