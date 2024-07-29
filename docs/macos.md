@@ -2,16 +2,16 @@ macOS
 ========
 
 ### Basic configs
-- AppleID 로그인
-- OS 최신버전으로 업데이트
-- 디스플레이 설정, 바탕화면 설정, OS 언어 설정
-- iCloud로 어느어느 항목 공유할지 설정.
-- FileVault로 Full Disk Encryption 수행
-- 키 반복속도, 마우스 속도 설정
-- Finder 사이드바, 초기 디렉토리 경로 변경, "모든 파일 확장자 보기"
-- 알림창에서 주식칸 빼기
-- 런치패드에서 안쓰는 기본앱들 전부 폴더 하나에 모음
-- 시계 표시방식 변경
+- Use English as main OS language
+- Sign in AppleID
+- Update OS to the latest version
+- (Optional) Set wallpaper
+- Sync desktop & documents directory with iCloud
+- Enable FDE with FileVault
+- Fastest key repeat rate, shortest delay until repeat
+- Hide unnecessary items from sidebar of Finder, set home directory as a Finder's initial directory, show all filename extensions
+- Organize launchpad; put all unused apps under a same directory
+- Use a 24-hour clock in the menu bar
 - 메뉴막대에서 시리 보이지 않도록 변경
 - 색상 반전 키를 <kbd>⌘</kbd> + <kbd>Q</kbd> 로 리매핑해서 실수로 프로세스 종료하는것 막음.
 - (optional) 시스템설정 &rarr; 공유 &rarr; 원격 로그인 으로 ssh 서버 켬
