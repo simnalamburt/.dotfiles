@@ -27,3 +27,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 ### App Store
 - WireGuard
 - 카카오톡
+
+### etc
+- SIndoh D420 driver
