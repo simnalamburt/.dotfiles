@@ -17,5 +17,7 @@
 
 4.  북마크 툴바 표시 안함
 
+5.  브라우저 확장 설정 세팅 혹은 동기화
+
 ###### References
 - https://wiki.mozilla.org/Trusted_Recursive_Resolver#DNS-over-HTTPS_Prefs_in_Firefox
