@@ -73,9 +73,7 @@ typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=242
 typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=226
 
 
-# EDITOR이나 VISUAL 환경변수 안에 'vi' 라는 글자가 들어있으면 자동으로
-# emacs-like 키바인딩들이 해제되어서, ^A ^E 등을 모조리 쓸 수 없어진다.
-# 무슨짓이냐...
+# Always use emacs style key binding regardless of EDITOR env var
 #
 # References:
 #   https://stackoverflow.com/a/43087047
@@ -181,5 +179,4 @@ fi
 # Golang
 if (( $+commands[go] )); then
   export GOPATH="${HOME}/.go"
-  export GOPRIVATE=github.com/portone-io/go
 fi

@@ -7,15 +7,14 @@
 #/opt/homebrew/opt/gnu-tar/libexec/gnubin:\
 #/opt/homebrew/opt/curl/bin:\
 #/opt/homebrew/opt/mysql-client/bin:\
-#/opt/homebrew/opt/openjdk/bin:\
 #${HOME}/.cargo/bin:\
 #${PATH}"
-
-## Homebrewed autocompletion
-#fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
 #export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib"
 #export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include"
 #export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
+
+## Homebrewed autocompletion
+#fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
 
 ## GNU Coreutils
 # alias ls='ls --color=tty'
@@ -24,6 +23,7 @@
 # alias ls='ls -G'
 
 ## neovim
+#alias v=nvim
 #alias vi=nvim
 #alias vim=nvim
 #export EDITOR=nvim
@@ -40,33 +40,6 @@
 #bindkey  "^[[H"   beginning-of-line
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
-
-## Homebrewed Ruby
-#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
-#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
-#export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
-
-## kubectl
-#if (( $+commands[kubectl] )); then
-#  source <(kubectl completion zsh)
-#  alias k=kubectl
-#fi
-## kubectx
-#if (( $+commands[kubectx] )); then
-#  alias ktx=kubectx
-#fi
-## kubens
-#if (( $+commands[kubens] )); then
-#  alias kns=kubens
-#fi
-
-## Vault
-#if (( $+commands[vault] )); then
-#  autoload -U +X bashcompinit && bashcompinit
-#  autoload -Uz compinit && compinit
-#  export VAULT_ADDR=vault.example.com
-#  complete -o nospace -C /usr/local/bin/vault vault
-#fi
 
 ## AWSCLIv2
 #complete -C aws_completer aws
@@ -87,10 +60,6 @@
 #  REGION=$(aws configure get region) \
 #  fzf --ansi | xargs aws configure set region
 #}
-
-## Cloudflare
-#export CLOUDFLARE_EMAIL=simnalamburt@gmail.com
-#export CLOUDFLARE_API_KEY=xxxxxxxx
 
 ## bat
 #export BAT_PAGER='less -+XF -RSQc'
@@ -122,6 +91,3 @@
 
 ## alacritty
 #alias ssh='TERM=xterm-256color ssh'
-
-## pnpm
-#alias p=pnpm
