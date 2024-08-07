@@ -1,9 +1,1 @@
 # vim: ft=gitconfig noexpandtab sw=8
-
-# neovim
-[core]
-	editor = nvim
-
-# git-delta
-[core]
-	pager = DELTA_PAGER='less -+XF -SQc' delta

@@ -4,8 +4,8 @@
 	email = simnalamburt@gmail.com
 	signingkey = 13E12F01AD9C017AA999A7FE0F85F46EE242057F
 [core]
-	editor = vim
-	pager = less -+XF -SQc
+	editor = nvim
+	pager = DELTA_PAGER='less -+XF -SQc' delta
 	excludesfile = ~/.gitexclude
 	fscache = yes
 	preloadindex = yes
