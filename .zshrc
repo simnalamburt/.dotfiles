@@ -180,3 +180,8 @@ fi
 if (( $+commands[go] )); then
   export GOPATH="${HOME}/.go"
 fi
+
+# fzf
+if (( $+commands[fzf] )); then
+  source <(fzf --zsh)
+fi

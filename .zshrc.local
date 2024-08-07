@@ -28,14 +28,6 @@
 #alias vim=nvim
 #export EDITOR=nvim
 
-## fzf (arch)
-#if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
-#  source /usr/share/fzf/key-bindings.zsh
-#fi
-
-## fzf (brew)
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 ## Fix home/end/delete
 #bindkey  "^[[H"   beginning-of-line
 #bindkey  "^[[F"   end-of-line
