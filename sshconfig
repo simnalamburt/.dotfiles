@@ -1,9 +1,6 @@
 Include config.local
 
 # Personal servers
-Host tara
-  Hostname 192.168.0.1
-  User root
 Host wax
   Hostname 192.168.1.1
   User root
@@ -11,24 +8,10 @@ Host bear
   Hostname 10.200.200.1
   User ubuntu
 
-# SNUCSE
-Host martini.snucse.org
-  User simnalamburt
-
 # Femiwiki
 Host femiwiki.com
   User ec2-user
   IdentityFile ~/.ssh/femiwiki_rsa
-
-# UPnL
-Host edhelbroy.upnl.org
-  Port 2222
-Host sodrak.upnl.org
-  User server
-
-# Arch Linux
-Host aur.archlinux.org
-  User aur
 
 Host *
   User simnalamburt

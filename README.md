@@ -33,8 +33,8 @@ p10k configure
 # ssh
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
-ln -sf ~/.dotfiles/.ssh/config ~/.ssh
-cp ~/.dotfiles/.ssh/config.local ~/.ssh
+ln -sf ~/.dotfiles/sshconfig ~/.ssh/config
+cp ~/.dotfiles/sshconfig.local ~/.ssh/config.local
 
 # git
 ln -sf ~/.dotfiles/.gitconfig ~
