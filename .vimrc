@@ -193,7 +193,6 @@ try
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
@@ -279,9 +278,6 @@ try
         call CocActionAsync('highlight')
       endif
     endfunction
-
-    " coc-prettier
-    command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
     " supertab
     let g:SuperTabDefaultCompletionType = "<c-n>"
