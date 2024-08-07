@@ -48,7 +48,7 @@ cat - /etc/pam.d/sudo <<< 'auth sufficient pam_tid.so' | sudo tee /etc/pam.d/sud
 
 ### 3rd party software configs
 - Rectangle 켜고 권한 주기
-- [파이어폭스 설정](firefox.md)
+- [브라우저 설정](browser.md)
 - [Monaco Nerd Font 설치](https://drive.google.com/file/d/15o0ykWwg8tlfgo_fOfK5CD4I5FdLTXdt/view)
 - [내 Karabiner-Elements 설정 import하기](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6InNpbW5hbGFtYnVydCIsInJ1bGVzIjpbeyJkZXNjcmlwdGlvbiI6InNpbW5hbGFtYnVydCIsIm1hbmlwdWxhdG9ycyI6W3sidHlwZSI6ImJhc2ljIiwiZnJvbSI6eyJrZXlfY29kZSI6ImNhcHNfbG9jayJ9LCJ0byI6W3sia2V5X2NvZGUiOiJyaWdodF9jb21tYW5kIiwicmVwZWF0Ijp0cnVlfV19XX1dfQo=)
 - (optional) Wireguard 프로필 생성
