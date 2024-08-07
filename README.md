@@ -6,7 +6,7 @@
   <b><a href="docs/">documentation</a></b> | <a href="packages/">packages</a>
 </p>
 
-<br>
+&nbsp;
 
 ```shell
 # Import or initialize secrets:
@@ -15,6 +15,13 @@
 
 git clone git@github.com:simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
+# zsh
+git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
+ln -sf ~/.dotfiles/.zshrc ~
+cp ~/.dotfiles/.zshrc.local ~
+exec zsh
+p10k configure
+
 # neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -22,13 +29,6 @@ mkdir -p ~/.config/nvim
 ln -s ~/.dotfiles/.vimrc ~/.config/nvim/init.vim
 ln -s ~/.dotfiles/coc-settings.json ~/.config/nvim/coc-settings.json
 cp ~/.dotfiles/.vimrc.local ~
-
-# zsh
-git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
-ln -sf ~/.dotfiles/.zshrc ~
-cp ~/.dotfiles/.zshrc.local ~
-exec zsh
-p10k configure
 
 # ssh
 mkdir -p ~/.ssh
@@ -51,7 +51,7 @@ cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
 gpgconf --kill gpg-agent
 # See https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88 for how to set up a PGP key pair.
 
-# tmux
+# tmux (^Q I to install plugins)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sf ~/.dotfiles/.tmux.conf ~
 
@@ -92,10 +92,10 @@ ln -s ~/.dotfiles/mako ~/.config/mako/config
 - [simnalamburt/tmux-pane     ](https://github.com/simnalamburt/tmux-pane) - My key-bindings for tmux pane resizing and splitting
 - [simnalamburt/shellder      ](https://github.com/simnalamburt/shellder) - Simple and feature-rich zsh/fish shell theme
 
-<br>
+&nbsp;
 
 --------
-*dotfiles* is primarily distributed under the terms of both the [MIT license]
+*.dotfiles* is primarily distributed under the terms of both the [MIT license]
 and the [Apache License (Version 2.0)]. See [COPYRIGHT] for details.
 
 [MIT license]: LICENSE-MIT
