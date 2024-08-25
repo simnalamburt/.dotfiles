@@ -1,6 +1,5 @@
 Setup note
 ========
-### A. Basic customization
 1.  Remap [Caps Lock → Control](https://gist.github.com/simnalamburt/90965dcb09cec6b82320/raw/58a9f61143273d5226be352d2c29ecf738e5bffd/capslock-to-control.reg)
 
 1.  Disable snap assistant
@@ -18,48 +17,6 @@ Setup note
     127.0.0.1 display.ad.daum.net
     ```
 
-1.  (Optional) Enable Hyper-V and Windows Sandbox.
+1.  Enable Windows Sandbox.
 
-<br>
-
-### B. Install [scoop](https://scoop.sh/)
-1.  Set ExecutionPolicy as `RemoteSigned`.
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-    ```
-
-1.  Download and execute scoop installer.
-
-    ```powershell
-    iwr -useb get.scoop.sh | iex
-    ```
-
-1.  Install git. This is requied for enable non-default buckets.
-
-    ```powershell
-    scoop install git
-    ```
-
-<br>
-
-### C. Setup Windows Subsystem for Linux
-1.  [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-
-    ```powershell
-    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-
-    # And, install Linux distros from Microsoft Store
-    ```
-
-1.  (Optional) If you're using VPN, disable resolvConf generation and manually
-    update `/etc/resolv.conf`.
-
-    ```bash
-    # Reference: https://github.com/microsoft/WSL/issues/1350
-    sudo tee /etc/wsl.conf <<'EOF'
-    [network]
-    generateResolvConf = false
-    EOF
-    ```
+1.  [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
