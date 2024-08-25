@@ -14,7 +14,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - simnalamburt/x/jaso
 
 ### `brew --cask`
-- rectangle karabiner-elements
+- rectangle karabiner-elements stats
 - firefox discord steam
 - google-chrome slack
 - iterm2 orbstack
