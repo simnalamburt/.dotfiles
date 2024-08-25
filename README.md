@@ -9,9 +9,7 @@
 &nbsp;
 
 ```shell
-# Import or initialize secrets:
-#   SSH private keys, GPG secret keys, AWSCLI API keys, Terraform API keys,
-#   Docker tokens, Cargo tokens, Bundle tokens, NPM tokens, PIP tokens, ...
+# Import or initialize secrets (i.e. SSH private keys, GPG secret keys, etc)
 
 git clone git@github.com:simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
@@ -55,34 +53,6 @@ gpgconf --kill gpg-agent
 # tmux (^Q I to install plugins)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sf ~/.dotfiles/.tmux.conf ~
-
-# sway
-mkdir -p ~/.config/sway
-ln -s ~/.dotfiles/sway ~/.config/sway/config
-# swaylock
-mkdir -p ~/.config/swaylock
-ln -s ~/.dotfiles/swaylock ~/.config/swaylock/config
-
-# alacritty
-mkdir -p ~/.config/alacritty
-ln -s ~/.dotfiles/alacritty.yml ~/.config/alacritty/.
-
-# sirula
-mkdir -p ~/.config/sirula
-ln -s ~/.dotfiles/sirula.toml ~/.config/sirula/config.toml
-ln -s ~/.dotfiles/sirula.css  ~/.config/sirula/style.css
-
-# GTK 3
-mkdir -p ~/.config/gtk-3.0
-ln -s ~/.dotfiles/gtk3.ini ~/.config/gtk-3.0/settings.ini
-
-# kime
-mkdir -p ~/.config/kime
-ln -s ~/.dotfiles/kime.yml ~/.config/kime/config.yaml
-
-# mako
-mkdir -p ~/.config/mako
-ln -s ~/.dotfiles/mako ~/.config/mako/config
 ```
 
 #### Check out my vim/zsh/tmux plugins
