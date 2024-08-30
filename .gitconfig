@@ -49,8 +49,12 @@
 [merge]
 	conflictstyle = zdiff3
 [commit]
-	gpgsign = yes
 	verbose = true
+	gpgsign = yes
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = ~/.dotfiles/.gitallowedsigners
 [rerere]
 	enabled = true
 [stash]

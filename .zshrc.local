@@ -28,6 +28,9 @@
 #alias vim=nvim
 #export EDITOR=nvim
 
+## secretive
+#export SSH_AUTH_SOCK="${HOME}/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
+
 ## Fix home/end/delete
 #bindkey  "^[[H"   beginning-of-line
 #bindkey  "^[[F"   end-of-line
