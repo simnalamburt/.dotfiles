@@ -1,26 +1,11 @@
 # vim: ft=sshconfig
 Include ~/.orbstack/ssh/config
 
-# SNUCSE
-Host cse.snu.ac.kr
-Host martini.snucse.org
-Host mimosa.snucse.org
-Host ipa.snucse.org
-Host dew.snucse.org
-Host sherry.snucse.org
-  User sherry
+#Host *
+#  UseKeychain yes
+#  AddKeysToAgent yes
+#  IdentityFile ~/.ssh/id_ed25519
+#  IdentityFile ~/.ssh/id_rsa
 
-# UPnL
-Host edhelbroy.upnl.org
-  Port 2222
-Host sodrak.upnl.org
-  User server
-
-# Arch Linux
-Host aur.archlinux.org
-  User aur
-
-Host *
-  UseKeychain yes
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/id_ed25519
+#Host *
+#  IdentityAgent ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
