@@ -41,7 +41,6 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - (optional) Wireguard 프로필 생성
 - ed25519 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
 - .dotfiles 클론
-- iTerm2 설정 임포트, iTerm2에 엑세서빌리티 권한 부여
-- ssh, vimrc, gitconfig, gitexclude 등의 설정들 심링크
+- wezterm, karabiner, ssh, vimrc, gitconfig, gitexclude 등의 설정들 심링크
 - zinit, vim-plug 등 설치 후 플러그인 다운로드
 - [GPG private key macOS에 설치](./gpg.md)
