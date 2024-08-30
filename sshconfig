@@ -17,12 +17,6 @@ Host dew.snucse.org
 Host sherry.snucse.org
   User sherry
 
-# UPnL
-Host edhelbroy.upnl.org
-  Port 2222
-Host sodrak.upnl.org
-  User server
-
 # Arch Linux
 Host aur.archlinux.org
   User aur
