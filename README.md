@@ -17,6 +17,10 @@ git clone git@github.com:simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 mkdir -p ~/.config/wezterm
 ln -sf ~/.dotfiles/wezterm.lua ~/.config/wezterm
 
+# karabiner
+mkdir -p ~/.config/karabiner
+ln -sf ~/.dotfiles/karabiner.json ~/.config/karabiner
+
 # zsh
 git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
 ln -sf ~/.dotfiles/.zshrc ~

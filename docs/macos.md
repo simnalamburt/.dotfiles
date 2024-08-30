@@ -38,7 +38,6 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - Rectangle 켜고 권한 주기
 - [브라우저 설정](browser.md)
 - [Monaco Nerd Font 설치](https://github.com/thep0y/monaco-nerd-font)
-- [내 Karabiner-Elements 설정 import하기](https://genesy.github.io/karabiner-complex-rules-generator/#eyJ0aXRsZSI6InNpbW5hbGFtYnVydCIsInJ1bGVzIjpbeyJkZXNjcmlwdGlvbiI6InNpbW5hbGFtYnVydCIsIm1hbmlwdWxhdG9ycyI6W3sidHlwZSI6ImJhc2ljIiwiZnJvbSI6eyJrZXlfY29kZSI6ImNhcHNfbG9jayJ9LCJ0byI6W3sia2V5X2NvZGUiOiJyaWdodF9jb21tYW5kIiwicmVwZWF0Ijp0cnVlfV19XX1dfQo=)
 - (optional) Wireguard 프로필 생성
 - ed25519 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
 - .dotfiles 클론

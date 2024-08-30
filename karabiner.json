@@ -1,0 +1,27 @@
+{
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "simnalamburt",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "caps_lock" },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "Default profile",
+            "selected": true
+        }
+    ]
+}
