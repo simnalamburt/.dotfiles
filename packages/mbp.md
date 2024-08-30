@@ -17,7 +17,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - rectangle karabiner-elements stats
 - firefox discord steam
 - google-chrome slack
-- iterm2 orbstack
+- iterm2 wezterm orbstack
 - zed visual-studio-code
 - chatgpt
 - zoom

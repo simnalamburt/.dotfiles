@@ -13,6 +13,10 @@
 
 git clone git@github.com:simnalamburt/.dotfiles.git --depth=1 ~/.dotfiles
 
+# wezterm
+mkdir -p ~/.config/wezterm
+ln -sf ~/.dotfiles/wezterm.lua ~/.config/wezterm
+
 # zsh
 git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit/bin
 ln -sf ~/.dotfiles/.zshrc ~
