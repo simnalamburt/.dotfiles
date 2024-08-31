@@ -1,5 +1,6 @@
 깃 커밋 서명하는법
 ========
+> **NOTE**: Consider using an SSH key to sign commits instead of GPG. It's much easier and simpler.
 
 ### A. PGP key pair 등록
 기존에 원래 사용하던 PGP key pair가 없을경우 새로 만들어야한다. 이미 key pair가 있을경우, 비밀키를 컴퓨터에 다운로드 해줘야한다.
