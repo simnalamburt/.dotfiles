@@ -12,6 +12,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - hashicorp/tap/terraform
 - redis mysql-client
 - simnalamburt/x/jaso
+- age age-plugin-yubikey age-plugin-se
 
 ### `brew --cask`
 - rectangle karabiner-elements stats secretive

@@ -192,12 +192,24 @@ if (( $+commands[age] )); then
     age \
       -r age1yubikey1qwu0dn9wcu2e4v9wg96980kkw89rzm7uj4twdl52d3ckr6qegcv2juladcq \
       -r age1yubikey1qdsgvj5300v38xyxa9ctqal2dew0fqavnery0a67mm2urpyht8kdc7jldq8 \
+      -r age1yubikey1qvwqyhgnnw67qqv752nr4pqmrru5r4gn8kg3p0tvdzp58tj8nezq7fx9m6z \
       "$@"
   }
-  function decrypt() {
-    age -d \
-      -i ~/.config/age/k0 \
-      -i ~/.config/age/k1 \
-      "$@"
-  }
+
+  if [[ -f ~/.config/age/k2 ]]; then
+    function decrypt() {
+      age -d \
+        -i ~/.config/age/k0 \
+        -i ~/.config/age/k1 \
+        -i ~/.config/age/k2 \
+        "$@"
+    }
+  else
+    function decrypt() {
+      age -d \
+        -i ~/.config/age/k0 \
+        -i ~/.config/age/k1 \
+        "$@"
+    }
+  fi
 fi
