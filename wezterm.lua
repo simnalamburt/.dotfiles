@@ -2,13 +2,13 @@ local w = require 'wezterm'
 local c = w.config_builder()
 local a = w.action
 
--- c.color_scheme = 'Dracula' -- TODO
-c.font = w.font('MonacoLigaturized Nerd Font Mono')
-c.font_size = 18
 c.front_end = 'WebGpu'
--- c.hide_tab_bar_if_only_one_tab = true -- TODO: need improvement
+
+-- Appearance
+c.color_scheme = 'iTerm2 Dark Background'
+c.font = w.font('MonacoLigaturized Nerd Font')
+c.font_size = 16
 c.native_macos_fullscreen_mode = true
--- c.show_close_tab_button_in_tabs = false -- TODO: nightly only
 c.show_new_tab_button_in_tab_bar = false
 c.show_tab_index_in_tab_bar = false
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
@@ -31,10 +31,29 @@ c.window_padding = {
 
 c.keys = {
   {mods = 'CMD', key = 'Enter', action = a.ToggleFullScreen},
-  {mods = 'CMD', key = 'm', action = a.SplitVertical},
-  {mods = 'CMD', key = 'l', action = a.SplitHorizontal},
-  {mods = 'CMD', key = '[', action = a.ActivatePaneDirection 'Prev'},
-  {mods = 'CMD', key = ']', action = a.ActivatePaneDirection 'Next'},
+  {mods = 'CMD', key = '[', action = a.ActivatePaneDirection('Prev')},
+  {mods = 'CMD', key = ']', action = a.ActivatePaneDirection('Next')},
 }
+
+if w.target_triple ~= 'x86_64-pc-windows-msvc' then
+  table.insert(c.keys, {mods = 'CMD', key = 'm', action = a.SplitVertical})
+  table.insert(c.keys, {mods = 'CMD', key = 'l', action = a.SplitHorizontal})
+else
+  -- Windows specific settings
+  c.default_domain = 'WSL:Arch'
+
+  table.insert(c.keys, {mods = 'CMD', key = '-', action = a.SplitVertical})
+  table.insert(c.keys, {mods = 'CMD', key = '\\', action = a.SplitHorizontal})
+
+  table.insert(c.keys, {mods = 'CTRL', key = '1', action = a.ActivateTab(0)})
+  table.insert(c.keys, {mods = 'CTRL', key = '2', action = a.ActivateTab(1)})
+  table.insert(c.keys, {mods = 'CTRL', key = '3', action = a.ActivateTab(2)})
+  table.insert(c.keys, {mods = 'CTRL', key = '4', action = a.ActivateTab(3)})
+  table.insert(c.keys, {mods = 'CTRL', key = '5', action = a.ActivateTab(4)})
+  table.insert(c.keys, {mods = 'CTRL', key = '6', action = a.ActivateTab(5)})
+  table.insert(c.keys, {mods = 'CTRL', key = '7', action = a.ActivateTab(6)})
+  table.insert(c.keys, {mods = 'CTRL', key = '8', action = a.ActivateTab(7)})
+  table.insert(c.keys, {mods = 'CTRL', key = '9', action = a.ActivateTab(8)})
+end
 
 return c
