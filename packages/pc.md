@@ -19,9 +19,9 @@ Windows 10 Pro
 - Steam, Uplay, EA app
 - Windows Sandbox
 - NVIDIA GeForce Experience
-- Video DownloadHelper Companion App 1.6.3
+- Video DownloadHelper Companion App
 - Logitech Options+
 - CaskaydiaCove Nerd Font
 - 알라딘 전자책 뷰어
-- Krita
+- VLC
 - wezterm
