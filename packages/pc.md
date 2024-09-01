@@ -6,6 +6,9 @@ Windows 10 Pro
 - firefox wireguard discord
 - chrome slack
 
+### `C:\Windows\System32`
+- [age-plugin-yubikey.exe](https://github.com/str4d/age-plugin-yubikey)
+
 ### Microsoft Store
 - Windows Subsystem for Linux
 - KakaoTalk
@@ -25,3 +28,4 @@ Windows 10 Pro
 - 알라딘 전자책 뷰어
 - VLC
 - wezterm
+- YubiKey Manager
