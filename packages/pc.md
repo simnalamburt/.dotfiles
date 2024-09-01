@@ -8,7 +8,6 @@ Windows 10 Pro
 
 ### Microsoft Store
 - Windows Subsystem for Linux
-- Windows Terminal
 - KakaoTalk
 
 ### Manually Installed
@@ -25,3 +24,4 @@ Windows 10 Pro
 - CaskaydiaCove Nerd Font
 - 알라딘 전자책 뷰어
 - Krita
+- wezterm
