@@ -13,6 +13,3 @@ PC, WSL 2
 
 ### `rustup`
 - stable: rust-src rust-analyzer
-
-### `/usr/local/bin`
-- aws ([awscliv2.appimage](https://github.com/simnalamburt/awscliv2.appimage/releases))
