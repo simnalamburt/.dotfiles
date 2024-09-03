@@ -36,6 +36,15 @@
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
 
+## noti (macOS)
+#noti() {
+#  if (( $? == 0 )); then
+#    osascript -e 'display notification "The command worked" with title "Success" sound name "Glass"'
+#  else
+#    osascript -e 'display notification "The command failed" with title "Failed" sound name "Sosumi"'
+#  fi
+#}
+
 ## AWSCLIv2
 #complete -C aws_completer aws
 #if [[ -f ~/.aws/current_profile ]]; then
