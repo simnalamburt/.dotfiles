@@ -65,9 +65,6 @@
 #  fzf --ansi | xargs aws configure set region
 #}
 
-## bat
-#export BAT_PAGER='less -+XF -RSQc'
-
 ## Wayland
 ## Elementary/EFL
 #export ECORE_EVAS_ENGINE=wayland_egl
