@@ -5,7 +5,7 @@
 	signingkey = 13E12F01AD9C017AA999A7FE0F85F46EE242057F
 [core]
 	editor = nvim
-	pager = DELTA_PAGER='less -+XF -SQc' delta
+	pager = DELTA_PAGER='less -+XF -RSQc' delta
 	excludesfile = ~/.gitexclude
 	fscache = yes
 	preloadindex = yes
