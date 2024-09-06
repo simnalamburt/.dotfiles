@@ -73,6 +73,12 @@
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
 
+	# git all
+	#
+	# It shows *all* git commit references in a graph format, including dangling
+	# or unreachable commits (e.g., popped stashes, etc.).
+	all = "!_() { git log --oneline --graph --reflog $(git fsck --unreachable | perl -ne 'print \"$1\\n\" if /^\\w+ commit ([0-9a-f]+)$/'); }; _"
+
 	# git pr [<remote>]
 	#
 	# Fetch pull requests from GitHub. Fetch "origin" if remote is not
