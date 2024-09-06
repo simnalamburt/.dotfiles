@@ -22,6 +22,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - zed visual-studio-code
 - chatgpt
 - zoom
+- yubico-yubikey-plugin
 
 ### `rustup`
 - stable: rust-analyzer
