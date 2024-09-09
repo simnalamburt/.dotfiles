@@ -19,7 +19,6 @@ Host sherry.snucse.org
 
 # UPnL
 Host edhelbroy.upnl.org
-  Port 2222
 Host sodrak.upnl.org
   User server
 
