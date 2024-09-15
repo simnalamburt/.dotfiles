@@ -14,3 +14,4 @@ PC, WSL 2
 
 ### `rustup`
 - stable: rust-src rust-analyzer
+- cargo: cargo-outdated
