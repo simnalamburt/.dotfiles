@@ -1,6 +1,6 @@
 PC
 ========
-Windows 10 Pro
+Windows 11 Pro
 
 ### `winget`
 - firefox wireguard discord
@@ -18,7 +18,6 @@ Windows 10 Pro
 - https://github.com/yuk7/ArchWSL
 - Nexon Game Manager, Mabinogi
 - Chrome Remote Desktop Host
-- MS Office
 - Steam, Uplay, EA app
 - Windows Sandbox
 - NVIDIA GeForce Experience
