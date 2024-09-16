@@ -13,6 +13,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - redis mysql-client
 - simnalamburt/x/jaso
 - age age-plugin-yubikey age-plugin-se
+- lazygit
 
 ### `brew --cask`
 - rectangle karabiner-elements stats secretive
