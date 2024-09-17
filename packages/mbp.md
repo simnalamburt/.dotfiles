@@ -16,7 +16,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - lazygit
 
 ### `brew --cask`
-- rectangle karabiner-elements stats secretive
+- rectangle karabiner-elements secretive
 - firefox discord steam
 - google-chrome slack
 - wezterm orbstack
