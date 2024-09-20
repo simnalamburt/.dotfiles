@@ -20,7 +20,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - firefox discord steam
 - google-chrome slack
 - wezterm orbstack
-- zed visual-studio-code
+- zed
 - chatgpt
 - zoom
 - yubico-yubikey-plugin
