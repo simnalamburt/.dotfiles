@@ -9,6 +9,7 @@ c.color_scheme = 'iTerm2 Dark Background'
 c.font = w.font('MonacoLigaturized Nerd Font')
 c.font_size = 16
 c.native_macos_fullscreen_mode = true
+c.send_composed_key_when_right_alt_is_pressed = false
 c.show_new_tab_button_in_tab_bar = false
 c.show_tab_index_in_tab_bar = false
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
