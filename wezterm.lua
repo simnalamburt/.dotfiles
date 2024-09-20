@@ -8,6 +8,7 @@ c.front_end = 'WebGpu'
 c.color_scheme = 'iTerm2 Dark Background'
 c.font = w.font('MonacoLigaturized Nerd Font')
 c.font_size = 16
+c.adjust_window_size_when_changing_font_size = false
 c.native_macos_fullscreen_mode = true
 c.send_composed_key_when_right_alt_is_pressed = false
 c.show_new_tab_button_in_tab_bar = false
