@@ -13,14 +13,8 @@
 #export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include"
 #export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
-## Homebrewed autocompletion
-#fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
-
 ## GNU Coreutils
-# alias ls='ls --color=tty'
 # alias rm='rm -I'
-## macOS
-# alias ls='ls -G'
 
 ## neovim
 #alias v=nvim
@@ -28,22 +22,10 @@
 #alias vim=nvim
 #export EDITOR=nvim
 
-## secretive
-#export SSH_AUTH_SOCK="${HOME}/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
-
 ## Fix home/end/delete
 #bindkey  "^[[H"   beginning-of-line
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
-
-## noti (macOS)
-#noti() {
-#  if (( $? == 0 )); then
-#    osascript -e 'display notification "The command worked" with title "Success" sound name "Glass"'
-#  else
-#    osascript -e 'display notification "The command failed" with title "Failed" sound name "Sosumi"'
-#  fi
-#}
 
 ## AWSCLIv2
 #complete -C aws_completer aws
@@ -65,30 +47,31 @@
 #  fzf --ansi | xargs aws configure set region
 #}
 
-## Wayland
-## Elementary/EFL
-#export ECORE_EVAS_ENGINE=wayland_egl
-#export ELM_ENGINE=wayland_egl
-## SDL
-#export SDL_VIDEODRIVER=wayland
-## Java
-#export _JAVA_AWT_WM_NONREPARENTING=1
+
 #
-## wl-clipboard
-#alias pbcopy=wl-copy
-#alias pbpaste=wl-paste
+# macOS
+#
+## Homebrewed autocompletion
+#fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
+## secretive
+#export SSH_AUTH_SOCK="${HOME}/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
+## noti
+#noti() {
+#  if (( $? == 0 )); then
+#    osascript -e 'display notification "The command worked" with title "Success" sound name "Glass"'
+#  else
+#    osascript -e 'display notification "The command failed" with title "Failed" sound name "Sosumi"'
+#  fi
+#}
 
-## kime
-#export GTK_IM_MODULE='kime'
-#export QT_IM_MODULE='kime'
-#export XMODIFIERS='@im=kime'
 
-## sway
-#alias run-sway='systemd-cat -t sway sway'
-#alias run-sway-gpu='WLR_DRM_DEVICES=/dev/dri/card0:/dev/dri/card1 systemd-cat -t sway sway'
-#alias edit-clipboard='swappy -f <(wl-paste -t image/png) -o >(wl-copy -t image/png)'
-#alias record='wf-recorder'
-#alias record-part='wf-recorder -g "$(slurp)"'
-
-## alacritty
-#alias ssh='TERM=xterm-256color ssh'
+#
+# WSL
+#
+## ssh-agent
+#if ! pgrep -u "${USER}" ssh-agent > /dev/null; then
+#  ssh-agent -t 1h > "${XDG_RUNTIME_DIR}/ssh-agent.env"
+#fi
+#if [[ ! -f "${SSH_AUTH_SOCK}" ]]; then
+#  . "${XDG_RUNTIME_DIR}/ssh-agent.env" > /dev/null
+#fi
