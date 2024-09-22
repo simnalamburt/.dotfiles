@@ -39,8 +39,8 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [브라우저 설정](browser.md)
 - [Monaco Nerd Font 설치](https://github.com/thep0y/monaco-nerd-font)
 - (optional) Wireguard 프로필 생성
-- ed25519 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
+- Secretive로 ecdsa-sha2-nistp256 키 생성해서 적재적소에 등록 (주로 깃헙과 개인서버들)
 - .dotfiles 클론
 - wezterm, karabiner, ssh, vimrc, gitconfig, gitexclude 등의 설정들 심링크
 - zinit, vim-plug 등 설치 후 플러그인 다운로드
-- [GPG private key macOS에 설치](./gpg.md)
+- (optional) Secretive로 새 age private key 생성

@@ -51,13 +51,6 @@ cp ~/.dotfiles/.gitconfig.local ~
 mkdir -p ~/.config/lsd
 ln -sf ~/.dotfiles/lsd.yaml ~/.config/lsd/config.yaml
 
-# gpg
-mkdir -p ~/.gnupg
-chmod 700 ~/.gnupg
-cp ~/.dotfiles/gpg-agent.conf ~/.gnupg
-gpgconf --kill gpg-agent
-# See https://gist.github.com/simnalamburt/c921a9e70e9a43f5b4743499370d5a88 for how to set up a PGP key pair.
-
 # tmux (^Q I to install plugins)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sf ~/.dotfiles/.tmux.conf ~

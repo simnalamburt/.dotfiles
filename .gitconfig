@@ -2,7 +2,7 @@
 [user]
 	name = Hyeon Kim
 	email = simnalamburt@gmail.com
-	signingkey = 13E12F01AD9C017AA999A7FE0F85F46EE242057F
+	signingkey = "key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHw1kc3i4A/ix5HZigHIspFzT8BYiSFyoYPOSPzt8mhA"
 [core]
 	editor = nvim
 	pager = DELTA_PAGER='less -+XF -RSQc' delta
@@ -53,6 +53,8 @@
 	gpgsign = yes
 [tag]
 	gpgsign = true
+[gpg]
+	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/.dotfiles/.gitallowedsigners
 [rerere]
