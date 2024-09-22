@@ -28,4 +28,3 @@ Windows 11 Pro
 - VLC
 - wezterm
 - YubiKey Manager
-- rustup, Visual Studio Installer, Visual Studio 2022 Community, Visual C++
