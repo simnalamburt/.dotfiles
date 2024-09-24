@@ -8,6 +8,16 @@ c.front_end = 'WebGpu'
 c.color_scheme = 'iTerm2 Dark Background'
 c.font = w.font('MonacoLigaturized Nerd Font')
 c.font_size = 16
+c.audible_bell = 'Disabled'
+c.visual_bell = {
+  fade_in_function = 'EaseIn',
+  fade_in_duration_ms = 1,
+  fade_out_function = 'EaseOut',
+  fade_out_duration_ms = 200,
+}
+c.colors = {
+  visual_bell = '#200000',
+}
 c.adjust_window_size_when_changing_font_size = false
 c.native_macos_fullscreen_mode = true
 c.send_composed_key_when_right_alt_is_pressed = false
