@@ -15,6 +15,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - age age-plugin-yubikey age-plugin-se
 - lazygit
 - ffmpeg
+- k6
 
 ### `brew --cask`
 - karabiner-elements secretive
