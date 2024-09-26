@@ -1,0 +1,11 @@
+# ~/Library/Application Support/iamb/config.toml
+default_profile = "user"
+
+[profiles.user]
+user_id = "@simnalamburt:matrix.org"
+
+[settings]
+default_room = "#hyeon"
+image_preview.protocol.type = "iterm2"
+user_gutter_width = 15
+username_display = "displayname"
