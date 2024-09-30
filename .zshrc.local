@@ -75,3 +75,9 @@
 #if [[ ! -f "${SSH_AUTH_SOCK}" ]]; then
 #  . "${XDG_RUNTIME_DIR}/ssh-agent.env" > /dev/null
 #fi
+
+#
+# zoxide
+#
+#unalias zi
+#eval "$(zoxide init zsh)"
