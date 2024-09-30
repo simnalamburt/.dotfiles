@@ -12,6 +12,7 @@
 #export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib"
 #export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include"
 #export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
+#export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
 
 ## GNU Coreutils
 # alias rm='rm -I'
