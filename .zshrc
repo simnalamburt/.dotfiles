@@ -111,11 +111,13 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-HISTSIZE=90000
-SAVEHIST=90000
+# History
+setopt EXTENDED_HISTORY HIST_IGNORE_ALL_DUPS HIST_LEX_WORDS HIST_REDUCE_BLANKS SHARE_HISTORY
+HISTSIZE=9000000
+SAVEHIST="${HISTSIZE}"
 HISTFILE=~/.zsh_history
 
-setopt auto_cd histignorealldups sharehistory
+setopt AUTO_CD
 zstyle ':completion:*' menu select
 zstyle ':completion:*' use-cache on
 # Substring completion
