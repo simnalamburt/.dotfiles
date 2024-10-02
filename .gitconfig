@@ -71,6 +71,11 @@
 	autocorrect = prompt
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [alias]
 	# Complex and long git aliases.
 	# Check out https://github.com/simnalamburt/cgitc for short aliases!
