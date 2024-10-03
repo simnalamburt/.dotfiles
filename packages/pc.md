@@ -3,8 +3,7 @@ PC
 Windows 11 Pro
 
 ### `winget`
-- firefox wireguard discord
-- chrome slack
+- chrome wireguard discord slack
 
 ### `C:\Windows\System32`
 - [age-plugin-yubikey.exe](https://github.com/str4d/age-plugin-yubikey)
