@@ -12,6 +12,7 @@ Windows 11 Pro
 ### Microsoft Store
 - Windows Subsystem for Linux
 - KakaoTalk
+- iCloud
 
 ### Manually Installed
 - 7zip
