@@ -12,6 +12,7 @@ Windows 11 Pro
 - Windows Subsystem for Linux
 - KakaoTalk
 - iCloud
+- Dynamic Theme
 
 ### Manually Installed
 - 7zip
