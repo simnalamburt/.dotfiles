@@ -4,6 +4,7 @@
 
   // rust-analyzer
   "rust-analyzer.updates.prompt": false,
+  "rust-analyzer.serverPath": "ra-multiplex",
 
   // Disable a few unused sources
   "coc.source.around.enable": false,

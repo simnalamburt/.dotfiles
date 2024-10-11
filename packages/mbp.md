@@ -30,6 +30,9 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - netdownloadhelpercoapp
 - android-commandlinetools
 
+### `cargo install`
+- ra-multiplex
+
 ### `sdkmanager`
 - platform-tools
 - emulator
