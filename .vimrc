@@ -259,6 +259,7 @@ try
     " coc.nvim
     let g:coc_disable_startup_warning = 1
 
+    " K for documentation
     nnoremap <silent> K :call <SID>show_documentation()<CR>
     function! s:show_documentation()
       if (index(['vim','help'], &filetype) >= 0)
@@ -266,6 +267,14 @@ try
       else
         call CocActionAsync('doHover')
       endif
+    endfunction
+
+    " <leader>h for toggle inlay hints
+    nnoremap <leader>h :silent call <SID>toggle_inlay_hint()<CR>
+    function! s:toggle_inlay_hint()
+      call coc#config('inlayHint', {'enable':
+      \ coc#util#get_config('inlayHint')['enable'] ? v:false : v:true})
+      CocRestart
     endfunction
 
     " coc-highlight
