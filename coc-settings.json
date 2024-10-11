@@ -1,15 +1,11 @@
 {
+  // GitLens-like real-time blame
   "git.addGBlameToVirtualText": true,
+
+  // rust-analyzer
   "rust-analyzer.updates.prompt": false,
+
+  // Disable a few unused sources
   "coc.source.around.enable": false,
   "coc.source.buffer.enable": false,
-  "languageserver": {
-    "haskell": {
-      "command": "haskell-language-server-wrapper",
-      "args": ["--lsp"],
-      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
-      "filetypes": ["haskell", "lhaskell"]
-    }
-  },
-  "zig.path": "zls"
 }
