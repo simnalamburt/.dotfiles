@@ -13,6 +13,7 @@ Windows 11 Pro
 - KakaoTalk
 - iCloud
 - Dynamic Theme
+- IrfanView64
 
 ### Manually Installed
 - 7zip
