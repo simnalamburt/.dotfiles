@@ -200,9 +200,9 @@ if (( $+commands[age] )); then
   if [[ -f ~/.config/age/k2 ]]; then
     function decrypt() {
       age -d \
+        -i ~/.config/age/k2 \
         -i ~/.config/age/k0 \
         -i ~/.config/age/k1 \
-        -i ~/.config/age/k2 \
         "$@"
     }
   else
