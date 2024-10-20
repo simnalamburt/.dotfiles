@@ -6,13 +6,13 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - curl netcat mtr aria2 mkcert nss
 - tmux htop
 - git-lfs fzf ripgrep lsd fd jq yq bat git-delta zoxide cocoapods
-- rust rust-analyzer cargo-watch sqlx-cli simnalamburt/x/ra-multiplex
+- rust rust-analyzer cargo-watch cargo-outdated sqlx-cli simnalamburt/x/ra-multiplex
 - node pnpm python@3.13 python@3.12 openjdk@17 ruby
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - awscli
 - hashicorp/tap/terraform
 - redis mysql-client libpq
-- simnalamburt/x/jaso simnalamburt/x/uniqs
+- simnalamburt/x/jaso simnalamburt/x/uniqs simnalamburt/x/totp
 - age age-plugin-yubikey age-plugin-se
 - lazygit
 - ffmpeg libavif
