@@ -11,7 +11,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - awscli
 - hashicorp/tap/terraform
-- redis mysql-client libpq
+- valkey mysql-client libpq
 - simnalamburt/x/jaso simnalamburt/x/uniqs simnalamburt/x/totp simnalamburt/x/elb-log-parser
 - age age-plugin-yubikey age-plugin-se
 - lazygit
