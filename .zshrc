@@ -16,6 +16,11 @@ fi
 #
 # zinit
 #
+if [[ -d /opt/homebrew ]]; then
+  # Homebrew autocompletion
+  fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
+fi
+
 autoload -U is-at-least
 if is-at-least 5.1 && [[ -d ~/.zinit ]]; then
   source ~/.zinit/bin/zinit.zsh

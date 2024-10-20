@@ -29,7 +29,6 @@
 #bindkey  "^[[3~"  delete-char
 
 ## AWSCLIv2
-#complete -C aws_completer aws
 #if [[ -f ~/.aws/current_profile ]]; then
 #  read -r AWS_PROFILE < ~/.aws/current_profile
 #  export AWS_PROFILE
@@ -52,8 +51,6 @@
 #
 # macOS
 #
-## Homebrewed autocompletion
-#fpath=("${fpath[@]}" /opt/homebrew/share/zsh/site-functions /opt/homebrew/opt/curl/share/zsh/site-functions)
 ## secretive
 #export SSH_AUTH_SOCK="${HOME}/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
 ## noti
