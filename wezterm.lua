@@ -23,6 +23,7 @@ c.native_macos_fullscreen_mode = true
 c.send_composed_key_when_right_alt_is_pressed = false
 c.show_new_tab_button_in_tab_bar = false
 c.show_tab_index_in_tab_bar = false
+c.hide_tab_bar_if_only_one_tab = true
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 c.window_frame = {
   border_left_width = '2px',
