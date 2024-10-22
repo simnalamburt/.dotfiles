@@ -204,7 +204,7 @@ try
     endif
     Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
     "Plug 'weirongxu/coc-kotlin', {'do': 'yarn install --frozen-lockfile'}
-    "Plug 'UltiRequiem/coc-zig', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'UltiRequiem/coc-zig', {'do': 'yarn install --frozen-lockfile'}
     "if executable('clangd')
     "  Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
     "endif

@@ -18,6 +18,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - ffmpeg libavif
 - k6
 - iamb
+- zig zls
 
 ### `brew --cask`
 - karabiner-elements secretive
