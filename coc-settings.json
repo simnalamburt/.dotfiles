@@ -5,6 +5,12 @@
   // rust
   "rust-analyzer.updates.prompt": false,
   "rust-analyzer.serverPath": "ra-multiplex",
+  "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.check.overrideCommand": [
+    "cargo",
+    "clippy",
+    "--message-format=json"
+  ],
   // zig
   "zig.path": "zls",
 
