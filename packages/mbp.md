@@ -13,7 +13,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - awscli
 - hashicorp/tap/terraform
 - valkey mysql-client libpq
-- simnalamburt/x/jaso simnalamburt/x/uniqs simnalamburt/x/totp simnalamburt/x/elb-log-parser
+- simnalamburt/x/jaso simnalamburt/x/uniqs simnalamburt/x/totp simnalamburt/x/elb-log-parser simnalamburt/x/input-source
 - age age-plugin-yubikey age-plugin-se
 - lazygit
 - ffmpeg libavif
