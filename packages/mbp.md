@@ -18,7 +18,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - lazygit
 - ffmpeg libavif
 - k6
-- iamb
+- yt-dlp
 - zig zls
 
 ### `brew --cask`
