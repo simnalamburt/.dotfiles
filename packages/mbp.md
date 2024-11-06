@@ -6,7 +6,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - curl netcat mtr aria2 mkcert nss
 - tmux htop
 - git-lfs fzf ripgrep lsd fd jq yq bat git-delta zoxide cocoapods
-- rust rust-analyzer cargo-watch cargo-outdated sqlx-cli simnalamburt/x/ra-multiplex
+- rust-analyzer cargo-watch cargo-outdated sqlx-cli simnalamburt/x/ra-multiplex
 - node pnpm openjdk@17 ruby
 - uv python@3.13 python@3.12
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
@@ -32,6 +32,9 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - yubico-yubikey-plugin
 - netdownloadhelpercoapp
 - android-commandlinetools
+
+### `rustup`
+- target: aarch64-apple-darwin, aarch64-unknown-linux-musl
 
 ### `sdkmanager`
 - platform-tools
