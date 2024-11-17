@@ -25,9 +25,7 @@ Windows 11 Pro
 - NVIDIA GeForce Experience
 - Video DownloadHelper Companion App
 - Logitech Options+
-- CaskaydiaCove Nerd Font
 - 알라딘 전자책 뷰어
 - VLC
 - wezterm
 - YubiKey Manager
-- REW
