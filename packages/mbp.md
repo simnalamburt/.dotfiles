@@ -2,7 +2,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 ========
 
 ### `brew`
-- neovim git xz watch watchexec gnu-tar parallel coreutils
+- neovim git xz watch watchexec gnu-tar parallel coreutils b3sum
 - curl netcat mtr aria2 mkcert nss
 - tmux htop
 - git-lfs fzf ripgrep lsd fd jq yq bat git-delta zoxide cocoapods
