@@ -20,6 +20,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - chatgpt
 - yubico-yubikey-plugin
 - netdownloadhelpercoapp
+- microsoft-excel
 
 ### `rustup`
 - target: aarch64-apple-darwin, aarch64-unknown-linux-musl
