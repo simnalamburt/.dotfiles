@@ -245,7 +245,7 @@ try
   " Util
   Plug 'simnalamburt/vim-mundo'
   if has('mac')
-    Plug 'simnalamburt/vim-tiny-ime', { 'do' : './build' }
+    Plug 'simnalamburt/vim-tiny-ime'
   endif
   Plug 'godlygeek/tabular'
 
