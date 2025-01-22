@@ -31,4 +31,5 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 ### etc
 - xcode command line tools
-- SIndoh D420 driver
+- Sindoh D420 driver
+- Sindoh D450 driver
