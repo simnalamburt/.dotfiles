@@ -217,7 +217,6 @@ try
   " Neovim plugins
   if has('nvim-0.7')
     Plug 'github/copilot.vim'
-    Plug 'folke/which-key.nvim'
     Plug 'NvChad/nvim-colorizer.lua'
   endif
 
