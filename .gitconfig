@@ -57,6 +57,9 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/.dotfiles/.gitallowedsigners
+[credential]
+	interactive = false
+	helper = git-credential-cache
 [rerere]
 	enabled = true
 [stash]
