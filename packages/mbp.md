@@ -15,8 +15,8 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - karabiner-elements secretive
 - discord steam
 - google-chrome slack
-- wezterm orbstack
-- zed
+- wezterm zed
+- orbstack virtualbuddy
 - chatgpt
 - yubico-yubikey-plugin
 - netdownloadhelpercoapp
