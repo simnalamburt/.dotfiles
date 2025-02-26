@@ -31,7 +31,7 @@ sudo docker run -d --restart=always \
   -e HYEONBOT_SERVER=irc.uriirc.org \
   -e HYEONBOT_PORT=16664 \
   --mount type=bind,src=/home/ubuntu/hyeonbot,dst=/a \
-  ghcr.io/simnalamburt/hyeonbot:1.0.2
+  ghcr.io/simnalamburt/hyeonbot:1.0.4
 
 # discord-irc-rs
 sudo docker run -d --restart=always \
