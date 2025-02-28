@@ -19,7 +19,6 @@ c.colors = {
   visual_bell = '#200000',
 }
 c.adjust_window_size_when_changing_font_size = false
-c.native_macos_fullscreen_mode = true
 c.send_composed_key_when_right_alt_is_pressed = false
 c.show_new_tab_button_in_tab_bar = false
 c.show_tab_index_in_tab_bar = false
@@ -48,10 +47,14 @@ c.keys = {
   {mods = 'CMD', key = ']', action = a.ActivatePaneDirection('Next')},
 }
 
-if w.target_triple ~= 'x86_64-pc-windows-msvc' then
+if w.target_triple == 'aarch64-apple-darwin' or w.target == 'x86_64-apple-darwin' then
+  -- macOS specific settings
+  c.native_macos_fullscreen_mode = true
+  c.window_decorations = 'MACOS_FORCE_ENABLE_SHADOW|RESIZE'
+
   table.insert(c.keys, {mods = 'CMD', key = 'm', action = a.SplitVertical})
   table.insert(c.keys, {mods = 'CMD', key = 'l', action = a.SplitHorizontal})
-else
+elseif w.target_triple == 'x86_64-pc-windows-msvc' then
   -- Windows specific settings
   c.default_domain = 'WSL:Arch'
 
