@@ -36,7 +36,7 @@ sudo docker run -d --restart=always \
 # discord-irc-rs
 sudo docker run -d --restart=always \
   --mount type=bind,src=/home/ubuntu/discord-irc-rs,dst=/a \
-  ghcr.io/simnalamburt/discord-irc-rs:latest@sha256:0be5025ed21258a0b7a10924eaa4999512b97bd87f8a5cc740ed8c20377e1efa
+  ghcr.io/pbzweihander/discord-irc-rs:1.0.1
 
 # personal-op-bot
 sudo docker run -d --restart=always \
