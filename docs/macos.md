@@ -30,12 +30,8 @@ defaults export com.apple.symbolichotkeys - | plutil -convert json -o - - |
 
 # Use sudo with TouchID
 cat - /etc/pam.d/sudo <<< 'auth sufficient pam_tid.so' | sudo tee /etc/pam.d/sudo
-
-# Add passphrase of ssh private key to iCloud KeyChain
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ```
 
-- Rectangle 켜고 권한 주기
 - [브라우저 설정](browser.md)
 - [Monaco Nerd Font 설치](https://github.com/thep0y/monaco-nerd-font)
 - (optional) Wireguard 프로필 생성
