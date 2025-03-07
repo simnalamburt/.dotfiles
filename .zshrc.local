@@ -17,6 +17,12 @@
 ## GNU Coreutils
 # alias rm='rm -I'
 
+## aliases
+#alias claude='pnpx @anthropic-ai/claude-code'
+#alias c=cargo
+#alias zed=zed-preview
+#alias code=code-insiders
+
 ## neovim
 #alias v=nvim
 #alias vi=nvim
