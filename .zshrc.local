@@ -18,7 +18,7 @@
 # alias rm='rm -I'
 
 ## aliases
-#alias claude='pnpx @anthropic-ai/claude-code'
+#alias claude='pnpm dlx @anthropic-ai/claude-code'
 #alias c=cargo
 #alias zed=zed-preview
 #alias code=code-insiders
