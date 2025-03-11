@@ -1,6 +1,6 @@
 # vim: noexpandtab sw=8
 [user]
-	name = Hyeon Kim
+	name = Jihyeon Kim
 	email = simnalamburt@gmail.com
 	signingkey = "key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHw1kc3i4A/ix5HZigHIspFzT8BYiSFyoYPOSPzt8mhA"
 [core]
