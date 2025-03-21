@@ -5,7 +5,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - neovim git xz watch gnu-tar coreutils b3sum htop
 - curl netcat mtr
 - fzf ripgrep lsd fd jq yq bat git-delta
-- rust-analyzer cargo-watch cargo-outdated simnalamburt/x/ra-multiplex
+- rust-analyzer cargo-watch cargo-outdated ra-multiplex
 - node pnpm
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - simnalamburt/x/jaso simnalamburt/x/uniqs
