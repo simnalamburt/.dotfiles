@@ -21,7 +21,11 @@
 	#   https://github.com/github/renaming/
 	#   https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/
 	defaultBranch = main
-	defaultRefFormat = reftable
+
+	# TODO: Enable this when gitstatus supports it.o
+	#
+	# Reference: https://github.com/romkatv/gitstatus/issues/455
+	# defaultRefFormat = reftable
 [log]
 	date = iso8601
 [color]
