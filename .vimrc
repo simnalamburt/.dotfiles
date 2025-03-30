@@ -10,7 +10,9 @@ set fileencoding=utf-8
 set fileencodings=utf-8,cp949,default,latin1
 set shell=/bin/bash " http://stackoverflow.com/a/12231417
 set diffopt+=iwhite,vertical
-set pastetoggle=<F8>
+if !has('nvim')
+  set pastetoggle=<F8>
+endif
 set scrolloff=3
 set switchbuf+=usetab,split
 set startofline
