@@ -212,7 +212,6 @@ try
     "  Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
     "endif
 
-    Plug 'ervandew/supertab'
     Plug 'junegunn/fzf'
   endif
 
