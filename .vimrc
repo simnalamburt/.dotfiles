@@ -193,23 +193,24 @@ try
   " IDE
   if s:use_coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-lists', {'do': 'npm ci'} " NOTE: evaluating
+    Plug 'neoclide/coc-git', {'do': 'npm ci'}
     Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-tsserver', {'do': 'npm ci'}
+    Plug 'neoclide/coc-json', {'do': 'npm ci'}
     Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-stylelint', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile', 'rtp': 'packages/emoji'}
-    Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
+
+    Plug 'fannheyward/coc-biome', {'do': 'npm ci'} " NOTE: evaluating
+    Plug 'fannheyward/coc-rust-analyzer', {'do': 'npm ci'}
+    Plug 'xiyaowong/coc-lightbulb-', {'do': 'yarn install --frozen-lockfile'} " NOTE: evaluating
 
     "if executable('go')
-    "  Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
+    "  Plug 'josa42/coc-go', {'do': 'npm ci'}
     "endif
-    "Plug 'weirongxu/coc-kotlin', {'do': 'yarn install --frozen-lockfile'}
     "Plug 'UltiRequiem/coc-zig', {'do': 'yarn install --frozen-lockfile'}
     "if executable('clangd')
-    "  Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
+    "  Plug 'clangd/coc-clangd', {'do': 'npm ci'}
     "endif
 
     Plug 'junegunn/fzf'
