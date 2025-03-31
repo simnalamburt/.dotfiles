@@ -6,8 +6,14 @@ c.front_end = 'WebGpu'
 
 -- Appearance
 c.color_scheme = 'iTerm2 Dark Background'
+
 c.font = w.font('MonacoLigaturized Nerd Font')
+--c.font = w.font('FiraCode Nerd Font')
+--c.cell_width = 0.95
+--c.line_height = 1.07
 c.font_size = 16
+c.freetype_load_target = 'Light'
+
 c.audible_bell = 'Disabled'
 c.visual_bell = {
   fade_in_function = 'EaseIn',
