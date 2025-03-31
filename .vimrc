@@ -206,7 +206,6 @@ try
 
     Plug 'fannheyward/coc-biome', {'do': 'npm ci'} " NOTE: evaluating
     Plug 'fannheyward/coc-rust-analyzer', {'do': 'npm ci'}
-    Plug 'xiyaowong/coc-lightbulb-', {'do': 'yarn install --frozen-lockfile'} " NOTE: evaluating
 
     "if executable('go')
     "  Plug 'josa42/coc-go', {'do': 'npm ci'}
