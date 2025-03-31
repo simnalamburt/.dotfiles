@@ -12,6 +12,9 @@ set shell=/bin/bash " http://stackoverflow.com/a/12231417
 set diffopt+=iwhite,vertical
 if !has('nvim')
   set pastetoggle=<F8>
+else
+  nnoremap <silent> <F8> :set paste!<cr>
+  inoremap <silent> <F8> <esc>:set paste!<cr>i
 endif
 set scrolloff=3
 set switchbuf+=usetab,split
