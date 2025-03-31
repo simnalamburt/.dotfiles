@@ -263,15 +263,23 @@ try
   "
   if s:use_coc
     " coc.nvim
-    let g:coc_disable_startup_warning = 1
+
+    " <c-space> for trigger completion
+    inoremap <silent><expr> <c-space> coc#refresh()
+
+    " <enter> for confirm completion
+    inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
     " K for documentation
     nnoremap <silent> K :call <SID>show_documentation()<CR>
     function! s:show_documentation()
       if (index(['vim','help'], &filetype) >= 0)
         execute 'h '.expand('<cword>')
-      else
+      elseif CocAction('hasProvider', 'hover')
         call CocActionAsync('doHover')
+      else
+        call feedkeys('K', 'in')
       endif
     endfunction
 
@@ -294,32 +302,39 @@ try
       endif
     endfunction
 
-    " supertab
-    let g:SuperTabDefaultCompletionType = "<c-n>"
-
     " fzf
-    nnoremap <F5> :call <SID>lsp_menu()<CR>
+    nnoremap <leader>m :call <SID>lsp_menu()<CR>
     function! s:lsp_menu()
       call fzf#run({
       \ 'source': [
-      \   'rename',
+      \   'diagnosticInfo',
+      \   'diagnosticToggle',
+      \   'diagnosticToggleBuffer',
+      \   'diagnosticPreview',
+      \   'diagnosticRefresh',
       \   'jumpDefinition',
       \   'jumpDeclaration',
       \   'jumpImplementation',
       \   'jumpTypeDefinition',
       \   'jumpReferences',
-      \   'diagnosticInfo',
-      \   'diagnosticNext',
-      \   'diagnosticPrevious',
+      \   'jumpUsed',
+      \   'doHover',
+      \   'definitionHover',
+      \   'rename',
+      \   'refactor',
       \   'format',
+      \   'formatSelected',
+      \   'codeLensAction',
+      \   'commands',
+      \   'fold',
+      \   'highlight',
       \   'openLink',
       \   'doQuickfix',
-      \   'doHover',
-      \   'refactor',
       \ ],
       \ 'sink': function('CocActionAsync'),
       \ 'options': '+m',
-      \ 'down': 10 })
+      \ 'window': {'width': 28, 'height': 27, 'relative': v:true}
+      \})
     endfunction
   endif
 
@@ -421,6 +436,10 @@ let s:match_color = '#232b32'
 highlight MatchParen cterm=NONE gui=NONE
 call s:bg('MatchParen', s:match_color)
 call s:bg('CocHighlightText', s:match_color)
+
+if has('nvim')
+  set pumblend=15
+endif
 
 
 
