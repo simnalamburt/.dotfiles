@@ -6,6 +6,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - curl netcat mtr
 - fzf ripgrep lsd fd jq yq bat git-delta libavif
 - rust-analyzer cargo-watch cargo-outdated ra-multiplex
+- zig
 - node pnpm
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - simnalamburt/x/bunv
