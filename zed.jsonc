@@ -10,6 +10,13 @@
 // Reference:
 //   https://zed.dev/docs/configuring-zed
 {
+  "assistant": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-pro-exp-03-25"
+    },
+    "version": "2"
+  },
   "features": {
     "inline_completion_provider": "zed"
   },
