@@ -5,10 +5,11 @@
   // rust
   "rust-analyzer.updates.prompt": false,
   "rust-analyzer.serverPath": "ra-multiplex",
+  "rust-analyzer.cargo.features": "all",
   // zig
   "zig.path": "zls",
 
   // Disable a few unused sources
   "coc.source.around.enable": false,
-  "coc.source.buffer.enable": false,
+  "coc.source.buffer.enable": false
 }
