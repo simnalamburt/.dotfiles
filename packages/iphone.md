@@ -3,5 +3,5 @@ iPhone
 
 ### `apk`
 - shadow
-- vim curl git zsh sudo openssh-client
+- neovim curl git zsh sudo openssh-client
 - python3
