@@ -5,7 +5,7 @@
   // rust
   "rust-analyzer.updates.prompt": false,
   "rust-analyzer.serverPath": "ra-multiplex",
-  "rust-analyzer.cargo.features": "all",
+  //"rust-analyzer.cargo.features": "all",
   // zig
   "zig.path": "zls",
 
