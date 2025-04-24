@@ -2,6 +2,6 @@ iPhone
 ========
 
 ### `apk`
-- shadow
-- neovim curl git zsh sudo openssh-client
+- bash shadow sudo openssh-client
+- neovim curl git
 - python3
