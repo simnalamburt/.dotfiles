@@ -237,7 +237,8 @@ try
   Plug 'ayu-theme/ayu-vim'
 
   " Syntax
-  let g:polyglot_disabled = ['sensible', 'v'] | Plug 'sheerun/vim-polyglot'
+  let g:omni_sql_no_default_maps = 1
+  let g:polyglot_disabled = ['sql', 'sensible', 'v'] | Plug 'sheerun/vim-polyglot'
   Plug 'wuelnerdotexe/vim-astro'
 
   " Format
@@ -448,6 +449,9 @@ endif
 "
 augroup vimrc
   autocmd!
+
+  " typst hotfix
+  autocmd BufNewFile,BufRead *.typ set filetype=typst
 
   " Vim automatic reload
   autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
