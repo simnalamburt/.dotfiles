@@ -3,7 +3,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 ### `brew`
 - neovim git xz watch gnu-tar coreutils b3sum htop
-- curl netcat mtr libavif
+- curl netcat mtr
 - fzf ripgrep lsd fd jq yq bat git-delta watchexec
 - simnalamburt/x/jaso simnalamburt/x/uniqs
 - rust-analyzer cargo-watch cargo-outdated cargo-shear ra-multiplex
@@ -15,6 +15,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - typst texlive asymptote biber
 - age age-plugin-yubikey age-plugin-se
 - openjdk@21
+- ffmpeg libavif yt-dlp
 
 ### `brew --cask`
 - karabiner-elements secretive
