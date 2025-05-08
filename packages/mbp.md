@@ -26,6 +26,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - yubico-yubikey-plugin
 - netdownloadhelpercoapp
 - microsoft-excel
+- background-music
 
 ### App Store
 - WireGuard
