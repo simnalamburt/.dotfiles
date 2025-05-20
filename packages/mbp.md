@@ -18,16 +18,23 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - ffmpeg libavif yt-dlp
 
 ### `brew --cask`
-- karabiner-elements secretive
+- karabiner-elements secretive wezterm
 - discord steam
 - google-chrome slack
-- wezterm zed@preview cursor windsurf@next visual-studio-code@insiders
 - orbstack virtualbuddy
-- chatgpt claude
 - yubico-yubikey-plugin
 - netdownloadhelpercoapp
 - microsoft-excel
 - background-music
+
+AI friends
+
+- zed@preview cursor windsurf@next visual-studio-code@insiders
+- chatgpt claude
+
+<sub>Gemini Code Assist, GitHub Copilot, GitHub Copilot Chat, Roo Code are
+installed as vsual-studio-code extensions. See `.zshrc.local` for CLI AI
+friends.</sub>
 
 ### App Store
 - WireGuard

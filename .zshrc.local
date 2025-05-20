@@ -17,9 +17,14 @@
 ## GNU Coreutils
 # alias rm='rm -I'
 
-## aliases
+## AI friends
 #alias claude='pnpm dlx @anthropic-ai/claude-code'
+#alias codex='pnpm dlx @openai/codex'
+
+## aliases
 #alias c=cargo
+#alias cf='cargo fmt --all'
+#alias ci='cargo fmt --check --all && cargo check --all && cargo clippy --all --no-deps -- -D warnings'
 #alias zed=zed-preview
 #alias code=code-insiders
 
@@ -79,9 +84,3 @@
 #if [[ ! -f "${SSH_AUTH_SOCK}" ]]; then
 #  . "${XDG_RUNTIME_DIR}/ssh-agent.env" > /dev/null
 #fi
-
-#
-# zoxide
-#
-#unalias zi
-#eval "$(zoxide init zsh)"
