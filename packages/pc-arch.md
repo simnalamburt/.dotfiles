@@ -11,6 +11,7 @@ PC, WSL 2
 
 - mtr gnu-netcat
 - p7zip age
+- typst
 
 ### `rustup`
 - stable: rust-src rust-analyzer
