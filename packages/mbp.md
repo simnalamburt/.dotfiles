@@ -12,7 +12,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - node pnpm
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - simnalamburt/x/bunv
-- typst texlive asymptote biber
+- typst typstyle texlive asymptote biber
 - age age-plugin-yubikey age-plugin-se
 - openjdk@21
 - ffmpeg libavif yt-dlp
