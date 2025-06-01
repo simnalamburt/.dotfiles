@@ -2,8 +2,12 @@
 *.dSYM
 # npm
 npm-debug.log
+# yarn
+yarn-error.log
 # gdb
 .gdb_history
+# claude code
+.claude
 
 #
 # OS X
@@ -40,7 +44,3 @@ Desktop.ini
 $RECYCLE.BIN/
 ~$*.docx
 ~$*.xlsx
-
-
-# yarn
-yarn-error.log
