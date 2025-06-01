@@ -16,6 +16,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - age age-plugin-yubikey age-plugin-se
 - openjdk@21
 - ffmpeg libavif yt-dlp
+- elan
 
 ### `brew --cask`
 - karabiner-elements secretive wezterm
