@@ -8,9 +8,6 @@ c.front_end = 'WebGpu'
 c.color_scheme = 'iTerm2 Dark Background'
 
 c.font = w.font('MonacoLigaturized Nerd Font')
---c.font = w.font('FiraCode Nerd Font')
---c.cell_width = 0.95
---c.line_height = 1.07
 c.font_size = 16
 c.freetype_load_target = 'Light'
 
@@ -28,7 +25,6 @@ c.adjust_window_size_when_changing_font_size = false
 c.send_composed_key_when_right_alt_is_pressed = false
 c.show_new_tab_button_in_tab_bar = false
 c.show_tab_index_in_tab_bar = false
-c.hide_tab_bar_if_only_one_tab = true
 c.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 c.window_frame = {
   border_left_width = '2px',
@@ -56,7 +52,10 @@ c.keys = {
 if w.target_triple == 'aarch64-apple-darwin' or w.target == 'x86_64-apple-darwin' then
   -- macOS specific settings
   c.native_macos_fullscreen_mode = true
-  c.window_decorations = 'MACOS_FORCE_ENABLE_SHADOW|RESIZE'
+
+  -- Screenshot settings
+  --c.hide_tab_bar_if_only_one_tab = true
+  --c.window_decorations = 'MACOS_FORCE_ENABLE_SHADOW|RESIZE'
 
   table.insert(c.keys, {mods = 'CMD', key = 'm', action = a.SplitVertical})
   table.insert(c.keys, {mods = 'CMD', key = 'l', action = a.SplitHorizontal})
