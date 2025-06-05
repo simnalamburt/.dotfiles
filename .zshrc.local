@@ -24,7 +24,7 @@
 ## aliases
 #alias c=cargo
 #alias cf='cargo fmt --all'
-#alias ci='cargo fmt --check --all && cargo check --all && cargo clippy --all --no-deps -- -D warnings'
+#alias ci='cargo fmt --check --all && cargo check --workspace && cargo clippy --workspace --no-deps && cargo test --workspace'
 #alias zed=zed-preview
 #alias code=code-insiders
 
