@@ -3,7 +3,7 @@ PC, WSL 2
 [ArchWSL](https://github.com/yuk7/ArchWSL)
 
 ### `pacman`
-- base-devel openssh htop man zip unzip ldns
+- base-devel openssh htop man zip unzip ldns b3sum
 - neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq yq git-delta tmux
 - nodejs yarn pnpm
 
