@@ -238,7 +238,7 @@ try
 
   " Syntax
   let g:omni_sql_no_default_maps = 1
-  let g:polyglot_disabled = ['sql', 'sensible', 'v'] | Plug 'sheerun/vim-polyglot'
+  let g:polyglot_disabled = ['bzl', 'sql', 'sensible', 'v'] | Plug 'sheerun/vim-polyglot'
   Plug 'wuelnerdotexe/vim-astro'
 
   " Format
