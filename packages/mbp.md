@@ -17,7 +17,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - openjdk@21
 - ffmpeg libavif yt-dlp
 - elan
-- redress goresym
 
 ### `brew --cask`
 - karabiner-elements secretive wezterm
@@ -28,7 +27,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - netdownloadhelpercoapp
 - microsoft-excel
 - background-music
-- binary-ninja-free ghidra
 
 AI friends
 
