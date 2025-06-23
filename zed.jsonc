@@ -10,15 +10,18 @@
 // Reference:
 //   https://zed.dev/docs/configuring-zed
 {
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "google",
       "model": "gemini-2.5-pro-exp-03-25"
     },
     "version": "2"
   },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
   "features": {
-    "inline_completion_provider": "zed"
+    "edit_prediction_provider": "zed"
   },
   "vim_mode": true,
   "ui_font_size": 16,
