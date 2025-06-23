@@ -7,6 +7,7 @@
 #/opt/homebrew/opt/gnu-tar/libexec/gnubin:\
 #/opt/homebrew/opt/curl/bin:\
 #/opt/homebrew/opt/mysql-client/bin:\
+#/opt/homebrew/Caskroom/sqlcl/25.1.1.113.2054/sqlcl/bin:\
 #${HOME}/.cargo/bin:\
 #${PATH}"
 #export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib"
