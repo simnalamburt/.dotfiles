@@ -19,7 +19,9 @@
 # alias rm='rm -I'
 
 ## AI friends
+#export GOOGLE_CLOUD_PROJECT='xxxxxx'
 #alias claude='pnpm dlx @anthropic-ai/claude-code'
+#alias gemini='pnpm dlx @google/gemini-cli'
 #alias codex='pnpm dlx @openai/codex'
 
 ## aliases
