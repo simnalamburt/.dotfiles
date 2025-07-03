@@ -1,0 +1,40 @@
+" Easy command-line mode
+nnoremap ; :
+
+" Easy home/end
+inoremap <C-a> <ESC>I
+inoremap <C-e> <End>
+nnoremap <C-a> ^
+nnoremap <C-e> $
+vnoremap <C-a> ^
+vnoremap <C-e> $
+" Easy delete key
+vnoremap <backspace> "_d
+" Easy indentation
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+
+" Remapping alt modifier does not work in VSCode
+"
+" Reference: https://github.com/VSCodeVim/Vim/issues/2713
+
+"" Easy splitting & resizing
+"nnoremap <silent> <esc>- :split<CR>
+"nnoremap <silent> <esc>\ :vertical split<CR>
+"nnoremap <silent> <esc>h :vertical resize -5<CR>
+"nnoremap <silent> <esc>j :resize -3<CR>
+"nnoremap <silent> <esc>k :resize +3<CR>
+"nnoremap <silent> <esc>l :vertical resize +5<CR>
+"" Tab navigations
+"nnoremap <esc>t :tabnew<CR>
+"nnoremap <esc>T :-tabnew<CR>
+"nnoremap <esc>1 1gt
+"nnoremap <esc>2 2gt
+"nnoremap <esc>3 3gt
+"nnoremap <esc>4 4gt
+"nnoremap <esc>5 5gt
+"nnoremap <esc>6 6gt
+"nnoremap <esc>7 7gt
+"nnoremap <esc>8 8gt
+"nnoremap <esc>9 9gt
