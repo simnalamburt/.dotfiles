@@ -20,6 +20,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - ffmpeg libavif yt-dlp
 - elan
 - uv
+- qemu riscv64-elf-gcc
 
 ### `brew --cask`
 - karabiner-elements secretive wezterm
