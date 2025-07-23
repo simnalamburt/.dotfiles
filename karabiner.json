@@ -1,55 +1,49 @@
 {
-    "profiles": [
+  "description": "simnalamburt",
+  "manipulators": [
+    {
+      "conditions": [
         {
-            "complex_modifications": {
-                "rules": [
-                    {
-                        "description": "simnalamburt",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.github\\.wez\\.wezterm$",
-                                            "^com\\.microsoft\\.VSCodeInsiders$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": { "key_code": "caps_lock" },
-                                "to": [
-                                    {
-                                        "key_code": "left_control",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.github\\.wez\\.wezterm$",
-                                            "^com\\.microsoft\\.VSCodeInsiders$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": { "key_code": "caps_lock" },
-                                "to": [
-                                    {
-                                        "key_code": "right_gui",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "name": "Default profile",
-            "selected": true
+          "bundle_identifiers": [
+            "^com\\.github\\.wez\\.wezterm$",
+            "^com\\.microsoft\\.VSCodeInsiders$",
+            "^dev\\.zed\\.Zed-Preview$"
+          ],
+          "type": "frontmost_application_if"
         }
-    ]
+      ],
+      "from": {
+        "key_code": "caps_lock"
+      },
+      "to": [
+        {
+          "key_code": "left_control",
+          "repeat": true
+        }
+      ],
+      "type": "basic"
+    },
+    {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.github\\.wez\\.wezterm$",
+            "^com\\.microsoft\\.VSCodeInsiders$",
+            "^dev\\.zed\\.Zed-Preview$"
+          ],
+          "type": "frontmost_application_unless"
+        }
+      ],
+      "from": {
+        "key_code": "caps_lock"
+      },
+      "to": [
+        {
+          "key_code": "right_gui",
+          "repeat": true
+        }
+      ],
+      "type": "basic"
+    }
+  ]
 }
