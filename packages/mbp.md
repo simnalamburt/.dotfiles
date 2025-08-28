@@ -31,7 +31,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - netdownloadhelpercoapp
 - microsoft-excel
 - background-music
-- beekeeper-studio dbeaver-community
+- beekeeper-studio dbeaver-community sqlcl
 - krita
 - zoom
 
