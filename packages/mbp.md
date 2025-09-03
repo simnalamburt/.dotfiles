@@ -36,6 +36,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - krita
 - zoom
 - cyberduck
+- gcloud-cli
 
 AI friends
 
