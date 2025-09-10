@@ -24,7 +24,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - mariadb@11.4
 
 ### `brew --cask`
-- karabiner-elements secretive wezterm
+- karabiner-elements secretive wezterm@nightly
 - discord steam
 - google-chrome slack
 - orbstack virtualbuddy
