@@ -29,7 +29,7 @@ defaults export com.apple.symbolichotkeys - | plutil -convert json -o - - |
   plutil -convert xml1 -o - - | defaults import com.apple.symbolichotkeys -
 
 # Use sudo with TouchID
-cat - /etc/pam.d/sudo <<< 'auth sufficient pam_tid.so' | sudo tee /etc/pam.d/sudo
+cat <<< 'auth sufficient pam_tid.so' | sudo tee -a /etc/pam.d/sudo_local
 ```
 
 - [브라우저 설정](browser.md)
