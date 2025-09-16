@@ -7,7 +7,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - fzf ripgrep lsd fd jq yq bat watchexec watchman duckdb aria2 p7zip
 - git-delta git-absorb
 - simnalamburt/x/jaso simnalamburt/x/uniqs
-- rust-analyzer cargo-watch cargo-outdated cargo-shear ra-multiplex
+- rust-analyzer bacon cargo-outdated cargo-shear ra-multiplex
 - simnalamburt/x/cargo-criterion
 - amber-lang/amber/amber-lang
 - zig
