@@ -28,7 +28,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - discord steam
 - google-chrome slack
 - orbstack virtualbuddy
-- yubico-yubikey-plugin
+- yubico-authenticator
 - netdownloadhelpercoapp
 - microsoft-excel
 - background-music
