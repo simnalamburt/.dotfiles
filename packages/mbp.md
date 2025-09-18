@@ -40,7 +40,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 AI friends
 
-- zed@preview cursor windsurf@next visual-studio-code@insiders
+- zed@preview cursor visual-studio-code@insiders
 - chatgpt claude
 
 <sub>Gemini Code Assist, GitHub Copilot, GitHub Copilot Chat, Roo Code are
