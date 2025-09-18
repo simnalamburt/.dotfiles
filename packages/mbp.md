@@ -40,12 +40,15 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 AI friends
 
-- zed@preview cursor visual-studio-code@insiders
-- chatgpt claude
+- zed@preview visual-studio-code@insiders
+- chatgpt
 
-<sub>Gemini Code Assist, GitHub Copilot, GitHub Copilot Chat, Roo Code are
-installed as vsual-studio-code extensions. See `.zshrc.local` for CLI AI
-friends.</sub>
+<sub>
+GitHub Copilot, GitHub Copilot Chat are installed as vsual-studio-code extensions.<br>
+cursor, windsurf@next, Roo Code, Gemini Code Assist have been uninstalled.<br>
+claude desktop app has been replaced by web app.<br>
+See `.zshrc.local` for CLI AI friends.
+</sub>
 
 ### App Store
 - WireGuard
