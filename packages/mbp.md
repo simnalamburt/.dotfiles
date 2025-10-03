@@ -36,6 +36,8 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - zoom
 - cyberduck
 - gcloud-cli
+- espanso
+- imhex
 
 AI friends
 
