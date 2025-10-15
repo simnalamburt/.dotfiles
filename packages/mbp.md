@@ -33,7 +33,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - background-music
 - beekeeper-studio dbeaver-community sqlcl
 - krita
-- zoom
 - cyberduck
 - gcloud-cli
 - espanso
