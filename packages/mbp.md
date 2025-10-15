@@ -44,7 +44,7 @@ AI friends
 - chatgpt
 
 <sub>
-GitHub Copilot, GitHub Copilot Chat are installed as vsual-studio-code extensions.<br>
+Codex, GitHub Copilot, GitHub Copilot Chat are installed as vsual-studio-code extensions.<br>
 cursor, windsurf@next, Roo Code, Gemini Code Assist have been uninstalled.<br>
 claude desktop app has been replaced by web app.<br>
 See `.zshrc.local` for CLI AI friends.
