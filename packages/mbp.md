@@ -5,7 +5,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - neovim git xz watch gnu-tar coreutils b3sum htop
 - curl netcat mtr
 - fzf ripgrep lsd fd jq yq bat watchexec watchman duckdb aria2 p7zip
-- git-delta git-absorb
+- git-delta difftastic git-absorb
 - simnalamburt/x/jaso simnalamburt/x/uniqs
 - rust-analyzer bacon cargo-outdated cargo-shear ra-multiplex
 - simnalamburt/x/cargo-criterion
@@ -21,6 +21,8 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - uv
 - qemu riscv64-elf-gcc
 - mariadb@11.4
+- ollama
+- putty
 
 ### `brew --cask`
 - karabiner-elements secretive wezterm@nightly
