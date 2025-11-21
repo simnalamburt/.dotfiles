@@ -135,5 +135,17 @@
 	#   git chdate 2013-05-05T12:34:56+0800
 	chdate = "!_() { GIT_COMMITTER_DATE=${1} git commit --amend --no-edit --date ${1}; }; _"
 
+	# Reference: https://difftastic.wilfred.me.uk/git.html#regular-usage
+	# Difftastic aliases, so `git dlog` is `git log` with difftastic and so on.
+	dlog = -c diff.external=difft log --ext-diff
+	dshow = -c diff.external=difft show --ext-diff
+	ddiff = -c diff.external=difft diff
+	# `git log` with patches shown with difftastic.
+	dl = -c diff.external=difft log -p --ext-diff
+	# Show the most recent commit with difftastic.
+	ds = -c diff.external=difft show --ext-diff
+	# `git diff` with difftastic.
+	dft = -c diff.external=difft diff
+
 [include]
 	path = ~/.gitconfig.local
