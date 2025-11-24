@@ -139,6 +139,7 @@
 	# Difftastic integration
 	#
 	# Reference: https://difftastic.wilfred.me.uk/git.html#regular-usage
+	d = diff --no-ext-diff
 	dl = log -p --ext-diff
 	ds = show --ext-diff
 
