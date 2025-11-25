@@ -34,7 +34,6 @@
 	renames = copies
 	algorithm = histogram
 	submodule = log
-	external = difft
 [branch]
 	sort = committerdate
 [fetch]
@@ -139,10 +138,10 @@
 	# Difftastic integration
 	#
 	# Reference: https://difftastic.wilfred.me.uk/git.html#regular-usage
-	d = diff --no-ext-diff
-	dca = diff --cached --no-ext-diff
-	dl = log -p --ext-diff
-	ds = show --ext-diff
+	d   = -c diff.external=difft diff
+	dca = -c diff.external=difft diff --cached
+	dl  = -c diff.external=difft log -p --ext-diff
+	ds  = -c diff.external=difft show --ext-diff
 
 [include]
 	path = ~/.gitconfig.local
