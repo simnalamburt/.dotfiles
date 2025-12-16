@@ -9,7 +9,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - simnalamburt/x/jaso simnalamburt/x/uniqs
 - rust-analyzer bacon cargo-outdated cargo-shear ra-multiplex
 - simnalamburt/x/cargo-criterion
-- zig
 - node pnpm
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - deno simnalamburt/x/bunv
@@ -19,10 +18,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - ffmpeg libavif yt-dlp
 - elan
 - uv
-- qemu riscv64-elf-gcc
-- mariadb@11.4
-- ollama
-- putty
 
 ### `brew --cask`
 - karabiner-elements secretive wezterm@nightly
@@ -34,7 +29,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - microsoft-excel
 - background-music
 - beekeeper-studio dbeaver-community sqlcl
-- krita
 - cyberduck
 - gcloud-cli
 - espanso
