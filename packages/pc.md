@@ -20,7 +20,7 @@ Windows 11 Pro
 - https://github.com/yuk7/ArchWSL
 - Nexon Game Manager, Mabinogi
 - Chrome Remote Desktop Host
-- Steam, Uplay, EA app
+- Steam, Uplay, EA app, Epic Games Store
 - Windows Sandbox
 - NVIDIA GeForce Experience
 - Video DownloadHelper Companion App
