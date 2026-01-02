@@ -3,7 +3,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 ### `brew`
 - neovim git xz watch gnu-tar coreutils b3sum htop
-- curl netcat mtr
+- curl netcat mtr socat
 - fzf ripgrep lsd fd jq yq bat watchexec watchman duckdb aria2 p7zip
 - git-delta difftastic git-absorb
 - simnalamburt/x/jaso simnalamburt/x/uniqs
