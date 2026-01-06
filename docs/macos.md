@@ -23,6 +23,11 @@ macOS
 # 영어 키 꾹 누르면 키 반복되게 만들기
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# 한글에서 원화기호(₩) 대신 backtick(\) 입력되게 만들기
+set -C
+mkdir -p ~/Library/KeyBindings
+echo '{"₩"=("insertText:", "\`");}'>~/Library/KeyBindings/DefaultkeyBinding.dict
+
 # Shift + Space 로 빠르게 한영 전환하기 (재로그인 필요)
 defaults export com.apple.symbolichotkeys - | plutil -convert json -o - - |
   jq '.AppleSymbolicHotKeys["61"].value.parameters[2] = 131072 | .AppleSymbolicHotKeys["60"].value.parameters[2] = 655360' |
