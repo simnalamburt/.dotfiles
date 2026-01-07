@@ -4,19 +4,16 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 ### `brew`
 - neovim git xz watch gnu-tar coreutils b3sum htop
 - curl netcat mtr socat
-- fzf ripgrep lsd fd jq yq bat watchexec watchman duckdb aria2 p7zip
+- fzf ripgrep lsd fd jq yq bat watchexec duckdb aria2 p7zip
 - git-delta difftastic git-absorb
 - simnalamburt/x/jaso simnalamburt/x/uniqs
 - rust-analyzer bacon cargo-outdated cargo-shear ra-multiplex
 - simnalamburt/x/cargo-criterion
 - node pnpm
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
-- deno simnalamburt/x/bunv
-- typst typstyle texlive asymptote biber
+- typst typstyle
 - age age-plugin-yubikey age-plugin-se
-- openjdk@21
-- ffmpeg libavif yt-dlp
-- elan
+- elan-init
 - uv
 
 ### `brew --cask`
@@ -30,9 +27,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - background-music
 - beekeeper-studio dbeaver-community sqlcl
 - cyberduck
-- gcloud-cli
 - espanso
-- imhex
 
 AI friends
 
