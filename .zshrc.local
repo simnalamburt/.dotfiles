@@ -8,6 +8,7 @@
 #/opt/homebrew/opt/curl/bin:\
 #/opt/homebrew/opt/mysql-client/bin:\
 #/opt/homebrew/Caskroom/sqlcl/25.1.1.113.2054/sqlcl/bin:\
+#${HOME}/.antigravity/antigravity/bin:\
 #${HOME}/.cargo/bin:\
 #${PATH}"
 #export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib"
@@ -17,12 +18,6 @@
 
 ## GNU Coreutils
 # alias rm='rm -I'
-
-## AI friends
-#export GOOGLE_CLOUD_PROJECT='xxxxxx'
-#alias claude='pnpm dlx @anthropic-ai/claude-code'
-#alias gemini='pnpm dlx @google/gemini-cli'
-#alias codex='pnpm dlx @openai/codex'
 
 ## aliases
 #alias c=cargo

@@ -16,7 +16,8 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - elan-init
 - uv
 
-### `brew --cask`
+Casks:
+
 - karabiner-elements secretive wezterm@nightly
 - discord signal slack
 - steam
@@ -30,17 +31,18 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - cyberduck
 - espanso
 
-AI friends
+AI friends:
 
+- chatgpt codex
+- gemini-cli
+- claude claude-code
+- opencode
+- cursor cursor-cli
+- simnalamburt/ampcode/ampcode
+- antigravity
 - zed@preview visual-studio-code@insiders
-- chatgpt
 
-<sub>
-Codex, GitHub Copilot, GitHub Copilot Chat are installed as vsual-studio-code extensions.<br>
-cursor, windsurf@next, Roo Code, Gemini Code Assist have been uninstalled.<br>
-claude desktop app has been replaced by web app.<br>
-See `.zshrc.local` for CLI AI friends.
-</sub>
+<sub>Amp, Claude Code, Codex, Copilot are installed as VSCode extensions.</sub>
 
 ### App Store
 - WireGuard
