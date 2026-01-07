@@ -18,8 +18,9 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 ### `brew --cask`
 - karabiner-elements secretive wezterm@nightly
-- discord steam
-- google-chrome slack
+- discord signal slack
+- steam
+- google-chrome
 - orbstack virtualbuddy
 - yubico-authenticator
 - netdownloadhelpercoapp
