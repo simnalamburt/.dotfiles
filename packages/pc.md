@@ -29,3 +29,4 @@ Windows 11 Pro
 - VLC
 - wezterm
 - YubiKey Manager
+- Signal
