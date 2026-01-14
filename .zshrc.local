@@ -25,6 +25,7 @@
 #alias ci='cargo fmt --check --all && cargo check --workspace && cargo clippy --workspace --no-deps && cargo test --workspace'
 #alias zed=zed-preview
 #alias code=code-insiders
+#alias p=pnpm
 
 ## neovim
 #alias v=nvim
@@ -36,6 +37,11 @@
 #bindkey  "^[[H"   beginning-of-line
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
+
+## bunv
+#if [[ -s ~/.bunv/versions/1.2.22/_bun ]]; then
+#  . ~/.bunv/versions/1.2.22/_bun
+#fi
 
 ## AWSCLIv2
 #if [[ -f ~/.aws/current_profile ]]; then
