@@ -45,6 +45,8 @@ c.window_padding = {
 
 c.keys = {
   {mods = 'CMD', key = 'Enter', action = a.ToggleFullScreen},
+  {mods = 'OPT', key = 'Enter', action = a.DisableDefaultAssignment},
+  {mods = 'SHIFT', key = 'Enter', action = a.SendString "\x1b[13;2u"},
   {mods = 'CMD', key = '[', action = a.ActivatePaneDirection('Prev')},
   {mods = 'CMD', key = ']', action = a.ActivatePaneDirection('Next')},
 }
