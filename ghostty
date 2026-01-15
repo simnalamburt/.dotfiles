@@ -15,6 +15,7 @@ window-padding-balance = true
 resize-overlay = never
 split-divider-color = #444444
 macos-icon = chalkboard
+macos-option-as-alt = true
 bell-features = no-system,no-audio,attention,title,border
 
 quit-after-last-window-closed = true
