@@ -3,6 +3,7 @@
 # Default values: ghostty +show-config --default --docs
 
 font-family = MonacoLigaturized Nerd Font
+font-family = Apple SD Gothic Neo
 font-size = 16
 cursor-style = block
 theme = Kitty Default
