@@ -18,7 +18,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 
 Casks:
 
-- karabiner-elements secretive wezterm@nightly kitty ghostty
+- karabiner-elements secretive ghostty
 - discord signal slack
 - steam
 - google-chrome
