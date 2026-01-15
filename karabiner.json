@@ -5,6 +5,9 @@
       "conditions": [
         {
           "bundle_identifiers": [
+            "^com\\.apple\\.Terminal$",
+            "^net\\.kovidgoyal\\.kitty$",
+            "^com\\.mitchellh\\.ghostty$",
             "^com\\.github\\.wez\\.wezterm$",
             "^com\\.microsoft\\.VSCodeInsiders$",
             "^dev\\.zed\\.Zed-Preview$"
@@ -27,6 +30,9 @@
       "conditions": [
         {
           "bundle_identifiers": [
+            "^com\\.apple\\.Terminal$",
+            "^net\\.kovidgoyal\\.kitty$",
+            "^com\\.mitchellh\\.ghostty$",
             "^com\\.github\\.wez\\.wezterm$",
             "^com\\.microsoft\\.VSCodeInsiders$",
             "^dev\\.zed\\.Zed-Preview$"
