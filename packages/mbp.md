@@ -38,11 +38,10 @@ AI friends:
 - claude claude-code
 - opencode
 - cursor cursor-cli
-- simnalamburt/ampcode/ampcode
 - antigravity
 - zed@preview visual-studio-code@insiders
 
-<sub>Amp, Claude Code, Codex, Copilot are installed as VSCode extensions.</sub>
+<sub>Claude Code, Codex, Copilot are installed as VSCode extensions.</sub>
 
 ### App Store
 - WireGuard
