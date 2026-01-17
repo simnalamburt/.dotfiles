@@ -30,3 +30,4 @@ Windows 11 Pro
 - wezterm
 - YubiKey Manager
 - Signal
+- Espanso
