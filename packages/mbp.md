@@ -7,7 +7,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - fzf ripgrep lsd fd jq yq bat watchexec duckdb aria2 p7zip mkcert
 - git-delta difftastic git-absorb
 - simnalamburt/x/jaso simnalamburt/x/uniqs
-- rust-analyzer bacon cargo-outdated cargo-shear ra-multiplex
+- rust-analyzer bacon cargo-outdated cargo-shear lspmux
 - simnalamburt/x/cargo-criterion
 - node pnpm
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
