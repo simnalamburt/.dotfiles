@@ -36,7 +36,7 @@ AI friends:
 - chatgpt codex
 - gemini-cli
 - claude claude-code
-- opencode
+- opencode opencode-desktop
 - cursor cursor-cli
 - antigravity
 - zed@preview visual-studio-code@insiders
