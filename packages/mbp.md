@@ -30,6 +30,7 @@ Casks:
 - beekeeper-studio dbeaver-community sqlcl
 - cyberduck
 - espanso
+- temurin
 
 AI friends:
 
