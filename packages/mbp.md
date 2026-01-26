@@ -15,6 +15,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - age age-plugin-yubikey age-plugin-se
 - elan-init
 - uv
+- filosottile/musl-cross/musl-cross
 
 Casks:
 
