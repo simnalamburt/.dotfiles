@@ -48,7 +48,8 @@ AI friends:
 - WireGuard
 - 카카오톡
 
-### etc
+### Manually installed
+- rustup
 - xcode command line tools
 - Sindoh D420 driver
 - Sindoh D450 driver
