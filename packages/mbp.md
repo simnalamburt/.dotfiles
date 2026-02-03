@@ -36,7 +36,7 @@ Casks:
 
 AI friends:
 
-- chatgpt codex
+- chatgpt codex codex-app
 - gemini-cli
 - claude claude-code
 - opencode opencode-desktop
