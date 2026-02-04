@@ -114,7 +114,7 @@
 	# git c
 	#
 	# Commit as Claude
-	c = "commit -v --author='Claude <noreply@anthropic.com>'"
+	c = "!git commit -v -t \"$HOME/.dotfiles/.gitcommittemplate\""
 
 	# git h <filename>
 	#
