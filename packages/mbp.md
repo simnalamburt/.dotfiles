@@ -37,14 +37,8 @@ Casks:
 AI friends:
 
 - chatgpt codex codex-app
-- gemini-cli
 - claude claude-code
-- opencode opencode-desktop
-- cursor cursor-cli
-- antigravity
 - zed@preview visual-studio-code@insiders
-
-<sub>Claude Code, Codex, Copilot are installed as VSCode extensions.</sub>
 
 ### App Store
 - WireGuard
