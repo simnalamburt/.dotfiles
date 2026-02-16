@@ -111,10 +111,11 @@
 	# Git graph with signature info
 	g = "log --graph --pretty='format:%C(auto)%h%d %s%x1b[38;5;022m% GS %x1b[38;5;239m%cr%x1b[0m'"
 
-	# git c
+	# git cc/co
 	#
-	# Commit as Claude
-	c = "!git commit -v -t \"$HOME/.dotfiles/.gitcommittemplate\""
+	# Commit as Claude Code / Codex
+	cc = "!git commit -v -t \"$HOME/.dotfiles/.git-commit-template-claude\""
+	co = "!git commit -v -t \"$HOME/.dotfiles/.git-commit-template-codex\""
 
 	# git h <filename>
 	#
