@@ -204,7 +204,6 @@ try
     Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
     Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 
-    Plug 'fannheyward/coc-biome', {'do': 'npm ci'} " NOTE: evaluating
     Plug 'fannheyward/coc-rust-analyzer', {'do': 'npm ci'}
 
     "if executable('go')
