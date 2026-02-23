@@ -8,4 +8,8 @@ Include ~/.orbstack/ssh/config
 #  IdentityFile ~/.ssh/id_rsa
 
 #Host *
+#  ## Secretive
 #  IdentityAgent ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+#
+#  ## Ghostty
+#  SetEnv TERM=xterm-256color
