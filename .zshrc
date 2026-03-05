@@ -201,21 +201,5 @@ if (( $+commands[age] )); then
       -r age1yubikey1qvwqyhgnnw67qqv752nr4pqmrru5r4gn8kg3p0tvdzp58tj8nezq7fx9m6z \
       "$@"
   }
-
-  if [[ -f ~/.config/age/k2 ]]; then
-    function decrypt() {
-      age -d \
-        -i ~/.config/age/k2 \
-        -i ~/.config/age/k0 \
-        -i ~/.config/age/k1 \
-        "$@"
-    }
-  else
-    function decrypt() {
-      age -d \
-        -i ~/.config/age/k0 \
-        -i ~/.config/age/k1 \
-        "$@"
-    }
-  fi
+  function decrypt() { age -d -i ~/.config/age/k "$@" }
 fi
