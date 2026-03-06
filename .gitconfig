@@ -26,6 +26,10 @@
 	#
 	# Reference: https://github.com/romkatv/gitstatus/issues/455
 	# defaultRefFormat = reftable
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
 [log]
 	date = iso8601
 [color]
