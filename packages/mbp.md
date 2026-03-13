@@ -27,7 +27,7 @@ Casks:
 - orbstack virtualbuddy
 - yubico-authenticator
 - netdownloadhelpercoapp
-- microsoft-excel
+- microsoft-excel microsoft-word
 - background-music
 - beekeeper-studio dbeaver-community sqlcl
 - cyberduck
