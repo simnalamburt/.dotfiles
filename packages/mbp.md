@@ -33,6 +33,7 @@ Casks:
 - cyberduck
 - espanso
 - temurin
+- zoom
 
 AI friends:
 
