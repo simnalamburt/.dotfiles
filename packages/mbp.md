@@ -34,6 +34,7 @@ Casks:
 - espanso
 - temurin
 - zoom
+- pribess/tap/usagekit
 
 AI friends:
 
