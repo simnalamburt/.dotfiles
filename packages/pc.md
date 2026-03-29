@@ -14,6 +14,7 @@ Windows 11 Pro
 - iCloud
 - Dynamic Theme
 - IrfanView64
+- Zoom Workplace
 
 ### Manually Installed
 - 7zip
