@@ -5,7 +5,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - neovim git xz watch gnu-tar coreutils b3sum htop
 - curl netcat mtr socat
 - fzf ripgrep lsd fd jq yq bat watchexec duckdb aria2 p7zip mkcert
-- git-delta difftastic git-absorb
+- git-delta difftastic git-absorb git-filter-repo
 - simnalamburt/x/jaso simnalamburt/x/uniqs
 - rust-analyzer bacon cargo-outdated cargo-shear lspmux
 - simnalamburt/x/cargo-criterion
