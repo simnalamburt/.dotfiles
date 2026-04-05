@@ -46,6 +46,7 @@ AI friends:
 ### App Store
 - WireGuard
 - 카카오톡
+- Xcode
 
 ### Manually installed
 - rustup
