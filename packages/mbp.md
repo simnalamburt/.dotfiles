@@ -18,7 +18,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - uv
 - filosottile/musl-cross/musl-cross
 - awscli
-- ffmpeg yt-dlp
+- ffmpeg yt-dlp libavif
 - zizmor
 
 Casks:
