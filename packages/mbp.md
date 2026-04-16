@@ -20,6 +20,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - awscli
 - ffmpeg yt-dlp libavif
 - zizmor
+- container
 
 Casks:
 
@@ -27,7 +28,7 @@ Casks:
 - discord signal slack
 - steam
 - google-chrome
-- orbstack virtualbuddy
+- orbstack virtualbuddy orchard
 - yubico-authenticator
 - netdownloadhelpercoapp
 - microsoft-excel microsoft-word
