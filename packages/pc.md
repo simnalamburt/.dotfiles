@@ -3,12 +3,13 @@ PC
 Windows 11 Pro
 
 ### `winget`
-- chrome wireguard discord slack
+- chrome wireguard discord
 
 ### `C:\Windows\System32`
 - [age-plugin-yubikey.exe](https://github.com/str4d/age-plugin-yubikey)
 
 ### Microsoft Store
+- Slack
 - Windows Subsystem for Linux
 - KakaoTalk
 - iCloud
