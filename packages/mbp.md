@@ -28,7 +28,7 @@ Casks:
 - discord signal slack
 - steam
 - google-chrome
-- orbstack virtualbuddy orchard
+- orbstack virtualbuddy
 - yubico-authenticator
 - netdownloadhelpercoapp
 - microsoft-excel microsoft-word
