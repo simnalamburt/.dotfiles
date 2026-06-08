@@ -22,10 +22,7 @@
 	#   https://github.blog/changelog/2020-10-01-the-default-branch-for-newly-created-repositories-is-now-main/
 	defaultBranch = main
 
-	# TODO: Enable this when gitstatus supports it.o
-	#
-	# Reference: https://github.com/romkatv/gitstatus/issues/455
-	# defaultRefFormat = reftable
+	defaultRefFormat = reftable
 [interactive]
 	diffFilter = delta --color-only
 [delta]
