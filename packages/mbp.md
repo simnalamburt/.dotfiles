@@ -30,7 +30,7 @@ Casks:
 - google-chrome
 - orbstack virtualbuddy
 - yubico-authenticator
-- microsoft-excel microsoft-word
+- microsoft-excel
 - background-music
 - beekeeper-studio dbeaver-community sqlcl
 - cyberduck
