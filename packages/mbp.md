@@ -8,19 +8,14 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - git-delta difftastic git-absorb git-filter-repo
 - simnalamburt/x/jaso simnalamburt/x/uniqs
 - rust-analyzer bacon cargo-outdated cargo-shear lspmux samply
-- simnalamburt/x/cargo-criterion
 - node pnpm
-- deno
 - yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
-- typst typstyle
 - age age-plugin-yubikey age-plugin-se
-- elan-init
 - uv
 - filosottile/musl-cross/musl-cross
 - awscli
 - ffmpeg yt-dlp libavif
 - zizmor
-- container
 
 Casks:
 
@@ -28,7 +23,7 @@ Casks:
 - discord signal slack
 - steam
 - google-chrome
-- orbstack virtualbuddy
+- orbstack
 - yubico-authenticator
 - microsoft-excel
 - background-music
@@ -36,7 +31,6 @@ Casks:
 - cyberduck
 - espanso
 - temurin
-- zoom
 - pribess/tap/usagekit
 
 AI friends:
