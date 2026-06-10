@@ -37,7 +37,7 @@ AI friends:
 
 - chatgpt codex codex-app
 - claude claude-code
-- zed@preview visual-studio-code@insiders
+- zed visual-studio-code
 
 ### App Store
 - WireGuard

@@ -10,7 +10,20 @@
 // Reference:
 //   https://zed.dev/docs/configuring-zed
 {
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "agent": {
+    "dock": "right",
     "default_model": {
       "provider": "google",
       "model": "gemini-2.5-pro-exp-03-25"
