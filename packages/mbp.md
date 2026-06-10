@@ -36,7 +36,7 @@ Casks:
 AI friends:
 
 - chatgpt codex codex-app
-- claude claude-code
+- claude claude-code@latest
 - zed visual-studio-code
 
 ### App Store
