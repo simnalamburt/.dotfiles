@@ -26,7 +26,6 @@ Casks:
 - orbstack
 - yubico-authenticator
 - microsoft-excel microsoft-auto-update
-- background-music
 - beekeeper-studio dbeaver-community sqlcl
 - cyberduck
 - espanso
