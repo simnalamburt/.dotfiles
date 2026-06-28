@@ -15,7 +15,6 @@ Windows 11 Pro
 - iCloud
 - Dynamic Theme
 - IrfanView64
-- Zoom Workplace
 
 ### Manually Installed
 - 7zip
@@ -25,7 +24,6 @@ Windows 11 Pro
 - Steam, Uplay, EA app, Epic Games Store
 - Windows Sandbox
 - NVIDIA GeForce Experience
-- Video DownloadHelper Companion App
 - Logitech Options+
 - 알라딘 전자책 뷰어
 - VLC
