@@ -34,7 +34,7 @@ Casks:
 
 AI friends:
 
-- chatgpt codex codex-app
+- chatgpt codex ([`ln -s /Applications/{ChatGPT,Codex}.app`](https://github.com/openai/codex/issues/32202))
 - claude claude-code@latest
 - zed visual-studio-code
 
