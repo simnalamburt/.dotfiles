@@ -31,6 +31,7 @@ Casks:
 - espanso
 - temurin
 - pribess/tap/usagekit
+- nkzw-tech/tap/codiff
 
 AI friends:
 
