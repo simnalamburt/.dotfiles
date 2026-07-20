@@ -2,19 +2,16 @@
 #export PATH="\
 #/opt/homebrew/bin:\
 #/opt/homebrew/sbin:\
-#/opt/homebrew/opt/ruby/bin:\
-#/opt/homebrew/lib/ruby/gems/3.2.0/bin:\
 #/opt/homebrew/opt/gnu-tar/libexec/gnubin:\
 #/opt/homebrew/opt/curl/bin:\
-#/opt/homebrew/opt/mysql-client/bin:\
-#/opt/homebrew/Caskroom/sqlcl/25.1.1.113.2054/sqlcl/bin:\
-#${HOME}/.antigravity/antigravity/bin:\
+#/opt/homebrew/Caskroom/sqlcl/26.1.2.132.1334/sqlcl/bin:\
+#${HOME}/.orbstack/bin:\
 #${HOME}/.cargo/bin:\
 #${PATH}"
-#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/curl/lib"
-#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/curl/include"
-#export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
-#export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
+#export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+#export GITSTATUS_DAEMON=/opt/homebrew/bin/gitstatusd
+#fpath+="${HOME}/.orbstack/shell/completions/zsh"
 
 ## GNU Coreutils
 # alias rm='rm -I'
@@ -23,8 +20,6 @@
 #alias c=cargo
 #alias cf='cargo fmt --all'
 #alias ci='cargo fmt --check --all && cargo check --workspace && cargo clippy --workspace --no-deps && cargo test --workspace'
-#alias zed=zed-preview
-#alias code=code-insiders
 #alias p=pnpm
 
 ## neovim
@@ -38,10 +33,6 @@
 #bindkey  "^[[F"   end-of-line
 #bindkey  "^[[3~"  delete-char
 
-## bunv
-#if [[ -s ~/.bunv/versions/1.2.22/_bun ]]; then
-#  . ~/.bunv/versions/1.2.22/_bun
-#fi
 
 ## AWSCLIv2
 #if [[ -f ~/.aws/current_profile ]]; then
