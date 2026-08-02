@@ -6,6 +6,7 @@ PC, WSL 2
 - base-devel openssh htop man zip unzip ldns b3sum
 - neovim git zsh fd ripgrep fzf fuse2 watchexec lsd bat jq yq git-delta tmux aria2
 - nodejs yarn pnpm
+- tinyxxd
 
 &nbsp;
 
