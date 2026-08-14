@@ -28,13 +28,10 @@
       "provider": "google",
       "model": "gemini-2.5-pro-exp-03-25"
     },
-    "version": "2"
   },
   "edit_predictions": {
+    "provider": "zed",
     "mode": "subtle"
-  },
-  "features": {
-    "edit_prediction_provider": "zed"
   },
   "vim_mode": true,
   "ui_font_size": 16,
