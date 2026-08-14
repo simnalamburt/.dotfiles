@@ -51,3 +51,4 @@ AI friends:
 - xcode command line tools
 - Sindoh D420 driver
 - Sindoh D450 driver
+- iTMSTransporter-4.2.0.16.pkg
