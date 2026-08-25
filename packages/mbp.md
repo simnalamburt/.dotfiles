@@ -40,6 +40,7 @@ AI friends:
 
 - chatgpt codex ([`ln -s /Applications/{ChatGPT,Codex}.app`](https://github.com/openai/codex/issues/32202))
 - claude claude-code@latest
+- paseo
 
 ### App Store
 - WireGuard
