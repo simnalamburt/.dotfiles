@@ -22,6 +22,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 Casks:
 
 - karabiner-elements secretive ghostty
+- zed visual-studio-code
 - discord signal slack
 - steam
 - google-chrome
@@ -39,7 +40,6 @@ AI friends:
 
 - chatgpt codex ([`ln -s /Applications/{ChatGPT,Codex}.app`](https://github.com/openai/codex/issues/32202))
 - claude claude-code@latest
-- zed visual-studio-code
 
 ### App Store
 - WireGuard
