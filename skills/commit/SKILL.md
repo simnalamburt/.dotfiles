@@ -56,7 +56,7 @@ Format:
 
 <BODY>
 
-Co-authored-by: @codex <199175422+chatgpt-codex-connector[bot]@users.noreply.github.com>
+Co-authored-by: Codex <LLM Name> <267193182+codex@users.noreply.github.com>
 ```
 Message rules:
 - Keep title on one line and under 72 chars when possible.
@@ -100,7 +100,7 @@ References:
   https://example.com/blabla
   https://hyeon.me
 
-Co-authored-by: @codex <199175422+chatgpt-codex-connector[bot]@users.noreply.github.com>
+Co-authored-by: Codex GPT-6 Astra <267193182+codex@users.noreply.github.com>
 ```
 
 6. Create the commit.
@@ -110,7 +110,7 @@ git commit -F - <<'EOF'
 
 <BODY>
 
-Co-authored-by: @codex <199175422+chatgpt-codex-connector[bot]@users.noreply.github.com>
+Co-authored-by: Codex <LLM Name> <267193182+codex@users.noreply.github.com>
 EOF
 ```
 
