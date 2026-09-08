@@ -43,3 +43,12 @@ sudo docker run -d --restart=always \
   --mount type=bind,src=/home/ubuntu/personal-op-bot,dst=/a \
   ghcr.io/simnalamburt/personal-op-bot:1.0.2
 ```
+
+Caddyfile:
+```Caddyfile
+bear.hyeon.me
+root * /home/ubuntu/bear.hyeon.me
+file_server {
+	precompressed
+}
+```
