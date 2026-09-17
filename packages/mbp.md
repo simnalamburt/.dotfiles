@@ -17,7 +17,7 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - ffmpeg yt-dlp libavif
 - zizmor
 - elan-init typst typstyle
-- postgresql@18
+- postgresql@18 protobuf
 
 Casks:
 
