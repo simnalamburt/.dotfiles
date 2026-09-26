@@ -19,9 +19,8 @@ Windows 11 Pro
 ### Manually Installed
 - 7zip
 - https://github.com/yuk7/ArchWSL
-- Nexon Game Manager, Mabinogi
 - Chrome Remote Desktop Host
-- Steam, Uplay, EA app, Epic Games Store
+- Steam
 - Windows Sandbox
 - NVIDIA GeForce Experience
 - Logitech Options+
@@ -29,5 +28,9 @@ Windows 11 Pro
 - VLC
 - wezterm
 - YubiKey Manager
-- Signal
 - Espanso
+
+### Uninstalled
+- EA app
+- Ubisoft Connect
+- Epic Games Store
