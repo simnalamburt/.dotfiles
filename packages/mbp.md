@@ -9,7 +9,6 @@ MacBook Pro (14-inch, M3 Max, Nov 2023)
 - simnalamburt/x/jaso simnalamburt/x/uniqs simnalamburt/x/gitstatus
 - rust-analyzer bacon cargo-audit cargo-outdated cargo-shear lspmux samply
 - node pnpm
-- yarn *(vim-coc 딱 하나때문에 설치한것임, coc 대체하면 삭제해야함)*
 - age age-plugin-yubikey age-plugin-se
 - uv
 - filosottile/musl-cross/musl-cross
