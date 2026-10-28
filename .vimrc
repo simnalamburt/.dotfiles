@@ -198,11 +198,11 @@ try
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc-lists', {'do': 'npm ci'} " NOTE: evaluating
     Plug 'neoclide/coc-git', {'do': 'npm ci'}
-    Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-highlight', {'do': 'npm ci'}
     Plug 'neoclide/coc-tsserver', {'do': 'npm ci'}
     Plug 'neoclide/coc-json', {'do': 'npm ci'}
-    Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc-css', {'do': 'npm ci'}
+    Plug 'neoclide/coc-html', {'do': 'npm ci'}
 
     Plug 'fannheyward/coc-rust-analyzer', {'do': 'npm ci'}
 
