@@ -31,7 +31,7 @@ Casks:
 - beekeeper-studio dbeaver-community sqlcl
 - cyberduck
 - espanso
-- temurin
+- temurin@25
 - pribess/tap/usagekit
 - nkzw-tech/tap/codiff
 
