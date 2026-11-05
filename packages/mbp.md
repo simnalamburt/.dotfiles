@@ -33,7 +33,6 @@ Casks:
 - espanso
 - temurin@25
 - pribess/tap/usagekit
-- nkzw-tech/tap/codiff
 
 AI friends:
 
