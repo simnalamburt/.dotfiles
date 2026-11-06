@@ -1,3 +1,4 @@
+-- Windows specific
 local w = require 'wezterm'
 local c = w.config_builder()
 local a = w.action
@@ -6,11 +7,8 @@ c.front_end = 'WebGpu'
 
 -- Appearance
 c.color_scheme = 'iTerm2 Dark Background'
-
 c.font = w.font('MonacoLigaturized Nerd Font')
 c.font_size = 16
-c.freetype_load_target = 'Light'
-
 c.audible_bell = 'Disabled'
 c.visual_bell = {
   fade_in_function = 'EaseIn',
@@ -22,6 +20,7 @@ c.colors = {
   visual_bell = '#200000',
 }
 c.adjust_window_size_when_changing_font_size = false
+c.native_macos_fullscreen_mode = true
 c.send_composed_key_when_right_alt_is_pressed = false
 c.show_new_tab_button_in_tab_bar = false
 c.show_tab_index_in_tab_bar = false
@@ -43,40 +42,28 @@ c.window_padding = {
   bottom = '3px',
 }
 
+c.default_domain = 'WSL:Arch'
+
 c.keys = {
   {mods = 'CMD', key = 'Enter', action = a.ToggleFullScreen},
-  {mods = 'OPT', key = 'Enter', action = a.DisableDefaultAssignment},
-  {mods = 'SHIFT', key = 'Enter', action = a.SendString "\x1b[13;2u"},
   {mods = 'CMD', key = '[', action = a.ActivatePaneDirection('Prev')},
   {mods = 'CMD', key = ']', action = a.ActivatePaneDirection('Next')},
+  {mods = 'CMD', key = '-', action = a.SplitVertical},
+  {
+    mods = 'SUPER',
+    key = 'mapped:\u{2013}', -- en dash: –
+    action = a.SplitVertical { domain = 'CurrentPaneDomain' },
+  },
+  {mods = 'CMD', key = '\\', action = a.SplitHorizontal},
+  {mods = 'CTRL', key = '1', action = a.ActivateTab(0)},
+  {mods = 'CTRL', key = '2', action = a.ActivateTab(1)},
+  {mods = 'CTRL', key = '3', action = a.ActivateTab(2)},
+  {mods = 'CTRL', key = '4', action = a.ActivateTab(3)},
+  {mods = 'CTRL', key = '5', action = a.ActivateTab(4)},
+  {mods = 'CTRL', key = '6', action = a.ActivateTab(5)},
+  {mods = 'CTRL', key = '7', action = a.ActivateTab(6)},
+  {mods = 'CTRL', key = '8', action = a.ActivateTab(7)},
+  {mods = 'CTRL', key = '9', action = a.ActivateTab(8)},
 }
-
-if w.target_triple == 'aarch64-apple-darwin' or w.target == 'x86_64-apple-darwin' then
-  -- macOS specific settings
-  c.native_macos_fullscreen_mode = true
-
-  -- Screenshot settings
-  --c.hide_tab_bar_if_only_one_tab = true
-  --c.window_decorations = 'MACOS_FORCE_ENABLE_SHADOW|RESIZE'
-
-  table.insert(c.keys, {mods = 'CMD', key = 'm', action = a.SplitVertical})
-  table.insert(c.keys, {mods = 'CMD', key = 'l', action = a.SplitHorizontal})
-elseif w.target_triple == 'x86_64-pc-windows-msvc' then
-  -- Windows specific settings
-  c.default_domain = 'WSL:Arch'
-
-  table.insert(c.keys, {mods = 'CMD', key = '-', action = a.SplitVertical})
-  table.insert(c.keys, {mods = 'CMD', key = '\\', action = a.SplitHorizontal})
-
-  table.insert(c.keys, {mods = 'CTRL', key = '1', action = a.ActivateTab(0)})
-  table.insert(c.keys, {mods = 'CTRL', key = '2', action = a.ActivateTab(1)})
-  table.insert(c.keys, {mods = 'CTRL', key = '3', action = a.ActivateTab(2)})
-  table.insert(c.keys, {mods = 'CTRL', key = '4', action = a.ActivateTab(3)})
-  table.insert(c.keys, {mods = 'CTRL', key = '5', action = a.ActivateTab(4)})
-  table.insert(c.keys, {mods = 'CTRL', key = '6', action = a.ActivateTab(5)})
-  table.insert(c.keys, {mods = 'CTRL', key = '7', action = a.ActivateTab(6)})
-  table.insert(c.keys, {mods = 'CTRL', key = '8', action = a.ActivateTab(7)})
-  table.insert(c.keys, {mods = 'CTRL', key = '9', action = a.ActivateTab(8)})
-end
 
 return c
